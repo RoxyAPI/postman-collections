@@ -20,6 +20,8 @@ Open the public workspace and fork any collection into your own:
 
 Each forked collection carries its own `baseUrl` and an `apiKey` variable. Set `apiKey` to your key (from [your account](https://roxyapi.com/account)) and every request is authenticated through the `X-API-Key` header. That is the only setup.
 
+Prefer to import locally? Grab `roxyapi-collections.zip` from the [latest release](https://github.com/RoxyAPI/postman-collections/releases/latest): every domain collection plus a ready to use RoxyAPI environment, refreshed automatically whenever the collections change. Import the zip into Postman, set `apiKey`, done.
+
 Prefer Bruno or Insomnia? Both import RoxyAPI directly from a spec URL, no download needed:
 
 ```

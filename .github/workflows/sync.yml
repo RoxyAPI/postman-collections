@@ -35,13 +35,39 @@ jobs:
           POSTMAN_API_KEY: ${{ secrets.POSTMAN_API_KEY }}
 
       - name: Commit regenerated specs, collections and UID cache
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add specs collections collections.json
           if git diff --cached --quiet; then
             echo "No collection changes."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "sync: update collections from live OpenAPI spec"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Bundle collections and environment
+        id: bundle
+        if: steps.commit.outputs.changed == 'true' || (github.event_name == 'workflow_dispatch' && inputs.force)
+        run: |
+          tag="v$(date -u +'%Y.%m.%d-%H%M')"
+          mkdir -p bundle
+          cp collections/*.json environment/roxyapi.postman_environment.json bundle/
+          (cd bundle && zip -q -j ../roxyapi-collections.zip ./*.json)
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+
+      - name: Publish release
+        if: steps.bundle.outcome == 'success'
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ steps.bundle.outputs.tag }}
+          name: Collections ${{ steps.bundle.outputs.tag }}
+          body: |
+            Postman collections for the RoxyAPI catalog, auto-generated from the live OpenAPI specs.
+
+            Import `roxyapi-collections.zip` into Postman (every domain plus a RoxyAPI environment), or fork the [public workspace](https://www.postman.com/roxylabs-7113570/roxyapi). Set the `apiKey` variable to your key and every request authenticates through `X-API-Key`.
+          files: roxyapi-collections.zip
+          make_latest: 'true'

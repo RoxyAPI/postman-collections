@@ -43,4 +43,4 @@ bun run check            # biome lint and format
 
 ## Automation
 
-`.github/workflows/sync.yml` runs daily at 06:00 UTC, on manual dispatch, and on a `repository_dispatch` of type `openapi-updated`. It runs the live sync and commits any regenerated artifacts. `.github/workflows/ci.yml` runs lint, typecheck, and a dry run on every PR.
+`.github/workflows/sync.yml` runs daily at 06:00 UTC, on manual dispatch, and on a `repository_dispatch` of type `openapi-updated`. It runs the live sync, commits any regenerated artifacts, and when collections changed it cuts a dated GitHub Release with `roxyapi-collections.zip` (the 12 collections plus `environment/roxyapi.postman_environment.json`). A manual dispatch with `force: true` rebuilds everything and always cuts a release, useful for an on demand snapshot. `.github/workflows/ci.yml` runs lint, typecheck, and a dry run on every PR.
