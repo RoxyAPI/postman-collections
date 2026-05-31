@@ -10,7 +10,7 @@
 
 Ready to run Postman collections for the full RoxyAPI catalog: Western and Vedic astrology, tarot, numerology, I Ching, biorhythm, dreams, crystals, angel numbers, Human Design, forecast, and location. One workspace, one API key, every domain. Remote MCP, typed SDKs, and drop in UI components live alongside at [roxyapi.com](https://roxyapi.com).
 
-Every collection is generated straight from the live OpenAPI specs and kept in sync automatically. When an endpoint is added, changed, or a whole new domain ships, the collections here follow on the next scheduled run. Nothing in this repo is maintained by hand.
+These collections track the live RoxyAPI catalog, so they stay current as the API grows.
 
 ## Use it
 
@@ -33,17 +33,6 @@ for a single domain, or the combined spec:
 ```
 https://roxyapi.com/api/v2/openapi.json
 ```
-
-## What is in here
-
-| Path | Contents |
-|---|---|
-| `collections/` | Generated Postman v2.1 collection per domain. Browse or import directly. |
-| `specs/` | The OpenAPI spec each collection was built from. The diff baseline for the next sync. |
-| `collections.json` | Domain to Postman UID map, written automatically by the sync. |
-| `scripts/sync.ts` | The autopilot: discover domains, diff, regenerate, publish. |
-
-The set of domains is discovered from the live API, so it always matches what is actually shipped. To see the current list, browse [`collections/`](./collections) or the [products page](https://roxyapi.com/products).
 
 ## Authentication
 
