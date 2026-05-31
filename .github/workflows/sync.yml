@@ -1,0 +1,47 @@
+name: Sync collections
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Rebuild and publish every collection regardless of diff'
+        type: boolean
+        default: false
+  repository_dispatch:
+    types: [openapi-updated]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: oven-sh/setup-bun@v2
+
+      - run: bun install --frozen-lockfile
+
+      - name: Sync to Postman
+        run: bun run sync ${{ (github.event_name == 'workflow_dispatch' && inputs.force) && '--force' || '' }}
+        env:
+          POSTMAN_API_KEY: ${{ secrets.POSTMAN_API_KEY }}
+
+      - name: Commit regenerated specs, collections and UID cache
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add specs collections collections.json
+          if git diff --cached --quiet; then
+            echo "No collection changes."
+          else
+            git commit -m "sync: update collections from live OpenAPI spec"
+            git push
+          fi

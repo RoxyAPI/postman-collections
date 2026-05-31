@@ -1,0 +1,1768 @@
+{
+	"item": [
+		{
+			"id": "82a706ed-9781-4a3c-a643-df4761efd6bd",
+			"name": "Angel Numbers",
+			"description": {
+				"content": "Production-ready angel numbers API + hosted MCP for AI agents and developers. Connect Claude Code, Cursor, VS Code in seconds, no local setup. Look up meanings for 111, 222, 333, 444, 555, 666, 777, 888, 999, 1111, and 40+ angel number sequences. Includes love, career, spiritual, and twin flame interpretations per number. Smart lookup analyzes any number sequence with pattern detection, digit root calculation, and classification. Daily angel number endpoint, filter by type (repeating, sequential, mirror, master). Built for synchronicity apps, spiritual journals, daily guidance features, AI chatbots, and wellness platforms.",
+				"type": "text/plain"
+			},
+			"item": [
+				{
+					"id": "cb4fdad4-42d9-4aa1-a76f-2e216ea5aae7",
+					"name": "List All Angel Numbers",
+					"request": {
+						"name": "List All Angel Numbers",
+						"description": {
+							"content": "Retrieve the complete database of angel numbers with summary information. Returns all 43 angel numbers covering root digits (0-9), master numbers (11, 22, 33), double digits (44-99), triple repeating (111-999), quad repeating (1111-9999), mirror patterns (1212), and sequential numbers (1234). Supports optional type filtering. Perfect for building angel number explorer apps, reference guides, and spiritual databases.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"numbers"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+								},
+								{
+									"disabled": false,
+									"key": "limit",
+									"value": "20",
+									"description": "Maximum items to return per page. Range: 1-50, default 20."
+								},
+								{
+									"disabled": false,
+									"key": "offset",
+									"value": "0",
+									"description": "Number of items to skip for pagination. Default 0."
+								},
+								{
+									"disabled": false,
+									"key": "type",
+									"value": "repeating",
+									"description": "Filter results by angel number pattern type. \"repeating\" returns numbers like 111, 444, 7777. \"sequential\" returns patterns like 1234. \"mirror\" returns palindrome patterns like 1212. \"master\" returns 11, 22, 33. \"root\" returns single digits 0-9."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "GET",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "d347645e-86e0-4e09-b784-7e116eede06a",
+							"name": "List of angel numbers with summary information",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"numbers"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										},
+										{
+											"key": "type",
+											"value": "repeating"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"total\": 9726.978003962518,\n  \"limit\": 3590.6718320518125,\n  \"offset\": 6018.109383462094,\n  \"numbers\": [\n    {\n      \"number\": \"111\",\n      \"title\": \"New Beginnings & Manifestation\",\n      \"coreMessage\": \"Your thoughts are creating your reality. Think positively. A new chapter is beginning.\",\n      \"type\": \"repeating\",\n      \"digitRoot\": 3,\n      \"keywords\": [\n        \"new beginnings\",\n        \"manifestation\",\n        \"alignment\",\n        \"angel number\",\n        \"synchronicity\"\n      ],\n      \"energy\": \"positive\"\n    },\n    {\n      \"number\": \"111\",\n      \"title\": \"New Beginnings & Manifestation\",\n      \"coreMessage\": \"Your thoughts are creating your reality. Think positively. A new chapter is beginning.\",\n      \"type\": \"repeating\",\n      \"digitRoot\": 3,\n      \"keywords\": [\n        \"new beginnings\",\n        \"manifestation\",\n        \"alignment\",\n        \"angel number\",\n        \"synchronicity\"\n      ],\n      \"energy\": \"positive\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "4d82ed1d-4cc9-4d06-8d71-ee8bd30b9131",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"numbers"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										},
+										{
+											"key": "type",
+											"value": "repeating"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7782.163587938648,\n      \"maximum\": 8034.624982799782,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4715.788750390253,\n      \"maximum\": 6645.104344030775,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "e8f0e835-89c7-40c8-8ab2-2799dd16f0a3",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"numbers"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										},
+										{
+											"key": "type",
+											"value": "repeating"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "8921e3a4-3622-4156-9df3-8e734809b9c3",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"numbers"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										},
+										{
+											"key": "type",
+											"value": "repeating"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "e5e6d52a-4bbf-481a-80d3-3ac9298b73c1",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"numbers"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										},
+										{
+											"key": "type",
+											"value": "repeating"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "eb04d9d6-8c99-4eef-b6b1-4b91e03b627d",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"numbers"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										},
+										{
+											"key": "limit",
+											"value": "20"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										},
+										{
+											"key": "type",
+											"value": "repeating"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "12cf7c7a-90d0-4f0e-b484-ca4b3ed90f5a",
+					"name": "Get Angel Number Meaning",
+					"request": {
+						"name": "Get Angel Number Meaning",
+						"description": {
+							"content": "Get the complete, authoritative meaning and interpretation for a specific angel number. Returns detailed spiritual, love, career, and twin flame interpretations along with keywords, affirmation, and actionable steps. Covers 43 angel numbers including 111, 222, 333, 444, 555, 666, 777, 888, 999, 1111, 1212, 1234, and more. Authoritative interpretations covering all major angel number patterns.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"numbers",
+								":number"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+								}
+							],
+							"variable": [
+								{
+									"disabled": false,
+									"type": "any",
+									"value": "444",
+									"key": "number",
+									"description": "(Required) Angel number sequence to look up (e.g., \"111\", \"444\", \"1212\", \"1234\"). Must match an entry in the database."
+								}
+							]
+						},
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "GET",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "02b6c1e8-f52c-4283-8a0e-4044d11687e3",
+							"name": "Complete angel number meaning with all interpretations",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"numbers",
+										":number"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "444",
+											"key": "number",
+											"description": "(Required) Angel number sequence to look up (e.g., \"111\", \"444\", \"1212\", \"1234\"). Must match an entry in the database."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"number\": \"111\",\n  \"title\": \"New Beginnings & Manifestation\",\n  \"coreMessage\": \"Your thoughts are creating your reality. Think positively. A new chapter is beginning.\",\n  \"type\": \"repeating\",\n  \"digitRoot\": 3,\n  \"keywords\": [\n    \"new beginnings\",\n    \"manifestation\",\n    \"alignment\",\n    \"angel number\",\n    \"synchronicity\"\n  ],\n  \"energy\": \"positive\",\n  \"meaning\": {\n    \"spiritual\": \"string\",\n    \"love\": \"string\",\n    \"career\": \"string\",\n    \"twinFlame\": \"string\"\n  },\n  \"affirmation\": \"My thoughts are powerful. I choose to focus on what I desire.\",\n  \"actionSteps\": [\n    \"Monitor your thoughts carefully\",\n    \"Set clear positive intentions\",\n    \"Take inspired action on new opportunities\"\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "c670ab4b-543a-492a-a594-36b86a07afca",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"numbers",
+										":number"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "444",
+											"key": "number",
+											"description": "(Required) Angel number sequence to look up (e.g., \"111\", \"444\", \"1212\", \"1234\"). Must match an entry in the database."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7782.163587938648,\n      \"maximum\": 8034.624982799782,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4715.788750390253,\n      \"maximum\": 6645.104344030775,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "b292b766-9218-48a1-927b-1d548d4b0b4e",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"numbers",
+										":number"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "444",
+											"key": "number",
+											"description": "(Required) Angel number sequence to look up (e.g., \"111\", \"444\", \"1212\", \"1234\"). Must match an entry in the database."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "ad4fd0b8-5a8a-4a79-8c53-19ba297d6a13",
+							"name": "Angel number not found in database",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"numbers",
+										":number"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "444",
+											"key": "number",
+											"description": "(Required) Angel number sequence to look up (e.g., \"111\", \"444\", \"1212\", \"1234\"). Must match an entry in the database."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"Resource not found\",\n  \"code\": \"not_found\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "74c6ad3e-ad6f-482b-b89f-bcfbb0340cc3",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"numbers",
+										":number"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "444",
+											"key": "number",
+											"description": "(Required) Angel number sequence to look up (e.g., \"111\", \"444\", \"1212\", \"1234\"). Must match an entry in the database."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "c3267d25-df24-4d96-af6f-3a9d0430a672",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"numbers",
+										":number"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "444",
+											"key": "number",
+											"description": "(Required) Angel number sequence to look up (e.g., \"111\", \"444\", \"1212\", \"1234\"). Must match an entry in the database."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "56612f26-1d34-402f-8438-376e1cbdcc2f",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"numbers",
+										":number"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "444",
+											"key": "number",
+											"description": "(Required) Angel number sequence to look up (e.g., \"111\", \"444\", \"1212\", \"1234\"). Must match an entry in the database."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "73ae507a-5740-4c3d-9b0f-06eb5d9f168c",
+					"name": "Analyze Any Number Sequence",
+					"request": {
+						"name": "Analyze Any Number Sequence",
+						"description": {
+							"content": "Smart angel number analysis that works for ANY number sequence, not just known angel numbers. Automatically classifies the pattern type (repeating, sequential, mirror, master, root), calculates the numerology digit root, checks the database for a known meaning, and provides the foundational digit root interpretation as a fallback. Perfect for synchronicity tracking apps where users enter arbitrary number sequences they encounter.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"lookup"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+								},
+								{
+									"disabled": false,
+									"key": "number",
+									"value": "1234",
+									"description": "(Required) Number sequence to analyze (1-8 digits). Can be any number the user has encountered: clock times (1111), addresses (717), receipts (888), license plates (4444), or any repeating pattern."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "GET",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "c50643dc-8eab-4d76-9ecf-298e6bb2386d",
+							"name": "Complete analysis of the number sequence with pattern classification and meaning",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"lookup"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										},
+										{
+											"key": "number",
+											"value": "1234"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"number\": \"1234\",\n  \"type\": \"sequential\",\n  \"digitRoot\": 1,\n  \"digits\": 4,\n  \"uniqueDigits\": 4,\n  \"isPalindrome\": false,\n  \"isRepeating\": false,\n  \"knownMeaning\": {\n    \"title\": \"string\",\n    \"coreMessage\": \"string\",\n    \"energy\": \"string\",\n    \"keywords\": [\n      \"string\",\n      \"string\"\n    ],\n    \"meaning\": {\n      \"spiritual\": \"string\",\n      \"love\": \"string\",\n      \"career\": \"string\",\n      \"twinFlame\": \"string\"\n    },\n    \"affirmation\": \"string\",\n    \"actionSteps\": [\n      \"string\",\n      \"string\"\n    ]\n  },\n  \"digitRootMeaning\": {\n    \"number\": \"3\",\n    \"title\": \"string\",\n    \"coreMessage\": \"string\"\n  }\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "31e731f0-1a59-4427-b645-c8f1e507b2a0",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"lookup"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										},
+										{
+											"key": "number",
+											"value": "1234"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7782.163587938648,\n      \"maximum\": 8034.624982799782,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4715.788750390253,\n      \"maximum\": 6645.104344030775,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "8b688b1a-aa69-49f6-bb17-d933ef2bfa91",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"lookup"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										},
+										{
+											"key": "number",
+											"value": "1234"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "e7dde1c2-4c9a-43c3-a7e2-2d978d5bfb1b",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"lookup"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										},
+										{
+											"key": "number",
+											"value": "1234"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "17b2ea45-f10a-4d54-96e9-1d13078d151e",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"lookup"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										},
+										{
+											"key": "number",
+											"value": "1234"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "094cf54c-282b-4eb9-a532-ee97d49a1f86",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"lookup"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										},
+										{
+											"key": "number",
+											"value": "1234"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "ba2b10be-5163-4319-87d5-3e24fb5ce7b6",
+					"name": "Daily Angel Number",
+					"request": {
+						"name": "Daily Angel Number",
+						"description": {
+							"content": "Get the angel number of the day with full meaning and interpretation. Returns a deterministic angel number based on the current date (or a provided seed date), ensuring all users see the same number for any given day. Includes complete spiritual, love, career, and twin flame interpretations. Perfect for daily guidance features, push notifications, content generation, and angel number widget integrations.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"daily"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "POST",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						},
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"seed\": \"user123\",\n  \"date\": \"2026-03-06\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": [
+						{
+							"id": "2f03464b-4938-49a8-9a56-4bf333125f41",
+							"name": "Daily angel number with complete interpretation",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"daily"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"seed\": \"user123\",\n  \"date\": \"2026-03-06\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"date\": \"2026-03-05\",\n  \"seed\": \"user123-2026-03-05\",\n  \"number\": \"444\",\n  \"title\": \"string\",\n  \"coreMessage\": \"string\",\n  \"type\": \"string\",\n  \"digitRoot\": 6885.994087965942,\n  \"energy\": \"string\",\n  \"meaning\": {\n    \"spiritual\": \"string\",\n    \"love\": \"string\",\n    \"career\": \"string\",\n    \"twinFlame\": \"string\"\n  },\n  \"keywords\": [\n    \"string\",\n    \"string\"\n  ],\n  \"affirmation\": \"string\",\n  \"actionSteps\": [\n    \"string\",\n    \"string\"\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "f309036b-3b04-4255-bb42-08f15da48d36",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"daily"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"seed\": \"user123\",\n  \"date\": \"2026-03-06\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7782.163587938648,\n      \"maximum\": 8034.624982799782,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4715.788750390253,\n      \"maximum\": 6645.104344030775,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "32dfed47-875c-4af3-9a89-d91f90545b59",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"daily"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"seed\": \"user123\",\n  \"date\": \"2026-03-06\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "a4e5caff-033d-4836-85a7-9620f92c591f",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"daily"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"seed\": \"user123\",\n  \"date\": \"2026-03-06\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "4e483b5d-3769-4bf9-85a1-b37b95a35cc5",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"daily"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"seed\": \"user123\",\n  \"date\": \"2026-03-06\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "00ec44f6-9e4d-4e9e-9728-97237c603cce",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"daily"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"seed\": \"user123\",\n  \"date\": \"2026-03-06\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				}
+			],
+			"event": []
+		}
+	],
+	"event": [],
+	"variable": [
+		{
+			"type": "string",
+			"value": "https://roxyapi.com/api/v2/angel-numbers",
+			"key": "baseUrl"
+		},
+		{
+			"key": "apiKey",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "roxySlug",
+			"value": "angel-numbers",
+			"type": "string"
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "X-API-Key"
+			},
+			{
+				"key": "value",
+				"value": "{{apiKey}}"
+			},
+			{
+				"key": "in",
+				"value": "header"
+			}
+		]
+	},
+	"info": {
+		"_postman_id": "eebc53f1-b6a1-460a-82ce-4ef7e8b168a3",
+		"name": "Angel Numbers API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"description": {
+			"content": "Production-ready angel numbers API + hosted MCP for AI agents and developers. Connect Claude Code, Cursor, VS Code in seconds, no local setup. Look up meanings for 111, 222, 333, 444, 555, 666, 777, 888, 999, 1111, and 40+ angel number sequences. Includes love, career, spiritual, and twin flame interpretations per number. Smart lookup analyzes any number sequence with pattern detection, digit root calculation, and classification. Daily angel number endpoint, filter by type (repeating, sequential, mirror, master). Built for synchronicity apps, spiritual journals, daily guidance features, AI chatbots, and wellness platforms.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, human design, forecast, biorhythm, tarot, numerology, crystals, dreams, I-Ching, angel numbers, location), 148+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (MCP)\n\nRoxyAPI has native Model Context Protocol support. Your AI agent auto-discovers all 148+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
+			"type": "text/plain"
+		}
+	}
+}

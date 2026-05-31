@@ -1,0 +1,1621 @@
+{
+	"openapi": "3.1.0",
+	"info": {
+		"title": "Angel Numbers API",
+		"version": "2.0.0",
+		"description": "Production-ready angel numbers API + hosted MCP for AI agents and developers. Connect Claude Code, Cursor, VS Code in seconds, no local setup. Look up meanings for 111, 222, 333, 444, 555, 666, 777, 888, 999, 1111, and 40+ angel number sequences. Includes love, career, spiritual, and twin flame interpretations per number. Smart lookup analyzes any number sequence with pattern detection, digit root calculation, and classification. Daily angel number endpoint, filter by type (repeating, sequential, mirror, master). Built for synchronicity apps, spiritual journals, daily guidance features, AI chatbots, and wellness platforms.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, human design, forecast, biorhythm, tarot, numerology, crystals, dreams, I-Ching, angel numbers, location), 148+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (MCP)\n\nRoxyAPI has native Model Context Protocol support. Your AI agent auto-discovers all 148+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n",
+		"contact": {
+			"name": "RoxyAPI Support",
+			"url": "https://roxyapi.com/contact"
+		},
+		"license": {
+			"name": "Proprietary",
+			"url": "https://roxyapi.com/policy/terms"
+		}
+	},
+	"externalDocs": {
+		"description": "Complete API Documentation with Examples",
+		"url": "https://roxyapi.com/docs"
+	},
+	"servers": [
+		{
+			"url": "/api/v2",
+			"description": "Production API v2"
+		}
+	],
+	"security": [
+		{
+			"apiKey": []
+		}
+	],
+	"tags": [
+		{
+			"name": "Angel Numbers",
+			"description": "Production-ready angel numbers API + hosted MCP for AI agents and developers. Connect Claude Code, Cursor, VS Code in seconds, no local setup. Look up meanings for 111, 222, 333, 444, 555, 666, 777, 888, 999, 1111, and 40+ angel number sequences. Includes love, career, spiritual, and twin flame interpretations per number. Smart lookup analyzes any number sequence with pattern detection, digit root calculation, and classification. Daily angel number endpoint, filter by type (repeating, sequential, mirror, master). Built for synchronicity apps, spiritual journals, daily guidance features, AI chatbots, and wellness platforms."
+		}
+	],
+	"components": {
+		"securitySchemes": {
+			"apiKey": {
+				"type": "apiKey",
+				"in": "header",
+				"name": "X-API-Key",
+				"description": "Your API key for accessing RoxyAPI. Alternatively, you can pass the API key as a query parameter \"api_key\"."
+			}
+		},
+		"schemas": {},
+		"parameters": {}
+	},
+	"paths": {
+		"/numbers": {
+			"get": {
+				"operationId": "listAngelNumbers",
+				"tags": [
+					"Angel Numbers"
+				],
+				"summary": "List All Angel Numbers",
+				"description": "Retrieve the complete database of angel numbers with summary information. Returns all 43 angel numbers covering root digits (0-9), master numbers (11, 22, 33), double digits (44-99), triple repeating (111-999), quad repeating (1111-9999), mirror patterns (1212), and sequential numbers (1234). Supports optional type filtering. Perfect for building angel number explorer apps, reference guides, and spiritual databases.",
+				"security": [
+					{
+						"apiKey": []
+					}
+				],
+				"parameters": [
+					{
+						"schema": {
+							"type": "string",
+							"enum": [
+								"en",
+								"tr",
+								"de",
+								"es",
+								"hi",
+								"pt",
+								"fr",
+								"ru"
+							],
+							"default": "en",
+							"example": "en",
+							"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+						},
+						"required": false,
+						"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English.",
+						"name": "lang",
+						"in": "query"
+					},
+					{
+						"schema": {
+							"type": "integer",
+							"minimum": 1,
+							"maximum": 50,
+							"default": 20,
+							"example": 20,
+							"description": "Maximum items to return per page. Range: 1-50, default 20."
+						},
+						"required": false,
+						"description": "Maximum items to return per page. Range: 1-50, default 20.",
+						"name": "limit",
+						"in": "query"
+					},
+					{
+						"schema": {
+							"type": "integer",
+							"nullable": true,
+							"minimum": 0,
+							"default": 0,
+							"example": 0,
+							"description": "Number of items to skip for pagination. Default 0."
+						},
+						"required": false,
+						"description": "Number of items to skip for pagination. Default 0.",
+						"name": "offset",
+						"in": "query"
+					},
+					{
+						"schema": {
+							"type": "string",
+							"enum": [
+								"repeating",
+								"sequential",
+								"mirror",
+								"master",
+								"root"
+							],
+							"example": "repeating",
+							"description": "Filter results by angel number pattern type. \"repeating\" returns numbers like 111, 444, 7777. \"sequential\" returns patterns like 1234. \"mirror\" returns palindrome patterns like 1212. \"master\" returns 11, 22, 33. \"root\" returns single digits 0-9."
+						},
+						"required": false,
+						"description": "Filter results by angel number pattern type. \"repeating\" returns numbers like 111, 444, 7777. \"sequential\" returns patterns like 1234. \"mirror\" returns palindrome patterns like 1212. \"master\" returns 11, 22, 33. \"root\" returns single digits 0-9.",
+						"name": "type",
+						"in": "query"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "List of angel numbers with summary information",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"total": {
+											"type": "number",
+											"description": "Total number of angel numbers matching the applied filters. 43 for the full set, fewer when filtered by type."
+										},
+										"limit": {
+											"type": "number",
+											"description": "Maximum items returned per page."
+										},
+										"offset": {
+											"type": "number",
+											"description": "Number of items skipped from the start of the result set."
+										},
+										"numbers": {
+											"type": "array",
+											"items": {
+												"type": "object",
+												"properties": {
+													"number": {
+														"type": "string",
+														"example": "111",
+														"description": "Angel number sequence as a string. Common patterns include triple repeating (111-999), quad repeating (1111-9999), master numbers (11, 22, 33), mirror patterns (1212), and sequential numbers (1234)."
+													},
+													"title": {
+														"type": "string",
+														"example": "New Beginnings & Manifestation",
+														"description": "Short descriptive title capturing the core theme and spiritual significance of this angel number."
+													},
+													"coreMessage": {
+														"type": "string",
+														"example": "Your thoughts are creating your reality. Think positively. A new chapter is beginning.",
+														"description": "One to two sentence summary of the divine message. Ideal for push notifications, daily guidance widgets, and quick reference lookups."
+													},
+													"type": {
+														"type": "string",
+														"example": "repeating",
+														"description": "Pattern classification of the angel number. \"repeating\" means all digits are the same (111, 4444). \"sequential\" means consecutive digits (1234). \"mirror\" means palindrome or alternating pattern (1212, 1221). \"master\" means numerology master number (11, 22, 33). \"root\" means single digit (0-9)."
+													},
+													"digitRoot": {
+														"type": "number",
+														"example": 3,
+														"description": "Numerology digit root calculated by summing all digits and reducing to a single digit. Links each angel number to foundational numerology meaning. Master numbers 11, 22, 33 are preserved without further reduction."
+													},
+													"keywords": {
+														"type": "array",
+														"items": {
+															"type": "string"
+														},
+														"example": [
+															"new beginnings",
+															"manifestation",
+															"alignment",
+															"angel number",
+															"synchronicity"
+														],
+														"description": "Five to eight keywords capturing the spiritual themes and energy of this angel number. Useful for search, filtering, and content generation."
+													},
+													"energy": {
+														"type": "string",
+														"example": "positive",
+														"description": "Overall energy classification. \"positive\" indicates encouraging, uplifting energy. \"neutral\" indicates transitional energy (neither purely positive nor cautionary). \"cautionary\" indicates a gentle warning to rebalance or pay attention."
+													}
+												},
+												"required": [
+													"number",
+													"title",
+													"coreMessage",
+													"type",
+													"digitRoot",
+													"keywords",
+													"energy"
+												]
+											},
+											"description": "Array of angel number summaries for the current page."
+										}
+									},
+									"required": [
+										"total",
+										"limit",
+										"offset",
+										"numbers"
+									]
+								}
+							}
+						}
+					},
+					"400": {
+						"description": "Validation error. `issues[]` lists every failed field.",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "First issue summary."
+										},
+										"code": {
+											"type": "string",
+											"enum": [
+												"validation_error"
+											]
+										},
+										"issues": {
+											"type": "array",
+											"description": "Every validation failure. Use this to rebuild a valid request.",
+											"items": {
+												"type": "object",
+												"properties": {
+													"path": {
+														"type": "string",
+														"description": "Dot-separated field path, or \"(root)\" for top-level."
+													},
+													"message": {
+														"type": "string"
+													},
+													"code": {
+														"type": "string",
+														"description": "Zod issue code (invalid_type, too_small, too_big, invalid_string, ...)."
+													},
+													"expected": {
+														"type": "string",
+														"description": "Expected type for invalid_type."
+													},
+													"minimum": {
+														"description": "Minimum bound for too_small issues.",
+														"oneOf": [
+															{
+																"type": "number"
+															},
+															{
+																"type": "string"
+															}
+														]
+													},
+													"maximum": {
+														"description": "Maximum bound for too_big issues.",
+														"oneOf": [
+															{
+																"type": "number"
+															},
+															{
+																"type": "string"
+															}
+														]
+													},
+													"inclusive": {
+														"type": "boolean"
+													},
+													"format": {
+														"type": "string",
+														"description": "Format name for string issues (regex, email, url, uuid)."
+													},
+													"pattern": {
+														"type": "string",
+														"description": "Regex pattern when format is regex."
+													}
+												},
+												"required": [
+													"path",
+													"message"
+												]
+											}
+										}
+									},
+									"required": [
+										"error",
+										"code",
+										"issues"
+									]
+								}
+							}
+						}
+					},
+					"401": {
+						"description": "Invalid or missing API key",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					},
+					"405": {
+						"description": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+						"headers": {
+							"Allow": {
+								"description": "Comma-separated list of allowed methods (RFC 9110).",
+								"schema": {
+									"type": "string"
+								}
+							}
+						},
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string"
+										},
+										"code": {
+											"type": "string",
+											"enum": [
+												"method_not_allowed"
+											]
+										},
+										"allow": {
+											"type": "array",
+											"items": {
+												"type": "string"
+											},
+											"description": "Allowed HTTP methods for this path. Mirrors the Allow response header."
+										},
+										"docs": {
+											"type": "string",
+											"description": "Link to the product page for this domain."
+										}
+									},
+									"required": [
+										"error",
+										"code",
+										"allow"
+									]
+								}
+							}
+						}
+					},
+					"429": {
+						"description": "Monthly rate limit exceeded",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					},
+					"500": {
+						"description": "Internal server error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/numbers/{number}": {
+			"get": {
+				"operationId": "getAngelNumber",
+				"tags": [
+					"Angel Numbers"
+				],
+				"summary": "Get Angel Number Meaning",
+				"description": "Get the complete, authoritative meaning and interpretation for a specific angel number. Returns detailed spiritual, love, career, and twin flame interpretations along with keywords, affirmation, and actionable steps. Covers 43 angel numbers including 111, 222, 333, 444, 555, 666, 777, 888, 999, 1111, 1212, 1234, and more. Authoritative interpretations covering all major angel number patterns.",
+				"security": [
+					{
+						"apiKey": []
+					}
+				],
+				"parameters": [
+					{
+						"schema": {
+							"type": "string",
+							"example": "444",
+							"description": "Angel number sequence to look up (e.g., \"111\", \"444\", \"1212\", \"1234\"). Must match an entry in the database."
+						},
+						"required": true,
+						"description": "Angel number sequence to look up (e.g., \"111\", \"444\", \"1212\", \"1234\"). Must match an entry in the database.",
+						"name": "number",
+						"in": "path"
+					},
+					{
+						"schema": {
+							"type": "string",
+							"enum": [
+								"en",
+								"tr",
+								"de",
+								"es",
+								"hi",
+								"pt",
+								"fr",
+								"ru"
+							],
+							"default": "en",
+							"example": "en",
+							"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+						},
+						"required": false,
+						"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English.",
+						"name": "lang",
+						"in": "query"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Complete angel number meaning with all interpretations",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"number": {
+											"type": "string",
+											"example": "111",
+											"description": "Angel number sequence as a string. Common patterns include triple repeating (111-999), quad repeating (1111-9999), master numbers (11, 22, 33), mirror patterns (1212), and sequential numbers (1234)."
+										},
+										"title": {
+											"type": "string",
+											"example": "New Beginnings & Manifestation",
+											"description": "Short descriptive title capturing the core theme and spiritual significance of this angel number."
+										},
+										"coreMessage": {
+											"type": "string",
+											"example": "Your thoughts are creating your reality. Think positively. A new chapter is beginning.",
+											"description": "One to two sentence summary of the divine message. Ideal for push notifications, daily guidance widgets, and quick reference lookups."
+										},
+										"type": {
+											"type": "string",
+											"example": "repeating",
+											"description": "Pattern classification of the angel number. \"repeating\" means all digits are the same (111, 4444). \"sequential\" means consecutive digits (1234). \"mirror\" means palindrome or alternating pattern (1212, 1221). \"master\" means numerology master number (11, 22, 33). \"root\" means single digit (0-9)."
+										},
+										"digitRoot": {
+											"type": "number",
+											"example": 3,
+											"description": "Numerology digit root calculated by summing all digits and reducing to a single digit. Links each angel number to foundational numerology meaning. Master numbers 11, 22, 33 are preserved without further reduction."
+										},
+										"keywords": {
+											"type": "array",
+											"items": {
+												"type": "string"
+											},
+											"example": [
+												"new beginnings",
+												"manifestation",
+												"alignment",
+												"angel number",
+												"synchronicity"
+											],
+											"description": "Five to eight keywords capturing the spiritual themes and energy of this angel number. Useful for search, filtering, and content generation."
+										},
+										"energy": {
+											"type": "string",
+											"example": "positive",
+											"description": "Overall energy classification. \"positive\" indicates encouraging, uplifting energy. \"neutral\" indicates transitional energy (neither purely positive nor cautionary). \"cautionary\" indicates a gentle warning to rebalance or pay attention."
+										},
+										"meaning": {
+											"type": "object",
+											"properties": {
+												"spiritual": {
+													"type": "string",
+													"description": "Two to three paragraph spiritual interpretation covering divine guidance, higher purpose, and the metaphysical significance of this angel number sequence."
+												},
+												"love": {
+													"type": "string",
+													"description": "Love and relationship interpretation covering singles, couples, and those healing from past relationships. Includes romantic guidance and partnership advice."
+												},
+												"career": {
+													"type": "string",
+													"description": "Career and financial guidance including professional opportunities, money mindset, and practical advice for work life aligned with this angel number energy."
+												},
+												"twinFlame": {
+													"type": "string",
+													"description": "Twin flame connection interpretation covering union, separation, and spiritual growth within the twin flame journey."
+												}
+											},
+											"required": [
+												"spiritual",
+												"love",
+												"career",
+												"twinFlame"
+											]
+										},
+										"affirmation": {
+											"type": "string",
+											"example": "My thoughts are powerful. I choose to focus on what I desire.",
+											"description": "Positive affirmation aligned with this angel number. Can be used for daily affirmation features, meditation guidance, or spiritual journal prompts."
+										},
+										"actionSteps": {
+											"type": "array",
+											"items": {
+												"type": "string"
+											},
+											"example": [
+												"Monitor your thoughts carefully",
+												"Set clear positive intentions",
+												"Take inspired action on new opportunities"
+											],
+											"description": "Three to five specific, actionable steps to take when you see this angel number. Practical spiritual guidance for daily life."
+										}
+									},
+									"required": [
+										"number",
+										"title",
+										"coreMessage",
+										"type",
+										"digitRoot",
+										"keywords",
+										"energy",
+										"meaning",
+										"affirmation",
+										"actionSteps"
+									]
+								}
+							}
+						}
+					},
+					"400": {
+						"description": "Validation error. `issues[]` lists every failed field.",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "First issue summary."
+										},
+										"code": {
+											"type": "string",
+											"enum": [
+												"validation_error"
+											]
+										},
+										"issues": {
+											"type": "array",
+											"description": "Every validation failure. Use this to rebuild a valid request.",
+											"items": {
+												"type": "object",
+												"properties": {
+													"path": {
+														"type": "string",
+														"description": "Dot-separated field path, or \"(root)\" for top-level."
+													},
+													"message": {
+														"type": "string"
+													},
+													"code": {
+														"type": "string",
+														"description": "Zod issue code (invalid_type, too_small, too_big, invalid_string, ...)."
+													},
+													"expected": {
+														"type": "string",
+														"description": "Expected type for invalid_type."
+													},
+													"minimum": {
+														"description": "Minimum bound for too_small issues.",
+														"oneOf": [
+															{
+																"type": "number"
+															},
+															{
+																"type": "string"
+															}
+														]
+													},
+													"maximum": {
+														"description": "Maximum bound for too_big issues.",
+														"oneOf": [
+															{
+																"type": "number"
+															},
+															{
+																"type": "string"
+															}
+														]
+													},
+													"inclusive": {
+														"type": "boolean"
+													},
+													"format": {
+														"type": "string",
+														"description": "Format name for string issues (regex, email, url, uuid)."
+													},
+													"pattern": {
+														"type": "string",
+														"description": "Regex pattern when format is regex."
+													}
+												},
+												"required": [
+													"path",
+													"message"
+												]
+											}
+										}
+									},
+									"required": [
+										"error",
+										"code",
+										"issues"
+									]
+								}
+							}
+						}
+					},
+					"401": {
+						"description": "Invalid or missing API key",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					},
+					"404": {
+						"description": "Angel number not found in database",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"example": "Resource not found",
+											"description": "Human-readable error message. May change wording — do not parse programmatically."
+										},
+										"code": {
+											"type": "string",
+											"example": "not_found",
+											"description": "Machine-readable error code. Stable identifier for programmatic error handling."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					},
+					"405": {
+						"description": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+						"headers": {
+							"Allow": {
+								"description": "Comma-separated list of allowed methods (RFC 9110).",
+								"schema": {
+									"type": "string"
+								}
+							}
+						},
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string"
+										},
+										"code": {
+											"type": "string",
+											"enum": [
+												"method_not_allowed"
+											]
+										},
+										"allow": {
+											"type": "array",
+											"items": {
+												"type": "string"
+											},
+											"description": "Allowed HTTP methods for this path. Mirrors the Allow response header."
+										},
+										"docs": {
+											"type": "string",
+											"description": "Link to the product page for this domain."
+										}
+									},
+									"required": [
+										"error",
+										"code",
+										"allow"
+									]
+								}
+							}
+						}
+					},
+					"429": {
+						"description": "Monthly rate limit exceeded",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					},
+					"500": {
+						"description": "Internal server error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/lookup": {
+			"get": {
+				"operationId": "analyzeNumberSequence",
+				"tags": [
+					"Angel Numbers"
+				],
+				"summary": "Analyze Any Number Sequence",
+				"description": "Smart angel number analysis that works for ANY number sequence, not just known angel numbers. Automatically classifies the pattern type (repeating, sequential, mirror, master, root), calculates the numerology digit root, checks the database for a known meaning, and provides the foundational digit root interpretation as a fallback. Perfect for synchronicity tracking apps where users enter arbitrary number sequences they encounter.",
+				"security": [
+					{
+						"apiKey": []
+					}
+				],
+				"parameters": [
+					{
+						"schema": {
+							"type": "string",
+							"enum": [
+								"en",
+								"tr",
+								"de",
+								"es",
+								"hi",
+								"pt",
+								"fr",
+								"ru"
+							],
+							"default": "en",
+							"example": "en",
+							"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+						},
+						"required": false,
+						"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English.",
+						"name": "lang",
+						"in": "query"
+					},
+					{
+						"schema": {
+							"type": "string",
+							"pattern": "^\\d{1,8}$",
+							"example": "1234",
+							"description": "Number sequence to analyze (1-8 digits). Can be any number the user has encountered: clock times (1111), addresses (717), receipts (888), license plates (4444), or any repeating pattern."
+						},
+						"required": true,
+						"description": "Number sequence to analyze (1-8 digits). Can be any number the user has encountered: clock times (1111), addresses (717), receipts (888), license plates (4444), or any repeating pattern.",
+						"name": "number",
+						"in": "query"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Complete analysis of the number sequence with pattern classification and meaning",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"number": {
+											"type": "string",
+											"example": "1234",
+											"description": "The number sequence that was analyzed."
+										},
+										"type": {
+											"type": "string",
+											"example": "sequential",
+											"description": "Pattern classification detected for this number. \"repeating\" means all same digits. \"sequential\" means consecutive ascending or descending. \"mirror\" means palindrome or alternating pattern. \"master\" means numerology master number. \"root\" means single digit."
+										},
+										"digitRoot": {
+											"type": "number",
+											"example": 1,
+											"description": "Numerology digit root from summing and reducing all digits. Links to foundational single-digit meaning. Master numbers 11, 22, 33 are preserved."
+										},
+										"digits": {
+											"type": "number",
+											"example": 4,
+											"description": "Total number of digits in the sequence."
+										},
+										"uniqueDigits": {
+											"type": "number",
+											"example": 4,
+											"description": "Count of unique digits. A repeating number like 111 has 1 unique digit; 1234 has 4."
+										},
+										"isPalindrome": {
+											"type": "boolean",
+											"example": false,
+											"description": "Whether the number reads the same forwards and backwards (e.g., 1221, 1001)."
+										},
+										"isRepeating": {
+											"type": "boolean",
+											"example": false,
+											"description": "Whether all digits are identical (e.g., 111, 4444, 777)."
+										},
+										"knownMeaning": {
+											"type": "object",
+											"nullable": true,
+											"properties": {
+												"title": {
+													"type": "string",
+													"description": "Title of the matched angel number meaning."
+												},
+												"coreMessage": {
+													"type": "string",
+													"description": "Core message summary."
+												},
+												"energy": {
+													"type": "string",
+													"description": "Energy classification (positive, neutral, cautionary)."
+												},
+												"keywords": {
+													"type": "array",
+													"items": {
+														"type": "string"
+													},
+													"description": "Keywords for this angel number."
+												},
+												"meaning": {
+													"type": "object",
+													"properties": {
+														"spiritual": {
+															"type": "string",
+															"description": "Spiritual interpretation covering divine guidance, higher purpose, and metaphysical significance."
+														},
+														"love": {
+															"type": "string",
+															"description": "Love and relationship interpretation for singles, couples, and those healing from past relationships."
+														},
+														"career": {
+															"type": "string",
+															"description": "Career and financial guidance including professional opportunities and money mindset."
+														},
+														"twinFlame": {
+															"type": "string",
+															"description": "Twin flame connection interpretation covering union, separation, and spiritual growth."
+														}
+													},
+													"required": [
+														"spiritual",
+														"love",
+														"career",
+														"twinFlame"
+													],
+													"description": "Detailed interpretations across four life areas: spiritual, love, career, and twin flame."
+												},
+												"affirmation": {
+													"type": "string",
+													"description": "Positive affirmation for this number."
+												},
+												"actionSteps": {
+													"type": "array",
+													"items": {
+														"type": "string"
+													},
+													"description": "Actionable steps when you see this number."
+												}
+											},
+											"required": [
+												"title",
+												"coreMessage",
+												"energy",
+												"keywords",
+												"meaning",
+												"affirmation",
+												"actionSteps"
+											],
+											"description": "Full angel number meaning if this number exists in the database (43 known numbers). Null if the number is not in the database, in which case use the analysis fields (type, digitRoot) for interpretation."
+										},
+										"digitRootMeaning": {
+											"type": "object",
+											"nullable": true,
+											"properties": {
+												"number": {
+													"type": "string",
+													"example": "3",
+													"description": "Root digit number (0-9) or master number (11, 22, 33)."
+												},
+												"title": {
+													"type": "string",
+													"description": "Title of the root digit meaning in numerology."
+												},
+												"coreMessage": {
+													"type": "string",
+													"description": "Core message of the foundational root digit."
+												}
+											},
+											"required": [
+												"number",
+												"title",
+												"coreMessage"
+											],
+											"description": "The foundational meaning of this number based on its digit root. Every number reduces to a root digit (0-9) or master number (11, 22, 33), which provides the base interpretation even for unknown sequences."
+										}
+									},
+									"required": [
+										"number",
+										"type",
+										"digitRoot",
+										"digits",
+										"uniqueDigits",
+										"isPalindrome",
+										"isRepeating",
+										"knownMeaning",
+										"digitRootMeaning"
+									]
+								}
+							}
+						}
+					},
+					"400": {
+						"description": "Validation error. `issues[]` lists every failed field.",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "First issue summary."
+										},
+										"code": {
+											"type": "string",
+											"enum": [
+												"validation_error"
+											]
+										},
+										"issues": {
+											"type": "array",
+											"description": "Every validation failure. Use this to rebuild a valid request.",
+											"items": {
+												"type": "object",
+												"properties": {
+													"path": {
+														"type": "string",
+														"description": "Dot-separated field path, or \"(root)\" for top-level."
+													},
+													"message": {
+														"type": "string"
+													},
+													"code": {
+														"type": "string",
+														"description": "Zod issue code (invalid_type, too_small, too_big, invalid_string, ...)."
+													},
+													"expected": {
+														"type": "string",
+														"description": "Expected type for invalid_type."
+													},
+													"minimum": {
+														"description": "Minimum bound for too_small issues.",
+														"oneOf": [
+															{
+																"type": "number"
+															},
+															{
+																"type": "string"
+															}
+														]
+													},
+													"maximum": {
+														"description": "Maximum bound for too_big issues.",
+														"oneOf": [
+															{
+																"type": "number"
+															},
+															{
+																"type": "string"
+															}
+														]
+													},
+													"inclusive": {
+														"type": "boolean"
+													},
+													"format": {
+														"type": "string",
+														"description": "Format name for string issues (regex, email, url, uuid)."
+													},
+													"pattern": {
+														"type": "string",
+														"description": "Regex pattern when format is regex."
+													}
+												},
+												"required": [
+													"path",
+													"message"
+												]
+											}
+										}
+									},
+									"required": [
+										"error",
+										"code",
+										"issues"
+									]
+								}
+							}
+						}
+					},
+					"401": {
+						"description": "Invalid or missing API key",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					},
+					"405": {
+						"description": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+						"headers": {
+							"Allow": {
+								"description": "Comma-separated list of allowed methods (RFC 9110).",
+								"schema": {
+									"type": "string"
+								}
+							}
+						},
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string"
+										},
+										"code": {
+											"type": "string",
+											"enum": [
+												"method_not_allowed"
+											]
+										},
+										"allow": {
+											"type": "array",
+											"items": {
+												"type": "string"
+											},
+											"description": "Allowed HTTP methods for this path. Mirrors the Allow response header."
+										},
+										"docs": {
+											"type": "string",
+											"description": "Link to the product page for this domain."
+										}
+									},
+									"required": [
+										"error",
+										"code",
+										"allow"
+									]
+								}
+							}
+						}
+					},
+					"429": {
+						"description": "Monthly rate limit exceeded",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					},
+					"500": {
+						"description": "Internal server error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/daily": {
+			"post": {
+				"operationId": "getDailyAngelNumber",
+				"tags": [
+					"Angel Numbers"
+				],
+				"summary": "Daily Angel Number",
+				"description": "Get the angel number of the day with full meaning and interpretation. Returns a deterministic angel number based on the current date (or a provided seed date), ensuring all users see the same number for any given day. Includes complete spiritual, love, career, and twin flame interpretations. Perfect for daily guidance features, push notifications, content generation, and angel number widget integrations.",
+				"security": [
+					{
+						"apiKey": []
+					}
+				],
+				"parameters": [
+					{
+						"schema": {
+							"type": "string",
+							"enum": [
+								"en",
+								"tr",
+								"de",
+								"es",
+								"hi",
+								"pt",
+								"fr",
+								"ru"
+							],
+							"default": "en",
+							"example": "en",
+							"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+						},
+						"required": false,
+						"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English.",
+						"name": "lang",
+						"in": "query"
+					}
+				],
+				"requestBody": {
+					"required": false,
+					"content": {
+						"application/json": {
+							"schema": {
+								"type": "object",
+								"properties": {
+									"seed": {
+										"type": "string",
+										"example": "user123",
+										"description": "Optional seed for reproducible readings. Same seed + same date = same angel number every time. Pass any unique identifier (userId, email hash, session token). Omit for anonymous daily readings."
+									},
+									"date": {
+										"type": "string",
+										"format": "date",
+										"example": "2026-03-06",
+										"description": "Date for the reading in YYYY-MM-DD format. Defaults to today (UTC). Useful for viewing past daily readings or pre-generating future ones."
+									}
+								}
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "Daily angel number with complete interpretation",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"date": {
+											"type": "string",
+											"example": "2026-03-05",
+											"description": "The date used for angel number selection (UTC)."
+										},
+										"seed": {
+											"type": "string",
+											"example": "user123-2026-03-05",
+											"description": "Computed seed used for this reading. Same seed always produces the same angel number."
+										},
+										"number": {
+											"type": "string",
+											"example": "444",
+											"description": "Angel number sequence selected for today. Three or more digit repeating, sequential, or mirror pattern (e.g., 111, 444, 1212)."
+										},
+										"title": {
+											"type": "string",
+											"description": "Short descriptive title capturing the core theme and spiritual significance of the daily angel number."
+										},
+										"coreMessage": {
+											"type": "string",
+											"description": "One to two sentence summary of the divine message for today. Ideal for push notifications, daily guidance widgets, and quick reference."
+										},
+										"type": {
+											"type": "string",
+											"description": "Pattern classification of the daily angel number. \"repeating\" means all digits are the same (111, 4444). \"sequential\" means consecutive digits (1234). \"mirror\" means palindrome or alternating pattern (1212, 1221)."
+										},
+										"digitRoot": {
+											"type": "number",
+											"description": "Numerology digit root calculated by summing all digits and reducing to a single digit. Links the daily angel number to its foundational numerology meaning."
+										},
+										"energy": {
+											"type": "string",
+											"description": "Overall energy classification. \"positive\" indicates encouraging, uplifting energy. \"neutral\" indicates transitional energy. \"cautionary\" indicates a gentle warning to rebalance or pay attention."
+										},
+										"meaning": {
+											"type": "object",
+											"properties": {
+												"spiritual": {
+													"type": "string",
+													"description": "Two to three paragraph spiritual interpretation covering divine guidance, higher purpose, and the metaphysical significance of the angel number selected for this date."
+												},
+												"love": {
+													"type": "string",
+													"description": "Love and relationship interpretation covering singles, couples, and those healing from past relationships. Includes romantic guidance and partnership advice."
+												},
+												"career": {
+													"type": "string",
+													"description": "Career and financial guidance including professional opportunities, money mindset, and practical advice for work life."
+												},
+												"twinFlame": {
+													"type": "string",
+													"description": "Twin flame connection interpretation covering union, separation, and spiritual growth within the twin flame journey."
+												}
+											},
+											"required": [
+												"spiritual",
+												"love",
+												"career",
+												"twinFlame"
+											],
+											"description": "Detailed interpretations across four life areas for the daily angel number."
+										},
+										"keywords": {
+											"type": "array",
+											"items": {
+												"type": "string"
+											},
+											"description": "Five to eight keywords capturing the spiritual themes and energy of the daily angel number. Useful for search, filtering, and content generation."
+										},
+										"affirmation": {
+											"type": "string",
+											"description": "Positive affirmation aligned with the daily angel number. Use for daily affirmation features, meditation guidance, or spiritual journal prompts."
+										},
+										"actionSteps": {
+											"type": "array",
+											"items": {
+												"type": "string"
+											},
+											"description": "Three to five specific, actionable steps to take today based on the angel number guidance. Practical spiritual advice for daily life."
+										}
+									},
+									"required": [
+										"date",
+										"seed",
+										"number",
+										"title",
+										"coreMessage",
+										"type",
+										"digitRoot",
+										"energy",
+										"meaning",
+										"keywords",
+										"affirmation",
+										"actionSteps"
+									]
+								}
+							}
+						}
+					},
+					"400": {
+						"description": "Validation error. `issues[]` lists every failed field.",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "First issue summary."
+										},
+										"code": {
+											"type": "string",
+											"enum": [
+												"validation_error"
+											]
+										},
+										"issues": {
+											"type": "array",
+											"description": "Every validation failure. Use this to rebuild a valid request.",
+											"items": {
+												"type": "object",
+												"properties": {
+													"path": {
+														"type": "string",
+														"description": "Dot-separated field path, or \"(root)\" for top-level."
+													},
+													"message": {
+														"type": "string"
+													},
+													"code": {
+														"type": "string",
+														"description": "Zod issue code (invalid_type, too_small, too_big, invalid_string, ...)."
+													},
+													"expected": {
+														"type": "string",
+														"description": "Expected type for invalid_type."
+													},
+													"minimum": {
+														"description": "Minimum bound for too_small issues.",
+														"oneOf": [
+															{
+																"type": "number"
+															},
+															{
+																"type": "string"
+															}
+														]
+													},
+													"maximum": {
+														"description": "Maximum bound for too_big issues.",
+														"oneOf": [
+															{
+																"type": "number"
+															},
+															{
+																"type": "string"
+															}
+														]
+													},
+													"inclusive": {
+														"type": "boolean"
+													},
+													"format": {
+														"type": "string",
+														"description": "Format name for string issues (regex, email, url, uuid)."
+													},
+													"pattern": {
+														"type": "string",
+														"description": "Regex pattern when format is regex."
+													}
+												},
+												"required": [
+													"path",
+													"message"
+												]
+											}
+										}
+									},
+									"required": [
+										"error",
+										"code",
+										"issues"
+									]
+								}
+							}
+						}
+					},
+					"401": {
+						"description": "Invalid or missing API key",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					},
+					"405": {
+						"description": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+						"headers": {
+							"Allow": {
+								"description": "Comma-separated list of allowed methods (RFC 9110).",
+								"schema": {
+									"type": "string"
+								}
+							}
+						},
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string"
+										},
+										"code": {
+											"type": "string",
+											"enum": [
+												"method_not_allowed"
+											]
+										},
+										"allow": {
+											"type": "array",
+											"items": {
+												"type": "string"
+											},
+											"description": "Allowed HTTP methods for this path. Mirrors the Allow response header."
+										},
+										"docs": {
+											"type": "string",
+											"description": "Link to the product page for this domain."
+										}
+									},
+									"required": [
+										"error",
+										"code",
+										"allow"
+									]
+								}
+							}
+						}
+					},
+					"429": {
+						"description": "Monthly rate limit exceeded",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					},
+					"500": {
+						"description": "Internal server error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

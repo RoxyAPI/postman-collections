@@ -1,0 +1,2124 @@
+{
+	"item": [
+		{
+			"id": "6a4da955-a874-4327-80c9-274979f1bed2",
+			"name": "Forecast",
+			"description": {
+				"content": "Merge upcoming transit aspects, sign ingresses, retrograde stations, Vimshottari dasha changes, and biorhythm critical days into one time-ordered forecast for a single subject. The only cross-domain forecast timeline behind one key, positions verified against NASA JPL Horizons, available over remote MCP with typed SDKs. Horizon capped at 90 days.",
+				"type": "text/plain"
+			},
+			"item": [
+				{
+					"id": "d7c5a28b-2fdb-4b95-b748-14494300b0d2",
+					"name": "Cross-domain forecast timeline - Transits, ingresses, stations, dasha changes, critical days",
+					"request": {
+						"name": "Cross-domain forecast timeline - Transits, ingresses, stations, dasha changes, critical days",
+						"description": {
+							"content": "Build one time-ordered forecast for a single birth subject by merging upcoming events across three domains: western transit-to-natal aspects, sign ingresses, and retrograde stations; vedic Vimshottari mahadasha and antardasha boundaries; and biorhythm critical days. The window is clamped to 90 days and events are capped and scored by significance. Built for what-is-coming dashboards, daily and weekly forecast feeds, and timing tools.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"timeline"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "POST",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						},
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -8.418902977344962,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": [
+						{
+							"id": "48211da5-c599-4e35-9ffc-a9bfc53bfee6",
+							"name": "Merged forecast timeline with time-ordered events across the requested domains",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"timeline"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -10.02316635574996,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -0.303892518471784,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"count\": 42,\n  \"events\": [\n    {\n      \"date\": \"2026-07-04\",\n      \"datetime\": \"2026-07-04T08:42:11Z\",\n      \"domain\": \"western\",\n      \"type\": \"transit-aspect\",\n      \"body\": \"Saturn\",\n      \"description\": \"Transiting Saturn square natal Moon, an exact aspect within 0.12 degrees.\",\n      \"significance\": 90,\n      \"target\": \"Moon\",\n      \"aspect\": \"square\",\n      \"orb\": 0.12,\n      \"station\": \"retrograde\",\n      \"kind\": \"total\",\n      \"obscuration\": 0.966\n    },\n    {\n      \"date\": \"2026-07-04\",\n      \"datetime\": \"2026-07-04T08:42:11Z\",\n      \"domain\": \"western\",\n      \"type\": \"transit-aspect\",\n      \"body\": \"Saturn\",\n      \"description\": \"Transiting Saturn square natal Moon, an exact aspect within 0.12 degrees.\",\n      \"significance\": 90,\n      \"target\": \"Moon\",\n      \"aspect\": \"square\",\n      \"orb\": 0.12,\n      \"station\": \"retrograde\",\n      \"kind\": \"total\",\n      \"obscuration\": 0.966\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "4a1ba149-94f5-4962-b468-ecd3276aa6b3",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"timeline"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -10.02316635574996,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9149.656465397391,\n      \"maximum\": 8384.399715043164,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8757.482209172362,\n      \"maximum\": 5182.189674787632,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "65a083c2-cf1c-49dd-a9d4-b82c2450f424",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"timeline"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -10.02316635574996,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "5ba1040a-427b-4bff-b4cd-731cce3c6960",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"timeline"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -10.02316635574996,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "14d8e04c-78ae-4990-95c4-7a3c6a3f5610",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"timeline"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -10.02316635574996,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "7f6dd8f0-c22c-4372-8fbe-3fe25f4a2931",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"timeline"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -10.02316635574996,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "7665c180-b43c-468c-bb80-d98342a4dadb",
+					"name": "Western transit forecast - Transit aspects, sign ingresses, retrograde stations",
+					"request": {
+						"name": "Western transit forecast - Transit aspects, sign ingresses, retrograde stations",
+						"description": {
+							"content": "Forecast the western astrology events for a single birth chart over a window up to 90 days: every transit-to-natal major aspect refined to its exact instant, every transiting planet sign ingress, and every retrograde or direct station. Returns a time-ordered, significance-scored timeline. Built for astrology forecast feeds, transit alerts, and timing tools.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"transits"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "POST",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						},
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 9.351630847620463,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"minSignificance\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": [
+						{
+							"id": "8a7a618d-1d7c-403e-8a03-67cbad434f41",
+							"name": "Time-ordered western transit events: aspects, ingresses, and stations",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"transits"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 9.351630847620463,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"minSignificance\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -0.303892518471784,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"count\": 42,\n  \"events\": [\n    {\n      \"date\": \"2026-07-04\",\n      \"datetime\": \"2026-07-04T08:42:11Z\",\n      \"domain\": \"western\",\n      \"type\": \"transit-aspect\",\n      \"body\": \"Saturn\",\n      \"description\": \"Transiting Saturn square natal Moon, an exact aspect within 0.12 degrees.\",\n      \"significance\": 90,\n      \"target\": \"Moon\",\n      \"aspect\": \"square\",\n      \"orb\": 0.12,\n      \"station\": \"retrograde\",\n      \"kind\": \"total\",\n      \"obscuration\": 0.966\n    },\n    {\n      \"date\": \"2026-07-04\",\n      \"datetime\": \"2026-07-04T08:42:11Z\",\n      \"domain\": \"western\",\n      \"type\": \"transit-aspect\",\n      \"body\": \"Saturn\",\n      \"description\": \"Transiting Saturn square natal Moon, an exact aspect within 0.12 degrees.\",\n      \"significance\": 90,\n      \"target\": \"Moon\",\n      \"aspect\": \"square\",\n      \"orb\": 0.12,\n      \"station\": \"retrograde\",\n      \"kind\": \"total\",\n      \"obscuration\": 0.966\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "7f4b55f7-4a83-4afc-83dd-21e93541db01",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"transits"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 9.351630847620463,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"minSignificance\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9149.656465397391,\n      \"maximum\": 8384.399715043164,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8757.482209172362,\n      \"maximum\": 5182.189674787632,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "eb36b51a-21ec-437a-a6f6-5409eb50246e",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"transits"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 9.351630847620463,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"minSignificance\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "ca191070-f7e0-48ed-84d0-52f2ab4a369b",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"transits"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 9.351630847620463,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"minSignificance\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "935fde31-4118-4bc7-a0d8-133798b2c02f",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"transits"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 9.351630847620463,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"minSignificance\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "9abf0926-05e5-466b-a3fe-bba6f513a23b",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"transits"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 9.351630847620463,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"minSignificance\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "214265b0-55ff-4035-9150-7775f6203644",
+					"name": "Significant dates - High-significance cross-domain forecast highlights",
+					"request": {
+						"name": "Significant dates - High-significance cross-domain forecast highlights",
+						"description": {
+							"content": "Return only the high-significance dates from the merged cross-domain forecast for a single birth subject: the rare outer-planet exact transit aspects, slow-planet sign ingresses, retrograde stations, and Vimshottari mahadasha and antardasha changes that mark genuine turning points. Defaults to a significance floor of 70 so the response is a short list of the most meaningful upcoming dates. Built for what-is-coming highlights, timing alerts, and at-a-glance forecast strips.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"significant-dates"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "POST",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						},
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 0.8113858537452376,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 70,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": [
+						{
+							"id": "dff48f58-1374-4974-9f48-65e9d43e7089",
+							"name": "High-significance forecast events across the requested domains",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"significant-dates"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -10.816202045574519,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 70,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -0.303892518471784,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"count\": 42,\n  \"events\": [\n    {\n      \"date\": \"2026-07-04\",\n      \"datetime\": \"2026-07-04T08:42:11Z\",\n      \"domain\": \"western\",\n      \"type\": \"transit-aspect\",\n      \"body\": \"Saturn\",\n      \"description\": \"Transiting Saturn square natal Moon, an exact aspect within 0.12 degrees.\",\n      \"significance\": 90,\n      \"target\": \"Moon\",\n      \"aspect\": \"square\",\n      \"orb\": 0.12,\n      \"station\": \"retrograde\",\n      \"kind\": \"total\",\n      \"obscuration\": 0.966\n    },\n    {\n      \"date\": \"2026-07-04\",\n      \"datetime\": \"2026-07-04T08:42:11Z\",\n      \"domain\": \"western\",\n      \"type\": \"transit-aspect\",\n      \"body\": \"Saturn\",\n      \"description\": \"Transiting Saturn square natal Moon, an exact aspect within 0.12 degrees.\",\n      \"significance\": 90,\n      \"target\": \"Moon\",\n      \"aspect\": \"square\",\n      \"orb\": 0.12,\n      \"station\": \"retrograde\",\n      \"kind\": \"total\",\n      \"obscuration\": 0.966\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "c8e44c9a-3a60-4171-b3a0-c0ca4398648b",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"significant-dates"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -10.816202045574519,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 70,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9149.656465397391,\n      \"maximum\": 8384.399715043164,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8757.482209172362,\n      \"maximum\": 5182.189674787632,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "83b12391-0ba8-46eb-aae5-1dbf5c18ca18",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"significant-dates"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -10.816202045574519,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 70,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "787ab6e0-3671-41de-b1d2-d5ec64e14a67",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"significant-dates"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -10.816202045574519,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 70,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "826157f3-3f29-4f57-8f92-5fae554c2c38",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"significant-dates"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -10.816202045574519,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 70,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "c3290241-173e-4d68-b22b-7e42d8c9cbed",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"significant-dates"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -10.816202045574519,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 70,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "cb0b3742-4036-4397-98ab-2c90d5b0de4c",
+					"name": "Forecast digest - Pre-summarized next 24h, 7d, 30d, and 90d rollups",
+					"request": {
+						"name": "Forecast digest - Pre-summarized next 24h, 7d, 30d, and 90d rollups",
+						"description": {
+							"content": "Roll the cross-domain forecast for a single birth subject into four pre-summarized windows: the next 24 hours, 7 days, 30 days, and 90 days from the start date. Each window returns its event count, a per-domain count breakdown, a per-type count breakdown, and the top highest-significance events. Built for a glanceable what-is-coming strip so a caller can render the upcoming highlights without scanning the full event list.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"digest"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "POST",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						},
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 5.414847818920791,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  },\n  \"top\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": [
+						{
+							"id": "85687dda-0eea-44ba-9aca-3d3e338ff648",
+							"name": "Pre-summarized forecast windows: next 24h, 7d, 30d, and 90d rollups",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"digest"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -6.094014540612509,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  },\n  \"top\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 0.8163635471644426,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-29\",\n  \"windows\": [\n    {\n      \"days\": 7,\n      \"from\": \"2026-06-01T00:00:00Z\",\n      \"to\": \"2026-06-08T00:00:00Z\",\n      \"count\": 5,\n      \"byDomain\": {\n        \"western\": 3,\n        \"vedic\": 1,\n        \"biorhythm\": 1\n      },\n      \"byType\": {\n        \"transit-aspect\": 3,\n        \"sign-ingress\": 1,\n        \"critical-day\": 1\n      },\n      \"top\": [\n        {\n          \"date\": \"2026-07-04\",\n          \"datetime\": \"2026-07-04T08:42:11Z\",\n          \"domain\": \"western\",\n          \"type\": \"transit-aspect\",\n          \"body\": \"Saturn\",\n          \"description\": \"Transiting Saturn square natal Moon, an exact aspect within 0.12 degrees.\",\n          \"significance\": 90,\n          \"target\": \"Moon\",\n          \"aspect\": \"square\",\n          \"orb\": 0.12,\n          \"station\": \"retrograde\",\n          \"kind\": \"total\",\n          \"obscuration\": 0.966\n        },\n        {\n          \"date\": \"2026-07-04\",\n          \"datetime\": \"2026-07-04T08:42:11Z\",\n          \"domain\": \"western\",\n          \"type\": \"transit-aspect\",\n          \"body\": \"Saturn\",\n          \"description\": \"Transiting Saturn square natal Moon, an exact aspect within 0.12 degrees.\",\n          \"significance\": 90,\n          \"target\": \"Moon\",\n          \"aspect\": \"square\",\n          \"orb\": 0.12,\n          \"station\": \"retrograde\",\n          \"kind\": \"total\",\n          \"obscuration\": 0.966\n        }\n      ]\n    },\n    {\n      \"days\": 7,\n      \"from\": \"2026-06-01T00:00:00Z\",\n      \"to\": \"2026-06-08T00:00:00Z\",\n      \"count\": 5,\n      \"byDomain\": {\n        \"western\": 3,\n        \"vedic\": 1,\n        \"biorhythm\": 1\n      },\n      \"byType\": {\n        \"transit-aspect\": 3,\n        \"sign-ingress\": 1,\n        \"critical-day\": 1\n      },\n      \"top\": [\n        {\n          \"date\": \"2026-07-04\",\n          \"datetime\": \"2026-07-04T08:42:11Z\",\n          \"domain\": \"western\",\n          \"type\": \"transit-aspect\",\n          \"body\": \"Saturn\",\n          \"description\": \"Transiting Saturn square natal Moon, an exact aspect within 0.12 degrees.\",\n          \"significance\": 90,\n          \"target\": \"Moon\",\n          \"aspect\": \"square\",\n          \"orb\": 0.12,\n          \"station\": \"retrograde\",\n          \"kind\": \"total\",\n          \"obscuration\": 0.966\n        },\n        {\n          \"date\": \"2026-07-04\",\n          \"datetime\": \"2026-07-04T08:42:11Z\",\n          \"domain\": \"western\",\n          \"type\": \"transit-aspect\",\n          \"body\": \"Saturn\",\n          \"description\": \"Transiting Saturn square natal Moon, an exact aspect within 0.12 degrees.\",\n          \"significance\": 90,\n          \"target\": \"Moon\",\n          \"aspect\": \"square\",\n          \"orb\": 0.12,\n          \"station\": \"retrograde\",\n          \"kind\": \"total\",\n          \"obscuration\": 0.966\n        }\n      ]\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "2ce1d183-18d2-4758-9956-5d3410015fc8",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"digest"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -6.094014540612509,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  },\n  \"top\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9149.656465397391,\n      \"maximum\": 8384.399715043164,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8757.482209172362,\n      \"maximum\": 5182.189674787632,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "de0067a4-d377-4506-9ac0-60c24ab8578f",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"digest"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -6.094014540612509,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  },\n  \"top\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "e2cdfdde-8e9b-4355-8dd0-cb1291c7a175",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"digest"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -6.094014540612509,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  },\n  \"top\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "908b0adc-040c-495e-8edc-fc620273cb40",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"digest"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -6.094014540612509,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  },\n  \"top\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "ec2574d6-7acb-4073-98c6-7d1571e0960b",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"digest"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -6.094014540612509,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  },\n  \"top\": 3\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "b00c6129-468e-4f66-9213-e3e0613a5803",
+					"name": "Solar return chart - Annual birthday forecast chart for a single subject",
+					"request": {
+						"name": "Solar return chart - Annual birthday forecast chart for a single subject",
+						"description": {
+							"content": "Cast the solar return chart for one subject and year: the chart erected for the exact moment the transiting Sun returns to its natal ecliptic longitude, the foundational technique for annual astrological forecasting. Returns the full tropical chart with planetary positions, house cusps, aspects, Ascendant, and Midheaven. Location-sensitive: pass the birthplace to anchor the chart to natal geography, or the current city for a relocated solar return where the houses and Ascendant shift to where you are on your birthday. Built for year-ahead forecast tools, birthday charts, and annual horoscope features.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"solar-return"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "POST",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						},
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"14:30:00\",\n  \"year\": 2026,\n  \"latitude\": 40.7128,\n  \"longitude\": -74.006,\n  \"timezone\": 1.5415572234024673,\n  \"houseSystem\": \"placidus\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": [
+						{
+							"id": "bb17b10a-2bc2-4cba-89c9-97950048d88e",
+							"name": "Solar return chart cast for the requested year and location",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"solar-return"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"14:30:00\",\n  \"year\": 2026,\n  \"latitude\": 40.7128,\n  \"longitude\": -74.006,\n  \"timezone\": 1.5415572234024673,\n  \"houseSystem\": \"placidus\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"birthDate\": \"1990-07-15\",\n  \"solarReturnDate\": \"2026-07-15T08:42:11\",\n  \"solarReturnYear\": 2026,\n  \"location\": {\n    \"latitude\": 40.7128,\n    \"longitude\": -74.006,\n    \"timezone\": -5\n  },\n  \"natalSunPosition\": {\n    \"longitude\": 112.45,\n    \"sign\": \"Cancer\",\n    \"degree\": 22.45\n  },\n  \"chart\": {\n    \"birthDetails\": {\n      \"date\": \"1990-07-15\",\n      \"time\": \"14:30:00\",\n      \"latitude\": 40.7128,\n      \"longitude\": -74.006,\n      \"timezone\": -5\n    },\n    \"planets\": [\n      {\n        \"name\": \"Sun\",\n        \"longitude\": 112.45,\n        \"latitude\": 0.01,\n        \"sign\": \"Cancer\",\n        \"degree\": 22.45,\n        \"house\": 7,\n        \"speed\": 0.9571,\n        \"isRetrograde\": false\n      },\n      {\n        \"name\": \"Sun\",\n        \"longitude\": 112.45,\n        \"latitude\": 0.01,\n        \"sign\": \"Cancer\",\n        \"degree\": 22.45,\n        \"house\": 7,\n        \"speed\": 0.9571,\n        \"isRetrograde\": false\n      }\n    ],\n    \"houses\": [\n      {\n        \"number\": 1,\n        \"longitude\": 45.32,\n        \"sign\": \"Taurus\",\n        \"degree\": 15.32\n      },\n      {\n        \"number\": 1,\n        \"longitude\": 45.32,\n        \"sign\": \"Taurus\",\n        \"degree\": 15.32\n      }\n    ],\n    \"houseSystem\": \"placidus\",\n    \"aspects\": [\n      {\n        \"planet1\": \"Sun\",\n        \"planet2\": \"Moon\",\n        \"type\": \"TRINE\",\n        \"angle\": 120,\n        \"orb\": 2.5,\n        \"isApplying\": true,\n        \"strength\": 75,\n        \"interpretation\": \"harmonious\"\n      },\n      {\n        \"planet1\": \"Sun\",\n        \"planet2\": \"Moon\",\n        \"type\": \"TRINE\",\n        \"angle\": 120,\n        \"orb\": 2.5,\n        \"isApplying\": true,\n        \"strength\": 75,\n        \"interpretation\": \"harmonious\"\n      }\n    ],\n    \"partOfFortune\": {\n      \"sign\": \"Aries\",\n      \"degree\": 27.24,\n      \"longitude\": 27.24,\n      \"sect\": \"night\"\n    },\n    \"vertex\": {\n      \"sign\": \"Virgo\",\n      \"degree\": 12.9,\n      \"longitude\": 162.9\n    }\n  }\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "63ef3aa7-6746-4c59-a7b4-2ee602f71be8",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"solar-return"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"14:30:00\",\n  \"year\": 2026,\n  \"latitude\": 40.7128,\n  \"longitude\": -74.006,\n  \"timezone\": 1.5415572234024673,\n  \"houseSystem\": \"placidus\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9149.656465397391,\n      \"maximum\": 8384.399715043164,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8757.482209172362,\n      \"maximum\": 5182.189674787632,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "92a4158a-a9a1-4eed-8b7b-942af8f2519c",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"solar-return"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"14:30:00\",\n  \"year\": 2026,\n  \"latitude\": 40.7128,\n  \"longitude\": -74.006,\n  \"timezone\": 1.5415572234024673,\n  \"houseSystem\": \"placidus\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "d3e0a9da-45d5-4498-9a0d-29c107e32e94",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"solar-return"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"14:30:00\",\n  \"year\": 2026,\n  \"latitude\": 40.7128,\n  \"longitude\": -74.006,\n  \"timezone\": 1.5415572234024673,\n  \"houseSystem\": \"placidus\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "a6a3e879-b611-4ac9-9067-43ced5c56312",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"solar-return"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"14:30:00\",\n  \"year\": 2026,\n  \"latitude\": 40.7128,\n  \"longitude\": -74.006,\n  \"timezone\": 1.5415572234024673,\n  \"houseSystem\": \"placidus\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "23dbf089-5bd5-4c18-8867-282a088d14d8",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"solar-return"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"14:30:00\",\n  \"year\": 2026,\n  \"latitude\": 40.7128,\n  \"longitude\": -74.006,\n  \"timezone\": 1.5415572234024673,\n  \"houseSystem\": \"placidus\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				}
+			],
+			"event": []
+		}
+	],
+	"event": [],
+	"variable": [
+		{
+			"type": "string",
+			"value": "https://roxyapi.com/api/v2/forecast",
+			"key": "baseUrl"
+		},
+		{
+			"key": "apiKey",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "roxySlug",
+			"value": "forecast",
+			"type": "string"
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "X-API-Key"
+			},
+			{
+				"key": "value",
+				"value": "{{apiKey}}"
+			},
+			{
+				"key": "in",
+				"value": "header"
+			}
+		]
+	},
+	"info": {
+		"_postman_id": "cbba04f2-c5e1-45cd-8b97-c858c55f4771",
+		"name": "Forecast API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"description": {
+			"content": "Merge upcoming transit aspects, sign ingresses, retrograde stations, Vimshottari dasha changes, and biorhythm critical days into one time-ordered forecast for a single subject. The only cross-domain forecast timeline behind one key, positions verified against NASA JPL Horizons, available over remote MCP with typed SDKs. Horizon capped at 90 days.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, human design, forecast, biorhythm, tarot, numerology, crystals, dreams, I-Ching, angel numbers, location), 148+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (MCP)\n\nRoxyAPI has native Model Context Protocol support. Your AI agent auto-discovers all 148+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
+			"type": "text/plain"
+		}
+	}
+}

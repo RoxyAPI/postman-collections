@@ -1,0 +1,1514 @@
+{
+	"openapi": "3.1.0",
+	"info": {
+		"title": "Dream Interpretation API",
+		"version": "2.0.0",
+		"description": "Dream interpretation API + hosted MCP for AI agents and developers. Connect Claude Code, Cursor, VS Code in seconds, no local setup. 2,000+ dream symbols with psychological meanings covering animals, objects, emotions, people, scenarios, and abstract concepts. Decode falling dreams, flying dreams, teeth falling out, being chased, water, snakes, and more. Search, browse A-Z, or discover random symbols. Build dream journal apps, AI dream analysis chatbots, sleep tracking features, and wellness platforms. Part of RoxyAPI multi-domain spiritual intelligence.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, human design, forecast, biorhythm, tarot, numerology, crystals, dreams, I-Ching, angel numbers, location), 148+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (MCP)\n\nRoxyAPI has native Model Context Protocol support. Your AI agent auto-discovers all 148+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n",
+		"contact": {
+			"name": "RoxyAPI Support",
+			"url": "https://roxyapi.com/contact"
+		},
+		"license": {
+			"name": "Proprietary",
+			"url": "https://roxyapi.com/policy/terms"
+		}
+	},
+	"externalDocs": {
+		"description": "Complete API Documentation with Examples",
+		"url": "https://roxyapi.com/docs"
+	},
+	"servers": [
+		{
+			"url": "/api/v2",
+			"description": "Production API v2"
+		}
+	],
+	"security": [
+		{
+			"apiKey": []
+		}
+	],
+	"tags": [
+		{
+			"name": "Dreams",
+			"description": "Dream interpretation API + hosted MCP for AI agents and developers. Connect Claude Code, Cursor, VS Code in seconds, no local setup. 2,000+ dream symbols with psychological meanings covering animals, objects, emotions, people, scenarios, and abstract concepts. Decode falling dreams, flying dreams, teeth falling out, being chased, water, snakes, and more. Search, browse A-Z, or discover random symbols. Build dream journal apps, AI dream analysis chatbots, sleep tracking features, and wellness platforms. Part of RoxyAPI multi-domain spiritual intelligence."
+		}
+	],
+	"components": {
+		"securitySchemes": {
+			"apiKey": {
+				"type": "apiKey",
+				"in": "header",
+				"name": "X-API-Key",
+				"description": "Your API key for accessing RoxyAPI. Alternatively, you can pass the API key as a query parameter \"api_key\"."
+			}
+		},
+		"schemas": {
+			"BasicDreamSymbol": {
+				"type": "object",
+				"properties": {
+					"id": {
+						"type": "string",
+						"example": "snake",
+						"description": "Unique symbol identifier in kebab-case."
+					},
+					"name": {
+						"type": "string",
+						"example": "Snake",
+						"description": "Display name of the dream symbol."
+					},
+					"letter": {
+						"type": "string",
+						"example": "s",
+						"description": "Starting letter for alphabetical filtering."
+					}
+				},
+				"required": [
+					"id",
+					"name",
+					"letter"
+				]
+			},
+			"DreamSymbol": {
+				"type": "object",
+				"properties": {
+					"id": {
+						"type": "string",
+						"example": "snake",
+						"description": "Unique symbol identifier in kebab-case. Use this to fetch full interpretation via /symbols/{id}."
+					},
+					"name": {
+						"type": "string",
+						"example": "Snake",
+						"description": "Display name of the dream symbol."
+					},
+					"letter": {
+						"type": "string",
+						"example": "s",
+						"description": "Starting letter (a-z) for alphabetical dream dictionary navigation."
+					},
+					"meaning": {
+						"type": "string",
+						"example": "To see a snake in your dream signifies hidden fears and worries that are threatening you. Your dream may be alerting you to something in your waking life that you are not aware of or that has not yet surfaced.",
+						"description": "Full psychological dream interpretation explaining the subconscious symbolism, emotional significance, and waking-life connections of this dream symbol."
+					}
+				},
+				"required": [
+					"id",
+					"name",
+					"letter",
+					"meaning"
+				]
+			}
+		},
+		"parameters": {}
+	},
+	"paths": {
+		"/symbols": {
+			"get": {
+				"operationId": "searchDreamSymbols",
+				"tags": [
+					"Dreams"
+				],
+				"summary": "List and search dream symbols",
+				"description": "Browse and search our complete dream interpretation dictionary containing 2,000+ dream symbols with psychological meanings. Find dream meanings for animals (snake dreams, spider dreams, dog dreams), common scenarios (falling dreams, flying dreams, being chased, drowning), people (dreams about mother, father, baby, ex), objects (car, house, water, fire), emotions (fear, anxiety, love), body parts (teeth falling out, hair, eyes), colors, numbers, and abstract concepts. Filter by starting letter for A-Z navigation or search by keyword to find what your dreams mean.",
+				"security": [
+					{
+						"apiKey": []
+					}
+				],
+				"parameters": [
+					{
+						"schema": {
+							"type": "string",
+							"minLength": 1,
+							"maxLength": 100,
+							"example": "water",
+							"description": "Search query to match against symbol names and meanings. Case-insensitive."
+						},
+						"required": false,
+						"description": "Search query to match against symbol names and meanings. Case-insensitive.",
+						"name": "q",
+						"in": "query"
+					},
+					{
+						"schema": {
+							"type": "string",
+							"minLength": 1,
+							"maxLength": 1,
+							"example": "a",
+							"description": "Filter symbols by starting letter (a-z). Case-insensitive."
+						},
+						"required": false,
+						"description": "Filter symbols by starting letter (a-z). Case-insensitive.",
+						"name": "letter",
+						"in": "query"
+					},
+					{
+						"schema": {
+							"type": "integer",
+							"minimum": 1,
+							"maximum": 50,
+							"default": 20,
+							"example": 20,
+							"description": "Maximum items to return per page. Range: 1-50, default 20."
+						},
+						"required": false,
+						"description": "Maximum items to return per page. Range: 1-50, default 20.",
+						"name": "limit",
+						"in": "query"
+					},
+					{
+						"schema": {
+							"type": "integer",
+							"nullable": true,
+							"minimum": 0,
+							"default": 0,
+							"example": 0,
+							"description": "Number of items to skip for pagination. Default 0."
+						},
+						"required": false,
+						"description": "Number of items to skip for pagination. Default 0.",
+						"name": "offset",
+						"in": "query"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Paginated list of dream symbols with basic information.",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"total": {
+											"type": "number",
+											"example": 2526,
+											"description": "Total number of dream symbols matching your search or filter criteria."
+										},
+										"limit": {
+											"type": "number",
+											"example": 50,
+											"description": "Page size used for this response."
+										},
+										"offset": {
+											"type": "number",
+											"example": 0,
+											"description": "Number of symbols skipped. Use with limit for pagination."
+										},
+										"symbols": {
+											"type": "array",
+											"items": {
+												"$ref": "#/components/schemas/BasicDreamSymbol"
+											},
+											"description": "Dream symbols for the current page. Use /symbols/{id} to get full interpretation."
+										}
+									},
+									"required": [
+										"total",
+										"limit",
+										"offset",
+										"symbols"
+									]
+								}
+							}
+						}
+					},
+					"400": {
+						"description": "Validation error. `issues[]` lists every failed field.",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "First issue summary."
+										},
+										"code": {
+											"type": "string",
+											"enum": [
+												"validation_error"
+											]
+										},
+										"issues": {
+											"type": "array",
+											"description": "Every validation failure. Use this to rebuild a valid request.",
+											"items": {
+												"type": "object",
+												"properties": {
+													"path": {
+														"type": "string",
+														"description": "Dot-separated field path, or \"(root)\" for top-level."
+													},
+													"message": {
+														"type": "string"
+													},
+													"code": {
+														"type": "string",
+														"description": "Zod issue code (invalid_type, too_small, too_big, invalid_string, ...)."
+													},
+													"expected": {
+														"type": "string",
+														"description": "Expected type for invalid_type."
+													},
+													"minimum": {
+														"description": "Minimum bound for too_small issues.",
+														"oneOf": [
+															{
+																"type": "number"
+															},
+															{
+																"type": "string"
+															}
+														]
+													},
+													"maximum": {
+														"description": "Maximum bound for too_big issues.",
+														"oneOf": [
+															{
+																"type": "number"
+															},
+															{
+																"type": "string"
+															}
+														]
+													},
+													"inclusive": {
+														"type": "boolean"
+													},
+													"format": {
+														"type": "string",
+														"description": "Format name for string issues (regex, email, url, uuid)."
+													},
+													"pattern": {
+														"type": "string",
+														"description": "Regex pattern when format is regex."
+													}
+												},
+												"required": [
+													"path",
+													"message"
+												]
+											}
+										}
+									},
+									"required": [
+										"error",
+										"code",
+										"issues"
+									]
+								}
+							}
+						}
+					},
+					"401": {
+						"description": "Invalid or missing API key",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					},
+					"405": {
+						"description": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+						"headers": {
+							"Allow": {
+								"description": "Comma-separated list of allowed methods (RFC 9110).",
+								"schema": {
+									"type": "string"
+								}
+							}
+						},
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string"
+										},
+										"code": {
+											"type": "string",
+											"enum": [
+												"method_not_allowed"
+											]
+										},
+										"allow": {
+											"type": "array",
+											"items": {
+												"type": "string"
+											},
+											"description": "Allowed HTTP methods for this path. Mirrors the Allow response header."
+										},
+										"docs": {
+											"type": "string",
+											"description": "Link to the product page for this domain."
+										}
+									},
+									"required": [
+										"error",
+										"code",
+										"allow"
+									]
+								}
+							}
+						}
+					},
+					"429": {
+						"description": "Monthly rate limit exceeded",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					},
+					"500": {
+						"description": "Internal server error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/symbols/random": {
+			"get": {
+				"operationId": "getRandomSymbols",
+				"tags": [
+					"Dreams"
+				],
+				"summary": "Get random dream symbols",
+				"description": "Discover random dream symbols and their interpretations for daily dream insights and exploration. Each request returns different symbols from the 2,000+ dream meaning database - perfect for dream of the day features, dream journaling prompts, meditation on subconscious themes, or exploring what different dreams mean. Get one or multiple random dream interpretations with full psychological meanings.",
+				"security": [
+					{
+						"apiKey": []
+					}
+				],
+				"parameters": [
+					{
+						"schema": {
+							"type": "number",
+							"minimum": 1,
+							"maximum": 10,
+							"default": 1,
+							"example": 1,
+							"description": "Number of random symbols to return (1-10). Default: 1."
+						},
+						"required": false,
+						"description": "Number of random symbols to return (1-10). Default: 1.",
+						"name": "count",
+						"in": "query"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Random dream symbol(s) with full interpretations.",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"symbols": {
+											"type": "array",
+											"items": {
+												"$ref": "#/components/schemas/DreamSymbol"
+											}
+										}
+									},
+									"required": [
+										"symbols"
+									]
+								}
+							}
+						}
+					},
+					"400": {
+						"description": "Validation error. `issues[]` lists every failed field.",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "First issue summary."
+										},
+										"code": {
+											"type": "string",
+											"enum": [
+												"validation_error"
+											]
+										},
+										"issues": {
+											"type": "array",
+											"description": "Every validation failure. Use this to rebuild a valid request.",
+											"items": {
+												"type": "object",
+												"properties": {
+													"path": {
+														"type": "string",
+														"description": "Dot-separated field path, or \"(root)\" for top-level."
+													},
+													"message": {
+														"type": "string"
+													},
+													"code": {
+														"type": "string",
+														"description": "Zod issue code (invalid_type, too_small, too_big, invalid_string, ...)."
+													},
+													"expected": {
+														"type": "string",
+														"description": "Expected type for invalid_type."
+													},
+													"minimum": {
+														"description": "Minimum bound for too_small issues.",
+														"oneOf": [
+															{
+																"type": "number"
+															},
+															{
+																"type": "string"
+															}
+														]
+													},
+													"maximum": {
+														"description": "Maximum bound for too_big issues.",
+														"oneOf": [
+															{
+																"type": "number"
+															},
+															{
+																"type": "string"
+															}
+														]
+													},
+													"inclusive": {
+														"type": "boolean"
+													},
+													"format": {
+														"type": "string",
+														"description": "Format name for string issues (regex, email, url, uuid)."
+													},
+													"pattern": {
+														"type": "string",
+														"description": "Regex pattern when format is regex."
+													}
+												},
+												"required": [
+													"path",
+													"message"
+												]
+											}
+										}
+									},
+									"required": [
+										"error",
+										"code",
+										"issues"
+									]
+								}
+							}
+						}
+					},
+					"401": {
+						"description": "Invalid or missing API key",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					},
+					"405": {
+						"description": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+						"headers": {
+							"Allow": {
+								"description": "Comma-separated list of allowed methods (RFC 9110).",
+								"schema": {
+									"type": "string"
+								}
+							}
+						},
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string"
+										},
+										"code": {
+											"type": "string",
+											"enum": [
+												"method_not_allowed"
+											]
+										},
+										"allow": {
+											"type": "array",
+											"items": {
+												"type": "string"
+											},
+											"description": "Allowed HTTP methods for this path. Mirrors the Allow response header."
+										},
+										"docs": {
+											"type": "string",
+											"description": "Link to the product page for this domain."
+										}
+									},
+									"required": [
+										"error",
+										"code",
+										"allow"
+									]
+								}
+							}
+						}
+					},
+					"429": {
+						"description": "Monthly rate limit exceeded",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					},
+					"500": {
+						"description": "Internal server error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/symbols/letters": {
+			"get": {
+				"operationId": "getSymbolLetterCounts",
+				"tags": [
+					"Dreams"
+				],
+				"summary": "Get symbol counts by letter",
+				"description": "Get the count of dream symbols available for each letter A-Z. Build alphabetical dream dictionary navigation to help users browse dream interpretations by letter - from abandonment dreams to zodiac dreams. See how many dream meanings exist for each starting letter.",
+				"security": [
+					{
+						"apiKey": []
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Symbol counts organized by starting letter.",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"letters": {
+											"type": "object",
+											"additionalProperties": {
+												"type": "number"
+											},
+											"example": {
+												"a": 138,
+												"b": 282,
+												"c": 324,
+												"d": 173
+											},
+											"description": "Map of starting letter to symbol count. Use to build A-Z dream dictionary navigation showing how many dream meanings exist per letter."
+										},
+										"total": {
+											"type": "number",
+											"example": 2526,
+											"description": "Total number of dream symbols in the complete dream interpretation database."
+										}
+									},
+									"required": [
+										"letters",
+										"total"
+									]
+								}
+							}
+						}
+					},
+					"400": {
+						"description": "Validation error. `issues[]` lists every failed field.",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "First issue summary."
+										},
+										"code": {
+											"type": "string",
+											"enum": [
+												"validation_error"
+											]
+										},
+										"issues": {
+											"type": "array",
+											"description": "Every validation failure. Use this to rebuild a valid request.",
+											"items": {
+												"type": "object",
+												"properties": {
+													"path": {
+														"type": "string",
+														"description": "Dot-separated field path, or \"(root)\" for top-level."
+													},
+													"message": {
+														"type": "string"
+													},
+													"code": {
+														"type": "string",
+														"description": "Zod issue code (invalid_type, too_small, too_big, invalid_string, ...)."
+													},
+													"expected": {
+														"type": "string",
+														"description": "Expected type for invalid_type."
+													},
+													"minimum": {
+														"description": "Minimum bound for too_small issues.",
+														"oneOf": [
+															{
+																"type": "number"
+															},
+															{
+																"type": "string"
+															}
+														]
+													},
+													"maximum": {
+														"description": "Maximum bound for too_big issues.",
+														"oneOf": [
+															{
+																"type": "number"
+															},
+															{
+																"type": "string"
+															}
+														]
+													},
+													"inclusive": {
+														"type": "boolean"
+													},
+													"format": {
+														"type": "string",
+														"description": "Format name for string issues (regex, email, url, uuid)."
+													},
+													"pattern": {
+														"type": "string",
+														"description": "Regex pattern when format is regex."
+													}
+												},
+												"required": [
+													"path",
+													"message"
+												]
+											}
+										}
+									},
+									"required": [
+										"error",
+										"code",
+										"issues"
+									]
+								}
+							}
+						}
+					},
+					"401": {
+						"description": "Invalid or missing API key",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					},
+					"405": {
+						"description": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+						"headers": {
+							"Allow": {
+								"description": "Comma-separated list of allowed methods (RFC 9110).",
+								"schema": {
+									"type": "string"
+								}
+							}
+						},
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string"
+										},
+										"code": {
+											"type": "string",
+											"enum": [
+												"method_not_allowed"
+											]
+										},
+										"allow": {
+											"type": "array",
+											"items": {
+												"type": "string"
+											},
+											"description": "Allowed HTTP methods for this path. Mirrors the Allow response header."
+										},
+										"docs": {
+											"type": "string",
+											"description": "Link to the product page for this domain."
+										}
+									},
+									"required": [
+										"error",
+										"code",
+										"allow"
+									]
+								}
+							}
+						}
+					},
+					"429": {
+						"description": "Monthly rate limit exceeded",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					},
+					"500": {
+						"description": "Internal server error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/symbols/{id}": {
+			"get": {
+				"operationId": "getDreamSymbol",
+				"tags": [
+					"Dreams"
+				],
+				"summary": "Get dream symbol details",
+				"description": "Get the complete dream interpretation for a specific symbol. Understand what your dream means with detailed psychological analysis covering subconscious symbolism, emotional significance, and connections to your waking life. Covers all major dream themes: snake dreams (hidden fears, transformation), falling dreams (loss of control, anxiety), water dreams (emotions, cleansing), death dreams (endings, transformation), teeth falling out (self-image, communication anxiety), being chased (avoidance, confronting fears), flying dreams (freedom, ambition), and thousands more dream meanings.",
+				"security": [
+					{
+						"apiKey": []
+					}
+				],
+				"parameters": [
+					{
+						"schema": {
+							"type": "string",
+							"example": "snake",
+							"description": "Unique symbol identifier in kebab-case (e.g., \"snake\", \"being-chased\", \"teeth-falling-out\")."
+						},
+						"required": true,
+						"description": "Unique symbol identifier in kebab-case (e.g., \"snake\", \"being-chased\", \"teeth-falling-out\").",
+						"name": "id",
+						"in": "path"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Full dream symbol with interpretation.",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/DreamSymbol"
+								}
+							}
+						}
+					},
+					"400": {
+						"description": "Validation error. `issues[]` lists every failed field.",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "First issue summary."
+										},
+										"code": {
+											"type": "string",
+											"enum": [
+												"validation_error"
+											]
+										},
+										"issues": {
+											"type": "array",
+											"description": "Every validation failure. Use this to rebuild a valid request.",
+											"items": {
+												"type": "object",
+												"properties": {
+													"path": {
+														"type": "string",
+														"description": "Dot-separated field path, or \"(root)\" for top-level."
+													},
+													"message": {
+														"type": "string"
+													},
+													"code": {
+														"type": "string",
+														"description": "Zod issue code (invalid_type, too_small, too_big, invalid_string, ...)."
+													},
+													"expected": {
+														"type": "string",
+														"description": "Expected type for invalid_type."
+													},
+													"minimum": {
+														"description": "Minimum bound for too_small issues.",
+														"oneOf": [
+															{
+																"type": "number"
+															},
+															{
+																"type": "string"
+															}
+														]
+													},
+													"maximum": {
+														"description": "Maximum bound for too_big issues.",
+														"oneOf": [
+															{
+																"type": "number"
+															},
+															{
+																"type": "string"
+															}
+														]
+													},
+													"inclusive": {
+														"type": "boolean"
+													},
+													"format": {
+														"type": "string",
+														"description": "Format name for string issues (regex, email, url, uuid)."
+													},
+													"pattern": {
+														"type": "string",
+														"description": "Regex pattern when format is regex."
+													}
+												},
+												"required": [
+													"path",
+													"message"
+												]
+											}
+										}
+									},
+									"required": [
+										"error",
+										"code",
+										"issues"
+									]
+								}
+							}
+						}
+					},
+					"401": {
+						"description": "Invalid or missing API key",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					},
+					"404": {
+						"description": "Symbol not found.",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"example": "Resource not found",
+											"description": "Human-readable error message. May change wording — do not parse programmatically."
+										},
+										"code": {
+											"type": "string",
+											"example": "not_found",
+											"description": "Machine-readable error code. Stable identifier for programmatic error handling."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					},
+					"405": {
+						"description": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+						"headers": {
+							"Allow": {
+								"description": "Comma-separated list of allowed methods (RFC 9110).",
+								"schema": {
+									"type": "string"
+								}
+							}
+						},
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string"
+										},
+										"code": {
+											"type": "string",
+											"enum": [
+												"method_not_allowed"
+											]
+										},
+										"allow": {
+											"type": "array",
+											"items": {
+												"type": "string"
+											},
+											"description": "Allowed HTTP methods for this path. Mirrors the Allow response header."
+										},
+										"docs": {
+											"type": "string",
+											"description": "Link to the product page for this domain."
+										}
+									},
+									"required": [
+										"error",
+										"code",
+										"allow"
+									]
+								}
+							}
+						}
+					},
+					"429": {
+						"description": "Monthly rate limit exceeded",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					},
+					"500": {
+						"description": "Internal server error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/daily": {
+			"post": {
+				"operationId": "getDailyDreamSymbol",
+				"tags": [
+					"Dreams"
+				],
+				"summary": "Get daily dream symbol",
+				"description": "Receive a single dream symbol for daily reflection and subconscious exploration. Uses seeded randomness so the same seed gets the same symbol on the same day, perfect for \"Dream Symbol of the Day\" features. Provide a seed (userId, email hash, session token) for reproducible consistency, or omit for date-based daily symbols. Returns the symbol with full psychological interpretation. Great for dream journal apps, wellness platforms, morning ritual apps, and meditation tools.",
+				"security": [
+					{
+						"apiKey": []
+					}
+				],
+				"requestBody": {
+					"required": false,
+					"content": {
+						"application/json": {
+							"schema": {
+								"type": "object",
+								"properties": {
+									"seed": {
+										"type": "string",
+										"example": "user123",
+										"description": "Optional seed for reproducible readings. Same seed + same date = same symbol every time. Pass any unique identifier (userId, email hash, session token). Omit for anonymous daily readings."
+									},
+									"date": {
+										"type": "string",
+										"format": "date",
+										"example": "2026-03-06",
+										"description": "Date for the reading in YYYY-MM-DD format. Defaults to today (UTC). Useful for viewing past daily readings or pre-generating future ones."
+									}
+								}
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "Daily dream symbol with interpretation",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"date": {
+											"type": "string",
+											"description": "Date of the daily dream symbol in YYYY-MM-DD format (UTC). Determines which symbol is selected for seeded readings."
+										},
+										"seed": {
+											"type": "string",
+											"description": "Seed used for this daily reading. Same seed on the same date always produces the identical symbol."
+										},
+										"symbol": {
+											"type": "object",
+											"properties": {
+												"id": {
+													"type": "string",
+													"description": "Unique symbol identifier in kebab-case. Use this to fetch full details via /symbols/{id}."
+												},
+												"name": {
+													"type": "string",
+													"description": "Display name of the dream symbol."
+												},
+												"letter": {
+													"type": "string",
+													"description": "Starting letter (a-z) for alphabetical navigation."
+												},
+												"meaning": {
+													"type": "string",
+													"description": "Full psychological dream interpretation explaining the subconscious symbolism, emotional significance, and waking-life connections."
+												}
+											},
+											"required": [
+												"id",
+												"name",
+												"letter",
+												"meaning"
+											]
+										},
+										"dailyMessage": {
+											"type": "string",
+											"description": "Concise daily message summarizing the dream symbol and its key themes for quick reflection."
+										}
+									},
+									"required": [
+										"date",
+										"seed",
+										"symbol",
+										"dailyMessage"
+									]
+								}
+							}
+						}
+					},
+					"400": {
+						"description": "Validation error. `issues[]` lists every failed field.",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "First issue summary."
+										},
+										"code": {
+											"type": "string",
+											"enum": [
+												"validation_error"
+											]
+										},
+										"issues": {
+											"type": "array",
+											"description": "Every validation failure. Use this to rebuild a valid request.",
+											"items": {
+												"type": "object",
+												"properties": {
+													"path": {
+														"type": "string",
+														"description": "Dot-separated field path, or \"(root)\" for top-level."
+													},
+													"message": {
+														"type": "string"
+													},
+													"code": {
+														"type": "string",
+														"description": "Zod issue code (invalid_type, too_small, too_big, invalid_string, ...)."
+													},
+													"expected": {
+														"type": "string",
+														"description": "Expected type for invalid_type."
+													},
+													"minimum": {
+														"description": "Minimum bound for too_small issues.",
+														"oneOf": [
+															{
+																"type": "number"
+															},
+															{
+																"type": "string"
+															}
+														]
+													},
+													"maximum": {
+														"description": "Maximum bound for too_big issues.",
+														"oneOf": [
+															{
+																"type": "number"
+															},
+															{
+																"type": "string"
+															}
+														]
+													},
+													"inclusive": {
+														"type": "boolean"
+													},
+													"format": {
+														"type": "string",
+														"description": "Format name for string issues (regex, email, url, uuid)."
+													},
+													"pattern": {
+														"type": "string",
+														"description": "Regex pattern when format is regex."
+													}
+												},
+												"required": [
+													"path",
+													"message"
+												]
+											}
+										}
+									},
+									"required": [
+										"error",
+										"code",
+										"issues"
+									]
+								}
+							}
+						}
+					},
+					"401": {
+						"description": "Invalid or missing API key",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					},
+					"405": {
+						"description": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+						"headers": {
+							"Allow": {
+								"description": "Comma-separated list of allowed methods (RFC 9110).",
+								"schema": {
+									"type": "string"
+								}
+							}
+						},
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string"
+										},
+										"code": {
+											"type": "string",
+											"enum": [
+												"method_not_allowed"
+											]
+										},
+										"allow": {
+											"type": "array",
+											"items": {
+												"type": "string"
+											},
+											"description": "Allowed HTTP methods for this path. Mirrors the Allow response header."
+										},
+										"docs": {
+											"type": "string",
+											"description": "Link to the product page for this domain."
+										}
+									},
+									"required": [
+										"error",
+										"code",
+										"allow"
+									]
+								}
+							}
+						}
+					},
+					"429": {
+						"description": "Monthly rate limit exceeded",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					},
+					"500": {
+						"description": "Internal server error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

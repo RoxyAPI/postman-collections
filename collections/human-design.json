@@ -1,0 +1,5076 @@
+{
+	"item": [
+		{
+			"id": "8381dee6-1f52-40ea-a18b-0ed4e68db28a",
+			"name": "Human Design",
+			"description": {
+				"content": "Generate the full Human Design bodygraph from a birth moment: type, strategy, inner authority, profile, definition, incarnation cross, the nine centers, defined channels, and all 26 gate activations, plus two-person connection charts and small-group Penta analysis. Planetary positions verified against NASA JPL Horizons, the Design side solved on the exact 88 degree solar arc. One key, remote MCP, typed SDKs, 12 endpoints.",
+				"type": "text/plain"
+			},
+			"item": [
+				{
+					"id": "6bdb4016-988d-4941-92cf-4a694a5b4c92",
+					"name": "Generate full Human Design bodygraph - Type, authority, profile, centers, channels, gates",
+					"request": {
+						"name": "Generate full Human Design bodygraph - Type, authority, profile, centers, channels, gates",
+						"description": {
+							"content": "Generate a complete Human Design bodygraph from a birth date, time, and timezone. Returns the energy type, strategy, inner authority, signature, not-self theme, profile, definition, incarnation cross, all nine centers with defined state and active gates, the defined channels, and all 26 planetary activations across the Personality and Design sides. The single endpoint for a full chart in one call, built for Human Design apps, readings, and coaching tools.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"bodygraph"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "POST",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						},
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": [
+						{
+							"id": "4fdd2afa-39cc-42a6-8fbe-ce388acf0628",
+							"name": "Complete bodygraph with type, authority, profile, centers, channels, and gates",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"bodygraph"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"type\": \"Manifestor\",\n  \"strategy\": \"Inform\",\n  \"authority\": \"Emotional\",\n  \"signature\": \"Peace\",\n  \"notSelf\": \"Anger\",\n  \"profile\": \"5/1\",\n  \"definition\": \"Split\",\n  \"incarnationCross\": {\n    \"gates\": [\n      51,\n      57,\n      61,\n      62\n    ],\n    \"angle\": \"Left Angle\",\n    \"angleCode\": \"LAX\",\n    \"name\": \"Left Angle Cross of the Clarion\"\n  },\n  \"centers\": [\n    {\n      \"id\": \"sacral\",\n      \"name\": \"Sacral\",\n      \"defined\": true,\n      \"motor\": true,\n      \"awareness\": false,\n      \"theme\": \"string\",\n      \"gates\": [\n        5,\n        14,\n        34\n      ]\n    },\n    {\n      \"id\": \"sacral\",\n      \"name\": \"Sacral\",\n      \"defined\": true,\n      \"motor\": true,\n      \"awareness\": false,\n      \"theme\": \"string\",\n      \"gates\": [\n        5,\n        14,\n        34\n      ]\n    }\n  ],\n  \"channels\": [\n    {\n      \"gateA\": 34,\n      \"gateB\": 20,\n      \"name\": \"Charisma\",\n      \"circuit\": \"Individual\",\n      \"centers\": [\n        \"throat\",\n        \"sacral\"\n      ]\n    },\n    {\n      \"gateA\": 34,\n      \"gateB\": 20,\n      \"name\": \"Charisma\",\n      \"circuit\": \"Individual\",\n      \"centers\": [\n        \"throat\",\n        \"sacral\"\n      ]\n    }\n  ],\n  \"gates\": [\n    {\n      \"planet\": \"Sun\",\n      \"side\": \"personality\",\n      \"gate\": 51,\n      \"line\": 5,\n      \"gateName\": \"Shock\",\n      \"ichingHexagram\": {\n        \"number\": 51,\n        \"english\": \"The Arousing\"\n      }\n    },\n    {\n      \"planet\": \"Sun\",\n      \"side\": \"personality\",\n      \"gate\": 51,\n      \"line\": 5,\n      \"gateName\": \"Shock\",\n      \"ichingHexagram\": {\n        \"number\": 51,\n        \"english\": \"The Arousing\"\n      }\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "056be947-b574-4d93-88f9-03eb7a840d7a",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"bodygraph"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8232.824705744015,\n      \"maximum\": 3887.8740315657546,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3547.4039124714905,\n      \"maximum\": 2897.091324670482,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "f659db18-220e-4cfe-bdb9-27f1ae48f24c",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"bodygraph"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "fff3b515-0ec9-4cce-9e4d-582e5a6a7452",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"bodygraph"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "42d6f828-4a4a-482d-b6a2-127514e8556f",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"bodygraph"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "9b1ba9de-5d49-43d4-b2b7-2e3505334aba",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"bodygraph"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "35d2dbbf-e077-42ba-b003-eb98f09063b6",
+					"name": "Calculate Human Design connection chart - Two-person composite bodygraph compatibility",
+					"request": {
+						"name": "Calculate Human Design connection chart - Two-person composite bodygraph compatibility",
+						"description": {
+							"content": "Calculate a Human Design connection chart by overlaying two bodygraphs. For each of the 36 channels the dynamic between the two people is classified as electromagnetic, dominance, compromise, or companionship, the four mechanics of how two designs meet. Also returns the nine centers as defined or open in the combined bodygraph with which person defines each, the combined definition, and a count of each dynamic. Built for relationship, dating, and coaching tools.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"connection"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "POST",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						},
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"personA\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 6.572319951566314,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"personB\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 7.192791127413422,\n    \"latitude\": 0,\n    \"longitude\": 0\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": [
+						{
+							"id": "54abf205-c068-4d8f-b026-1ee24003b798",
+							"name": "Connection chart with per-channel dynamics, combined centers, definition, and a dynamic count",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"connection"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 6.572319951566314,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"personB\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 7.192791127413422,\n    \"latitude\": 0,\n    \"longitude\": 0\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"totalChannels\": 14,\n  \"channels\": [\n    {\n      \"gateA\": 34,\n      \"gateB\": 20,\n      \"name\": \"Charisma\",\n      \"circuit\": \"Individual\",\n      \"centers\": [\n        \"throat\",\n        \"sacral\"\n      ],\n      \"dynamic\": \"Electromagnetic\",\n      \"personAGates\": [\n        34\n      ],\n      \"personBGates\": [\n        20\n      ]\n    },\n    {\n      \"gateA\": 34,\n      \"gateB\": 20,\n      \"name\": \"Charisma\",\n      \"circuit\": \"Individual\",\n      \"centers\": [\n        \"throat\",\n        \"sacral\"\n      ],\n      \"dynamic\": \"Electromagnetic\",\n      \"personAGates\": [\n        34\n      ],\n      \"personBGates\": [\n        20\n      ]\n    }\n  ],\n  \"centers\": [\n    {\n      \"id\": \"sacral\",\n      \"name\": \"Sacral\",\n      \"defined\": true,\n      \"definedBy\": [\n        \"A\"\n      ]\n    },\n    {\n      \"id\": \"sacral\",\n      \"name\": \"Sacral\",\n      \"defined\": true,\n      \"definedBy\": [\n        \"A\"\n      ]\n    }\n  ],\n  \"combinedDefinition\": \"Single\",\n  \"summary\": {\n    \"electromagnetic\": 3,\n    \"dominance\": 2,\n    \"compromise\": 1,\n    \"companionship\": 4\n  }\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "3034b6ed-fd6e-4788-bb4b-a04d6215528f",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"connection"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 6.572319951566314,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"personB\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 7.192791127413422,\n    \"latitude\": 0,\n    \"longitude\": 0\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8232.824705744015,\n      \"maximum\": 3887.8740315657546,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3547.4039124714905,\n      \"maximum\": 2897.091324670482,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "9226ee10-86f6-4b92-8e62-19a73d4f0ca4",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"connection"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 6.572319951566314,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"personB\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 7.192791127413422,\n    \"latitude\": 0,\n    \"longitude\": 0\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "51b99460-bab5-44d4-a23c-2adb7b5190ce",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"connection"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 6.572319951566314,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"personB\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 7.192791127413422,\n    \"latitude\": 0,\n    \"longitude\": 0\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "ad9fe9ea-bdd8-45c5-8e86-4d92e9e3947a",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"connection"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 6.572319951566314,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"personB\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 7.192791127413422,\n    \"latitude\": 0,\n    \"longitude\": 0\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "221c5480-d4d0-4911-9950-b48177d9ab64",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"connection"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 6.572319951566314,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"personB\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 7.192791127413422,\n    \"latitude\": 0,\n    \"longitude\": 0\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "c5b11a19-23b7-46bf-82b5-dd4f79c67a69",
+					"name": "Calculate Human Design Penta - Small-group BG5 operating system for three to five people",
+					"request": {
+						"name": "Calculate Human Design Penta - Small-group BG5 operating system for three to five people",
+						"description": {
+							"content": "Calculate the Human Design Penta (BG5, Base Group 5) for a small group of three to five people. The Penta is a trans-auric form built from a fixed set of six channels running only between the Sacral, the G Center, and the Throat. It reports which of the twelve Penta gates are filled and by whom, which of the six channels are defined Strengths, the upper leadership channels versus the lower generative channels, the 2/14 material core, and the functional gaps where no member supplies a role. Built for team, family, and group analysis tools. Below three people no Penta forms and above five a second Penta emerges, so the group size must be three to five.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"penta"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "POST",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						},
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"members\": [\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 11.714499694284982,\n      \"latitude\": 0,\n      \"longitude\": 0\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -5.270889735312094,\n      \"latitude\": 0,\n      \"longitude\": 0\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 1.1981650823751693,\n      \"latitude\": 0,\n      \"longitude\": 0\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": [
+						{
+							"id": "33a031ff-e423-4c86-8328-a1668d218d1b",
+							"name": "Penta chart with per-channel Strengths, per-gate fill state, and a group summary",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"penta"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"members\": [\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 11.714499694284982,\n      \"latitude\": 0,\n      \"longitude\": 0\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -5.270889735312094,\n      \"latitude\": 0,\n      \"longitude\": 0\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 1.1981650823751693,\n      \"latitude\": 0,\n      \"longitude\": 0\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"memberCount\": 4,\n  \"channels\": [\n    {\n      \"gateA\": 2,\n      \"gateB\": 14,\n      \"name\": \"The Beat\",\n      \"circuit\": \"Individual\",\n      \"position\": \"lower\",\n      \"isCore\": true,\n      \"defined\": true,\n      \"gateAHeldBy\": [\n        0,\n        2\n      ],\n      \"gateBHeldBy\": [\n        1\n      ]\n    },\n    {\n      \"gateA\": 2,\n      \"gateB\": 14,\n      \"name\": \"The Beat\",\n      \"circuit\": \"Individual\",\n      \"position\": \"lower\",\n      \"isCore\": true,\n      \"defined\": true,\n      \"gateAHeldBy\": [\n        0,\n        2\n      ],\n      \"gateBHeldBy\": [\n        1\n      ]\n    }\n  ],\n  \"gates\": [\n    {\n      \"gate\": 15,\n      \"gateName\": \"Extremes\",\n      \"filled\": true,\n      \"heldBy\": [\n        0\n      ]\n    },\n    {\n      \"gate\": 15,\n      \"gateName\": \"Extremes\",\n      \"filled\": true,\n      \"heldBy\": [\n        0\n      ]\n    }\n  ],\n  \"summary\": {\n    \"definedChannels\": 4,\n    \"filledGates\": 9,\n    \"gapGates\": [\n      7,\n      31,\n      33\n    ],\n    \"coreDefined\": true\n  }\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "cffeafe2-1c14-4591-9442-2c1c9847dd49",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"penta"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"members\": [\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 11.714499694284982,\n      \"latitude\": 0,\n      \"longitude\": 0\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -5.270889735312094,\n      \"latitude\": 0,\n      \"longitude\": 0\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 1.1981650823751693,\n      \"latitude\": 0,\n      \"longitude\": 0\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8232.824705744015,\n      \"maximum\": 3887.8740315657546,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3547.4039124714905,\n      \"maximum\": 2897.091324670482,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "20d906d8-3357-4fd1-8965-6835c9d1c25d",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"penta"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"members\": [\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 11.714499694284982,\n      \"latitude\": 0,\n      \"longitude\": 0\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -5.270889735312094,\n      \"latitude\": 0,\n      \"longitude\": 0\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 1.1981650823751693,\n      \"latitude\": 0,\n      \"longitude\": 0\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "e1dae3b3-05cf-45a9-95e4-08571c0f40da",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"penta"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"members\": [\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 11.714499694284982,\n      \"latitude\": 0,\n      \"longitude\": 0\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -5.270889735312094,\n      \"latitude\": 0,\n      \"longitude\": 0\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 1.1981650823751693,\n      \"latitude\": 0,\n      \"longitude\": 0\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "fdbe9dcf-e2b8-4c3d-8676-30153f70e510",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"penta"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"members\": [\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 11.714499694284982,\n      \"latitude\": 0,\n      \"longitude\": 0\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -5.270889735312094,\n      \"latitude\": 0,\n      \"longitude\": 0\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 1.1981650823751693,\n      \"latitude\": 0,\n      \"longitude\": 0\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "a23871b0-b1e5-4a4d-ae72-01d8038b8f34",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"penta"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"members\": [\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 11.714499694284982,\n      \"latitude\": 0,\n      \"longitude\": 0\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -5.270889735312094,\n      \"latitude\": 0,\n      \"longitude\": 0\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 1.1981650823751693,\n      \"latitude\": 0,\n      \"longitude\": 0\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "5bafa606-c41c-4600-af57-cd49c2719482",
+					"name": "Generate Human Design transit overlay - Current planetary activations on a natal bodygraph",
+					"request": {
+						"name": "Generate Human Design transit overlay - Current planetary activations on a natal bodygraph",
+						"description": {
+							"content": "Overlay the current or any given planetary positions on a natal Human Design bodygraph to see which channels the transit temporarily completes. Returns the 13 transiting body activations with gate and line, the channels the transit completes beyond the natal definition split into personal channels where the transit supplies the partner gate of a natal gate and educational channels where the transit supplies both gates, the natally open centers those channels temporarily define, and a short factual summary. A transit is a single moment, so there is no Design side. When date and time are omitted the overlay is computed for now in UTC. Built for daily Human Design apps, transit widgets, and notification tools.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"transit"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "POST",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						},
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": -0.38919107379789963,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"date\": \"2026-05-23\",\n  \"time\": \"12:00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": [
+						{
+							"id": "b0cb79f7-5e9d-420c-af28-5c9fc4dda7db",
+							"name": "Transit overlay with transiting activations, completed channels, temporary centers, and a summary",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"transit"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": -0.38919107379789963,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"date\": \"2026-05-23\",\n  \"time\": \"12:00:00\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"date\": \"2026-05-23\",\n  \"time\": \"12:00:00\",\n  \"timezone\": 0,\n  \"activations\": [\n    {\n      \"body\": \"Sun\",\n      \"gate\": 51,\n      \"line\": 3,\n      \"gateName\": \"Shock\",\n      \"ichingHexagram\": {\n        \"number\": 51,\n        \"english\": \"The Arousing\"\n      }\n    },\n    {\n      \"body\": \"Sun\",\n      \"gate\": 51,\n      \"line\": 3,\n      \"gateName\": \"Shock\",\n      \"ichingHexagram\": {\n        \"number\": 51,\n        \"english\": \"The Arousing\"\n      }\n    }\n  ],\n  \"completedChannels\": [\n    {\n      \"gateA\": 34,\n      \"gateB\": 20,\n      \"name\": \"Charisma\",\n      \"circuit\": \"Individual\",\n      \"centers\": [\n        \"throat\",\n        \"sacral\"\n      ],\n      \"kind\": \"personal\",\n      \"natalGates\": [\n        34\n      ],\n      \"transitGates\": [\n        20\n      ]\n    },\n    {\n      \"gateA\": 34,\n      \"gateB\": 20,\n      \"name\": \"Charisma\",\n      \"circuit\": \"Individual\",\n      \"centers\": [\n        \"throat\",\n        \"sacral\"\n      ],\n      \"kind\": \"personal\",\n      \"natalGates\": [\n        34\n      ],\n      \"transitGates\": [\n        20\n      ]\n    }\n  ],\n  \"temporaryCenters\": [\n    {\n      \"id\": \"sacral\",\n      \"name\": \"Sacral\",\n      \"temporarilyDefined\": true\n    },\n    {\n      \"id\": \"sacral\",\n      \"name\": \"Sacral\",\n      \"temporarilyDefined\": true\n    }\n  ],\n  \"summary\": \"This transit completes 2 channels: 1 personal channel where the transit supplies the partner gate of a natal gate and 1 educational channel where the transit supplies both gates.\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "3ede7371-8ce2-4ad6-84c8-3030a9462c58",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"transit"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": -0.38919107379789963,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"date\": \"2026-05-23\",\n  \"time\": \"12:00:00\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8232.824705744015,\n      \"maximum\": 3887.8740315657546,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3547.4039124714905,\n      \"maximum\": 2897.091324670482,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "e63f03d2-3829-41c9-a2ca-046e005a58ef",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"transit"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": -0.38919107379789963,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"date\": \"2026-05-23\",\n  \"time\": \"12:00:00\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "6743fbe9-8825-4346-9ef2-ff3473ba1c94",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"transit"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": -0.38919107379789963,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"date\": \"2026-05-23\",\n  \"time\": \"12:00:00\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "2688d7cf-4f2d-4a58-9915-309dcb0f8a6d",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"transit"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": -0.38919107379789963,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"date\": \"2026-05-23\",\n  \"time\": \"12:00:00\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "d75e38e2-7005-4945-972a-747183da8fd7",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"transit"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": -0.38919107379789963,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"date\": \"2026-05-23\",\n  \"time\": \"12:00:00\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "3e7d6927-2dd0-4072-ab42-d52bd8653943",
+					"name": "Calculate Human Design type, authority and profile",
+					"request": {
+						"name": "Calculate Human Design type, authority and profile",
+						"description": {
+							"content": "Calculate the core Human Design identity from a birth moment: the energy type, the aura strategy, the inner authority, the signature and not-self themes, and the profile. The fast lookup for type-and-authority features without the full bodygraph payload. Verified against NASA JPL Horizons positions.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"type"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "POST",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						},
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": [
+						{
+							"id": "ca77bc72-c07a-4a70-9163-341f498a44df",
+							"name": "Type, strategy, authority, signature, not-self theme, and profile",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"type"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"type\": \"Manifestor\",\n  \"strategy\": \"Inform\",\n  \"authority\": \"Emotional\",\n  \"signature\": \"Peace\",\n  \"notSelf\": \"Anger\",\n  \"profile\": \"5/1\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "8dcb8457-8581-4b7d-a091-6118d3df460a",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"type"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8232.824705744015,\n      \"maximum\": 3887.8740315657546,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3547.4039124714905,\n      \"maximum\": 2897.091324670482,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "2f98852e-6198-47be-a7ae-3113608ee4cf",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"type"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "29379910-2f88-41b8-9298-c1b6b5a2fbde",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"type"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "4ef28aa5-d9c2-47b9-8217-7c5f70ee19f6",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"type"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "0d53c786-b83b-4e6d-aa44-e244cccad2b2",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"type"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "b1c3df26-f862-46e6-b5d2-f4c5d0d6960e",
+					"name": "Calculate the 26 Human Design gate activations",
+					"request": {
+						"name": "Calculate the 26 Human Design gate activations",
+						"description": {
+							"content": "Calculate the 26 gate activations for a birth moment, split into the 13 conscious Personality activations at birth and the 13 unconscious Design activations 88 degrees of solar arc earlier. Each activation reports the planet, gate, line, gate keynote, and the matching I-Ching hexagram. Built for activation columns and detailed chart views.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"gates"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "POST",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						},
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": [
+						{
+							"id": "4f6a8f31-dc06-446f-ad9f-c4566f59580f",
+							"name": "Personality and Design activation lists, 13 each",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"gates"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"personality\": [\n    {\n      \"planet\": \"Sun\",\n      \"side\": \"personality\",\n      \"gate\": 51,\n      \"line\": 5,\n      \"gateName\": \"Shock\",\n      \"ichingHexagram\": {\n        \"number\": 51,\n        \"english\": \"The Arousing\"\n      }\n    },\n    {\n      \"planet\": \"Sun\",\n      \"side\": \"personality\",\n      \"gate\": 51,\n      \"line\": 5,\n      \"gateName\": \"Shock\",\n      \"ichingHexagram\": {\n        \"number\": 51,\n        \"english\": \"The Arousing\"\n      }\n    }\n  ],\n  \"design\": [\n    {\n      \"planet\": \"Sun\",\n      \"side\": \"personality\",\n      \"gate\": 51,\n      \"line\": 5,\n      \"gateName\": \"Shock\",\n      \"ichingHexagram\": {\n        \"number\": 51,\n        \"english\": \"The Arousing\"\n      }\n    },\n    {\n      \"planet\": \"Sun\",\n      \"side\": \"personality\",\n      \"gate\": 51,\n      \"line\": 5,\n      \"gateName\": \"Shock\",\n      \"ichingHexagram\": {\n        \"number\": 51,\n        \"english\": \"The Arousing\"\n      }\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "8d064d02-02e5-4022-8ddb-651f77ea8cd1",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"gates"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8232.824705744015,\n      \"maximum\": 3887.8740315657546,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3547.4039124714905,\n      \"maximum\": 2897.091324670482,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "4dd84aad-7935-4826-b5c3-4819d2dabbf5",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"gates"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "2527adc5-8a6e-484b-b13a-344dff5cc8a1",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"gates"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "b1e2677d-0c9a-4b47-aed9-b0a616471bb4",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"gates"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "73b86cb4-8306-4e49-b43c-e0ce75a545c4",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"gates"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "29f42a8c-35b7-4474-9eee-0875ba012a05",
+					"name": "Look up a Human Design gate by number",
+					"request": {
+						"name": "Look up a Human Design gate by number",
+						"description": {
+							"content": "Look up the static reference data for a Human Design gate by its number from 1 to 64: the gate keynote name, the center it sits in, the matching I-Ching hexagram, and the gates that form a channel with it. A pure reference endpoint with no birth data required.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"gates",
+								":number"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+								}
+							],
+							"variable": [
+								{
+									"disabled": false,
+									"type": "any",
+									"value": "34",
+									"key": "number",
+									"description": "Gate number from 1 to 64."
+								}
+							]
+						},
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "GET",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "f18bab52-f2f7-4f1b-9dd0-f0e5f4a376f9",
+							"name": "Gate reference data with center, hexagram, and channel partners",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"gates",
+										":number"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "34",
+											"key": "number",
+											"description": "Gate number from 1 to 64."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"number\": 34,\n  \"name\": \"Power\",\n  \"center\": \"sacral\",\n  \"centerName\": \"Sacral\",\n  \"ichingHexagram\": {\n    \"number\": 34,\n    \"english\": \"The Power of the Great\"\n  },\n  \"channelPartners\": [\n    {\n      \"gate\": 20,\n      \"channel\": \"Charisma\"\n    },\n    {\n      \"gate\": 20,\n      \"channel\": \"Charisma\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "90f13c93-523d-47fb-a67a-a140c849ea35",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"gates",
+										":number"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "34",
+											"key": "number",
+											"description": "Gate number from 1 to 64."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8232.824705744015,\n      \"maximum\": 3887.8740315657546,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3547.4039124714905,\n      \"maximum\": 2897.091324670482,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "82e8885a-c131-4415-a06a-59b817ce62dc",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"gates",
+										":number"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "34",
+											"key": "number",
+											"description": "Gate number from 1 to 64."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "787d328b-0345-4205-aa45-fc1e89a6d889",
+							"name": "Gate number is outside the range 1 to 64",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"gates",
+										":number"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "34",
+											"key": "number",
+											"description": "Gate number from 1 to 64."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"Resource not found\",\n  \"code\": \"not_found\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "64af8577-bc97-4a88-b5e8-19962ec9fea6",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"gates",
+										":number"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "34",
+											"key": "number",
+											"description": "Gate number from 1 to 64."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "d5b302a5-12eb-4bb6-aa6c-7c12b06dc3ce",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"gates",
+										":number"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "34",
+											"key": "number",
+											"description": "Gate number from 1 to 64."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "ab063c9b-98eb-43bc-bcdf-0198edb6e2ed",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"gates",
+										":number"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "34",
+											"key": "number",
+											"description": "Gate number from 1 to 64."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "4053706c-de9b-457d-acf4-4a0c751cdfd1",
+					"name": "Calculate the defined Human Design channels",
+					"request": {
+						"name": "Calculate the defined Human Design channels",
+						"description": {
+							"content": "Calculate the defined channels for a birth moment. A channel is defined when both of its gates are activated, and it wires together the two centers it connects. Returns each defined channel with its gates, name, circuit family, and connected centers, plus the full set of centers those channels define. Built for bodygraph rendering and definition analysis.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"channels"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "POST",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						},
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": [
+						{
+							"id": "5d2f95da-f629-4773-a11c-69503008beb7",
+							"name": "Defined channels with circuits and the centers they define",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"channels"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"channels\": [\n    {\n      \"gateA\": 34,\n      \"gateB\": 20,\n      \"name\": \"Charisma\",\n      \"circuit\": \"Individual\",\n      \"centers\": [\n        \"throat\",\n        \"sacral\"\n      ]\n    },\n    {\n      \"gateA\": 34,\n      \"gateB\": 20,\n      \"name\": \"Charisma\",\n      \"circuit\": \"Individual\",\n      \"centers\": [\n        \"throat\",\n        \"sacral\"\n      ]\n    }\n  ],\n  \"total\": 3,\n  \"definedCenters\": [\n    \"throat\",\n    \"sacral\",\n    \"g\"\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "1253bb5f-db7a-43bd-8ac9-7534212bfda4",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"channels"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8232.824705744015,\n      \"maximum\": 3887.8740315657546,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3547.4039124714905,\n      \"maximum\": 2897.091324670482,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "ad6344c8-c12d-401d-b388-e050f66a50ed",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"channels"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "97ee5e29-4605-43be-87a6-0bd8f8c88026",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"channels"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "2ccda657-5aad-4c09-ab9e-0db5cd8bf507",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"channels"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "5702b3bc-70a0-45fd-b2a5-472700a1a8d0",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"channels"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "5cc3903b-22da-460e-8f50-0ca685f0981a",
+					"name": "Calculate the nine Human Design centers",
+					"request": {
+						"name": "Calculate the nine Human Design centers",
+						"description": {
+							"content": "Calculate the state of all nine Human Design centers for a birth moment: whether each is defined or open, whether it is a motor or an awareness center, its theme, and the active gates it holds. The data layer behind a rendered bodygraph where defined centers are colored and open centers are white.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"centers"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "POST",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						},
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": [
+						{
+							"id": "94f453cc-8f69-40d4-bfe1-76aed53fb773",
+							"name": "All nine centers with defined state, flags, theme, and active gates",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"centers"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"centers\": [\n    {\n      \"id\": \"sacral\",\n      \"name\": \"Sacral\",\n      \"defined\": true,\n      \"motor\": true,\n      \"awareness\": false,\n      \"theme\": \"string\",\n      \"gates\": [\n        5,\n        14,\n        34\n      ]\n    },\n    {\n      \"id\": \"sacral\",\n      \"name\": \"Sacral\",\n      \"defined\": true,\n      \"motor\": true,\n      \"awareness\": false,\n      \"theme\": \"string\",\n      \"gates\": [\n        5,\n        14,\n        34\n      ]\n    }\n  ],\n  \"definedCount\": 4\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "f67f2a93-2a40-4a29-9b7e-55d23bba0b78",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"centers"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8232.824705744015,\n      \"maximum\": 3887.8740315657546,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3547.4039124714905,\n      \"maximum\": 2897.091324670482,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "cd477734-2b02-40a3-ae1a-371185276eb7",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"centers"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "c9afe8fd-7f01-4a63-a671-08b0f38ae66d",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"centers"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "9fa0ccb2-f66a-4f88-8298-7c01e5cc08c9",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"centers"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "ac8e3fb5-1bec-4aff-bac9-9b9c3d7a50d9",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"centers"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "955edd3f-1de5-4c90-a70e-f80fe6524c61",
+					"name": "Look up a Human Design center by id",
+					"request": {
+						"name": "Look up a Human Design center by id",
+						"description": {
+							"content": "Look up the static reference data for one of the nine Human Design centers by its id: the display name, whether it is a motor or awareness center, and what it means both defined and undefined. A pure reference endpoint with no birth data required.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"centers",
+								":id"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+								}
+							],
+							"variable": [
+								{
+									"disabled": false,
+									"type": "any",
+									"value": "sacral",
+									"key": "id",
+									"description": "(Required) Center id. One of head, ajna, throat, g, heart, sacral, solar-plexus, spleen, root."
+								}
+							]
+						},
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "GET",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "65368d7a-351e-479a-bbfd-6f29fa1a6e8f",
+							"name": "Center reference data with defined and undefined meanings",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"centers",
+										":id"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "sacral",
+											"key": "id",
+											"description": "(Required) Center id. One of head, ajna, throat, g, heart, sacral, solar-plexus, spleen, root."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"id\": \"sacral\",\n  \"name\": \"Sacral\",\n  \"motor\": true,\n  \"awareness\": false,\n  \"definedMeaning\": \"string\",\n  \"undefinedMeaning\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "28b04230-567c-42a5-9133-661770836e66",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"centers",
+										":id"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "sacral",
+											"key": "id",
+											"description": "(Required) Center id. One of head, ajna, throat, g, heart, sacral, solar-plexus, spleen, root."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8232.824705744015,\n      \"maximum\": 3887.8740315657546,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3547.4039124714905,\n      \"maximum\": 2897.091324670482,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "2b924b65-38a7-4291-add5-a24c4a76b5ca",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"centers",
+										":id"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "sacral",
+											"key": "id",
+											"description": "(Required) Center id. One of head, ajna, throat, g, heart, sacral, solar-plexus, spleen, root."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "d74b40b3-3117-4f4f-8cab-cf5d28953ee8",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"centers",
+										":id"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "sacral",
+											"key": "id",
+											"description": "(Required) Center id. One of head, ajna, throat, g, heart, sacral, solar-plexus, spleen, root."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "6aabe4e2-dec5-4f79-9900-4ffc0023bc2d",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"centers",
+										":id"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "sacral",
+											"key": "id",
+											"description": "(Required) Center id. One of head, ajna, throat, g, heart, sacral, solar-plexus, spleen, root."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "ef5eabf6-268a-49a1-ae0d-0a87dfe8934d",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"centers",
+										":id"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "sacral",
+											"key": "id",
+											"description": "(Required) Center id. One of head, ajna, throat, g, heart, sacral, solar-plexus, spleen, root."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "213eab2a-eee8-473f-9f84-b76914c205f7",
+					"name": "Calculate the Human Design profile and line keynotes",
+					"request": {
+						"name": "Calculate the Human Design profile and line keynotes",
+						"description": {
+							"content": "Calculate the Human Design profile for a birth moment: the conscious Personality Sun line over the unconscious Design Sun line, with the keynote for each. The profile is the geometry of the life role, for example 5/1 the Heretic Investigator. Verified against NASA JPL Horizons positions.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"profile"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "POST",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						},
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": [
+						{
+							"id": "be5458f7-10fd-45b3-97bd-4d8d91ecef63",
+							"name": "Profile string, the two line numbers, and line keynotes",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"profile"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"profile\": \"5/1\",\n  \"personalityLine\": 5,\n  \"designLine\": 1,\n  \"personalityKeynote\": \"string\",\n  \"designKeynote\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "fd279eb9-70bf-4ec6-bb7b-f5964824c0f4",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"profile"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8232.824705744015,\n      \"maximum\": 3887.8740315657546,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3547.4039124714905,\n      \"maximum\": 2897.091324670482,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "63781971-abb0-48e1-b3c4-90d50c2535a5",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"profile"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "30f9d3fb-d5d4-49c1-b598-d7e200a224de",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"profile"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "63146084-1138-41ce-889f-da0ba08bf81c",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"profile"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "f62e454e-fe4f-4779-a50f-797e996c090e",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"profile"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "95cdabbe-1797-43d8-a2a2-d3f15ff6668c",
+					"name": "Calculate Human Design Variables - The four arrows and Color, Tone, Base substructure",
+					"request": {
+						"name": "Calculate Human Design Variables - The four arrows and Color, Tone, Base substructure",
+						"description": {
+							"content": "Calculate the four Human Design Variable arrows for a birth moment: Determination and Environment on the design side, Perspective and Motivation on the personality side. Each arrow returns its Color, Tone, and Base numbers from the hexagram-line substructure, the left or right direction set by the Tone, and the sourced Color and direction labels. This is the advanced Rave Variables and Primary Health System layer beneath Type, Strategy, Authority, and Profile. Color, Tone, and Base shift with tiny differences in birth time, so each arrow carries a confidence flag that turns false near a Color or Tone boundary, and a precise birth time is essential. Built for Human Design apps offering PHS, diet, environment, and Rave Psychology readings.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"variables"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "POST",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						},
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": [
+						{
+							"id": "c1649f0e-61ac-4d3c-8f6b-0310f1aa5e01",
+							"name": "The four Variable arrows with substructure numbers, labels, and confidence flags",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"variables"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"arrows\": [\n    {\n      \"key\": \"determination\",\n      \"name\": \"Determination\",\n      \"layer\": \"Primary Health System\",\n      \"position\": \"Top left\",\n      \"activation\": {\n        \"planet\": \"Sun\",\n        \"side\": \"design\"\n      },\n      \"color\": 4,\n      \"tone\": 2,\n      \"base\": 4,\n      \"direction\": \"left\",\n      \"colorLabel\": \"Touch\",\n      \"directionLabel\": \"Active\",\n      \"confident\": true\n    },\n    {\n      \"key\": \"determination\",\n      \"name\": \"Determination\",\n      \"layer\": \"Primary Health System\",\n      \"position\": \"Top left\",\n      \"activation\": {\n        \"planet\": \"Sun\",\n        \"side\": \"design\"\n      },\n      \"color\": 4,\n      \"tone\": 2,\n      \"base\": 4,\n      \"direction\": \"left\",\n      \"colorLabel\": \"Touch\",\n      \"directionLabel\": \"Active\",\n      \"confident\": true\n    }\n  ],\n  \"confident\": true,\n  \"confidenceMarginDeg\": 0.00274\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "89830aa2-cf3f-4ae5-837e-81261007d3ff",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"variables"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8232.824705744015,\n      \"maximum\": 3887.8740315657546,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3547.4039124714905,\n      \"maximum\": 2897.091324670482,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "7f0ffdba-b82e-4ecd-af4d-f5b95c35c1ae",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"variables"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "9d5544e9-bfdd-44b6-977b-3fd4e6962ab1",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"variables"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "6b98ece9-ceca-4e71-b1f0-9d8e5cf5aa52",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"variables"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "7d3f8ac9-c2b9-4655-8247-d051686e979f",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"variables"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": 3.0936447122295014,\n  \"latitude\": 0,\n  \"longitude\": 0\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				}
+			],
+			"event": []
+		}
+	],
+	"event": [],
+	"variable": [
+		{
+			"type": "string",
+			"value": "https://roxyapi.com/api/v2/human-design",
+			"key": "baseUrl"
+		},
+		{
+			"key": "apiKey",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "roxySlug",
+			"value": "human-design",
+			"type": "string"
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "X-API-Key"
+			},
+			{
+				"key": "value",
+				"value": "{{apiKey}}"
+			},
+			{
+				"key": "in",
+				"value": "header"
+			}
+		]
+	},
+	"info": {
+		"_postman_id": "8317bcb4-4698-4138-83e6-248231fbecbb",
+		"name": "Human Design API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"description": {
+			"content": "Generate the full Human Design bodygraph from a birth moment: type, strategy, inner authority, profile, definition, incarnation cross, the nine centers, defined channels, and all 26 gate activations, plus two-person connection charts and small-group Penta analysis. Planetary positions verified against NASA JPL Horizons, the Design side solved on the exact 88 degree solar arc. One key, remote MCP, typed SDKs, 12 endpoints.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, human design, forecast, biorhythm, tarot, numerology, crystals, dreams, I-Ching, angel numbers, location), 148+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (MCP)\n\nRoxyAPI has native Model Context Protocol support. Your AI agent auto-discovers all 148+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
+			"type": "text/plain"
+		}
+	}
+}

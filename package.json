@@ -1,0 +1,31 @@
+{
+	"name": "roxyapi-postman-collections",
+	"version": "1.0.0",
+	"description": "Autopilot sync of RoxyAPI OpenAPI specs into the public Postman workspace",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"sync": "bun run scripts/sync.ts",
+		"check": "biome check . --fix",
+		"typecheck": "tsc --noEmit"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/RoxyAPI/postman-collections.git"
+	},
+	"homepage": "https://roxyapi.com/docs/guides/postman",
+	"bugs": {
+		"url": "https://github.com/RoxyAPI/postman-collections/issues"
+	},
+	"dependencies": {
+		"openapi-to-postmanv2": "^6.0.1"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.16",
+		"@types/bun": "^1.3.14",
+		"@types/node": "^25.9.1",
+		"lefthook": "^2.1.9",
+		"typescript": "^6.0.3"
+	}
+}
