@@ -1,8 +1,12 @@
 # RoxyAPI Postman Collections
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
-[![Postman workspace](https://img.shields.io/badge/Postman-public%20workspace-orange.svg)](https://www.postman.com/roxylabs-7113570/roxyapi)
-[![Docs](https://img.shields.io/badge/docs-roxyapi.com-blue.svg)](https://roxyapi.com/docs/guides/postman)
+[![Postman workspace](https://img.shields.io/badge/Postman-public%20workspace-FF6C37?logo=postman&logoColor=white)](https://www.postman.com/roxylabs-7113570/roxyapi)
+[![Sync](https://github.com/RoxyAPI/postman-collections/actions/workflows/sync.yml/badge.svg)](https://github.com/RoxyAPI/postman-collections/actions/workflows/sync.yml)
+[![Postman guide](https://img.shields.io/badge/guide-roxyapi.com-blue)](https://roxyapi.com/docs/guides/postman)
+[![API Reference](https://img.shields.io/badge/api%20reference-roxyapi.com-blue)](https://roxyapi.com/api-reference)
+[![Docs](https://img.shields.io/badge/docs-roxyapi.com-blue)](https://roxyapi.com/docs)
+[![Pricing](https://img.shields.io/badge/pricing-roxyapi.com-blue)](https://roxyapi.com/pricing)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 
 Ready to run Postman collections for the full RoxyAPI catalog: Western and Vedic astrology, tarot, numerology, I Ching, biorhythm, dreams, crystals, angel numbers, Human Design, forecast, and location. One workspace, one API key, every domain. Remote MCP, typed SDKs, and drop in UI components live alongside at [roxyapi.com](https://roxyapi.com).
 
