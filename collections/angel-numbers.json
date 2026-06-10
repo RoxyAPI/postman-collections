@@ -1,20 +1,20 @@
 {
 	"item": [
 		{
-			"id": "235c2efe-0f59-41cf-b16c-711170eca55e",
+			"id": "e2267af6-fae2-4776-8b47-f27ce50b7c4f",
 			"name": "Angel Numbers",
 			"description": {
-				"content": "Production-ready angel numbers API + hosted MCP for AI agents and developers. Connect Claude Code, Cursor, VS Code in seconds, no local setup. Look up meanings for 111, 222, 333, 444, 555, 666, 777, 888, 999, 1111, and 40+ angel number sequences. Includes love, career, spiritual, and twin flame interpretations per number. Smart lookup analyzes any number sequence with pattern detection, digit root calculation, and classification. Daily angel number endpoint, filter by type (repeating, sequential, mirror, master). Built for synchronicity apps, spiritual journals, daily guidance features, AI chatbots, and wellness platforms.",
+				"content": "Production-ready angel numbers API + hosted MCP for AI agents and developers. Connect Claude Code, Cursor, VS Code in seconds, no local setup. Look up meanings for 111, 222, 333, 444, 555, 666, 777, 888, 999, 1111, and 75+ angel number sequences covering every common family. Each reading breaks down into spiritual, love, career, money, and twin flame guidance, plus a biblical perspective and an honest shadow reading. Smart lookup analyzes any number sequence with pattern detection, digit root calculation, classification, and an optional sighting-context note. Daily angel number endpoint, filter by type (repeating, sequential, mirror, master, compound). Built for synchronicity apps, spiritual journals, daily guidance features, AI chatbots, and wellness platforms.",
 				"type": "text/plain"
 			},
 			"item": [
 				{
-					"id": "6906c0d2-0587-4c54-9846-3ea5f3846094",
+					"id": "54a94c28-9ee1-428b-8c0d-62df01364b06",
 					"name": "List All Angel Numbers",
 					"request": {
 						"name": "List All Angel Numbers",
 						"description": {
-							"content": "Retrieve the complete database of angel numbers with summary information. Returns all 43 angel numbers covering root digits (0-9), master numbers (11, 22, 33), double digits (44-99), triple repeating (111-999), quad repeating (1111-9999), mirror patterns (1212), and sequential numbers (1234). Supports optional type filtering. Perfect for building angel number explorer apps, reference guides, and spiritual databases.",
+							"content": "Retrieve the complete database of angel numbers with summary information. Returns 75+ angel numbers covering root digits (0-9), master numbers (11, 22, 33), double digits (44-99), triple repeating (111-999), quad repeating (1111-9999), the mirror families (X0X like 101-909, X1X, four-digit mirrors like 1212-2121), palindromes (1221, 1331), compound sequences (911, 1122), and sequential numbers (123, 1234). Supports optional type filtering. Perfect for building angel number explorer apps, reference guides, and spiritual databases.",
 							"type": "text/plain"
 						},
 						"url": {
@@ -47,7 +47,7 @@
 									"disabled": false,
 									"key": "type",
 									"value": "repeating",
-									"description": "Filter results by angel number pattern type. \"repeating\" returns numbers like 111, 444, 7777. \"sequential\" returns patterns like 1234. \"mirror\" returns palindrome patterns like 1212. \"master\" returns 11, 22, 33. \"root\" returns single digits 0-9."
+									"description": "Filter results by angel number pattern type. \"repeating\" returns numbers like 111, 444, 7777. \"sequential\" returns patterns like 1234. \"mirror\" returns palindrome or alternating patterns like 1212, 717. \"master\" returns 11, 22, 33. \"root\" returns single digits 0-9. \"compound\" returns mixed sequences with no pure pattern like 911, 1122."
 								}
 							],
 							"variable": []
@@ -79,7 +79,7 @@
 					},
 					"response": [
 						{
-							"id": "cbd251ad-4e70-4b43-816b-b44fd3a3fe91",
+							"id": "d451bff7-c9e2-4139-8279-a33d0b6e8e96",
 							"name": "List of angel numbers with summary information",
 							"originalRequest": {
 								"url": {
@@ -134,12 +134,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"total\": 7732.317382375554,\n  \"limit\": 6000.098789138627,\n  \"offset\": 6557.584711463398,\n  \"numbers\": [\n    {\n      \"number\": \"111\",\n      \"title\": \"New Beginnings & Manifestation\",\n      \"coreMessage\": \"Your thoughts are creating your reality. Think positively. A new chapter is beginning.\",\n      \"type\": \"repeating\",\n      \"digitRoot\": 3,\n      \"keywords\": [\n        \"new beginnings\",\n        \"manifestation\",\n        \"alignment\",\n        \"angel number\",\n        \"synchronicity\"\n      ],\n      \"energy\": \"positive\"\n    },\n    {\n      \"number\": \"111\",\n      \"title\": \"New Beginnings & Manifestation\",\n      \"coreMessage\": \"Your thoughts are creating your reality. Think positively. A new chapter is beginning.\",\n      \"type\": \"repeating\",\n      \"digitRoot\": 3,\n      \"keywords\": [\n        \"new beginnings\",\n        \"manifestation\",\n        \"alignment\",\n        \"angel number\",\n        \"synchronicity\"\n      ],\n      \"energy\": \"positive\"\n    }\n  ]\n}",
+							"body": "{\n  \"total\": 1648.669157282614,\n  \"limit\": 9186.71505599457,\n  \"offset\": 1371.8851989973414,\n  \"numbers\": [\n    {\n      \"number\": \"111\",\n      \"title\": \"New Beginnings & Manifestation\",\n      \"coreMessage\": \"Your thoughts are creating your reality. Think positively. A new chapter is beginning.\",\n      \"type\": \"repeating\",\n      \"digitRoot\": 3,\n      \"keywords\": [\n        \"new beginnings\",\n        \"manifestation\",\n        \"alignment\",\n        \"angel number\",\n        \"synchronicity\"\n      ],\n      \"energy\": \"positive\"\n    },\n    {\n      \"number\": \"111\",\n      \"title\": \"New Beginnings & Manifestation\",\n      \"coreMessage\": \"Your thoughts are creating your reality. Think positively. A new chapter is beginning.\",\n      \"type\": \"repeating\",\n      \"digitRoot\": 3,\n      \"keywords\": [\n        \"new beginnings\",\n        \"manifestation\",\n        \"alignment\",\n        \"angel number\",\n        \"synchronicity\"\n      ],\n      \"energy\": \"positive\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2dc81093-d987-4a18-8412-a3bbca50050c",
+							"id": "cb01c4ad-9a4f-44ad-8648-ea1a99ec0cad",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -194,12 +194,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3236.2556959669973,\n      \"maximum\": 3008.187586427419,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7474.440845818614,\n      \"maximum\": 7046.899563600807,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2253.4318435066857,\n      \"maximum\": 179.86334614924382,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8982.643726170683,\n      \"maximum\": 764.8053931879296,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ccdc287e-d2e9-40ab-a03b-fbeb26561761",
+							"id": "1147f97a-5a6d-4c6e-8934-35593e2b7a5e",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -259,7 +259,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "555281c5-6e34-4db3-9b24-02e18232d901",
+							"id": "9b387b60-a194-4a98-8086-7c2c70cbcef5",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -325,7 +325,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a175464d-5001-4360-91d7-3370d162462b",
+							"id": "26d93c53-8ad6-4fb8-9cbc-eb70ba076917",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -385,7 +385,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "fa212bd0-8221-4ce6-a3cd-286bae3f091d",
+							"id": "4fee7f92-9243-459a-84f3-5d38d08cb862",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -451,12 +451,12 @@
 					}
 				},
 				{
-					"id": "d89fec3b-a6c4-4883-8e27-c3722f527ed7",
+					"id": "642b3ab1-c74a-4c1f-9787-f50c15153db2",
 					"name": "Get Angel Number Meaning",
 					"request": {
 						"name": "Get Angel Number Meaning",
 						"description": {
-							"content": "Get the complete, authoritative meaning and interpretation for a specific angel number. Returns detailed spiritual, love, career, and twin flame interpretations along with keywords, affirmation, and actionable steps. Covers 43 angel numbers including 111, 222, 333, 444, 555, 666, 777, 888, 999, 1111, 1212, 1234, and more. Authoritative interpretations covering all major angel number patterns.",
+							"content": "Get the complete, authoritative meaning and interpretation for a specific angel number. Returns detailed spiritual, love, career, money, and twin flame interpretations, plus a biblical perspective and a shadow reading, along with keywords, affirmation, and actionable steps. Covers 75+ angel numbers including 111, 222, 333, 444, 555, 666, 777, 888, 999, 1111, 1212, 1234, and more. Authoritative interpretations covering all major angel number patterns.",
 							"type": "text/plain"
 						},
 						"url": {
@@ -512,7 +512,7 @@
 					},
 					"response": [
 						{
-							"id": "eb06c6ba-352b-4af2-bf5f-82ef83770f26",
+							"id": "98397d52-3139-4f2a-84b2-aa65cabcfe5f",
 							"name": "Complete angel number meaning with all interpretations",
 							"originalRequest": {
 								"url": {
@@ -564,12 +564,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"number\": \"111\",\n  \"title\": \"New Beginnings & Manifestation\",\n  \"coreMessage\": \"Your thoughts are creating your reality. Think positively. A new chapter is beginning.\",\n  \"type\": \"repeating\",\n  \"digitRoot\": 3,\n  \"keywords\": [\n    \"new beginnings\",\n    \"manifestation\",\n    \"alignment\",\n    \"angel number\",\n    \"synchronicity\"\n  ],\n  \"energy\": \"positive\",\n  \"meaning\": {\n    \"spiritual\": \"string\",\n    \"love\": \"string\",\n    \"career\": \"string\",\n    \"twinFlame\": \"string\"\n  },\n  \"affirmation\": \"My thoughts are powerful. I choose to focus on what I desire.\",\n  \"actionSteps\": [\n    \"Monitor your thoughts carefully\",\n    \"Set clear positive intentions\",\n    \"Take inspired action on new opportunities\"\n  ]\n}",
+							"body": "{\n  \"number\": \"111\",\n  \"title\": \"New Beginnings & Manifestation\",\n  \"coreMessage\": \"Your thoughts are creating your reality. Think positively. A new chapter is beginning.\",\n  \"type\": \"repeating\",\n  \"digitRoot\": 3,\n  \"keywords\": [\n    \"new beginnings\",\n    \"manifestation\",\n    \"alignment\",\n    \"angel number\",\n    \"synchronicity\"\n  ],\n  \"energy\": \"positive\",\n  \"meaning\": {\n    \"spiritual\": \"string\",\n    \"love\": \"string\",\n    \"career\": \"string\",\n    \"money\": \"string\",\n    \"twinFlame\": \"string\"\n  },\n  \"biblical\": \"string\",\n  \"shadow\": \"string\",\n  \"affirmation\": \"My thoughts are powerful. I choose to focus on what I desire.\",\n  \"actionSteps\": [\n    \"Monitor your thoughts carefully\",\n    \"Set clear positive intentions\",\n    \"Take inspired action on new opportunities\"\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "419a3ff2-ec70-4620-ad35-10aae0ab9beb",
+							"id": "67bb4fd5-145c-4c7f-8054-3c7e7c873928",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -621,12 +621,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3236.2556959669973,\n      \"maximum\": 3008.187586427419,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7474.440845818614,\n      \"maximum\": 7046.899563600807,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2253.4318435066857,\n      \"maximum\": 179.86334614924382,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8982.643726170683,\n      \"maximum\": 764.8053931879296,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6ebed89d-6531-4a75-a4dd-5eb86ce96570",
+							"id": "f2baa71f-1b31-4f10-a1d7-6e2ebc17924a",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -683,7 +683,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ce89719a-6fdd-4bf0-a246-64763f4e2c62",
+							"id": "1d270aac-7133-4839-a672-3c74010ebe2a",
 							"name": "Angel number not found in database",
 							"originalRequest": {
 								"url": {
@@ -740,7 +740,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "54de6c64-ae4d-4a9c-a523-6e1f6782a127",
+							"id": "d16d209d-2e6b-4bc2-a11a-36e67e3b2ead",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -803,7 +803,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "72d45086-8ecc-4826-a2f0-e62d162246b6",
+							"id": "9969eb03-d000-473c-9aad-3a6075dd49d8",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -860,7 +860,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a62a857c-3fd1-4128-9921-cc15051fa411",
+							"id": "2f8c5fa8-4ba1-4ba5-9943-5acfe76f02b7",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -923,12 +923,12 @@
 					}
 				},
 				{
-					"id": "f612df48-42cd-4ba3-84a3-ce1b51c570c3",
+					"id": "e4543f17-8701-436b-ada4-f87af373cdce",
 					"name": "Analyze Any Number Sequence",
 					"request": {
 						"name": "Analyze Any Number Sequence",
 						"description": {
-							"content": "Smart angel number analysis that works for ANY number sequence, not just known angel numbers. Automatically classifies the pattern type (repeating, sequential, mirror, master, root), calculates the numerology digit root, checks the database for a known meaning, and provides the foundational digit root interpretation as a fallback. Perfect for synchronicity tracking apps where users enter arbitrary number sequences they encounter.",
+							"content": "Smart angel number analysis that works for ANY number sequence, not just known angel numbers. Automatically classifies the pattern type (repeating, sequential, mirror, master, root, compound), calculates the numerology digit root, checks the database for a known meaning, and provides the foundational digit root interpretation (with full spiritual, love, career, money, and twin flame guidance) as a fallback. An optional context parameter adds a note tailored to where the number was seen. Perfect for synchronicity tracking apps where users enter arbitrary number sequences they encounter.",
 							"type": "text/plain"
 						},
 						"url": {
@@ -950,6 +950,12 @@
 									"key": "number",
 									"value": "1234",
 									"description": "(Required) Number sequence to analyze (1-8 digits). Can be any number the user has encountered: clock times (1111), addresses (717), receipts (888), license plates (4444), or any repeating pattern."
+								},
+								{
+									"disabled": false,
+									"key": "context",
+									"value": "clock",
+									"description": "Where the number was seen. When supplied, the response adds a contextNote tailoring the reading to the sighting: clock (a glanced time), receipt (a purchase), license-plate (in transit), phone (a call or notification), address (a home or place), price (a total or amount)."
 								}
 							],
 							"variable": []
@@ -981,7 +987,7 @@
 					},
 					"response": [
 						{
-							"id": "a79628bf-ac69-48b5-b7f7-169f5dd9177f",
+							"id": "5d589bfe-9bc4-4ad1-bc3e-ed955cf60398",
 							"name": "Complete analysis of the number sequence with pattern classification and meaning",
 							"originalRequest": {
 								"url": {
@@ -999,6 +1005,10 @@
 										{
 											"key": "number",
 											"value": "1234"
+										},
+										{
+											"key": "context",
+											"value": "clock"
 										}
 									],
 									"variable": []
@@ -1028,12 +1038,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"number\": \"1234\",\n  \"type\": \"sequential\",\n  \"digitRoot\": 1,\n  \"digits\": 4,\n  \"uniqueDigits\": 4,\n  \"isPalindrome\": false,\n  \"isRepeating\": false,\n  \"knownMeaning\": {\n    \"title\": \"string\",\n    \"coreMessage\": \"string\",\n    \"energy\": \"string\",\n    \"keywords\": [\n      \"string\",\n      \"string\"\n    ],\n    \"meaning\": {\n      \"spiritual\": \"string\",\n      \"love\": \"string\",\n      \"career\": \"string\",\n      \"twinFlame\": \"string\"\n    },\n    \"affirmation\": \"string\",\n    \"actionSteps\": [\n      \"string\",\n      \"string\"\n    ]\n  },\n  \"digitRootMeaning\": {\n    \"number\": \"3\",\n    \"title\": \"string\",\n    \"coreMessage\": \"string\"\n  }\n}",
+							"body": "{\n  \"number\": \"1234\",\n  \"type\": \"sequential\",\n  \"digitRoot\": 1,\n  \"digits\": 4,\n  \"uniqueDigits\": 4,\n  \"isPalindrome\": false,\n  \"isRepeating\": false,\n  \"knownMeaning\": {\n    \"title\": \"string\",\n    \"coreMessage\": \"string\",\n    \"energy\": \"string\",\n    \"keywords\": [\n      \"string\",\n      \"string\"\n    ],\n    \"meaning\": {\n      \"spiritual\": \"string\",\n      \"love\": \"string\",\n      \"career\": \"string\",\n      \"money\": \"string\",\n      \"twinFlame\": \"string\"\n    },\n    \"biblical\": \"string\",\n    \"shadow\": \"string\",\n    \"affirmation\": \"string\",\n    \"actionSteps\": [\n      \"string\",\n      \"string\"\n    ]\n  },\n  \"digitRootMeaning\": {\n    \"number\": \"3\",\n    \"title\": \"string\",\n    \"coreMessage\": \"string\",\n    \"meaning\": {\n      \"spiritual\": \"string\",\n      \"love\": \"string\",\n      \"career\": \"string\",\n      \"money\": \"string\",\n      \"twinFlame\": \"string\"\n    },\n    \"keywords\": [\n      \"string\",\n      \"string\"\n    ],\n    \"affirmation\": \"string\"\n  },\n  \"contextNote\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a6bf02f8-d024-4165-8562-05872c695c6b",
+							"id": "27ae2e0e-29cc-4ce8-97dc-20068b90aae9",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1051,6 +1061,10 @@
 										{
 											"key": "number",
 											"value": "1234"
+										},
+										{
+											"key": "context",
+											"value": "clock"
 										}
 									],
 									"variable": []
@@ -1080,12 +1094,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3236.2556959669973,\n      \"maximum\": 3008.187586427419,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7474.440845818614,\n      \"maximum\": 7046.899563600807,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2253.4318435066857,\n      \"maximum\": 179.86334614924382,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8982.643726170683,\n      \"maximum\": 764.8053931879296,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "61fcf23f-2a5c-4916-8091-3bd76c4726c9",
+							"id": "24a985d6-c959-443a-b3f4-13aedcfd026d",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1103,6 +1117,10 @@
 										{
 											"key": "number",
 											"value": "1234"
+										},
+										{
+											"key": "context",
+											"value": "clock"
 										}
 									],
 									"variable": []
@@ -1137,7 +1155,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0d33c05a-ae38-4660-89c8-fd1fb690a54f",
+							"id": "cc323abe-8bb8-4984-b703-f07bd9772115",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1155,6 +1173,10 @@
 										{
 											"key": "number",
 											"value": "1234"
+										},
+										{
+											"key": "context",
+											"value": "clock"
 										}
 									],
 									"variable": []
@@ -1195,7 +1217,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "85a858d9-71c2-4587-9cf9-31675e2bd3e7",
+							"id": "ede479cb-35e3-4f0b-bb16-fc36302e2900",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1213,6 +1235,10 @@
 										{
 											"key": "number",
 											"value": "1234"
+										},
+										{
+											"key": "context",
+											"value": "clock"
 										}
 									],
 									"variable": []
@@ -1247,7 +1273,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6091313c-28de-4fc7-94e0-f707a0d62baf",
+							"id": "a6c3ef60-d3d6-49b7-af17-9b6bdc845811",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1265,6 +1291,10 @@
 										{
 											"key": "number",
 											"value": "1234"
+										},
+										{
+											"key": "context",
+											"value": "clock"
 										}
 									],
 									"variable": []
@@ -1305,12 +1335,12 @@
 					}
 				},
 				{
-					"id": "9f9fb71c-0dc6-45da-8a89-02a1719adfb5",
+					"id": "24d66278-d7cd-49a4-b37b-a195a0b45ba2",
 					"name": "Daily Angel Number",
 					"request": {
 						"name": "Daily Angel Number",
 						"description": {
-							"content": "Get the angel number of the day with full meaning and interpretation. Returns a deterministic angel number based on the current date (or a provided seed date), ensuring all users see the same number for any given day. Includes complete spiritual, love, career, and twin flame interpretations. Perfect for daily guidance features, push notifications, content generation, and angel number widget integrations.",
+							"content": "Get the angel number of the day with full meaning and interpretation. Returns a deterministic angel number based on the current date (or a provided seed date), ensuring all users see the same number for any given day. Includes complete spiritual, love, career, money, and twin flame interpretations plus a biblical perspective and a shadow reading. Perfect for daily guidance features, push notifications, content generation, and angel number widget integrations.",
 							"type": "text/plain"
 						},
 						"url": {
@@ -1370,7 +1400,7 @@
 					},
 					"response": [
 						{
-							"id": "c660c195-7d18-439d-989c-8d75400206c5",
+							"id": "85bfd2a1-eb82-464b-9ad6-86b0dcf30618",
 							"name": "Daily angel number with complete interpretation",
 							"originalRequest": {
 								"url": {
@@ -1421,12 +1451,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"date\": \"2026-03-05\",\n  \"seed\": \"user123-2026-03-05\",\n  \"number\": \"444\",\n  \"title\": \"string\",\n  \"coreMessage\": \"string\",\n  \"type\": \"string\",\n  \"digitRoot\": 6833.988955126715,\n  \"energy\": \"string\",\n  \"meaning\": {\n    \"spiritual\": \"string\",\n    \"love\": \"string\",\n    \"career\": \"string\",\n    \"twinFlame\": \"string\"\n  },\n  \"keywords\": [\n    \"string\",\n    \"string\"\n  ],\n  \"affirmation\": \"string\",\n  \"actionSteps\": [\n    \"string\",\n    \"string\"\n  ]\n}",
+							"body": "{\n  \"date\": \"2026-03-05\",\n  \"seed\": \"user123-2026-03-05\",\n  \"number\": \"444\",\n  \"title\": \"string\",\n  \"coreMessage\": \"string\",\n  \"type\": \"string\",\n  \"digitRoot\": 8603.68859991474,\n  \"energy\": \"string\",\n  \"meaning\": {\n    \"spiritual\": \"string\",\n    \"love\": \"string\",\n    \"career\": \"string\",\n    \"money\": \"string\",\n    \"twinFlame\": \"string\"\n  },\n  \"biblical\": \"string\",\n  \"shadow\": \"string\",\n  \"keywords\": [\n    \"string\",\n    \"string\"\n  ],\n  \"affirmation\": \"string\",\n  \"actionSteps\": [\n    \"string\",\n    \"string\"\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f27194f0-da81-4c1e-9584-683ec22a21e2",
+							"id": "ad744b63-f6a7-4b72-ab92-8c4e5af9bcb9",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1477,12 +1507,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3236.2556959669973,\n      \"maximum\": 3008.187586427419,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7474.440845818614,\n      \"maximum\": 7046.899563600807,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2253.4318435066857,\n      \"maximum\": 179.86334614924382,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8982.643726170683,\n      \"maximum\": 764.8053931879296,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "326e4055-5e80-4ffd-a72f-d317e8771f73",
+							"id": "c7c80d69-5d64-4003-8064-e2c7c76da348",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1538,7 +1568,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a383d134-6d4f-47b7-aca2-02169fd79141",
+							"id": "0d9627bc-f882-4bad-a159-f07922b69ea9",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1600,7 +1630,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "fea672f1-d585-4a57-b023-f0ba2b4591fd",
+							"id": "cd416bfb-cddf-428e-abe7-97167e198665",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1656,7 +1686,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b036fd7f-327d-4860-b015-ba7af317b91e",
+							"id": "4e11593c-342a-403b-94c8-73ec77d6e953",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1757,11 +1787,11 @@
 		]
 	},
 	"info": {
-		"_postman_id": "8e66e880-be62-47c9-b207-320b605c4791",
+		"_postman_id": "fa4680f2-5f83-4477-a599-c2dffc1449c6",
 		"name": "Angel Numbers API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"description": {
-			"content": "Production-ready angel numbers API + hosted MCP for AI agents and developers. Connect Claude Code, Cursor, VS Code in seconds, no local setup. Look up meanings for 111, 222, 333, 444, 555, 666, 777, 888, 999, 1111, and 40+ angel number sequences. Includes love, career, spiritual, and twin flame interpretations per number. Smart lookup analyzes any number sequence with pattern detection, digit root calculation, and classification. Daily angel number endpoint, filter by type (repeating, sequential, mirror, master). Built for synchronicity apps, spiritual journals, daily guidance features, AI chatbots, and wellness platforms.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, human design, forecast, biorhythm, tarot, numerology, crystals, dreams, I-Ching, angel numbers, location), 148+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (MCP)\n\nRoxyAPI has native Model Context Protocol support. Your AI agent auto-discovers all 148+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
+			"content": "Production-ready angel numbers API + hosted MCP for AI agents and developers. Connect Claude Code, Cursor, VS Code in seconds, no local setup. Look up meanings for 111, 222, 333, 444, 555, 666, 777, 888, 999, 1111, and 75+ angel number sequences covering every common family. Each reading breaks down into spiritual, love, career, money, and twin flame guidance, plus a biblical perspective and an honest shadow reading. Smart lookup analyzes any number sequence with pattern detection, digit root calculation, classification, and an optional sighting-context note. Daily angel number endpoint, filter by type (repeating, sequential, mirror, master, compound). Built for synchronicity apps, spiritual journals, daily guidance features, AI chatbots, and wellness platforms.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, human design, forecast, biorhythm, tarot, numerology, crystals, dreams, I-Ching, angel numbers, location), 148+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (MCP)\n\nRoxyAPI has native Model Context Protocol support. Your AI agent auto-discovers all 148+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
 			"type": "text/plain"
 		}
 	}
