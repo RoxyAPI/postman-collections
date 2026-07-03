@@ -1466,7 +1466,7 @@
 								"present"
 							]
 						},
-						"description": "Twelve classical yogas detected against this chart: Gajakesari (three-rule parashara definition), Sunapha, Anapha, Dhurdhura, Kemadruma, Chandra Mangala, Budha-Aditya, and the five Pancha Mahapurusha (Ruchaka, Bhadra, Hamsa, Malavya, Sasa). Each entry carries an `id` (matches `GET /yoga/{id}` for full glossary lookup), a `present` boolean, and classical-text `evidence` for the rule that triggered or failed."
+						"description": "Twelve classical yogas detected against this chart: Gajakesari (three-rule parashara definition), Sunapha, Anapha, Dhurdhura, Kemadruma, Chandra Mangala, Budha-Aditya, and the five Pancha Mahapurusha (Ruchaka, Bhadra, Hamsa, Malavya, Sasa). Each entry carries an `id` (matches `GET /yoga/{id}` for full glossary lookup), a `present` boolean, a `quality` (Positive, Negative, or Both = auspicious, inauspicious, or context-dependent), and classical-text `evidence` for the rule that triggered or failed."
 					},
 					"meta": {
 						"type": "object",
@@ -1634,6 +1634,7 @@
 					},
 					"time": {
 						"type": "string",
+						"format": "time",
 						"example": "10:12:00",
 						"description": "Birth time in 24-hour HH:MM:SS format. Time is CRITICAL for Lagna (Ascendant) calculation and house divisions. It changes every two hours roughly. Even minutes matter for accurate nakshatra pada and divisional chart (D9, D10) calculations. Without exact time, Lagna and house-based predictions will be incorrect."
 					},
@@ -1905,6 +1906,7 @@
 					},
 					"time": {
 						"type": "string",
+						"format": "time",
 						"example": "10:12:00",
 						"description": "Birth time in 24-hour HH:MM:SS format. Time is CRITICAL for Lagna (Ascendant) calculation and house divisions. It changes every two hours roughly. Even minutes matter for accurate nakshatra pada and divisional chart (D9, D10) calculations. Without exact time, Lagna and house-based predictions will be incorrect."
 					},
@@ -2209,6 +2211,7 @@
 					},
 					"time": {
 						"type": "string",
+						"format": "time",
 						"example": "10:12:00",
 						"description": "Birth time in 24-hour HH:MM:SS format. Time is CRITICAL for Lagna (Ascendant) calculation and house divisions. It changes every two hours roughly. Even minutes matter for accurate nakshatra pada and divisional chart (D9, D10) calculations. Without exact time, Lagna and house-based predictions will be incorrect."
 					},
@@ -2388,6 +2391,7 @@
 							},
 							"time": {
 								"type": "string",
+								"format": "time",
 								"example": "10:12:00",
 								"description": "Birth time in 24-hour HH:MM:SS format. Time is CRITICAL for Lagna (Ascendant) calculation and house divisions. It changes every two hours roughly. Even minutes matter for accurate nakshatra pada and divisional chart (D9, D10) calculations. Without exact time, Lagna and house-based predictions will be incorrect."
 							},
@@ -2441,6 +2445,7 @@
 							},
 							"time": {
 								"type": "string",
+								"format": "time",
 								"example": "10:12:00",
 								"description": "Birth time in 24-hour HH:MM:SS format. Time is CRITICAL for Lagna (Ascendant) calculation and house divisions. It changes every two hours roughly. Even minutes matter for accurate nakshatra pada and divisional chart (D9, D10) calculations. Without exact time, Lagna and house-based predictions will be incorrect."
 							},
@@ -2679,6 +2684,7 @@
 					},
 					"time": {
 						"type": "string",
+						"format": "time",
 						"example": "10:12:00",
 						"description": "Birth time in 24-hour HH:MM:SS format. Time is CRITICAL for Lagna (Ascendant) calculation and house divisions. It changes every two hours roughly. Even minutes matter for accurate nakshatra pada and divisional chart (D9, D10) calculations. Without exact time, Lagna and house-based predictions will be incorrect."
 					},
@@ -2813,6 +2819,7 @@
 					},
 					"time": {
 						"type": "string",
+						"format": "time",
 						"example": "10:12:00",
 						"description": "Birth time in 24-hour HH:MM:SS format. Time is CRITICAL for Lagna (Ascendant) calculation and house divisions. It changes every two hours roughly. Even minutes matter for accurate nakshatra pada and divisional chart (D9, D10) calculations. Without exact time, Lagna and house-based predictions will be incorrect."
 					},
@@ -2954,6 +2961,7 @@
 					},
 					"time": {
 						"type": "string",
+						"format": "time",
 						"example": "10:12:00",
 						"description": "Birth time in 24-hour HH:MM:SS format. Time is CRITICAL for Lagna (Ascendant) calculation and house divisions. It changes every two hours roughly. Even minutes matter for accurate nakshatra pada and divisional chart (D9, D10) calculations. Without exact time, Lagna and house-based predictions will be incorrect."
 					},
@@ -3076,6 +3084,7 @@
 					},
 					"time": {
 						"type": "string",
+						"format": "time",
 						"example": "10:12:00",
 						"description": "Birth time in 24-hour HH:MM:SS format. Time is CRITICAL for Lagna (Ascendant) calculation and house divisions. It changes every two hours roughly. Even minutes matter for accurate nakshatra pada and divisional chart (D9, D10) calculations. Without exact time, Lagna and house-based predictions will be incorrect."
 					},
@@ -3175,7 +3184,7 @@
 								"present"
 							]
 						},
-						"description": "Array of 12 detected yogas. Every entry carries a present boolean; filter on present === true for active yogas. Evidence text names the rule that triggered or failed."
+						"description": "Array of 12 detected yogas. Every entry carries a `present` boolean and a `quality` (Positive, Negative, or Both = auspicious, inauspicious, or context-dependent); filter on present === true for active yogas. Evidence text names the rule that triggered or failed."
 					},
 					"total": {
 						"type": "number",
@@ -3228,6 +3237,7 @@
 					},
 					"time": {
 						"type": "string",
+						"format": "time",
 						"example": "10:12:00",
 						"description": "Birth time in 24-hour HH:MM:SS format. Time is CRITICAL for Lagna (Ascendant) calculation and house divisions. It changes every two hours roughly. Even minutes matter for accurate nakshatra pada and divisional chart (D9, D10) calculations. Without exact time, Lagna and house-based predictions will be incorrect."
 					},
@@ -3419,6 +3429,7 @@
 					},
 					"time": {
 						"type": "string",
+						"format": "time",
 						"example": "10:12:00",
 						"description": "Birth time in 24-hour HH:MM:SS format"
 					},
@@ -3594,6 +3605,7 @@
 					},
 					"time": {
 						"type": "string",
+						"format": "time",
 						"example": "10:12:00",
 						"description": "Birth time in 24-hour HH:MM:SS format"
 					},
@@ -4147,6 +4159,7 @@
 					},
 					"time": {
 						"type": "string",
+						"format": "time",
 						"example": "10:12:00",
 						"description": "Birth time in 24-hour HH:MM:SS format. CRITICAL for accurate Lagna and house calculations."
 					},
@@ -5241,15 +5254,15 @@
 				"properties": {
 					"startDatetime": {
 						"type": "string",
-						"pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(:\\d{2})?Z?$",
+						"format": "date-time",
 						"example": "2025-01-15T00:00:00Z",
-						"description": "Start datetime in ISO 8601 format. Always interpreted as local time when a non-zero timezone is provided (Z suffix is ignored). With timezone 0, Z suffix is treated as UTC."
+						"description": "Start datetime in ISO 8601 (YYYY-MM-DDTHH:MM:SS). Interpreted as local time when a non-zero timezone is provided (a trailing Z is accepted but ignored); with timezone 0 it is UTC."
 					},
 					"endDatetime": {
 						"type": "string",
-						"pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(:\\d{2})?Z?$",
+						"format": "date-time",
 						"example": "2025-01-15T23:59:00Z",
-						"description": "End datetime in ISO 8601 format. Maximum 7 days from start. Always interpreted as local time when a non-zero timezone is provided (Z suffix is ignored)."
+						"description": "End datetime in ISO 8601 (YYYY-MM-DDTHH:MM:SS). Maximum 7 days from start. Interpreted as local time when a non-zero timezone is provided (a trailing Z is accepted but ignored); with timezone 0 it is UTC."
 					},
 					"intervalMinutes": {
 						"type": "number",
@@ -5715,6 +5728,7 @@
 					},
 					"time": {
 						"type": "string",
+						"format": "time",
 						"example": "10:12:00",
 						"description": "Birth time in 24-hour HH:MM:SS format. Time is CRITICAL for Lagna (Ascendant) calculation and house divisions. It changes every two hours roughly. Even minutes matter for accurate nakshatra pada and divisional chart (D9, D10) calculations. Without exact time, Lagna and house-based predictions will be incorrect."
 					},
@@ -6016,6 +6030,7 @@
 					},
 					"time": {
 						"type": "string",
+						"format": "time",
 						"example": "10:12:00",
 						"description": "Birth time in 24-hour HH:MM:SS format. Time is CRITICAL for Lagna (Ascendant) calculation and house divisions. It changes every two hours roughly. Even minutes matter for accurate nakshatra pada and divisional chart (D9, D10) calculations. Without exact time, Lagna and house-based predictions will be incorrect."
 					},
@@ -6173,6 +6188,7 @@
 					},
 					"time": {
 						"type": "string",
+						"format": "time",
 						"example": "10:12:00",
 						"description": "Birth time in 24-hour HH:MM:SS format. Time is CRITICAL for Lagna (Ascendant) calculation and house divisions. It changes every two hours roughly. Even minutes matter for accurate nakshatra pada and divisional chart (D9, D10) calculations. Without exact time, Lagna and house-based predictions will be incorrect."
 					},
@@ -7941,6 +7957,7 @@
 									},
 									"time": {
 										"type": "string",
+										"format": "time",
 										"example": "10:12:00",
 										"description": "Birth time in 24-hour HH:MM:SS format. Time is CRITICAL for Lagna (Ascendant) calculation and house divisions. It changes every two hours roughly. Even minutes matter for accurate nakshatra pada and divisional chart (D9, D10) calculations. Without exact time, Lagna and house-based predictions will be incorrect."
 									},
@@ -8587,6 +8604,7 @@
 									},
 									"time": {
 										"type": "string",
+										"format": "time",
 										"example": "10:12:00",
 										"description": "Birth time in 24-hour HH:MM:SS format. Time is CRITICAL for Lagna (Ascendant) calculation and house divisions. It changes every two hours roughly. Even minutes matter for accurate nakshatra pada and divisional chart (D9, D10) calculations. Without exact time, Lagna and house-based predictions will be incorrect."
 									},
@@ -9050,6 +9068,7 @@
 									},
 									"time": {
 										"type": "string",
+										"format": "time",
 										"example": "10:12:00",
 										"description": "Birth time in 24-hour HH:MM:SS format. Time is CRITICAL for Lagna (Ascendant) calculation and house divisions. It changes every two hours roughly. Even minutes matter for accurate nakshatra pada and divisional chart (D9, D10) calculations. Without exact time, Lagna and house-based predictions will be incorrect."
 									},
@@ -9504,6 +9523,7 @@
 									},
 									"time": {
 										"type": "string",
+										"format": "time",
 										"example": "12:00:00",
 										"description": "Time in HH:MM:SS format (24-hour). Determines the exact Moon and Sun positions for tithi and nakshatra calculation."
 									},
@@ -9997,7 +10017,7 @@
 										"type": "string",
 										"format": "date",
 										"example": "2026-02-03",
-										"description": "Date in YYYY-MM-DD format."
+										"description": "Date in YYYY-MM-DD format. A single-digit month or day is accepted and zero-padded (2026-3-5 becomes 2026-03-05). Impossible calendar dates are rejected."
 									},
 									"latitude": {
 										"type": "number",
@@ -11184,7 +11204,7 @@
 										"type": "string",
 										"format": "date",
 										"example": "2026-02-03",
-										"description": "Date in YYYY-MM-DD format."
+										"description": "Date in YYYY-MM-DD format. A single-digit month or day is accepted and zero-padded (2026-3-5 becomes 2026-03-05). Impossible calendar dates are rejected."
 									},
 									"latitude": {
 										"type": "number",
@@ -11587,7 +11607,7 @@
 										"type": "string",
 										"format": "date",
 										"example": "2026-02-03",
-										"description": "Date in YYYY-MM-DD format."
+										"description": "Date in YYYY-MM-DD format. A single-digit month or day is accepted and zero-padded (2026-3-5 becomes 2026-03-05). Impossible calendar dates are rejected."
 									},
 									"latitude": {
 										"type": "number",
@@ -13584,7 +13604,7 @@
 					"Vedic Astrology"
 				],
 				"summary": "Detect classical Vedic yogas in a birth chart",
-				"description": "Chart-driven detection of 12 classical Vedic yogas: Gajakesari (parashara three-rule definition), Sunapha, Anapha, Dhurdhura, Kemadruma, Chandra Mangala, Budha-Aditya, and the five Pancha Mahapurusha yogas (Ruchaka, Bhadra, Hamsa, Malavya, Sasa). Each yoga is returned with a present boolean and a classical-text evidence string naming the rule that triggered or failed (kendra position, dignity, malefic drishti, lordship, retrograde state). Unlike GET /yoga and GET /yoga/{id} which are dictionary lookups, this endpoint computes the kundli from birth data and runs the detection rules. Sources: BPHS ch. 75, Mantreswara Phaladeepika ch. 6, B.V. Raman Three Hundred Important Combinations.",
+				"description": "Chart-driven detection of 12 classical Vedic yogas: Gajakesari (parashara three-rule definition), Sunapha, Anapha, Dhurdhura, Kemadruma, Chandra Mangala, Budha-Aditya, and the five Pancha Mahapurusha yogas (Ruchaka, Bhadra, Hamsa, Malavya, Sasa). Each yoga is returned with an `id`, `name`, a `present` boolean, a `quality` (Positive, Negative, or Both, i.e. auspicious, inauspicious, or context-dependent), and a classical-text `evidence` string naming the rule that triggered or failed (kendra position, dignity, malefic drishti, lordship, retrograde state). There is no separate major/minor flag; `quality` is the auspiciousness axis. Unlike GET /yoga and GET /yoga/{id} which are dictionary lookups, this endpoint computes the kundli from birth data and runs the detection rules. Sources: BPHS ch. 75, Mantreswara Phaladeepika ch. 6, B.V. Raman Three Hundred Important Combinations.",
 				"security": [
 					{
 						"apiKey": []
@@ -14886,9 +14906,9 @@
 									},
 									"datetime": {
 										"type": "string",
-										"pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(:\\d{2})?Z?$",
+										"format": "date-time",
 										"example": "2025-01-15T10:30:00Z",
-										"description": "ISO 8601 datetime for ruling planets. Defaults to current time. Always interpreted as local time when a non-zero timezone is provided (Z suffix is ignored)."
+										"description": "ISO 8601 datetime (YYYY-MM-DDTHH:MM:SS) for ruling planets. Defaults to current time. Interpreted as local time when a non-zero timezone is provided (a trailing Z is accepted but ignored); with timezone 0 it is UTC."
 									},
 									"birthDate": {
 										"type": "string",
@@ -14898,6 +14918,7 @@
 									},
 									"birthTime": {
 										"type": "string",
+										"format": "time",
 										"example": "10:12:00",
 										"description": "Birth time (HH:MM:SS) for significator calculation. Required if birthDate is provided."
 									},
@@ -15160,15 +15181,15 @@
 								"properties": {
 									"startDatetime": {
 										"type": "string",
-										"pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(:\\d{2})?Z?$",
+										"format": "date-time",
 										"example": "2026-02-03T00:00:00Z",
-										"description": "Start of the interval range in ISO 8601 format. Always interpreted as local time when a non-zero timezone is provided (Z suffix is ignored)."
+										"description": "Start of the interval range in ISO 8601 (YYYY-MM-DDTHH:MM:SS). Interpreted as local time when a non-zero timezone is provided (a trailing Z is accepted but ignored); with timezone 0 it is UTC."
 									},
 									"endDatetime": {
 										"type": "string",
-										"pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(:\\d{2})?Z?$",
+										"format": "date-time",
 										"example": "2026-02-03T01:00:00Z",
-										"description": "End of the interval range in ISO 8601 format. Always interpreted as local time when a non-zero timezone is provided (Z suffix is ignored)."
+										"description": "End of the interval range in ISO 8601 (YYYY-MM-DDTHH:MM:SS). Interpreted as local time when a non-zero timezone is provided (a trailing Z is accepted but ignored); with timezone 0 it is UTC."
 									},
 									"intervalMinutes": {
 										"type": "integer",
@@ -16209,6 +16230,7 @@
 									},
 									"time": {
 										"type": "string",
+										"format": "time",
 										"example": "12:00:00",
 										"description": "Time in HH:MM:SS format (24-hour). Exact time affects fast-moving planets (Moon, Mercury) and aspect orbs."
 									},
@@ -17434,6 +17456,7 @@
 									},
 									"birthTime": {
 										"type": "string",
+										"format": "time",
 										"example": "10:12:00",
 										"description": "Birth time in HH:MM:SS format (24-hour). Critical for accurate natal Lagna and Placidus house cusps which determine transit house placements."
 									},
@@ -17445,7 +17468,7 @@
 									},
 									"transitTime": {
 										"type": "string",
-										"default": "12:00:00",
+										"format": "time",
 										"example": "12:00:00",
 										"description": "Transit time in HH:MM:SS format (24-hour). Affects fast-moving planets like Moon. Defaults to noon."
 									},
@@ -18291,6 +18314,7 @@
 									},
 									"time": {
 										"type": "string",
+										"format": "time",
 										"example": "12:00:00",
 										"description": "Time in HH:MM:SS format (24-hour). Exact time affects declination values, especially for the fast-moving Moon."
 									},
