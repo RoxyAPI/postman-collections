@@ -1,15 +1,15 @@
 {
 	"item": [
 		{
-			"id": "b5225add-3692-4c9a-8c29-9ee4eb454bd9",
+			"id": "46a55f7c-1129-4cf0-a160-fc9b5586dcb9",
 			"name": "Crystals and Healing Stones",
 			"description": {
-				"content": "Production-ready crystal healing API + hosted MCP for AI agents and developers. Connect Claude Code, Cursor, VS Code in seconds, no local setup. Look up 80 healing crystals and gemstones with spiritual, emotional, and physical healing properties. Filter by chakra (Root through Crown), zodiac sign, or element. Search by keyword, browse birthstones by month, discover crystal pairings, and get random or daily crystal picks. Includes Mohs hardness ratings, numerological vibrations, planetary associations, and crystal pairing recommendations. Built for wellness apps, crystal shop platforms, chakra balancing tools, astrology integrations, and AI-powered spiritual advisors.",
+				"content": "Crystal healing API covering the most popular and widely-searched healing crystals and gemstones, from Amethyst and Rose Quartz to Moldavite and Selenite, each with its spiritual, emotional, and physical properties. Filter by chakra (Root through Crown), zodiac sign, or element, search by keyword, browse birthstones by month, discover crystal pairings, and get random or daily crystal picks. Includes Mohs hardness, numerological vibration, and planetary associations per stone. Built for wellness apps, crystal shops, chakra-balancing tools, astrology integrations, and AI spiritual advisors. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.",
 				"type": "text/plain"
 			},
 			"item": [
 				{
-					"id": "36d7ae5b-6f1c-470a-8b8c-ec47e286a108",
+					"id": "98080855-087a-4157-871e-bf04cdcd73d3",
 					"name": "Crystals by Zodiac Sign",
 					"request": {
 						"name": "Crystals by Zodiac Sign",
@@ -82,7 +82,7 @@
 					},
 					"response": [
 						{
-							"id": "172cb78f-f00b-450e-ae27-dd12151b4091",
+							"id": "f347e406-3ea5-45ea-b968-a9418fd67fd9",
 							"name": "Paginated list of crystals associated with the zodiac sign",
 							"originalRequest": {
 								"url": {
@@ -142,12 +142,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"sign\": \"Pisces\",\n  \"total\": 1411.3886478709903,\n  \"limit\": 1367.5763413596553,\n  \"offset\": 4200.014240006561,\n  \"crystals\": [\n    {\n      \"name\": \"string\",\n      \"id\": \"string\",\n      \"imageUrl\": \"string\",\n      \"colors\": [\n        \"string\",\n        \"string\"\n      ]\n    },\n    {\n      \"name\": \"string\",\n      \"id\": \"string\",\n      \"imageUrl\": \"string\",\n      \"colors\": [\n        \"string\",\n        \"string\"\n      ]\n    }\n  ]\n}",
+							"body": "{\n  \"sign\": \"Pisces\",\n  \"total\": 1526.34269280694,\n  \"limit\": 207.83275449276383,\n  \"offset\": 5717.064183374989,\n  \"crystals\": [\n    {\n      \"name\": \"string\",\n      \"id\": \"string\",\n      \"imageUrl\": \"string\",\n      \"colors\": [\n        \"string\",\n        \"string\"\n      ]\n    },\n    {\n      \"name\": \"string\",\n      \"id\": \"string\",\n      \"imageUrl\": \"string\",\n      \"colors\": [\n        \"string\",\n        \"string\"\n      ]\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "78ef402b-f470-4feb-a215-b9a2412f8bdb",
+							"id": "f576ad8a-f4aa-47ab-84ee-25e189d57d4b",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -207,12 +207,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8228.732285746124,\n      \"maximum\": 7943.941844732023,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6497.0975774668905,\n      \"maximum\": 4821.354201525105,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9042.721586603024,\n      \"maximum\": 9756.530236103448,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2016.8882646029917,\n      \"maximum\": 8945.78036356481,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0bbd91a5-4c20-47ed-a814-28777cb8f978",
+							"id": "ac088e96-8bce-41c8-bedd-e1d924298972",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -277,7 +277,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ffa7859e-0fbc-4e10-99db-541ee72f56be",
+							"id": "c86593ad-3121-4abb-a7ef-740c330e1b77",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -348,7 +348,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "cf16c934-97c5-4e4e-81e3-069e2c945ebc",
+							"id": "f9c2fc34-abec-47a9-8281-fa0e1e1dc3db",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -413,7 +413,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "70437d14-ae3c-48ba-87bb-a0e9d861e931",
+							"id": "83d1dbf9-19d0-4888-9e32-7e43140f6f8f",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -484,7 +484,7 @@
 					}
 				},
 				{
-					"id": "abe04090-48be-41ed-8c17-bc768cbfbefc",
+					"id": "2802c3cd-8294-4358-85e6-87dd008ac70d",
 					"name": "Crystals by Chakra",
 					"request": {
 						"name": "Crystals by Chakra",
@@ -557,7 +557,7 @@
 					},
 					"response": [
 						{
-							"id": "9589bfcc-2099-425c-9010-966c9b02dd20",
+							"id": "0d39a601-83ab-4212-b816-f2d27abd7b43",
 							"name": "Paginated list of crystals for the specified chakra",
 							"originalRequest": {
 								"url": {
@@ -617,12 +617,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"chakra\": \"Heart\",\n  \"total\": 8616.23012604796,\n  \"limit\": 8219.235052614762,\n  \"offset\": 5404.272719030318,\n  \"crystals\": [\n    {\n      \"name\": \"string\",\n      \"id\": \"string\",\n      \"imageUrl\": \"string\",\n      \"colors\": [\n        \"string\",\n        \"string\"\n      ]\n    },\n    {\n      \"name\": \"string\",\n      \"id\": \"string\",\n      \"imageUrl\": \"string\",\n      \"colors\": [\n        \"string\",\n        \"string\"\n      ]\n    }\n  ]\n}",
+							"body": "{\n  \"chakra\": \"Heart\",\n  \"total\": 4200.82549611831,\n  \"limit\": 4268.835362060793,\n  \"offset\": 3007.881497574327,\n  \"crystals\": [\n    {\n      \"name\": \"string\",\n      \"id\": \"string\",\n      \"imageUrl\": \"string\",\n      \"colors\": [\n        \"string\",\n        \"string\"\n      ]\n    },\n    {\n      \"name\": \"string\",\n      \"id\": \"string\",\n      \"imageUrl\": \"string\",\n      \"colors\": [\n        \"string\",\n        \"string\"\n      ]\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "fa0d9fa8-8117-4684-9c99-c73b05e57b67",
+							"id": "3b6545f6-08d4-4326-9d24-b8c3f3d1e705",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -682,12 +682,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8228.732285746124,\n      \"maximum\": 7943.941844732023,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6497.0975774668905,\n      \"maximum\": 4821.354201525105,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9042.721586603024,\n      \"maximum\": 9756.530236103448,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2016.8882646029917,\n      \"maximum\": 8945.78036356481,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7f093297-43a3-4c64-b9d2-6a2009c83245",
+							"id": "63a99e1a-a8ea-4304-afac-48614d47362f",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -752,7 +752,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ad3d4c60-ab06-4a27-bbd2-d4ad2b7157e1",
+							"id": "c38b7701-6fa2-4d20-9306-5f6527a5fe2e",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -823,7 +823,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5e392184-f911-4848-b526-3f376c139d3f",
+							"id": "ff2af857-dd4a-4172-be72-d2ad60c51b7a",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -888,7 +888,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7f3fdd99-2b6d-4035-929d-9507139e2e44",
+							"id": "868f099d-a43d-4011-9fee-4aa1aba8f40c",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -959,7 +959,7 @@
 					}
 				},
 				{
-					"id": "b5801aba-b3c4-4f59-bd11-c6a669636647",
+					"id": "7a155866-147d-463a-922c-62075fff3aeb",
 					"name": "Crystals by Element",
 					"request": {
 						"name": "Crystals by Element",
@@ -1032,7 +1032,7 @@
 					},
 					"response": [
 						{
-							"id": "6d60af7e-53a8-4a6b-b9b6-b8e873b5a608",
+							"id": "2a37ec4c-d4a8-4db5-b71b-1df3359d0433",
 							"name": "Paginated list of crystals for the specified element",
 							"originalRequest": {
 								"url": {
@@ -1092,12 +1092,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"element\": \"Water\",\n  \"total\": 5619.76428229151,\n  \"limit\": 7530.346860057768,\n  \"offset\": 5115.945159270284,\n  \"crystals\": [\n    {\n      \"name\": \"string\",\n      \"id\": \"string\",\n      \"imageUrl\": \"string\",\n      \"colors\": [\n        \"string\",\n        \"string\"\n      ]\n    },\n    {\n      \"name\": \"string\",\n      \"id\": \"string\",\n      \"imageUrl\": \"string\",\n      \"colors\": [\n        \"string\",\n        \"string\"\n      ]\n    }\n  ]\n}",
+							"body": "{\n  \"element\": \"Water\",\n  \"total\": 4249.087354346204,\n  \"limit\": 3792.9907576959877,\n  \"offset\": 3108.9112910800786,\n  \"crystals\": [\n    {\n      \"name\": \"string\",\n      \"id\": \"string\",\n      \"imageUrl\": \"string\",\n      \"colors\": [\n        \"string\",\n        \"string\"\n      ]\n    },\n    {\n      \"name\": \"string\",\n      \"id\": \"string\",\n      \"imageUrl\": \"string\",\n      \"colors\": [\n        \"string\",\n        \"string\"\n      ]\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f3be2093-c5eb-473d-9d1d-86f9f0e8deec",
+							"id": "317ae030-814b-4ba3-97bd-dd02cd24b5f6",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1157,12 +1157,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8228.732285746124,\n      \"maximum\": 7943.941844732023,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6497.0975774668905,\n      \"maximum\": 4821.354201525105,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9042.721586603024,\n      \"maximum\": 9756.530236103448,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2016.8882646029917,\n      \"maximum\": 8945.78036356481,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "66aa9ad7-4068-4677-8ce4-84ccece8b357",
+							"id": "0b2425b2-c30a-4e65-8293-ec94d6cda100",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1227,7 +1227,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b0e23982-2d1a-41d1-8037-386bbd459bef",
+							"id": "a83bce27-49a3-4bcf-b3cb-ba5175941757",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1298,7 +1298,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "bbf621b8-a563-41ea-bc88-493932c59a89",
+							"id": "36d905ac-234b-4ab5-afac-3b9eb30b446d",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1363,7 +1363,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b2e96e6b-bef3-4846-a51c-4deb313a8321",
+							"id": "7ee373c4-a710-4f70-a25b-339529bff73b",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1434,7 +1434,7 @@
 					}
 				},
 				{
-					"id": "81b9315d-6007-4f42-9f24-b0e122a8353d",
+					"id": "d70ee5d5-75ea-47c6-9cd7-af2dc5a78a8a",
 					"name": "Birthstone Crystals by Month",
 					"request": {
 						"name": "Birthstone Crystals by Month",
@@ -1495,7 +1495,7 @@
 					},
 					"response": [
 						{
-							"id": "717f4398-b8a6-4f27-8193-e0a9ffdae840",
+							"id": "83b4063d-dc5b-4682-95cc-c30388136ffb",
 							"name": "Birthstone crystals for the specified month",
 							"originalRequest": {
 								"url": {
@@ -1547,12 +1547,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"month\": 3220.191771157319,\n  \"monthName\": \"February\",\n  \"total\": 5164.126454887048,\n  \"crystals\": [\n    {\n      \"name\": \"string\",\n      \"id\": \"string\",\n      \"imageUrl\": \"string\",\n      \"colors\": [\n        \"string\",\n        \"string\"\n      ]\n    },\n    {\n      \"name\": \"string\",\n      \"id\": \"string\",\n      \"imageUrl\": \"string\",\n      \"colors\": [\n        \"string\",\n        \"string\"\n      ]\n    }\n  ]\n}",
+							"body": "{\n  \"month\": 3372.8072542382715,\n  \"monthName\": \"February\",\n  \"total\": 8596.886179598912,\n  \"crystals\": [\n    {\n      \"name\": \"string\",\n      \"id\": \"string\",\n      \"imageUrl\": \"string\",\n      \"colors\": [\n        \"string\",\n        \"string\"\n      ]\n    },\n    {\n      \"name\": \"string\",\n      \"id\": \"string\",\n      \"imageUrl\": \"string\",\n      \"colors\": [\n        \"string\",\n        \"string\"\n      ]\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "80ca5353-fc20-4489-9ba9-441199c284a7",
+							"id": "8df2737f-0d80-47df-b443-faa26c24ebcc",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1604,12 +1604,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8228.732285746124,\n      \"maximum\": 7943.941844732023,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6497.0975774668905,\n      \"maximum\": 4821.354201525105,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9042.721586603024,\n      \"maximum\": 9756.530236103448,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2016.8882646029917,\n      \"maximum\": 8945.78036356481,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d97df534-a83f-437a-b16c-a0b18952d7cc",
+							"id": "e7e1b359-f93a-429c-ad13-1f6a37e0cb3d",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1666,7 +1666,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0a878e08-e69e-4663-bfda-1b80f0f7bac0",
+							"id": "d83aaeeb-d6a2-4440-8e10-1682ef960f75",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1729,7 +1729,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "953645ff-cff2-4bca-81f6-3facf791bd7f",
+							"id": "6604e291-271b-41a1-99d1-3a7d9da657f0",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1786,7 +1786,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "23e3a343-8e58-477a-a76c-2643cadaf8b8",
+							"id": "ffc65dd4-191a-4317-87e0-0f6c923e300e",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1849,7 +1849,7 @@
 					}
 				},
 				{
-					"id": "ef34b727-ead0-46c4-87ee-f0b90581bee8",
+					"id": "2f939d1a-fb98-4a07-8710-b9ca64820920",
 					"name": "Search Crystals",
 					"request": {
 						"name": "Search Crystals",
@@ -1919,7 +1919,7 @@
 					},
 					"response": [
 						{
-							"id": "0d62ed35-9cc4-4033-89e4-2aed7b857fac",
+							"id": "3f1a5820-6436-4a96-9234-e9952416d6b4",
 							"name": "Crystals matching the search query",
 							"originalRequest": {
 								"url": {
@@ -1974,12 +1974,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"query\": \"string\",\n  \"total\": 5262.524947497705,\n  \"limit\": 3047.9257444099117,\n  \"offset\": 2771.7858495238625,\n  \"crystals\": [\n    {\n      \"name\": \"string\",\n      \"id\": \"string\",\n      \"imageUrl\": \"string\",\n      \"colors\": [\n        \"string\",\n        \"string\"\n      ]\n    },\n    {\n      \"name\": \"string\",\n      \"id\": \"string\",\n      \"imageUrl\": \"string\",\n      \"colors\": [\n        \"string\",\n        \"string\"\n      ]\n    }\n  ]\n}",
+							"body": "{\n  \"query\": \"string\",\n  \"total\": 8615.663058789814,\n  \"limit\": 4267.887835744747,\n  \"offset\": 6870.693272180325,\n  \"crystals\": [\n    {\n      \"name\": \"string\",\n      \"id\": \"string\",\n      \"imageUrl\": \"string\",\n      \"colors\": [\n        \"string\",\n        \"string\"\n      ]\n    },\n    {\n      \"name\": \"string\",\n      \"id\": \"string\",\n      \"imageUrl\": \"string\",\n      \"colors\": [\n        \"string\",\n        \"string\"\n      ]\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "71b96ae2-6555-43b7-b7d9-d2f757a59ab3",
+							"id": "e3de80c5-170a-427b-888d-c31042a8d30c",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2034,12 +2034,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8228.732285746124,\n      \"maximum\": 7943.941844732023,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6497.0975774668905,\n      \"maximum\": 4821.354201525105,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9042.721586603024,\n      \"maximum\": 9756.530236103448,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2016.8882646029917,\n      \"maximum\": 8945.78036356481,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2db3ecf7-906b-4e73-b458-c5aaca48aa1d",
+							"id": "379313d6-2673-412d-a9e8-8069d543103d",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2099,7 +2099,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "43ec1c7e-660e-4fde-b811-50cf53fb5d59",
+							"id": "f75c5abe-f26b-43d9-a710-bd95811981e8",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2165,7 +2165,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5baf87dd-ce05-4f07-8851-b106802fb265",
+							"id": "824c3eed-18bc-46cf-b0b3-f12882620f7e",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2225,7 +2225,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "55cdbbe3-3108-4a07-99a8-e6b8c2ce6743",
+							"id": "7e8df4fb-a949-4dd7-9c47-25d22e2a3bcf",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2291,7 +2291,7 @@
 					}
 				},
 				{
-					"id": "2a8d6311-781e-414c-8629-0298697603f7",
+					"id": "14b5798b-a3e0-4daf-93c3-3c2ecc6dcff0",
 					"name": "Crystal Pairings",
 					"request": {
 						"name": "Crystal Pairings",
@@ -2321,7 +2321,7 @@
 									"type": "any",
 									"value": "amethyst",
 									"key": "id",
-									"description": "(Required) URL-safe crystal identifier to find pairings for (e.g., \"amethyst\", \"rose-quartz\")."
+									"description": "(Required) URL-safe crystal identifier to find pairings for, case-insensitive (e.g., \"amethyst\", \"Amethyst\", \"rose-quartz\" all resolve)."
 								}
 							]
 						},
@@ -2352,7 +2352,7 @@
 					},
 					"response": [
 						{
-							"id": "0019fde1-9725-4381-b52e-84285f71320f",
+							"id": "60026072-ed2a-426c-a6a1-190f2493fe05",
 							"name": "Crystal pairing recommendations",
 							"originalRequest": {
 								"url": {
@@ -2375,7 +2375,7 @@
 											"type": "any",
 											"value": "amethyst",
 											"key": "id",
-											"description": "(Required) URL-safe crystal identifier to find pairings for (e.g., \"amethyst\", \"rose-quartz\")."
+											"description": "(Required) URL-safe crystal identifier to find pairings for, case-insensitive (e.g., \"amethyst\", \"Amethyst\", \"rose-quartz\" all resolve)."
 										}
 									]
 								},
@@ -2409,7 +2409,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "10498c61-dbea-4568-9de2-8ba66ca9e434",
+							"id": "6da7d798-75a2-4d22-a2c7-4732b6b514ac",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2432,7 +2432,7 @@
 											"type": "any",
 											"value": "amethyst",
 											"key": "id",
-											"description": "(Required) URL-safe crystal identifier to find pairings for (e.g., \"amethyst\", \"rose-quartz\")."
+											"description": "(Required) URL-safe crystal identifier to find pairings for, case-insensitive (e.g., \"amethyst\", \"Amethyst\", \"rose-quartz\" all resolve)."
 										}
 									]
 								},
@@ -2461,12 +2461,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8228.732285746124,\n      \"maximum\": 7943.941844732023,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6497.0975774668905,\n      \"maximum\": 4821.354201525105,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9042.721586603024,\n      \"maximum\": 9756.530236103448,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2016.8882646029917,\n      \"maximum\": 8945.78036356481,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0bc2e31a-8332-4101-b7e7-50f0d6af40a1",
+							"id": "5a801f66-925d-4b12-8f58-c9ae476b470a",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2489,7 +2489,7 @@
 											"type": "any",
 											"value": "amethyst",
 											"key": "id",
-											"description": "(Required) URL-safe crystal identifier to find pairings for (e.g., \"amethyst\", \"rose-quartz\")."
+											"description": "(Required) URL-safe crystal identifier to find pairings for, case-insensitive (e.g., \"amethyst\", \"Amethyst\", \"rose-quartz\" all resolve)."
 										}
 									]
 								},
@@ -2523,7 +2523,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "770f1ab4-d82e-41b5-a036-f6b210249e23",
+							"id": "f9c0593a-00d1-4706-8a65-d648bb0dd9b3",
 							"name": "Crystal not found in database",
 							"originalRequest": {
 								"url": {
@@ -2546,7 +2546,7 @@
 											"type": "any",
 											"value": "amethyst",
 											"key": "id",
-											"description": "(Required) URL-safe crystal identifier to find pairings for (e.g., \"amethyst\", \"rose-quartz\")."
+											"description": "(Required) URL-safe crystal identifier to find pairings for, case-insensitive (e.g., \"amethyst\", \"Amethyst\", \"rose-quartz\" all resolve)."
 										}
 									]
 								},
@@ -2580,7 +2580,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b41f60c4-32d5-4aba-86e6-b9efff1854d6",
+							"id": "a3ce8582-30cf-4f0d-bdb6-22473b0cfce1",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2603,7 +2603,7 @@
 											"type": "any",
 											"value": "amethyst",
 											"key": "id",
-											"description": "(Required) URL-safe crystal identifier to find pairings for (e.g., \"amethyst\", \"rose-quartz\")."
+											"description": "(Required) URL-safe crystal identifier to find pairings for, case-insensitive (e.g., \"amethyst\", \"Amethyst\", \"rose-quartz\" all resolve)."
 										}
 									]
 								},
@@ -2643,7 +2643,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "15206670-052f-4b87-b681-d78581302ac4",
+							"id": "41f0bf1f-2d08-4b43-b37a-b1977bcd1731",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2666,7 +2666,7 @@
 											"type": "any",
 											"value": "amethyst",
 											"key": "id",
-											"description": "(Required) URL-safe crystal identifier to find pairings for (e.g., \"amethyst\", \"rose-quartz\")."
+											"description": "(Required) URL-safe crystal identifier to find pairings for, case-insensitive (e.g., \"amethyst\", \"Amethyst\", \"rose-quartz\" all resolve)."
 										}
 									]
 								},
@@ -2700,7 +2700,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9cd51c00-7b56-4d56-9a8a-55725a74a99a",
+							"id": "51b0654e-175b-4a23-9fac-45b97110bc2e",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2723,7 +2723,7 @@
 											"type": "any",
 											"value": "amethyst",
 											"key": "id",
-											"description": "(Required) URL-safe crystal identifier to find pairings for (e.g., \"amethyst\", \"rose-quartz\")."
+											"description": "(Required) URL-safe crystal identifier to find pairings for, case-insensitive (e.g., \"amethyst\", \"Amethyst\", \"rose-quartz\" all resolve)."
 										}
 									]
 								},
@@ -2763,7 +2763,7 @@
 					}
 				},
 				{
-					"id": "716df604-19d8-4af6-a57a-00e88b1bb3c7",
+					"id": "5671b382-2902-44c2-9fad-ad719c68b74c",
 					"name": "Daily Crystal",
 					"request": {
 						"name": "Daily Crystal",
@@ -2828,7 +2828,7 @@
 					},
 					"response": [
 						{
-							"id": "dcee82de-a6f0-4ba4-bfa7-e0c67b93c0ca",
+							"id": "bbb018a5-e536-43dc-9f4f-f9fb0960a042",
 							"name": "Daily crystal teaser with summary information",
 							"originalRequest": {
 								"url": {
@@ -2884,7 +2884,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8224c0f6-fc3d-4277-86a8-f80167cba76d",
+							"id": "a85eb0b8-31cb-4e9a-916e-50ef53844fa6",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2935,12 +2935,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8228.732285746124,\n      \"maximum\": 7943.941844732023,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6497.0975774668905,\n      \"maximum\": 4821.354201525105,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9042.721586603024,\n      \"maximum\": 9756.530236103448,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2016.8882646029917,\n      \"maximum\": 8945.78036356481,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "82e82367-2099-41db-a88b-6ad5d4d3909e",
+							"id": "c4a52d37-8ed2-4122-82d3-049f05745631",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2996,7 +2996,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3e0ceace-131e-46fe-876b-5c69ee317103",
+							"id": "13467205-fcb3-4efb-bfaf-a8f7a0583fe9",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3058,7 +3058,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "24fbcfc5-96a2-4729-8647-ce6b2a7775d8",
+							"id": "a85cf442-1bbb-4c94-9de9-7cba84be65cd",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3114,7 +3114,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3258ec28-0723-4b7a-887a-9786439a8f7c",
+							"id": "ea28fb1c-c397-4681-b5a0-7ea071eaf397",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3176,7 +3176,7 @@
 					}
 				},
 				{
-					"id": "c0260f3b-224c-40bb-949c-fd22e51cbeca",
+					"id": "6053ab91-7b09-4a80-807a-dadd0d729e65",
 					"name": "Random Crystal",
 					"request": {
 						"name": "Random Crystal",
@@ -3228,7 +3228,7 @@
 					},
 					"response": [
 						{
-							"id": "aa844876-6d14-4218-81a9-611978bd0805",
+							"id": "de5a0ba3-c880-422b-b046-fb5d502b565f",
 							"name": "A randomly selected crystal with summary information",
 							"originalRequest": {
 								"url": {
@@ -3276,7 +3276,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6b5dbda0-b8c4-4c3c-9eb2-48a97248a089",
+							"id": "4a9d64fa-e13f-4cb8-89ee-a5a67dc39297",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3319,12 +3319,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8228.732285746124,\n      \"maximum\": 7943.941844732023,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6497.0975774668905,\n      \"maximum\": 4821.354201525105,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9042.721586603024,\n      \"maximum\": 9756.530236103448,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2016.8882646029917,\n      \"maximum\": 8945.78036356481,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "4a306306-4ae8-476a-93db-a1f59ecf5d8f",
+							"id": "be43e178-d012-4a9a-a4e1-8f56a61c7b8a",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3372,7 +3372,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "4154a450-5313-4343-b54b-1277a9bc71ec",
+							"id": "00e09b28-e86e-403e-9432-e2ba28c3baa3",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3426,7 +3426,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7339651a-90c8-411d-beb2-8269cffe1bde",
+							"id": "6dd3bdfc-330c-4599-9705-5a2a4a132632",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3474,7 +3474,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c8bd6226-1e2e-48ef-b4d2-0c8e5c956bce",
+							"id": "608a9e33-c7c0-4f87-add5-50aff4b258cc",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3528,7 +3528,7 @@
 					}
 				},
 				{
-					"id": "47797687-7695-45b4-97a9-4321b53fd8d3",
+					"id": "44344da1-970c-4123-97a4-99deb27b6698",
 					"name": "List Crystal Colors",
 					"request": {
 						"name": "List Crystal Colors",
@@ -3573,7 +3573,7 @@
 					},
 					"response": [
 						{
-							"id": "3be19a1f-31dc-4957-a689-a963873fc8ef",
+							"id": "2649300b-84c2-48cd-aece-0bbf7187762a",
 							"name": "All unique crystal colors sorted alphabetically",
 							"originalRequest": {
 								"url": {
@@ -3616,7 +3616,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "cd38c4e3-a5eb-427a-baf9-c8b638ced2bd",
+							"id": "7f61b82a-6035-45ea-b531-7b7b28872a24",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3654,12 +3654,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8228.732285746124,\n      \"maximum\": 7943.941844732023,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6497.0975774668905,\n      \"maximum\": 4821.354201525105,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9042.721586603024,\n      \"maximum\": 9756.530236103448,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2016.8882646029917,\n      \"maximum\": 8945.78036356481,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ae6034ce-c39c-4516-b67b-242b198130a6",
+							"id": "945e884c-88f8-4ccc-a6e4-79b771bd68a2",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3702,7 +3702,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "81a0d319-528b-45a8-90d4-0bdb5c7a7aa7",
+							"id": "70a0992c-847e-44bb-9c49-5c389baa1849",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3751,7 +3751,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3eb52831-49f4-41d3-9a6b-5c2dcc412d90",
+							"id": "8960eccf-c03c-4804-94fb-25d4f523b806",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3794,7 +3794,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6d39b4aa-2891-4b50-9a84-c70cc06e19dd",
+							"id": "5802f59a-2e7d-48d9-8c37-06b5f3daf6c2",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3843,7 +3843,7 @@
 					}
 				},
 				{
-					"id": "dcea8995-1218-4242-9285-4d35e9768051",
+					"id": "70527a71-0d86-401e-aa1f-bbf6970befb7",
 					"name": "List Crystal Planets",
 					"request": {
 						"name": "List Crystal Planets",
@@ -3888,7 +3888,7 @@
 					},
 					"response": [
 						{
-							"id": "64ed3a1c-51a4-42b4-aeab-ce073f9b61c6",
+							"id": "848418b8-1b37-4d7b-9d22-4dd55c91d739",
 							"name": "All unique planetary associations sorted alphabetically",
 							"originalRequest": {
 								"url": {
@@ -3931,7 +3931,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "90caf6bc-e05a-4231-a712-e4d70ce4a79a",
+							"id": "01a2c0c5-60bc-4749-ae47-1f4901803b97",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3969,12 +3969,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8228.732285746124,\n      \"maximum\": 7943.941844732023,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6497.0975774668905,\n      \"maximum\": 4821.354201525105,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9042.721586603024,\n      \"maximum\": 9756.530236103448,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2016.8882646029917,\n      \"maximum\": 8945.78036356481,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5127ebaa-418c-40ae-a25c-de43761f0cac",
+							"id": "1de0f6ca-cbf0-4ff9-8e98-9308f14582d4",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -4017,7 +4017,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f1d5aa20-f0f7-4515-833e-2789f01bc482",
+							"id": "d96f9b2f-2bf4-4157-a4e3-9263b2eef096",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -4066,7 +4066,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "14f892c6-dd97-4a78-869d-4e2ed1c7dfe5",
+							"id": "3529dad2-d29f-4310-aa23-b436ebdd5078",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -4109,7 +4109,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "fd136367-cd0a-4086-bbb7-db46c74205ef",
+							"id": "2b4b6b7d-4486-465c-97c5-24ad946a9781",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -4158,7 +4158,7 @@
 					}
 				},
 				{
-					"id": "7ae150c6-60f8-4f85-93ef-861e68dba206",
+					"id": "9ef6be34-3fec-4ade-b341-e2b987559682",
 					"name": "List All Crystals",
 					"request": {
 						"name": "List All Crystals",
@@ -4252,7 +4252,7 @@
 					},
 					"response": [
 						{
-							"id": "9e0d02ca-3dac-4cd4-9b21-7538470c59b3",
+							"id": "f2dd9b17-8057-49e0-b01b-69ce797fc269",
 							"name": "Paginated list of crystals with summary information",
 							"originalRequest": {
 								"url": {
@@ -4323,12 +4323,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"total\": 80,\n  \"limit\": 20,\n  \"offset\": 0,\n  \"crystals\": [\n    {\n      \"name\": \"string\",\n      \"id\": \"string\",\n      \"imageUrl\": \"string\",\n      \"colors\": [\n        \"string\",\n        \"string\"\n      ],\n      \"chakras\": [\n        \"string\",\n        \"string\"\n      ]\n    },\n    {\n      \"name\": \"string\",\n      \"id\": \"string\",\n      \"imageUrl\": \"string\",\n      \"colors\": [\n        \"string\",\n        \"string\"\n      ],\n      \"chakras\": [\n        \"string\",\n        \"string\"\n      ]\n    }\n  ]\n}",
+							"body": "{\n  \"total\": 1612.1833784014061,\n  \"limit\": 20,\n  \"offset\": 0,\n  \"crystals\": [\n    {\n      \"name\": \"string\",\n      \"id\": \"string\",\n      \"imageUrl\": \"string\",\n      \"colors\": [\n        \"string\",\n        \"string\"\n      ],\n      \"chakras\": [\n        \"string\",\n        \"string\"\n      ]\n    },\n    {\n      \"name\": \"string\",\n      \"id\": \"string\",\n      \"imageUrl\": \"string\",\n      \"colors\": [\n        \"string\",\n        \"string\"\n      ],\n      \"chakras\": [\n        \"string\",\n        \"string\"\n      ]\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ca8d2e19-9f3d-44b9-be26-bfb51246e516",
+							"id": "af2fbbd4-173c-4344-bee0-4c14cb71e438",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -4399,12 +4399,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8228.732285746124,\n      \"maximum\": 7943.941844732023,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6497.0975774668905,\n      \"maximum\": 4821.354201525105,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9042.721586603024,\n      \"maximum\": 9756.530236103448,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2016.8882646029917,\n      \"maximum\": 8945.78036356481,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d96d4584-fd0f-4b97-87dd-b13e32512ee9",
+							"id": "5916b6c1-48ae-4737-98e4-29b484f3e26b",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -4480,7 +4480,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "300f2d68-a461-4371-9210-6acbe95cea8a",
+							"id": "e0cfa11f-a706-4f60-b78f-fb98fcacaada",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -4562,7 +4562,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3a8fb551-4f38-446d-9f60-5e474517fcf3",
+							"id": "340d4b69-93a6-4b42-bd11-c3e348ab3c36",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -4638,7 +4638,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3d02768f-9380-4c19-b8b8-cbb9f08671d5",
+							"id": "92133c2f-8da8-4a9a-976a-be14f062bcef",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -4720,7 +4720,7 @@
 					}
 				},
 				{
-					"id": "73e39ef5-cbf0-4263-a309-7b9332b3fe00",
+					"id": "6f09eded-201b-4f14-ac02-a26a37de81f3",
 					"name": "Get Crystal Healing Properties",
 					"request": {
 						"name": "Get Crystal Healing Properties",
@@ -4749,7 +4749,7 @@
 									"type": "any",
 									"value": "amethyst",
 									"key": "id",
-									"description": "(Required) URL-safe crystal identifier (e.g., \"amethyst\", \"rose-quartz\", \"black-tourmaline\"). Must match an entry in the database."
+									"description": "(Required) URL-safe crystal identifier, case-insensitive (e.g., \"amethyst\", \"Amethyst\", \"rose-quartz\" all resolve). Must match an entry in the database."
 								}
 							]
 						},
@@ -4780,7 +4780,7 @@
 					},
 					"response": [
 						{
-							"id": "acd2adb2-88f2-4d46-b341-6b269bc7470d",
+							"id": "b1ac2062-4710-4cf0-8f60-89ec4f7ab04c",
 							"name": "Complete crystal healing properties with all associations",
 							"originalRequest": {
 								"url": {
@@ -4802,7 +4802,7 @@
 											"type": "any",
 											"value": "amethyst",
 											"key": "id",
-											"description": "(Required) URL-safe crystal identifier (e.g., \"amethyst\", \"rose-quartz\", \"black-tourmaline\"). Must match an entry in the database."
+											"description": "(Required) URL-safe crystal identifier, case-insensitive (e.g., \"amethyst\", \"Amethyst\", \"rose-quartz\" all resolve). Must match an entry in the database."
 										}
 									]
 								},
@@ -4836,7 +4836,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d7fa721b-01ee-41c6-bd4d-78720c9d787e",
+							"id": "ed53f248-1a0a-4276-84be-3439be01cb55",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -4858,7 +4858,7 @@
 											"type": "any",
 											"value": "amethyst",
 											"key": "id",
-											"description": "(Required) URL-safe crystal identifier (e.g., \"amethyst\", \"rose-quartz\", \"black-tourmaline\"). Must match an entry in the database."
+											"description": "(Required) URL-safe crystal identifier, case-insensitive (e.g., \"amethyst\", \"Amethyst\", \"rose-quartz\" all resolve). Must match an entry in the database."
 										}
 									]
 								},
@@ -4887,12 +4887,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8228.732285746124,\n      \"maximum\": 7943.941844732023,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6497.0975774668905,\n      \"maximum\": 4821.354201525105,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9042.721586603024,\n      \"maximum\": 9756.530236103448,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2016.8882646029917,\n      \"maximum\": 8945.78036356481,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e5a0dde8-64a2-4ac8-8843-73f7d2a8f85a",
+							"id": "ad98bec4-a6ba-4e2d-818a-52e19b33b8ed",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -4914,7 +4914,7 @@
 											"type": "any",
 											"value": "amethyst",
 											"key": "id",
-											"description": "(Required) URL-safe crystal identifier (e.g., \"amethyst\", \"rose-quartz\", \"black-tourmaline\"). Must match an entry in the database."
+											"description": "(Required) URL-safe crystal identifier, case-insensitive (e.g., \"amethyst\", \"Amethyst\", \"rose-quartz\" all resolve). Must match an entry in the database."
 										}
 									]
 								},
@@ -4948,7 +4948,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e7a2ffa0-ec89-475b-baad-5b2ec210ea6d",
+							"id": "1c4f8ee4-38dc-438c-8b07-f25415f0c9d9",
 							"name": "Crystal not found in database",
 							"originalRequest": {
 								"url": {
@@ -4970,7 +4970,7 @@
 											"type": "any",
 											"value": "amethyst",
 											"key": "id",
-											"description": "(Required) URL-safe crystal identifier (e.g., \"amethyst\", \"rose-quartz\", \"black-tourmaline\"). Must match an entry in the database."
+											"description": "(Required) URL-safe crystal identifier, case-insensitive (e.g., \"amethyst\", \"Amethyst\", \"rose-quartz\" all resolve). Must match an entry in the database."
 										}
 									]
 								},
@@ -5004,7 +5004,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d46a5845-93c5-4cee-9c3e-e91bcbd72b86",
+							"id": "fa582b10-2421-4f12-b1e9-f98908286928",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -5026,7 +5026,7 @@
 											"type": "any",
 											"value": "amethyst",
 											"key": "id",
-											"description": "(Required) URL-safe crystal identifier (e.g., \"amethyst\", \"rose-quartz\", \"black-tourmaline\"). Must match an entry in the database."
+											"description": "(Required) URL-safe crystal identifier, case-insensitive (e.g., \"amethyst\", \"Amethyst\", \"rose-quartz\" all resolve). Must match an entry in the database."
 										}
 									]
 								},
@@ -5066,7 +5066,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5cc6727a-3da0-4ed6-9e99-90848a033aec",
+							"id": "8aa13ec3-9f4b-49cf-9ff6-4d4afc99c99c",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -5088,7 +5088,7 @@
 											"type": "any",
 											"value": "amethyst",
 											"key": "id",
-											"description": "(Required) URL-safe crystal identifier (e.g., \"amethyst\", \"rose-quartz\", \"black-tourmaline\"). Must match an entry in the database."
+											"description": "(Required) URL-safe crystal identifier, case-insensitive (e.g., \"amethyst\", \"Amethyst\", \"rose-quartz\" all resolve). Must match an entry in the database."
 										}
 									]
 								},
@@ -5122,7 +5122,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c5dea646-dd69-400f-92cc-6632a79edb67",
+							"id": "bcc6cbf3-32e7-4577-8464-d9d4fd7b9dcf",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -5144,7 +5144,7 @@
 											"type": "any",
 											"value": "amethyst",
 											"key": "id",
-											"description": "(Required) URL-safe crystal identifier (e.g., \"amethyst\", \"rose-quartz\", \"black-tourmaline\"). Must match an entry in the database."
+											"description": "(Required) URL-safe crystal identifier, case-insensitive (e.g., \"amethyst\", \"Amethyst\", \"rose-quartz\" all resolve). Must match an entry in the database."
 										}
 									]
 								},
@@ -5223,11 +5223,11 @@
 		]
 	},
 	"info": {
-		"_postman_id": "7203929b-a09c-49b6-9b43-54b8736a9543",
+		"_postman_id": "517faa91-c81a-4df9-b76a-5aac3d2393fd",
 		"name": "Crystals and Healing Stones API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"description": {
-			"content": "Production-ready crystal healing API + hosted MCP for AI agents and developers. Connect Claude Code, Cursor, VS Code in seconds, no local setup. Look up 80 healing crystals and gemstones with spiritual, emotional, and physical healing properties. Filter by chakra (Root through Crown), zodiac sign, or element. Search by keyword, browse birthstones by month, discover crystal pairings, and get random or daily crystal picks. Includes Mohs hardness ratings, numerological vibrations, planetary associations, and crystal pairing recommendations. Built for wellness apps, crystal shop platforms, chakra balancing tools, astrology integrations, and AI-powered spiritual advisors.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, human design, forecast, biorhythm, tarot, numerology, crystals, dreams, I-Ching, angel numbers, location), 148+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (MCP)\n\nRoxyAPI has native Model Context Protocol support. Your AI agent auto-discovers all 148+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
+			"content": "Crystal healing API covering the most popular and widely-searched healing crystals and gemstones, from Amethyst and Rose Quartz to Moldavite and Selenite, each with its spiritual, emotional, and physical properties. Filter by chakra (Root through Crown), zodiac sign, or element, search by keyword, browse birthstones by month, discover crystal pairings, and get random or daily crystal picks. Includes Mohs hardness, numerological vibration, and planetary associations per stone. Built for wellness apps, crystal shops, chakra-balancing tools, astrology integrations, and AI spiritual advisors. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, human design, forecast, biorhythm, tarot, numerology, crystals, dreams, I-Ching, angel numbers, location), 164+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (MCP)\n\nRoxyAPI has native Model Context Protocol support. Your AI agent auto-discovers all 164+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
 			"type": "text/plain"
 		}
 	}
