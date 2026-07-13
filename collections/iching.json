@@ -1,15 +1,15 @@
 {
 	"item": [
 		{
-			"id": "a4f3886b-f42d-4e02-8cd8-1e7adbeac228",
+			"id": "6ab0a139-606d-4b7e-a94c-a62938dbef84",
 			"name": "I-Ching",
 			"description": {
-				"content": "I-Ching oracle API + hosted MCP for AI agents and developers. Connect Claude Code, Cursor, VS Code in seconds, no local setup. Access 3,000 years of Chinese wisdom with all 64 hexagrams, 384 changing lines, 8 trigrams, and modern interpretations for love, career, and decision-making. Cast readings with the authentic three-coin method, get daily hexagrams, and explore the Book of Changes programmatically. 9+ endpoints optimized for divination apps, AI oracle chatbots, fortune-telling platforms, daily wisdom features, and spiritual guidance products.",
+				"content": "I-Ching oracle API with all 64 hexagrams, 384 changing lines, 8 trigrams, and modern interpretations for love, career, and decision-making. Cast readings with the authentic three-coin method, get a daily hexagram, and explore the Book of Changes programmatically. Built for divination apps, AI oracle chatbots, fortune-telling platforms, daily wisdom features, and spiritual guidance products. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.",
 				"type": "text/plain"
 			},
 			"item": [
 				{
-					"id": "d581df78-ce37-4e84-b90b-d0ccc4389dd3",
+					"id": "4e3d588a-a719-40b8-8ebd-2371902d9a9d",
 					"name": "Get daily I-Ching hexagram",
 					"request": {
 						"name": "Get daily I-Ching hexagram",
@@ -74,7 +74,7 @@
 					},
 					"response": [
 						{
-							"id": "c8c07150-82b7-4cc9-9d0c-1902930f2a23",
+							"id": "dc74d769-5a94-4bf9-a3ae-dd39bc3aa34e",
 							"name": "Daily hexagram reading with full interpretation",
 							"originalRequest": {
 								"url": {
@@ -125,12 +125,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"date\": \"2026-01-28\",\n  \"seed\": \"user123-2026-01-28\",\n  \"hexagram\": {\n    \"number\": 1,\n    \"symbol\": \"䷀\",\n    \"chinese\": \"乾\",\n    \"english\": \"The Creative\",\n    \"pinyin\": \"Qián\",\n    \"upperTrigram\": \"Heaven\",\n    \"lowerTrigram\": \"Heaven\",\n    \"judgment\": \"string\",\n    \"image\": \"string\",\n    \"interpretation\": {\n      \"general\": \"string\",\n      \"love\": \"string\",\n      \"career\": \"string\",\n      \"decision\": \"string\",\n      \"advice\": \"string\"\n    }\n  },\n  \"dailyMessage\": \"Your hexagram for 2026-01-28: The Creative (乾). Supreme success through perseverance.\"\n}",
+							"body": "{\n  \"date\": \"2026-01-28\",\n  \"seed\": \"user123-2026-01-28\",\n  \"hexagram\": {\n    \"number\": 1,\n    \"symbol\": \"䷀\",\n    \"chinese\": \"乾\",\n    \"english\": \"The Creative\",\n    \"pinyin\": \"Qián\",\n    \"upperTrigram\": \"Heaven\",\n    \"lowerTrigram\": \"Heaven\",\n    \"judgment\": \"string\",\n    \"image\": \"string\",\n    \"interpretation\": {\n      \"general\": \"string\",\n      \"love\": \"string\",\n      \"career\": \"string\",\n      \"decision\": \"string\",\n      \"advice\": \"string\"\n    }\n  },\n  \"dailyMessage\": \"Your hexagram for 2026-01-28: The Creative (乾). Be like the heavens: consistent, powerful, and untiring.\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "90da943e-b548-4169-8b26-10f9592b4de6",
+							"id": "d432ecdc-fd22-48d9-ab2b-5bf6c7110994",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -181,12 +181,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3527.086764823254,\n      \"maximum\": 8465.917585207128,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9078.589962644317,\n      \"maximum\": 8647.940537218134,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1362.4720193780192,\n      \"maximum\": 7591.372450486452,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7100.857809606803,\n      \"maximum\": 7242.686079023492,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ce78583e-8ad1-47f2-af12-6e0e43d580fb",
+							"id": "9336dfe0-4a67-4715-861e-07c8b8abb84a",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -242,7 +242,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "eb682661-5d9e-4cc0-8e83-8032e44fcf0f",
+							"id": "2b319930-9ac1-46b0-8eaf-685c482f82b0",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -304,7 +304,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d8b7eaa6-9f6a-4bfc-98de-b108a529eb33",
+							"id": "547447b1-678c-4079-80ae-f475e2c6b326",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -360,7 +360,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d384d4e4-74d9-48cf-8b9a-3a21666255ac",
+							"id": "46041a20-3602-4abf-8e6b-d00c1286eebb",
 							"name": "Failed to generate daily hexagram",
 							"originalRequest": {
 								"url": {
@@ -422,7 +422,7 @@
 					}
 				},
 				{
-					"id": "62699211-8d66-4155-bc18-3d5657bb330a",
+					"id": "9072e837-317c-4591-8e78-86686493cd2b",
 					"name": "Cast daily I-Ching reading with changing lines",
 					"request": {
 						"name": "Cast daily I-Ching reading with changing lines",
@@ -488,7 +488,7 @@
 					},
 					"response": [
 						{
-							"id": "849fa01f-ea6e-4af8-a3c1-acbdf42a29aa",
+							"id": "764f2d40-054a-4b36-aaa0-00077248f184",
 							"name": "Complete daily casting with primary and resulting hexagrams",
 							"originalRequest": {
 								"url": {
@@ -540,12 +540,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"date\": \"string\",\n  \"seed\": \"string\",\n  \"lines\": [\n    7,\n    8,\n    9,\n    7,\n    6,\n    8\n  ],\n  \"changingLinePositions\": [\n    3,\n    5\n  ],\n  \"hexagram\": {\n    \"number\": 1,\n    \"symbol\": \"䷀\",\n    \"chinese\": \"乾\",\n    \"english\": \"The Creative\",\n    \"pinyin\": \"Qián\",\n    \"upperTrigram\": \"Heaven\",\n    \"lowerTrigram\": \"Heaven\",\n    \"judgment\": \"string\",\n    \"image\": \"string\",\n    \"interpretation\": {\n      \"general\": \"string\",\n      \"love\": \"string\",\n      \"career\": \"string\",\n      \"decision\": \"string\",\n      \"advice\": \"string\"\n    }\n  },\n  \"resultingHexagram\": {\n    \"number\": 1,\n    \"symbol\": \"䷀\",\n    \"chinese\": \"乾\",\n    \"english\": \"The Creative\",\n    \"pinyin\": \"Qián\",\n    \"upperTrigram\": \"Heaven\",\n    \"lowerTrigram\": \"Heaven\",\n    \"judgment\": \"string\",\n    \"image\": \"string\",\n    \"interpretation\": {\n      \"general\": \"string\",\n      \"love\": \"string\",\n      \"career\": \"string\",\n      \"decision\": \"string\",\n      \"advice\": \"string\"\n    }\n  }\n}",
+							"body": "{\n  \"date\": \"string\",\n  \"seed\": \"string\",\n  \"lines\": [\n    7,\n    8,\n    9,\n    7,\n    6,\n    8\n  ],\n  \"changingLinePositions\": [\n    3,\n    5\n  ],\n  \"hexagram\": {\n    \"number\": 1,\n    \"symbol\": \"䷀\",\n    \"chinese\": \"乾\",\n    \"english\": \"The Creative\",\n    \"pinyin\": \"Qián\",\n    \"upperTrigram\": \"Heaven\",\n    \"lowerTrigram\": \"Heaven\",\n    \"judgment\": \"string\",\n    \"image\": \"string\",\n    \"interpretation\": {\n      \"general\": \"string\",\n      \"love\": \"string\",\n      \"career\": \"string\",\n      \"decision\": \"string\",\n      \"advice\": \"string\"\n    }\n  },\n  \"changingLines\": [\n    {\n      \"position\": 1,\n      \"text\": \"The dragon is still hidden below the surface, so it does not act.\",\n      \"meaning\": \"The first line is the beginning, still underground and unrecognized. Strength is present but untested, and showing it now invites resistance it cannot yet survive. Stay hidden and build.\"\n    },\n    {\n      \"position\": 1,\n      \"text\": \"The dragon is still hidden below the surface, so it does not act.\",\n      \"meaning\": \"The first line is the beginning, still underground and unrecognized. Strength is present but untested, and showing it now invites resistance it cannot yet survive. Stay hidden and build.\"\n    }\n  ],\n  \"resultingHexagram\": {\n    \"number\": 1,\n    \"symbol\": \"䷀\",\n    \"chinese\": \"乾\",\n    \"english\": \"The Creative\",\n    \"pinyin\": \"Qián\",\n    \"upperTrigram\": \"Heaven\",\n    \"lowerTrigram\": \"Heaven\",\n    \"judgment\": \"string\",\n    \"image\": \"string\",\n    \"interpretation\": {\n      \"general\": \"string\",\n      \"love\": \"string\",\n      \"career\": \"string\",\n      \"decision\": \"string\",\n      \"advice\": \"string\"\n    }\n  }\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0743de66-67e2-4e95-b2d5-61bc1c1a0bb4",
+							"id": "d4b2f6e9-8838-418f-9633-53759e0b56ea",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -597,12 +597,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3527.086764823254,\n      \"maximum\": 8465.917585207128,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9078.589962644317,\n      \"maximum\": 8647.940537218134,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1362.4720193780192,\n      \"maximum\": 7591.372450486452,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7100.857809606803,\n      \"maximum\": 7242.686079023492,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "46d84df2-f94e-4997-9b61-a41ab13f99f4",
+							"id": "3f1b93a0-e54c-4b18-8af4-dd67415db123",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -659,7 +659,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "22874da2-f320-4864-a692-1043ee25013e",
+							"id": "89031127-ec9e-4f6c-8f72-ac2a901ca416",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -722,7 +722,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8b9df79e-43cd-436a-8d0d-1e704aca9be4",
+							"id": "db4e6499-8ea4-4849-b7da-8b5d3db7e2d1",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -779,7 +779,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9c94d7ac-5401-456a-86ac-102a6a33185b",
+							"id": "8d0e6b16-62d3-4b74-91b9-9a2e34e63c21",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -842,7 +842,7 @@
 					}
 				},
 				{
-					"id": "3e251cb2-ae21-4c7d-b008-20236a586fca",
+					"id": "37a2e8d4-bd00-4d1e-a70c-0ade09bec712",
 					"name": "List all 64 hexagrams",
 					"request": {
 						"name": "List all 64 hexagrams",
@@ -906,7 +906,7 @@
 					},
 					"response": [
 						{
-							"id": "61d07459-200a-4544-8631-b4eaf1c6f6a3",
+							"id": "acb0aa9e-4632-4c43-bf47-b9d5ea98e66e",
 							"name": "List of hexagrams with basic information.",
 							"originalRequest": {
 								"url": {
@@ -962,7 +962,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d3be2203-52b4-43ab-9aa6-2317a84d2b16",
+							"id": "01356399-515d-4173-b492-aa74510940a3",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1013,12 +1013,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3527.086764823254,\n      \"maximum\": 8465.917585207128,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9078.589962644317,\n      \"maximum\": 8647.940537218134,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1362.4720193780192,\n      \"maximum\": 7591.372450486452,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7100.857809606803,\n      \"maximum\": 7242.686079023492,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e142a411-061b-4c6f-8caf-c1b552f75754",
+							"id": "37eeaaf4-9378-4d01-adb0-26afcd31e2ce",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1074,7 +1074,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e2dc7a1f-06ba-45f0-a34f-f546db86c317",
+							"id": "593f9ae6-c083-413b-b155-40cb8817fa28",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1136,7 +1136,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7748c8cb-55d3-452f-a3b7-6583426e25a9",
+							"id": "e2b41b0f-44da-45ea-8e0c-8eaf4a409924",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1192,7 +1192,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b63c9b6f-d0c6-4792-9d07-232e7a120d8c",
+							"id": "c9468dbf-0d8f-4703-a85f-622afc6b0e0a",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1254,7 +1254,7 @@
 					}
 				},
 				{
-					"id": "107d448a-4631-43a0-8468-b7246d6e0565",
+					"id": "a75738f2-ff59-4ee1-9a71-7fb263fd2215",
 					"name": "Get a random hexagram",
 					"request": {
 						"name": "Get a random hexagram",
@@ -1307,7 +1307,7 @@
 					},
 					"response": [
 						{
-							"id": "f579415c-da29-4a46-81cf-3748b47569c5",
+							"id": "172bd0ba-093f-42a6-87cc-b8b3ffce663e",
 							"name": "A random hexagram with full details.",
 							"originalRequest": {
 								"url": {
@@ -1351,12 +1351,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"number\": 1,\n  \"symbol\": \"䷀\",\n  \"chinese\": \"乾\",\n  \"english\": \"The Creative\",\n  \"pinyin\": \"Qián\",\n  \"binary\": \"111111\",\n  \"upperTrigram\": \"Heaven\",\n  \"lowerTrigram\": \"Heaven\",\n  \"judgment\": \"The Creative works sublime success, furthering through perseverance.\",\n  \"image\": \"The movement of heaven is full of power. Thus the superior man makes himself strong and untiring.\",\n  \"interpretation\": {\n    \"general\": \"This hexagram represents the primal power of creation and the energy of pure initiative.\",\n    \"love\": \"A time of strong attraction and passionate connection. Take the initiative in expressing your feelings.\",\n    \"career\": \"Exceptional opportunities for advancement and recognition. Your creative ideas are at their peak.\",\n    \"decision\": \"The time is right for bold action. Trust your instincts and move forward with confidence.\",\n    \"advice\": \"Be like the heavens: consistent, powerful, and untiring. Make yourself strong through steady effort.\"\n  },\n  \"changingLines\": [\n    {\n      \"position\": 1,\n      \"text\": \"Hidden dragon. Do not act.\"\n    },\n    {\n      \"position\": 1,\n      \"text\": \"Hidden dragon. Do not act.\"\n    }\n  ]\n}",
+							"body": "{\n  \"number\": 1,\n  \"symbol\": \"䷀\",\n  \"chinese\": \"乾\",\n  \"english\": \"The Creative\",\n  \"pinyin\": \"Qián\",\n  \"binary\": \"111111\",\n  \"upperTrigram\": \"Heaven\",\n  \"lowerTrigram\": \"Heaven\",\n  \"judgment\": \"Pure creative force is available and it runs from origin to completion without obstruction, so the situation rewards initiative that stays correct and does not slacken. Success here is built by sustained effort held to a straight line, not by a single burst.\",\n  \"image\": \"Heaven above heaven: the same motion repeated without pause and without fatigue. Renew your own strength on your own schedule rather than waiting to be driven by circumstances.\",\n  \"interpretation\": {\n    \"general\": \"This hexagram represents the primal power of creation and the energy of pure initiative.\",\n    \"love\": \"A time of strong attraction and passionate connection. Take the initiative in expressing your feelings.\",\n    \"career\": \"Exceptional opportunities for advancement and recognition. Your creative ideas are at their peak.\",\n    \"decision\": \"The time is right for bold action. Trust your instincts and move forward with confidence.\",\n    \"advice\": \"Be like the heavens: consistent, powerful, and untiring. Make yourself strong through steady effort.\"\n  },\n  \"changingLines\": [\n    {\n      \"position\": 1,\n      \"text\": \"The dragon is still hidden below the surface, so it does not act.\",\n      \"meaning\": \"The first line is the beginning, still underground and unrecognized. Strength is present but untested, and showing it now invites resistance it cannot yet survive. Stay hidden and build.\"\n    },\n    {\n      \"position\": 1,\n      \"text\": \"The dragon is still hidden below the surface, so it does not act.\",\n      \"meaning\": \"The first line is the beginning, still underground and unrecognized. Strength is present but untested, and showing it now invites resistance it cannot yet survive. Stay hidden and build.\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "52a9445b-7dd0-43af-b177-31a72350b613",
+							"id": "7ec79192-c7d7-4f06-82c7-a2e5e554ffa4",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1400,12 +1400,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3527.086764823254,\n      \"maximum\": 8465.917585207128,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9078.589962644317,\n      \"maximum\": 8647.940537218134,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1362.4720193780192,\n      \"maximum\": 7591.372450486452,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7100.857809606803,\n      \"maximum\": 7242.686079023492,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "928f8c3c-cb3a-47fa-858b-8eccbb070340",
+							"id": "32c3f844-55e0-4c36-ad0a-97f363ce75c2",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1454,7 +1454,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b4573923-6259-4d28-b59e-3ea81dfe00ec",
+							"id": "e5928e71-08ea-4af7-a4fc-a4a3c854af4a",
 							"name": "No hexagrams available.",
 							"originalRequest": {
 								"url": {
@@ -1503,7 +1503,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2f0908dd-640c-4995-9219-e49066bc2d11",
+							"id": "b9287208-494e-4c8c-86ae-a50c8fe47406",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1558,7 +1558,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b4c393d6-02c1-4d11-a233-1005fc395eaf",
+							"id": "432f37a0-6cbd-4958-a51e-d1360a6eb16f",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1607,7 +1607,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2875f865-db4f-4a1b-a1b0-7786e818b6bd",
+							"id": "21657331-2e0e-43bb-a893-c52c2df732b4",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1662,7 +1662,7 @@
 					}
 				},
 				{
-					"id": "ff15f11e-d0b7-45c2-9be3-87061c769298",
+					"id": "1ce9acb1-0900-4cba-8ffa-05abe90fcd2a",
 					"name": "Lookup hexagram by line pattern",
 					"request": {
 						"name": "Lookup hexagram by line pattern",
@@ -1721,7 +1721,7 @@
 					},
 					"response": [
 						{
-							"id": "cbb5adce-1b15-47d3-92b2-c49209d00d2a",
+							"id": "982882a4-4987-40cd-b489-03c1dc1b43b2",
 							"name": "Matching hexagram.",
 							"originalRequest": {
 								"url": {
@@ -1769,12 +1769,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"number\": 1,\n  \"symbol\": \"䷀\",\n  \"chinese\": \"乾\",\n  \"english\": \"The Creative\",\n  \"pinyin\": \"Qián\",\n  \"binary\": \"111111\",\n  \"upperTrigram\": \"Heaven\",\n  \"lowerTrigram\": \"Heaven\",\n  \"judgment\": \"The Creative works sublime success, furthering through perseverance.\",\n  \"image\": \"The movement of heaven is full of power. Thus the superior man makes himself strong and untiring.\",\n  \"interpretation\": {\n    \"general\": \"This hexagram represents the primal power of creation and the energy of pure initiative.\",\n    \"love\": \"A time of strong attraction and passionate connection. Take the initiative in expressing your feelings.\",\n    \"career\": \"Exceptional opportunities for advancement and recognition. Your creative ideas are at their peak.\",\n    \"decision\": \"The time is right for bold action. Trust your instincts and move forward with confidence.\",\n    \"advice\": \"Be like the heavens: consistent, powerful, and untiring. Make yourself strong through steady effort.\"\n  },\n  \"changingLines\": [\n    {\n      \"position\": 1,\n      \"text\": \"Hidden dragon. Do not act.\"\n    },\n    {\n      \"position\": 1,\n      \"text\": \"Hidden dragon. Do not act.\"\n    }\n  ]\n}",
+							"body": "{\n  \"number\": 1,\n  \"symbol\": \"䷀\",\n  \"chinese\": \"乾\",\n  \"english\": \"The Creative\",\n  \"pinyin\": \"Qián\",\n  \"binary\": \"111111\",\n  \"upperTrigram\": \"Heaven\",\n  \"lowerTrigram\": \"Heaven\",\n  \"judgment\": \"Pure creative force is available and it runs from origin to completion without obstruction, so the situation rewards initiative that stays correct and does not slacken. Success here is built by sustained effort held to a straight line, not by a single burst.\",\n  \"image\": \"Heaven above heaven: the same motion repeated without pause and without fatigue. Renew your own strength on your own schedule rather than waiting to be driven by circumstances.\",\n  \"interpretation\": {\n    \"general\": \"This hexagram represents the primal power of creation and the energy of pure initiative.\",\n    \"love\": \"A time of strong attraction and passionate connection. Take the initiative in expressing your feelings.\",\n    \"career\": \"Exceptional opportunities for advancement and recognition. Your creative ideas are at their peak.\",\n    \"decision\": \"The time is right for bold action. Trust your instincts and move forward with confidence.\",\n    \"advice\": \"Be like the heavens: consistent, powerful, and untiring. Make yourself strong through steady effort.\"\n  },\n  \"changingLines\": [\n    {\n      \"position\": 1,\n      \"text\": \"The dragon is still hidden below the surface, so it does not act.\",\n      \"meaning\": \"The first line is the beginning, still underground and unrecognized. Strength is present but untested, and showing it now invites resistance it cannot yet survive. Stay hidden and build.\"\n    },\n    {\n      \"position\": 1,\n      \"text\": \"The dragon is still hidden below the surface, so it does not act.\",\n      \"meaning\": \"The first line is the beginning, still underground and unrecognized. Strength is present but untested, and showing it now invites resistance it cannot yet survive. Stay hidden and build.\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1edc22be-318c-4308-b162-a50c5345fe88",
+							"id": "92d00ea7-cc11-40b0-bc8d-d9a977489098",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1822,12 +1822,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3527.086764823254,\n      \"maximum\": 8465.917585207128,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9078.589962644317,\n      \"maximum\": 8647.940537218134,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1362.4720193780192,\n      \"maximum\": 7591.372450486452,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7100.857809606803,\n      \"maximum\": 7242.686079023492,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8b9bb5e8-a15c-42a4-9cb2-de811f886e23",
+							"id": "122d25e0-9b20-472b-93d9-46d93549e43a",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1880,7 +1880,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "184d1e18-0ea4-4082-b294-deaaa17db366",
+							"id": "d3f1cc4e-1a07-4ab5-a175-ae204d814050",
 							"name": "No hexagram found for pattern.",
 							"originalRequest": {
 								"url": {
@@ -1933,7 +1933,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8d9b6caf-06f8-41ae-9ac7-f7503f93e071",
+							"id": "52dc3045-9ffb-429a-b758-2a04efc80e36",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1992,7 +1992,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "777f0420-4539-4f5e-92d1-eb27c2b59d0c",
+							"id": "5bfec68c-51e6-45a0-bca8-64fc5972d416",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2045,7 +2045,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "454d891a-62d3-4ec4-9b21-23760b433e51",
+							"id": "1d5307b6-bc9d-4100-8a24-711612395ff8",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2104,7 +2104,7 @@
 					}
 				},
 				{
-					"id": "967b6cc3-1892-4749-bad9-0d64f77ddf29",
+					"id": "6dea2478-e9b8-40df-9560-c47e9d025ff7",
 					"name": "Get hexagram by number",
 					"request": {
 						"name": "Get hexagram by number",
@@ -2165,7 +2165,7 @@
 					},
 					"response": [
 						{
-							"id": "b901a119-8270-42fc-8649-69f0c2724f1a",
+							"id": "fd8ba4e8-9a32-4fb9-b934-113be879e5c0",
 							"name": "Full hexagram details.",
 							"originalRequest": {
 								"url": {
@@ -2217,12 +2217,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"number\": 1,\n  \"symbol\": \"䷀\",\n  \"chinese\": \"乾\",\n  \"english\": \"The Creative\",\n  \"pinyin\": \"Qián\",\n  \"binary\": \"111111\",\n  \"upperTrigram\": \"Heaven\",\n  \"lowerTrigram\": \"Heaven\",\n  \"judgment\": \"The Creative works sublime success, furthering through perseverance.\",\n  \"image\": \"The movement of heaven is full of power. Thus the superior man makes himself strong and untiring.\",\n  \"interpretation\": {\n    \"general\": \"This hexagram represents the primal power of creation and the energy of pure initiative.\",\n    \"love\": \"A time of strong attraction and passionate connection. Take the initiative in expressing your feelings.\",\n    \"career\": \"Exceptional opportunities for advancement and recognition. Your creative ideas are at their peak.\",\n    \"decision\": \"The time is right for bold action. Trust your instincts and move forward with confidence.\",\n    \"advice\": \"Be like the heavens: consistent, powerful, and untiring. Make yourself strong through steady effort.\"\n  },\n  \"changingLines\": [\n    {\n      \"position\": 1,\n      \"text\": \"Hidden dragon. Do not act.\"\n    },\n    {\n      \"position\": 1,\n      \"text\": \"Hidden dragon. Do not act.\"\n    }\n  ]\n}",
+							"body": "{\n  \"number\": 1,\n  \"symbol\": \"䷀\",\n  \"chinese\": \"乾\",\n  \"english\": \"The Creative\",\n  \"pinyin\": \"Qián\",\n  \"binary\": \"111111\",\n  \"upperTrigram\": \"Heaven\",\n  \"lowerTrigram\": \"Heaven\",\n  \"judgment\": \"Pure creative force is available and it runs from origin to completion without obstruction, so the situation rewards initiative that stays correct and does not slacken. Success here is built by sustained effort held to a straight line, not by a single burst.\",\n  \"image\": \"Heaven above heaven: the same motion repeated without pause and without fatigue. Renew your own strength on your own schedule rather than waiting to be driven by circumstances.\",\n  \"interpretation\": {\n    \"general\": \"This hexagram represents the primal power of creation and the energy of pure initiative.\",\n    \"love\": \"A time of strong attraction and passionate connection. Take the initiative in expressing your feelings.\",\n    \"career\": \"Exceptional opportunities for advancement and recognition. Your creative ideas are at their peak.\",\n    \"decision\": \"The time is right for bold action. Trust your instincts and move forward with confidence.\",\n    \"advice\": \"Be like the heavens: consistent, powerful, and untiring. Make yourself strong through steady effort.\"\n  },\n  \"changingLines\": [\n    {\n      \"position\": 1,\n      \"text\": \"The dragon is still hidden below the surface, so it does not act.\",\n      \"meaning\": \"The first line is the beginning, still underground and unrecognized. Strength is present but untested, and showing it now invites resistance it cannot yet survive. Stay hidden and build.\"\n    },\n    {\n      \"position\": 1,\n      \"text\": \"The dragon is still hidden below the surface, so it does not act.\",\n      \"meaning\": \"The first line is the beginning, still underground and unrecognized. Strength is present but untested, and showing it now invites resistance it cannot yet survive. Stay hidden and build.\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9169894a-f4ee-424f-972c-e8be4d7a3291",
+							"id": "4d05f051-6c2c-49f2-98a4-76a2f53922a1",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2274,12 +2274,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3527.086764823254,\n      \"maximum\": 8465.917585207128,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9078.589962644317,\n      \"maximum\": 8647.940537218134,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1362.4720193780192,\n      \"maximum\": 7591.372450486452,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7100.857809606803,\n      \"maximum\": 7242.686079023492,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6688a423-7b6c-4a50-aabb-1916297d07fa",
+							"id": "034b3950-3735-4db4-a636-ffdc9cc98c7e",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2336,7 +2336,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a9f23768-f3f2-4092-8e89-264428494f71",
+							"id": "681798aa-afd4-4cd5-b6b9-ebee0890959d",
 							"name": "Hexagram not found.",
 							"originalRequest": {
 								"url": {
@@ -2393,7 +2393,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8cfcad35-15c3-49e6-a897-75b4333261b1",
+							"id": "baf4c0ba-3597-44b4-8eb2-dddb930b9724",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2456,7 +2456,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f22c1c54-a290-45ff-9b34-40a3013f8e59",
+							"id": "bf739aa8-1bd9-4257-8aed-cfaf346ea835",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2513,7 +2513,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2793b324-66ba-49d6-a630-e1bde26eb440",
+							"id": "ed534bde-9253-4d68-bebe-6b9b73c5d194",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2576,7 +2576,7 @@
 					}
 				},
 				{
-					"id": "1801e094-6860-44d0-92d6-88d29114ee8f",
+					"id": "11b18c02-34fa-482c-8244-4bbd7f60f9ab",
 					"name": "Cast an I-Ching reading",
 					"request": {
 						"name": "Cast an I-Ching reading",
@@ -2634,7 +2634,7 @@
 					},
 					"response": [
 						{
-							"id": "c4d59b8e-84b9-4213-baf9-d6f15abc544d",
+							"id": "10dcc2fa-9bee-4889-a78b-ebf6351f40dd",
 							"name": "Complete I-Ching reading with primary and resulting hexagrams.",
 							"originalRequest": {
 								"url": {
@@ -2681,12 +2681,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"lines\": [\n    7,\n    8,\n    9,\n    7,\n    6,\n    8\n  ],\n  \"changingLinePositions\": [\n    3,\n    5\n  ],\n  \"seed\": \"user123-question1\",\n  \"hexagram\": {\n    \"number\": 1,\n    \"symbol\": \"䷀\",\n    \"chinese\": \"乾\",\n    \"english\": \"The Creative\",\n    \"pinyin\": \"Qián\",\n    \"binary\": \"111111\",\n    \"upperTrigram\": \"Heaven\",\n    \"lowerTrigram\": \"Heaven\",\n    \"judgment\": \"The Creative works sublime success, furthering through perseverance.\",\n    \"image\": \"The movement of heaven is full of power. Thus the superior man makes himself strong and untiring.\",\n    \"interpretation\": {\n      \"general\": \"This hexagram represents the primal power of creation and the energy of pure initiative.\",\n      \"love\": \"A time of strong attraction and passionate connection. Take the initiative in expressing your feelings.\",\n      \"career\": \"Exceptional opportunities for advancement and recognition. Your creative ideas are at their peak.\",\n      \"decision\": \"The time is right for bold action. Trust your instincts and move forward with confidence.\",\n      \"advice\": \"Be like the heavens: consistent, powerful, and untiring. Make yourself strong through steady effort.\"\n    },\n    \"changingLines\": [\n      {\n        \"position\": 1,\n        \"text\": \"Hidden dragon. Do not act.\"\n      },\n      {\n        \"position\": 1,\n        \"text\": \"Hidden dragon. Do not act.\"\n      }\n    ]\n  },\n  \"resultingHexagram\": {\n    \"number\": 1,\n    \"symbol\": \"䷀\",\n    \"chinese\": \"乾\",\n    \"english\": \"The Creative\",\n    \"pinyin\": \"Qián\",\n    \"binary\": \"111111\",\n    \"upperTrigram\": \"Heaven\",\n    \"lowerTrigram\": \"Heaven\",\n    \"judgment\": \"The Creative works sublime success, furthering through perseverance.\",\n    \"image\": \"The movement of heaven is full of power. Thus the superior man makes himself strong and untiring.\",\n    \"interpretation\": {\n      \"general\": \"This hexagram represents the primal power of creation and the energy of pure initiative.\",\n      \"love\": \"A time of strong attraction and passionate connection. Take the initiative in expressing your feelings.\",\n      \"career\": \"Exceptional opportunities for advancement and recognition. Your creative ideas are at their peak.\",\n      \"decision\": \"The time is right for bold action. Trust your instincts and move forward with confidence.\",\n      \"advice\": \"Be like the heavens: consistent, powerful, and untiring. Make yourself strong through steady effort.\"\n    },\n    \"changingLines\": [\n      {\n        \"position\": 1,\n        \"text\": \"Hidden dragon. Do not act.\"\n      },\n      {\n        \"position\": 1,\n        \"text\": \"Hidden dragon. Do not act.\"\n      }\n    ]\n  }\n}",
+							"body": "{\n  \"lines\": [\n    7,\n    8,\n    9,\n    7,\n    6,\n    8\n  ],\n  \"changingLinePositions\": [\n    3,\n    5\n  ],\n  \"seed\": \"user123-question1\",\n  \"hexagram\": {\n    \"number\": 1,\n    \"symbol\": \"䷀\",\n    \"chinese\": \"乾\",\n    \"english\": \"The Creative\",\n    \"pinyin\": \"Qián\",\n    \"binary\": \"111111\",\n    \"upperTrigram\": \"Heaven\",\n    \"lowerTrigram\": \"Heaven\",\n    \"judgment\": \"Pure creative force is available and it runs from origin to completion without obstruction, so the situation rewards initiative that stays correct and does not slacken. Success here is built by sustained effort held to a straight line, not by a single burst.\",\n    \"image\": \"Heaven above heaven: the same motion repeated without pause and without fatigue. Renew your own strength on your own schedule rather than waiting to be driven by circumstances.\",\n    \"interpretation\": {\n      \"general\": \"This hexagram represents the primal power of creation and the energy of pure initiative.\",\n      \"love\": \"A time of strong attraction and passionate connection. Take the initiative in expressing your feelings.\",\n      \"career\": \"Exceptional opportunities for advancement and recognition. Your creative ideas are at their peak.\",\n      \"decision\": \"The time is right for bold action. Trust your instincts and move forward with confidence.\",\n      \"advice\": \"Be like the heavens: consistent, powerful, and untiring. Make yourself strong through steady effort.\"\n    },\n    \"changingLines\": [\n      {\n        \"position\": 1,\n        \"text\": \"The dragon is still hidden below the surface, so it does not act.\",\n        \"meaning\": \"The first line is the beginning, still underground and unrecognized. Strength is present but untested, and showing it now invites resistance it cannot yet survive. Stay hidden and build.\"\n      },\n      {\n        \"position\": 1,\n        \"text\": \"The dragon is still hidden below the surface, so it does not act.\",\n        \"meaning\": \"The first line is the beginning, still underground and unrecognized. Strength is present but untested, and showing it now invites resistance it cannot yet survive. Stay hidden and build.\"\n      }\n    ]\n  },\n  \"resultingHexagram\": {\n    \"number\": 1,\n    \"symbol\": \"䷀\",\n    \"chinese\": \"乾\",\n    \"english\": \"The Creative\",\n    \"pinyin\": \"Qián\",\n    \"binary\": \"111111\",\n    \"upperTrigram\": \"Heaven\",\n    \"lowerTrigram\": \"Heaven\",\n    \"judgment\": \"Pure creative force is available and it runs from origin to completion without obstruction, so the situation rewards initiative that stays correct and does not slacken. Success here is built by sustained effort held to a straight line, not by a single burst.\",\n    \"image\": \"Heaven above heaven: the same motion repeated without pause and without fatigue. Renew your own strength on your own schedule rather than waiting to be driven by circumstances.\",\n    \"interpretation\": {\n      \"general\": \"This hexagram represents the primal power of creation and the energy of pure initiative.\",\n      \"love\": \"A time of strong attraction and passionate connection. Take the initiative in expressing your feelings.\",\n      \"career\": \"Exceptional opportunities for advancement and recognition. Your creative ideas are at their peak.\",\n      \"decision\": \"The time is right for bold action. Trust your instincts and move forward with confidence.\",\n      \"advice\": \"Be like the heavens: consistent, powerful, and untiring. Make yourself strong through steady effort.\"\n    },\n    \"changingLines\": [\n      {\n        \"position\": 1,\n        \"text\": \"The dragon is still hidden below the surface, so it does not act.\",\n        \"meaning\": \"The first line is the beginning, still underground and unrecognized. Strength is present but untested, and showing it now invites resistance it cannot yet survive. Stay hidden and build.\"\n      },\n      {\n        \"position\": 1,\n        \"text\": \"The dragon is still hidden below the surface, so it does not act.\",\n        \"meaning\": \"The first line is the beginning, still underground and unrecognized. Strength is present but untested, and showing it now invites resistance it cannot yet survive. Stay hidden and build.\"\n      }\n    ]\n  }\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "759c3ac1-ea06-4b40-a7b8-8f54e771ae93",
+							"id": "dbbe7b20-6756-4ceb-a0dd-d2d5bca53d35",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2733,12 +2733,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3527.086764823254,\n      \"maximum\": 8465.917585207128,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9078.589962644317,\n      \"maximum\": 8647.940537218134,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1362.4720193780192,\n      \"maximum\": 7591.372450486452,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7100.857809606803,\n      \"maximum\": 7242.686079023492,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1209f097-e20f-4d98-883f-e39f407537d1",
+							"id": "a8320499-f9e8-42f7-99ef-1cf0f32befa7",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2790,7 +2790,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "fada14e2-c25a-4aac-adb9-f21c7d72df5e",
+							"id": "d248d6ef-6475-4fdb-b170-f121abcd5bf0",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2848,7 +2848,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9e59718c-bd49-4841-8e17-e0d636f9351c",
+							"id": "c391065b-4748-4636-a04f-286ab9fc49fd",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2900,7 +2900,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "85b72fd6-9182-45e6-8908-3816b10b223e",
+							"id": "0d842837-70df-4523-b99b-74d0cec2af3f",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2958,7 +2958,7 @@
 					}
 				},
 				{
-					"id": "31a486b7-d098-4804-82c5-844a69ce7f25",
+					"id": "e0fcf705-baf2-4ffd-bd14-922fd3a7376a",
 					"name": "List all 8 trigrams",
 					"request": {
 						"name": "List all 8 trigrams",
@@ -3010,7 +3010,7 @@
 					},
 					"response": [
 						{
-							"id": "ac8f6016-903e-4473-ad98-07bdab26bf72",
+							"id": "93c1946a-a5a3-43f6-96b9-9767f94dd14f",
 							"name": "List of all 8 trigrams with basic information.",
 							"originalRequest": {
 								"url": {
@@ -3058,7 +3058,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "81804e72-70df-4de5-bd46-9cac4ae9b472",
+							"id": "89961050-d5ad-46fb-ac87-768763145642",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3101,12 +3101,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3527.086764823254,\n      \"maximum\": 8465.917585207128,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9078.589962644317,\n      \"maximum\": 8647.940537218134,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1362.4720193780192,\n      \"maximum\": 7591.372450486452,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7100.857809606803,\n      \"maximum\": 7242.686079023492,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0c18b375-bc1d-4d2f-a736-0f77baee9ada",
+							"id": "e0fdc519-5d97-4c05-bdee-3263a5fb9530",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3154,7 +3154,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a3d256ca-a3fc-41af-aa34-49ce053e2ee4",
+							"id": "b5b38f89-b9e7-46f5-b3cb-235c9387da94",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3208,7 +3208,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e8e70602-b81c-4a3c-bd3a-00c9fe6298fc",
+							"id": "5adb6f0b-80bb-4bbb-94f0-0f08df417f26",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3256,7 +3256,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3c997137-7fbc-43f9-acc9-11fb8b32c133",
+							"id": "6ad45be8-c4a1-4af2-89fc-3e9535b3bb28",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3310,7 +3310,7 @@
 					}
 				},
 				{
-					"id": "341692ce-bdda-4fa6-8e2c-d0e329feda35",
+					"id": "3a78c19f-3852-4000-a0f2-93fd3aecb750",
 					"name": "Get trigram by number or name",
 					"request": {
 						"name": "Get trigram by number or name",
@@ -3371,7 +3371,7 @@
 					},
 					"response": [
 						{
-							"id": "0db94128-0902-4358-bced-a7e7b18154f3",
+							"id": "4ffa7e6c-803c-4418-b789-9a3bfbf966c4",
 							"name": "Trigram details.",
 							"originalRequest": {
 								"url": {
@@ -3428,7 +3428,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "cbca7a73-1366-40a7-8c77-e06063c52714",
+							"id": "3a389ca4-faec-42c7-8ab4-698b0183f25d",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3480,12 +3480,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3527.086764823254,\n      \"maximum\": 8465.917585207128,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9078.589962644317,\n      \"maximum\": 8647.940537218134,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1362.4720193780192,\n      \"maximum\": 7591.372450486452,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7100.857809606803,\n      \"maximum\": 7242.686079023492,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5b1354d9-75ad-432b-9f13-920d7430cb32",
+							"id": "ef6d0907-d6a6-4dac-8292-98b92d441d27",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3542,7 +3542,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "09f2829d-787f-44ab-893e-2b2e9c4e8b34",
+							"id": "2140885d-abad-4f50-adac-0555a2feb50f",
 							"name": "Trigram not found.",
 							"originalRequest": {
 								"url": {
@@ -3599,7 +3599,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "eae41227-d449-46d4-a2a0-3f7f41f84b55",
+							"id": "a9f926db-df3c-40a8-a14a-e4fef30a2986",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3662,7 +3662,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6c99c4ad-0228-4bc0-8bbc-cd3109d7a73e",
+							"id": "c87b356e-0499-4cf0-96ce-23356a598781",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3719,7 +3719,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "02198819-ab6b-490a-8ba9-a569a4d6656c",
+							"id": "d2469f16-4c9d-44d3-8703-2fc43cb5d2c2",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3821,11 +3821,11 @@
 		]
 	},
 	"info": {
-		"_postman_id": "5f0d8f2f-38e1-4655-af05-1f1e4d93ad74",
+		"_postman_id": "7425f5be-0271-4d59-8802-9a64f414307f",
 		"name": "I-Ching Oracle API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"description": {
-			"content": "I-Ching oracle API + hosted MCP for AI agents and developers. Connect Claude Code, Cursor, VS Code in seconds, no local setup. Access 3,000 years of Chinese wisdom with all 64 hexagrams, 384 changing lines, 8 trigrams, and modern interpretations for love, career, and decision-making. Cast readings with the authentic three-coin method, get daily hexagrams, and explore the Book of Changes programmatically. 9+ endpoints optimized for divination apps, AI oracle chatbots, fortune-telling platforms, daily wisdom features, and spiritual guidance products.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, human design, forecast, biorhythm, tarot, numerology, crystals, dreams, I-Ching, angel numbers, location), 148+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (MCP)\n\nRoxyAPI has native Model Context Protocol support. Your AI agent auto-discovers all 148+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
+			"content": "I-Ching oracle API with all 64 hexagrams, 384 changing lines, 8 trigrams, and modern interpretations for love, career, and decision-making. Cast readings with the authentic three-coin method, get a daily hexagram, and explore the Book of Changes programmatically. Built for divination apps, AI oracle chatbots, fortune-telling platforms, daily wisdom features, and spiritual guidance products. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, human design, forecast, biorhythm, tarot, numerology, crystals, dreams, I-Ching, angel numbers, location), 164+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 164+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
 			"type": "text/plain"
 		}
 	}

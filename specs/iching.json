@@ -3,7 +3,7 @@
 	"info": {
 		"title": "I-Ching Oracle API",
 		"version": "2.0.0",
-		"description": "I-Ching oracle API + hosted MCP for AI agents and developers. Connect Claude Code, Cursor, VS Code in seconds, no local setup. Access 3,000 years of Chinese wisdom with all 64 hexagrams, 384 changing lines, 8 trigrams, and modern interpretations for love, career, and decision-making. Cast readings with the authentic three-coin method, get daily hexagrams, and explore the Book of Changes programmatically. 9+ endpoints optimized for divination apps, AI oracle chatbots, fortune-telling platforms, daily wisdom features, and spiritual guidance products.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, human design, forecast, biorhythm, tarot, numerology, crystals, dreams, I-Ching, angel numbers, location), 148+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (MCP)\n\nRoxyAPI has native Model Context Protocol support. Your AI agent auto-discovers all 148+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n",
+		"description": "I-Ching oracle API with all 64 hexagrams, 384 changing lines, 8 trigrams, and modern interpretations for love, career, and decision-making. Cast readings with the authentic three-coin method, get a daily hexagram, and explore the Book of Changes programmatically. Built for divination apps, AI oracle chatbots, fortune-telling platforms, daily wisdom features, and spiritual guidance products. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, human design, forecast, biorhythm, tarot, numerology, crystals, dreams, I-Ching, angel numbers, location), 164+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 164+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n",
 		"contact": {
 			"name": "RoxyAPI Support",
 			"url": "https://roxyapi.com/contact"
@@ -31,7 +31,7 @@
 	"tags": [
 		{
 			"name": "I-Ching",
-			"description": "I-Ching oracle API + hosted MCP for AI agents and developers. Connect Claude Code, Cursor, VS Code in seconds, no local setup. Access 3,000 years of Chinese wisdom with all 64 hexagrams, 384 changing lines, 8 trigrams, and modern interpretations for love, career, and decision-making. Cast readings with the authentic three-coin method, get daily hexagrams, and explore the Book of Changes programmatically. 9+ endpoints optimized for divination apps, AI oracle chatbots, fortune-telling platforms, daily wisdom features, and spiritual guidance products."
+			"description": "I-Ching oracle API with all 64 hexagrams, 384 changing lines, 8 trigrams, and modern interpretations for love, career, and decision-making. Cast readings with the authentic three-coin method, get a daily hexagram, and explore the Book of Changes programmatically. Built for divination apps, AI oracle chatbots, fortune-telling platforms, daily wisdom features, and spiritual guidance products. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs."
 		}
 	],
 	"components": {
@@ -44,6 +44,30 @@
 			}
 		},
 		"schemas": {
+			"ChangingLine": {
+				"type": "object",
+				"properties": {
+					"position": {
+						"type": "number",
+						"example": 1,
+						"description": "Line position (1-6, bottom to top). In I-Ching, each hexagram has six lines (yao) read from bottom upward."
+					},
+					"text": {
+						"type": "string",
+						"example": "The dragon is still hidden below the surface, so it does not act.",
+						"description": "The oracle statement for this line. It applies when this specific line comes up changing (old yin or old yang) in a casting, and it speaks in the concrete imagery of the tradition."
+					},
+					"meaning": {
+						"type": "string",
+						"example": "The first line is the beginning, still underground and unrecognized. Strength is present but untested, and showing it now invites resistance it cannot yet survive. Stay hidden and build.",
+						"description": "What the line statement asks of the querent, read from its position in the hexagram (1 is the hidden beginning, 3 is the exposed threshold, 5 is the ruling line, 6 is past the peak) and from whether the line is yin or yang. This is the meaning behind the image, so a consuming agent does not have to invent one."
+					}
+				},
+				"required": [
+					"position",
+					"text"
+				]
+			},
 			"BasicHexagram": {
 				"type": "object",
 				"properties": {
@@ -138,12 +162,12 @@
 					},
 					"judgment": {
 						"type": "string",
-						"example": "The Creative works sublime success, furthering through perseverance.",
+						"example": "Pure creative force is available and it runs from origin to completion without obstruction, so the situation rewards initiative that stays correct and does not slacken. Success here is built by sustained effort held to a straight line, not by a single burst.",
 						"description": "The Judgment (Tuan) text, the primary oracle statement of the hexagram offering core guidance and outcome."
 					},
 					"image": {
 						"type": "string",
-						"example": "The movement of heaven is full of power. Thus the superior man makes himself strong and untiring.",
+						"example": "Heaven above heaven: the same motion repeated without pause and without fatigue. Renew your own strength on your own schedule rather than waiting to be driven by circumstances.",
 						"description": "The Image (Xiang) text, symbolic guidance derived from the trigram combination describing the ideal attitude and action."
 					},
 					"interpretation": {
@@ -209,25 +233,6 @@
 					"advice"
 				]
 			},
-			"ChangingLine": {
-				"type": "object",
-				"properties": {
-					"position": {
-						"type": "number",
-						"example": 1,
-						"description": "Line position (1-6, bottom to top). In I-Ching, each hexagram has six lines (yao) read from bottom upward."
-					},
-					"text": {
-						"type": "string",
-						"example": "Hidden dragon. Do not act.",
-						"description": "Changing line interpretation text. Applies only when this specific line is a changing line (old yin or old yang) in a casting."
-					}
-				},
-				"required": [
-					"position",
-					"text"
-				]
-			},
 			"BasicTrigram": {
 				"type": "object",
 				"properties": {
@@ -283,7 +288,7 @@
 					"number": {
 						"type": "number",
 						"example": 1,
-						"description": "Trigram number (1-8) in the traditional I-Ching ordering."
+						"description": "Stable identifier for the trigram, 1 to 8. This is our lookup key, not a canonical sequence: the tradition has several orderings (King Wen, Fu Xi, Earlier and Later Heaven) and they disagree, so do not read ranking or precedence into it."
 					},
 					"symbol": {
 						"type": "string",
@@ -551,7 +556,7 @@
 										},
 										"dailyMessage": {
 											"type": "string",
-											"example": "Your hexagram for 2026-01-28: The Creative (乾). Supreme success through perseverance.",
+											"example": "Your hexagram for 2026-01-28: The Creative (乾). Be like the heavens: consistent, powerful, and untiring.",
 											"description": "Concise daily message summarizing the hexagram guidance"
 										}
 									},
@@ -969,6 +974,13 @@
 												5
 											],
 											"description": "Positions of changing lines (1-6, bottom to top). These lines transform yin to yang or vice versa."
+										},
+										"changingLines": {
+											"type": "array",
+											"items": {
+												"$ref": "#/components/schemas/ChangingLine"
+											},
+											"description": "The oracle statement and meaning of each line that came up CHANGING, and only those. The changing lines are what the cast is actually about, so this saves a second call to read them and stops a consuming agent from having to invent them."
 										},
 										"resultingHexagram": {
 											"type": "object",
