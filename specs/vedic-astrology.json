@@ -3,7 +3,7 @@
 	"info": {
 		"title": "Vedic Astrology API",
 		"version": "2.0.0",
-		"description": "Vedic astrology (Jyotish) and KP API for kundli generation with 15 divisional charts (D1-D60), Ashtakoot Gun Milan kundli matching, Vimshottari Dasha predictions, dosha detection with remedies, 300+ planetary yogas, complete Panchang, and KP horary with 249-level sub-lord analysis. Calculations verified against NASA JPL Horizons with sub-arcminute accuracy. Built for matrimonial apps, horoscope platforms, spiritual wellness services, and AI-powered astrology chatbots. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, forecast, human design, numerology, tarot, biorhythm, I-Ching, crystals, dreams, angel numbers, location), 171+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 171+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n",
+		"description": "Vedic astrology (Jyotish) and KP API for kundli generation with 15 divisional charts (D1-D60), Ashtakoot Gun Milan kundli matching, Vimshottari Dasha predictions, dosha detection with remedies, 300+ planetary yogas, complete Panchang, and KP horary with 249-level sub-lord analysis. Calculations verified against NASA JPL Horizons at arc-second-level accuracy. Built for matrimonial apps, horoscope platforms, spiritual wellness services, and AI-powered astrology chatbots. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, forecast, human design, numerology, tarot, biorhythm, I-Ching, crystals, dreams, angel numbers, location), 171+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 171+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n",
 		"contact": {
 			"name": "RoxyAPI Support",
 			"url": "https://roxyapi.com/contact"
@@ -31,7 +31,7 @@
 	"tags": [
 		{
 			"name": "Vedic Astrology",
-			"description": "Vedic astrology (Jyotish) and KP API for kundli generation with 15 divisional charts (D1-D60), Ashtakoot Gun Milan kundli matching, Vimshottari Dasha predictions, dosha detection with remedies, 300+ planetary yogas, complete Panchang, and KP horary with 249-level sub-lord analysis. Calculations verified against NASA JPL Horizons with sub-arcminute accuracy. Built for matrimonial apps, horoscope platforms, spiritual wellness services, and AI-powered astrology chatbots. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs."
+			"description": "Vedic astrology (Jyotish) and KP API for kundli generation with 15 divisional charts (D1-D60), Ashtakoot Gun Milan kundli matching, Vimshottari Dasha predictions, dosha detection with remedies, 300+ planetary yogas, complete Panchang, and KP horary with 249-level sub-lord analysis. Calculations verified against NASA JPL Horizons at arc-second-level accuracy. Built for matrimonial apps, horoscope platforms, spiritual wellness services, and AI-powered astrology chatbots. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs."
 		}
 	],
 	"components": {
@@ -1772,10 +1772,34 @@
 									"example": "Positive",
 									"description": "Overall nature. Auspicious yogas (Pancha Mahapurusha, Gajakesari) bestow benefits; inauspicious yogas (Kemadruma) indicate challenges; Both denotes context-dependent effects."
 								},
+								"family": {
+									"type": "string",
+									"enum": [
+										"classical",
+										"asraya",
+										"dala",
+										"akriti",
+										"sankhya"
+									],
+									"example": "akriti",
+									"description": "Classical grouping, ALWAYS present on a detection verdict: one of the four Nabhasa families (asraya, dala, akriti, sankhya) or classical for the twelve single-combination yogas such as Gajakesari and the Pancha Mahapurusha. Group the verdict list on this key to render a Nabhasa result the way the tradition arranges it. Never translated, so grouping works identically under any lang."
+								},
 								"present": {
 									"type": "boolean",
 									"example": true,
-									"description": "True if every classical condition for the yoga is satisfied by the given chart. False if any rule fails, including \"almost-present\" cases where dignity is met but kendra/aspect is not, and Nabhasa cases where the yoga matched its own rule but a stronger family outranked it under the classical precedence norms. Read `evidence` to tell those apart."
+									"description": "True if every classical condition for the yoga is satisfied by the given chart. False means one of TWO different things: the rule failed, or the rule held and a stronger family outranked it. Read `suppressedBy` to tell those apart, which is exact and locale-independent; `evidence` says the same thing in English prose."
+								},
+								"suppressedBy": {
+									"type": "string",
+									"enum": [
+										"classical",
+										"asraya",
+										"dala",
+										"akriti",
+										"sankhya"
+									],
+									"example": "akriti",
+									"description": "Set ONLY when this yoga matched its own classical rule and was then silenced by a higher-ranking family, so `present` is false for a reason a practitioner reads very differently from a failed rule. Names the family that took precedence, under the four classical norms: Akriti outranks Asraya, and Akriti, Asraya and Dala each outrank Sankhya. Absent means the rule genuinely did not hold."
 								},
 								"evidence": {
 									"type": "string",
@@ -1789,6 +1813,7 @@
 								"description",
 								"result",
 								"quality",
+								"family",
 								"present"
 							]
 						},
@@ -1820,12 +1845,12 @@
 										"name": {
 											"type": "string",
 											"example": "Vishakha",
-											"description": "Nakshatra (lunar mansion) the planet occupies. One of 27 Vedic nakshatras spanning 13 degrees 20 arcminutes each. Determines dasha lord and behavioral qualities."
+											"description": "Nakshatra (lunar mansion) the planet occupies. One of 27 Vedic nakshatras spanning 13 degrees 20 minutes each. Determines dasha lord and behavioral qualities."
 										},
 										"pada": {
 											"type": "number",
 											"example": 3,
-											"description": "Nakshatra pada (quarter, 1-4). Each nakshatra divides into 4 padas of 3 degrees 20 arcminutes. Pada determines Navamsa sign and refines personality traits."
+											"description": "Nakshatra pada (quarter, 1-4). Each nakshatra divides into 4 padas of 3 degrees 20 minutes. Pada determines Navamsa sign and refines personality traits."
 										},
 										"key": {
 											"type": "number",
@@ -1868,6 +1893,69 @@
 									"maximum": 12,
 									"example": 9,
 									"description": "Bhava (house) number 1-12, counted whole-sign from the Lagna (house 1 is the Lagna rashi; Lagna itself is house 1). Present on the D1 birth chart; divisional charts omit it."
+								},
+								"avasthaInfo": {
+									"type": "object",
+									"properties": {
+										"awastha": {
+											"type": "object",
+											"properties": {
+												"meaning": {
+													"type": "string",
+													"example": "Adult",
+													"description": "One or two word gloss of the state, suitable for a table cell beside the graha."
+												},
+												"interpretation": {
+													"type": "string",
+													"example": "At its full strength, the graha delivers its promised results without reservation or delay.",
+													"description": "Single-sentence classical reading of what the state does to the graha results, sourced from BPHS ch. 45, Saravali ch. 5 and Phaladeepika ch. 9. Localized by the lang query parameter."
+												}
+											},
+											"required": [
+												"meaning",
+												"interpretation"
+											]
+										},
+										"jagradadi": {
+											"type": "object",
+											"properties": {
+												"meaning": {
+													"type": "string",
+													"example": "Adult",
+													"description": "One or two word gloss of the state, suitable for a table cell beside the graha."
+												},
+												"interpretation": {
+													"type": "string",
+													"example": "At its full strength, the graha delivers its promised results without reservation or delay.",
+													"description": "Single-sentence classical reading of what the state does to the graha results, sourced from BPHS ch. 45, Saravali ch. 5 and Phaladeepika ch. 9. Localized by the lang query parameter."
+												}
+											},
+											"required": [
+												"meaning",
+												"interpretation"
+											]
+										},
+										"deeptadi": {
+											"type": "object",
+											"properties": {
+												"meaning": {
+													"type": "string",
+													"example": "Adult",
+													"description": "One or two word gloss of the state, suitable for a table cell beside the graha."
+												},
+												"interpretation": {
+													"type": "string",
+													"example": "At its full strength, the graha delivers its promised results without reservation or delay.",
+													"description": "Single-sentence classical reading of what the state does to the graha results, sourced from BPHS ch. 45, Saravali ch. 5 and Phaladeepika ch. 9. Localized by the lang query parameter."
+												}
+											},
+											"required": [
+												"meaning",
+												"interpretation"
+											]
+										}
+									},
+									"description": "Localized readings for this graha avastha states, present only when avasthaInfo true was sent. Each key mirrors the state field of the same name and carries a short meaning plus a one-sentence classical interpretation, so a client can label Yuva or Swapna without a second lookup call."
 								},
 								"awastha": {
 									"type": "string",
@@ -2018,6 +2106,12 @@
 						"default": 5.5,
 						"description": "Timezone: IANA name (e.g. \"America/New_York\", \"Europe/London\") OR decimal hours from UTC (e.g. -5 for EST, 1 for CET). IANA strings are resolved to the DST-correct offset for the given date, so you can pass `cities[0].timezone` from /location/search directly. Defaults to 5.5.",
 						"example": 5.5
+					},
+					"avasthaInfo": {
+						"type": "boolean",
+						"default": false,
+						"example": true,
+						"description": "Set true to include a localized meaning and one-sentence classical interpretation beside each graha avastha state, under avasthaInfo on that graha in meta. Defaults to false, so an existing integration is byte-identical until it opts in. Saves a second call to GET /avasthas and the client-side join that would otherwise be needed to turn Yuva or Swapna into readable text."
 					}
 				},
 				"required": [
@@ -2059,12 +2153,12 @@
 												"name": {
 													"type": "string",
 													"example": "Swati",
-													"description": "Nakshatra (lunar mansion) the planet occupies. One of 27 Vedic nakshatras spanning 13 degrees 20 arcminutes each. Determines dasha lord and behavioral qualities."
+													"description": "Nakshatra (lunar mansion) the planet occupies. One of 27 Vedic nakshatras spanning 13 degrees 20 minutes each. Determines dasha lord and behavioral qualities."
 												},
 												"pada": {
 													"type": "number",
 													"example": 2,
-													"description": "Nakshatra pada (quarter, 1-4). Each nakshatra divides into 4 padas of 3 degrees 20 arcminutes. Pada determines Navamsa sign and refines personality traits."
+													"description": "Nakshatra pada (quarter, 1-4). Each nakshatra divides into 4 padas of 3 degrees 20 minutes. Pada determines Navamsa sign and refines personality traits."
 												},
 												"key": {
 													"type": "number",
@@ -2368,12 +2462,12 @@
 												"name": {
 													"type": "string",
 													"example": "Vishakha",
-													"description": "Nakshatra (lunar mansion) the planet occupies. One of 27 Vedic nakshatras spanning 13 degrees 20 arcminutes each. Determines dasha lord and behavioral qualities."
+													"description": "Nakshatra (lunar mansion) the planet occupies. One of 27 Vedic nakshatras spanning 13 degrees 20 minutes each. Determines dasha lord and behavioral qualities."
 												},
 												"pada": {
 													"type": "number",
 													"example": 3,
-													"description": "Nakshatra pada (quarter, 1-4). Each nakshatra divides into 4 padas of 3 degrees 20 arcminutes. Pada determines Navamsa sign and refines personality traits."
+													"description": "Nakshatra pada (quarter, 1-4). Each nakshatra divides into 4 padas of 3 degrees 20 minutes. Pada determines Navamsa sign and refines personality traits."
 												},
 												"key": {
 													"type": "number",
@@ -2877,12 +2971,12 @@
 								"name": {
 									"type": "string",
 									"example": "Magha",
-									"description": "Nakshatra (lunar mansion) the planet occupies. One of 27 Vedic nakshatras spanning 13 degrees 20 arcminutes each."
+									"description": "Nakshatra (lunar mansion) the planet occupies. One of 27 Vedic nakshatras spanning 13 degrees 20 minutes each."
 								},
 								"pada": {
 									"type": "number",
 									"example": 2,
-									"description": "Nakshatra pada (quarter, 1-4). Each nakshatra divides into 4 padas of 3 degrees 20 arcminutes. Determines Navamsa sign."
+									"description": "Nakshatra pada (quarter, 1-4). Each nakshatra divides into 4 padas of 3 degrees 20 minutes. Determines Navamsa sign."
 								},
 								"key": {
 									"type": "number",
@@ -3501,6 +3595,18 @@
 						],
 						"example": "Positive",
 						"description": "Overall nature. Auspicious yogas (Pancha Mahapurusha, Gajakesari) bestow benefits; inauspicious yogas (Kemadruma) indicate challenges; Both denotes context-dependent effects."
+					},
+					"family": {
+						"type": "string",
+						"enum": [
+							"classical",
+							"asraya",
+							"dala",
+							"akriti",
+							"sankhya"
+						],
+						"example": "akriti",
+						"description": "Nabhasa family this yoga belongs to, present only on the 32 Nabhasa distribution yogas: asraya (3, sign modality), dala (2, benefic or malefic kendra tenancy), akriti (20, bhava shape) and sankhya (7, count of occupied rasis). Absent on every other glossary row, which is most of the catalog, since those are single-combination yogas outside the Nabhasa scheme. Group or filter the catalog on this key; it is never translated."
 					}
 				},
 				"required": [
@@ -3549,10 +3655,34 @@
 									"example": "Positive",
 									"description": "Overall nature. Auspicious yogas (Pancha Mahapurusha, Gajakesari) bestow benefits; inauspicious yogas (Kemadruma) indicate challenges; Both denotes context-dependent effects."
 								},
+								"family": {
+									"type": "string",
+									"enum": [
+										"classical",
+										"asraya",
+										"dala",
+										"akriti",
+										"sankhya"
+									],
+									"example": "akriti",
+									"description": "Classical grouping, ALWAYS present on a detection verdict: one of the four Nabhasa families (asraya, dala, akriti, sankhya) or classical for the twelve single-combination yogas such as Gajakesari and the Pancha Mahapurusha. Group the verdict list on this key to render a Nabhasa result the way the tradition arranges it. Never translated, so grouping works identically under any lang."
+								},
 								"present": {
 									"type": "boolean",
 									"example": true,
-									"description": "True if every classical condition for the yoga is satisfied by the given chart. False if any rule fails, including \"almost-present\" cases where dignity is met but kendra/aspect is not, and Nabhasa cases where the yoga matched its own rule but a stronger family outranked it under the classical precedence norms. Read `evidence` to tell those apart."
+									"description": "True if every classical condition for the yoga is satisfied by the given chart. False means one of TWO different things: the rule failed, or the rule held and a stronger family outranked it. Read `suppressedBy` to tell those apart, which is exact and locale-independent; `evidence` says the same thing in English prose."
+								},
+								"suppressedBy": {
+									"type": "string",
+									"enum": [
+										"classical",
+										"asraya",
+										"dala",
+										"akriti",
+										"sankhya"
+									],
+									"example": "akriti",
+									"description": "Set ONLY when this yoga matched its own classical rule and was then silenced by a higher-ranking family, so `present` is false for a reason a practitioner reads very differently from a failed rule. Names the family that took precedence, under the four classical norms: Akriti outranks Asraya, and Akriti, Asraya and Dala each outrank Sankhya. Absent means the rule genuinely did not hold."
 								},
 								"evidence": {
 									"type": "string",
@@ -3566,6 +3696,7 @@
 								"description",
 								"result",
 								"quality",
+								"family",
 								"present"
 							]
 						},
@@ -3994,13 +4125,23 @@
 							]
 						},
 						"description": "Significations of each of the twelve bhavas (houses), keyed by house number 1 to 12, as short keywords. Bhava 1 is the Lagna (self, body, vitality), 2 wealth and speech, 4 home and mother, 7 marriage and partnership, 10 career and status, 11 gains. Use it to label the house numbers returned elsewhere in the response: a Vimshottari dasha period signifying houses 2, 7 and 8, or a KP significator carrying houses 11 and 6, becomes readable text without a separate lookup call. Returned once per response rather than repeated per period, and localized by the lang query parameter alongside every other interpretation field."
+					},
+					"focus": {
+						"type": "string",
+						"enum": [
+							"general",
+							"finance"
+						],
+						"example": "general",
+						"description": "Which signification vocabulary produced the houseThemes keywords in this response, echoing the focus query parameter. Always present, and \"general\" when the parameter was omitted. Read it to label a rendered house legend, or to tell two cached responses apart when only one asked for the finance lens."
 					}
 				},
 				"required": [
 					"ayanamsa",
 					"houseSystem",
 					"cusps",
-					"houseThemes"
+					"houseThemes",
+					"focus"
 				]
 			},
 			"KPCuspsRequest": {
@@ -4582,6 +4723,15 @@
 							]
 						},
 						"description": "Significations of each of the twelve bhavas (houses), keyed by house number 1 to 12, as short keywords. Bhava 1 is the Lagna (self, body, vitality), 2 wealth and speech, 4 home and mother, 7 marriage and partnership, 10 career and status, 11 gains. Use it to label the house numbers returned elsewhere in the response: a Vimshottari dasha period signifying houses 2, 7 and 8, or a KP significator carrying houses 11 and 6, becomes readable text without a separate lookup call. Returned once per response rather than repeated per period, and localized by the lang query parameter alongside every other interpretation field."
+					},
+					"focus": {
+						"type": "string",
+						"enum": [
+							"general",
+							"finance"
+						],
+						"example": "general",
+						"description": "Which signification vocabulary produced the houseThemes keywords in this response, echoing the focus query parameter. Always present, and \"general\" when the parameter was omitted. Read it to label a rendered house legend, or to tell two cached responses apart when only one asked for the finance lens."
 					}
 				},
 				"required": [
@@ -4591,7 +4741,8 @@
 					"planets",
 					"nodes",
 					"significators",
-					"houseThemes"
+					"houseThemes",
+					"focus"
 				]
 			},
 			"KPChartRequest": {
@@ -4831,6 +4982,15 @@
 							]
 						},
 						"description": "Significations of each of the twelve bhavas (houses), keyed by house number 1 to 12, as short keywords. Bhava 1 is the Lagna (self, body, vitality), 2 wealth and speech, 4 home and mother, 7 marriage and partnership, 10 career and status, 11 gains. Use it to label the house numbers returned elsewhere in the response: a Vimshottari dasha period signifying houses 2, 7 and 8, or a KP significator carrying houses 11 and 6, becomes readable text without a separate lookup call. Returned once per response rather than repeated per period, and localized by the lang query parameter alongside every other interpretation field."
+					},
+					"focus": {
+						"type": "string",
+						"enum": [
+							"general",
+							"finance"
+						],
+						"example": "general",
+						"description": "Which signification vocabulary produced the houseThemes keywords in this response, echoing the focus query parameter. Always present, and \"general\" when the parameter was omitted. Read it to label a rendered house legend, or to tell two cached responses apart when only one asked for the finance lens."
 					}
 				},
 				"required": [
@@ -5266,6 +5426,15 @@
 							]
 						},
 						"description": "Significations of each of the twelve bhavas (houses), keyed by house number 1 to 12, as short keywords. Bhava 1 is the Lagna (self, body, vitality), 2 wealth and speech, 4 home and mother, 7 marriage and partnership, 10 career and status, 11 gains. Use it to label the house numbers returned elsewhere in the response: a Vimshottari dasha period signifying houses 2, 7 and 8, or a KP significator carrying houses 11 and 6, becomes readable text without a separate lookup call. Returned once per response rather than repeated per period, and localized by the lang query parameter alongside every other interpretation field."
+					},
+					"focus": {
+						"type": "string",
+						"enum": [
+							"general",
+							"finance"
+						],
+						"example": "general",
+						"description": "Which signification vocabulary produced the houseThemes keywords in this response, echoing the focus query parameter. Always present, and \"general\" when the parameter was omitted. Read it to label a rendered house legend, or to tell two cached responses apart when only one asked for the finance lens."
 					}
 				},
 				"required": [
@@ -5275,7 +5444,8 @@
 					"location",
 					"totalIntervals",
 					"intervals",
-					"houseThemes"
+					"houseThemes",
+					"focus"
 				]
 			},
 			"KPSublordChangesResponse": {
@@ -8903,6 +9073,15 @@
 											},
 											"description": "Significations of each of the twelve bhavas (houses), keyed by house number 1 to 12, as short keywords. Bhava 1 is the Lagna (self, body, vitality), 2 wealth and speech, 4 home and mother, 7 marriage and partnership, 10 career and status, 11 gains. Use it to label the house numbers returned elsewhere in the response: a Vimshottari dasha period signifying houses 2, 7 and 8, or a KP significator carrying houses 11 and 6, becomes readable text without a separate lookup call. Returned once per response rather than repeated per period, and localized by the lang query parameter alongside every other interpretation field."
 										},
+										"focus": {
+											"type": "string",
+											"enum": [
+												"general",
+												"finance"
+											],
+											"example": "general",
+											"description": "Which signification vocabulary produced the houseThemes keywords in this response, echoing the focus query parameter. Always present, and \"general\" when the parameter was omitted. Read it to label a rendered house legend, or to tell two cached responses apart when only one asked for the finance lens."
+										},
 										"moonNakshatra": {
 											"type": "integer",
 											"minimum": 1,
@@ -10759,6 +10938,15 @@
 											},
 											"description": "Significations of each of the twelve bhavas (houses), keyed by house number 1 to 12, as short keywords. Bhava 1 is the Lagna (self, body, vitality), 2 wealth and speech, 4 home and mother, 7 marriage and partnership, 10 career and status, 11 gains. Use it to label the house numbers returned elsewhere in the response: a Vimshottari dasha period signifying houses 2, 7 and 8, or a KP significator carrying houses 11 and 6, becomes readable text without a separate lookup call. Returned once per response rather than repeated per period, and localized by the lang query parameter alongside every other interpretation field."
 										},
+										"focus": {
+											"type": "string",
+											"enum": [
+												"general",
+												"finance"
+											],
+											"example": "general",
+											"description": "Which signification vocabulary produced the houseThemes keywords in this response, echoing the focus query parameter. Always present, and \"general\" when the parameter was omitted. Read it to label a rendered house legend, or to tell two cached responses apart when only one asked for the finance lens."
+										},
 										"moonNakshatra": {
 											"type": "integer",
 											"minimum": 1,
@@ -11473,6 +11661,15 @@
 												]
 											},
 											"description": "Significations of each of the twelve bhavas (houses), keyed by house number 1 to 12, as short keywords. Bhava 1 is the Lagna (self, body, vitality), 2 wealth and speech, 4 home and mother, 7 marriage and partnership, 10 career and status, 11 gains. Use it to label the house numbers returned elsewhere in the response: a Vimshottari dasha period signifying houses 2, 7 and 8, or a KP significator carrying houses 11 and 6, becomes readable text without a separate lookup call. Returned once per response rather than repeated per period, and localized by the lang query parameter alongside every other interpretation field."
+										},
+										"focus": {
+											"type": "string",
+											"enum": [
+												"general",
+												"finance"
+											],
+											"example": "general",
+											"description": "Which signification vocabulary produced the houseThemes keywords in this response, echoing the focus query parameter. Always present, and \"general\" when the parameter was omitted. Read it to label a rendered house legend, or to tell two cached responses apart when only one asked for the finance lens."
 										},
 										"mahadashaLord": {
 											"type": "string",
@@ -12385,6 +12582,15 @@
 												]
 											},
 											"description": "Significations of each of the twelve bhavas (houses), keyed by house number 1 to 12, as short keywords. Bhava 1 is the Lagna (self, body, vitality), 2 wealth and speech, 4 home and mother, 7 marriage and partnership, 10 career and status, 11 gains. Use it to label the house numbers returned elsewhere in the response: a Vimshottari dasha period signifying houses 2, 7 and 8, or a KP significator carrying houses 11 and 6, becomes readable text without a separate lookup call. Returned once per response rather than repeated per period, and localized by the lang query parameter alongside every other interpretation field."
+										},
+										"focus": {
+											"type": "string",
+											"enum": [
+												"general",
+												"finance"
+											],
+											"example": "general",
+											"description": "Which signification vocabulary produced the houseThemes keywords in this response, echoing the focus query parameter. Always present, and \"general\" when the parameter was omitted. Read it to label a rendered house legend, or to tell two cached responses apart when only one asked for the finance lens."
 										},
 										"mahadashaLord": {
 											"type": "string",
@@ -13370,6 +13576,15 @@
 												]
 											},
 											"description": "Significations of each of the twelve bhavas (houses), keyed by house number 1 to 12, as short keywords. Bhava 1 is the Lagna (self, body, vitality), 2 wealth and speech, 4 home and mother, 7 marriage and partnership, 10 career and status, 11 gains. Use it to label the house numbers returned elsewhere in the response: a Vimshottari dasha period signifying houses 2, 7 and 8, or a KP significator carrying houses 11 and 6, becomes readable text without a separate lookup call. Returned once per response rather than repeated per period, and localized by the lang query parameter alongside every other interpretation field."
+										},
+										"focus": {
+											"type": "string",
+											"enum": [
+												"general",
+												"finance"
+											],
+											"example": "general",
+											"description": "Which signification vocabulary produced the houseThemes keywords in this response, echoing the focus query parameter. Always present, and \"general\" when the parameter was omitted. Read it to label a rendered house legend, or to tell two cached responses apart when only one asked for the finance lens."
 										},
 										"mahadashaLord": {
 											"type": "string",
@@ -14428,6 +14643,15 @@
 												]
 											},
 											"description": "Significations of each of the twelve bhavas (houses), keyed by house number 1 to 12, as short keywords. Bhava 1 is the Lagna (self, body, vitality), 2 wealth and speech, 4 home and mother, 7 marriage and partnership, 10 career and status, 11 gains. Use it to label the house numbers returned elsewhere in the response: a Vimshottari dasha period signifying houses 2, 7 and 8, or a KP significator carrying houses 11 and 6, becomes readable text without a separate lookup call. Returned once per response rather than repeated per period, and localized by the lang query parameter alongside every other interpretation field."
+										},
+										"focus": {
+											"type": "string",
+											"enum": [
+												"general",
+												"finance"
+											],
+											"example": "general",
+											"description": "Which signification vocabulary produced the houseThemes keywords in this response, echoing the focus query parameter. Always present, and \"general\" when the parameter was omitted. Read it to label a rendered house legend, or to tell two cached responses apart when only one asked for the finance lens."
 										},
 										"mahadashaLord": {
 											"type": "string",
@@ -18511,6 +18735,24 @@
 						"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English.",
 						"name": "lang",
 						"in": "query"
+					},
+					{
+						"schema": {
+							"type": "string",
+							"enum": [
+								"classical",
+								"asraya",
+								"dala",
+								"akriti",
+								"sankhya"
+							],
+							"example": "akriti",
+							"description": "Filter the catalog to one Nabhasa family: asraya (3), dala (2), akriti (20) or sankhya (7). Omit for the full catalog. `classical` is accepted but matches nothing here, because it is a detection-verdict value for single-combination yogas rather than a catalog grouping."
+						},
+						"required": false,
+						"description": "Filter the catalog to one Nabhasa family: asraya (3), dala (2), akriti (20) or sankhya (7). Omit for the full catalog. `classical` is accepted but matches nothing here, because it is a detection-verdict value for single-combination yogas rather than a catalog grouping.",
+						"name": "family",
+						"in": "query"
 					}
 				],
 				"responses": {
@@ -18529,12 +18771,24 @@
 													"id": {
 														"type": "string",
 														"example": "gajakesari",
-														"description": "Unique yoga identifier in lowercase kebab-case. Use this to fetch full details via GET /yogas/:id."
+														"description": "Unique yoga identifier in lowercase kebab-case. Use this to fetch full details via GET /yoga/{id}."
 													},
 													"name": {
 														"type": "string",
 														"example": "Gajakesari Yoga",
 														"description": "Traditional Sanskrit name of the planetary yoga combination."
+													},
+													"family": {
+														"type": "string",
+														"enum": [
+															"classical",
+															"asraya",
+															"dala",
+															"akriti",
+															"sankhya"
+														],
+														"example": "akriti",
+														"description": "Nabhasa family, present only on the 32 Nabhasa distribution yogas and absent on every other catalog row. Never translated, so it groups identically under any lang."
 													}
 												},
 												"required": [
@@ -18542,12 +18796,12 @@
 													"name"
 												]
 											},
-											"description": "Array of all planetary yogas with basic identifiers. Use GET /yogas/:id for formation rules, effects, and quality classification."
+											"description": "Array of planetary yogas with basic identifiers, narrowed by `family` when that filter is supplied. Use GET /yoga/{id} for formation rules, effects, and quality classification."
 										},
 										"total": {
 											"type": "number",
 											"example": 300,
-											"description": "Total count of planetary yogas in the database. Includes Raj Yogas, Dhan Yogas, Pancha Mahapurusha Yogas, Nabhasa Yogas, and more."
+											"description": "Number of yogas in this response, which is the filtered count when `family` is supplied and the full catalog size otherwise. Includes Raj Yogas, Dhan Yogas, Pancha Mahapurusha Yogas, Nabhasa Yogas, and more."
 										}
 									},
 									"required": [
@@ -19668,7 +19922,7 @@
 					{
 						"schema": {
 							"type": "string",
-							"example": 5.5,
+							"example": "Asia/Kolkata",
 							"description": "IANA name (e.g. \"Asia/Kolkata\", \"America/New_York\"), decimal hours (e.g. 5.5 for IST, -5 for EST), or a fixed UTC offset (e.g. \"+05:30\"). IANA resolved to the DST-correct offset for the given date. Applies to the time field above. Defaults to 0 (UTC)."
 						},
 						"required": false,

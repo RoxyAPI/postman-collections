@@ -1,15 +1,15 @@
 {
 	"item": [
 		{
-			"id": "da3e94f3-1804-4811-8e32-619239ccce19",
+			"id": "cbadb416-fdaa-4f08-9b33-f158baf32c86",
 			"name": "Tarot",
 			"description": {
-				"content": "Production-ready tarot card reading API + hosted MCP for AI agents and developers. Connect Claude Code, Cursor, VS Code in seconds, no local setup. Complete 78-card Rider-Waite-Smith deck with domain-specific interpretations for love, career, health, and spiritual growth. Celtic Cross, three-card, love, career, yes/no oracle, daily card, and custom spreads. Seeded reproducibility for personalized daily readings. Card images included. 10+ endpoints optimized for tarot apps, AI tarot chatbots, fortune-telling platforms, and spiritual wellness products.",
+				"content": "Tarot reading API with the complete 78-card Rider-Waite-Smith deck and card meanings for love, career, health, and spiritual growth. Celtic Cross, three-card, love, career, yes/no oracle, daily card, and custom spreads, each with upright and reversed interpretations. Seeded reproducibility for personalized daily readings, and card images included. Built for tarot apps, AI tarot chatbots, fortune-telling platforms, and spiritual wellness products. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.",
 				"type": "text/plain"
 			},
 			"item": [
 				{
-					"id": "9e25f8de-eb1b-4fe3-a25f-32bdfd03dfa4",
+					"id": "4d4adfa9-e2b6-438c-b605-675f57906074",
 					"name": "List all 78 tarot cards",
 					"request": {
 						"name": "List all 78 tarot cards",
@@ -91,7 +91,7 @@
 					},
 					"response": [
 						{
-							"id": "37cef3f2-43d6-451c-8618-aa96ddafcc46",
+							"id": "b3a92af5-bc99-44bc-a797-bb99a7ca17a8",
 							"name": "List of tarot cards with basic information. Use GET /cards/:id for full details.",
 							"originalRequest": {
 								"url": {
@@ -154,12 +154,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"total\": 1804.9594817573477,\n  \"limit\": 1192.1239041538213,\n  \"offset\": 2559.087503772488,\n  \"cards\": [\n    {\n      \"id\": \"fool\",\n      \"name\": \"The Fool\",\n      \"arcana\": \"major\",\n      \"number\": 0,\n      \"imageUrl\": \"https://roxyapi.com/img/tarot/major/fool.jpg\",\n      \"suit\": \"cups\"\n    },\n    {\n      \"id\": \"fool\",\n      \"name\": \"The Fool\",\n      \"arcana\": \"major\",\n      \"number\": 0,\n      \"imageUrl\": \"https://roxyapi.com/img/tarot/major/fool.jpg\",\n      \"suit\": \"cups\"\n    }\n  ]\n}",
+							"body": "{\n  \"total\": 7784.652743977986,\n  \"limit\": 8314.085369267057,\n  \"offset\": 9504.688148157004,\n  \"cards\": [\n    {\n      \"id\": \"fool\",\n      \"name\": \"The Fool\",\n      \"arcana\": \"major\",\n      \"number\": 0,\n      \"imageUrl\": \"https://roxyapi.com/img/tarot/major/fool.jpg\",\n      \"suit\": \"cups\"\n    },\n    {\n      \"id\": \"fool\",\n      \"name\": \"The Fool\",\n      \"arcana\": \"major\",\n      \"number\": 0,\n      \"imageUrl\": \"https://roxyapi.com/img/tarot/major/fool.jpg\",\n      \"suit\": \"cups\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6f395fd7-bf1c-4b33-958d-fafd9df8bbf5",
+							"id": "8b6c81ff-5ffc-4a45-bb97-61cf45b21a0e",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -222,12 +222,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5866.419115420831,\n      \"maximum\": 6906.597612632576,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2258.4074935924623,\n      \"maximum\": 2275.1038727141504,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9672.150700184691,\n      \"maximum\": 7426.123271928656,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7254.616357508354,\n      \"maximum\": 5777.760415589268,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f7b34e5f-d442-4452-93ba-522b48256a08",
+							"id": "19a0c1be-7717-4299-8d28-ca793f347c61",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -295,7 +295,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f0d4d5af-6b47-4438-83c1-0f99c7b01ea1",
+							"id": "c6daf405-cb24-41f4-9494-0439dd1f2eb9",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -369,7 +369,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "08ecd108-47c8-4a2b-8fbd-c10517d20b43",
+							"id": "261b7eac-bbca-4e7c-a9f7-a81ac34c9681",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -437,7 +437,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "de95146e-a27d-4ee6-8c34-8486840a03eb",
+							"id": "e5b62555-2931-456c-b852-d9fd953e1e1f",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -511,7 +511,7 @@
 					}
 				},
 				{
-					"id": "1448acdb-d183-4718-9e11-37f56527a2e1",
+					"id": "2712745d-f715-4fd7-a86f-75aa1f6a955c",
 					"name": "Get detailed tarot card information",
 					"request": {
 						"name": "Get detailed tarot card information",
@@ -572,7 +572,7 @@
 					},
 					"response": [
 						{
-							"id": "21a735a3-03ce-4f16-98f8-32d61cd8af3b",
+							"id": "460173c0-8ab4-4437-9d4b-f0490de3051b",
 							"name": "Card details",
 							"originalRequest": {
 								"url": {
@@ -629,7 +629,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "01a90523-416a-47d1-9bb5-b2b0420f2e61",
+							"id": "4cad92dd-c89b-40c3-8458-197ff828bfea",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -681,12 +681,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5866.419115420831,\n      \"maximum\": 6906.597612632576,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2258.4074935924623,\n      \"maximum\": 2275.1038727141504,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9672.150700184691,\n      \"maximum\": 7426.123271928656,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7254.616357508354,\n      \"maximum\": 5777.760415589268,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "378bfbc4-c2a9-4ddb-b50c-c7ec46a99e54",
+							"id": "1424a848-a816-4f41-af94-0abd2dafde53",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -743,7 +743,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b7d13bea-23c1-485b-95c1-462f756850d4",
+							"id": "cb9f90b3-e161-459d-b871-12514e97417e",
 							"name": "Card not found",
 							"originalRequest": {
 								"url": {
@@ -800,7 +800,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ad193bcf-6210-416b-88e5-18d8f8bdf7eb",
+							"id": "5d79b5b8-096e-49cd-896c-fd206ce4115b",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -863,7 +863,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3936ffb4-74f2-4947-838a-7faadb8aeed6",
+							"id": "947772e7-038c-41f6-b44b-6cc4d66f46d2",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -920,7 +920,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "87fb7c85-c5ff-4a6f-b47c-4eb3ed2633ee",
+							"id": "d8fcbe1f-b88f-44aa-bd3c-9b579793f0f1",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -983,7 +983,7 @@
 					}
 				},
 				{
-					"id": "6cca62c3-d2c8-4ccd-b7bc-812d5dc4a24a",
+					"id": "649911f2-b0ba-4d83-a336-fb207938e81b",
 					"name": "Draw random tarot cards with reproducible results",
 					"request": {
 						"name": "Draw random tarot cards with reproducible results",
@@ -1048,7 +1048,7 @@
 					},
 					"response": [
 						{
-							"id": "5aad01d0-824f-460e-bfaa-08a367d2ae2b",
+							"id": "38592570-3a43-49e0-be51-90b13ad85e5a",
 							"name": "Drawn cards",
 							"originalRequest": {
 								"url": {
@@ -1099,12 +1099,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"cards\": [\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"arcana\": \"major\",\n      \"position\": 2527.7880823842115,\n      \"reversed\": false,\n      \"keywords\": [\n        \"string\",\n        \"string\"\n      ],\n      \"meaning\": \"string\",\n      \"imageUrl\": \"string\",\n      \"suit\": \"cups\",\n      \"number\": 1676.4397427360511,\n      \"love\": \"string\",\n      \"career\": \"string\",\n      \"finances\": \"string\",\n      \"health\": \"string\",\n      \"spirituality\": \"string\"\n    },\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"arcana\": \"major\",\n      \"position\": 8820.178041768644,\n      \"reversed\": true,\n      \"keywords\": [\n        \"string\",\n        \"string\"\n      ],\n      \"meaning\": \"string\",\n      \"imageUrl\": \"string\",\n      \"suit\": \"cups\",\n      \"number\": 9549.283007782231,\n      \"love\": \"string\",\n      \"career\": \"string\",\n      \"finances\": \"string\",\n      \"health\": \"string\",\n      \"spirituality\": \"string\"\n    }\n  ],\n  \"seed\": \"string\"\n}",
+							"body": "{\n  \"cards\": [\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"arcana\": \"major\",\n      \"position\": 3087.844594443594,\n      \"reversed\": false,\n      \"keywords\": [\n        \"string\",\n        \"string\"\n      ],\n      \"meaning\": \"string\",\n      \"imageUrl\": \"string\",\n      \"suit\": \"swords\",\n      \"number\": 7129.1510260585765,\n      \"love\": \"string\",\n      \"career\": \"string\",\n      \"finances\": \"string\",\n      \"health\": \"string\",\n      \"spirituality\": \"string\"\n    },\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"arcana\": \"major\",\n      \"position\": 5014.469200856419,\n      \"reversed\": true,\n      \"keywords\": [\n        \"string\",\n        \"string\"\n      ],\n      \"meaning\": \"string\",\n      \"imageUrl\": \"string\",\n      \"suit\": \"cups\",\n      \"number\": 8424.543202615545,\n      \"love\": \"string\",\n      \"career\": \"string\",\n      \"finances\": \"string\",\n      \"health\": \"string\",\n      \"spirituality\": \"string\"\n    }\n  ],\n  \"seed\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "da19bbd8-2e4c-45d6-b6cd-f81abe12bec3",
+							"id": "9bd398a7-bedc-4d9f-af9e-b2526ae6b72b",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1155,12 +1155,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5866.419115420831,\n      \"maximum\": 6906.597612632576,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2258.4074935924623,\n      \"maximum\": 2275.1038727141504,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9672.150700184691,\n      \"maximum\": 7426.123271928656,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7254.616357508354,\n      \"maximum\": 5777.760415589268,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "fab6c1fb-d6bb-4bc3-93b8-30b25b7cbbe8",
+							"id": "e6baa348-351f-4ef9-997b-41355ba53f6f",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1216,7 +1216,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "4d37b79b-7667-446d-ae17-b8fe36a48d2a",
+							"id": "59b90a9b-c2b0-4fbb-8937-6ce7a34f1ca9",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1278,7 +1278,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9a290841-ddb6-44e2-b155-74b740b64ca6",
+							"id": "d8aaca3e-acbc-4af6-b865-9e4bb10e905f",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1334,7 +1334,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c4ac4b86-b389-4aae-99ed-c2019be35b1e",
+							"id": "00735505-8750-48b0-b264-2b2fed2d627c",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1396,7 +1396,7 @@
 					}
 				},
 				{
-					"id": "66265f56-94c2-41fa-9112-2d24cff0ea0c",
+					"id": "368ce1f6-3d0b-448d-91e6-9ef916523d69",
 					"name": "Get daily tarot card reading",
 					"request": {
 						"name": "Get daily tarot card reading",
@@ -1461,7 +1461,7 @@
 					},
 					"response": [
 						{
-							"id": "202d45e2-b9c9-4ed2-be94-99807ea4054d",
+							"id": "cc7af19e-1358-414e-b766-27964b0cb718",
 							"name": "Daily card reading",
 							"originalRequest": {
 								"url": {
@@ -1512,12 +1512,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"date\": \"string\",\n  \"seed\": \"string\",\n  \"card\": {\n    \"id\": \"string\",\n    \"name\": \"string\",\n    \"arcana\": \"major\",\n    \"position\": 1636.6099552023861,\n    \"reversed\": true,\n    \"keywords\": [\n      \"string\",\n      \"string\"\n    ],\n    \"meaning\": \"string\",\n    \"imageUrl\": \"string\",\n    \"suit\": \"swords\",\n    \"number\": 7181.661957932764,\n    \"love\": \"string\",\n    \"career\": \"string\",\n    \"finances\": \"string\",\n    \"health\": \"string\",\n    \"spirituality\": \"string\"\n  },\n  \"dailyMessage\": \"string\"\n}",
+							"body": "{\n  \"date\": \"string\",\n  \"seed\": \"string\",\n  \"card\": {\n    \"id\": \"string\",\n    \"name\": \"string\",\n    \"arcana\": \"minor\",\n    \"position\": 1192.3389736294444,\n    \"reversed\": true,\n    \"keywords\": [\n      \"string\",\n      \"string\"\n    ],\n    \"meaning\": \"string\",\n    \"imageUrl\": \"string\",\n    \"suit\": \"pentacles\",\n    \"number\": 6069.6614618455105,\n    \"love\": \"string\",\n    \"career\": \"string\",\n    \"finances\": \"string\",\n    \"health\": \"string\",\n    \"spirituality\": \"string\"\n  },\n  \"dailyMessage\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f202cba8-fb9f-4931-acbf-e47c5561316d",
+							"id": "58028fc5-7cad-416a-b459-a700f5930f9d",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1568,12 +1568,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5866.419115420831,\n      \"maximum\": 6906.597612632576,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2258.4074935924623,\n      \"maximum\": 2275.1038727141504,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9672.150700184691,\n      \"maximum\": 7426.123271928656,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7254.616357508354,\n      \"maximum\": 5777.760415589268,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1af7583b-7db7-412b-9ff0-44b6f105b22b",
+							"id": "d23a249b-d496-4b60-851b-4136241d986d",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1629,7 +1629,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3fba2de8-9367-45d7-97f3-5e58f2f5f99c",
+							"id": "6a813eef-95c7-4a3f-a465-bc09d26eda41",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1691,7 +1691,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2bf01d57-3ece-41af-a010-a5f71ca6366f",
+							"id": "3475558e-c592-4a75-b11e-dd37fda36074",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1747,7 +1747,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9bafcc4f-45cb-4c7d-be6a-a1012a32261e",
+							"id": "57c0ee9d-86b2-482e-b21f-1ffc98346327",
 							"name": "Failed to draw card",
 							"originalRequest": {
 								"url": {
@@ -1809,7 +1809,7 @@
 					}
 				},
 				{
-					"id": "af5ec05a-09cc-4fdb-91ee-e89ff8bb4143",
+					"id": "b2203048-f6ee-43f5-b15f-5709c71c2bbf",
 					"name": "Get yes/no answer to your question",
 					"request": {
 						"name": "Get yes/no answer to your question",
@@ -1874,7 +1874,7 @@
 					},
 					"response": [
 						{
-							"id": "2097c33c-c5d4-4e55-858e-560620b4e565",
+							"id": "49b3b40b-e3b9-4beb-9288-19fb1b3706a7",
 							"name": "Yes/No answer with interpretation",
 							"originalRequest": {
 								"url": {
@@ -1925,12 +1925,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"answer\": \"Maybe\",\n  \"strength\": \"Qualified\",\n  \"card\": {\n    \"id\": \"string\",\n    \"name\": \"string\",\n    \"arcana\": \"minor\",\n    \"reversed\": true,\n    \"keywords\": [\n      \"string\",\n      \"string\"\n    ],\n    \"imageUrl\": \"string\"\n  },\n  \"interpretation\": \"string\",\n  \"question\": \"string\"\n}",
+							"body": "{\n  \"answer\": \"Maybe\",\n  \"strength\": \"Strong\",\n  \"card\": {\n    \"id\": \"string\",\n    \"name\": \"string\",\n    \"arcana\": \"major\",\n    \"reversed\": false,\n    \"keywords\": [\n      \"string\",\n      \"string\"\n    ],\n    \"imageUrl\": \"string\"\n  },\n  \"interpretation\": \"string\",\n  \"question\": \"string\",\n  \"seed\": \"user123-question1\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "15453ebf-18ca-42bd-bb9a-b7d88a8253ad",
+							"id": "633df9ec-9ab4-4ed7-976a-1c1dfab38bb7",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1981,12 +1981,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5866.419115420831,\n      \"maximum\": 6906.597612632576,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2258.4074935924623,\n      \"maximum\": 2275.1038727141504,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9672.150700184691,\n      \"maximum\": 7426.123271928656,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7254.616357508354,\n      \"maximum\": 5777.760415589268,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9eb8910b-bae7-4cce-84dd-212eadae5566",
+							"id": "0d6ecf0d-a82a-4df7-b1ca-75583f6bf549",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2042,7 +2042,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "046729f5-4906-466a-b77b-d7309a975b2e",
+							"id": "9d590bdc-61e2-4f58-bc22-e81fac104fea",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2104,7 +2104,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5bd82678-3bca-4cf8-9d6c-e50cb811702f",
+							"id": "91baa5a0-7951-4001-b7fc-f86dcd5161b8",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2160,7 +2160,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2566c493-c3b3-46c5-ad53-2f2065ad5115",
+							"id": "cac96929-e8b7-4fb4-a2c6-40d767cd4ac1",
 							"name": "Failed to draw card",
 							"originalRequest": {
 								"url": {
@@ -2222,7 +2222,7 @@
 					}
 				},
 				{
-					"id": "878f24e1-96c6-4c89-84a3-49a4b5720386",
+					"id": "2e5606d2-c10b-4110-8d27-580adc78d937",
 					"name": "Three-Card Spread: Past, Present, Future",
 					"request": {
 						"name": "Three-Card Spread: Past, Present, Future",
@@ -2288,7 +2288,7 @@
 					},
 					"response": [
 						{
-							"id": "e6adffa0-6705-427a-a23c-8458bfb73acd",
+							"id": "9bf1481a-65ef-4d88-ad42-2b73e1fb7123",
 							"name": "Three-card spread reading",
 							"originalRequest": {
 								"url": {
@@ -2340,12 +2340,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"spread\": \"string\",\n  \"positions\": [\n    {\n      \"position\": 4303.1047410880865,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"minor\",\n        \"position\": 8640.87533943479,\n        \"reversed\": false,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"pentacles\",\n        \"number\": 9189.038106005975,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    },\n    {\n      \"position\": 1436.9031843452894,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"major\",\n        \"position\": 8263.993782746713,\n        \"reversed\": false,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"swords\",\n        \"number\": 8026.411179469822,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    }\n  ],\n  \"question\": \"string\",\n  \"seed\": \"string\",\n  \"summary\": \"string\"\n}",
+							"body": "{\n  \"spread\": \"string\",\n  \"positions\": [\n    {\n      \"position\": 9206.733370942507,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"major\",\n        \"position\": 868.1302360218191,\n        \"reversed\": true,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"swords\",\n        \"number\": 693.1770117871283,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    },\n    {\n      \"position\": 4928.881485884132,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"minor\",\n        \"position\": 6173.295335277703,\n        \"reversed\": true,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"pentacles\",\n        \"number\": 7161.021022235542,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    }\n  ],\n  \"question\": \"string\",\n  \"seed\": \"string\",\n  \"summary\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8090d503-f630-44c4-bd6f-19f7aa5d32b0",
+							"id": "7c0c7f38-20f7-412d-a6d9-c5ceb5b3bd56",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2397,12 +2397,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5866.419115420831,\n      \"maximum\": 6906.597612632576,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2258.4074935924623,\n      \"maximum\": 2275.1038727141504,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9672.150700184691,\n      \"maximum\": 7426.123271928656,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7254.616357508354,\n      \"maximum\": 5777.760415589268,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9942b815-6663-4a5a-a653-798cf28852c6",
+							"id": "1cec8f76-2aba-4d28-8caf-0e6a93eac06e",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2459,7 +2459,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0e341829-ca9b-4214-ade2-b9572fd4e830",
+							"id": "f86ba7aa-9f93-4534-8ec2-f3b6098cec13",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2522,7 +2522,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2353c150-9fd6-4721-8541-62dcb4d2f891",
+							"id": "a50a3354-f438-4073-8d9b-838d01e116af",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2579,7 +2579,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d87ed5e5-097c-4290-a014-456149c11433",
+							"id": "dde05756-9a25-4fae-bc27-17245ec88c4e",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2642,7 +2642,7 @@
 					}
 				},
 				{
-					"id": "50d8b067-97a9-4bea-bbfe-e5415d73348c",
+					"id": "b634a55d-e78e-453a-90e6-365ac4c1e188",
 					"name": "Celtic Cross Spread (10 cards)",
 					"request": {
 						"name": "Celtic Cross Spread (10 cards)",
@@ -2708,7 +2708,7 @@
 					},
 					"response": [
 						{
-							"id": "d84d209f-2676-4f66-ad47-fc88482b6bac",
+							"id": "fcb4e5f7-43be-4691-80d7-91554e7246b0",
 							"name": "Celtic Cross spread reading",
 							"originalRequest": {
 								"url": {
@@ -2760,12 +2760,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"spread\": \"string\",\n  \"positions\": [\n    {\n      \"position\": 186.97622269605029,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"minor\",\n        \"position\": 6494.906300942976,\n        \"reversed\": false,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"swords\",\n        \"number\": 148.31290112634844,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    },\n    {\n      \"position\": 6356.73157186523,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"minor\",\n        \"position\": 8821.764465141045,\n        \"reversed\": true,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"cups\",\n        \"number\": 5510.294600998073,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    }\n  ],\n  \"question\": \"string\",\n  \"seed\": \"string\",\n  \"summary\": \"string\"\n}",
+							"body": "{\n  \"spread\": \"string\",\n  \"positions\": [\n    {\n      \"position\": 5939.254112316958,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"minor\",\n        \"position\": 6431.366120662926,\n        \"reversed\": false,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"pentacles\",\n        \"number\": 3937.6885929419113,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    },\n    {\n      \"position\": 3994.10324656156,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"major\",\n        \"position\": 7158.33731296621,\n        \"reversed\": true,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"pentacles\",\n        \"number\": 6217.522765076603,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    }\n  ],\n  \"question\": \"string\",\n  \"seed\": \"string\",\n  \"summary\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5b2c00a7-cf5e-40ec-8d7e-bdb202190751",
+							"id": "b5a78653-04c6-4616-a1bc-9d9d599a7016",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2817,12 +2817,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5866.419115420831,\n      \"maximum\": 6906.597612632576,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2258.4074935924623,\n      \"maximum\": 2275.1038727141504,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9672.150700184691,\n      \"maximum\": 7426.123271928656,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7254.616357508354,\n      \"maximum\": 5777.760415589268,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2061f039-fa5b-4dd7-9b84-94df97aa4474",
+							"id": "91eb01a4-1c85-46c3-a46b-a44d77cbd091",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2879,7 +2879,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e8385d37-2f0e-489d-bc04-6d1886cf060e",
+							"id": "538f03d7-7b22-4455-835a-c2109782403a",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2942,7 +2942,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7ca0c263-c50f-4047-90f1-af6b13d5fe40",
+							"id": "73369657-e839-4494-9acb-6626123d59f7",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2999,7 +2999,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f11be93e-a464-4d9c-a356-173e05909ed3",
+							"id": "d443b79e-625f-4573-a02b-d2383db6ff58",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3062,7 +3062,7 @@
 					}
 				},
 				{
-					"id": "0c986f1a-2ef1-48df-b658-c4fd69a91d52",
+					"id": "1bf5f76b-9791-4ee4-918d-0d482519eb60",
 					"name": "Love Spread (5 cards)",
 					"request": {
 						"name": "Love Spread (5 cards)",
@@ -3128,7 +3128,7 @@
 					},
 					"response": [
 						{
-							"id": "4313b019-5ea7-4ffd-9c7c-91f072b42a7c",
+							"id": "e19b8139-051d-4d79-8c65-9ed2529d67fb",
 							"name": "Love spread reading",
 							"originalRequest": {
 								"url": {
@@ -3180,12 +3180,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"spread\": \"string\",\n  \"positions\": [\n    {\n      \"position\": 8212.443796782993,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"major\",\n        \"position\": 4730.995537580452,\n        \"reversed\": true,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"cups\",\n        \"number\": 8273.524920451597,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    },\n    {\n      \"position\": 6521.838775802711,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"major\",\n        \"position\": 9840.875667645827,\n        \"reversed\": false,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"cups\",\n        \"number\": 8494.690215566397,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    }\n  ],\n  \"question\": \"string\",\n  \"seed\": \"string\",\n  \"summary\": \"string\"\n}",
+							"body": "{\n  \"spread\": \"string\",\n  \"positions\": [\n    {\n      \"position\": 8163.37850844352,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"major\",\n        \"position\": 7150.147994469185,\n        \"reversed\": true,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"cups\",\n        \"number\": 5014.397444183281,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    },\n    {\n      \"position\": 1650.7498344870187,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"major\",\n        \"position\": 5840.215105858037,\n        \"reversed\": false,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"pentacles\",\n        \"number\": 2241.1943994924277,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    }\n  ],\n  \"question\": \"string\",\n  \"seed\": \"string\",\n  \"summary\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5a0305f1-4735-41b5-bbdb-8df62fc181e0",
+							"id": "ad840263-4729-4785-8004-5a14df605767",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3237,12 +3237,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5866.419115420831,\n      \"maximum\": 6906.597612632576,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2258.4074935924623,\n      \"maximum\": 2275.1038727141504,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9672.150700184691,\n      \"maximum\": 7426.123271928656,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7254.616357508354,\n      \"maximum\": 5777.760415589268,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "df02e487-5701-4625-b85e-0f39f7212b38",
+							"id": "8b30bef0-5cf1-4cb4-a357-dc2167537208",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3299,7 +3299,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7dabcc50-f3c6-4ef4-a11d-f2ceb707a2cb",
+							"id": "50ef0edc-2e37-4b63-9a1c-9cf9cb1704ee",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3362,7 +3362,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ea44bc14-6cf0-4e20-8ad1-b0e763c76b92",
+							"id": "403951c3-9c6b-4f80-9630-ee98d34b58f3",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3419,7 +3419,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "dcc802f7-a605-4ab1-b037-e1e1905e6859",
+							"id": "a97b5748-66c1-4bc6-9bf3-ab46d5785610",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3482,7 +3482,7 @@
 					}
 				},
 				{
-					"id": "da60fa8b-4b19-42bb-b615-ad88861a5406",
+					"id": "6e704d53-675b-43c1-af41-cd8b28648b54",
 					"name": "Career Spread (7 cards)",
 					"request": {
 						"name": "Career Spread (7 cards)",
@@ -3548,7 +3548,7 @@
 					},
 					"response": [
 						{
-							"id": "8aa81c09-979e-40c3-961c-f9493e4a57b6",
+							"id": "5ad0de0c-e3e3-4507-8263-d3ab6e6897b9",
 							"name": "Career spread reading",
 							"originalRequest": {
 								"url": {
@@ -3600,12 +3600,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"spread\": \"string\",\n  \"positions\": [\n    {\n      \"position\": 4977.466311107459,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"major\",\n        \"position\": 3377.7622216019454,\n        \"reversed\": false,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"wands\",\n        \"number\": 4778.208700661863,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    },\n    {\n      \"position\": 3639.805687268045,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"major\",\n        \"position\": 4564.4394650815575,\n        \"reversed\": true,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"wands\",\n        \"number\": 6834.000641810104,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    }\n  ],\n  \"question\": \"string\",\n  \"seed\": \"string\",\n  \"summary\": \"string\"\n}",
+							"body": "{\n  \"spread\": \"string\",\n  \"positions\": [\n    {\n      \"position\": 8676.201155884692,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"major\",\n        \"position\": 7295.066819694094,\n        \"reversed\": true,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"cups\",\n        \"number\": 9198.971470220311,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    },\n    {\n      \"position\": 732.0963718765328,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"minor\",\n        \"position\": 2011.4705453427084,\n        \"reversed\": false,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"swords\",\n        \"number\": 9371.818532657948,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    }\n  ],\n  \"question\": \"string\",\n  \"seed\": \"string\",\n  \"summary\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "4dcaf806-144a-437f-a096-71f759be42e9",
+							"id": "e3e5e059-1361-4a8f-922f-961a40c25168",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3657,12 +3657,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5866.419115420831,\n      \"maximum\": 6906.597612632576,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2258.4074935924623,\n      \"maximum\": 2275.1038727141504,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9672.150700184691,\n      \"maximum\": 7426.123271928656,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7254.616357508354,\n      \"maximum\": 5777.760415589268,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d1c89105-b44d-4c09-87d7-a0447b8f0d4d",
+							"id": "fac849e9-4488-4c12-90da-adf1f53fe313",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3719,7 +3719,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5d92c6ca-e0a9-461e-8431-d5c3ea80d5a0",
+							"id": "127ffc53-e6cd-4395-a31f-8abdb6c950d2",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3782,7 +3782,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "abf2c068-d91f-4d4e-a8b2-b427c9091da3",
+							"id": "cdf07b0d-3efc-4d8d-9c0f-d5feaf8faf1d",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3839,7 +3839,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e7ba8547-de15-464d-833f-b37dbb74d934",
+							"id": "b8ac94ad-12e2-44a9-b6ae-3a96fbd8f20c",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3902,7 +3902,7 @@
 					}
 				},
 				{
-					"id": "4b6a8d54-407b-4929-962d-1af87d0b764e",
+					"id": "4ba936d0-23da-4b83-8343-26efccb198ec",
 					"name": "Custom Spread Builder",
 					"request": {
 						"name": "Custom Spread Builder",
@@ -3968,7 +3968,7 @@
 					},
 					"response": [
 						{
-							"id": "37cfba1d-dd91-4124-b96e-0a626a38a48b",
+							"id": "78c9867b-714e-40ac-a441-a6f6f9859128",
 							"name": "Custom spread reading",
 							"originalRequest": {
 								"url": {
@@ -4020,12 +4020,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"spread\": \"string\",\n  \"positions\": [\n    {\n      \"position\": 4730.5380523457925,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"major\",\n        \"position\": 7648.09242966652,\n        \"reversed\": false,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"wands\",\n        \"number\": 7487.998548382262,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    },\n    {\n      \"position\": 735.8014969435411,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"major\",\n        \"position\": 1511.6920341433427,\n        \"reversed\": true,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"pentacles\",\n        \"number\": 9307.746068398388,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    }\n  ],\n  \"question\": \"string\",\n  \"seed\": \"string\",\n  \"summary\": \"string\"\n}",
+							"body": "{\n  \"spread\": \"string\",\n  \"positions\": [\n    {\n      \"position\": 5517.819425342698,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"minor\",\n        \"position\": 6296.5792802244305,\n        \"reversed\": false,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"swords\",\n        \"number\": 268.12874284054766,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    },\n    {\n      \"position\": 2215.2582647092477,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"minor\",\n        \"position\": 9072.496943920936,\n        \"reversed\": false,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"wands\",\n        \"number\": 8903.537096088652,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    }\n  ],\n  \"question\": \"string\",\n  \"seed\": \"string\",\n  \"summary\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8c84f093-bc56-463b-b993-99047683ba38",
+							"id": "bb75776f-6920-4451-a680-67306bf65c83",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -4077,12 +4077,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5866.419115420831,\n      \"maximum\": 6906.597612632576,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2258.4074935924623,\n      \"maximum\": 2275.1038727141504,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9672.150700184691,\n      \"maximum\": 7426.123271928656,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7254.616357508354,\n      \"maximum\": 5777.760415589268,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "edd14c7a-637d-4f09-b317-04c0721da3fc",
+							"id": "592785c2-5312-4eea-9879-dc591ca6633f",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -4139,7 +4139,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "63e56e11-84d4-433a-9b88-22d5e64a3b6c",
+							"id": "5ef9940b-bdaf-44d4-8511-dfef23a11bf5",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -4202,7 +4202,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "511b966d-8044-465e-8445-8484b919c731",
+							"id": "fc929fc5-df78-4b82-9c8c-405f4ca66174",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -4259,7 +4259,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5112faee-21e5-454d-a4fd-8a3ac132592b",
+							"id": "fcfce5cc-fd70-433a-b61c-b517469e8ac9",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -4361,11 +4361,11 @@
 		]
 	},
 	"info": {
-		"_postman_id": "1f5f02f1-332d-4716-9209-abe21b2165d0",
+		"_postman_id": "28c4d9c8-0421-4642-82c2-25d445a5cfe1",
 		"name": "Tarot Reading API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"description": {
-			"content": "Production-ready tarot card reading API + hosted MCP for AI agents and developers. Connect Claude Code, Cursor, VS Code in seconds, no local setup. Complete 78-card Rider-Waite-Smith deck with domain-specific interpretations for love, career, health, and spiritual growth. Celtic Cross, three-card, love, career, yes/no oracle, daily card, and custom spreads. Seeded reproducibility for personalized daily readings. Card images included. 10+ endpoints optimized for tarot apps, AI tarot chatbots, fortune-telling platforms, and spiritual wellness products.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, human design, forecast, biorhythm, tarot, numerology, crystals, dreams, I-Ching, angel numbers, location), 148+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (MCP)\n\nRoxyAPI has native Model Context Protocol support. Your AI agent auto-discovers all 148+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
+			"content": "Tarot reading API with the complete 78-card Rider-Waite-Smith deck and card meanings for love, career, health, and spiritual growth. Celtic Cross, three-card, love, career, yes/no oracle, daily card, and custom spreads, each with upright and reversed interpretations. Seeded reproducibility for personalized daily readings, and card images included. Built for tarot apps, AI tarot chatbots, fortune-telling platforms, and spiritual wellness products. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, forecast, human design, numerology, tarot, biorhythm, I-Ching, crystals, dreams, angel numbers, location), 171+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 171+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
 			"type": "text/plain"
 		}
 	}
