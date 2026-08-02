@@ -3,7 +3,7 @@
 	"info": {
 		"title": "Western Astrology API",
 		"version": "2.0.0",
-		"description": "Western astrology API for natal birth charts, daily, weekly, and monthly horoscopes with unique content per sign, synastry compatibility scores, composite charts, solar and lunar returns, real-time transit aspects, and moon phases. 4 house systems (Placidus, Koch, Whole Sign, Equal) with accurate tropical ephemeris, aspect-pattern detection (Grand Trine, T-Square, Yod), astrocartography planetary lines, relocation charts, and local space maps for location based astrology, plus classical and professional points like fixed star conjunctions, Arabic lots, the asteroid goddesses (Ceres, Pallas, Juno, Vesta), mean and true Black Moon Lilith, and timing techniques like secondary progressions, solar arc directions, and annual profections. Built for horoscope platforms, astrology dating apps, AI chatbots, wellness products, and zodiac content engines. Schedule future horoscopes with a date parameter for editorial workflows, no astronomy expertise needed. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, forecast, human design, numerology, tarot, biorhythm, I-Ching, crystals, dreams, angel numbers, location), 171+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 171+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n",
+		"description": "Western astrology API for natal birth charts, daily, weekly, and monthly horoscopes with unique content per sign, synastry compatibility scores, composite charts, solar and lunar returns, real-time transit aspects, and moon phases. 4 house systems (Placidus, Koch, Whole Sign, Equal) with accurate tropical ephemeris, aspect-pattern detection (Grand Trine, T-Square, Yod), astrocartography planetary lines, relocation charts, and local space maps for location based astrology, plus classical and professional points like fixed star conjunctions, Arabic lots, the asteroid goddesses (Ceres, Pallas, Juno, Vesta), mean and true Black Moon Lilith, and timing techniques like secondary progressions, solar arc directions, and annual profections. Built for horoscope platforms, astrology dating apps, AI chatbots, wellness products, and zodiac content engines. Schedule future horoscopes with a date parameter for editorial workflows, no astronomy expertise needed. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, forecast, human design, numerology, tarot, biorhythm, I-Ching, crystals, dreams, angel numbers, location), 173+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 173+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n",
 		"contact": {
 			"name": "RoxyAPI Support",
 			"url": "https://roxyapi.com/contact"
@@ -365,7 +365,9 @@
 								"interpretationVars": {
 									"type": "object",
 									"additionalProperties": {
-										"type": "string"
+										"type": "string",
+										"example": "Water",
+										"description": "One value interpolated into the interpretation template, keyed by the placeholder name it fills. Which keys are present depends on the pattern: a Grand Trine carries an element plus three planets, a T-Square carries an apex."
 									},
 									"example": {
 										"element": "Water",
@@ -575,7 +577,9 @@
 							"elementDistribution": {
 								"type": "object",
 								"additionalProperties": {
-									"type": "number"
+									"type": "number",
+									"example": 3,
+									"description": "Number of planets placed in this element (Fire, Earth, Air, Water). Read the four counts together to spot an emphasis or a missing element."
 								},
 								"example": {
 									"Fire": 2,
@@ -588,7 +592,9 @@
 							"modalityDistribution": {
 								"type": "object",
 								"additionalProperties": {
-									"type": "number"
+									"type": "number",
+									"example": 4,
+									"description": "Number of planets placed in this modality (Cardinal, Fixed, Mutable). The largest count is the dominant operating mode."
 								},
 								"example": {
 									"Cardinal": 4,
@@ -817,16 +823,24 @@
 										"type": "object",
 										"properties": {
 											"number": {
-												"type": "number"
+												"type": "number",
+												"example": 1,
+												"description": "House number (1-12). Each house governs specific life areas."
 											},
 											"longitude": {
-												"type": "number"
+												"type": "number",
+												"example": 45.32,
+												"description": "Ecliptic longitude of this house cusp in degrees (0-360), as this house system places it."
 											},
 											"sign": {
-												"type": "string"
+												"type": "string",
+												"example": "Taurus",
+												"description": "Zodiac sign on this house cusp in this house system."
 											},
 											"degree": {
-												"type": "number"
+												"type": "number",
+												"example": 15.32,
+												"description": "Degree within the zodiac sign on this cusp (0-29.999)."
 											}
 										},
 										"required": [
@@ -835,7 +849,8 @@
 											"sign",
 											"degree"
 										]
-									}
+									},
+									"description": "All 12 house cusps as this system computes them. Compare the same house number across the four keys to see how far the systems disagree, which is largest at high latitudes and for the intermediate cusps."
 								}
 							},
 							"required": [
@@ -938,10 +953,12 @@
 											"properties": {
 												"short": {
 													"type": "string",
+													"example": "Planets in trine support each other. Trines, by nature, are accepting. They allow us to accept others, ourselves, and situations. The talents that trines offer a native are so natural that they are almost unconscious.",
 													"description": "Brief aspect description."
 												},
 												"long": {
 													"type": "string",
+													"example": "These talents are second nature and completely natural. So, for example, if a chart has Venus trine Neptune, the native may be poetic, romantic, or artistic, and may easily accept a romantic partner for who they are. With Venus square Neptune the same qualities exist, but expressing them takes conscious work rather than coming naturally.",
 													"description": "Detailed aspect description with astrological context."
 												}
 											},
@@ -956,6 +973,14 @@
 											"items": {
 												"type": "string"
 											},
+											"example": [
+												"accept",
+												"accepting",
+												"difficult",
+												"natural",
+												"support",
+												"talent"
+											],
 											"description": "Keywords associated with this aspect type."
 										},
 										"nature": {
@@ -1073,7 +1098,9 @@
 								"interpretationVars": {
 									"type": "object",
 									"additionalProperties": {
-										"type": "string"
+										"type": "string",
+										"example": "Water",
+										"description": "One value interpolated into the interpretation template, keyed by the placeholder name it fills. Which keys are present depends on the pattern: a Grand Trine carries an element plus three planets, a T-Square carries an apex."
 									},
 									"example": {
 										"element": "Water",
@@ -1122,7 +1149,9 @@
 							"byType": {
 								"type": "object",
 								"additionalProperties": {
-									"type": "number"
+									"type": "number",
+									"example": 3,
+									"description": "Number of aspects of this type found in the chart. An aspect type with no hits is absent from the map rather than reported as zero."
 								},
 								"example": {
 									"CONJUNCTION": 2,
@@ -1306,7 +1335,9 @@
 								"interpretationVars": {
 									"type": "object",
 									"additionalProperties": {
-										"type": "string"
+										"type": "string",
+										"example": "Water",
+										"description": "One value interpolated into the interpretation template, keyed by the placeholder name it fills. Which keys are present depends on the pattern: a Grand Trine carries an element plus three planets, a T-Square carries an apex."
 									},
 									"example": {
 										"element": "Water",
@@ -1540,7 +1571,7 @@
 								},
 								"nature": {
 									"type": "string",
-									"example": "challenging",
+									"example": "neutral",
 									"description": "Aspect nature: harmonious (trine, sextile), challenging (square, opposition), or neutral (conjunction)."
 								},
 								"interpretation": {
@@ -1548,18 +1579,22 @@
 									"properties": {
 										"summary": {
 											"type": "string",
+											"example": "Sun activates your natal Mars neutrally",
 											"description": "Narrative interpretation of what this transit aspect means and how it manifests."
 										},
 										"timing": {
 											"type": "string",
-											"description": "How long this transit influence lasts based on the transiting planet speed."
+											"example": "Active for a few days",
+											"description": "How long this transit influence lasts, localized. The bucket follows the speed of the transiting body: a few hours for the Moon, a few days for the Sun, Mercury, Venus and Mars, one to two weeks for Jupiter, several weeks for Saturn, and an extended period for Uranus, Neptune and Pluto."
 										},
 										"impact": {
 											"type": "string",
+											"example": "Self-awareness and ego merges with Assertiveness and aggression. Intensifies this energy.",
 											"description": "Strength and nature of the transit impact on your natal chart."
 										},
 										"guidance": {
 											"type": "string",
+											"example": "Pay attention to how this combination manifests. Strong energy requires conscious direction.",
 											"description": "Practical advice for working with or navigating this transit energy."
 										},
 										"keywords": {
@@ -1567,6 +1602,12 @@
 											"items": {
 												"type": "string"
 											},
+											"example": [
+												"blend",
+												"difficult",
+												"unite",
+												"united"
+											],
 											"description": "Key themes activated by this transit aspect."
 										}
 									},
@@ -1683,13 +1724,15 @@
 								"type": "number",
 								"minimum": -90,
 								"maximum": 90,
-								"example": 40.7128
+								"example": 40.7128,
+								"description": "Natal birth latitude in decimal degrees, positive north. Sets the local sidereal time behind the natal Ascendant and house cusps that the transits are measured against."
 							},
 							"longitude": {
 								"type": "number",
 								"minimum": -180,
 								"maximum": 180,
-								"example": -74.006
+								"example": -74.006,
+								"description": "Natal birth longitude in decimal degrees, positive east and negative west. Example: New York -74.0060, London -0.1276, Sydney 151.2093."
 							},
 							"timezone": {
 								"anyOf": [
@@ -1801,6 +1844,7 @@
 										},
 										"interpretation": {
 											"type": "string",
+											"example": "Your Sun Midheaven line runs through places where Self-awareness and ego comes forward in your public life, career, and reputation. Living or working along this line tends to push this part of you into the spotlight.",
 											"description": "Plain language meaning of this meridian planetary line for relocation, suitable for chart reports and AI agents."
 										}
 									},
@@ -1820,6 +1864,7 @@
 										},
 										"interpretation": {
 											"type": "string",
+											"example": "Your Sun Midheaven line runs through places where Self-awareness and ego comes forward in your public life, career, and reputation. Living or working along this line tends to push this part of you into the spotlight.",
 											"description": "Plain language meaning of this meridian planetary line for relocation, suitable for chart reports and AI agents."
 										}
 									},
@@ -1863,6 +1908,7 @@
 										},
 										"interpretation": {
 											"type": "string",
+											"example": "Your Sun Ascendant line runs through places where Self-awareness and ego colors your identity, vitality, and how you first come across to others. This part of you feels switched on here.",
 											"description": "Plain language meaning of this rising or setting planetary line for relocation, suitable for chart reports and AI agents."
 										}
 									},
@@ -1907,6 +1953,7 @@
 										},
 										"interpretation": {
 											"type": "string",
+											"example": "Your Sun Ascendant line runs through places where Self-awareness and ego colors your identity, vitality, and how you first come across to others. This part of you feels switched on here.",
 											"description": "Plain language meaning of this rising or setting planetary line for relocation, suitable for chart reports and AI agents."
 										}
 									},
@@ -2739,6 +2786,7 @@
 								},
 								"interpretation": {
 									"type": "string",
+									"example": "The fixed star Regulus sits within 0.6 degrees of your Sun, a star of Mars and Jupiter nature in classical astrology. A star this close to a chart point colors how that point expresses itself with its traditional meaning.",
 									"description": "Plain language meaning of this star contact, blending the star traditional nature with the chart point. Localized to the requested language."
 								}
 							},
@@ -2864,6 +2912,7 @@
 								},
 								"interpretation": {
 									"type": "string",
+									"example": "Your Part of Fortune falls in Aries, marking the body, health, material wellbeing, and the flow of fortune through your life. Lots are sensitive points derived by arc from the Ascendant, Sun, Moon, and planets, with the formula reversed between day and night charts.",
 									"description": "Plain language meaning of this lot in its sign, suitable for chart reports and AI agents. Localized to the requested language."
 								}
 							},
@@ -3069,6 +3118,7 @@
 								},
 								"interpretation": {
 									"type": "string",
+									"example": "Your Ceres in Gemini speaks to how you nurture and are nurtured, the cycles of nourishment, loss, and return, and the bond between caretaker and cared-for.",
 									"description": "Plain language meaning of this asteroid in its sign, suitable for chart reports and AI agents. Localized to the requested language."
 								}
 							},
@@ -3276,10 +3326,12 @@
 								},
 								"interpretation": {
 									"type": "string",
+									"example": "Your mean Black Moon Lilith in Leo marks where you meet the wild, untamed, and unapologetic in yourself, the instincts you were taught to suppress and the line past which you refuse to be tamed or shamed.",
 									"description": "Plain language meaning of this Lilith variant in its sign, suitable for chart reports and AI agents. Localized to the requested language."
 								},
 								"note": {
 									"type": "string",
+									"example": "The mean apogee is the smoothed average position, steadier and the most widely used for psychological reading.",
 									"description": "Short explanation of how this variant is defined and how it differs from the other, localized to the requested language."
 								}
 							},
@@ -3487,6 +3539,7 @@
 								},
 								"interpretation": {
 									"type": "string",
+									"example": "Your progressed Sun in Virgo reflects how self-awareness and ego has matured and shifted since birth.",
 									"description": "Plain language meaning of this progressed body in its sign, suitable for chart reports and AI agents. Localized to the requested language."
 								}
 							},
@@ -3744,6 +3797,7 @@
 								},
 								"interpretation": {
 									"type": "string",
+									"example": "Your solar arc directed Sun has moved to Leo, carrying self-awareness and ego forward by the 31 degree arc.",
 									"description": "Plain language meaning of this directed point, suitable for chart reports and AI agents. Localized to the requested language."
 								}
 							},
@@ -3928,6 +3982,7 @@
 					},
 					"interpretation": {
 						"type": "string",
+						"example": "This profection year activates The Seventh House in Leo, making Sun your lord of the year. The year takes its tone from partnerships and relationships and from how Sun sits in your birth chart.",
 						"description": "Plain language reading of the profection year, combining the profected house theme, the profected sign, and the lord of the year. Localized to the requested language."
 					},
 					"summary": {
@@ -4118,6 +4173,7 @@
 											},
 											"description": {
 												"type": "string",
+												"example": "Ambitious, independent, impatient",
 												"description": "Brief overview of this zodiac sign personality and themes."
 											}
 										},
@@ -4481,10 +4537,12 @@
 											"properties": {
 												"short": {
 													"type": "string",
+													"example": "Ambitious, independent, impatient",
 													"description": "Brief 1-2 sentence personality overview."
 												},
 												"long": {
 													"type": "string",
+													"example": "Aries, the first sign in the zodiac, belongs to those born between March 21 and April 19. Aries are the trailblazers. Passionate and independent, an Aries will never do something just because everyone else is doing it. Competitive to the max, the best way to motivate an Aries is to turn something into a contest.",
 													"description": "Detailed multi-paragraph sign profile with personality analysis."
 												}
 											},
@@ -4510,6 +4568,11 @@
 											"items": {
 												"type": "string"
 											},
+											"example": [
+												"You are the most courageous and ambitious sign, the leader of every pack.",
+												"Your determination is unmatched when it comes to getting what you want.",
+												"You work hard but also play hard, and you are the life of every party."
+											],
 											"description": "Key strengths and lovable qualities of this sign."
 										},
 										"motto": {
@@ -4519,14 +4582,17 @@
 										},
 										"gifts": {
 											"type": "string",
+											"example": "Whether it is backpacking around the world, launching a business, or training for a marathon, once an Aries sets a goal they will achieve it. Rams never need a plus one: they love their own company.",
 											"description": "Greatest gifts and natural talents of this sign."
 										},
 										"challenges": {
 											"type": "string",
+											"example": "The world according to an Aries makes so much sense that they have a hard time accepting alternative viewpoints. Slowing down is also tough, and to maintain relationships an Aries must learn to adapt to other ways of doing and seeing.",
 											"description": "Greatest challenges and growth areas for this sign."
 										},
 										"weapon": {
 											"type": "string",
+											"example": "Strong, adamant, and forged in fire, it is fitting that the Aries secret weapon is iron, one of the strongest elements. Weld it, cast it, or temper it, and iron takes on a seemingly limitless range of shapes.",
 											"description": "Secret weapon or superpower of this sign."
 										},
 										"compatibleSigns": {
@@ -4871,6 +4937,7 @@
 											},
 											"description": {
 												"type": "string",
+												"example": "The Sun represents your core identity, ego, and conscious will. It governs vitality, self-expression, and life purpose. Your Sun sign is the foundation of your natal chart.",
 												"description": "Brief overview of the planet and its astrological significance."
 											}
 										},
@@ -5188,6 +5255,7 @@
 										},
 										"retrograde": {
 											"type": "boolean",
+											"example": false,
 											"description": "Whether this planet can appear retrograde. Always false for Sun and Moon."
 										},
 										"rulership": {
@@ -5254,10 +5322,12 @@
 											"properties": {
 												"short": {
 													"type": "string",
+													"example": "The Sun represents your core identity, ego, and conscious will. It governs vitality, self-expression, and life purpose. Your Sun sign is the foundation of your natal chart, shaping how you assert yourself and pursue your goals.",
 													"description": "Brief 1-2 sentence overview of the planet."
 												},
 												"long": {
 													"type": "string",
+													"example": "The Sun traveling through the zodiac creates what we think of as our astrological year. In the natal chart, the Sun represents who we are and who we strive to be. Unlike the Moon, which represents our emotional responses, the Sun stands for our most rational selves and the way we interact with the world on a daily basis. Approximately every 30 days the Sun transits to a new sign and brings a fresh sense of perspective.",
 													"description": "Detailed multi-paragraph description of the planet, its symbolism, and astrological meaning."
 												}
 											},
@@ -5936,6 +6006,7 @@
 													},
 													"description": {
 														"type": "string",
+														"example": "The Sun represents your core identity, ego, and conscious will. It governs vitality, self-expression, and life purpose.",
 														"description": "Brief description of this planet in astrological context."
 													},
 													"keywords": {
@@ -5955,14 +6026,17 @@
 														"properties": {
 															"summary": {
 																"type": "string",
+																"example": "Sun in Sagittarius (Archer) brings adventurous, optimistic, independent energy to the themes of self-awareness and ego. This placement gives your Sun expression a distinctly Sagittarius character, shaping how you navigate these areas of life.",
 																"description": "Interpretation of this planet in its current zodiac sign."
 															},
 															"planetMeaning": {
 																"type": "string",
+																"example": "The Sun represents your core identity, ego, and conscious will. It governs vitality, self-expression, and life purpose.",
 																"description": "General meaning of this planet in astrology."
 															},
 															"signExpression": {
 																"type": "string",
+																"example": "Independent and strong-willed, Sagittarius personalities are all about going off the beaten path. Sagittarius is not afraid to step away from the pack, and is a natural born leader who goes after what they want, regardless of what other people think.",
 																"description": "How this planet expresses through the current sign."
 															},
 															"keywords": {
@@ -5970,6 +6044,16 @@
 																"items": {
 																	"type": "string"
 																},
+																"example": [
+																	"active",
+																	"awareness",
+																	"bright",
+																	"confidence",
+																	"consciousness",
+																	"adventurous",
+																	"optimistic",
+																	"independent"
+																],
 																"description": "Keywords for this specific planet-in-sign combination."
 															}
 														},
@@ -7680,10 +7764,12 @@
 																"properties": {
 																	"short": {
 																		"type": "string",
+																		"example": "Planets in trine support each other. Trines, by nature, are accepting. They allow us to accept others, ourselves, and situations. The talents that trines offer a native are so natural that they are almost unconscious.",
 																		"description": "Brief aspect description."
 																	},
 																	"long": {
 																		"type": "string",
+																		"example": "These talents are second nature and completely natural. So, for example, if a chart has Venus trine Neptune, the native may be poetic, romantic, or artistic, and may easily accept a romantic partner for who they are.",
 																		"description": "Detailed aspect description."
 																	}
 																},
@@ -7698,6 +7784,14 @@
 																"items": {
 																	"type": "string"
 																},
+																"example": [
+																	"accept",
+																	"accepting",
+																	"difficult",
+																	"natural",
+																	"support",
+																	"talent"
+																],
 																"description": "Keywords associated with this aspect type."
 															},
 															"nature": {
@@ -7707,6 +7801,7 @@
 															},
 															"relationshipContext": {
 																"type": "string",
+																"example": "Strong physical and romantic attraction. Natural chemistry and mutual desire create magnetic pull between partners.",
 																"description": "How this specific planetary pair aspect manifests in relationships."
 															}
 														},
@@ -7758,7 +7853,9 @@
 												"byType": {
 													"type": "object",
 													"additionalProperties": {
-														"type": "number"
+														"type": "number",
+														"example": 5,
+														"description": "Number of cross chart aspects of this type between the two charts. An aspect type with no hits is absent from the map rather than reported as zero."
 													},
 													"example": {
 														"TRINE": 5,
@@ -7783,6 +7880,7 @@
 											"properties": {
 												"overall": {
 													"type": "string",
+													"example": "This relationship shows strong compatibility with genuine potential for lasting partnership. Most interactions feel natural and supportive, with a healthy mix of comfort and growth. Where challenges arise, both partners have the tools to work through them constructively.",
 													"description": "Overall relationship analysis narrative based on aspect patterns."
 												},
 												"strengths": {
@@ -7790,6 +7888,11 @@
 													"items": {
 														"type": "string"
 													},
+													"example": [
+														"More harmonious aspects than challenging ones create a supportive foundation.",
+														"Harmonious Moon aspects indicate emotional understanding and nurturing.",
+														"Favorable Venus aspects bring affection, appreciation, and romantic chemistry."
+													],
 													"description": "Areas where the relationship naturally thrives based on harmonious aspects."
 												},
 												"challenges": {
@@ -7797,6 +7900,10 @@
 													"items": {
 														"type": "string"
 													},
+													"example": [
+														"Challenging Sun aspects may create ego conflicts or competing life directions.",
+														"Challenging Mars aspects may bring tension, arguments, or competing desires."
+													],
 													"description": "Potential friction points and growth opportunities from challenging aspects."
 												}
 											},
@@ -9310,6 +9417,11 @@
 												"Black Moon Lilith"
 											]
 										},
+										"example": [
+											"Jupiter",
+											"Saturn",
+											"Pluto"
+										],
 										"description": "Filter to specific transiting planets. Omit to include all planets. Useful for focusing on slow-moving outer planet transits (Saturn, Jupiter, Pluto)."
 									},
 									"aspectTypes": {
@@ -9328,6 +9440,12 @@
 												"SESQUIQUADRATE"
 											]
 										},
+										"example": [
+											"CONJUNCTION",
+											"OPPOSITION",
+											"TRINE",
+											"SQUARE"
+										],
 										"description": "Filter to specific aspect types (conjunction, opposition, trine, square, sextile, etc.). Omit to include all aspect types."
 									},
 									"minStrength": {
@@ -9620,18 +9738,22 @@
 														"properties": {
 															"summary": {
 																"type": "string",
+																"example": "Sun supports your natal Moon harmoniously",
 																"description": "Narrative interpretation of this transit aspect and its life impact."
 															},
 															"timing": {
 																"type": "string",
-																"description": "When this transit is most active and how long its influence lasts."
+																"example": "Active for a few days",
+																"description": "When this transit is most active and how long its influence lasts, localized. The bucket follows the speed of the transiting body: a few hours for the Moon, a few days for the Sun, Mercury, Venus and Mars, one to two weeks for Jupiter, several weeks for Saturn, and an extended period for Uranus, Neptune and Pluto."
 															},
 															"impact": {
 																"type": "string",
+																"example": "Self-awareness and ego flows easily with Inner emotional life. Opportunities arise naturally in this area.",
 																"description": "Strength and nature of this transit effect — constructive, challenging, or neutral."
 															},
 															"guidance": {
 																"type": "string",
+																"example": "Take advantage of this supportive energy. Things flow easily, so act on opportunities.",
 																"description": "Practical advice for working with this transit energy."
 															},
 															"keywords": {
@@ -9639,6 +9761,14 @@
 																"items": {
 																	"type": "string"
 																},
+																"example": [
+																	"accept",
+																	"accepting",
+																	"difficult",
+																	"natural",
+																	"support",
+																	"talent"
+																],
 																"description": "Key themes activated by this transit aspect."
 															}
 														},
@@ -9797,7 +9927,15 @@
 												"byType": {
 													"type": "object",
 													"additionalProperties": {
-														"type": "number"
+														"type": "number",
+														"example": 3,
+														"description": "Number of transit to natal aspects of this type in the window. An aspect type with no hits is absent from the map rather than reported as zero."
+													},
+													"example": {
+														"CONJUNCTION": 2,
+														"TRINE": 3,
+														"SQUARE": 2,
+														"SEXTILE": 1
 													},
 													"description": "Transit aspect counts grouped by aspect type (conjunction, trine, square, opposition, sextile, etc.). Useful for quickly assessing the transit weather."
 												}
@@ -10182,14 +10320,17 @@
 											"properties": {
 												"latitude": {
 													"type": "number",
+													"example": 40.7128,
 													"description": "Observer latitude used for Placidus house cusp and Ascendant calculation in the solar return chart."
 												},
 												"longitude": {
 													"type": "number",
+													"example": -74.006,
 													"description": "Observer longitude used for local sidereal time and Midheaven calculation in the solar return chart."
 												},
 												"timezone": {
 													"type": "number",
+													"example": -5,
 													"description": "Timezone offset from UTC applied to output datetime formatting."
 												}
 											},
@@ -10578,6 +10719,7 @@
 											"properties": {
 												"longitude": {
 													"type": "number",
+													"example": 112.45,
 													"description": "Natal Sun ecliptic longitude in degrees (0-360). The transiting Sun returns to this exact degree each year."
 												},
 												"sign": {
@@ -10603,10 +10745,12 @@
 											"properties": {
 												"summary": {
 													"type": "string",
+													"example": "Solar Return chart for your 2026 birthday year. This chart is cast for the exact moment the Sun returns to its natal position, symbolizing a new solar year.",
 													"description": "Narrative overview of the solar return year themes and energy."
 												},
 												"purpose": {
 													"type": "string",
+													"example": "Solar return charts are used for annual forecasting. The chart reveals themes, opportunities, and challenges for the year ahead from birthday to birthday. Focus on the Ascendant sign, angular planets, and aspects to natal positions.",
 													"description": "Explanation of how to use solar return charts for annual forecasting, identifying yearly themes, and timing predictions."
 												},
 												"keyThemes": {
@@ -10614,6 +10758,13 @@
 													"items": {
 														"type": "string"
 													},
+													"example": [
+														"Annual themes and life direction",
+														"Career and public life developments",
+														"Relationships and partnerships",
+														"Personal growth and self-expression",
+														"Home and family matters"
+													],
 													"description": "Key life areas and themes highlighted by this solar return chart. Focus on these for the birthday year."
 												}
 											},
@@ -10992,14 +11143,17 @@
 											"properties": {
 												"latitude": {
 													"type": "number",
+													"example": 40.7128,
 													"description": "Observer latitude used for house cusp calculation in the lunar return chart."
 												},
 												"longitude": {
 													"type": "number",
+													"example": -74.006,
 													"description": "Observer longitude used for local sidereal time and Midheaven in the return chart."
 												},
 												"timezone": {
 													"type": "number",
+													"example": -5,
 													"description": "Timezone offset from UTC applied to output datetime formatting."
 												}
 											},
@@ -11388,6 +11542,7 @@
 											"properties": {
 												"longitude": {
 													"type": "number",
+													"example": 228.72,
 													"description": "Natal Moon ecliptic longitude in degrees (0-360). The transiting Moon returns to this position each month."
 												},
 												"sign": {
@@ -11413,10 +11568,12 @@
 											"properties": {
 												"summary": {
 													"type": "string",
+													"example": "Lunar Return chart for this month. This chart is cast for the exact moment the Moon returns to its natal position, occurring approximately every 27-28 days.",
 													"description": "Narrative overview of the monthly emotional themes and lunar cycle focus areas."
 												},
 												"purpose": {
 													"type": "string",
+													"example": "Lunar return charts are used for monthly forecasting. The chart reveals themes, emotional patterns, and focus areas for the coming month. Pay attention to the Moon house position and aspects to other planets for emotional tone and priorities.",
 													"description": "Explanation of how to use lunar return charts for monthly emotional forecasting and self-care planning."
 												},
 												"keyThemes": {
@@ -11424,6 +11581,13 @@
 													"items": {
 														"type": "string"
 													},
+													"example": [
+														"Emotional patterns and inner needs",
+														"Domestic and family matters",
+														"Daily routines and habits",
+														"Intuition and subconscious patterns",
+														"Self-care and nurturing"
+													],
 													"description": "Key emotional patterns, domestic themes, and self-care priorities for this lunar month."
 												}
 											},
@@ -12014,10 +12178,12 @@
 														"properties": {
 															"summary": {
 																"type": "string",
+																"example": "Sun in Cancer (Crab) brings intuitive, nurturing, protective energy to the themes of self-awareness and ego. This placement gives your Sun expression a distinctly Cancer character, shaping how you navigate these areas of life.",
 																"description": "Narrative interpretation of this composite planet placement."
 															},
 															"relationshipMeaning": {
 																"type": "string",
+																"example": "The composite Sun in cancer represents the core identity and purpose of your relationship. This is what you create together and how others see you as a couple.",
 																"description": "What this planet represents in the context of the relationship."
 															},
 															"keywords": {
@@ -12025,6 +12191,16 @@
 																"items": {
 																	"type": "string"
 																},
+																"example": [
+																	"active",
+																	"awareness",
+																	"bright",
+																	"confidence",
+																	"consciousness",
+																	"intuitive",
+																	"nurturing",
+																	"protective"
+																],
 																"description": "Key themes associated with this composite placement."
 															}
 														},
@@ -12250,6 +12426,7 @@
 											"properties": {
 												"summary": {
 													"type": "string",
+													"example": "This relationship has strong harmonious energy with natural flow and compatibility.",
 													"description": "Overall relationship interpretation based on composite chart analysis."
 												},
 												"strengths": {
@@ -12257,6 +12434,11 @@
 													"items": {
 														"type": "string"
 													},
+													"example": [
+														"The composite Sun in cancer represents the core identity and purpose of your relationship. This is what you create together and how others see you as a couple.",
+														"The composite Moon in aquarius shows your emotional bond and how you nurture each other. This reveals your shared feelings and domestic life together.",
+														"The composite Venus in taurus reveals what you value together and how you express affection. This is the love language of your relationship."
+													],
 													"description": "Areas where the relationship naturally thrives."
 												},
 												"challenges": {
@@ -12264,6 +12446,9 @@
 													"items": {
 														"type": "string"
 													},
+													"example": [
+														"More challenging aspects than harmonious - requires work and understanding."
+													],
 													"description": "Potential friction points and growth opportunities in the relationship."
 												}
 											},
@@ -12946,6 +13131,7 @@
 														},
 														"description": {
 															"type": "string",
+															"example": "Gemini and Pisces combine air and water core energy. Thought meets feeling. Air brings objectivity and perspective while Water brings emotional depth and intuition. Honoring both rational and emotional ways of knowing strengthens this bond. Your modalities (mutable and mutable) add another layer: Highly adaptable and flexible. Both adjust easily to change. Creating shared structure and follow-through together prevents drift and keeps momentum alive.",
 															"description": "Narrative analysis of how these two signs interact through this planet."
 														}
 													},
@@ -12971,6 +13157,7 @@
 														},
 														"description": {
 															"type": "string",
+															"example": "Gemini and Pisces combine air and water core energy. Thought meets feeling. Air brings objectivity and perspective while Water brings emotional depth and intuition. Honoring both rational and emotional ways of knowing strengthens this bond. Your modalities (mutable and mutable) add another layer: Highly adaptable and flexible. Both adjust easily to change. Creating shared structure and follow-through together prevents drift and keeps momentum alive.",
 															"description": "Narrative analysis of how these two signs interact through this planet."
 														}
 													},
@@ -12996,6 +13183,7 @@
 														},
 														"description": {
 															"type": "string",
+															"example": "Gemini and Pisces combine air and water core energy. Thought meets feeling. Air brings objectivity and perspective while Water brings emotional depth and intuition. Honoring both rational and emotional ways of knowing strengthens this bond. Your modalities (mutable and mutable) add another layer: Highly adaptable and flexible. Both adjust easily to change. Creating shared structure and follow-through together prevents drift and keeps momentum alive.",
 															"description": "Narrative analysis of how these two signs interact through this planet."
 														}
 													},
@@ -13021,6 +13209,7 @@
 														},
 														"description": {
 															"type": "string",
+															"example": "Gemini and Pisces combine air and water core energy. Thought meets feeling. Air brings objectivity and perspective while Water brings emotional depth and intuition. Honoring both rational and emotional ways of knowing strengthens this bond. Your modalities (mutable and mutable) add another layer: Highly adaptable and flexible. Both adjust easily to change. Creating shared structure and follow-through together prevents drift and keeps momentum alive.",
 															"description": "Narrative analysis of how these two signs interact through this planet."
 														}
 													},
@@ -13115,6 +13304,7 @@
 												},
 												"description": {
 													"type": "string",
+													"example": "Both charts share a dominant water element, creating natural resonance and instinctive understanding in how you approach life together.",
 													"description": "How the elemental balance between charts shapes the relationship dynamic."
 												}
 											},
@@ -13136,6 +13326,7 @@
 												},
 												"description": {
 													"type": "string",
+													"example": "A natural understanding flows between you. Similar values and rhythms create a relationship that feels effortless and deeply familiar.",
 													"description": "Narrative description of the relationship archetype and what it means."
 												}
 											},
@@ -13150,6 +13341,11 @@
 											"items": {
 												"type": "string"
 											},
+											"example": [
+												"Venus-Mars Trine: Strong physical and romantic attraction. Natural chemistry and mutual desire create magnetic pull between partners.",
+												"Sun-Pluto Trine: Sun and Pluto connect harmoniously, creating natural ease in how self-awareness and ego blends with sex, death, and transformation.",
+												"Chiron-Moon Trine: Chiron and Moon connect harmoniously, creating natural ease in how healing and inner wounds blends with inner emotional life."
+											],
 											"description": "Top relationship strengths based on harmonious inter-chart aspects. Each includes the planet pair, aspect type, and relationship-specific interpretation."
 										},
 										"challenges": {
@@ -13157,14 +13353,20 @@
 											"items": {
 												"type": "string"
 											},
+											"example": [
+												"Pluto-Saturn Square: Pluto and Saturn create dynamic tension between sex, death, and transformation and responsibility, time, and routine. Conscious effort transforms this friction into growth.",
+												"Chiron-Neptune Opposition: Chiron and Neptune create dynamic tension between healing and inner wounds and dreams, healing, and intuition. Conscious effort transforms this friction into growth."
+											],
 											"description": "Potential friction points based on challenging inter-chart aspects. Each includes specific guidance for navigating the tension."
 										},
 										"summary": {
 											"type": "string",
+											"example": "Compatibility score: 72/100 (very good). The 18 aspects between your charts reveal 8 harmonious connections and 6 challenging dynamics.",
 											"description": "Narrative overview of the relationship compatibility, highlighting the dominant themes."
 										},
 										"interpretation": {
 											"type": "string",
+											"example": "This relationship shows strong compatibility with genuine potential for lasting partnership. Most interactions feel natural and supportive, with a healthy mix of comfort and growth. Where challenges arise, both partners have the tools to work through them constructively. The overall energy favors building something meaningful together.",
 											"description": "Detailed compatibility interpretation analyzing the synastry aspect patterns between both charts."
 										},
 										"aspectBreakdown": {
@@ -13236,6 +13438,7 @@
 													},
 													"description": {
 														"type": "string",
+														"example": "Strong physical and romantic attraction. Natural chemistry and mutual desire create magnetic pull between partners.",
 														"description": "Relationship-specific interpretation of this aspect between the two charts."
 													}
 												},
@@ -13582,26 +13785,32 @@
 										},
 										"overview": {
 											"type": "string",
+											"example": "Saturn teaches Aries through focused effort today. What feels heavy now becomes your greatest strength later. Trust the process of mastery and keep showing up.",
 											"description": "General daily overview based on Moon house activation and planetary transits. Unique per sign based on whole-sign house positions."
 										},
 										"love": {
 											"type": "string",
+											"example": "Venus in your sixth house shows love through acts of service. Small gestures of care mean more than grand declarations. Health-focused activities with a partner strengthen your bond.",
 											"description": "Love and relationship forecast. Based on Venus house position relative to this sign, providing unique guidance per sign."
 										},
 										"career": {
 											"type": "string",
+											"example": "Take responsibility seriously at work. Hard work brings lasting results, even when progress feels invisible. Your reliability earns respect.",
 											"description": "Career and professional outlook. Based on Mars house position relative to this sign, with Saturn and Jupiter influences."
 										},
 										"health": {
 											"type": "string",
+											"example": "The Sun in your fifth house connects vitality with joy and self-expression. Physical play, creative movement, and laughter are the best medicine today.",
 											"description": "Health, energy, and wellness guidance for the day."
 										},
 										"finance": {
 											"type": "string",
+											"example": "Jupiter in your fifth house brings financial luck through creative ventures and speculative risks. Hobbies could become income sources.",
 											"description": "Financial outlook and money-related guidance."
 										},
 										"advice": {
 											"type": "string",
+											"example": "Mercury in your fourth house turns attention to family conversations and household planning. Important discussions about home life go well.",
 											"description": "Actionable daily advice based on the dominant transit energy."
 										},
 										"luckyNumber": {
@@ -13989,26 +14198,32 @@
 										},
 										"overview": {
 											"type": "string",
+											"example": "This week features Jupiter in Leo, influencing your broader life direction. Saturn presence in Aries demands maturity and hard work, but builds lasting foundations.",
 											"description": "Weekly overview highlighting the dominant planetary transits through the sign."
 										},
 										"love": {
 											"type": "string",
+											"example": "Venus in your sixth house shows love through acts of service. Small gestures of care mean more than grand declarations. Health-focused activities with a partner strengthen your bond.",
 											"description": "Weekly love and relationship forecast."
 										},
 										"career": {
 											"type": "string",
+											"example": "Focus on long-term goals and responsibilities. Hard work pays off, though progress feels slow.",
 											"description": "Weekly career and professional outlook."
 										},
 										"health": {
 											"type": "string",
+											"example": "The Sun in your fifth house connects vitality with joy and self-expression. Physical play, creative movement, and laughter are the best medicine today.",
 											"description": "Weekly health, energy, and wellness guidance."
 										},
 										"finance": {
 											"type": "string",
+											"example": "Jupiter in your fifth house brings financial luck through creative ventures and speculative risks. Hobbies could become income sources.",
 											"description": "Weekly financial outlook."
 										},
 										"advice": {
 											"type": "string",
+											"example": "Mercury in your fourth house turns attention to family conversations and household planning. Important discussions about home life go well.",
 											"description": "Actionable weekly guidance based on transit patterns."
 										},
 										"luckyDays": {
@@ -14378,26 +14593,32 @@
 										},
 										"overview": {
 											"type": "string",
+											"example": "April brings Jupiter influence through Leo, encouraging growth and expansion. For you, this activates your 5th house of romance, creativity, and joy. Saturn in Aries reminds you to build solid foundations.",
 											"description": "Monthly overview covering the major planetary transits and their impact on the sign."
 										},
 										"love": {
 											"type": "string",
+											"example": "Venus in your sixth house shows love through acts of service. Small gestures of care mean more than grand declarations. Health-focused activities with a partner strengthen your bond.",
 											"description": "Monthly love and relationship forecast."
 										},
 										"career": {
 											"type": "string",
+											"example": "Focus on long-term career goals. Patience and persistence bring lasting success.",
 											"description": "Monthly career and professional outlook."
 										},
 										"health": {
 											"type": "string",
+											"example": "The Sun in your fifth house connects vitality with joy and self-expression. Physical play, creative movement, and laughter are the best medicine today.",
 											"description": "Monthly health and wellness guidance."
 										},
 										"finance": {
 											"type": "string",
+											"example": "Jupiter in your fifth house brings financial luck through creative ventures and speculative risks. Hobbies could become income sources.",
 											"description": "Monthly financial outlook and guidance."
 										},
 										"advice": {
 											"type": "string",
+											"example": "Mercury in your fourth house turns attention to family conversations and household planning. Important discussions about home life go well.",
 											"description": "Actionable guidance for the month as a whole, derived from the Mercury house activation for this sign. Distinct from the per-week advice inside weekByWeek: this is the single takeaway for the month."
 										},
 										"weekByWeek": {
@@ -14412,10 +14633,12 @@
 													},
 													"focus": {
 														"type": "string",
+														"example": "Solitude and inner reflection",
 														"description": "Primary focus area for this week, derived from planetary house activations for this sign."
 													},
 													"advice": {
 														"type": "string",
+														"example": "Focus on solitude and inner reflection this week for best results.",
 														"description": "Specific guidance for this week."
 													}
 												},
@@ -14439,6 +14662,7 @@
 													},
 													"event": {
 														"type": "string",
+														"example": "New Moon. Set intentions and plant seeds for new beginnings.",
 														"description": "Astrological event active on this date (lunar phases, retrogrades, sign ingresses)."
 													}
 												},
@@ -14877,14 +15101,17 @@
 											"properties": {
 												"latitude": {
 													"type": "number",
+													"example": 40.7128,
 													"description": "Observer latitude used for house cusp calculation in the return chart."
 												},
 												"longitude": {
 													"type": "number",
+													"example": -74.006,
 													"description": "Observer longitude used for Midheaven and local sidereal time."
 												},
 												"timezone": {
 													"type": "number",
+													"example": -5,
 													"description": "Timezone offset from UTC applied to output datetime formatting."
 												}
 											},
@@ -15273,6 +15500,7 @@
 											"properties": {
 												"longitude": {
 													"type": "number",
+													"example": 135.33,
 													"description": "Natal planet ecliptic longitude in degrees (0-360). The transiting planet returns to this exact degree."
 												},
 												"sign": {
@@ -15298,6 +15526,7 @@
 											"properties": {
 												"summary": {
 													"type": "string",
+													"example": "This Jupiter return marks a new cycle in the themes governed by Jupiter. The chart shows how this cycle will unfold in your life.",
 													"description": "Narrative overview of this planetary return cycle and its significance for personal development."
 												},
 												"keyThemes": {
@@ -15305,6 +15534,12 @@
 													"items": {
 														"type": "string"
 													},
+													"example": [
+														"Growth and expansion opportunities",
+														"Wisdom and philosophical outlook",
+														"Luck and abundance",
+														"Travel and higher learning"
+													],
 													"description": "Key life themes activated during this return cycle. Focus areas vary by planet — Jupiter brings expansion, Saturn brings structure and responsibility."
 												}
 											},

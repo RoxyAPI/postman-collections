@@ -3,7 +3,7 @@
 	"info": {
 		"title": "Vedic Astrology API",
 		"version": "2.0.0",
-		"description": "Vedic astrology (Jyotish) and KP API for kundli generation with 15 divisional charts (D1-D60), Ashtakoot Gun Milan kundli matching, Vimshottari Dasha predictions, dosha detection with remedies, 300+ planetary yogas, complete Panchang, and KP horary with 249-level sub-lord analysis. Calculations verified against NASA JPL Horizons at arc-second-level accuracy. Built for matrimonial apps, horoscope platforms, spiritual wellness services, and AI-powered astrology chatbots. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, forecast, human design, numerology, tarot, biorhythm, I-Ching, crystals, dreams, angel numbers, location), 171+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 171+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n",
+		"description": "Vedic astrology (Jyotish) and KP API for kundli generation with 15 divisional charts (D1-D60), Ashtakoot Gun Milan kundli matching, Vimshottari Dasha predictions, dosha detection with remedies, 300+ planetary yogas, complete Panchang, and KP horary with 249-level sub-lord analysis. Calculations verified against NASA JPL Horizons at arc-second-level accuracy. Built for matrimonial apps, horoscope platforms, spiritual wellness services, and AI-powered astrology chatbots. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, forecast, human design, numerology, tarot, biorhythm, I-Ching, crystals, dreams, angel numbers, location), 173+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 173+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n",
 		"contact": {
 			"name": "RoxyAPI Support",
 			"url": "https://roxyapi.com/contact"
@@ -52,7 +52,8 @@
 						"properties": {
 							"rashi": {
 								"type": "string",
-								"description": "Zodiac sign name in lowercase."
+								"example": "aries",
+								"description": "Zodiac sign name in lowercase. Always equals the key of the block it sits in, so the aries block carries \"aries\" and the pisces block carries \"pisces\"."
 							},
 							"signs": {
 								"type": "array",
@@ -182,7 +183,8 @@
 						"properties": {
 							"rashi": {
 								"type": "string",
-								"description": "Zodiac sign name in lowercase."
+								"example": "aries",
+								"description": "Zodiac sign name in lowercase. Always equals the key of the block it sits in, so the aries block carries \"aries\" and the pisces block carries \"pisces\"."
 							},
 							"signs": {
 								"type": "array",
@@ -312,7 +314,8 @@
 						"properties": {
 							"rashi": {
 								"type": "string",
-								"description": "Zodiac sign name in lowercase."
+								"example": "aries",
+								"description": "Zodiac sign name in lowercase. Always equals the key of the block it sits in, so the aries block carries \"aries\" and the pisces block carries \"pisces\"."
 							},
 							"signs": {
 								"type": "array",
@@ -442,7 +445,8 @@
 						"properties": {
 							"rashi": {
 								"type": "string",
-								"description": "Zodiac sign name in lowercase."
+								"example": "aries",
+								"description": "Zodiac sign name in lowercase. Always equals the key of the block it sits in, so the aries block carries \"aries\" and the pisces block carries \"pisces\"."
 							},
 							"signs": {
 								"type": "array",
@@ -572,7 +576,8 @@
 						"properties": {
 							"rashi": {
 								"type": "string",
-								"description": "Zodiac sign name in lowercase."
+								"example": "aries",
+								"description": "Zodiac sign name in lowercase. Always equals the key of the block it sits in, so the aries block carries \"aries\" and the pisces block carries \"pisces\"."
 							},
 							"signs": {
 								"type": "array",
@@ -702,7 +707,8 @@
 						"properties": {
 							"rashi": {
 								"type": "string",
-								"description": "Zodiac sign name in lowercase."
+								"example": "aries",
+								"description": "Zodiac sign name in lowercase. Always equals the key of the block it sits in, so the aries block carries \"aries\" and the pisces block carries \"pisces\"."
 							},
 							"signs": {
 								"type": "array",
@@ -832,7 +838,8 @@
 						"properties": {
 							"rashi": {
 								"type": "string",
-								"description": "Zodiac sign name in lowercase."
+								"example": "aries",
+								"description": "Zodiac sign name in lowercase. Always equals the key of the block it sits in, so the aries block carries \"aries\" and the pisces block carries \"pisces\"."
 							},
 							"signs": {
 								"type": "array",
@@ -962,7 +969,8 @@
 						"properties": {
 							"rashi": {
 								"type": "string",
-								"description": "Zodiac sign name in lowercase."
+								"example": "aries",
+								"description": "Zodiac sign name in lowercase. Always equals the key of the block it sits in, so the aries block carries \"aries\" and the pisces block carries \"pisces\"."
 							},
 							"signs": {
 								"type": "array",
@@ -1092,7 +1100,8 @@
 						"properties": {
 							"rashi": {
 								"type": "string",
-								"description": "Zodiac sign name in lowercase."
+								"example": "aries",
+								"description": "Zodiac sign name in lowercase. Always equals the key of the block it sits in, so the aries block carries \"aries\" and the pisces block carries \"pisces\"."
 							},
 							"signs": {
 								"type": "array",
@@ -1222,7 +1231,8 @@
 						"properties": {
 							"rashi": {
 								"type": "string",
-								"description": "Zodiac sign name in lowercase."
+								"example": "aries",
+								"description": "Zodiac sign name in lowercase. Always equals the key of the block it sits in, so the aries block carries \"aries\" and the pisces block carries \"pisces\"."
 							},
 							"signs": {
 								"type": "array",
@@ -1352,7 +1362,8 @@
 						"properties": {
 							"rashi": {
 								"type": "string",
-								"description": "Zodiac sign name in lowercase."
+								"example": "aries",
+								"description": "Zodiac sign name in lowercase. Always equals the key of the block it sits in, so the aries block carries \"aries\" and the pisces block carries \"pisces\"."
 							},
 							"signs": {
 								"type": "array",
@@ -1482,7 +1493,8 @@
 						"properties": {
 							"rashi": {
 								"type": "string",
-								"description": "Zodiac sign name in lowercase."
+								"example": "aries",
+								"description": "Zodiac sign name in lowercase. Always equals the key of the block it sits in, so the aries block carries \"aries\" and the pisces block carries \"pisces\"."
 							},
 							"signs": {
 								"type": "array",
@@ -2218,7 +2230,8 @@
 								"properties": {
 									"rashi": {
 										"type": "string",
-										"description": "Zodiac sign name in lowercase."
+										"example": "aries",
+										"description": "Zodiac sign name in lowercase. Always equals the key of the navamsa rashi-house block it sits in."
 									},
 									"signs": {
 										"type": "array",
@@ -2527,7 +2540,8 @@
 								"properties": {
 									"rashi": {
 										"type": "string",
-										"description": "Zodiac sign name in lowercase."
+										"example": "aries",
+										"description": "Zodiac sign name in lowercase. Always equals the key of the divisional rashi-house block it sits in."
 									},
 									"signs": {
 										"type": "array",
@@ -3491,7 +3505,9 @@
 							"phases": {
 								"type": "object",
 								"additionalProperties": {
-									"type": "string"
+									"type": "string",
+									"description": "What Shani delivers during this Sadhesati phase, keyed by the phase the transit is in. Only the phase the chart is currently in is present, so a client renders it without choosing between three.",
+									"example": "Health issues, relationship problems, career obstacles, maximum hardships"
 								},
 								"description": "Phase-specific effects for the current Sadhesati stage (Rising/Peak/Setting)",
 								"example": {
@@ -3711,19 +3727,29 @@
 						"type": "object",
 						"properties": {
 							"date": {
-								"type": "string"
+								"type": "string",
+								"example": "1990-07-04",
+								"description": "Birth date the kundli was cast for, YYYY-MM-DD, echoed back from the request."
 							},
 							"time": {
-								"type": "string"
+								"type": "string",
+								"example": "10:12:00",
+								"description": "Birth time the kundli was cast for, 24-hour HH:MM:SS, echoed back from the request. Lagna moves roughly one rashi every two hours, so this is what pins the bhava-dependent yogas."
 							},
 							"latitude": {
-								"type": "number"
+								"type": "number",
+								"example": 28.6139,
+								"description": "Birth latitude in decimal degrees, echoed back from the request. Feeds the local sidereal time behind the Lagna."
 							},
 							"longitude": {
-								"type": "number"
+								"type": "number",
+								"example": 77.209,
+								"description": "Birth longitude in decimal degrees, echoed back from the request. East is positive, west is negative."
 							},
 							"timezone": {
-								"type": "number"
+								"type": "number",
+								"example": 5.5,
+								"description": "Numeric UTC offset in decimal hours that the chart engine actually consumed. An IANA name sent on the request is resolved to its DST-correct offset upstream, so this is always a number."
 							}
 						},
 						"required": [
@@ -3989,11 +4015,12 @@
 							"kp-newcomb",
 							"kp-old",
 							"lahiri",
+							"raman",
 							"custom"
 						],
 						"default": "kp-newcomb",
 						"example": "kp-newcomb",
-						"description": "Ayanamsa system for sidereal conversion. \"kp-newcomb\" uses the KP-Newcomb dynamic formula (most common for KP). \"kp-old\" uses the Krishnamurti original table. \"lahiri\" uses Lahiri/Chitrapaksha ayanamsa matching most traditional Vedic software. \"custom\" allows providing your own value via ayanamsaValue. Defaults to \"kp-newcomb\"."
+						"description": "Ayanamsa system for sidereal conversion. \"kp-newcomb\" uses the KP-Newcomb dynamic formula (most common for KP). \"kp-old\" uses the Krishnamurti original table. \"lahiri\" uses Lahiri/Chitrapaksha ayanamsa matching most traditional Vedic software. \"raman\" uses the B.V. Raman ayanamsa, about 1.45 degrees below Lahiri. \"custom\" allows providing your own value via ayanamsaValue. Defaults to \"kp-newcomb\"."
 					},
 					"ayanamsaValue": {
 						"type": "number",
@@ -4113,7 +4140,15 @@
 							"type": "array",
 							"items": {
 								"type": "string"
-							}
+							},
+							"example": [
+								"wealth",
+								"family",
+								"speech",
+								"possessions",
+								"food"
+							],
+							"description": "Short keyword significations of the bhava this key numbers, localized by the lang query parameter and drawn from the vocabulary the focus parameter selected. Join it against any house number elsewhere in the response to render readable text."
 						},
 						"example": {
 							"2": [
@@ -4194,11 +4229,12 @@
 							"kp-newcomb",
 							"kp-old",
 							"lahiri",
+							"raman",
 							"custom"
 						],
 						"default": "kp-newcomb",
 						"example": "kp-newcomb",
-						"description": "Ayanamsa system for sidereal conversion. \"kp-newcomb\" uses the KP-Newcomb dynamic formula (most common for KP). \"kp-old\" uses the Krishnamurti original table. \"lahiri\" uses Lahiri/Chitrapaksha ayanamsa matching most traditional Vedic software. \"custom\" allows providing your own value via ayanamsaValue. Defaults to \"kp-newcomb\"."
+						"description": "Ayanamsa system for sidereal conversion. \"kp-newcomb\" uses the KP-Newcomb dynamic formula (most common for KP). \"kp-old\" uses the Krishnamurti original table. \"lahiri\" uses Lahiri/Chitrapaksha ayanamsa matching most traditional Vedic software. \"raman\" uses the B.V. Raman ayanamsa, about 1.45 degrees below Lahiri. \"custom\" allows providing your own value via ayanamsaValue. Defaults to \"kp-newcomb\"."
 					},
 					"ayanamsaValue": {
 						"type": "number",
@@ -4246,14 +4282,17 @@
 							},
 							"ayanamsa": {
 								"type": "number",
+								"example": 23.63165599,
 								"description": "KP Newcomb ayanamsa value in degrees. Precession correction applied to convert tropical to sidereal positions."
 							},
 							"ayanamsaType": {
 								"type": "string",
-								"description": "Ayanamsa system used (KP Newcomb)."
+								"example": "kp-newcomb",
+								"description": "Ayanamsa system used, echoing the ayanamsa field of the request: \"kp-newcomb\", \"kp-old\", \"lahiri\", \"raman\" or \"custom\"."
 							},
 							"houseSystem": {
 								"type": "string",
+								"example": "placidus",
 								"description": "House system used (Placidus, standard for KP astrology)."
 							}
 						},
@@ -4274,43 +4313,52 @@
 						"properties": {
 							"longitude": {
 								"type": "number",
+								"example": 138.4755,
 								"description": "Sidereal longitude of Ascendant (Lagna) in degrees."
 							},
 							"sign": {
 								"type": "string",
+								"example": "Leo",
 								"description": "Zodiac sign of the Ascendant."
 							},
 							"signLord": {
 								"type": "string",
-								"description": "Ruling planet of the Ascendant sign (the rashi lord). In KP this is the weakest of the four lords, ranked below the star lord and sub lord, but it still sets the broad temperament of the Lagna.",
-								"example": "Venus"
+								"example": "Sun",
+								"description": "Ruling planet of the Ascendant sign (the rashi lord). In KP this is the weakest of the four lords, ranked below the star lord and sub lord, but it still sets the broad temperament of the Lagna."
 							},
 							"nakshatra": {
 								"type": "string",
+								"example": "Purva Phalguni",
 								"description": "Nakshatra (star) of the Ascendant."
 							},
 							"nakshatraLord": {
 								"type": "string",
+								"example": "Venus",
 								"description": "Lord of the Ascendant nakshatra."
 							},
 							"pada": {
 								"type": "number",
+								"example": 2,
 								"description": "Nakshatra pada (1-4) of the Ascendant."
 							},
 							"starLord": {
 								"type": "string",
+								"example": "Venus",
 								"description": "KP star lord of the Ascendant position."
 							},
 							"subLord": {
 								"type": "string",
+								"example": "Rahu",
 								"description": "KP sub lord of the Ascendant. crucial for KP predictions. The Ascendant sub lord determines overall life promise."
 							},
 							"subSubLord": {
 								"type": "string",
+								"example": "Jupiter",
 								"description": "KP sub-sub lord (SSL) of the Ascendant. Third level of the Vimshottari subdivision hierarchy, used for fine-tuning predictions."
 							},
 							"kpNumber": {
 								"type": "number",
+								"example": 95,
 								"description": "KP number (1-249) for the Ascendant degree."
 							}
 						},
@@ -4335,46 +4383,57 @@
 							"properties": {
 								"house": {
 									"type": "number",
+									"example": 7,
 									"description": "House number (1-12)."
 								},
 								"longitude": {
 									"type": "number",
+									"example": 318.4755,
 									"description": "Placidus cusp longitude in sidereal degrees."
 								},
 								"sign": {
 									"type": "string",
+									"example": "Aquarius",
 									"description": "Zodiac sign at the cusp."
 								},
 								"signLord": {
 									"type": "string",
+									"example": "Saturn",
 									"description": "Lord of the zodiac sign at the cusp (house owner)."
 								},
 								"nakshatra": {
 									"type": "string",
+									"example": "Shatabhisha",
 									"description": "Nakshatra at the cusp degree."
 								},
 								"nakshatraLord": {
 									"type": "string",
+									"example": "Rahu",
 									"description": "Lord of the nakshatra at the cusp."
 								},
 								"pada": {
 									"type": "number",
+									"example": 4,
 									"description": "Nakshatra pada (1-4) at the cusp."
 								},
 								"starLord": {
 									"type": "string",
+									"example": "Rahu",
 									"description": "KP star lord of the cusp."
 								},
 								"subLord": {
 									"type": "string",
+									"example": "Moon",
 									"description": "KP sub lord of the cusp. the deciding factor for house-level predictions in KP astrology."
 								},
 								"subSubLord": {
 									"type": "string",
+									"example": "Jupiter",
 									"description": "KP sub-sub lord (SSL) of the cusp. Third level of Vimshottari subdivision for fine-grained cusp analysis."
 								},
 								"kpNumber": {
 									"type": "number",
+									"example": 215,
 									"description": "KP number (1-249) for the cusp degree."
 								}
 							},
@@ -4401,50 +4460,62 @@
 							"properties": {
 								"planet": {
 									"type": "string",
+									"example": "Venus",
 									"description": "Planet name (Sun through Saturn, 7 visible planets)."
 								},
 								"longitude": {
 									"type": "number",
+									"example": 47.2732,
 									"description": "Sidereal longitude in degrees (KP ayanamsa corrected)."
 								},
 								"sign": {
 									"type": "string",
+									"example": "Taurus",
 									"description": "Zodiac sign the planet occupies."
 								},
 								"house": {
 									"type": "number",
+									"example": 9,
 									"description": "House number (1-12) based on Placidus cusps."
 								},
 								"nakshatra": {
 									"type": "string",
+									"example": "Rohini",
 									"description": "Nakshatra the planet occupies."
 								},
 								"nakshatraLord": {
 									"type": "string",
+									"example": "Moon",
 									"description": "Nakshatra lord (same as star lord)."
 								},
 								"pada": {
 									"type": "number",
+									"example": 3,
 									"description": "Nakshatra pada (1-4)."
 								},
 								"starLord": {
 									"type": "string",
+									"example": "Moon",
 									"description": "KP star lord, determines primary house signification."
 								},
 								"subLord": {
 									"type": "string",
+									"example": "Saturn",
 									"description": "KP sub lord, the decisive factor. Planet gives results of the houses signified by its sub lord."
 								},
 								"subSubLord": {
 									"type": "string",
+									"example": "Rahu",
 									"description": "KP sub-sub lord (SSL) of the planet. Third level of Vimshottari subdivision for precise timing analysis."
 								},
 								"kpNumber": {
 									"type": "number",
+									"example": 32,
 									"description": "KP number (1-249)."
 								},
 								"retrograde": {
 									"type": "boolean",
+									"example": false,
 									"description": "True if planet is retrograde. Retrograde planets may delay or deny results in KP system."
 								}
 							},
@@ -4473,36 +4544,43 @@
 								"properties": {
 									"longitude": {
 										"type": "number",
+										"example": 285.0726,
 										"description": "Sidereal longitude of Rahu (North Node)."
 									},
 									"sign": {
 										"type": "string",
+										"example": "Capricorn",
 										"description": "Zodiac sign Rahu occupies."
 									},
 									"house": {
 										"type": "number",
+										"example": 5,
 										"description": "Occupied house number (1-12) based on Placidus cusps."
 									},
 									"nakshatra": {
 										"type": "string",
+										"example": "Shravana",
 										"description": "Nakshatra of Rahu."
 									},
 									"starLord": {
 										"type": "string",
+										"example": "Moon",
 										"description": "KP star lord of Rahu."
 									},
 									"subLord": {
 										"type": "string",
+										"example": "Jupiter",
 										"description": "KP sub lord of Rahu."
 									},
 									"subSubLord": {
 										"type": "string",
+										"example": "Sun",
 										"description": "KP sub-sub lord (SSL) of Rahu."
 									},
 									"kpNumber": {
 										"type": "number",
-										"description": "KP number (1-249) locating Rahu in the 249-division sub-lord scheme. Each of the 249 divisions maps to a unique sign, star lord and sub lord triple, so one integer pins the position precisely enough for KP event timing.",
-										"example": 194
+										"example": 193,
+										"description": "KP number (1-249) locating Rahu in the 249-division sub-lord scheme. Each of the 249 divisions maps to a unique sign, star lord and sub lord triple, so one integer pins the position precisely enough for KP event timing."
 									}
 								},
 								"required": [
@@ -4522,36 +4600,43 @@
 								"properties": {
 									"longitude": {
 										"type": "number",
+										"example": 105.0726,
 										"description": "Sidereal longitude of Ketu (South Node). Always 180 degrees from Rahu."
 									},
 									"sign": {
 										"type": "string",
+										"example": "Cancer",
 										"description": "Zodiac sign Ketu occupies."
 									},
 									"house": {
 										"type": "number",
+										"example": 11,
 										"description": "Occupied house number (1-12) based on Placidus cusps."
 									},
 									"nakshatra": {
 										"type": "string",
+										"example": "Pushya",
 										"description": "Nakshatra of Ketu."
 									},
 									"starLord": {
 										"type": "string",
+										"example": "Saturn",
 										"description": "KP star lord of Ketu."
 									},
 									"subLord": {
 										"type": "string",
+										"example": "Jupiter",
 										"description": "KP sub lord of Ketu."
 									},
 									"subSubLord": {
 										"type": "string",
+										"example": "Jupiter",
 										"description": "KP sub-sub lord (SSL) of Ketu."
 									},
 									"kpNumber": {
 										"type": "number",
-										"description": "KP number (1-249) locating Ketu in the 249-division sub-lord scheme. Each of the 249 divisions maps to a unique sign, star lord and sub lord triple, so one integer pins the position precisely enough for KP event timing.",
-										"example": 194
+										"example": 72,
+										"description": "KP number (1-249) locating Ketu in the 249-division sub-lord scheme. Each of the 249 divisions maps to a unique sign, star lord and sub lord triple, so one integer pins the position precisely enough for KP event timing."
 									}
 								},
 								"required": [
@@ -4711,7 +4796,15 @@
 							"type": "array",
 							"items": {
 								"type": "string"
-							}
+							},
+							"example": [
+								"wealth",
+								"family",
+								"speech",
+								"possessions",
+								"food"
+							],
+							"description": "Short keyword significations of the bhava this key numbers, localized by the lang query parameter and drawn from the vocabulary the focus parameter selected. Join it against any house number elsewhere in the response to render readable text."
 						},
 						"example": {
 							"2": [
@@ -4795,11 +4888,12 @@
 							"kp-newcomb",
 							"kp-old",
 							"lahiri",
+							"raman",
 							"custom"
 						],
 						"default": "kp-newcomb",
 						"example": "kp-newcomb",
-						"description": "Ayanamsa system for sidereal conversion. \"kp-newcomb\" uses the KP-Newcomb dynamic formula (most common for KP). \"kp-old\" uses the Krishnamurti original table. \"lahiri\" uses Lahiri/Chitrapaksha ayanamsa matching most traditional Vedic software. \"custom\" allows providing your own value via ayanamsaValue. Defaults to \"kp-newcomb\"."
+						"description": "Ayanamsa system for sidereal conversion. \"kp-newcomb\" uses the KP-Newcomb dynamic formula (most common for KP). \"kp-old\" uses the Krishnamurti original table. \"lahiri\" uses Lahiri/Chitrapaksha ayanamsa matching most traditional Vedic software. \"raman\" uses the B.V. Raman ayanamsa, about 1.45 degrees below Lahiri. \"custom\" allows providing your own value via ayanamsaValue. Defaults to \"kp-newcomb\"."
 					},
 					"ayanamsaValue": {
 						"type": "number",
@@ -4837,15 +4931,18 @@
 						"properties": {
 							"latitude": {
 								"type": "number",
-								"example": 28.6139
+								"example": 28.6139,
+								"description": "Observer latitude in decimal degrees, echoed back from the request. Sets the local sidereal time behind the KP ascendant and therefore the Lagna sublord."
 							},
 							"longitude": {
 								"type": "number",
-								"example": 77.209
+								"example": 77.209,
+								"description": "Observer longitude in decimal degrees, echoed back from the request. East is positive, west is negative."
 							},
 							"timezone": {
 								"type": "number",
-								"example": 5.5
+								"example": 5.5,
+								"description": "Numeric UTC offset in decimal hours the calculation consumed. An IANA name sent on the request is resolved to its DST-correct offset upstream, so this is always a number."
 							}
 						},
 						"required": [
@@ -4970,7 +5067,15 @@
 							"type": "array",
 							"items": {
 								"type": "string"
-							}
+							},
+							"example": [
+								"wealth",
+								"family",
+								"speech",
+								"possessions",
+								"food"
+							],
+							"description": "Short keyword significations of the bhava this key numbers, localized by the lang query parameter and drawn from the vocabulary the focus parameter selected. Join it against any house number elsewhere in the response to render readable text."
 						},
 						"example": {
 							"2": [
@@ -5414,7 +5519,15 @@
 							"type": "array",
 							"items": {
 								"type": "string"
-							}
+							},
+							"example": [
+								"wealth",
+								"family",
+								"speech",
+								"possessions",
+								"food"
+							],
+							"description": "Short keyword significations of the bhava this key numbers, localized by the lang query parameter and drawn from the vocabulary the focus parameter selected. Join it against any house number elsewhere in the response to render readable text."
 						},
 						"example": {
 							"2": [
@@ -5585,11 +5698,12 @@
 						"enum": [
 							"kp-newcomb",
 							"kp-old",
-							"lahiri"
+							"lahiri",
+							"raman"
 						],
 						"default": "kp-newcomb",
 						"example": "kp-newcomb",
-						"description": "Ayanamsa system for sidereal conversion. \"kp-newcomb\" uses the KP-Newcomb dynamic formula, the most common choice for KP astrology. \"kp-old\" uses the Krishnamurti original table from KP Reader-1 with constant precession rate. \"lahiri\" uses Lahiri/Chitrapaksha ayanamsa, matching most traditional Vedic software. Defaults to \"kp-newcomb\"."
+						"description": "Ayanamsa system for sidereal conversion. \"kp-newcomb\" uses the KP-Newcomb dynamic formula, the most common choice for KP astrology. \"kp-old\" uses the Krishnamurti original table from KP Reader-1 with constant precession rate. \"lahiri\" uses Lahiri/Chitrapaksha ayanamsa, matching most traditional Vedic software. \"raman\" uses the B.V. Raman ayanamsa from Hindu Predictive Astrology, a recognised traditional school that sits about 1.45 degrees below Lahiri. Defaults to \"kp-newcomb\"."
 					},
 					"nodeType": {
 						"type": "string",
@@ -5733,11 +5847,12 @@
 						"enum": [
 							"kp-newcomb",
 							"kp-old",
-							"lahiri"
+							"lahiri",
+							"raman"
 						],
 						"default": "kp-newcomb",
 						"example": "kp-newcomb",
-						"description": "Ayanamsa system for sidereal conversion. \"kp-newcomb\" uses the KP-Newcomb dynamic formula, the most common choice for KP astrology. \"kp-old\" uses the Krishnamurti original table from KP Reader-1 with constant precession rate. \"lahiri\" uses Lahiri/Chitrapaksha ayanamsa, matching most traditional Vedic software. Defaults to \"kp-newcomb\"."
+						"description": "Ayanamsa system for sidereal conversion. \"kp-newcomb\" uses the KP-Newcomb dynamic formula, the most common choice for KP astrology. \"kp-old\" uses the Krishnamurti original table from KP Reader-1 with constant precession rate. \"lahiri\" uses Lahiri/Chitrapaksha ayanamsa, matching most traditional Vedic software. \"raman\" uses the B.V. Raman ayanamsa from Hindu Predictive Astrology, a recognised traditional school that sits about 1.45 degrees below Lahiri. Defaults to \"kp-newcomb\"."
 					},
 					"nodeType": {
 						"type": "string",
@@ -5957,11 +6072,12 @@
 						"enum": [
 							"kp-newcomb",
 							"kp-old",
-							"lahiri"
+							"lahiri",
+							"raman"
 						],
 						"default": "kp-newcomb",
 						"example": "kp-newcomb",
-						"description": "Ayanamsa system for sidereal conversion. \"kp-newcomb\" uses the KP-Newcomb dynamic formula, the most common choice for KP astrology. \"kp-old\" uses the Krishnamurti original table from KP Reader-1 with constant precession rate. \"lahiri\" uses Lahiri/Chitrapaksha ayanamsa, matching most traditional Vedic software. Defaults to \"kp-newcomb\"."
+						"description": "Ayanamsa system for sidereal conversion. \"kp-newcomb\" uses the KP-Newcomb dynamic formula, the most common choice for KP astrology. \"kp-old\" uses the Krishnamurti original table from KP Reader-1 with constant precession rate. \"lahiri\" uses Lahiri/Chitrapaksha ayanamsa, matching most traditional Vedic software. \"raman\" uses the B.V. Raman ayanamsa from Hindu Predictive Astrology, a recognised traditional school that sits about 1.45 degrees below Lahiri. Defaults to \"kp-newcomb\"."
 					},
 					"nodeType": {
 						"type": "string",
@@ -6751,7 +6867,7 @@
 								},
 								"chestaBala": {
 									"type": "number",
-									"description": "Chesta Bala (Motional Strength) in virupas. Based on planetary motion and retrogression. Retrograde planets score higher. Sun uses Ayana Chesta Bala (declination arc), Moon uses elongation from Sun. Other planets use Sheeghrochcha (mean anomaly) from Surya Siddhanta elements. Range 0 to 60.",
+									"description": "Chesta Bala (Motional Strength) in virupas. Based on planetary motion, so a retrograde graha scores higher because it is closer to Earth and working hardest. The Sun uses its Ayana Bala and the Moon its elongation from the Sun, per BPHS. Mars, Mercury, Jupiter, Venus and Saturn use the Sheeghra Kendra, the arc between the sheeghrochcha and the mean of the true and mean longitudes, with the roles of the mean Sun and the graha swapped for Mercury and Venus. Range 0 to 60.",
 									"example": 26.06
 								},
 								"naisargikaBala": {
@@ -6761,7 +6877,7 @@
 								},
 								"drikBala": {
 									"type": "number",
-									"description": "Drik Bala (Aspectual Strength) in virupas. Strength gained or lost from aspects received by other planets. Benefic aspects (Jupiter, Venus) add strength, malefic aspects (Sun, Mars, Saturn) reduce it. Can be negative when malefic aspects dominate. Uses Sputa Drishti with Vishesha (special) aspects for Mars, Jupiter, and Saturn.",
+									"description": "Drik Bala (Aspectual Strength) in virupas. Strength gained or lost from the aspects a graha receives. Benefic aspects add strength and malefic aspects reduce it, so this value is negative when malefics dominate. Mercury counts as benefic or malefic by the company it keeps in its own sign, decided by count with the nearest graha breaking a tie, and the Moon by its paksha. Uses the graded Sputa Drishti curve of BPHS Ch. 26 with the Vishesha (special) aspects of Mars, Jupiter and Saturn applied at their precise DEGREE ranges rather than by whole sign.",
 									"example": 6.98
 								},
 								"totalVirupas": {
@@ -7201,6 +7317,414 @@
 						"default": "eight",
 						"example": "eight",
 						"description": "Which Chara Karaka scheme to rank. \"eight\" includes Rahu, counting its degree in reverse because it moves retrograde, and returns eight offices including Pitrikaraka. \"seven\" ranks only the seven classical grahas and drops Pitrikaraka. Ketu is excluded from both, since it always mirrors the Rahu degree exactly. The two schemes can produce a different Atmakaraka for the same chart, so select the one your reference software uses. Defaults to \"eight\"."
+					}
+				},
+				"required": [
+					"date",
+					"time",
+					"latitude",
+					"longitude"
+				]
+			},
+			"BhavaBalaResponse": {
+				"type": "object",
+				"properties": {
+					"houseSystem": {
+						"type": "string",
+						"description": "House frame the bhavas were built on. Always sripati: Bhava Bala is defined on unequal bhava madhyas, not on whole signs.",
+						"example": "sripati"
+					},
+					"bhavas": {
+						"type": "array",
+						"items": {
+							"type": "object",
+							"properties": {
+								"house": {
+									"type": "number",
+									"description": "Bhava (house) number 1 to 12, counted from the Lagna. House 1 is the Ascendant bhava, house 10 the career bhava, house 7 the partnership bhava.",
+									"example": 1
+								},
+								"rashi": {
+									"type": "string",
+									"description": "Zodiac sign holding this bhavas madhya (mid-cusp). Under the Sripati house system the bhavas are unequal, so this is NOT always the nth sign from the Lagna, and two bhavas can share a sign while another sign holds none.",
+									"example": "Libra"
+								},
+								"madhya": {
+									"type": "number",
+									"description": "Bhava madhya (mid-cusp) longitude in degrees, sidereal Lahiri. The point every strength component below is measured at. Bhavas 1, 4, 7 and 10 sit on the Ascendant, IC, Descendant and Midheaven; the rest trisect the quadrants between them.",
+									"example": 196.4541
+								},
+								"lord": {
+									"type": "string",
+									"description": "Bhavadhipati (house lord), the ruler of the sign holding the madhya. Its Shadbala is what this bhava inherits, so a house ruled by a strong graha starts strong.",
+									"example": "Venus"
+								},
+								"bhavadhipatiBala": {
+									"type": "number",
+									"description": "Bhavadhipati Bala in virupas: the total Shadbala of the house lord, carried across unchanged. The dominant term of the three, typically 250 to 650. Two bhavas ruled by the same graha therefore share this value exactly.",
+									"example": 548.54
+								},
+								"digBala": {
+									"type": "number",
+									"description": "Bhava Digbala (directional strength) in virupas, 0 to 60 in steps of 10. Each rashi class is strongest in one cardinal bhava (human signs at the Lagna, quadruped at the 10th, watery at the 4th, Scorpio at the 7th) and loses 10 virupas per bhava of separation, reaching 0 at the seventh from it.",
+									"example": 60
+								},
+								"drishtiBala": {
+									"type": "number",
+									"description": "Bhava Drishti Bala (aspectual strength) in virupas, computed on the bhava madhya exactly as Graha Drik Bala is computed on a graha. Benefic aspects add and malefic aspects subtract, so this term is often negative.",
+									"example": -7.7
+								},
+								"totalVirupas": {
+									"type": "number",
+									"description": "Total Bhava Bala in virupas, the sum of the three components above. Use it to compare houses within one chart: the strongest bhavas are the life areas that unfold with least resistance.",
+									"example": 600.84
+								},
+								"totalRupas": {
+									"type": "number",
+									"description": "Total Bhava Bala in rupas (totalVirupas / 60). 1 rupa equals 60 virupas. Rupas are the conventional unit in classical tables.",
+									"example": 10.01
+								},
+								"rank": {
+									"type": "number",
+									"description": "Strength rank among the twelve bhavas, 1 = strongest. Ranked on totalVirupas, so it never disagrees with the published totals.",
+									"example": 1
+								}
+							},
+							"required": [
+								"house",
+								"rashi",
+								"madhya",
+								"lord",
+								"bhavadhipatiBala",
+								"digBala",
+								"drishtiBala",
+								"totalVirupas",
+								"totalRupas",
+								"rank"
+							],
+							"description": "Bhava Bala for a single house, with the three classical components, the madhya it was measured at, and its rank."
+						},
+						"description": "Bhava Bala for all twelve houses in order, house 1 first. Each entry carries its own components so a client can explain a score rather than just display it."
+					},
+					"houseThemes": {
+						"type": "object",
+						"additionalProperties": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"example": [
+								"wealth",
+								"family",
+								"speech",
+								"possessions",
+								"food"
+							],
+							"description": "Short keyword significations of the bhava this key numbers, localized by the lang query parameter and drawn from the vocabulary the focus parameter selected. Join it against any house number elsewhere in the response to render readable text."
+						},
+						"example": {
+							"2": [
+								"wealth",
+								"family",
+								"speech",
+								"possessions",
+								"food"
+							]
+						},
+						"description": "Significations of each of the twelve bhavas (houses), keyed by house number 1 to 12, as short keywords. Bhava 1 is the Lagna (self, body, vitality), 2 wealth and speech, 4 home and mother, 7 marriage and partnership, 10 career and status, 11 gains. Use it to label the house numbers returned elsewhere in the response: a Vimshottari dasha period signifying houses 2, 7 and 8, or a KP significator carrying houses 11 and 6, becomes readable text without a separate lookup call. Returned once per response rather than repeated per period, and localized by the lang query parameter alongside every other interpretation field."
+					},
+					"focus": {
+						"type": "string",
+						"enum": [
+							"general",
+							"finance"
+						],
+						"example": "general",
+						"description": "Which signification vocabulary produced the houseThemes keywords in this response, echoing the focus query parameter. Always present, and \"general\" when the parameter was omitted. Read it to label a rendered house legend, or to tell two cached responses apart when only one asked for the finance lens."
+					}
+				},
+				"required": [
+					"houseSystem",
+					"bhavas",
+					"houseThemes",
+					"focus"
+				],
+				"description": "Complete Bhava Bala (house strength) analysis per Brihat Parashara Hora Shastra, with a localized house-meaning legend."
+			},
+			"BhavaBalaRequest": {
+				"type": "object",
+				"properties": {
+					"date": {
+						"type": "string",
+						"format": "date",
+						"example": "1990-07-04",
+						"description": "Birth date in YYYY-MM-DD format. Date determines planetary positions and nakshatra calculations for Vedic kundli (janam patri). Accurate birth date is essential for dashas, yoga calculations, and divisional charts (vargas)."
+					},
+					"time": {
+						"type": "string",
+						"format": "time",
+						"example": "10:12:00",
+						"description": "Birth time in 24-hour HH:MM:SS format. Time is CRITICAL for Lagna (Ascendant) calculation and house divisions. It changes every two hours roughly. Even minutes matter for accurate nakshatra pada and divisional chart (D9, D10) calculations. Without exact time, Lagna and house-based predictions will be incorrect."
+					},
+					"latitude": {
+						"type": "number",
+						"minimum": -90,
+						"maximum": 90,
+						"example": 28.6139,
+						"description": "Birth location latitude in decimal degrees. Location determines local sidereal time for Lagna calculation and affects bhava (house) cusps. Example: Delhi 28.6139, Mumbai 19.0760, Kathmandu 27.7172."
+					},
+					"longitude": {
+						"type": "number",
+						"minimum": -180,
+						"maximum": 180,
+						"example": 77.209,
+						"description": "Birth location longitude in decimal degrees. Affects local time calculations and ayanamsha adjustments. Example: Delhi 77.2090, Mumbai 72.8777, Kathmandu 85.3240."
+					},
+					"timezone": {
+						"anyOf": [
+							{
+								"type": "number",
+								"minimum": -14,
+								"maximum": 14
+							},
+							{
+								"type": "string"
+							}
+						],
+						"default": 5.5,
+						"description": "Timezone: IANA name (e.g. \"America/New_York\", \"Europe/London\") OR decimal hours from UTC (e.g. -5 for EST, 1 for CET). IANA strings are resolved to the DST-correct offset for the given date, so you can pass `cities[0].timezone` from /location/search directly. Defaults to 5.5.",
+						"example": 5.5
+					}
+				},
+				"required": [
+					"date",
+					"time",
+					"latitude",
+					"longitude"
+				]
+			},
+			"BhavChalitResponse": {
+				"type": "object",
+				"properties": {
+					"houseSystem": {
+						"type": "string",
+						"description": "House frame used to build the bhavas. Always sripati for the Chalit chart.",
+						"example": "sripati"
+					},
+					"ascendant": {
+						"type": "number",
+						"description": "Sidereal Lahiri Ascendant in degrees. The madhya of bhava 1.",
+						"example": 196.4541
+					},
+					"midheaven": {
+						"type": "number",
+						"description": "Sidereal Lahiri Midheaven in degrees. The madhya of bhava 10.",
+						"example": 106.9045
+					},
+					"bhavas": {
+						"type": "array",
+						"items": {
+							"type": "object",
+							"properties": {
+								"house": {
+									"type": "number",
+									"description": "Bhava number 1 to 12.",
+									"example": 1
+								},
+								"start": {
+									"type": "number",
+									"description": "Bhava sandhi (junction) opening this bhava, in degrees. The midpoint between this madhya and the previous one. A graha exactly on a sandhi belongs to the bhava it opens.",
+									"example": 181.4593
+								},
+								"madhya": {
+									"type": "number",
+									"description": "Bhava madhya (mid-cusp) in degrees. Bhavas 1, 4, 7 and 10 sit exactly on the Ascendant, IC, Descendant and Midheaven; the other eight trisect the quadrant arcs between them.",
+									"example": 196.4541
+								},
+								"end": {
+									"type": "number",
+									"description": "Bhava sandhi closing this bhava. Identical to the next bhavas start, so the twelve bhavas tile the zodiac with no gap.",
+									"example": 211.5292
+								},
+								"span": {
+									"type": "number",
+									"description": "Width of the bhava in degrees. Rarely 30: the Ascendant and Midheaven are only 90 degrees apart by coincidence of latitude and epoch, so quadrants stretch and squeeze and the bhavas with them.",
+									"example": 30.07
+								},
+								"rashi": {
+									"type": "string",
+									"description": "Sign holding the madhya. Because bhavas are unequal, two bhavas can share a sign while another sign holds no madhya at all.",
+									"example": "Libra"
+								},
+								"grahas": {
+									"type": "array",
+									"items": {
+										"type": "string"
+									},
+									"description": "Grahas falling inside this bhava. Empty when the bhava is unoccupied.",
+									"example": [
+										"Moon"
+									]
+								}
+							},
+							"required": [
+								"house",
+								"start",
+								"madhya",
+								"end",
+								"span",
+								"rashi",
+								"grahas"
+							],
+							"description": "One Sripati bhava with its boundaries and occupants."
+						},
+						"description": "The twelve Sripati bhavas in order with their boundaries and occupants."
+					},
+					"grahas": {
+						"type": "array",
+						"items": {
+							"type": "object",
+							"properties": {
+								"graha": {
+									"type": "string",
+									"description": "Graha name. All nine are placed, the seven classical grahas plus the lunar nodes Rahu and Ketu.",
+									"example": "Sun"
+								},
+								"longitude": {
+									"type": "number",
+									"description": "Sidereal Lahiri longitude in degrees.",
+									"example": 35.9692
+								},
+								"rashi": {
+									"type": "string",
+									"description": "Zodiac sign the graha occupies. Identical to the Rashi (D1) chart.",
+									"example": "Taurus"
+								},
+								"bhava": {
+									"type": "number",
+									"description": "Bhava the graha falls in under the unequal Sripati cusps. This is the Bhav Chalit placement and the reason the chart exists.",
+									"example": 5
+								},
+								"rashiHouse": {
+									"type": "number",
+									"description": "House the same graha occupies in the whole-sign Rashi chart, counted from the Lagna sign. Returned alongside bhava so the difference is visible without a second request.",
+									"example": 6
+								},
+								"moved": {
+									"type": "boolean",
+									"description": "True when bhava and rashiHouse disagree, i.e. the graha changes house between the Rashi chart and the Chalit chart. These are the placements a practitioner opens this chart to check.",
+									"example": true
+								}
+							},
+							"required": [
+								"graha",
+								"longitude",
+								"rashi",
+								"bhava",
+								"rashiHouse",
+								"moved"
+							],
+							"description": "One graha placed in both frames, with a flag marking the placements that move."
+						},
+						"description": "All nine grahas with both their Chalit bhava and their whole-sign Rashi house, plus a moved flag."
+					},
+					"movedCount": {
+						"type": "number",
+						"description": "How many of the nine grahas change house between the Rashi chart and the Chalit chart. Zero is a perfectly normal result and means the two charts agree for this nativity.",
+						"example": 3
+					},
+					"houseThemes": {
+						"type": "object",
+						"additionalProperties": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							},
+							"example": [
+								"wealth",
+								"family",
+								"speech",
+								"possessions",
+								"food"
+							],
+							"description": "Short keyword significations of the bhava this key numbers, localized by the lang query parameter and drawn from the vocabulary the focus parameter selected. Join it against any house number elsewhere in the response to render readable text."
+						},
+						"example": {
+							"2": [
+								"wealth",
+								"family",
+								"speech",
+								"possessions",
+								"food"
+							]
+						},
+						"description": "Significations of each of the twelve bhavas (houses), keyed by house number 1 to 12, as short keywords. Bhava 1 is the Lagna (self, body, vitality), 2 wealth and speech, 4 home and mother, 7 marriage and partnership, 10 career and status, 11 gains. Use it to label the house numbers returned elsewhere in the response: a Vimshottari dasha period signifying houses 2, 7 and 8, or a KP significator carrying houses 11 and 6, becomes readable text without a separate lookup call. Returned once per response rather than repeated per period, and localized by the lang query parameter alongside every other interpretation field."
+					},
+					"focus": {
+						"type": "string",
+						"enum": [
+							"general",
+							"finance"
+						],
+						"example": "general",
+						"description": "Which signification vocabulary produced the houseThemes keywords in this response, echoing the focus query parameter. Always present, and \"general\" when the parameter was omitted. Read it to label a rendered house legend, or to tell two cached responses apart when only one asked for the finance lens."
+					}
+				},
+				"required": [
+					"houseSystem",
+					"ascendant",
+					"midheaven",
+					"bhavas",
+					"grahas",
+					"movedCount",
+					"houseThemes",
+					"focus"
+				],
+				"description": "Bhav Chalit (Chalit Kundli): every graha placed by unequal Sripati bhava, with the whole-sign placement beside it for comparison."
+			},
+			"BhavChalitRequest": {
+				"type": "object",
+				"properties": {
+					"date": {
+						"type": "string",
+						"format": "date",
+						"example": "1990-07-04",
+						"description": "Birth date in YYYY-MM-DD format. Date determines planetary positions and nakshatra calculations for Vedic kundli (janam patri). Accurate birth date is essential for dashas, yoga calculations, and divisional charts (vargas)."
+					},
+					"time": {
+						"type": "string",
+						"format": "time",
+						"example": "10:12:00",
+						"description": "Birth time in 24-hour HH:MM:SS format. Time is CRITICAL for Lagna (Ascendant) calculation and house divisions. It changes every two hours roughly. Even minutes matter for accurate nakshatra pada and divisional chart (D9, D10) calculations. Without exact time, Lagna and house-based predictions will be incorrect."
+					},
+					"latitude": {
+						"type": "number",
+						"minimum": -90,
+						"maximum": 90,
+						"example": 28.6139,
+						"description": "Birth location latitude in decimal degrees. Location determines local sidereal time for Lagna calculation and affects bhava (house) cusps. Example: Delhi 28.6139, Mumbai 19.0760, Kathmandu 27.7172."
+					},
+					"longitude": {
+						"type": "number",
+						"minimum": -180,
+						"maximum": 180,
+						"example": 77.209,
+						"description": "Birth location longitude in decimal degrees. Affects local time calculations and ayanamsha adjustments. Example: Delhi 77.2090, Mumbai 72.8777, Kathmandu 85.3240."
+					},
+					"timezone": {
+						"anyOf": [
+							{
+								"type": "number",
+								"minimum": -14,
+								"maximum": 14
+							},
+							{
+								"type": "string"
+							}
+						],
+						"default": 5.5,
+						"description": "Timezone: IANA name (e.g. \"America/New_York\", \"Europe/London\") OR decimal hours from UTC (e.g. -5 for EST, 1 for CET). IANA strings are resolved to the DST-correct offset for the given date, so you can pass `cities[0].timezone` from /location/search directly. Defaults to 5.5.",
+						"example": 5.5
 					}
 				},
 				"required": [
@@ -9008,11 +9532,12 @@
 											"kp-newcomb",
 											"kp-old",
 											"lahiri",
+											"raman",
 											"custom"
 										],
 										"default": "lahiri",
 										"example": "lahiri",
-										"description": "Ayanamsa system used to place the birth Moon in its nakshatra, which sets every dasha start and end date. \"lahiri\" uses Lahiri/Chitrapaksha, the traditional Vedic standard, and is the default. \"kp-newcomb\" uses the KP-Newcomb dynamic formula, matching Krishnamurti Paddhati software. \"kp-old\" uses the Krishnamurti original table from KP Reader-1. \"custom\" takes your own value in degrees via ayanamsaValue, for reconciling exactly against a specific reference program. Switching frames shifts every dasha boundary by weeks, so pick the one your reference software uses."
+										"description": "Ayanamsa system used to place the birth Moon in its nakshatra, which sets every dasha start and end date. \"lahiri\" uses Lahiri/Chitrapaksha, the traditional Vedic standard, and is the default. \"kp-newcomb\" uses the KP-Newcomb dynamic formula, matching Krishnamurti Paddhati software. \"kp-old\" uses the Krishnamurti original table from KP Reader-1. \"raman\" uses the B.V. Raman ayanamsa, the second frame traditional Indian software commonly offers beside Lahiri. \"custom\" takes your own value in degrees via ayanamsaValue, for reconciling exactly against a specific reference program. Switching frames shifts every dasha boundary by weeks, so pick the one your reference software uses."
 									},
 									"ayanamsaValue": {
 										"type": "number",
@@ -9060,7 +9585,15 @@
 												"type": "array",
 												"items": {
 													"type": "string"
-												}
+												},
+												"example": [
+													"wealth",
+													"family",
+													"speech",
+													"possessions",
+													"food"
+												],
+												"description": "Short keyword significations of the bhava this key numbers, localized by the lang query parameter and drawn from the vocabulary the focus parameter selected. Join it against any house number elsewhere in the response to render readable text."
 											},
 											"example": {
 												"2": [
@@ -9126,6 +9659,7 @@
 												"kp-newcomb",
 												"kp-old",
 												"lahiri",
+												"raman",
 												"custom"
 											],
 											"example": "lahiri",
@@ -10873,11 +11407,12 @@
 											"kp-newcomb",
 											"kp-old",
 											"lahiri",
+											"raman",
 											"custom"
 										],
 										"default": "lahiri",
 										"example": "lahiri",
-										"description": "Ayanamsa system used to place the birth Moon in its nakshatra, which sets every dasha start and end date. \"lahiri\" uses Lahiri/Chitrapaksha, the traditional Vedic standard, and is the default. \"kp-newcomb\" uses the KP-Newcomb dynamic formula, matching Krishnamurti Paddhati software. \"kp-old\" uses the Krishnamurti original table from KP Reader-1. \"custom\" takes your own value in degrees via ayanamsaValue, for reconciling exactly against a specific reference program. Switching frames shifts every dasha boundary by weeks, so pick the one your reference software uses."
+										"description": "Ayanamsa system used to place the birth Moon in its nakshatra, which sets every dasha start and end date. \"lahiri\" uses Lahiri/Chitrapaksha, the traditional Vedic standard, and is the default. \"kp-newcomb\" uses the KP-Newcomb dynamic formula, matching Krishnamurti Paddhati software. \"kp-old\" uses the Krishnamurti original table from KP Reader-1. \"raman\" uses the B.V. Raman ayanamsa, the second frame traditional Indian software commonly offers beside Lahiri. \"custom\" takes your own value in degrees via ayanamsaValue, for reconciling exactly against a specific reference program. Switching frames shifts every dasha boundary by weeks, so pick the one your reference software uses."
 									},
 									"ayanamsaValue": {
 										"type": "number",
@@ -10925,7 +11460,15 @@
 												"type": "array",
 												"items": {
 													"type": "string"
-												}
+												},
+												"example": [
+													"wealth",
+													"family",
+													"speech",
+													"possessions",
+													"food"
+												],
+												"description": "Short keyword significations of the bhava this key numbers, localized by the lang query parameter and drawn from the vocabulary the focus parameter selected. Join it against any house number elsewhere in the response to render readable text."
 											},
 											"example": {
 												"2": [
@@ -10991,6 +11534,7 @@
 												"kp-newcomb",
 												"kp-old",
 												"lahiri",
+												"raman",
 												"custom"
 											],
 											"example": "lahiri",
@@ -11597,11 +12141,12 @@
 											"kp-newcomb",
 											"kp-old",
 											"lahiri",
+											"raman",
 											"custom"
 										],
 										"default": "lahiri",
 										"example": "lahiri",
-										"description": "Ayanamsa system used to place the birth Moon in its nakshatra, which sets every dasha start and end date. \"lahiri\" uses Lahiri/Chitrapaksha, the traditional Vedic standard, and is the default. \"kp-newcomb\" uses the KP-Newcomb dynamic formula, matching Krishnamurti Paddhati software. \"kp-old\" uses the Krishnamurti original table from KP Reader-1. \"custom\" takes your own value in degrees via ayanamsaValue, for reconciling exactly against a specific reference program. Switching frames shifts every dasha boundary by weeks, so pick the one your reference software uses."
+										"description": "Ayanamsa system used to place the birth Moon in its nakshatra, which sets every dasha start and end date. \"lahiri\" uses Lahiri/Chitrapaksha, the traditional Vedic standard, and is the default. \"kp-newcomb\" uses the KP-Newcomb dynamic formula, matching Krishnamurti Paddhati software. \"kp-old\" uses the Krishnamurti original table from KP Reader-1. \"raman\" uses the B.V. Raman ayanamsa, the second frame traditional Indian software commonly offers beside Lahiri. \"custom\" takes your own value in degrees via ayanamsaValue, for reconciling exactly against a specific reference program. Switching frames shifts every dasha boundary by weeks, so pick the one your reference software uses."
 									},
 									"ayanamsaValue": {
 										"type": "number",
@@ -11649,7 +12194,15 @@
 												"type": "array",
 												"items": {
 													"type": "string"
-												}
+												},
+												"example": [
+													"wealth",
+													"family",
+													"speech",
+													"possessions",
+													"food"
+												],
+												"description": "Short keyword significations of the bhava this key numbers, localized by the lang query parameter and drawn from the vocabulary the focus parameter selected. Join it against any house number elsewhere in the response to render readable text."
 											},
 											"example": {
 												"2": [
@@ -11703,6 +12256,7 @@
 												"kp-newcomb",
 												"kp-old",
 												"lahiri",
+												"raman",
 												"custom"
 											],
 											"example": "lahiri",
@@ -12518,11 +13072,12 @@
 											"kp-newcomb",
 											"kp-old",
 											"lahiri",
+											"raman",
 											"custom"
 										],
 										"default": "lahiri",
 										"example": "lahiri",
-										"description": "Ayanamsa system used to place the birth Moon in its nakshatra, which sets every dasha start and end date. \"lahiri\" uses Lahiri/Chitrapaksha, the traditional Vedic standard, and is the default. \"kp-newcomb\" uses the KP-Newcomb dynamic formula, matching Krishnamurti Paddhati software. \"kp-old\" uses the Krishnamurti original table from KP Reader-1. \"custom\" takes your own value in degrees via ayanamsaValue, for reconciling exactly against a specific reference program. Switching frames shifts every dasha boundary by weeks, so pick the one your reference software uses."
+										"description": "Ayanamsa system used to place the birth Moon in its nakshatra, which sets every dasha start and end date. \"lahiri\" uses Lahiri/Chitrapaksha, the traditional Vedic standard, and is the default. \"kp-newcomb\" uses the KP-Newcomb dynamic formula, matching Krishnamurti Paddhati software. \"kp-old\" uses the Krishnamurti original table from KP Reader-1. \"raman\" uses the B.V. Raman ayanamsa, the second frame traditional Indian software commonly offers beside Lahiri. \"custom\" takes your own value in degrees via ayanamsaValue, for reconciling exactly against a specific reference program. Switching frames shifts every dasha boundary by weeks, so pick the one your reference software uses."
 									},
 									"ayanamsaValue": {
 										"type": "number",
@@ -12570,7 +13125,15 @@
 												"type": "array",
 												"items": {
 													"type": "string"
-												}
+												},
+												"example": [
+													"wealth",
+													"family",
+													"speech",
+													"possessions",
+													"food"
+												],
+												"description": "Short keyword significations of the bhava this key numbers, localized by the lang query parameter and drawn from the vocabulary the focus parameter selected. Join it against any house number elsewhere in the response to render readable text."
 											},
 											"example": {
 												"2": [
@@ -12640,6 +13203,7 @@
 												"kp-newcomb",
 												"kp-old",
 												"lahiri",
+												"raman",
 												"custom"
 											],
 											"example": "lahiri",
@@ -13512,11 +14076,12 @@
 											"kp-newcomb",
 											"kp-old",
 											"lahiri",
+											"raman",
 											"custom"
 										],
 										"default": "lahiri",
 										"example": "lahiri",
-										"description": "Ayanamsa system used to place the birth Moon in its nakshatra, which sets every dasha start and end date. \"lahiri\" uses Lahiri/Chitrapaksha, the traditional Vedic standard, and is the default. \"kp-newcomb\" uses the KP-Newcomb dynamic formula, matching Krishnamurti Paddhati software. \"kp-old\" uses the Krishnamurti original table from KP Reader-1. \"custom\" takes your own value in degrees via ayanamsaValue, for reconciling exactly against a specific reference program. Switching frames shifts every dasha boundary by weeks, so pick the one your reference software uses."
+										"description": "Ayanamsa system used to place the birth Moon in its nakshatra, which sets every dasha start and end date. \"lahiri\" uses Lahiri/Chitrapaksha, the traditional Vedic standard, and is the default. \"kp-newcomb\" uses the KP-Newcomb dynamic formula, matching Krishnamurti Paddhati software. \"kp-old\" uses the Krishnamurti original table from KP Reader-1. \"raman\" uses the B.V. Raman ayanamsa, the second frame traditional Indian software commonly offers beside Lahiri. \"custom\" takes your own value in degrees via ayanamsaValue, for reconciling exactly against a specific reference program. Switching frames shifts every dasha boundary by weeks, so pick the one your reference software uses."
 									},
 									"ayanamsaValue": {
 										"type": "number",
@@ -13564,7 +14129,15 @@
 												"type": "array",
 												"items": {
 													"type": "string"
-												}
+												},
+												"example": [
+													"wealth",
+													"family",
+													"speech",
+													"possessions",
+													"food"
+												],
+												"description": "Short keyword significations of the bhava this key numbers, localized by the lang query parameter and drawn from the vocabulary the focus parameter selected. Join it against any house number elsewhere in the response to render readable text."
 											},
 											"example": {
 												"2": [
@@ -13650,6 +14223,7 @@
 												"kp-newcomb",
 												"kp-old",
 												"lahiri",
+												"raman",
 												"custom"
 											],
 											"example": "lahiri",
@@ -14579,11 +15153,12 @@
 											"kp-newcomb",
 											"kp-old",
 											"lahiri",
+											"raman",
 											"custom"
 										],
 										"default": "lahiri",
 										"example": "lahiri",
-										"description": "Ayanamsa system used to place the birth Moon in its nakshatra, which sets every dasha start and end date. \"lahiri\" uses Lahiri/Chitrapaksha, the traditional Vedic standard, and is the default. \"kp-newcomb\" uses the KP-Newcomb dynamic formula, matching Krishnamurti Paddhati software. \"kp-old\" uses the Krishnamurti original table from KP Reader-1. \"custom\" takes your own value in degrees via ayanamsaValue, for reconciling exactly against a specific reference program. Switching frames shifts every dasha boundary by weeks, so pick the one your reference software uses."
+										"description": "Ayanamsa system used to place the birth Moon in its nakshatra, which sets every dasha start and end date. \"lahiri\" uses Lahiri/Chitrapaksha, the traditional Vedic standard, and is the default. \"kp-newcomb\" uses the KP-Newcomb dynamic formula, matching Krishnamurti Paddhati software. \"kp-old\" uses the Krishnamurti original table from KP Reader-1. \"raman\" uses the B.V. Raman ayanamsa, the second frame traditional Indian software commonly offers beside Lahiri. \"custom\" takes your own value in degrees via ayanamsaValue, for reconciling exactly against a specific reference program. Switching frames shifts every dasha boundary by weeks, so pick the one your reference software uses."
 									},
 									"ayanamsaValue": {
 										"type": "number",
@@ -14631,7 +15206,15 @@
 												"type": "array",
 												"items": {
 													"type": "string"
-												}
+												},
+												"example": [
+													"wealth",
+													"family",
+													"speech",
+													"possessions",
+													"food"
+												],
+												"description": "Short keyword significations of the bhava this key numbers, localized by the lang query parameter and drawn from the vocabulary the focus parameter selected. Join it against any house number elsewhere in the response to render readable text."
 											},
 											"example": {
 												"2": [
@@ -14733,6 +15316,7 @@
 												"kp-newcomb",
 												"kp-old",
 												"lahiri",
+												"raman",
 												"custom"
 											],
 											"example": "lahiri",
@@ -16106,14 +16690,17 @@
 											"properties": {
 												"latitude": {
 													"type": "number",
+													"example": 28.6139,
 													"description": "Observer latitude used for sunrise/sunset calculation."
 												},
 												"longitude": {
 													"type": "number",
+													"example": 77.209,
 													"description": "Observer longitude used for sunrise/sunset calculation."
 												},
 												"timezone": {
 													"type": "number",
+													"example": 5.5,
 													"description": "Timezone offset from UTC in hours."
 												}
 											},
@@ -16130,7 +16717,12 @@
 												"name": {
 													"type": "string",
 													"example": "Tuesday",
-													"description": "Hindu weekday name. Vara begins at local sunrise, not midnight."
+													"description": "Weekday name in English. Vara begins at local sunrise, not at midnight, so a time before sunrise belongs to the previous vara."
+												},
+												"sanskritName": {
+													"type": "string",
+													"example": "Mangalavara",
+													"description": "Vara name transliterated from Sanskrit: Ravivara, Somavara, Mangalavara, Budhavara, Guruvara, Shukravara, Shanivara. Use this rather than name for a Jyotish-facing reading, since it is the form the classical texts use and it does not change with the lang parameter."
 												},
 												"lord": {
 													"type": "string",
@@ -16140,30 +16732,31 @@
 											},
 											"required": [
 												"name",
+												"sanskritName",
 												"lord"
 											],
 											"description": "Vara (weekday) information based on Hindu sunrise calendar."
 										},
 										"sunrise": {
 											"type": "string",
-											"example": "2026-02-03T01:38:00.000Z",
-											"description": "Local sunrise time in UTC. Marks the start of the Hindu day."
+											"example": "2026-02-03T07:12:00",
+											"description": "Local sunrise in the requested timezone as YYYY-MM-DDTHH:MM:SS, with no zone suffix. Marks the start of the Hindu day."
 										},
 										"sunset": {
 											"type": "string",
-											"example": "2026-02-03T12:30:00.000Z",
-											"description": "Local sunset time in UTC. Marks the transition to night muhurtas."
+											"example": "2026-02-03T18:32:00",
+											"description": "Local sunset in the requested timezone as YYYY-MM-DDTHH:MM:SS, with no zone suffix. Marks the transition to night muhurtas."
 										},
 										"moonrise": {
 											"type": "string",
 											"nullable": true,
-											"example": "2026-02-03T10:15:00.000Z",
+											"example": "2026-02-03T20:03:00",
 											"description": "Moonrise time in the requested timezone. Can be null if Moon does not rise on this date."
 										},
 										"moonset": {
 											"type": "string",
 											"nullable": true,
-											"example": "2026-02-03T22:45:00.000Z",
+											"example": "2026-02-03T08:10:00",
 											"description": "Moonset time in the requested timezone. Can be null if Moon does not set on this date."
 										},
 										"moonSign": {
@@ -16420,11 +17013,13 @@
 												},
 												"start": {
 													"type": "string",
-													"description": "Start time of the current hora in UTC."
+													"example": "2026-02-03T07:08:00",
+													"description": "Start time of the current hora, as local civil time in the requested timezone offset. The first hora of any day begins at local sunrise, so this equals the sunrise field when the hora number is 1."
 												},
 												"end": {
 													"type": "string",
-													"description": "End time of the current hora in UTC."
+													"example": "2026-02-03T08:02:00",
+													"description": "End time of the current hora, as local civil time in the requested timezone offset. Day horas and night horas have different lengths, so a hora is only approximately 60 minutes."
 												}
 											},
 											"required": [
@@ -16440,12 +17035,12 @@
 											"properties": {
 												"start": {
 													"type": "string",
-													"example": "2026-02-03T09:00:00.000Z",
+													"example": "2026-02-03T09:00:00",
 													"description": "Period start time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 												},
 												"end": {
 													"type": "string",
-													"example": "2026-02-03T10:30:00.000Z",
+													"example": "2026-02-03T10:30:00",
 													"description": "Period end time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 												}
 											},
@@ -16460,12 +17055,12 @@
 											"properties": {
 												"start": {
 													"type": "string",
-													"example": "2026-02-03T09:00:00.000Z",
+													"example": "2026-02-03T09:00:00",
 													"description": "Period start time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 												},
 												"end": {
 													"type": "string",
-													"example": "2026-02-03T10:30:00.000Z",
+													"example": "2026-02-03T10:30:00",
 													"description": "Period end time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 												}
 											},
@@ -16480,12 +17075,12 @@
 											"properties": {
 												"start": {
 													"type": "string",
-													"example": "2026-02-03T09:00:00.000Z",
+													"example": "2026-02-03T09:00:00",
 													"description": "Period start time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 												},
 												"end": {
 													"type": "string",
-													"example": "2026-02-03T10:30:00.000Z",
+													"example": "2026-02-03T10:30:00",
 													"description": "Period end time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 												}
 											},
@@ -16501,12 +17096,12 @@
 											"properties": {
 												"start": {
 													"type": "string",
-													"example": "2026-02-03T09:00:00.000Z",
+													"example": "2026-02-03T09:00:00",
 													"description": "Period start time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 												},
 												"end": {
 													"type": "string",
-													"example": "2026-02-03T10:30:00.000Z",
+													"example": "2026-02-03T10:30:00",
 													"description": "Period end time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 												}
 											},
@@ -16521,12 +17116,12 @@
 											"properties": {
 												"start": {
 													"type": "string",
-													"example": "2026-02-03T09:00:00.000Z",
+													"example": "2026-02-03T09:00:00",
 													"description": "Period start time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 												},
 												"end": {
 													"type": "string",
-													"example": "2026-02-03T10:30:00.000Z",
+													"example": "2026-02-03T10:30:00",
 													"description": "Period end time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 												}
 											},
@@ -16541,12 +17136,12 @@
 											"properties": {
 												"start": {
 													"type": "string",
-													"example": "2026-02-03T09:00:00.000Z",
+													"example": "2026-02-03T09:00:00",
 													"description": "Period start time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 												},
 												"end": {
 													"type": "string",
-													"example": "2026-02-03T10:30:00.000Z",
+													"example": "2026-02-03T10:30:00",
 													"description": "Period end time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 												}
 											},
@@ -16561,12 +17156,12 @@
 											"properties": {
 												"start": {
 													"type": "string",
-													"example": "2026-02-03T09:00:00.000Z",
+													"example": "2026-02-03T09:00:00",
 													"description": "Period start time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 												},
 												"end": {
 													"type": "string",
-													"example": "2026-02-03T10:30:00.000Z",
+													"example": "2026-02-03T10:30:00",
 													"description": "Period end time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 												}
 											},
@@ -16582,12 +17177,12 @@
 											"properties": {
 												"start": {
 													"type": "string",
-													"example": "2026-02-03T09:00:00.000Z",
+													"example": "2026-02-03T09:00:00",
 													"description": "Period start time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 												},
 												"end": {
 													"type": "string",
-													"example": "2026-02-03T10:30:00.000Z",
+													"example": "2026-02-03T10:30:00",
 													"description": "Period end time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 												}
 											},
@@ -16603,12 +17198,12 @@
 											"properties": {
 												"start": {
 													"type": "string",
-													"example": "2026-02-03T09:00:00.000Z",
+													"example": "2026-02-03T09:00:00",
 													"description": "Period start time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 												},
 												"end": {
 													"type": "string",
-													"example": "2026-02-03T10:30:00.000Z",
+													"example": "2026-02-03T10:30:00",
 													"description": "Period end time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 												}
 											},
@@ -16624,12 +17219,12 @@
 											"properties": {
 												"start": {
 													"type": "string",
-													"example": "2026-02-03T09:00:00.000Z",
+													"example": "2026-02-03T09:00:00",
 													"description": "Period start time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 												},
 												"end": {
 													"type": "string",
-													"example": "2026-02-03T10:30:00.000Z",
+													"example": "2026-02-03T10:30:00",
 													"description": "Period end time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 												}
 											},
@@ -16646,12 +17241,12 @@
 												"properties": {
 													"start": {
 														"type": "string",
-														"example": "2026-02-03T09:00:00.000Z",
+														"example": "2026-02-03T09:00:00",
 														"description": "Period start time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 													},
 													"end": {
 														"type": "string",
-														"example": "2026-02-03T10:30:00.000Z",
+														"example": "2026-02-03T10:30:00",
 														"description": "Period end time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 													}
 												},
@@ -16669,12 +17264,12 @@
 												"properties": {
 													"start": {
 														"type": "string",
-														"example": "2026-02-03T09:00:00.000Z",
+														"example": "2026-02-03T09:00:00",
 														"description": "Period start time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 													},
 													"end": {
 														"type": "string",
-														"example": "2026-02-03T10:30:00.000Z",
+														"example": "2026-02-03T10:30:00",
 														"description": "Period end time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 													}
 												},
@@ -16692,12 +17287,12 @@
 												"properties": {
 													"start": {
 														"type": "string",
-														"example": "2026-02-03T09:00:00.000Z",
+														"example": "2026-02-03T09:00:00",
 														"description": "Period start time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 													},
 													"end": {
 														"type": "string",
-														"example": "2026-02-03T10:30:00.000Z",
+														"example": "2026-02-03T10:30:00",
 														"description": "Period end time in ISO 8601 format. Timezone-adjusted based on the input timezone offset."
 													}
 												},
@@ -16845,7 +17440,7 @@
 													"properties": {
 														"endsAt": {
 															"type": "string",
-															"example": "2026-02-03T14:53:00.000Z",
+															"example": "2026-02-03T14:53:00",
 															"description": "ISO 8601 UTC time when the current tithi ends. Precise to ~1 minute via binary search."
 														},
 														"next": {
@@ -16865,7 +17460,7 @@
 													"properties": {
 														"endsAt": {
 															"type": "string",
-															"example": "2026-02-03T10:15:00.000Z",
+															"example": "2026-02-03T10:15:00",
 															"description": "ISO 8601 UTC time when the current yoga ends."
 														},
 														"next": {
@@ -16885,7 +17480,7 @@
 													"properties": {
 														"endsAt": {
 															"type": "string",
-															"example": "2026-02-03T08:30:00.000Z",
+															"example": "2026-02-03T08:30:00",
 															"description": "ISO 8601 UTC time when the current karana ends."
 														},
 														"next": {
@@ -16905,7 +17500,7 @@
 													"properties": {
 														"endsAt": {
 															"type": "string",
-															"example": "2026-02-03T16:22:00.000Z",
+															"example": "2026-02-03T16:22:00",
 															"description": "ISO 8601 UTC time when the Moon leaves the current nakshatra."
 														},
 														"next": {
@@ -16936,7 +17531,7 @@
 														},
 														"changesAt": {
 															"type": "string",
-															"example": "2026-02-04T01:11:00.000Z",
+															"example": "2026-02-04T01:11:00",
 															"description": "ISO 8601 UTC time when Moon enters the next rashi. Moon changes sign approximately every 2.25 days."
 														},
 														"next": {
@@ -17284,7 +17879,8 @@
 									"properties": {
 										"date": {
 											"type": "string",
-											"example": "2026-02-03"
+											"example": "2026-02-03",
+											"description": "Calendar date the choghadiya muhurta table was computed for, YYYY-MM-DD, echoed back from the request. The day periods run from that date sunrise to its sunset, and the night periods run on to the next sunrise."
 										},
 										"dayChoghadiya": {
 											"type": "array",
@@ -17321,12 +17917,12 @@
 													},
 													"start": {
 														"type": "string",
-														"example": "2026-02-03T01:10:00.000Z",
+														"example": "2026-02-03T01:10:00",
 														"description": "Period start time in ISO 8601 format. Timezone-adjusted based on input timezone offset."
 													},
 													"end": {
 														"type": "string",
-														"example": "2026-02-03T02:30:00.000Z",
+														"example": "2026-02-03T02:30:00",
 														"description": "Period end time in ISO 8601 format. Each Choghadiya period is one-eighth of the day or night duration."
 													}
 												},
@@ -17375,12 +17971,12 @@
 													},
 													"start": {
 														"type": "string",
-														"example": "2026-02-03T01:10:00.000Z",
+														"example": "2026-02-03T01:10:00",
 														"description": "Period start time in ISO 8601 format. Timezone-adjusted based on input timezone offset."
 													},
 													"end": {
 														"type": "string",
-														"example": "2026-02-03T02:30:00.000Z",
+														"example": "2026-02-03T02:30:00",
 														"description": "Period end time in ISO 8601 format. Each Choghadiya period is one-eighth of the day or night duration."
 													}
 												},
@@ -17706,12 +18302,12 @@
 													},
 													"start": {
 														"type": "string",
-														"example": "2026-02-03T01:10:00.000Z",
+														"example": "2026-02-03T01:10:00",
 														"description": "Start time of the hora period in ISO 8601 format."
 													},
 													"end": {
 														"type": "string",
-														"example": "2026-02-03T02:05:00.000Z",
+														"example": "2026-02-03T02:05:00",
 														"description": "End time of the hora period in ISO 8601 format."
 													}
 												},
@@ -17741,12 +18337,12 @@
 													},
 													"start": {
 														"type": "string",
-														"example": "2026-02-03T01:10:00.000Z",
+														"example": "2026-02-03T01:10:00",
 														"description": "Start time of the hora period in ISO 8601 format."
 													},
 													"end": {
 														"type": "string",
-														"example": "2026-02-03T02:05:00.000Z",
+														"example": "2026-02-03T02:05:00",
 														"description": "End time of the hora period in ISO 8601 format."
 													}
 												},
@@ -21409,11 +22005,12 @@
 										"enum": [
 											"kp-newcomb",
 											"kp-old",
-											"lahiri"
+											"lahiri",
+											"raman"
 										],
 										"default": "kp-newcomb",
 										"example": "kp-newcomb",
-										"description": "Ayanamsa system for sidereal conversion. \"kp-newcomb\" uses the KP-Newcomb dynamic formula, the most common choice for KP astrology. \"kp-old\" uses the Krishnamurti original table from KP Reader-1 with constant precession rate. \"lahiri\" uses Lahiri/Chitrapaksha ayanamsa, matching most traditional Vedic software. Defaults to \"kp-newcomb\"."
+										"description": "Ayanamsa system for sidereal conversion. \"kp-newcomb\" uses the KP-Newcomb dynamic formula, the most common choice for KP astrology. \"kp-old\" uses the Krishnamurti original table from KP Reader-1 with constant precession rate. \"lahiri\" uses Lahiri/Chitrapaksha ayanamsa, matching most traditional Vedic software. \"raman\" uses the B.V. Raman ayanamsa from Hindu Predictive Astrology, a recognised traditional school that sits about 1.45 degrees below Lahiri. Defaults to \"kp-newcomb\"."
 									},
 									"nodeType": {
 										"type": "string",
@@ -23707,11 +24304,13 @@
 									"properties": {
 										"birthDatetime": {
 											"type": "string",
-											"description": "Birth datetime used for the natal chart (UTC ISO 8601)."
+											"example": "1990-07-04T10:12:00",
+											"description": "Birth datetime used for the natal chart, echoed as the local civil date and time supplied in the request (YYYY-MM-DDTHH:MM:SS). Combine it with the timezone field to recover the UTC instant."
 										},
 										"transitDatetime": {
 											"type": "string",
-											"description": "Transit datetime being analyzed (UTC ISO 8601)."
+											"example": "2026-02-03T12:00:00",
+											"description": "Transit datetime being analyzed, echoed as the local civil date and time supplied in the request (YYYY-MM-DDTHH:MM:SS). Gochar positions are computed for this moment and overlaid on the natal chart."
 										},
 										"natalPlanets": {
 											"type": "array",
@@ -24548,7 +25147,8 @@
 									"properties": {
 										"datetime": {
 											"type": "string",
-											"description": "UTC datetime used for declination calculation (ISO 8601)."
+											"example": "1990-07-04T10:12:00",
+											"description": "Datetime used for the declination calculation, echoed as the local civil date and time supplied in the request (YYYY-MM-DDTHH:MM:SS). The timezone field of the request is what converts it to the instant the declinations are computed for."
 										},
 										"planets": {
 											"type": "array",
@@ -28409,6 +29009,568 @@
 							"application/json": {
 								"schema": {
 									"$ref": "#/components/schemas/CharaKarakaResponse"
+								}
+							}
+						}
+					},
+					"400": {
+						"description": "Validation error. `issues[]` lists every failed field.",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "First issue summary."
+										},
+										"code": {
+											"type": "string",
+											"enum": [
+												"validation_error"
+											]
+										},
+										"issues": {
+											"type": "array",
+											"description": "Every validation failure. Use this to rebuild a valid request.",
+											"items": {
+												"type": "object",
+												"properties": {
+													"path": {
+														"type": "string",
+														"description": "Dot-separated field path, or \"(root)\" for top-level."
+													},
+													"message": {
+														"type": "string"
+													},
+													"code": {
+														"type": "string",
+														"description": "Zod issue code (invalid_type, too_small, too_big, invalid_string, ...)."
+													},
+													"expected": {
+														"type": "string",
+														"description": "Expected type for invalid_type."
+													},
+													"minimum": {
+														"description": "Minimum bound for too_small issues.",
+														"oneOf": [
+															{
+																"type": "number"
+															},
+															{
+																"type": "string"
+															}
+														]
+													},
+													"maximum": {
+														"description": "Maximum bound for too_big issues.",
+														"oneOf": [
+															{
+																"type": "number"
+															},
+															{
+																"type": "string"
+															}
+														]
+													},
+													"inclusive": {
+														"type": "boolean"
+													},
+													"format": {
+														"type": "string",
+														"description": "Format name for string issues (regex, email, url, uuid)."
+													},
+													"pattern": {
+														"type": "string",
+														"description": "Regex pattern when format is regex."
+													}
+												},
+												"required": [
+													"path",
+													"message"
+												]
+											}
+										}
+									},
+									"required": [
+										"error",
+										"code",
+										"issues"
+									]
+								}
+							}
+						}
+					},
+					"401": {
+						"description": "Invalid or missing API key",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					},
+					"405": {
+						"description": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+						"headers": {
+							"Allow": {
+								"description": "Comma-separated list of allowed methods (RFC 9110).",
+								"schema": {
+									"type": "string"
+								}
+							}
+						},
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string"
+										},
+										"code": {
+											"type": "string",
+											"enum": [
+												"method_not_allowed"
+											]
+										},
+										"allow": {
+											"type": "array",
+											"items": {
+												"type": "string"
+											},
+											"description": "Allowed HTTP methods for this path. Mirrors the Allow response header."
+										},
+										"docs": {
+											"type": "string",
+											"description": "Link to the product page for this domain."
+										}
+									},
+									"required": [
+										"error",
+										"code",
+										"allow"
+									]
+								}
+							}
+						}
+					},
+					"429": {
+						"description": "Monthly rate limit exceeded",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					},
+					"500": {
+						"description": "Internal server error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/bhava-bala": {
+			"post": {
+				"operationId": "calculateBhavaBala",
+				"tags": [
+					"Vedic Astrology"
+				],
+				"summary": "Get Bhava Bala (house strength) for all twelve houses - Bhava Bala Calculator API",
+				"description": "Calculate Bhava Bala (house strength) for all twelve bhavas per Brihat Parashara Hora Shastra (BPHS) and BV Raman Graha and Bhava Balas. Returns the three classical components (Bhavadhipati Bala from the house lord Shadbala, Bhava Digbala from the rashi class and direction, Bhava Drishti Bala from aspects on the bhava madhya) plus totals in virupas and rupas and a strength ranking. Bhavas are built on unequal Sripati mid-cusps, so a house near a sign boundary is measured where it actually falls. Shadbala measures which graha is strong, Bhava Bala measures which life area is strong, and reading both together is how a practitioner separates a strong planet in a weak house from a weak planet in a strong one. Bhava Bala calculator API, house strength Vedic astrology, bhava bala virupas, Bhavadhipati Bala, Bhava Digbala, Sripati bhava madhya.",
+				"security": [
+					{
+						"apiKey": []
+					}
+				],
+				"parameters": [
+					{
+						"schema": {
+							"type": "string",
+							"enum": [
+								"en",
+								"tr",
+								"de",
+								"es",
+								"hi",
+								"pt",
+								"fr",
+								"ru"
+							],
+							"default": "en",
+							"example": "en",
+							"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+						},
+						"required": false,
+						"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English.",
+						"name": "lang",
+						"in": "query"
+					},
+					{
+						"schema": {
+							"type": "string",
+							"enum": [
+								"general",
+								"finance"
+							],
+							"default": "general",
+							"example": "general",
+							"description": "Which signification vocabulary the houseThemes map returns. \"general\" gives the classical bhava significations (self, wealth, siblings, home, and so on). \"finance\" gives the money reading of the same twelve bhavas, so house 2 returns income and savings, 5 speculation and risk appetite, 8 sudden money and leverage, 11 gains and profits, and 12 expenses and capital outflow. Use \"finance\" for wealth, income, business and market timing questions in Krishnamurti Paddhati, where the significator house groups 2, 6, 10, 11 for earned income and 5, 8, 11 for speculation are read against a running dasha. Defaults to \"general\"."
+						},
+						"required": false,
+						"description": "Which signification vocabulary the houseThemes map returns. \"general\" gives the classical bhava significations (self, wealth, siblings, home, and so on). \"finance\" gives the money reading of the same twelve bhavas, so house 2 returns income and savings, 5 speculation and risk appetite, 8 sudden money and leverage, 11 gains and profits, and 12 expenses and capital outflow. Use \"finance\" for wealth, income, business and market timing questions in Krishnamurti Paddhati, where the significator house groups 2, 6, 10, 11 for earned income and 5, 8, 11 for speculation are read against a running dasha. Defaults to \"general\".",
+						"name": "focus",
+						"in": "query"
+					}
+				],
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/BhavaBalaRequest"
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "Bhava Bala for all twelve houses with the three components, totals in virupas and rupas, ranking, and the localized house-theme legend.",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/BhavaBalaResponse"
+								}
+							}
+						}
+					},
+					"400": {
+						"description": "Validation error. `issues[]` lists every failed field.",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "First issue summary."
+										},
+										"code": {
+											"type": "string",
+											"enum": [
+												"validation_error"
+											]
+										},
+										"issues": {
+											"type": "array",
+											"description": "Every validation failure. Use this to rebuild a valid request.",
+											"items": {
+												"type": "object",
+												"properties": {
+													"path": {
+														"type": "string",
+														"description": "Dot-separated field path, or \"(root)\" for top-level."
+													},
+													"message": {
+														"type": "string"
+													},
+													"code": {
+														"type": "string",
+														"description": "Zod issue code (invalid_type, too_small, too_big, invalid_string, ...)."
+													},
+													"expected": {
+														"type": "string",
+														"description": "Expected type for invalid_type."
+													},
+													"minimum": {
+														"description": "Minimum bound for too_small issues.",
+														"oneOf": [
+															{
+																"type": "number"
+															},
+															{
+																"type": "string"
+															}
+														]
+													},
+													"maximum": {
+														"description": "Maximum bound for too_big issues.",
+														"oneOf": [
+															{
+																"type": "number"
+															},
+															{
+																"type": "string"
+															}
+														]
+													},
+													"inclusive": {
+														"type": "boolean"
+													},
+													"format": {
+														"type": "string",
+														"description": "Format name for string issues (regex, email, url, uuid)."
+													},
+													"pattern": {
+														"type": "string",
+														"description": "Regex pattern when format is regex."
+													}
+												},
+												"required": [
+													"path",
+													"message"
+												]
+											}
+										}
+									},
+									"required": [
+										"error",
+										"code",
+										"issues"
+									]
+								}
+							}
+						}
+					},
+					"401": {
+						"description": "Invalid or missing API key",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					},
+					"405": {
+						"description": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+						"headers": {
+							"Allow": {
+								"description": "Comma-separated list of allowed methods (RFC 9110).",
+								"schema": {
+									"type": "string"
+								}
+							}
+						},
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string"
+										},
+										"code": {
+											"type": "string",
+											"enum": [
+												"method_not_allowed"
+											]
+										},
+										"allow": {
+											"type": "array",
+											"items": {
+												"type": "string"
+											},
+											"description": "Allowed HTTP methods for this path. Mirrors the Allow response header."
+										},
+										"docs": {
+											"type": "string",
+											"description": "Link to the product page for this domain."
+										}
+									},
+									"required": [
+										"error",
+										"code",
+										"allow"
+									]
+								}
+							}
+						}
+					},
+					"429": {
+						"description": "Monthly rate limit exceeded",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					},
+					"500": {
+						"description": "Internal server error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"error": {
+											"type": "string",
+											"description": "Human-readable error message. May change wording."
+										},
+										"code": {
+											"type": "string",
+											"description": "Machine-readable error code. Stable identifier."
+										}
+									},
+									"required": [
+										"error",
+										"code"
+									]
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/bhav-chalit": {
+			"post": {
+				"operationId": "calculateBhavChalit",
+				"tags": [
+					"Vedic Astrology"
+				],
+				"summary": "Get the Bhav Chalit (Chalit Kundli) cusp-based house chart - Bhav Chalit API",
+				"description": "Calculate the Bhav Chalit chart, also written Bhava Chalit or Chalit Kundli, placing every graha by unequal Sripati bhava cusps instead of by whole sign. The Rashi (D1) chart treats a whole sign as a house, so a graha a degree from a sign boundary is shown in a house it does not actually occupy; the Chalit chart resolves that by measuring from the bhava sandhis, which is why practitioners check it before reading house results, house lordship strength or transit effects. Returns the twelve bhava boundaries with their madhyas and spans, every graha in both frames, and a moved flag on the placements that differ. Bhav Chalit API, Chalit Kundli calculator, bhava chalit chart, Sripati house cusps, cusp based house chart Vedic astrology.",
+				"security": [
+					{
+						"apiKey": []
+					}
+				],
+				"parameters": [
+					{
+						"schema": {
+							"type": "string",
+							"enum": [
+								"en",
+								"tr",
+								"de",
+								"es",
+								"hi",
+								"pt",
+								"fr",
+								"ru"
+							],
+							"default": "en",
+							"example": "en",
+							"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+						},
+						"required": false,
+						"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English.",
+						"name": "lang",
+						"in": "query"
+					},
+					{
+						"schema": {
+							"type": "string",
+							"enum": [
+								"general",
+								"finance"
+							],
+							"default": "general",
+							"example": "general",
+							"description": "Which signification vocabulary the houseThemes map returns. \"general\" gives the classical bhava significations (self, wealth, siblings, home, and so on). \"finance\" gives the money reading of the same twelve bhavas, so house 2 returns income and savings, 5 speculation and risk appetite, 8 sudden money and leverage, 11 gains and profits, and 12 expenses and capital outflow. Use \"finance\" for wealth, income, business and market timing questions in Krishnamurti Paddhati, where the significator house groups 2, 6, 10, 11 for earned income and 5, 8, 11 for speculation are read against a running dasha. Defaults to \"general\"."
+						},
+						"required": false,
+						"description": "Which signification vocabulary the houseThemes map returns. \"general\" gives the classical bhava significations (self, wealth, siblings, home, and so on). \"finance\" gives the money reading of the same twelve bhavas, so house 2 returns income and savings, 5 speculation and risk appetite, 8 sudden money and leverage, 11 gains and profits, and 12 expenses and capital outflow. Use \"finance\" for wealth, income, business and market timing questions in Krishnamurti Paddhati, where the significator house groups 2, 6, 10, 11 for earned income and 5, 8, 11 for speculation are read against a running dasha. Defaults to \"general\".",
+						"name": "focus",
+						"in": "query"
+					}
+				],
+				"requestBody": {
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/BhavChalitRequest"
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "Bhav Chalit chart with the twelve Sripati bhavas, every graha in both frames, and the localized house-theme legend.",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/BhavChalitResponse"
 								}
 							}
 						}

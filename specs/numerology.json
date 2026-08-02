@@ -3,7 +3,7 @@
 	"info": {
 		"title": "Numerology API",
 		"version": "2.0.0",
-		"description": "Numerology API to calculate life path, expression, soul urge, personality, and maturity numbers, with Pinnacle and Challenge life-phase timing, Hidden Passion, Subconscious Self, and Cornerstone and Capstone name analysis. Birth day 1-31 profiles, lucky associations (colors, gemstones, planets), personal year and month forecasts, relationship compatibility, and karmic debt and lessons. Unicode-aware multilingual name handling transliterates Spanish, French, German, Russian, Hindi, Bengali, Tamil, Japanese, Chinese, Korean, Arabic, Greek, and Hebrew names to correct Pythagorean numbers so non-Latin scripts no longer drop letters. Both Pythagorean and Chaldean systems in one call, Cheiro compound numbers (10 to 52) with planetary rulers, and business and brand name analysis. Built for numerology apps, editorial platforms, AI chatbots, and wellness services. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, human design, forecast, biorhythm, tarot, numerology, crystals, dreams, I-Ching, angel numbers, location), 164+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (MCP)\n\nRoxyAPI has native Model Context Protocol support. Your AI agent auto-discovers all 164+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n",
+		"description": "Numerology API to calculate life path, expression, soul urge, personality, and maturity numbers, with Pinnacle and Challenge life-phase timing, Hidden Passion, Subconscious Self, and Cornerstone and Capstone name analysis. Birth day 1-31 profiles, lucky associations (colors, gemstones, planets), personal year and month forecasts, relationship compatibility, and karmic debt and lessons. Unicode-aware multilingual name handling transliterates Spanish, French, German, Russian, Hindi, Bengali, Tamil, Japanese, Chinese, Korean, Arabic, Greek, and Hebrew names to correct Pythagorean numbers so non-Latin scripts no longer drop letters. Both Pythagorean and Chaldean systems in one call, Cheiro compound numbers (10 to 52) with planetary rulers, and business and brand name analysis. Built for numerology apps, editorial platforms, AI chatbots, and wellness services. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, forecast, human design, numerology, tarot, biorhythm, I-Ching, crystals, dreams, angel numbers, location), 173+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 173+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n",
 		"contact": {
 			"name": "RoxyAPI Support",
 			"url": "https://roxyapi.com/contact"
@@ -3223,7 +3223,9 @@
 										"presentNumbers": {
 											"type": "object",
 											"additionalProperties": {
-												"type": "number"
+												"type": "number",
+												"example": 3,
+												"description": "How many letters of the full birth name reduce to this number. A number absent from the map has a count of zero, which is exactly what makes it a karmic lesson."
 											},
 											"example": {
 												"1": 3,
@@ -3589,6 +3591,7 @@
 										},
 										"message": {
 											"type": "string",
+											"example": "Karmic debt is present in the core numbers: 14, 16. Each of these represents a concentrated area of unresolved experience carried from prior incarnations, requiring deliberate attention and sustained work in this lifetime to move through.",
 											"description": "Human-readable summary. Explains what the karmic debt findings mean or provides a positive affirmation when no debt is found."
 										}
 									},
@@ -5494,10 +5497,12 @@
 													"properties": {
 														"number": {
 															"type": "number",
+															"example": 5,
 															"description": "Life Path number (1-9, 11, 22, 33). The most important number in numerology, derived from birth date. Reveals life purpose and destiny."
 														},
 														"calculation": {
 															"type": "string",
+															"example": "Month: 7, Day: 15 → 1+5 = 6, Year: 1990 → 1+9+9+0 = 19 → 1+9 = 10 → 1+0 = 1 → 7+6+1=14 → 5",
 															"description": "Step-by-step calculation showing how the Life Path number was derived from the birth date."
 														},
 														"type": {
@@ -5510,10 +5515,12 @@
 														},
 														"hasKarmicDebt": {
 															"type": "boolean",
+															"example": true,
 															"description": "True if the reduction passed through a karmic debt number (13, 14, 16, 19)."
 														},
 														"karmicDebtNumber": {
 															"type": "number",
+															"example": 14,
 															"description": "The karmic debt number encountered during reduction, if any."
 														},
 														"meaning": {
@@ -5521,6 +5528,7 @@
 															"properties": {
 																"title": {
 																	"type": "string",
+																	"example": "The Adventurer",
 																	"description": "Numerology archetype name for this Life Path number. A defining phrase that captures the core identity, such as \"The Leader\" for 1 or \"The Humanitarian\" for 9."
 																},
 																"keywords": {
@@ -5528,10 +5536,18 @@
 																	"items": {
 																		"type": "string"
 																	},
+																	"example": [
+																		"freedom",
+																		"adventure",
+																		"change",
+																		"versatility",
+																		"curiosity"
+																	],
 																	"description": "Defining personality traits and energetic themes for this Life Path. Useful for compatibility matching, personality snapshots, and building numerology profile summaries."
 																},
 																"description": {
 																	"type": "string",
+																	"example": "The 5 is the most kinetic of all single-digit numbers. It is in constant motion, oriented toward what is new, and constitutionally resistant to the kind of settled routine that other numbers find stabilizing...",
 																	"description": "Authoritative 300 to 500 word interpretation covering personality, life purpose, and core themes. Written by numerology experts and suitable for full-page readings or PDF report generation."
 																},
 																"strengths": {
@@ -5539,6 +5555,11 @@
 																	"items": {
 																		"type": "string"
 																	},
+																	"example": [
+																		"Adaptable: The 5 adjusts to new conditions with a fluidity that most other numbers find difficult to achieve...",
+																		"Resourceful: When conventional approaches do not serve, the 5 draws on a broad repertoire of experience to find an alternative...",
+																		"Socially fluent: The 5 moves easily across different social contexts, adapting its communication style to connect with a wide range of people..."
+																	],
 																	"description": "Core strengths and positive qualities. Each entry pairs a trait with a detailed explanation of how it manifests in everyday life and decision-making."
 																},
 																"challenges": {
@@ -5546,18 +5567,26 @@
 																	"items": {
 																		"type": "string"
 																	},
+																	"example": [
+																		"Unreliable: The same mobility that makes the 5 effective can make it difficult to count on...",
+																		"Impulsive: The preference for direct experience over careful planning means the 5 often acts before considering consequences...",
+																		"Directionless: The abundance of interests available to the 5 can produce a life that is wide but not deep..."
+																	],
 																	"description": "Growth areas and shadow qualities to work through. Each entry explains the root cause, how it surfaces in behavior, and constructive strategies for personal development."
 																},
 																"career": {
 																	"type": "string",
+																	"example": "The 5 requires variety, autonomy, and stimulation in its professional life. Sales, journalism, public relations, travel-related work, entrepreneurship...",
 																	"description": "Tailored career guidance covering ideal industries, roles, and work environments. Includes specific job titles and explains why certain professional paths resonate with this Life Path energy."
 																},
 																"relationships": {
 																	"type": "string",
+																	"example": "The 5 brings vitality and spontaneity to relationships but requires genuine freedom within them to function well. It is more loyal than it initially appears...",
 																	"description": "Love, friendship, and family dynamics shaped by this Life Path. Covers romantic compatibility with other numbers, communication style, and the key relationship lessons for lasting partnerships."
 																},
 																"spirituality": {
 																	"type": "string",
+																	"example": "The 5 encounters the sacred primarily through direct experience rather than formal practice. Travel, conversation with diverse people, and immersion in unfamiliar environments are all forms of spiritual inquiry...",
 																	"description": "Spiritual path, soul lessons, and recommended practices. Explores the deeper purpose behind this Life Path number and guidance for personal growth and inner transformation."
 																}
 															},
@@ -5588,10 +5617,12 @@
 													"properties": {
 														"number": {
 															"type": "number",
+															"example": 6,
 															"description": "Expression (Destiny) number derived from full birth name using Pythagorean numerology."
 														},
 														"calculation": {
 															"type": "string",
+															"example": "J=1, O=6, H=8, N=5, W=5, I=9, L=3, L=3, I=9, A=1, M=4, S=1, M=4, I=9, T=2, H=8 → 1+6+8+5+5+9+3+3+9+1+4+1+4+9+2+8 = 78 → 15 → 1+5 = 6",
 															"description": "Letter-to-number conversion showing how the Expression number was calculated."
 														},
 														"type": {
@@ -5604,10 +5635,12 @@
 														},
 														"hasKarmicDebt": {
 															"type": "boolean",
+															"example": false,
 															"description": "Whether karmic debt was encountered during calculation."
 														},
 														"karmicDebtNumber": {
 															"type": "number",
+															"example": 16,
 															"description": "Karmic debt number if present."
 														},
 														"meaning": {
@@ -5615,6 +5648,7 @@
 															"properties": {
 																"title": {
 																	"type": "string",
+																	"example": "The Nurturer",
 																	"description": "Numerology archetype for this Expression number. Reveals the natural talent blueprint, such as \"The Communicator\" for 3 or \"The Master Builder\" for 22."
 																},
 																"keywords": {
@@ -5622,10 +5656,18 @@
 																	"items": {
 																		"type": "string"
 																	},
+																	"example": [
+																		"love",
+																		"harmony",
+																		"responsibility",
+																		"nurturing",
+																		"service"
+																	],
 																	"description": "Natural talents and abilities encoded in the birth name. These define your innate skill set, creative potential, and the gifts available to you throughout life."
 																},
 																"description": {
 																	"type": "string",
+																	"example": "The 6 is the most relationship-oriented of the single-digit numbers, organized around a genuine drive to care for those within its sphere...",
 																	"description": "Expert-written 300 to 500 word analysis of natural abilities, life goals, and the talents your birth name reveals. Suitable for detailed readings and personality assessments."
 																},
 																"strengths": {
@@ -5633,6 +5675,11 @@
 																	"items": {
 																		"type": "string"
 																	},
+																	"example": [
+																		"Supportive: The 6 offers support that is attentive and real rather than general and reflexive...",
+																		"Protective: The 6 is quietly fierce in defense of those it cares for...",
+																		"Responsible: The 6 takes its obligations seriously and follows through on them without requiring external pressure..."
+																	],
 																	"description": "Natural-born talents and creative gifts. Each strength describes a specific ability that comes effortlessly and how it contributes to personal and professional success."
 																},
 																"challenges": {
@@ -5640,18 +5687,26 @@
 																	"items": {
 																		"type": "string"
 																	},
+																	"example": [
+																		"Overprotective: The care the 6 offers can tip into control when it becomes convinced that its judgment about what others need is more reliable than their own...",
+																		"Self-neglecting: The 6 prioritizes others so consistently that its own needs are regularly deferred or ignored entirely...",
+																		"Idealistic: The 6 holds a vision of how relationships and communities ought to function..."
+																	],
 																	"description": "Growth areas where natural talent can become a liability without conscious balance. Explains how each challenge manifests and practical ways to work through it."
 																},
 																"career": {
 																	"type": "string",
+																	"example": "The 6 is most effective in roles where its capacity for care and its aesthetic sensibility can both find expression. Healthcare, counseling, teaching, social work, and community organizing fit this number naturally...",
 																	"description": "Career paths where your Expression number talents create the greatest professional advantage. Covers specific industries, creative pursuits, and work styles aligned with your name vibration."
 																},
 																"relationships": {
 																	"type": "string",
+																	"example": "The 6 is a devoted and attentive partner who brings warmth, stability, and genuine investment to its closest relationships. Its love is expressed through consistent action rather than declaration...",
 																	"description": "How your Expression number shapes the way you communicate, connect, and express love. Covers partnership dynamics, social style, and the relationship patterns rooted in your name energy."
 																},
 																"spirituality": {
 																	"type": "string",
+																	"example": "The spiritual life of the 6 is inseparable from its relational life. It finds the sacred in acts of genuine service, in the beauty of natural and created environments...",
 																	"description": "The spiritual dimension of your natural gifts. Explores how your Expression number talents serve a higher purpose and the creative practices that deepen self-expression."
 																}
 															},
@@ -5682,10 +5737,12 @@
 													"properties": {
 														"number": {
 															"type": "number",
+															"example": 7,
 															"description": "Soul Urge (Heart Desire) number from vowels in birth name."
 														},
 														"calculation": {
 															"type": "string",
+															"example": "Vowels: O=6, I=9, I=9, A=1, I=9 → 6+9+9+1+9 = 34 → 7",
 															"description": "Vowel extraction and reduction calculation."
 														},
 														"type": {
@@ -5698,10 +5755,12 @@
 														},
 														"hasKarmicDebt": {
 															"type": "boolean",
+															"example": false,
 															"description": "Whether karmic debt was encountered."
 														},
 														"karmicDebtNumber": {
 															"type": "number",
+															"example": 13,
 															"description": "Karmic debt number if present."
 														},
 														"meaning": {
@@ -5709,6 +5768,7 @@
 															"properties": {
 																"title": {
 																	"type": "string",
+																	"example": "The Seeker",
 																	"description": "Numerology archetype for this Soul Urge number. Reveals the deepest inner motivation, such as \"The Seeker\" for 7 or \"The Master Teacher\" for 33."
 																},
 																"keywords": {
@@ -5716,10 +5776,18 @@
 																	"items": {
 																		"type": "string"
 																	},
+																	"example": [
+																		"wisdom",
+																		"introspection",
+																		"analysis",
+																		"solitude",
+																		"truth-seeking"
+																	],
 																	"description": "Core emotional drives and inner motivations. These define what truly fulfills you at the deepest level, beyond surface-level desires and social expectations."
 																},
 																"description": {
 																	"type": "string",
+																	"example": "The 7 is the most internally-oriented of the single-digit numbers. While other numbers are engaged primarily with the external world of action, relationship, and material achievement, the 7 is fundamentally concerned with the interior world of understanding...",
 																	"description": "Expert-written 300 to 500 word exploration of the inner self, hidden desires, and emotional landscape. Reveals what the heart truly craves beneath the surface persona."
 																},
 																"strengths": {
@@ -5727,6 +5795,11 @@
 																	"items": {
 																		"type": "string"
 																	},
+																	"example": [
+																		"Analytical: The 7 is skilled at separating what is essential from what is incidental, and at identifying patterns that others overlook...",
+																		"Spiritually perceptive: The 7 has access to intuitive knowledge that supplements and sometimes outpaces its logical reasoning...",
+																		"Depth of focus: When the 7 commits its attention to a subject, the quality of that attention is substantial..."
+																	],
 																	"description": "Emotional superpowers and inner gifts. Each strength describes how it shapes decision-making, relationships, and the pursuit of personal fulfillment."
 																},
 																"challenges": {
@@ -5734,18 +5807,26 @@
 																	"items": {
 																		"type": "string"
 																	},
+																	"example": [
+																		"Withdrawn: The 7 spends much of its mental life in internal territory, and this can produce a social distance...",
+																		"Overly private: The 7 holds its interior world closely and is reluctant to share what it thinks and feels...",
+																		"Skeptical to excess: The drive of the 7 to examine things beneath the surface can become a disposition that finds complication where none exists..."
+																	],
 																	"description": "Inner shadows and emotional patterns to balance. Explains how each challenge manifests when the Soul Urge energy is overextended or repressed."
 																},
 																"career": {
 																	"type": "string",
+																	"example": "The 7 performs at its highest level in roles that reward solitary investigation, analytical depth, and the pursuit of non-obvious insight. Research science, philosophy, data analysis, writing, psychology, and investigative fields of all kinds draw on the best qualities of this number...",
 																	"description": "Career paths that satisfy your deepest emotional needs. Focuses on work that feeds the soul rather than just the resume, aligned with lasting inner fulfillment."
 																},
 																"relationships": {
 																	"type": "string",
+																	"example": "The 7 forms relationships with care and some difficulty, opening its interior world slowly and only to those who have demonstrated patience and genuine interest...",
 																	"description": "How your Soul Urge shapes what you need from love, friendship, and family. Covers emotional compatibility, attachment style, and the key to feeling truly seen and understood."
 																},
 																"spirituality": {
 																	"type": "string",
+																	"example": "The 7 is the most naturally spiritual of the single-digit numbers, not in a doctrinal sense but in its persistent orientation toward what lies beneath surface experience...",
 																	"description": "The spiritual hunger at your core. Explores what your soul is seeking in this lifetime and the contemplative practices that bring you closest to inner peace and alignment."
 																}
 															},
@@ -5776,10 +5857,12 @@
 													"properties": {
 														"number": {
 															"type": "number",
+															"example": 8,
 															"description": "Personality number from consonants in birth name."
 														},
 														"calculation": {
 															"type": "string",
+															"example": "Consonants: J=1, H=8, N=5, W=5, L=3, L=3, M=4, S=1, M=4, T=2, H=8 → 1+8+5+5+3+3+4+1+4+2+8 = 44 → 8",
 															"description": "Consonant extraction and reduction calculation."
 														},
 														"type": {
@@ -5792,10 +5875,12 @@
 														},
 														"hasKarmicDebt": {
 															"type": "boolean",
+															"example": false,
 															"description": "Whether karmic debt was encountered."
 														},
 														"karmicDebtNumber": {
 															"type": "number",
+															"example": 19,
 															"description": "Karmic debt number if present."
 														},
 														"meaning": {
@@ -5803,6 +5888,7 @@
 															"properties": {
 																"title": {
 																	"type": "string",
+																	"example": "The Powerhouse",
 																	"description": "Numerology archetype for this Personality number. Represents the outer mask you show the world, such as \"The Builder\" for 4 or \"The Powerhouse\" for 8."
 																},
 																"keywords": {
@@ -5810,10 +5896,18 @@
 																	"items": {
 																		"type": "string"
 																	},
+																	"example": [
+																		"achievement",
+																		"authority",
+																		"abundance",
+																		"ambition",
+																		"resilience"
+																	],
 																	"description": "Traits that define your public persona and first impression. These are the qualities others perceive before they get to know the real you."
 																},
 																"description": {
 																	"type": "string",
+																	"example": "The 8 is the number most directly associated with material mastery and the exercise of authority in the world. It is oriented toward achievement, and it brings to that orientation an uncommon combination of strategic intelligence, organizational capability, and physical endurance...",
 																	"description": "Expert-written 300 to 500 word analysis of the outer personality, social presence, and the image you project to the world. Reveals the gap between perception and inner truth."
 																},
 																"strengths": {
@@ -5821,6 +5915,11 @@
 																	"items": {
 																		"type": "string"
 																	},
+																	"example": [
+																		"Ambitious: The 8 sets high targets and organizes its resources around reaching them...",
+																		"Resilient: The 8 does not interpret setback as failure...",
+																		"Organizationally capable: The 8 thinks in systems..."
+																	],
 																	"description": "Your strongest social assets and public-facing gifts. These qualities shape how you are received in professional settings, social gatherings, and first meetings."
 																},
 																"challenges": {
@@ -5828,18 +5927,26 @@
 																	"items": {
 																		"type": "string"
 																	},
+																	"example": [
+																		"Controlling: The 8 has strong convictions about how things should be managed and can find it genuinely difficult to delegate...",
+																		"Status-oriented: The 8 can become overly invested in the visible markers of success: titles, possessions, and professional recognition...",
+																		"Imbalanced in personal life: The drive to achieve in the external world can come at significant cost to the interior life of the 8..."
+																	],
 																	"description": "Blind spots in your public persona. Patterns others notice that you may not, including defense mechanisms and image-management tendencies that can limit authentic connection."
 																},
 																"career": {
 																	"type": "string",
+																	"example": "The 8 is drawn to professional domains where strategic intelligence and organizational capability produce measurable results. Corporate leadership, finance, real estate, law, and high-level management suit it well...",
 																	"description": "How your outward presence shapes professional opportunities. Covers the industries, roles, and environments where your public image creates the greatest advantage."
 																},
 																"relationships": {
 																	"type": "string",
+																	"example": "The 8 is loyal and reliable in close relationships, and it expresses care primarily through provision and practical support rather than through emotional expressiveness...",
 																	"description": "First impressions in love and social dynamics. Explores how your Personality number attracts certain partners, sets relationship expectations, and influences group dynamics."
 																},
 																"spirituality": {
 																	"type": "string",
+																	"example": "The spiritual path of the 8 runs through its engagement with material life rather than away from it. Its core lesson concerns the relationship between power and integrity...",
 																	"description": "The spiritual energy you radiate to others. Explores how your outer presence serves as a channel for deeper purpose and what your public path reveals about your soul mission."
 																}
 															},
@@ -5870,10 +5977,12 @@
 													"properties": {
 														"number": {
 															"type": "number",
+															"example": 6,
 															"description": "Birth Day number (1-31). A special talent number based on the day of the month you were born."
 														},
 														"calculation": {
 															"type": "string",
+															"example": "15 → 6",
 															"description": "Step-by-step calculation showing how the Birth Day number was reduced from the calendar day of birth."
 														},
 														"type": {
@@ -5886,10 +5995,12 @@
 														},
 														"hasKarmicDebt": {
 															"type": "boolean",
+															"example": false,
 															"description": "True if the birth day is a karmic debt number (13, 14, 16, 19)."
 														},
 														"karmicDebtNumber": {
 															"type": "number",
+															"example": 13,
 															"description": "The karmic debt number if the birth day carries one (13, 14, 16, or 19)."
 														},
 														"meaning": {
@@ -5897,6 +6008,7 @@
 															"properties": {
 																"title": {
 																	"type": "string",
+																	"example": "The Nurturer",
 																	"description": "Numerology archetype for this Birth Day number. Represents the specific talent or gift you brought into this life, like \"The Nurturer\" for 6 or \"The Seeker\" for 7."
 																},
 																"keywords": {
@@ -5904,10 +6016,18 @@
 																	"items": {
 																		"type": "string"
 																	},
+																	"example": [
+																		"compassion",
+																		"healing",
+																		"family",
+																		"beauty",
+																		"devotion"
+																	],
 																	"description": "Innate talents and natural aptitudes encoded in your birth day. These gifts are available from birth and become more refined with age and experience."
 																},
 																"description": {
 																	"type": "string",
+																	"example": "Its instinct is to tend: to notice when someone needs support and to provide it in ways that are practical and consistent rather than occasional and showy...",
 																	"description": "Expert-written 300 to 500 word reading of the special abilities your birth day bestows. Covers how these gifts complement your Life Path and Expression numbers."
 																},
 																"strengths": {
@@ -5915,6 +6035,11 @@
 																	"items": {
 																		"type": "string"
 																	},
+																	"example": [
+																		"Supportive: It pays close attention to what others actually need, and its response is calibrated to the specific situation...",
+																		"Protective: Its warmth does not preclude assertiveness; when the people or values it holds most closely are at risk, the 6 will respond with a directness that can surprise...",
+																		"Responsible: Whether the commitment is to a family member, a colleague, or a cause, the 6 does what it said it would do..."
+																	],
 																	"description": "Natural-born strengths that come effortlessly. These are the talents you can rely on even without formal training or conscious development."
 																},
 																"challenges": {
@@ -5922,18 +6047,26 @@
 																	"items": {
 																		"type": "string"
 																	},
+																	"example": [
+																		"Overprotective: This overreach, always well-intentioned, denies others the opportunity to navigate difficulty independently...",
+																		"Self-neglecting: The result is a gradual depletion that the 6 is often slow to recognize...",
+																		"Idealistic: It can experience significant distress when reality falls consistently short of that vision..."
+																	],
 																	"description": "The flip side of your gifts. Each challenge explains how an overreliance on natural talent can become a liability without conscious balance."
 																},
 																"career": {
 																	"type": "string",
+																	"example": "Its eye for beauty and harmony also serves it in interior design, hospitality, and the arts. The 6 is most fulfilled when it can see a direct connection between its daily work and the wellbeing of the people or environments it serves.",
 																	"description": "Professional paths where your birth day talents create an immediate advantage. Covers specific roles, industries, and work styles aligned with your innate abilities."
 																},
 																"relationships": {
 																	"type": "string",
+																	"example": "The risk is a tendency to over-function for others while under-attending to its own needs, creating an imbalance that strains the relationship over time...",
 																	"description": "How your birth day gifts shape the way you connect with others. Covers romantic chemistry, friendship dynamics, and the relationship patterns rooted in your natural temperament."
 																},
 																"spirituality": {
 																	"type": "string",
+																	"example": "Its spiritual lesson is that real service is sustainable only when the 6 first acknowledges its own needs as legitimate...",
 																	"description": "The spiritual dimension of your natural gifts. Explores how your birth day talents serve a higher purpose and the practices that help you channel them with intention."
 																}
 															},
@@ -5964,10 +6097,12 @@
 													"properties": {
 														"number": {
 															"type": "number",
+															"example": 11,
 															"description": "Maturity number (Life Path + Expression). Becomes active around age 35-40."
 														},
 														"calculation": {
 															"type": "string",
+															"example": "Life Path 5 + Expression 6 = 11",
 															"description": "Shows Life Path + Expression reduction."
 														},
 														"type": {
@@ -5980,10 +6115,12 @@
 														},
 														"hasKarmicDebt": {
 															"type": "boolean",
+															"example": false,
 															"description": "Whether karmic debt was encountered."
 														},
 														"karmicDebtNumber": {
 															"type": "number",
+															"example": 14,
 															"description": "Karmic debt number if present."
 														},
 														"meaning": {
@@ -5991,6 +6128,7 @@
 															"properties": {
 																"title": {
 																	"type": "string",
+																	"example": "The Master Intuitive",
 																	"description": "Numerology archetype for the Maturity number. Reveals who you are becoming in the second half of life, such as \"The Builder\" for 4 or \"The Humanitarian\" for 9."
 																},
 																"keywords": {
@@ -5998,10 +6136,18 @@
 																	"items": {
 																		"type": "string"
 																	},
+																	"example": [
+																		"intuition",
+																		"spiritual sensitivity",
+																		"illumination",
+																		"inner wisdom",
+																		"heightened awareness"
+																	],
 																	"description": "Emerging traits and qualities that strengthen after age 35 to 40. These energies gradually integrate into your personality as you mature and gain life experience."
 																},
 																"description": {
 																	"type": "string",
+																	"example": "Eleven operates on a fundamentally different frequency than the single-digit numbers. The foundation of 2 is present: the need to relate, to listen, to balance, to work alongside others. But 11 adds a perceptive capacity that transcends ordinary observation...",
 																	"description": "Expert-written 300 to 500 word guide to the person you are evolving into. The Maturity number represents the wisdom gained through lived experience and reveals your ultimate destination."
 																},
 																"strengths": {
@@ -6009,6 +6155,11 @@
 																	"items": {
 																		"type": "string"
 																	},
+																	"example": [
+																		"Perceptive depth: The capacity to read a situation, a person, or a group dynamic at a level that exceeds what is visible on the surface...",
+																		"Inspirational presence: Eleven draws people toward it without calculated effort...",
+																		"Bridging capacity: The 11 can hold two apparently opposing positions long enough to find the underlying commonality..."
+																	],
 																	"description": "Late-blooming strengths that emerge with age and experience. These are the gifts that become your greatest assets in the second half of life."
 																},
 																"challenges": {
@@ -6016,18 +6167,26 @@
 																	"items": {
 																		"type": "string"
 																	},
+																	"example": [
+																		"Perceptual overload: Harsh environments, interpersonal conflict, and sustained criticism land harder than they would for most numbers...",
+																		"Chronic self-doubt: The gap between what 11 perceives and what it can prove rationally generates ongoing uncertainty...",
+																		"Unrealized potential: The heightened energy of a master number is not automatically expressed..."
+																	],
 																	"description": "Growth areas to watch as Maturity energy intensifies. Understanding these early helps you navigate the transition into your mature self with awareness and grace."
 																},
 																"career": {
 																	"type": "string",
+																	"example": "Eleven is most effective in roles where insight and sensitivity are the primary instrument rather than a liability to be managed. Counseling, therapeutic practice, spiritual direction, and teaching are natural alignments...",
 																	"description": "Career evolution and professional reinvention for the second act. Covers industries, roles, and pursuits that align with your mature energy and accumulated wisdom."
 																},
 																"relationships": {
 																	"type": "string",
+																	"example": "Eleven brings unusual attentiveness to partnership. It registers the emotional undercurrents of a relationship with precision, which can be an extraordinary quality and an occasional source of friction...",
 																	"description": "How your relationships deepen and transform as Maturity energy takes hold. Covers evolving partnership needs, family dynamics, and the relationship wisdom that comes with age."
 																},
 																"spirituality": {
 																	"type": "string",
+																	"example": "The spiritual dimension of 11 is inseparable from its everyday functioning. The perceptive quality that appears in a counseling session or a difficult conversation is what contemplative traditions call spiritual receptivity...",
 																	"description": "Spiritual awakening in the mature years. Explores the deeper meaning that emerges when life experience meets the Maturity number and practices for this transformative phase."
 																}
 															},
@@ -6075,6 +6234,9 @@
 															"items": {
 																"type": "number"
 															},
+															"example": [
+																7
+															],
 															"description": "Numbers (1-9) missing from the birth name. Each missing number represents a karmic lesson to learn in this lifetime."
 														},
 														"lessons": {
@@ -6084,18 +6246,22 @@
 																"properties": {
 																	"number": {
 																		"type": "number",
+																		"example": 7,
 																		"description": "The missing number representing this karmic lesson."
 																	},
 																	"lesson": {
 																		"type": "string",
+																		"example": "Develop inner life, reflective depth, and trust in introspective knowledge",
 																		"description": "Karmic lesson title identifying the core quality or virtue this soul needs to develop in the current lifetime."
 																	},
 																	"description": {
 																		"type": "string",
+																		"example": "Absence of the number 7 indicates an underdeveloped inner life and a tendency to remain on the surface of experience without deeper reflection...",
 																		"description": "What this missing number means for personal growth. Explains the life patterns, recurring situations, and soul-level work required to integrate this energy."
 																	},
 																	"howToOvercome": {
 																		"type": "string",
+																		"example": "Develop a regular practice of reflection, whether through writing, meditation, study, or deliberate time in solitude...",
 																		"description": "Actionable guidance for mastering this karmic lesson. Includes specific behaviors, mindset shifts, and daily practices that build the missing quality over time."
 																	}
 																},
@@ -6111,7 +6277,17 @@
 														"presentNumbers": {
 															"type": "object",
 															"additionalProperties": {
-																"type": "number"
+																"type": "number",
+																"example": 3,
+																"description": "How many letters of the full birth name reduce to this number. A number absent from the map has a count of zero, which is exactly what makes it a karmic lesson."
+															},
+															"example": {
+																"1": 3,
+																"3": 2,
+																"5": 4,
+																"6": 1,
+																"7": 2,
+																"9": 2
 															},
 															"description": "Count of each number (1-9) present in the birth name. High counts indicate natural strengths."
 														}
@@ -6128,6 +6304,7 @@
 													"properties": {
 														"hasKarmicDebt": {
 															"type": "boolean",
+															"example": true,
 															"description": "True if any core number reduces through a karmic debt number (13, 14, 16, 19)."
 														},
 														"debtNumbers": {
@@ -6135,6 +6312,9 @@
 															"items": {
 																"type": "number"
 															},
+															"example": [
+																14
+															],
 															"description": "List of karmic debt numbers found (13=laziness, 14=abuse of freedom, 16=ego destruction, 19=selfishness)."
 														},
 														"meanings": {
@@ -6144,18 +6324,22 @@
 																"properties": {
 																	"number": {
 																		"type": "number",
+																		"example": 14,
 																		"description": "Karmic debt number (13, 14, 16, or 19). Each represents a specific pattern of unresolved karma from past lives that demands conscious attention."
 																	},
 																	"description": {
 																		"type": "string",
+																		"example": "Accumulated Obligation of Moderation and Stability",
 																		"description": "What this karmic debt means for your current lifetime. Explains the past-life pattern, how it manifests today, and why certain struggles keep recurring."
 																	},
 																	"challenge": {
 																		"type": "string",
+																		"example": "A past pattern of misusing personal freedom, whether through overindulgence, excess, or the manipulation of others...",
 																		"description": "The central life challenge this debt creates. Identifies the repeating obstacle pattern and the emotional or behavioral trap to watch for."
 																	},
 																	"resolution": {
 																		"type": "string",
+																		"example": "Develop moderation as a practiced discipline rather than a reactive restriction. Build and honor commitments in measured increments...",
 																		"description": "How to resolve and transcend this karmic debt. Provides the spiritual lesson, practical steps, and the transformative shift that breaks the cycle."
 																	}
 																},
@@ -6181,18 +6365,22 @@
 													"properties": {
 														"personalYear": {
 															"type": "number",
+															"example": 4,
 															"description": "Personal Year number (1-9). Each year in the 9-year cycle has distinct themes and energies."
 														},
 														"cycle": {
 															"type": "string",
+															"example": "Year 4 of 9",
 															"description": "Position in the 9-year numerology cycle (e.g., \"Year 5 of 9\"). Each position carries distinct energy that shapes the entire year."
 														},
 														"theme": {
 															"type": "string",
+															"example": "Work and Foundation",
 															"description": "Central theme and energy defining this Personal Year. Provides a one-line summary of the dominant vibration influencing all areas of life."
 														},
 														"forecast": {
 															"type": "string",
+															"example": "The Personal Year 4 introduces the most demanding work period of the cycle. After three years of initiation, cooperation, and expression, the numerological current now insists on structure, discipline, and the unglamorous labor of building something durable...",
 															"description": "Detailed yearly forecast covering what to expect across career, relationships, health, and personal development. Provides month-by-month energy shifts and key turning points."
 														},
 														"opportunities": {
@@ -6200,6 +6388,12 @@
 															"items": {
 																"type": "string"
 															},
+															"example": [
+																"Building durable professional and personal foundations that will last",
+																"Establishing effective systems and routines that reduce friction over time",
+																"Developing technical or practical expertise through focused application",
+																"Financial consolidation and disciplined saving toward defined goals"
+															],
 															"description": "Key opportunities available during this Personal Year. Each entry identifies a specific area of life where conditions are favorable for growth and forward momentum."
 														},
 														"challenges": {
@@ -6207,10 +6401,17 @@
 															"items": {
 																"type": "string"
 															},
+															"example": [
+																"Feelings of restriction and limited freedom of movement under the slower energy",
+																"Frustration with the pace of visible results in methodical, long-horizon work",
+																"Overwork and physical exhaustion from sustained practical effort without rest",
+																"Resistance to structural changes that require dismantling familiar systems"
+															],
 															"description": "Potential challenges to navigate during this cycle. Each entry identifies a recurring theme or obstacle and how to work with the energy rather than against it."
 														},
 														"advice": {
 															"type": "string",
+															"example": "Commit to the unglamorous work of building. Systems, routines, and disciplined follow-through are not merely means to an end this year. Do not mistake slowness for failure...",
 															"description": "Strategic guidance for making the most of this Personal Year. Covers timing decisions, areas to focus on, and the mindset that aligns with the current numerological energy."
 														},
 														"personalMonth": {
@@ -6218,14 +6419,17 @@
 															"properties": {
 																"personalMonth": {
 																	"type": "number",
+																	"example": 3,
 																	"description": "Personal Month number (1-9)."
 																},
 																"theme": {
 																	"type": "string",
+																	"example": "Expression and Connection",
 																	"description": "Central theme for this Personal Month."
 																},
 																"focus": {
 																	"type": "string",
+																	"example": "Creative and communicative work finds its best conditions. Reach out to people, put ideas into visible form, and allow social engagement to open professional doors that direct effort cannot.",
 																	"description": "Practical focus and guidance for this month."
 																}
 															},
@@ -6256,19 +6460,23 @@
 														"properties": {
 															"position": {
 																"type": "number",
+																"example": 1,
 																"description": "Pinnacle position (1-4). Four major life phases."
 															},
 															"number": {
 																"type": "number",
+																"example": 4,
 																"description": "Pinnacle number (1-9, 11, 22, 33). Defines the theme of this life phase."
 															},
 															"startAge": {
 																"type": "number",
+																"example": 0,
 																"description": "Age when this Pinnacle phase begins."
 															},
 															"endAge": {
 																"type": "number",
 																"nullable": true,
+																"example": 31,
 																"description": "Age when this phase ends. Null for the 4th Pinnacle (lasts rest of life)."
 															},
 															"meaning": {
@@ -6276,10 +6484,12 @@
 																"properties": {
 																	"title": {
 																		"type": "string",
+																		"example": "Foundation Building and Disciplined Effort",
 																		"description": "Pinnacle phase title."
 																	},
 																	"description": {
 																		"type": "string",
+																		"example": "A Pinnacle under the number 4 centers on the construction of durable foundations: in career, finances, living conditions, and the structure of daily life...",
 																		"description": "What this Pinnacle phase brings to your life."
 																	},
 																	"opportunities": {
@@ -6287,6 +6497,11 @@
 																		"items": {
 																			"type": "string"
 																		},
+																		"example": [
+																			"Establishing stable career foundations, acquiring property, or building financial structures with long-term durability",
+																			"Developing sophisticated organizational habits and planning systems that improve across the entire phase",
+																			"Earning the sustained respect of colleagues and institutions through demonstrated reliability and competence"
+																		],
 																		"description": "Key opportunities during this phase."
 																	},
 																	"challenges": {
@@ -6294,6 +6509,11 @@
 																		"items": {
 																			"type": "string"
 																		},
+																		"example": [
+																			"Feeling confined or depleted by the demands of sustained routine over an extended period",
+																			"Rigidity in method and resistance to modifying approaches even when circumstances shift",
+																			"Physical or mental exhaustion from maintaining effort without adequate rest or recovery"
+																		],
 																		"description": "Challenges to navigate during this phase."
 																	}
 																},
@@ -6323,19 +6543,23 @@
 														"properties": {
 															"position": {
 																"type": "number",
+																"example": 1,
 																"description": "Challenge position (1-4). Four life obstacle periods."
 															},
 															"number": {
 																"type": "number",
+																"example": 1,
 																"description": "Challenge number (0-8). Defines the obstacle of this period."
 															},
 															"startAge": {
 																"type": "number",
+																"example": 0,
 																"description": "Age when this Challenge period begins."
 															},
 															"endAge": {
 																"type": "number",
 																"nullable": true,
+																"example": 31,
 																"description": "Age when this period ends. Null for the 4th Challenge."
 															},
 															"meaning": {
@@ -6343,18 +6567,22 @@
 																"properties": {
 																	"title": {
 																		"type": "string",
+																		"example": "The Independence Challenge",
 																		"description": "Challenge title."
 																	},
 																	"description": {
 																		"type": "string",
+																		"example": "The 1 Challenge calls for the sustained development of genuine self-reliance. Life repeatedly constructs situations in which the individual must choose between standing on personal judgment and deferring to the expectations or authority of others...",
 																		"description": "What this Challenge demands you overcome."
 																	},
 																	"lesson": {
 																		"type": "string",
+																		"example": "Developing authentic self-reliance and the confidence to act from personal conviction rather than either external permission or reactive defiance.",
 																		"description": "Core lesson to learn during this period."
 																	},
 																	"howToOvercome": {
 																		"type": "string",
+																		"example": "Begin with smaller decisions made entirely independently, then build toward larger ones. Resist the pattern of seeking approval before acting...",
 																		"description": "Actionable guidance for working through this Challenge."
 																	}
 																},
@@ -6382,10 +6610,12 @@
 													"properties": {
 														"number": {
 															"type": "number",
+															"example": 1,
 															"description": "Hidden Passion number (1-9). The most frequently occurring number in the birth name."
 														},
 														"count": {
 															"type": "number",
+															"example": 3,
 															"description": "How many times this number appears in the name."
 														},
 														"allPassions": {
@@ -6393,14 +6623,20 @@
 															"items": {
 																"type": "number"
 															},
+															"example": [
+																1,
+																9
+															],
 															"description": "All numbers tied for highest frequency (usually one, sometimes multiple)."
 														},
 														"title": {
 															"type": "string",
+															"example": "Compulsion Toward Leadership",
 															"description": "Archetype title for this Hidden Passion."
 														},
 														"description": {
 															"type": "string",
+															"example": "The number 1 appearing most often in a name produces a persistent need for originality and self-direction. This person feels most fully expressed when operating independently and setting direction for others...",
 															"description": "What this dominant number drive reveals about latent talents and obsessions."
 														}
 													},
@@ -6418,6 +6654,7 @@
 													"properties": {
 														"number": {
 															"type": "number",
+															"example": 8,
 															"description": "Subconscious Self number (1-9). Count of unique numbers present in the name."
 														},
 														"uniqueNumbers": {
@@ -6425,14 +6662,26 @@
 															"items": {
 																"type": "number"
 															},
+															"example": [
+																1,
+																2,
+																3,
+																4,
+																5,
+																6,
+																8,
+																9
+															],
 															"description": "Which numbers (1-9) are present in the birth name."
 														},
 														"title": {
 															"type": "string",
+															"example": "Near-Complete Resourcefulness",
 															"description": "Archetype title for this Subconscious Self level."
 														},
 														"description": {
 															"type": "string",
+															"example": "With 8 of 9 number values present, almost no situation triggers the feeling of being unprepared. A vast experiential base is available to draw on in difficulty...",
 															"description": "How you handle emergencies and unexpected challenges based on the breadth of numbers in your name."
 														}
 													},
@@ -6452,14 +6701,17 @@
 															"properties": {
 																"letter": {
 																	"type": "string",
+																	"example": "J",
 																	"description": "First letter of the first name."
 																},
 																"number": {
 																	"type": "number",
+																	"example": 1,
 																	"description": "Pythagorean number value of the Cornerstone letter."
 																},
 																"meaning": {
 																	"type": "string",
+																	"example": "The approach to new beginnings is direct and self-directed. The default instinct is to take initiative rather than wait for consensus, to assess a situation independently, and to engage on personal terms.",
 																	"description": "How you approach new situations and initiate action."
 																}
 															},
@@ -6475,14 +6727,17 @@
 															"properties": {
 																"letter": {
 																	"type": "string",
+																	"example": "N",
 																	"description": "Last letter of the first name."
 																},
 																"number": {
 																	"type": "number",
+																	"example": 5,
 																	"description": "Pythagorean number value of the Capstone letter."
 																},
 																"meaning": {
 																	"type": "string",
+																	"example": "Endings are handled quickly and without extended backward glance. Protracted closing phases generate impatience, and a clean break is consistently preferred over gradual transition.",
 																	"description": "How you complete tasks and handle endings."
 																}
 															},
@@ -6498,10 +6753,12 @@
 															"properties": {
 																"letter": {
 																	"type": "string",
+																	"example": "O",
 																	"description": "First vowel in the full name (A, E, I, O, or U)."
 																},
 																"meaning": {
 																	"type": "string",
+																	"example": "The instinctive emotional response is principled and measured. Reactions are filtered through a sense of what is right and appropriate before full expression occurs.",
 																	"description": "Instinctive emotional response and inner reaction style."
 																}
 															},
@@ -6537,14 +6794,17 @@
 											"properties": {
 												"day": {
 													"type": "number",
+													"example": 15,
 													"description": "Calendar day of birth (1-31)."
 												},
 												"reducesTo": {
 													"type": "number",
+													"example": 6,
 													"description": "Single digit or master number this day reduces to."
 												},
 												"title": {
 													"type": "string",
+													"example": "The Magnetic Artist",
 													"description": "Unique archetype title for this specific birth day."
 												},
 												"keywords": {
@@ -6552,10 +6812,18 @@
 													"items": {
 														"type": "string"
 													},
+													"example": [
+														"magnetism",
+														"artistic sensibility",
+														"language facility",
+														"nurturing responsibility",
+														"determination"
+													],
 													"description": "Personality traits specific to this birth day."
 												},
 												"description": {
 													"type": "string",
+													"example": "The 15th combines the forward drive of 1, the versatility and appetite for experience of 5, and the care-centered orientation of the reduced 6. The result is one of the more immediately compelling birth day numbers...",
 													"description": "Detailed personality profile unique to this calendar day, not just the reduced digit."
 												},
 												"strengths": {
@@ -6563,6 +6831,12 @@
 													"items": {
 														"type": "string"
 													},
+													"example": [
+														"Personal magnetism that creates immediate and lasting impressions",
+														"Genuine facility with language and visual aesthetic expression",
+														"Deep compassion grounded in practical capability rather than sentiment alone",
+														"Tenacious commitment once a course of action is chosen"
+													],
 													"description": "Strengths specific to this birth day."
 												},
 												"challenges": {
@@ -6570,14 +6844,22 @@
 													"items": {
 														"type": "string"
 													},
+													"example": [
+														"Stubbornness that continues past the point where flexibility would be more useful",
+														"Susceptibility to emotional overwhelm when carrying the burdens of others",
+														"Impatience when results do not arrive on their preferred timeline",
+														"Sensitivity to criticism that can stall otherwise strong creative momentum"
+													],
 													"description": "Challenges specific to this birth day."
 												},
 												"career": {
 													"type": "string",
+													"example": "Healthcare, counseling, social work, teaching, and any direct-service role align with their nurturing orientation and practical capability. Their artistic inclinations open additional paths in visual arts, design, photography, and creative direction...",
 													"description": "Career guidance for this specific birth day."
 												},
 												"relationships": {
 													"type": "string",
+													"example": "Those born on the 15th offer devoted, attentive partnership that combines emotional warmth with practical support. They are drawn to partners who are genuinely engaged in their own lives and purposes...",
 													"description": "Relationship dynamics for this birth day."
 												}
 											},
@@ -6599,14 +6881,17 @@
 											"properties": {
 												"isActive": {
 													"type": "boolean",
+													"example": true,
 													"description": "Whether the Maturity number is currently active (typically activates around age 35-40)."
 												},
 												"currentAge": {
 													"type": "number",
+													"example": 36,
 													"description": "Current age calculated from the birth year."
 												},
 												"activationRange": {
 													"type": "string",
+													"example": "35-40",
 													"description": "Age range when the Maturity number typically activates (35-40)."
 												}
 											},
@@ -6625,6 +6910,11 @@
 													"items": {
 														"type": "string"
 													},
+													"example": [
+														"Green",
+														"Turquoise",
+														"Light Brown"
+													],
 													"description": "Lucky colors associated with the Life Path number."
 												},
 												"gemstones": {
@@ -6632,18 +6922,26 @@
 													"items": {
 														"type": "string"
 													},
+													"example": [
+														"Emerald",
+														"Aquamarine",
+														"Diamond"
+													],
 													"description": "Lucky gemstones aligned to the ruling planet."
 												},
 												"day": {
 													"type": "string",
+													"example": "Wednesday",
 													"description": "Lucky day of the week."
 												},
 												"element": {
 													"type": "string",
+													"example": "Air",
 													"description": "Classical element (Fire, Water, Earth, Air)."
 												},
 												"rulingPlanet": {
 													"type": "string",
+													"example": "Mercury",
 													"description": "Ruling planet for this Life Path number."
 												},
 												"compatibleNumbers": {
@@ -6651,6 +6949,13 @@
 													"items": {
 														"type": "number"
 													},
+													"example": [
+														1,
+														3,
+														5,
+														7,
+														9
+													],
 													"description": "Most compatible Life Path numbers."
 												},
 												"incompatibleNumbers": {
@@ -6658,6 +6963,11 @@
 													"items": {
 														"type": "number"
 													},
+													"example": [
+														2,
+														4,
+														6
+													],
 													"description": "Least compatible Life Path numbers."
 												}
 											},
@@ -7411,6 +7721,7 @@
 												},
 												"description": {
 													"type": "string",
+													"example": "The 7 is the most internally-oriented of the single-digit numbers. While other numbers are engaged primarily with the external world of action, relationship, and material achievement, the 7 is fundamentally concerned with the interior world of understanding...",
 													"description": "Expert-written 300 to 500 word interpretation of the daily energy. Covers personality resonance, life themes, and how this number influences the day."
 												},
 												"strengths": {
@@ -7418,6 +7729,11 @@
 													"items": {
 														"type": "string"
 													},
+													"example": [
+														"Analytical: The 7 is skilled at separating what is essential from what is incidental, and at identifying patterns that others overlook...",
+														"Spiritually perceptive: The 7 has access to intuitive knowledge that supplements and sometimes outpaces its logical reasoning...",
+														"Depth of focus: When the 7 commits its attention to a subject, the quality of that attention is substantial..."
+													],
 													"description": "Qualities that are amplified and accessible today. Lean into these for maximum alignment with the daily energy."
 												},
 												"challenges": {
@@ -7425,18 +7741,26 @@
 													"items": {
 														"type": "string"
 													},
+													"example": [
+														"Withdrawn: The 7 spends much of its mental life in internal territory, and this can produce a social distance...",
+														"Overly private: The 7 holds its interior world closely and is reluctant to share what it thinks and feels...",
+														"Skeptical to excess: The drive of the 7 to examine things beneath the surface can become a disposition that finds complication where none exists..."
+													],
 													"description": "Shadow patterns to watch for today. Awareness of these helps navigate the day with intention and balance."
 												},
 												"career": {
 													"type": "string",
+													"example": "The 7 performs at its highest level in roles that reward solitary investigation, analytical depth, and the pursuit of non-obvious insight. Research science, philosophy, data analysis, writing, psychology, and investigative fields of all kinds draw on the best qualities of this number...",
 													"description": "Professional guidance tuned to the daily energy. Suggests optimal work strategies, meeting approaches, and productivity focus areas."
 												},
 												"relationships": {
 													"type": "string",
+													"example": "The 7 forms relationships with care and some difficulty, opening its interior world slowly and only to those who have demonstrated patience and genuine interest...",
 													"description": "Relationship dynamics influenced by the daily number. Covers communication style, social energy, and partnership awareness for the day."
 												},
 												"spirituality": {
 													"type": "string",
+													"example": "The 7 is the most naturally spiritual of the single-digit numbers, not in a doctrinal sense but in its persistent orientation toward what lies beneath surface experience...",
 													"description": "Spiritual theme of the day. Suggests meditation focus, contemplative practices, and the deeper lesson available today."
 												}
 											},

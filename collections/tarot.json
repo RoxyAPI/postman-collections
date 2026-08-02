@@ -1,7 +1,7 @@
 {
 	"item": [
 		{
-			"id": "cbadb416-fdaa-4f08-9b33-f158baf32c86",
+			"id": "044e43c3-edee-4971-a3c5-d1132e171c13",
 			"name": "Tarot",
 			"description": {
 				"content": "Tarot reading API with the complete 78-card Rider-Waite-Smith deck and card meanings for love, career, health, and spiritual growth. Celtic Cross, three-card, love, career, yes/no oracle, daily card, and custom spreads, each with upright and reversed interpretations. Seeded reproducibility for personalized daily readings, and card images included. Built for tarot apps, AI tarot chatbots, fortune-telling platforms, and spiritual wellness products. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.",
@@ -9,7 +9,7 @@
 			},
 			"item": [
 				{
-					"id": "4d4adfa9-e2b6-438c-b605-675f57906074",
+					"id": "d8c70f81-4895-4c13-91db-e312f9f36c9e",
 					"name": "List all 78 tarot cards",
 					"request": {
 						"name": "List all 78 tarot cards",
@@ -91,7 +91,7 @@
 					},
 					"response": [
 						{
-							"id": "b3a92af5-bc99-44bc-a797-bb99a7ca17a8",
+							"id": "130d1e87-7408-4370-ad51-2aeb18ff5667",
 							"name": "List of tarot cards with basic information. Use GET /cards/:id for full details.",
 							"originalRequest": {
 								"url": {
@@ -154,12 +154,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"total\": 7784.652743977986,\n  \"limit\": 8314.085369267057,\n  \"offset\": 9504.688148157004,\n  \"cards\": [\n    {\n      \"id\": \"fool\",\n      \"name\": \"The Fool\",\n      \"arcana\": \"major\",\n      \"number\": 0,\n      \"imageUrl\": \"https://roxyapi.com/img/tarot/major/fool.jpg\",\n      \"suit\": \"cups\"\n    },\n    {\n      \"id\": \"fool\",\n      \"name\": \"The Fool\",\n      \"arcana\": \"major\",\n      \"number\": 0,\n      \"imageUrl\": \"https://roxyapi.com/img/tarot/major/fool.jpg\",\n      \"suit\": \"cups\"\n    }\n  ]\n}",
+							"body": "{\n  \"total\": 78,\n  \"limit\": 20,\n  \"offset\": 0,\n  \"cards\": [\n    {\n      \"id\": \"fool\",\n      \"name\": \"The Fool\",\n      \"arcana\": \"major\",\n      \"number\": 0,\n      \"imageUrl\": \"https://roxyapi.com/img/tarot/major/fool.jpg\",\n      \"suit\": \"cups\"\n    },\n    {\n      \"id\": \"fool\",\n      \"name\": \"The Fool\",\n      \"arcana\": \"major\",\n      \"number\": 0,\n      \"imageUrl\": \"https://roxyapi.com/img/tarot/major/fool.jpg\",\n      \"suit\": \"cups\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8b6c81ff-5ffc-4a45-bb97-61cf45b21a0e",
+							"id": "394b52c8-dd69-49ff-81f8-09f129adb20b",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -222,12 +222,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9672.150700184691,\n      \"maximum\": 7426.123271928656,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7254.616357508354,\n      \"maximum\": 5777.760415589268,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 343.3222388754964,\n      \"maximum\": 9755.523062040593,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9745.704783076848,\n      \"maximum\": 8127.613244365866,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "19a0c1be-7717-4299-8d28-ca793f347c61",
+							"id": "b222874d-c869-42b3-bc4e-4d1370ebe3d1",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -295,7 +295,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c6daf405-cb24-41f4-9494-0439dd1f2eb9",
+							"id": "a368dd53-e5ce-415a-9675-cc5567b8a1cb",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -369,7 +369,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "261b7eac-bbca-4e7c-a9f7-a81ac34c9681",
+							"id": "729e2cee-b35e-4bfa-80c8-16af4710d939",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -437,7 +437,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e5b62555-2931-456c-b852-d9fd953e1e1f",
+							"id": "bedb76a4-850b-41c3-baf9-a5b455af8a4f",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -511,7 +511,7 @@
 					}
 				},
 				{
-					"id": "2712745d-f715-4fd7-a86f-75aa1f6a955c",
+					"id": "687cb1e8-f359-45ae-a385-44da5f5a3efa",
 					"name": "Get detailed tarot card information",
 					"request": {
 						"name": "Get detailed tarot card information",
@@ -572,7 +572,7 @@
 					},
 					"response": [
 						{
-							"id": "460173c0-8ab4-4437-9d4b-f0490de3051b",
+							"id": "24940b9c-4899-41c9-81f1-ca42ef16e75f",
 							"name": "Card details",
 							"originalRequest": {
 								"url": {
@@ -624,12 +624,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"id\": \"fool\",\n  \"name\": \"The Fool\",\n  \"arcana\": \"major\",\n  \"number\": 0,\n  \"keywords\": {\n    \"upright\": [\n      \"string\",\n      \"string\"\n    ],\n    \"reversed\": [\n      \"string\",\n      \"string\"\n    ]\n  },\n  \"upright\": {\n    \"keywords\": [\n      \"string\",\n      \"string\"\n    ],\n    \"description\": \"string\",\n    \"love\": \"string\",\n    \"career\": \"string\",\n    \"finances\": \"string\",\n    \"health\": \"string\",\n    \"spirituality\": \"string\"\n  },\n  \"reversed\": {\n    \"keywords\": [\n      \"string\",\n      \"string\"\n    ],\n    \"description\": \"string\",\n    \"love\": \"string\",\n    \"career\": \"string\",\n    \"finances\": \"string\",\n    \"health\": \"string\",\n    \"spirituality\": \"string\"\n  },\n  \"imageUrl\": \"https://roxyapi.com/img/tarot/major/fool.jpg\",\n  \"suit\": \"cups\"\n}",
+							"body": "{\n  \"id\": \"fool\",\n  \"name\": \"The Fool\",\n  \"arcana\": \"major\",\n  \"number\": 0,\n  \"keywords\": {\n    \"upright\": [\n      \"new beginnings\",\n      \"innocence\",\n      \"spontaneity\",\n      \"free spirit\",\n      \"potential\"\n    ],\n    \"reversed\": [\n      \"recklessness\",\n      \"hesitation\",\n      \"naivety\",\n      \"fear of the unknown\"\n    ]\n  },\n  \"upright\": {\n    \"keywords\": [\n      \"new beginnings\",\n      \"innocence\",\n      \"spontaneity\",\n      \"free spirit\",\n      \"potential\"\n    ],\n    \"description\": \"Numbered zero, The Fool stands at the threshold of the Major Arcana as pure, unwritten potential. In the Rider-Waite-Smith image, a young traveller pauses at the edge of a high cliff, gazing into the open sky rather than the drop below, a white rose of innocence in one hand and a light bag of belongings slung from a wand over the shoulder.\",\n    \"love\": \"A new romance or a fresh chapter in an existing bond is opening. The card favours openness to unexpected connection and a spirit of play over caution.\",\n    \"career\": \"This is a threshold moment for work: a new role, a new venture, or a bold pivot into unfamiliar territory. The Fool rewards initiative and original thinking, and it can breathe fresh energy into stale projects.\",\n    \"finances\": \"Financial openings appear, sometimes from unexpected directions, and the mood is expansive and exploratory. Spending tends toward experience, learning, and adventure.\",\n    \"health\": \"Renewed vitality and a fresh start are indicated, well suited to a new routine, an unfamiliar sport, or simply more time outdoors and in motion.\",\n    \"spirituality\": \"A spiritual journey is beginning, marked by openness, wonder, and a beginners willingness to learn.\"\n  },\n  \"reversed\": {\n    \"keywords\": [\n      \"new beginnings\",\n      \"innocence\",\n      \"spontaneity\",\n      \"free spirit\",\n      \"potential\"\n    ],\n    \"description\": \"Numbered zero, The Fool stands at the threshold of the Major Arcana as pure, unwritten potential. In the Rider-Waite-Smith image, a young traveller pauses at the edge of a high cliff, gazing into the open sky rather than the drop below, a white rose of innocence in one hand and a light bag of belongings slung from a wand over the shoulder.\",\n    \"love\": \"A new romance or a fresh chapter in an existing bond is opening. The card favours openness to unexpected connection and a spirit of play over caution.\",\n    \"career\": \"This is a threshold moment for work: a new role, a new venture, or a bold pivot into unfamiliar territory. The Fool rewards initiative and original thinking, and it can breathe fresh energy into stale projects.\",\n    \"finances\": \"Financial openings appear, sometimes from unexpected directions, and the mood is expansive and exploratory. Spending tends toward experience, learning, and adventure.\",\n    \"health\": \"Renewed vitality and a fresh start are indicated, well suited to a new routine, an unfamiliar sport, or simply more time outdoors and in motion.\",\n    \"spirituality\": \"A spiritual journey is beginning, marked by openness, wonder, and a beginners willingness to learn.\"\n  },\n  \"imageUrl\": \"https://roxyapi.com/img/tarot/major/fool.jpg\",\n  \"suit\": \"cups\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "4cad92dd-c89b-40c3-8458-197ff828bfea",
+							"id": "6c6c8859-ebad-40b1-bf0c-aef3f81430d3",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -681,12 +681,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9672.150700184691,\n      \"maximum\": 7426.123271928656,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7254.616357508354,\n      \"maximum\": 5777.760415589268,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 343.3222388754964,\n      \"maximum\": 9755.523062040593,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9745.704783076848,\n      \"maximum\": 8127.613244365866,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1424a848-a816-4f41-af94-0abd2dafde53",
+							"id": "aa4cbb5b-6e16-41ca-b11d-a323164f6c99",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -743,7 +743,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "cb9f90b3-e161-459d-b871-12514e97417e",
+							"id": "bdadecc9-1cd3-4877-982e-1fec2ae3fb22",
 							"name": "Card not found",
 							"originalRequest": {
 								"url": {
@@ -800,7 +800,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5d79b5b8-096e-49cd-896c-fd206ce4115b",
+							"id": "16248439-cf09-49a0-858e-2295b49f9e5e",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -863,7 +863,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "947772e7-038c-41f6-b44b-6cc4d66f46d2",
+							"id": "c61a0d01-6b85-48ce-8a48-e10ef856edf9",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -920,7 +920,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d8fcbe1f-b88f-44aa-bd3c-9b579793f0f1",
+							"id": "35b87413-be8b-49dd-aaf0-89bb04512e4d",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -983,7 +983,7 @@
 					}
 				},
 				{
-					"id": "649911f2-b0ba-4d83-a336-fb207938e81b",
+					"id": "d9b16011-949a-4c8d-a8ef-d9153182beac",
 					"name": "Draw random tarot cards with reproducible results",
 					"request": {
 						"name": "Draw random tarot cards with reproducible results",
@@ -1048,7 +1048,7 @@
 					},
 					"response": [
 						{
-							"id": "38592570-3a43-49e0-be51-90b13ad85e5a",
+							"id": "81fa03d0-5626-4d9b-88b5-0305f3a45f6b",
 							"name": "Drawn cards",
 							"originalRequest": {
 								"url": {
@@ -1099,12 +1099,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"cards\": [\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"arcana\": \"major\",\n      \"position\": 3087.844594443594,\n      \"reversed\": false,\n      \"keywords\": [\n        \"string\",\n        \"string\"\n      ],\n      \"meaning\": \"string\",\n      \"imageUrl\": \"string\",\n      \"suit\": \"swords\",\n      \"number\": 7129.1510260585765,\n      \"love\": \"string\",\n      \"career\": \"string\",\n      \"finances\": \"string\",\n      \"health\": \"string\",\n      \"spirituality\": \"string\"\n    },\n    {\n      \"id\": \"string\",\n      \"name\": \"string\",\n      \"arcana\": \"major\",\n      \"position\": 5014.469200856419,\n      \"reversed\": true,\n      \"keywords\": [\n        \"string\",\n        \"string\"\n      ],\n      \"meaning\": \"string\",\n      \"imageUrl\": \"string\",\n      \"suit\": \"cups\",\n      \"number\": 8424.543202615545,\n      \"love\": \"string\",\n      \"career\": \"string\",\n      \"finances\": \"string\",\n      \"health\": \"string\",\n      \"spirituality\": \"string\"\n    }\n  ],\n  \"seed\": \"string\"\n}",
+							"body": "{\n  \"cards\": [\n    {\n      \"id\": \"fool\",\n      \"name\": \"The Fool\",\n      \"arcana\": \"major\",\n      \"position\": 1,\n      \"reversed\": false,\n      \"keywords\": [\n        \"new beginnings\",\n        \"innocence\",\n        \"spontaneity\",\n        \"free spirit\",\n        \"potential\"\n      ],\n      \"meaning\": \"Numbered zero, The Fool stands at the threshold of the Major Arcana as pure, unwritten potential. In the Rider-Waite-Smith image, a young traveller pauses at the edge of a high cliff, gazing into the open sky rather than the drop below, a white rose of innocence in one hand and a light bag of belongings slung from a wand over the shoulder.\",\n      \"imageUrl\": \"https://roxyapi.com/img/tarot/major/fool.jpg\",\n      \"suit\": \"swords\",\n      \"number\": 0,\n      \"love\": \"A new romance or a fresh chapter in an existing bond is opening. The card favours openness to unexpected connection and a spirit of play over caution.\",\n      \"career\": \"This is a threshold moment for work: a new role, a new venture, or a bold pivot into unfamiliar territory. The Fool rewards initiative and original thinking, and it can breathe fresh energy into stale projects.\",\n      \"finances\": \"Financial openings appear, sometimes from unexpected directions, and the mood is expansive and exploratory. Spending tends toward experience, learning, and adventure.\",\n      \"health\": \"Renewed vitality and a fresh start are indicated, well suited to a new routine, an unfamiliar sport, or simply more time outdoors and in motion.\",\n      \"spirituality\": \"A spiritual journey is beginning, marked by openness, wonder, and a beginners willingness to learn.\"\n    },\n    {\n      \"id\": \"fool\",\n      \"name\": \"The Fool\",\n      \"arcana\": \"minor\",\n      \"position\": 1,\n      \"reversed\": false,\n      \"keywords\": [\n        \"new beginnings\",\n        \"innocence\",\n        \"spontaneity\",\n        \"free spirit\",\n        \"potential\"\n      ],\n      \"meaning\": \"Numbered zero, The Fool stands at the threshold of the Major Arcana as pure, unwritten potential. In the Rider-Waite-Smith image, a young traveller pauses at the edge of a high cliff, gazing into the open sky rather than the drop below, a white rose of innocence in one hand and a light bag of belongings slung from a wand over the shoulder.\",\n      \"imageUrl\": \"https://roxyapi.com/img/tarot/major/fool.jpg\",\n      \"suit\": \"cups\",\n      \"number\": 0,\n      \"love\": \"A new romance or a fresh chapter in an existing bond is opening. The card favours openness to unexpected connection and a spirit of play over caution.\",\n      \"career\": \"This is a threshold moment for work: a new role, a new venture, or a bold pivot into unfamiliar territory. The Fool rewards initiative and original thinking, and it can breathe fresh energy into stale projects.\",\n      \"finances\": \"Financial openings appear, sometimes from unexpected directions, and the mood is expansive and exploratory. Spending tends toward experience, learning, and adventure.\",\n      \"health\": \"Renewed vitality and a fresh start are indicated, well suited to a new routine, an unfamiliar sport, or simply more time outdoors and in motion.\",\n      \"spirituality\": \"A spiritual journey is beginning, marked by openness, wonder, and a beginners willingness to learn.\"\n    }\n  ],\n  \"seed\": \"user123-2025-12-27\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9bd398a7-bedc-4d9f-af9e-b2526ae6b72b",
+							"id": "f2af0588-73ff-4171-9718-624f589fb2c1",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1155,12 +1155,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9672.150700184691,\n      \"maximum\": 7426.123271928656,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7254.616357508354,\n      \"maximum\": 5777.760415589268,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 343.3222388754964,\n      \"maximum\": 9755.523062040593,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9745.704783076848,\n      \"maximum\": 8127.613244365866,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e6baa348-351f-4ef9-997b-41355ba53f6f",
+							"id": "eabe813a-a926-493a-b970-fbf7acafce7d",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1216,7 +1216,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "59b90a9b-c2b0-4fbb-8937-6ce7a34f1ca9",
+							"id": "abf41baa-e642-4090-b8a5-01dc701700b2",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1278,7 +1278,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d8aaca3e-acbc-4af6-b865-9e4bb10e905f",
+							"id": "f1f0b813-7e12-4733-82d3-a1f361151d86",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1334,7 +1334,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "00735505-8750-48b0-b264-2b2fed2d627c",
+							"id": "a06073b5-117b-4dbb-ad8e-3c2221d66e19",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1396,7 +1396,7 @@
 					}
 				},
 				{
-					"id": "368ce1f6-3d0b-448d-91e6-9ef916523d69",
+					"id": "f477b00f-2dfd-490e-bcf9-2edf5e9bdf10",
 					"name": "Get daily tarot card reading",
 					"request": {
 						"name": "Get daily tarot card reading",
@@ -1461,7 +1461,7 @@
 					},
 					"response": [
 						{
-							"id": "cc7af19e-1358-414e-b766-27964b0cb718",
+							"id": "88d5cdff-f712-4559-bab8-69d00f031c11",
 							"name": "Daily card reading",
 							"originalRequest": {
 								"url": {
@@ -1512,12 +1512,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"date\": \"string\",\n  \"seed\": \"string\",\n  \"card\": {\n    \"id\": \"string\",\n    \"name\": \"string\",\n    \"arcana\": \"minor\",\n    \"position\": 1192.3389736294444,\n    \"reversed\": true,\n    \"keywords\": [\n      \"string\",\n      \"string\"\n    ],\n    \"meaning\": \"string\",\n    \"imageUrl\": \"string\",\n    \"suit\": \"pentacles\",\n    \"number\": 6069.6614618455105,\n    \"love\": \"string\",\n    \"career\": \"string\",\n    \"finances\": \"string\",\n    \"health\": \"string\",\n    \"spirituality\": \"string\"\n  },\n  \"dailyMessage\": \"string\"\n}",
+							"body": "{\n  \"date\": \"2026-03-06\",\n  \"seed\": \"user123-2026-03-06\",\n  \"card\": {\n    \"id\": \"fool\",\n    \"name\": \"The Fool\",\n    \"arcana\": \"minor\",\n    \"position\": 1,\n    \"reversed\": false,\n    \"keywords\": [\n      \"new beginnings\",\n      \"innocence\",\n      \"spontaneity\",\n      \"free spirit\",\n      \"potential\"\n    ],\n    \"meaning\": \"Numbered zero, The Fool stands at the threshold of the Major Arcana as pure, unwritten potential. In the Rider-Waite-Smith image, a young traveller pauses at the edge of a high cliff, gazing into the open sky rather than the drop below, a white rose of innocence in one hand and a light bag of belongings slung from a wand over the shoulder.\",\n    \"imageUrl\": \"https://roxyapi.com/img/tarot/major/fool.jpg\",\n    \"suit\": \"wands\",\n    \"number\": 0,\n    \"love\": \"A new romance or a fresh chapter in an existing bond is opening. The card favours openness to unexpected connection and a spirit of play over caution.\",\n    \"career\": \"This is a threshold moment for work: a new role, a new venture, or a bold pivot into unfamiliar territory. The Fool rewards initiative and original thinking, and it can breathe fresh energy into stale projects.\",\n    \"finances\": \"Financial openings appear, sometimes from unexpected directions, and the mood is expansive and exploratory. Spending tends toward experience, learning, and adventure.\",\n    \"health\": \"Renewed vitality and a fresh start are indicated, well suited to a new routine, an unfamiliar sport, or simply more time outdoors and in motion.\",\n    \"spirituality\": \"A spiritual journey is beginning, marked by openness, wonder, and a beginners willingness to learn.\"\n  },\n  \"dailyMessage\": \"Your card for 2026-03-06: Knight of Pentacles (reversed). stagnation, stubbornness, boredom, overcaution. Reversed, the Knight of Pentacles shows his steady virtues tipping into excess, and the surrounding cards reveal which way. Waite gave the reversal as inertia, idleness, stagnation, and discouragement...\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "58028fc5-7cad-416a-b459-a700f5930f9d",
+							"id": "e9ecc446-c3d0-48c8-a879-4f2a51091bb8",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1568,12 +1568,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9672.150700184691,\n      \"maximum\": 7426.123271928656,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7254.616357508354,\n      \"maximum\": 5777.760415589268,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 343.3222388754964,\n      \"maximum\": 9755.523062040593,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9745.704783076848,\n      \"maximum\": 8127.613244365866,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d23a249b-d496-4b60-851b-4136241d986d",
+							"id": "30bc336c-c531-420f-840d-f93a95704326",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1629,7 +1629,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6a813eef-95c7-4a3f-a465-bc09d26eda41",
+							"id": "ebb4fad1-1c97-474e-b31a-70aba9276e79",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1691,7 +1691,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3475558e-c592-4a75-b11e-dd37fda36074",
+							"id": "e1d427c7-3618-45f1-b4de-bf91e9cd955f",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1747,7 +1747,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "57c0ee9d-86b2-482e-b21f-1ffc98346327",
+							"id": "2e692294-fe44-48fc-8276-d61de0baa045",
 							"name": "Failed to draw card",
 							"originalRequest": {
 								"url": {
@@ -1809,7 +1809,7 @@
 					}
 				},
 				{
-					"id": "b2203048-f6ee-43f5-b15f-5709c71c2bbf",
+					"id": "c3d30aa3-5058-4d6d-bf88-62e6fd706ef0",
 					"name": "Get yes/no answer to your question",
 					"request": {
 						"name": "Get yes/no answer to your question",
@@ -1864,7 +1864,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"question\": \"Should I accept the job offer?\",\n  \"seed\": \"optional-seed\"\n}",
+							"raw": "{\n  \"question\": \"Should I accept the job offer?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1874,7 +1874,7 @@
 					},
 					"response": [
 						{
-							"id": "49b3b40b-e3b9-4beb-9288-19fb1b3706a7",
+							"id": "eebd39bd-b02f-43b6-aa31-cfd981028663",
 							"name": "Yes/No answer with interpretation",
 							"originalRequest": {
 								"url": {
@@ -1909,7 +1909,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"Should I accept the job offer?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"Should I accept the job offer?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1925,12 +1925,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"answer\": \"Maybe\",\n  \"strength\": \"Strong\",\n  \"card\": {\n    \"id\": \"string\",\n    \"name\": \"string\",\n    \"arcana\": \"major\",\n    \"reversed\": false,\n    \"keywords\": [\n      \"string\",\n      \"string\"\n    ],\n    \"imageUrl\": \"string\"\n  },\n  \"interpretation\": \"string\",\n  \"question\": \"string\",\n  \"seed\": \"user123-question1\"\n}",
+							"body": "{\n  \"answer\": \"Maybe\",\n  \"strength\": \"Qualified\",\n  \"card\": {\n    \"id\": \"world\",\n    \"name\": \"The World\",\n    \"arcana\": \"minor\",\n    \"reversed\": false,\n    \"keywords\": [\n      \"completion\",\n      \"fulfilment\",\n      \"integration\",\n      \"accomplishment\",\n      \"travel\"\n    ],\n    \"imageUrl\": \"https://roxyapi.com/img/tarot/major/world.jpg\"\n  },\n  \"interpretation\": \"Strong Yes: The World suggests forward momentum. The World is the final card of the Major Arcana, the close of the journey that began with The Fool. In the Rider-Waite-Smith image, a dancing figure m...\",\n  \"question\": \"Should I accept the job offer?\",\n  \"seed\": \"user123-question1\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "633df9ec-9ab4-4ed7-976a-1c1dfab38bb7",
+							"id": "f13b0ef1-99fd-41e9-9a49-e9c7439f6bbb",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1965,7 +1965,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"Should I accept the job offer?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"Should I accept the job offer?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1981,12 +1981,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9672.150700184691,\n      \"maximum\": 7426.123271928656,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7254.616357508354,\n      \"maximum\": 5777.760415589268,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 343.3222388754964,\n      \"maximum\": 9755.523062040593,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9745.704783076848,\n      \"maximum\": 8127.613244365866,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0d6ecf0d-a82a-4df7-b1ca-75583f6bf549",
+							"id": "b410a4b0-410d-42ac-8e29-b87264ea0e10",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2021,7 +2021,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"Should I accept the job offer?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"Should I accept the job offer?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2042,7 +2042,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9d590bdc-61e2-4f58-bc22-e81fac104fea",
+							"id": "4fc46a56-547b-44ef-b4ad-6ac485e30646",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2077,7 +2077,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"Should I accept the job offer?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"Should I accept the job offer?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2104,7 +2104,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "91baa5a0-7951-4001-b7fc-f86dcd5161b8",
+							"id": "e4cea5b1-9e61-4ad1-bf01-7195a7aaf434",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2139,7 +2139,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"Should I accept the job offer?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"Should I accept the job offer?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2160,7 +2160,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "cac96929-e8b7-4fb4-a2c6-40d767cd4ac1",
+							"id": "3724f639-4994-4662-a938-6ce0e86b8c4a",
 							"name": "Failed to draw card",
 							"originalRequest": {
 								"url": {
@@ -2195,7 +2195,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"Should I accept the job offer?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"Should I accept the job offer?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2222,7 +2222,7 @@
 					}
 				},
 				{
-					"id": "2e5606d2-c10b-4110-8d27-580adc78d937",
+					"id": "72dd5609-eb26-404b-9c4e-f6fb5f41466e",
 					"name": "Three-Card Spread: Past, Present, Future",
 					"request": {
 						"name": "Three-Card Spread: Past, Present, Future",
@@ -2278,7 +2278,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"question\": \"What do I need to know about my career?\",\n  \"seed\": \"optional-seed\"\n}",
+							"raw": "{\n  \"question\": \"What do I need to know about my career?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2288,7 +2288,7 @@
 					},
 					"response": [
 						{
-							"id": "9bf1481a-65ef-4d88-ad42-2b73e1fb7123",
+							"id": "a3319c71-7af1-48b4-a3d6-abdff0774c5d",
 							"name": "Three-card spread reading",
 							"originalRequest": {
 								"url": {
@@ -2324,7 +2324,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"What do I need to know about my career?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"What do I need to know about my career?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2340,12 +2340,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"spread\": \"string\",\n  \"positions\": [\n    {\n      \"position\": 9206.733370942507,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"major\",\n        \"position\": 868.1302360218191,\n        \"reversed\": true,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"swords\",\n        \"number\": 693.1770117871283,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    },\n    {\n      \"position\": 4928.881485884132,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"minor\",\n        \"position\": 6173.295335277703,\n        \"reversed\": true,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"pentacles\",\n        \"number\": 7161.021022235542,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    }\n  ],\n  \"question\": \"string\",\n  \"seed\": \"string\",\n  \"summary\": \"string\"\n}",
+							"body": "{\n  \"spread\": \"Three-Card\",\n  \"positions\": [\n    {\n      \"position\": 1,\n      \"name\": \"Past\",\n      \"interpretation\": \"What has led to this situation and the foundational influences at play. Shows the events, decisions, and energies that have brought you to where you are now. Understanding the past provides context for the present.\",\n      \"card\": {\n        \"id\": \"fool\",\n        \"name\": \"The Fool\",\n        \"arcana\": \"minor\",\n        \"position\": 1,\n        \"reversed\": false,\n        \"keywords\": [\n          \"new beginnings\",\n          \"innocence\",\n          \"spontaneity\",\n          \"free spirit\",\n          \"potential\"\n        ],\n        \"meaning\": \"Numbered zero, The Fool stands at the threshold of the Major Arcana as pure, unwritten potential. In the Rider-Waite-Smith image, a young traveller pauses at the edge of a high cliff, gazing into the open sky rather than the drop below, a white rose of innocence in one hand and a light bag of belongings slung from a wand over the shoulder.\",\n        \"imageUrl\": \"https://roxyapi.com/img/tarot/major/fool.jpg\",\n        \"suit\": \"pentacles\",\n        \"number\": 0,\n        \"love\": \"A new romance or a fresh chapter in an existing bond is opening. The card favours openness to unexpected connection and a spirit of play over caution.\",\n        \"career\": \"This is a threshold moment for work: a new role, a new venture, or a bold pivot into unfamiliar territory. The Fool rewards initiative and original thinking, and it can breathe fresh energy into stale projects.\",\n        \"finances\": \"Financial openings appear, sometimes from unexpected directions, and the mood is expansive and exploratory. Spending tends toward experience, learning, and adventure.\",\n        \"health\": \"Renewed vitality and a fresh start are indicated, well suited to a new routine, an unfamiliar sport, or simply more time outdoors and in motion.\",\n        \"spirituality\": \"A spiritual journey is beginning, marked by openness, wonder, and a beginners willingness to learn.\"\n      }\n    },\n    {\n      \"position\": 1,\n      \"name\": \"Past\",\n      \"interpretation\": \"What has led to this situation and the foundational influences at play. Shows the events, decisions, and energies that have brought you to where you are now. Understanding the past provides context for the present.\",\n      \"card\": {\n        \"id\": \"fool\",\n        \"name\": \"The Fool\",\n        \"arcana\": \"minor\",\n        \"position\": 1,\n        \"reversed\": false,\n        \"keywords\": [\n          \"new beginnings\",\n          \"innocence\",\n          \"spontaneity\",\n          \"free spirit\",\n          \"potential\"\n        ],\n        \"meaning\": \"Numbered zero, The Fool stands at the threshold of the Major Arcana as pure, unwritten potential. In the Rider-Waite-Smith image, a young traveller pauses at the edge of a high cliff, gazing into the open sky rather than the drop below, a white rose of innocence in one hand and a light bag of belongings slung from a wand over the shoulder.\",\n        \"imageUrl\": \"https://roxyapi.com/img/tarot/major/fool.jpg\",\n        \"suit\": \"cups\",\n        \"number\": 0,\n        \"love\": \"A new romance or a fresh chapter in an existing bond is opening. The card favours openness to unexpected connection and a spirit of play over caution.\",\n        \"career\": \"This is a threshold moment for work: a new role, a new venture, or a bold pivot into unfamiliar territory. The Fool rewards initiative and original thinking, and it can breathe fresh energy into stale projects.\",\n        \"finances\": \"Financial openings appear, sometimes from unexpected directions, and the mood is expansive and exploratory. Spending tends toward experience, learning, and adventure.\",\n        \"health\": \"Renewed vitality and a fresh start are indicated, well suited to a new routine, an unfamiliar sport, or simply more time outdoors and in motion.\",\n        \"spirituality\": \"A spiritual journey is beginning, marked by openness, wonder, and a beginners willingness to learn.\"\n      }\n    }\n  ],\n  \"question\": \"What do I need to know about my career?\",\n  \"seed\": \"reading-2f9c1a\",\n  \"summary\": \"Your past (Eight of Wands) has shaped your present situation (Four of Swords reversed). The future (The Lovers reversed) suggests challenges to overcome if you continue on this path.\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7c0c7f38-20f7-412d-a6d9-c5ceb5b3bd56",
+							"id": "096fbf46-fc3e-41a1-a12b-97f8564d7805",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2381,7 +2381,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"What do I need to know about my career?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"What do I need to know about my career?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2397,12 +2397,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9672.150700184691,\n      \"maximum\": 7426.123271928656,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7254.616357508354,\n      \"maximum\": 5777.760415589268,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 343.3222388754964,\n      \"maximum\": 9755.523062040593,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9745.704783076848,\n      \"maximum\": 8127.613244365866,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1cec8f76-2aba-4d28-8caf-0e6a93eac06e",
+							"id": "d9772435-176e-4b9a-8d58-e29cbafb7c42",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2438,7 +2438,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"What do I need to know about my career?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"What do I need to know about my career?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2459,7 +2459,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f86ba7aa-9f93-4534-8ec2-f3b6098cec13",
+							"id": "b4209663-bf9f-4500-966d-6a6047652188",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2495,7 +2495,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"What do I need to know about my career?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"What do I need to know about my career?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2522,7 +2522,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a50a3354-f438-4073-8d9b-838d01e116af",
+							"id": "f48b707d-bb19-4fb6-b5d3-8f03369ed52d",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2558,7 +2558,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"What do I need to know about my career?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"What do I need to know about my career?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2579,7 +2579,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "dde05756-9a25-4fae-bc27-17245ec88c4e",
+							"id": "9da039e0-676a-4d00-a25b-4c9b3dd8472c",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2615,7 +2615,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"What do I need to know about my career?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"What do I need to know about my career?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2642,7 +2642,7 @@
 					}
 				},
 				{
-					"id": "b634a55d-e78e-453a-90e6-365ac4c1e188",
+					"id": "0595239a-89eb-454c-83b6-5fcf6e0670f3",
 					"name": "Celtic Cross Spread (10 cards)",
 					"request": {
 						"name": "Celtic Cross Spread (10 cards)",
@@ -2698,7 +2698,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"question\": \"What should I know about this situation?\",\n  \"seed\": \"optional-seed\"\n}",
+							"raw": "{\n  \"question\": \"What should I know about this situation?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2708,7 +2708,7 @@
 					},
 					"response": [
 						{
-							"id": "fcb4e5f7-43be-4691-80d7-91554e7246b0",
+							"id": "95da6e58-24ec-4780-b24f-60a3ca6da8ef",
 							"name": "Celtic Cross spread reading",
 							"originalRequest": {
 								"url": {
@@ -2744,7 +2744,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"What should I know about this situation?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"What should I know about this situation?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2760,12 +2760,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"spread\": \"string\",\n  \"positions\": [\n    {\n      \"position\": 5939.254112316958,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"minor\",\n        \"position\": 6431.366120662926,\n        \"reversed\": false,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"pentacles\",\n        \"number\": 3937.6885929419113,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    },\n    {\n      \"position\": 3994.10324656156,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"major\",\n        \"position\": 7158.33731296621,\n        \"reversed\": true,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"pentacles\",\n        \"number\": 6217.522765076603,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    }\n  ],\n  \"question\": \"string\",\n  \"seed\": \"string\",\n  \"summary\": \"string\"\n}",
+							"body": "{\n  \"spread\": \"Celtic Cross\",\n  \"positions\": [\n    {\n      \"position\": 1,\n      \"name\": \"Past\",\n      \"interpretation\": \"What has led to this situation and the foundational influences at play. Shows the events, decisions, and energies that have brought you to where you are now. Understanding the past provides context for the present.\",\n      \"card\": {\n        \"id\": \"fool\",\n        \"name\": \"The Fool\",\n        \"arcana\": \"major\",\n        \"position\": 1,\n        \"reversed\": false,\n        \"keywords\": [\n          \"new beginnings\",\n          \"innocence\",\n          \"spontaneity\",\n          \"free spirit\",\n          \"potential\"\n        ],\n        \"meaning\": \"Numbered zero, The Fool stands at the threshold of the Major Arcana as pure, unwritten potential. In the Rider-Waite-Smith image, a young traveller pauses at the edge of a high cliff, gazing into the open sky rather than the drop below, a white rose of innocence in one hand and a light bag of belongings slung from a wand over the shoulder.\",\n        \"imageUrl\": \"https://roxyapi.com/img/tarot/major/fool.jpg\",\n        \"suit\": \"pentacles\",\n        \"number\": 0,\n        \"love\": \"A new romance or a fresh chapter in an existing bond is opening. The card favours openness to unexpected connection and a spirit of play over caution.\",\n        \"career\": \"This is a threshold moment for work: a new role, a new venture, or a bold pivot into unfamiliar territory. The Fool rewards initiative and original thinking, and it can breathe fresh energy into stale projects.\",\n        \"finances\": \"Financial openings appear, sometimes from unexpected directions, and the mood is expansive and exploratory. Spending tends toward experience, learning, and adventure.\",\n        \"health\": \"Renewed vitality and a fresh start are indicated, well suited to a new routine, an unfamiliar sport, or simply more time outdoors and in motion.\",\n        \"spirituality\": \"A spiritual journey is beginning, marked by openness, wonder, and a beginners willingness to learn.\"\n      }\n    },\n    {\n      \"position\": 1,\n      \"name\": \"Past\",\n      \"interpretation\": \"What has led to this situation and the foundational influences at play. Shows the events, decisions, and energies that have brought you to where you are now. Understanding the past provides context for the present.\",\n      \"card\": {\n        \"id\": \"fool\",\n        \"name\": \"The Fool\",\n        \"arcana\": \"minor\",\n        \"position\": 1,\n        \"reversed\": false,\n        \"keywords\": [\n          \"new beginnings\",\n          \"innocence\",\n          \"spontaneity\",\n          \"free spirit\",\n          \"potential\"\n        ],\n        \"meaning\": \"Numbered zero, The Fool stands at the threshold of the Major Arcana as pure, unwritten potential. In the Rider-Waite-Smith image, a young traveller pauses at the edge of a high cliff, gazing into the open sky rather than the drop below, a white rose of innocence in one hand and a light bag of belongings slung from a wand over the shoulder.\",\n        \"imageUrl\": \"https://roxyapi.com/img/tarot/major/fool.jpg\",\n        \"suit\": \"cups\",\n        \"number\": 0,\n        \"love\": \"A new romance or a fresh chapter in an existing bond is opening. The card favours openness to unexpected connection and a spirit of play over caution.\",\n        \"career\": \"This is a threshold moment for work: a new role, a new venture, or a bold pivot into unfamiliar territory. The Fool rewards initiative and original thinking, and it can breathe fresh energy into stale projects.\",\n        \"finances\": \"Financial openings appear, sometimes from unexpected directions, and the mood is expansive and exploratory. Spending tends toward experience, learning, and adventure.\",\n        \"health\": \"Renewed vitality and a fresh start are indicated, well suited to a new routine, an unfamiliar sport, or simply more time outdoors and in motion.\",\n        \"spirituality\": \"A spiritual journey is beginning, marked by openness, wonder, and a beginners willingness to learn.\"\n      }\n    }\n  ],\n  \"question\": \"What should I know about this situation?\",\n  \"seed\": \"reading-2f9c1a\",\n  \"summary\": \"The Celtic Cross provides deep insight into your situation, revealing past influences, present challenges, and future possibilities.\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b5a78653-04c6-4616-a1bc-9d9d599a7016",
+							"id": "9b7b08a1-f90d-46a3-bd9e-b9aeeada344d",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2801,7 +2801,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"What should I know about this situation?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"What should I know about this situation?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2817,12 +2817,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9672.150700184691,\n      \"maximum\": 7426.123271928656,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7254.616357508354,\n      \"maximum\": 5777.760415589268,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 343.3222388754964,\n      \"maximum\": 9755.523062040593,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9745.704783076848,\n      \"maximum\": 8127.613244365866,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "91eb01a4-1c85-46c3-a46b-a44d77cbd091",
+							"id": "b95365bd-f672-4231-95f8-04ff6c58c47c",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2858,7 +2858,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"What should I know about this situation?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"What should I know about this situation?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2879,7 +2879,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "538f03d7-7b22-4455-835a-c2109782403a",
+							"id": "102125c0-893f-46e1-a9e6-11a80aec5f0e",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2915,7 +2915,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"What should I know about this situation?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"What should I know about this situation?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2942,7 +2942,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "73369657-e839-4494-9acb-6626123d59f7",
+							"id": "38b9cd4b-a76d-4b1e-9f2c-f280c801f4f3",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2978,7 +2978,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"What should I know about this situation?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"What should I know about this situation?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2999,7 +2999,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d443b79e-625f-4573-a02b-d2383db6ff58",
+							"id": "35c47aba-9229-428d-97e4-035bbdd32800",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3035,7 +3035,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"What should I know about this situation?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"What should I know about this situation?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3062,7 +3062,7 @@
 					}
 				},
 				{
-					"id": "1bf5f76b-9791-4ee4-918d-0d482519eb60",
+					"id": "8a687464-b512-4f8a-9629-e23c09525961",
 					"name": "Love Spread (5 cards)",
 					"request": {
 						"name": "Love Spread (5 cards)",
@@ -3118,7 +3118,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"question\": \"What do I need to know about my relationship?\",\n  \"seed\": \"optional-seed\"\n}",
+							"raw": "{\n  \"question\": \"What do I need to know about my relationship?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3128,7 +3128,7 @@
 					},
 					"response": [
 						{
-							"id": "e19b8139-051d-4d79-8c65-9ed2529d67fb",
+							"id": "ca9804b9-2ce4-480a-9d79-9f74fc37086c",
 							"name": "Love spread reading",
 							"originalRequest": {
 								"url": {
@@ -3164,7 +3164,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"What do I need to know about my relationship?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"What do I need to know about my relationship?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3180,12 +3180,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"spread\": \"string\",\n  \"positions\": [\n    {\n      \"position\": 8163.37850844352,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"major\",\n        \"position\": 7150.147994469185,\n        \"reversed\": true,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"cups\",\n        \"number\": 5014.397444183281,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    },\n    {\n      \"position\": 1650.7498344870187,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"major\",\n        \"position\": 5840.215105858037,\n        \"reversed\": false,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"pentacles\",\n        \"number\": 2241.1943994924277,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    }\n  ],\n  \"question\": \"string\",\n  \"seed\": \"string\",\n  \"summary\": \"string\"\n}",
+							"body": "{\n  \"spread\": \"Love Spread\",\n  \"positions\": [\n    {\n      \"position\": 1,\n      \"name\": \"Past\",\n      \"interpretation\": \"What has led to this situation and the foundational influences at play. Shows the events, decisions, and energies that have brought you to where you are now. Understanding the past provides context for the present.\",\n      \"card\": {\n        \"id\": \"fool\",\n        \"name\": \"The Fool\",\n        \"arcana\": \"minor\",\n        \"position\": 1,\n        \"reversed\": false,\n        \"keywords\": [\n          \"new beginnings\",\n          \"innocence\",\n          \"spontaneity\",\n          \"free spirit\",\n          \"potential\"\n        ],\n        \"meaning\": \"Numbered zero, The Fool stands at the threshold of the Major Arcana as pure, unwritten potential. In the Rider-Waite-Smith image, a young traveller pauses at the edge of a high cliff, gazing into the open sky rather than the drop below, a white rose of innocence in one hand and a light bag of belongings slung from a wand over the shoulder.\",\n        \"imageUrl\": \"https://roxyapi.com/img/tarot/major/fool.jpg\",\n        \"suit\": \"swords\",\n        \"number\": 0,\n        \"love\": \"A new romance or a fresh chapter in an existing bond is opening. The card favours openness to unexpected connection and a spirit of play over caution.\",\n        \"career\": \"This is a threshold moment for work: a new role, a new venture, or a bold pivot into unfamiliar territory. The Fool rewards initiative and original thinking, and it can breathe fresh energy into stale projects.\",\n        \"finances\": \"Financial openings appear, sometimes from unexpected directions, and the mood is expansive and exploratory. Spending tends toward experience, learning, and adventure.\",\n        \"health\": \"Renewed vitality and a fresh start are indicated, well suited to a new routine, an unfamiliar sport, or simply more time outdoors and in motion.\",\n        \"spirituality\": \"A spiritual journey is beginning, marked by openness, wonder, and a beginners willingness to learn.\"\n      }\n    },\n    {\n      \"position\": 1,\n      \"name\": \"Past\",\n      \"interpretation\": \"What has led to this situation and the foundational influences at play. Shows the events, decisions, and energies that have brought you to where you are now. Understanding the past provides context for the present.\",\n      \"card\": {\n        \"id\": \"fool\",\n        \"name\": \"The Fool\",\n        \"arcana\": \"minor\",\n        \"position\": 1,\n        \"reversed\": false,\n        \"keywords\": [\n          \"new beginnings\",\n          \"innocence\",\n          \"spontaneity\",\n          \"free spirit\",\n          \"potential\"\n        ],\n        \"meaning\": \"Numbered zero, The Fool stands at the threshold of the Major Arcana as pure, unwritten potential. In the Rider-Waite-Smith image, a young traveller pauses at the edge of a high cliff, gazing into the open sky rather than the drop below, a white rose of innocence in one hand and a light bag of belongings slung from a wand over the shoulder.\",\n        \"imageUrl\": \"https://roxyapi.com/img/tarot/major/fool.jpg\",\n        \"suit\": \"swords\",\n        \"number\": 0,\n        \"love\": \"A new romance or a fresh chapter in an existing bond is opening. The card favours openness to unexpected connection and a spirit of play over caution.\",\n        \"career\": \"This is a threshold moment for work: a new role, a new venture, or a bold pivot into unfamiliar territory. The Fool rewards initiative and original thinking, and it can breathe fresh energy into stale projects.\",\n        \"finances\": \"Financial openings appear, sometimes from unexpected directions, and the mood is expansive and exploratory. Spending tends toward experience, learning, and adventure.\",\n        \"health\": \"Renewed vitality and a fresh start are indicated, well suited to a new routine, an unfamiliar sport, or simply more time outdoors and in motion.\",\n        \"spirituality\": \"A spiritual journey is beginning, marked by openness, wonder, and a beginners willingness to learn.\"\n      }\n    }\n  ],\n  \"question\": \"What do I need to know about my relationship?\",\n  \"seed\": \"reading-2f9c1a\",\n  \"summary\": \"This spread reveals the emotional landscape of your relationship and offers guidance for deepening connection.\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ad840263-4729-4785-8004-5a14df605767",
+							"id": "00a98068-8f6d-418e-ada8-fb1c5eb04e70",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3221,7 +3221,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"What do I need to know about my relationship?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"What do I need to know about my relationship?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3237,12 +3237,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9672.150700184691,\n      \"maximum\": 7426.123271928656,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7254.616357508354,\n      \"maximum\": 5777.760415589268,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 343.3222388754964,\n      \"maximum\": 9755.523062040593,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9745.704783076848,\n      \"maximum\": 8127.613244365866,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8b30bef0-5cf1-4cb4-a357-dc2167537208",
+							"id": "f27b98c5-109e-4b7e-a5a9-6322cbc15e23",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3278,7 +3278,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"What do I need to know about my relationship?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"What do I need to know about my relationship?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3299,7 +3299,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "50ef0edc-2e37-4b63-9a1c-9cf9cb1704ee",
+							"id": "3df8b062-42ce-4c36-80d3-be345b5bb035",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3335,7 +3335,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"What do I need to know about my relationship?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"What do I need to know about my relationship?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3362,7 +3362,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "403951c3-9c6b-4f80-9630-ee98d34b58f3",
+							"id": "0527d75c-bcf9-4165-a7d8-54b77fc12f29",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3398,7 +3398,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"What do I need to know about my relationship?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"What do I need to know about my relationship?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3419,7 +3419,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a97b5748-66c1-4bc6-9bf3-ab46d5785610",
+							"id": "31ef7cbd-4ede-40c8-8aae-ff1c6d0e5812",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3455,7 +3455,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"What do I need to know about my relationship?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"What do I need to know about my relationship?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3482,7 +3482,7 @@
 					}
 				},
 				{
-					"id": "6e704d53-675b-43c1-af41-cd8b28648b54",
+					"id": "62540379-17fd-4cb9-9e2f-9d5d0c3ad10c",
 					"name": "Career Spread (7 cards)",
 					"request": {
 						"name": "Career Spread (7 cards)",
@@ -3538,7 +3538,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"question\": \"What do I need to know about my career path?\",\n  \"seed\": \"optional-seed\"\n}",
+							"raw": "{\n  \"question\": \"What do I need to know about my career path?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3548,7 +3548,7 @@
 					},
 					"response": [
 						{
-							"id": "5ad0de0c-e3e3-4507-8263-d3ab6e6897b9",
+							"id": "27a8a56f-b94e-4bd3-8642-60832984769c",
 							"name": "Career spread reading",
 							"originalRequest": {
 								"url": {
@@ -3584,7 +3584,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"What do I need to know about my career path?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"What do I need to know about my career path?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3600,12 +3600,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"spread\": \"string\",\n  \"positions\": [\n    {\n      \"position\": 8676.201155884692,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"major\",\n        \"position\": 7295.066819694094,\n        \"reversed\": true,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"cups\",\n        \"number\": 9198.971470220311,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    },\n    {\n      \"position\": 732.0963718765328,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"minor\",\n        \"position\": 2011.4705453427084,\n        \"reversed\": false,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"swords\",\n        \"number\": 9371.818532657948,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    }\n  ],\n  \"question\": \"string\",\n  \"seed\": \"string\",\n  \"summary\": \"string\"\n}",
+							"body": "{\n  \"spread\": \"Career Spread\",\n  \"positions\": [\n    {\n      \"position\": 1,\n      \"name\": \"Past\",\n      \"interpretation\": \"What has led to this situation and the foundational influences at play. Shows the events, decisions, and energies that have brought you to where you are now. Understanding the past provides context for the present.\",\n      \"card\": {\n        \"id\": \"fool\",\n        \"name\": \"The Fool\",\n        \"arcana\": \"minor\",\n        \"position\": 1,\n        \"reversed\": false,\n        \"keywords\": [\n          \"new beginnings\",\n          \"innocence\",\n          \"spontaneity\",\n          \"free spirit\",\n          \"potential\"\n        ],\n        \"meaning\": \"Numbered zero, The Fool stands at the threshold of the Major Arcana as pure, unwritten potential. In the Rider-Waite-Smith image, a young traveller pauses at the edge of a high cliff, gazing into the open sky rather than the drop below, a white rose of innocence in one hand and a light bag of belongings slung from a wand over the shoulder.\",\n        \"imageUrl\": \"https://roxyapi.com/img/tarot/major/fool.jpg\",\n        \"suit\": \"wands\",\n        \"number\": 0,\n        \"love\": \"A new romance or a fresh chapter in an existing bond is opening. The card favours openness to unexpected connection and a spirit of play over caution.\",\n        \"career\": \"This is a threshold moment for work: a new role, a new venture, or a bold pivot into unfamiliar territory. The Fool rewards initiative and original thinking, and it can breathe fresh energy into stale projects.\",\n        \"finances\": \"Financial openings appear, sometimes from unexpected directions, and the mood is expansive and exploratory. Spending tends toward experience, learning, and adventure.\",\n        \"health\": \"Renewed vitality and a fresh start are indicated, well suited to a new routine, an unfamiliar sport, or simply more time outdoors and in motion.\",\n        \"spirituality\": \"A spiritual journey is beginning, marked by openness, wonder, and a beginners willingness to learn.\"\n      }\n    },\n    {\n      \"position\": 1,\n      \"name\": \"Past\",\n      \"interpretation\": \"What has led to this situation and the foundational influences at play. Shows the events, decisions, and energies that have brought you to where you are now. Understanding the past provides context for the present.\",\n      \"card\": {\n        \"id\": \"fool\",\n        \"name\": \"The Fool\",\n        \"arcana\": \"minor\",\n        \"position\": 1,\n        \"reversed\": false,\n        \"keywords\": [\n          \"new beginnings\",\n          \"innocence\",\n          \"spontaneity\",\n          \"free spirit\",\n          \"potential\"\n        ],\n        \"meaning\": \"Numbered zero, The Fool stands at the threshold of the Major Arcana as pure, unwritten potential. In the Rider-Waite-Smith image, a young traveller pauses at the edge of a high cliff, gazing into the open sky rather than the drop below, a white rose of innocence in one hand and a light bag of belongings slung from a wand over the shoulder.\",\n        \"imageUrl\": \"https://roxyapi.com/img/tarot/major/fool.jpg\",\n        \"suit\": \"cups\",\n        \"number\": 0,\n        \"love\": \"A new romance or a fresh chapter in an existing bond is opening. The card favours openness to unexpected connection and a spirit of play over caution.\",\n        \"career\": \"This is a threshold moment for work: a new role, a new venture, or a bold pivot into unfamiliar territory. The Fool rewards initiative and original thinking, and it can breathe fresh energy into stale projects.\",\n        \"finances\": \"Financial openings appear, sometimes from unexpected directions, and the mood is expansive and exploratory. Spending tends toward experience, learning, and adventure.\",\n        \"health\": \"Renewed vitality and a fresh start are indicated, well suited to a new routine, an unfamiliar sport, or simply more time outdoors and in motion.\",\n        \"spirituality\": \"A spiritual journey is beginning, marked by openness, wonder, and a beginners willingness to learn.\"\n      }\n    }\n  ],\n  \"question\": \"What do I need to know about my career path?\",\n  \"seed\": \"reading-2f9c1a\",\n  \"summary\": \"This SWOT-based spread provides comprehensive career guidance and identifies growth opportunities.\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e3e5e059-1361-4a8f-922f-961a40c25168",
+							"id": "d6715568-c0f9-4ab3-915a-9e77850217fe",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3641,7 +3641,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"What do I need to know about my career path?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"What do I need to know about my career path?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3657,12 +3657,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9672.150700184691,\n      \"maximum\": 7426.123271928656,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7254.616357508354,\n      \"maximum\": 5777.760415589268,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 343.3222388754964,\n      \"maximum\": 9755.523062040593,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9745.704783076848,\n      \"maximum\": 8127.613244365866,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "fac849e9-4488-4c12-90da-adf1f53fe313",
+							"id": "9847ee08-d150-4146-8785-252c6915689a",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3698,7 +3698,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"What do I need to know about my career path?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"What do I need to know about my career path?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3719,7 +3719,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "127ffc53-e6cd-4395-a31f-8abdb6c950d2",
+							"id": "d57cf6f5-b31b-4ce7-9e30-a3d89b821982",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3755,7 +3755,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"What do I need to know about my career path?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"What do I need to know about my career path?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3782,7 +3782,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "cdf07b0d-3efc-4d8d-9c0f-d5feaf8faf1d",
+							"id": "253bde94-add7-4b9d-ab71-bf12c66c4184",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3818,7 +3818,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"What do I need to know about my career path?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"What do I need to know about my career path?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3839,7 +3839,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b8ac94ad-12e2-44a9-b6ae-3a96fbd8f20c",
+							"id": "77eaf86d-48ee-4cae-84c3-fc167086d233",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3875,7 +3875,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"question\": \"What do I need to know about my career path?\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"question\": \"What do I need to know about my career path?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3902,7 +3902,7 @@
 					}
 				},
 				{
-					"id": "4ba936d0-23da-4b83-8343-26efccb198ec",
+					"id": "eb1f2fcc-ff34-40be-b963-2c415cde5204",
 					"name": "Custom Spread Builder",
 					"request": {
 						"name": "Custom Spread Builder",
@@ -3958,7 +3958,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"positions\": [\n    {\n      \"name\": \"Core Issue\",\n      \"interpretation\": \"What is really going on\"\n    },\n    {\n      \"name\": \"Hidden Factor\",\n      \"interpretation\": \"What you cannot see\"\n    },\n    {\n      \"name\": \"Best Action\",\n      \"interpretation\": \"What to do next\"\n    }\n  ],\n  \"spreadName\": \"My Custom Spread\",\n  \"question\": \"Optional question\",\n  \"seed\": \"optional-seed\"\n}",
+							"raw": "{\n  \"positions\": [\n    {\n      \"name\": \"Core Issue\",\n      \"interpretation\": \"What is really going on\"\n    },\n    {\n      \"name\": \"Hidden Factor\",\n      \"interpretation\": \"What you cannot see\"\n    },\n    {\n      \"name\": \"Best Action\",\n      \"interpretation\": \"What to do next\"\n    }\n  ],\n  \"spreadName\": \"My Custom Spread\",\n  \"question\": \"How do I move forward with this project?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3968,7 +3968,7 @@
 					},
 					"response": [
 						{
-							"id": "78c9867b-714e-40ac-a441-a6f6f9859128",
+							"id": "efebbdab-73d4-4814-b442-bdf59922d275",
 							"name": "Custom spread reading",
 							"originalRequest": {
 								"url": {
@@ -4004,7 +4004,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"positions\": [\n    {\n      \"name\": \"Core Issue\",\n      \"interpretation\": \"What is really going on\"\n    },\n    {\n      \"name\": \"Hidden Factor\",\n      \"interpretation\": \"What you cannot see\"\n    },\n    {\n      \"name\": \"Best Action\",\n      \"interpretation\": \"What to do next\"\n    }\n  ],\n  \"spreadName\": \"My Custom Spread\",\n  \"question\": \"Optional question\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"positions\": [\n    {\n      \"name\": \"Core Issue\",\n      \"interpretation\": \"What is really going on\"\n    },\n    {\n      \"name\": \"Hidden Factor\",\n      \"interpretation\": \"What you cannot see\"\n    },\n    {\n      \"name\": \"Best Action\",\n      \"interpretation\": \"What to do next\"\n    }\n  ],\n  \"spreadName\": \"My Custom Spread\",\n  \"question\": \"How do I move forward with this project?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4020,12 +4020,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"spread\": \"string\",\n  \"positions\": [\n    {\n      \"position\": 5517.819425342698,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"minor\",\n        \"position\": 6296.5792802244305,\n        \"reversed\": false,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"swords\",\n        \"number\": 268.12874284054766,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    },\n    {\n      \"position\": 2215.2582647092477,\n      \"name\": \"string\",\n      \"interpretation\": \"string\",\n      \"card\": {\n        \"id\": \"string\",\n        \"name\": \"string\",\n        \"arcana\": \"minor\",\n        \"position\": 9072.496943920936,\n        \"reversed\": false,\n        \"keywords\": [\n          \"string\",\n          \"string\"\n        ],\n        \"meaning\": \"string\",\n        \"imageUrl\": \"string\",\n        \"suit\": \"wands\",\n        \"number\": 8903.537096088652,\n        \"love\": \"string\",\n        \"career\": \"string\",\n        \"finances\": \"string\",\n        \"health\": \"string\",\n        \"spirituality\": \"string\"\n      }\n    }\n  ],\n  \"question\": \"string\",\n  \"seed\": \"string\",\n  \"summary\": \"string\"\n}",
+							"body": "{\n  \"spread\": \"My Custom Spread\",\n  \"positions\": [\n    {\n      \"position\": 1,\n      \"name\": \"Past\",\n      \"interpretation\": \"What has led to this situation and the foundational influences at play. Shows the events, decisions, and energies that have brought you to where you are now. Understanding the past provides context for the present.\",\n      \"card\": {\n        \"id\": \"fool\",\n        \"name\": \"The Fool\",\n        \"arcana\": \"major\",\n        \"position\": 1,\n        \"reversed\": false,\n        \"keywords\": [\n          \"new beginnings\",\n          \"innocence\",\n          \"spontaneity\",\n          \"free spirit\",\n          \"potential\"\n        ],\n        \"meaning\": \"Numbered zero, The Fool stands at the threshold of the Major Arcana as pure, unwritten potential. In the Rider-Waite-Smith image, a young traveller pauses at the edge of a high cliff, gazing into the open sky rather than the drop below, a white rose of innocence in one hand and a light bag of belongings slung from a wand over the shoulder.\",\n        \"imageUrl\": \"https://roxyapi.com/img/tarot/major/fool.jpg\",\n        \"suit\": \"pentacles\",\n        \"number\": 0,\n        \"love\": \"A new romance or a fresh chapter in an existing bond is opening. The card favours openness to unexpected connection and a spirit of play over caution.\",\n        \"career\": \"This is a threshold moment for work: a new role, a new venture, or a bold pivot into unfamiliar territory. The Fool rewards initiative and original thinking, and it can breathe fresh energy into stale projects.\",\n        \"finances\": \"Financial openings appear, sometimes from unexpected directions, and the mood is expansive and exploratory. Spending tends toward experience, learning, and adventure.\",\n        \"health\": \"Renewed vitality and a fresh start are indicated, well suited to a new routine, an unfamiliar sport, or simply more time outdoors and in motion.\",\n        \"spirituality\": \"A spiritual journey is beginning, marked by openness, wonder, and a beginners willingness to learn.\"\n      }\n    },\n    {\n      \"position\": 1,\n      \"name\": \"Past\",\n      \"interpretation\": \"What has led to this situation and the foundational influences at play. Shows the events, decisions, and energies that have brought you to where you are now. Understanding the past provides context for the present.\",\n      \"card\": {\n        \"id\": \"fool\",\n        \"name\": \"The Fool\",\n        \"arcana\": \"minor\",\n        \"position\": 1,\n        \"reversed\": false,\n        \"keywords\": [\n          \"new beginnings\",\n          \"innocence\",\n          \"spontaneity\",\n          \"free spirit\",\n          \"potential\"\n        ],\n        \"meaning\": \"Numbered zero, The Fool stands at the threshold of the Major Arcana as pure, unwritten potential. In the Rider-Waite-Smith image, a young traveller pauses at the edge of a high cliff, gazing into the open sky rather than the drop below, a white rose of innocence in one hand and a light bag of belongings slung from a wand over the shoulder.\",\n        \"imageUrl\": \"https://roxyapi.com/img/tarot/major/fool.jpg\",\n        \"suit\": \"cups\",\n        \"number\": 0,\n        \"love\": \"A new romance or a fresh chapter in an existing bond is opening. The card favours openness to unexpected connection and a spirit of play over caution.\",\n        \"career\": \"This is a threshold moment for work: a new role, a new venture, or a bold pivot into unfamiliar territory. The Fool rewards initiative and original thinking, and it can breathe fresh energy into stale projects.\",\n        \"finances\": \"Financial openings appear, sometimes from unexpected directions, and the mood is expansive and exploratory. Spending tends toward experience, learning, and adventure.\",\n        \"health\": \"Renewed vitality and a fresh start are indicated, well suited to a new routine, an unfamiliar sport, or simply more time outdoors and in motion.\",\n        \"spirituality\": \"A spiritual journey is beginning, marked by openness, wonder, and a beginners willingness to learn.\"\n      }\n    }\n  ],\n  \"question\": \"How do I move forward with this project?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "bb75776f-6920-4451-a680-67306bf65c83",
+							"id": "f04ae3a5-2567-42f2-9e09-f1064cb11286",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -4061,7 +4061,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"positions\": [\n    {\n      \"name\": \"Core Issue\",\n      \"interpretation\": \"What is really going on\"\n    },\n    {\n      \"name\": \"Hidden Factor\",\n      \"interpretation\": \"What you cannot see\"\n    },\n    {\n      \"name\": \"Best Action\",\n      \"interpretation\": \"What to do next\"\n    }\n  ],\n  \"spreadName\": \"My Custom Spread\",\n  \"question\": \"Optional question\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"positions\": [\n    {\n      \"name\": \"Core Issue\",\n      \"interpretation\": \"What is really going on\"\n    },\n    {\n      \"name\": \"Hidden Factor\",\n      \"interpretation\": \"What you cannot see\"\n    },\n    {\n      \"name\": \"Best Action\",\n      \"interpretation\": \"What to do next\"\n    }\n  ],\n  \"spreadName\": \"My Custom Spread\",\n  \"question\": \"How do I move forward with this project?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4077,12 +4077,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9672.150700184691,\n      \"maximum\": 7426.123271928656,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7254.616357508354,\n      \"maximum\": 5777.760415589268,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 343.3222388754964,\n      \"maximum\": 9755.523062040593,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9745.704783076848,\n      \"maximum\": 8127.613244365866,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "592785c2-5312-4eea-9879-dc591ca6633f",
+							"id": "89ce6c8f-236e-4c97-a20e-4efb15e0c06a",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -4118,7 +4118,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"positions\": [\n    {\n      \"name\": \"Core Issue\",\n      \"interpretation\": \"What is really going on\"\n    },\n    {\n      \"name\": \"Hidden Factor\",\n      \"interpretation\": \"What you cannot see\"\n    },\n    {\n      \"name\": \"Best Action\",\n      \"interpretation\": \"What to do next\"\n    }\n  ],\n  \"spreadName\": \"My Custom Spread\",\n  \"question\": \"Optional question\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"positions\": [\n    {\n      \"name\": \"Core Issue\",\n      \"interpretation\": \"What is really going on\"\n    },\n    {\n      \"name\": \"Hidden Factor\",\n      \"interpretation\": \"What you cannot see\"\n    },\n    {\n      \"name\": \"Best Action\",\n      \"interpretation\": \"What to do next\"\n    }\n  ],\n  \"spreadName\": \"My Custom Spread\",\n  \"question\": \"How do I move forward with this project?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4139,7 +4139,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5ef9940b-bdaf-44d4-8511-dfef23a11bf5",
+							"id": "e5612b24-e5b8-4cde-90bf-d97b84eb6db3",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -4175,7 +4175,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"positions\": [\n    {\n      \"name\": \"Core Issue\",\n      \"interpretation\": \"What is really going on\"\n    },\n    {\n      \"name\": \"Hidden Factor\",\n      \"interpretation\": \"What you cannot see\"\n    },\n    {\n      \"name\": \"Best Action\",\n      \"interpretation\": \"What to do next\"\n    }\n  ],\n  \"spreadName\": \"My Custom Spread\",\n  \"question\": \"Optional question\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"positions\": [\n    {\n      \"name\": \"Core Issue\",\n      \"interpretation\": \"What is really going on\"\n    },\n    {\n      \"name\": \"Hidden Factor\",\n      \"interpretation\": \"What you cannot see\"\n    },\n    {\n      \"name\": \"Best Action\",\n      \"interpretation\": \"What to do next\"\n    }\n  ],\n  \"spreadName\": \"My Custom Spread\",\n  \"question\": \"How do I move forward with this project?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4202,7 +4202,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "fc929fc5-df78-4b82-9c8c-405f4ca66174",
+							"id": "188c6ed9-d2c6-409d-9718-f5699f732333",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -4238,7 +4238,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"positions\": [\n    {\n      \"name\": \"Core Issue\",\n      \"interpretation\": \"What is really going on\"\n    },\n    {\n      \"name\": \"Hidden Factor\",\n      \"interpretation\": \"What you cannot see\"\n    },\n    {\n      \"name\": \"Best Action\",\n      \"interpretation\": \"What to do next\"\n    }\n  ],\n  \"spreadName\": \"My Custom Spread\",\n  \"question\": \"Optional question\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"positions\": [\n    {\n      \"name\": \"Core Issue\",\n      \"interpretation\": \"What is really going on\"\n    },\n    {\n      \"name\": \"Hidden Factor\",\n      \"interpretation\": \"What you cannot see\"\n    },\n    {\n      \"name\": \"Best Action\",\n      \"interpretation\": \"What to do next\"\n    }\n  ],\n  \"spreadName\": \"My Custom Spread\",\n  \"question\": \"How do I move forward with this project?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4259,7 +4259,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "fcfce5cc-fd70-433a-b61c-b517469e8ac9",
+							"id": "dd25d77b-2242-4ffb-9a20-000bd6087baf",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -4295,7 +4295,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"positions\": [\n    {\n      \"name\": \"Core Issue\",\n      \"interpretation\": \"What is really going on\"\n    },\n    {\n      \"name\": \"Hidden Factor\",\n      \"interpretation\": \"What you cannot see\"\n    },\n    {\n      \"name\": \"Best Action\",\n      \"interpretation\": \"What to do next\"\n    }\n  ],\n  \"spreadName\": \"My Custom Spread\",\n  \"question\": \"Optional question\",\n  \"seed\": \"optional-seed\"\n}",
+									"raw": "{\n  \"positions\": [\n    {\n      \"name\": \"Core Issue\",\n      \"interpretation\": \"What is really going on\"\n    },\n    {\n      \"name\": \"Hidden Factor\",\n      \"interpretation\": \"What you cannot see\"\n    },\n    {\n      \"name\": \"Best Action\",\n      \"interpretation\": \"What to do next\"\n    }\n  ],\n  \"spreadName\": \"My Custom Spread\",\n  \"question\": \"How do I move forward with this project?\",\n  \"seed\": \"reading-2f9c1a\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4361,11 +4361,11 @@
 		]
 	},
 	"info": {
-		"_postman_id": "28c4d9c8-0421-4642-82c2-25d445a5cfe1",
+		"_postman_id": "4b1f548c-f173-49fd-83bd-9caacfe2d872",
 		"name": "Tarot Reading API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"description": {
-			"content": "Tarot reading API with the complete 78-card Rider-Waite-Smith deck and card meanings for love, career, health, and spiritual growth. Celtic Cross, three-card, love, career, yes/no oracle, daily card, and custom spreads, each with upright and reversed interpretations. Seeded reproducibility for personalized daily readings, and card images included. Built for tarot apps, AI tarot chatbots, fortune-telling platforms, and spiritual wellness products. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, forecast, human design, numerology, tarot, biorhythm, I-Ching, crystals, dreams, angel numbers, location), 171+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 171+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
+			"content": "Tarot reading API with the complete 78-card Rider-Waite-Smith deck and card meanings for love, career, health, and spiritual growth. Celtic Cross, three-card, love, career, yes/no oracle, daily card, and custom spreads, each with upright and reversed interpretations. Seeded reproducibility for personalized daily readings, and card images included. Built for tarot apps, AI tarot chatbots, fortune-telling platforms, and spiritual wellness products. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, forecast, human design, numerology, tarot, biorhythm, I-Ching, crystals, dreams, angel numbers, location), 173+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 173+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
 			"type": "text/plain"
 		}
 	}
