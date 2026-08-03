@@ -1,15 +1,15 @@
 {
 	"item": [
 		{
-			"id": "09fe4148-37b0-4364-a068-5b2fbc85e285",
+			"id": "b3ed7c42-bef6-42cc-a2d0-0033b6b69054",
 			"name": "Location and Timezone",
 			"description": {
-				"content": "City search and geocoding API + hosted MCP for AI agents and astrology apps. Connect Claude Code, Cursor, VS Code in seconds, no local setup. 7,000+ cities across 227 countries. Returns latitude, longitude, IANA timezone, and DST-aware UTC offset. The location layer for birth chart forms, horoscope apps, event planners, and any feature that needs place-to-coordinates resolution.",
+				"content": "City search and geocoding API with 23,000+ cities across 240+ countries, returning latitude, longitude, IANA timezone, and DST-aware UTC offset. The location layer for birth chart forms, horoscope apps, event planners, and any feature that needs place-to-coordinates resolution. Fully offline dataset with no third party geocoding call, and fields that map directly to the astrology endpoints. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.",
 				"type": "text/plain"
 			},
 			"item": [
 				{
-					"id": "721b6698-578d-4190-bdfa-91f05a81291a",
+					"id": "19ec4d76-4c50-49e0-a8b6-60fb6fb1d202",
 					"name": "Search cities worldwide - Geocoding autocomplete with coordinates and timezone",
 					"request": {
 						"name": "Search cities worldwide - Geocoding autocomplete with coordinates and timezone",
@@ -73,7 +73,7 @@
 					},
 					"response": [
 						{
-							"id": "09b78eb1-fa94-438a-8c74-e13128abd052",
+							"id": "d8e9dafe-94c1-4855-9ed9-625504c686c9",
 							"name": "Matching cities sorted by relevance (prefix match first) then population",
 							"originalRequest": {
 								"url": {
@@ -129,7 +129,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "fc7ed7d2-bd87-4bc7-a8a2-791575c52460",
+							"id": "b4cd8c9a-4fc1-4c1c-a954-fcd4d4f17b15",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -180,12 +180,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9231.392061068567,\n      \"maximum\": 9625.256078632598,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4978.312902784251,\n      \"maximum\": 968.3690150025781,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3195.802303606974,\n      \"maximum\": 2493.599629196914,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 941.0166979213242,\n      \"maximum\": 7932.23672745827,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "21a0c67b-45d4-45c0-8081-6f6e88eeedac",
+							"id": "0a8ddd91-c83c-4d76-b3d3-ff401d0bfc23",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -241,7 +241,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8130df90-ecde-420e-b2ab-6930c1784c69",
+							"id": "9dd8d78e-5c50-46b6-9857-b753778f6aa1",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -303,7 +303,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "99fda3d9-cc65-4a02-b2dd-3cefbd905fca",
+							"id": "ee2b328f-fa41-4617-a2e3-373e757e83cb",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -359,7 +359,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8f387c1e-0359-48df-9ea1-3df90b5e019d",
+							"id": "b5f4f332-d842-4f33-ae12-31a57dece7c5",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -421,7 +421,7 @@
 					}
 				},
 				{
-					"id": "fd2163bc-c03f-42bb-b5bb-860918408c74",
+					"id": "5d714e62-cfd1-41c3-b381-a12bc34c4460",
 					"name": "List all countries - ISO codes and city coverage",
 					"request": {
 						"name": "List all countries - ISO codes and city coverage",
@@ -479,7 +479,7 @@
 					},
 					"response": [
 						{
-							"id": "02b186e1-5946-49f6-9ce9-91be1129d139",
+							"id": "2e9cebbe-07ef-4b3c-9300-875df36dcdf0",
 							"name": "Alphabetically sorted list of all countries with ISO codes and city counts",
 							"originalRequest": {
 								"url": {
@@ -531,7 +531,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "346e04d6-7623-4fd0-bfe5-936838ae8774",
+							"id": "935ab923-da92-4a99-8734-3adf8230b917",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -578,12 +578,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9231.392061068567,\n      \"maximum\": 9625.256078632598,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4978.312902784251,\n      \"maximum\": 968.3690150025781,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3195.802303606974,\n      \"maximum\": 2493.599629196914,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 941.0166979213242,\n      \"maximum\": 7932.23672745827,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "aa22838e-96ee-4b21-9b00-3220c7c7df72",
+							"id": "0e1ff6bd-9aee-46a3-9f89-be3a149f6a3c",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -635,7 +635,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7b388b6f-14ce-4f7b-b5c3-70663edc6eef",
+							"id": "9f2ba08e-d24b-45b6-b55e-ddc302fcf531",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -693,7 +693,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3f3b23af-5c90-479f-a576-37ec719aced7",
+							"id": "18df6347-802b-48e3-81b2-71163918a3dd",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -745,7 +745,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f743c172-2a3e-43e8-b421-769b81771f8c",
+							"id": "0b883e3f-4c30-40b6-b084-6f6917e80abc",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -803,7 +803,7 @@
 					}
 				},
 				{
-					"id": "d48d5cb4-e94e-481d-9476-9d007f0e8421",
+					"id": "78636785-72fb-4fb7-b072-8e984d6faa53",
 					"name": "Get cities in a country - Geocoding directory sorted by population",
 					"request": {
 						"name": "Get cities in a country - Geocoding directory sorted by population",
@@ -870,7 +870,7 @@
 					},
 					"response": [
 						{
-							"id": "b56e8570-1ac6-48d8-977f-fd5bb1529d73",
+							"id": "80603ed3-0144-4402-b81a-8d3839360a44",
 							"name": "Cities in the specified country, sorted by population (largest first)",
 							"originalRequest": {
 								"url": {
@@ -931,7 +931,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a2f927d3-7685-43c7-9d00-4674f3e1f8f6",
+							"id": "f1a7086e-7b59-4a95-b1c6-13df571a92ff",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -987,12 +987,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9231.392061068567,\n      \"maximum\": 9625.256078632598,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4978.312902784251,\n      \"maximum\": 968.3690150025781,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3195.802303606974,\n      \"maximum\": 2493.599629196914,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 941.0166979213242,\n      \"maximum\": 7932.23672745827,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a3fb4119-9179-4ccd-bed9-b240f777a816",
+							"id": "8ceff675-3ed6-4efc-99c5-464cef7cf045",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1053,7 +1053,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "10ccde46-8dfd-4b9f-bad3-d5b58119d7b3",
+							"id": "519575af-0dc7-4e03-9d33-d51691f97be1",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1120,7 +1120,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6f30daa5-8e95-4177-a3fb-f1d4b938e5e3",
+							"id": "3d1d8c15-a1a4-4ac6-b4c8-399ea7b20484",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1181,7 +1181,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "cada7dc3-6e29-4215-9ef1-2ac1587bc129",
+							"id": "6a5bb1aa-acf1-4fef-b322-7f529e59ed13",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1287,11 +1287,11 @@
 		]
 	},
 	"info": {
-		"_postman_id": "30a16c11-a984-4eb5-883f-a6ae7403ee03",
+		"_postman_id": "1ea547fd-0a27-4c94-a7ca-c211b598b463",
 		"name": "Location and Timezone API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"description": {
-			"content": "City search and geocoding API + hosted MCP for AI agents and astrology apps. Connect Claude Code, Cursor, VS Code in seconds, no local setup. 7,000+ cities across 227 countries. Returns latitude, longitude, IANA timezone, and DST-aware UTC offset. The location layer for birth chart forms, horoscope apps, event planners, and any feature that needs place-to-coordinates resolution.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, human design, forecast, biorhythm, tarot, numerology, crystals, dreams, I-Ching, angel numbers, location), 148+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (MCP)\n\nRoxyAPI has native Model Context Protocol support. Your AI agent auto-discovers all 148+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
+			"content": "City search and geocoding API with 23,000+ cities across 240+ countries, returning latitude, longitude, IANA timezone, and DST-aware UTC offset. The location layer for birth chart forms, horoscope apps, event planners, and any feature that needs place-to-coordinates resolution. Fully offline dataset with no third party geocoding call, and fields that map directly to the astrology endpoints. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, forecast, human design, numerology, tarot, biorhythm, I-Ching, crystals, dreams, angel numbers, location), 175+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 175+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
 			"type": "text/plain"
 		}
 	}

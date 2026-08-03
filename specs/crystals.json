@@ -3,7 +3,7 @@
 	"info": {
 		"title": "Crystals and Healing Stones API",
 		"version": "2.0.0",
-		"description": "Crystal healing API covering the most popular and widely-searched healing crystals and gemstones, from Amethyst and Rose Quartz to Moldavite and Selenite, each with its spiritual, emotional, and physical properties. Filter by chakra (Root through Crown), zodiac sign, or element, search by keyword, browse birthstones by month, discover crystal pairings, and get random or daily crystal picks. Includes Mohs hardness, numerological vibration, and planetary associations per stone. Built for wellness apps, crystal shops, chakra-balancing tools, astrology integrations, and AI spiritual advisors. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, forecast, human design, numerology, tarot, biorhythm, I-Ching, crystals, dreams, angel numbers, location), 173+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 173+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n",
+		"description": "Crystal healing API covering the most popular and widely-searched healing crystals and gemstones, from Amethyst and Rose Quartz to Moldavite and Selenite, each with its spiritual, emotional, and physical properties. Filter by chakra (Root through Crown), zodiac sign, or element, search by keyword, browse birthstones by month, discover crystal pairings, and get random or daily crystal picks. Includes Mohs hardness, numerological vibration, and planetary associations per stone. Built for wellness apps, crystal shops, chakra-balancing tools, astrology integrations, and AI spiritual advisors. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, forecast, human design, numerology, tarot, biorhythm, I-Ching, crystals, dreams, angel numbers, location), 175+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 175+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n",
 		"contact": {
 			"name": "RoxyAPI Support",
 			"url": "https://roxyapi.com/contact"
@@ -124,8 +124,10 @@
 					},
 					{
 						"schema": {
-							"type": "integer",
-							"nullable": true,
+							"type": [
+								"integer",
+								"null"
+							],
 							"minimum": 0,
 							"default": 0,
 							"example": 0,
@@ -181,14 +183,18 @@
 														"description": "URL-safe crystal identifier for detail lookup."
 													},
 													"imageUrl": {
-														"type": "string",
-														"nullable": true,
+														"type": [
+															"string",
+															"null"
+														],
 														"example": "https://roxyapi.com/img/crystals/amethyst.jpg",
 														"description": "URL to crystal photograph for visual identification."
 													},
 													"colors": {
-														"type": "array",
-														"nullable": true,
+														"type": [
+															"array",
+															"null"
+														],
 														"items": {
 															"type": "string"
 														},
@@ -500,8 +506,10 @@
 					},
 					{
 						"schema": {
-							"type": "integer",
-							"nullable": true,
+							"type": [
+								"integer",
+								"null"
+							],
 							"minimum": 0,
 							"default": 0,
 							"example": 0,
@@ -557,14 +565,18 @@
 														"description": "URL-safe crystal identifier for detail lookup."
 													},
 													"imageUrl": {
-														"type": "string",
-														"nullable": true,
+														"type": [
+															"string",
+															"null"
+														],
 														"example": "https://roxyapi.com/img/crystals/amethyst.jpg",
 														"description": "URL to crystal photograph for visual identification."
 													},
 													"colors": {
-														"type": "array",
-														"nullable": true,
+														"type": [
+															"array",
+															"null"
+														],
 														"items": {
 															"type": "string"
 														},
@@ -874,8 +886,10 @@
 					},
 					{
 						"schema": {
-							"type": "integer",
-							"nullable": true,
+							"type": [
+								"integer",
+								"null"
+							],
 							"minimum": 0,
 							"default": 0,
 							"example": 0,
@@ -931,14 +945,18 @@
 														"description": "URL-safe crystal identifier for detail lookup."
 													},
 													"imageUrl": {
-														"type": "string",
-														"nullable": true,
+														"type": [
+															"string",
+															"null"
+														],
 														"example": "https://roxyapi.com/img/crystals/amethyst.jpg",
 														"description": "URL to crystal photograph for visual identification."
 													},
 													"colors": {
-														"type": "array",
-														"nullable": true,
+														"type": [
+															"array",
+															"null"
+														],
 														"items": {
 															"type": "string"
 														},
@@ -1267,14 +1285,18 @@
 														"description": "URL-safe crystal identifier for detail lookup."
 													},
 													"imageUrl": {
-														"type": "string",
-														"nullable": true,
+														"type": [
+															"string",
+															"null"
+														],
 														"example": "https://roxyapi.com/img/crystals/amethyst.jpg",
 														"description": "URL to crystal photograph for visual identification."
 													},
 													"colors": {
-														"type": "array",
-														"nullable": true,
+														"type": [
+															"array",
+															"null"
+														],
 														"items": {
 															"type": "string"
 														},
@@ -1578,8 +1600,10 @@
 					},
 					{
 						"schema": {
-							"type": "integer",
-							"nullable": true,
+							"type": [
+								"integer",
+								"null"
+							],
 							"minimum": 0,
 							"default": 0,
 							"example": 0,
@@ -1635,14 +1659,18 @@
 														"description": "URL-safe crystal identifier for detail lookup."
 													},
 													"imageUrl": {
-														"type": "string",
-														"nullable": true,
+														"type": [
+															"string",
+															"null"
+														],
 														"example": "https://roxyapi.com/img/crystals/amethyst.jpg",
 														"description": "URL to crystal photograph for visual identification."
 													},
 													"colors": {
-														"type": "array",
-														"nullable": true,
+														"type": [
+															"array",
+															"null"
+														],
 														"items": {
 															"type": "string"
 														},
@@ -1969,8 +1997,10 @@
 														"description": "URL-safe identifier for the paired crystal."
 													},
 													"imageUrl": {
-														"type": "string",
-														"nullable": true,
+														"type": [
+															"string",
+															"null"
+														],
 														"example": "https://roxyapi.com/img/crystals/citrine.jpg",
 														"description": "URL to paired crystal photograph."
 													},
@@ -1992,8 +2022,10 @@
 														"description": "Chakra associations for the paired crystal."
 													},
 													"keywords": {
-														"type": "array",
-														"nullable": true,
+														"type": [
+															"array",
+															"null"
+														],
 														"items": {
 															"type": "string"
 														},
@@ -2352,8 +2384,10 @@
 											"description": "URL-safe identifier. Call /crystals/:id for full healing properties."
 										},
 										"imageUrl": {
-											"type": "string",
-											"nullable": true,
+											"type": [
+												"string",
+												"null"
+											],
 											"example": "https://roxyapi.com/img/crystals/rose-quartz.jpg",
 											"description": "URL to crystal photograph. Use for daily crystal card display and visual features."
 										},
@@ -2373,8 +2407,10 @@
 											"description": "Chakra energy centers this crystal resonates with for energy healing practice."
 										},
 										"zodiacSigns": {
-											"type": "array",
-											"nullable": true,
+											"type": [
+												"array",
+												"null"
+											],
 											"items": {
 												"type": "string"
 											},
@@ -2669,8 +2705,10 @@
 											"description": "URL-safe identifier. Call /crystals/:id for full healing properties."
 										},
 										"imageUrl": {
-											"type": "string",
-											"nullable": true,
+											"type": [
+												"string",
+												"null"
+											],
 											"example": "https://roxyapi.com/img/crystals/citrine.jpg",
 											"description": "URL to crystal photograph for visual display."
 										},
@@ -2692,8 +2730,10 @@
 											"description": "Chakra energy centers this crystal resonates with."
 										},
 										"zodiacSigns": {
-											"type": "array",
-											"nullable": true,
+											"type": [
+												"array",
+												"null"
+											],
 											"items": {
 												"type": "string"
 											},
@@ -3583,8 +3623,10 @@
 					},
 					{
 						"schema": {
-							"type": "integer",
-							"nullable": true,
+							"type": [
+								"integer",
+								"null"
+							],
 							"minimum": 0,
 							"default": 0,
 							"example": 0,
@@ -3635,14 +3677,18 @@
 														"description": "URL-safe crystal identifier for detail lookup."
 													},
 													"imageUrl": {
-														"type": "string",
-														"nullable": true,
+														"type": [
+															"string",
+															"null"
+														],
 														"example": "https://roxyapi.com/img/crystals/amethyst.jpg",
 														"description": "URL to crystal photograph for visual identification."
 													},
 													"colors": {
-														"type": "array",
-														"nullable": true,
+														"type": [
+															"array",
+															"null"
+														],
 														"items": {
 															"type": "string"
 														},
@@ -3960,8 +4006,10 @@
 											"description": "URL-safe identifier for the crystal."
 										},
 										"imageUrl": {
-											"type": "string",
-											"nullable": true,
+											"type": [
+												"string",
+												"null"
+											],
 											"example": "https://roxyapi.com/img/crystals/amethyst.jpg",
 											"description": "URL to a high-quality crystal photograph. Use for visual crystal guides, product listings, and crystal identification features."
 										},
@@ -3974,8 +4022,10 @@
 											"type": "object",
 											"properties": {
 												"spiritual": {
-													"type": "string",
-													"nullable": true,
+													"type": [
+														"string",
+														"null"
+													],
 													"example": "Amethyst is thought to provide a protective shield against negative energies, transmuting them into loving, positive vibrations. It is also traditionally associated with clarity of thought, intuition, and inspiration.",
 													"description": "Spiritual and metaphysical healing properties including energy work, meditation benefits, and higher consciousness connections. Null when spiritual interpretation is unavailable."
 												},
@@ -3985,8 +4035,10 @@
 													"description": "Emotional healing properties including stress relief, relationship support, and emotional balance benefits."
 												},
 												"physical": {
-													"type": "string",
-													"nullable": true,
+													"type": [
+														"string",
+														"null"
+													],
 													"example": "Amethyst is traditionally believed to support overall vitality and holistic well-being. Crystal enthusiasts associate its energy with enhancing hormone balance, tuning the endocrine system, and strengthening the immune system.",
 													"description": "Physical healing associations traditionally attributed to this crystal in crystal healing practice. Null when physical healing data is unavailable."
 												}
@@ -4010,8 +4062,10 @@
 											"description": "Chakra energy centers this crystal resonates with. One of: Root, Sacral, Solar Plexus, Heart, Throat, Third Eye, Crown."
 										},
 										"zodiacSigns": {
-											"type": "array",
-											"nullable": true,
+											"type": [
+												"array",
+												"null"
+											],
 											"items": {
 												"type": "string"
 											},
@@ -4025,14 +4079,18 @@
 											"description": "Zodiac signs this crystal is traditionally associated with. Null when zodiac data is unavailable. Useful for personalized crystal recommendations based on birth chart."
 										},
 										"planet": {
-											"type": "string",
-											"nullable": true,
+											"type": [
+												"string",
+												"null"
+											],
 											"example": "Jupiter",
 											"description": "Ruling planet or celestial body associated with this crystal in astrological tradition. Null when planetary association is unavailable."
 										},
 										"elements": {
-											"type": "array",
-											"nullable": true,
+											"type": [
+												"array",
+												"null"
+											],
 											"items": {
 												"type": "string"
 											},
@@ -4043,8 +4101,10 @@
 											"description": "Elemental associations (Earth, Water, Fire, Air, Storm) connecting the crystal to natural forces and energy types. Null when elemental data is unavailable."
 										},
 										"colors": {
-											"type": "array",
-											"nullable": true,
+											"type": [
+												"array",
+												"null"
+											],
 											"items": {
 												"type": "string"
 											},
@@ -4065,8 +4125,10 @@
 											"description": "Numerological vibration number linking this crystal to numerology meanings. Connects crystal healing with numerology practice."
 										},
 										"keywords": {
-											"type": "array",
-											"nullable": true,
+											"type": [
+												"array",
+												"null"
+											],
 											"items": {
 												"type": "string"
 											},
@@ -4080,8 +4142,10 @@
 											"description": "Keywords capturing the core healing properties and spiritual themes of this crystal. The count varies by stone, from a single keyword up to twenty. Null when keyword data is unavailable."
 										},
 										"birthMonth": {
-											"type": "number",
-											"nullable": true,
+											"type": [
+												"number",
+												"null"
+											],
 											"example": 2,
 											"description": "Birth month (1-12) if this crystal is a traditional birthstone. Null if not a birthstone. January is 1, December is 12."
 										},
@@ -4361,5 +4425,6 @@
 				}
 			}
 		}
-	}
+	},
+	"webhooks": {}
 }
