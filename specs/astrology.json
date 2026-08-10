@@ -1,7 +1,7 @@
 {
 	"openapi": "3.1.0",
 	"info": {
-		"title": "Western Astrology API",
+		"title": "Astrology API",
 		"version": "2.0.0",
 		"description": "Western astrology API for natal birth charts, daily, weekly, and monthly horoscopes with unique content per sign, synastry compatibility scores, composite charts, solar and lunar returns, real-time transit aspects, and moon phases. 4 house systems (Placidus, Koch, Whole Sign, Equal) with accurate tropical ephemeris, aspect-pattern detection (Grand Trine, T-Square, Yod), astrocartography planetary lines, relocation charts, and local space maps for location based astrology, plus classical and professional points like fixed star conjunctions, Arabic lots, the asteroid goddesses (Ceres, Pallas, Juno, Vesta), mean and true Black Moon Lilith, and timing techniques like secondary progressions, solar arc directions, and annual profections. Built for horoscope platforms, astrology dating apps, AI chatbots, wellness products, and zodiac content engines. Schedule future horoscopes with a date parameter for editorial workflows, no astronomy expertise needed. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, forecast, human design, numerology, tarot, biorhythm, I-Ching, crystals, dreams, angel numbers, location), 176+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 176+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n",
 		"contact": {
@@ -741,6 +741,16 @@
 						],
 						"description": "Timezone: IANA name (e.g. \"America/New_York\", \"Europe/London\") OR decimal hours from UTC (e.g. -5 for EST, 1 for CET). IANA strings are resolved to the DST-correct offset for the given date, so you can pass `cities[0].timezone` from /location/search directly.",
 						"example": -5
+					},
+					"nodeType": {
+						"type": "string",
+						"enum": [
+							"mean",
+							"true"
+						],
+						"default": "true",
+						"example": "true",
+						"description": "Lunar node convention. \"mean\" is the smoothed average node, which always moves retrograde; \"true\" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and they almost always fall in the same sign. Applies to the North and South Node. True is what most Western software reports (Astrolabe, Cafe Astrology, TimePassages), which is why it is the default here; astro-seek and the Steven Forrest evolutionary school use mean, so pass \"mean\" to match those. Nothing else in the chart changes, and the two agree on the sign except when the node sits within about 1.8 degrees of a cusp. Defaults to \"true\"."
 					},
 					"houseSystem": {
 						"type": "string",
@@ -1527,6 +1537,16 @@
 						],
 						"description": "Timezone: IANA name (e.g. \"America/New_York\", \"Europe/London\") OR decimal hours from UTC (e.g. -5 for EST, 1 for CET). IANA strings are resolved to the DST-correct offset for the given date, so you can pass `cities[0].timezone` from /location/search directly.",
 						"example": -5
+					},
+					"nodeType": {
+						"type": "string",
+						"enum": [
+							"mean",
+							"true"
+						],
+						"default": "true",
+						"example": "true",
+						"description": "Lunar node convention. \"mean\" is the smoothed average node, which always moves retrograde; \"true\" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and they almost always fall in the same sign. Applies to the North and South Node. True is what most Western software reports (Astrolabe, Cafe Astrology, TimePassages), which is why it is the default here; astro-seek and the Steven Forrest evolutionary school use mean, so pass \"mean\" to match those. Nothing else in the chart changes, and the two agree on the sign except when the node sits within about 1.8 degrees of a cusp. Defaults to \"true\"."
 					}
 				},
 				"required": [
@@ -1816,6 +1836,16 @@
 						"description": "Transit timezone: decimal hours from UTC OR IANA name (e.g. \"America/New_York\"). IANA resolved to the DST-correct offset for the transit date. Defaults to 0 (UTC).",
 						"example": 0
 					},
+					"nodeType": {
+						"type": "string",
+						"enum": [
+							"mean",
+							"true"
+						],
+						"default": "true",
+						"example": "true",
+						"description": "Lunar node convention. \"mean\" is the smoothed average node, which always moves retrograde; \"true\" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and they almost always fall in the same sign. Applies to the North and South Node. True is what most Western software reports (Astrolabe, Cafe Astrology, TimePassages), which is why it is the default here; astro-seek and the Steven Forrest evolutionary school use mean, so pass \"mean\" to match those. Nothing else in the chart changes, and the two agree on the sign except when the node sits within about 1.8 degrees of a cusp. Defaults to \"true\"."
+					},
 					"natalChart": {
 						"type": "object",
 						"properties": {
@@ -1928,7 +1958,12 @@
 								"planet": {
 									"type": "string",
 									"example": "Sun",
-									"description": "Celestial body this set of planetary lines belongs to."
+									"description": "Celestial body this set of planetary lines belongs to. Always English, whatever the lang parameter says, so it stays safe to compare against in code. Use planetLocalized for anything a reader sees."
+								},
+								"planetLocalized": {
+									"type": "string",
+									"example": "Sol",
+									"description": "Body name in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
 								},
 								"symbol": {
 									"type": "string",
@@ -2452,7 +2487,7 @@
 							"Black Moon Lilith"
 						],
 						"example": "Sun",
-						"description": "Body name. One of the 10 classical planets (Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto), the lunar nodes (North Node, South Node), Chiron, or Black Moon Lilith (the mean lunar apogee)."
+						"description": "Body name. One of the 10 classical planets (Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto), the lunar nodes (North Node, South Node), Chiron, or Black Moon Lilith (the mean lunar apogee). The nodes follow the request `nodeType`, which defaults to the true (osculating) node; pass \"mean\" for the smoothed node. The two differ by up to about 1.8 degrees and no other body is affected."
 					},
 					"longitude": {
 						"type": "number",
@@ -2679,7 +2714,12 @@
 								"planet": {
 									"type": "string",
 									"example": "Sun",
-									"description": "Body name (Sun, Moon, Mercury through Pluto, plus North Node, Chiron, or Black Moon Lilith when requested). Localized when a translation exists."
+									"description": "Body name (Sun, Moon, Mercury through Pluto, plus North Node, Chiron, or Black Moon Lilith when requested). Always English, whatever the lang parameter says, so it stays safe to compare against in code. Use planetLocalized for anything a reader sees."
+								},
+								"planetLocalized": {
+									"type": "string",
+									"example": "Sol",
+									"description": "Body name in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
 								},
 								"symbol": {
 									"type": "string",
@@ -2888,7 +2928,12 @@
 											"point": {
 												"type": "string",
 												"example": "Sun",
-												"description": "Natal point conjunct this star: a planet name, or the chart angles MC and ASC. Planet names are localized to the requested language."
+												"description": "Natal point conjunct this star: a planet name, or the chart angles MC and ASC. Always English, whatever the lang parameter says, so it stays safe to compare against in code. Use pointLocalized for anything a reader sees."
+											},
+											"pointLocalized": {
+												"type": "string",
+												"example": "Sol",
+												"description": "Natal point name in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
 											},
 											"pointLongitude": {
 												"type": "number",
@@ -2937,7 +2982,12 @@
 								"point": {
 									"type": "string",
 									"example": "Sun",
-									"description": "Natal point conjunct the star: a localized planet name, or the chart angles MC and ASC."
+									"description": "Natal point conjunct the star: a planet name, or the chart angles MC and ASC. Always English, whatever the lang parameter says, so it stays safe to compare against in code. Use pointLocalized for anything a reader sees."
+								},
+								"pointLocalized": {
+									"type": "string",
+									"example": "Sol",
+									"description": "Natal point name in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
 								},
 								"orb": {
 									"type": "number",
@@ -3039,12 +3089,17 @@
 								"id": {
 									"type": "string",
 									"example": "fortune",
-									"description": "Stable machine identifier for the lot (fortune, spirit, eros, necessity, courage, victory, nemesis). Use this for lookups; the name field carries the localized display label."
+									"description": "Stable machine identifier for the lot (fortune, spirit, eros, necessity, courage, victory, nemesis). Use this for lookups."
 								},
 								"name": {
 									"type": "string",
 									"example": "Part of Fortune",
-									"description": "Display name of the lot, localized to the requested language."
+									"description": "Name of the lot. Always English, whatever the lang parameter says, so it stays safe to compare against in code. Use nameLocalized for anything a reader sees."
+								},
+								"nameLocalized": {
+									"type": "string",
+									"example": "Parte de la Fortuna",
+									"description": "Lot name in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
 								},
 								"longitude": {
 									"type": "number",
@@ -3144,6 +3199,16 @@
 						"description": "Timezone: IANA name (e.g. \"America/New_York\", \"Europe/London\") OR decimal hours from UTC (e.g. -5 for EST, 1 for CET). IANA strings are resolved to the DST-correct offset for the given date, so you can pass `cities[0].timezone` from /location/search directly.",
 						"example": -5
 					},
+					"nodeType": {
+						"type": "string",
+						"enum": [
+							"mean",
+							"true"
+						],
+						"default": "true",
+						"example": "true",
+						"description": "Lunar node convention. \"mean\" is the smoothed average node, which always moves retrograde; \"true\" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and they almost always fall in the same sign. Applies to the North and South Node. True is what most Western software reports (Astrolabe, Cafe Astrology, TimePassages), which is why it is the default here; astro-seek and the Steven Forrest evolutionary school use mean, so pass \"mean\" to match those. Nothing else in the chart changes, and the two agree on the sign except when the node sits within about 1.8 degrees of a cusp. Defaults to \"true\"."
+					},
 					"houseSystem": {
 						"type": "string",
 						"enum": [
@@ -3233,7 +3298,12 @@
 								"name": {
 									"type": "string",
 									"example": "Ceres",
-									"description": "Display name of the asteroid, localized to the requested language."
+									"description": "Name of the asteroid: Ceres, Pallas, Juno, or Vesta. Always English, whatever the lang parameter says, so it stays safe to compare against in code. Use nameLocalized for anything a reader sees."
+								},
+								"nameLocalized": {
+									"type": "string",
+									"example": "Palas",
+									"description": "Asteroid name in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
 								},
 								"longitude": {
 									"type": "number",
@@ -3352,6 +3422,16 @@
 						"description": "Timezone: IANA name (e.g. \"America/New_York\", \"Europe/London\") OR decimal hours from UTC (e.g. -5 for EST, 1 for CET). IANA strings are resolved to the DST-correct offset for the given date, so you can pass `cities[0].timezone` from /location/search directly.",
 						"example": -5
 					},
+					"nodeType": {
+						"type": "string",
+						"enum": [
+							"mean",
+							"true"
+						],
+						"default": "true",
+						"example": "true",
+						"description": "Lunar node convention. \"mean\" is the smoothed average node, which always moves retrograde; \"true\" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and they almost always fall in the same sign. Applies to the North and South Node. True is what most Western software reports (Astrolabe, Cafe Astrology, TimePassages), which is why it is the default here; astro-seek and the Steven Forrest evolutionary school use mean, so pass \"mean\" to match those. Nothing else in the chart changes, and the two agree on the sign except when the node sits within about 1.8 degrees of a cusp. Defaults to \"true\"."
+					},
 					"houseSystem": {
 						"type": "string",
 						"enum": [
@@ -3440,8 +3520,17 @@
 							"properties": {
 								"variant": {
 									"type": "string",
+									"enum": [
+										"mean",
+										"true"
+									],
 									"example": "mean",
-									"description": "Which lunar apogee this entry describes, localized to the requested language. The mean variant is the smoothed average apogee; the true variant is the instantaneous osculating apogee."
+									"description": "Which lunar apogee this entry describes. The mean variant is the smoothed average apogee; the true variant is the instantaneous osculating apogee. Always one of these two English literals, whatever the lang parameter says, so it stays safe to compare against in code. Use variantLocalized for anything a reader sees."
+								},
+								"variantLocalized": {
+									"type": "string",
+									"example": "media",
+									"description": "Apogee variant label in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
 								},
 								"longitude": {
 									"type": "number",
@@ -3565,6 +3654,16 @@
 						],
 						"description": "Timezone: IANA name (e.g. \"America/New_York\", \"Europe/London\") OR decimal hours from UTC (e.g. -5 for EST, 1 for CET). IANA strings are resolved to the DST-correct offset for the given date, so you can pass `cities[0].timezone` from /location/search directly.",
 						"example": -5
+					},
+					"nodeType": {
+						"type": "string",
+						"enum": [
+							"mean",
+							"true"
+						],
+						"default": "true",
+						"example": "true",
+						"description": "Lunar node convention. \"mean\" is the smoothed average node, which always moves retrograde; \"true\" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and they almost always fall in the same sign. Applies to the North and South Node. True is what most Western software reports (Astrolabe, Cafe Astrology, TimePassages), which is why it is the default here; astro-seek and the Steven Forrest evolutionary school use mean, so pass \"mean\" to match those. Nothing else in the chart changes, and the two agree on the sign except when the node sits within about 1.8 degrees of a cusp. Defaults to \"true\"."
 					},
 					"houseSystem": {
 						"type": "string",
@@ -3856,6 +3955,16 @@
 						"description": "Timezone: IANA name (e.g. \"America/New_York\", \"Europe/London\") OR decimal hours from UTC (e.g. -5 for EST, 1 for CET). IANA strings are resolved to the DST-correct offset for the given date, so you can pass `cities[0].timezone` from /location/search directly.",
 						"example": -5
 					},
+					"nodeType": {
+						"type": "string",
+						"enum": [
+							"mean",
+							"true"
+						],
+						"default": "true",
+						"example": "true",
+						"description": "Lunar node convention. \"mean\" is the smoothed average node, which always moves retrograde; \"true\" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and they almost always fall in the same sign. Applies to the North and South Node. True is what most Western software reports (Astrolabe, Cafe Astrology, TimePassages), which is why it is the default here; astro-seek and the Steven Forrest evolutionary school use mean, so pass \"mean\" to match those. Nothing else in the chart changes, and the two agree on the sign except when the node sits within about 1.8 degrees of a cusp. Defaults to \"true\"."
+					},
 					"targetDate": {
 						"type": "string",
 						"format": "date",
@@ -3947,7 +4056,12 @@
 								"name": {
 									"type": "string",
 									"example": "Sun",
-									"description": "Name of the directed point, localized to the requested language. This covers the planets and the two angles, the Ascendant and the Midheaven, alike."
+									"description": "Name of the directed point, covering the planets and the two angles, the Ascendant and the Midheaven, alike. Always English, whatever the lang parameter says, so it stays safe to compare against in code. Use nameLocalized for anything a reader sees."
+								},
+								"nameLocalized": {
+									"type": "string",
+									"example": "Sol",
+									"description": "Directed point name in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
 								},
 								"natalLongitude": {
 									"type": "number",
@@ -4043,6 +4157,16 @@
 						],
 						"description": "Timezone: IANA name (e.g. \"America/New_York\", \"Europe/London\") OR decimal hours from UTC (e.g. -5 for EST, 1 for CET). IANA strings are resolved to the DST-correct offset for the given date, so you can pass `cities[0].timezone` from /location/search directly.",
 						"example": -5
+					},
+					"nodeType": {
+						"type": "string",
+						"enum": [
+							"mean",
+							"true"
+						],
+						"default": "true",
+						"example": "true",
+						"description": "Lunar node convention. \"mean\" is the smoothed average node, which always moves retrograde; \"true\" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and they almost always fall in the same sign. Applies to the North and South Node. True is what most Western software reports (Astrolabe, Cafe Astrology, TimePassages), which is why it is the default here; astro-seek and the Steven Forrest evolutionary school use mean, so pass \"mean\" to match those. Nothing else in the chart changes, and the two agree on the sign except when the node sits within about 1.8 degrees of a cusp. Defaults to \"true\"."
 					},
 					"targetDate": {
 						"type": "string",
@@ -4226,6 +4350,16 @@
 						"description": "Timezone: IANA name (e.g. \"America/New_York\", \"Europe/London\") OR decimal hours from UTC (e.g. -5 for EST, 1 for CET). IANA strings are resolved to the DST-correct offset for the given date, so you can pass `cities[0].timezone` from /location/search directly.",
 						"example": -5
 					},
+					"nodeType": {
+						"type": "string",
+						"enum": [
+							"mean",
+							"true"
+						],
+						"default": "true",
+						"example": "true",
+						"description": "Lunar node convention. \"mean\" is the smoothed average node, which always moves retrograde; \"true\" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and they almost always fall in the same sign. Applies to the North and South Node. True is what most Western software reports (Astrolabe, Cafe Astrology, TimePassages), which is why it is the default here; astro-seek and the Steven Forrest evolutionary school use mean, so pass \"mean\" to match those. Nothing else in the chart changes, and the two agree on the sign except when the node sits within about 1.8 degrees of a cusp. Defaults to \"true\"."
+					},
 					"targetDate": {
 						"type": "string",
 						"format": "date",
@@ -4328,8 +4462,13 @@
 													"air",
 													"water"
 												],
-												"example": "Fire",
-												"description": "Elemental classification: Fire, Earth, Air, or Water."
+												"example": "fire",
+												"description": "Elemental classification: fire, earth, air, or water. Always one of these four English literals, whatever the lang parameter says, so it stays safe to compare against in code. Use elementLocalized for anything a reader sees."
+											},
+											"elementLocalized": {
+												"type": "string",
+												"example": "Fuego",
+												"description": "Element name in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
 											},
 											"dates": {
 												"type": "object",
@@ -4662,8 +4801,13 @@
 												"air",
 												"water"
 											],
-											"example": "Fire",
-											"description": "Elemental classification: Fire, Earth, Air, or Water. Determines temperament and compatibility group."
+											"example": "fire",
+											"description": "Elemental classification: fire, earth, air, or water. Determines temperament and compatibility group. Always one of these four English literals, whatever the lang parameter says, so it stays safe to compare against in code. Use elementLocalized for anything a reader sees."
+										},
+										"elementLocalized": {
+											"type": "string",
+											"example": "Fuego",
+											"description": "Element name in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
 										},
 										"modality": {
 											"type": "string",
@@ -4672,13 +4816,23 @@
 												"fixed",
 												"mutable"
 											],
+											"example": "cardinal",
+											"description": "Quality/modality: cardinal (initiating), fixed (sustaining), or mutable (adapting). Always one of these three English literals, whatever the lang parameter says, so it stays safe to compare against in code. Use modalityLocalized for anything a reader sees."
+										},
+										"modalityLocalized": {
+											"type": "string",
 											"example": "Cardinal",
-											"description": "Quality/modality: Cardinal (initiating), Fixed (sustaining), or Mutable (adapting)."
+											"description": "Modality name in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
 										},
 										"rulingPlanet": {
 											"type": "string",
 											"example": "Mars",
-											"description": "Traditional ruling planet that governs this sign."
+											"description": "Traditional ruling planet that governs this sign. Always English, whatever the lang parameter says, so it stays safe to compare against in code. Use rulingPlanetLocalized for anything a reader sees."
+										},
+										"rulingPlanetLocalized": {
+											"type": "string",
+											"example": "Marte",
+											"description": "Ruling planet name in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
 										},
 										"dates": {
 											"type": "object",
@@ -6085,6 +6239,16 @@
 										"format": "time",
 										"example": "12:00:00",
 										"description": "Time in 24-hour HH:MM:SS format for precise calculations. Moon moves ~13° per day, so time matters for accurate lunar position. Use 12:00:00 (noon) as default if exact time not needed."
+									},
+									"nodeType": {
+										"type": "string",
+										"enum": [
+											"mean",
+											"true"
+										],
+										"default": "true",
+										"example": "true",
+										"description": "Lunar node convention. \"mean\" is the smoothed average node, which always moves retrograde; \"true\" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and they almost always fall in the same sign. Applies to the North and South Node. True is what most Western software reports (Astrolabe, Cafe Astrology, TimePassages), which is why it is the default here; astro-seek and the Steven Forrest evolutionary school use mean, so pass \"mean\" to match those. Nothing else in the chart changes, and the two agree on the sign except when the node sits within about 1.8 degrees of a cusp. Defaults to \"true\"."
 									},
 									"latitude": {
 										"type": "number",
@@ -7965,6 +8129,16 @@
 												"description": "Timezone: IANA name (e.g. \"America/New_York\", \"Europe/London\") OR decimal hours from UTC (e.g. -5 for EST, 1 for CET). IANA strings are resolved to the DST-correct offset for the given date, so you can pass `cities[0].timezone` from /location/search directly.",
 												"example": -5
 											},
+											"nodeType": {
+												"type": "string",
+												"enum": [
+													"mean",
+													"true"
+												],
+												"default": "true",
+												"example": "true",
+												"description": "Lunar node convention. \"mean\" is the smoothed average node, which always moves retrograde; \"true\" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and they almost always fall in the same sign. Applies to the North and South Node. True is what most Western software reports (Astrolabe, Cafe Astrology, TimePassages), which is why it is the default here; astro-seek and the Steven Forrest evolutionary school use mean, so pass \"mean\" to match those. Nothing else in the chart changes, and the two agree on the sign except when the node sits within about 1.8 degrees of a cusp. Defaults to \"true\"."
+											},
 											"name": {
 												"type": "string",
 												"example": "Alex",
@@ -8021,6 +8195,16 @@
 												],
 												"description": "Timezone: IANA name (e.g. \"America/New_York\", \"Europe/London\") OR decimal hours from UTC (e.g. -5 for EST, 1 for CET). IANA strings are resolved to the DST-correct offset for the given date, so you can pass `cities[0].timezone` from /location/search directly.",
 												"example": -5
+											},
+											"nodeType": {
+												"type": "string",
+												"enum": [
+													"mean",
+													"true"
+												],
+												"default": "true",
+												"example": "true",
+												"description": "Lunar node convention. \"mean\" is the smoothed average node, which always moves retrograde; \"true\" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and they almost always fall in the same sign. Applies to the North and South Node. True is what most Western software reports (Astrolabe, Cafe Astrology, TimePassages), which is why it is the default here; astro-seek and the Steven Forrest evolutionary school use mean, so pass \"mean\" to match those. Nothing else in the chart changes, and the two agree on the sign except when the node sits within about 1.8 degrees of a cusp. Defaults to \"true\"."
 											},
 											"name": {
 												"type": "string",
@@ -9985,6 +10169,16 @@
 												],
 												"description": "Timezone: IANA name (e.g. \"America/New_York\", \"Europe/London\") OR decimal hours from UTC (e.g. -5 for EST, 1 for CET). IANA strings are resolved to the DST-correct offset for the given date, so you can pass `cities[0].timezone` from /location/search directly.",
 												"example": -5
+											},
+											"nodeType": {
+												"type": "string",
+												"enum": [
+													"mean",
+													"true"
+												],
+												"default": "true",
+												"example": "true",
+												"description": "Lunar node convention. \"mean\" is the smoothed average node, which always moves retrograde; \"true\" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and they almost always fall in the same sign. Applies to the North and South Node. True is what most Western software reports (Astrolabe, Cafe Astrology, TimePassages), which is why it is the default here; astro-seek and the Steven Forrest evolutionary school use mean, so pass \"mean\" to match those. Nothing else in the chart changes, and the two agree on the sign except when the node sits within about 1.8 degrees of a cusp. Defaults to \"true\"."
 											}
 										},
 										"required": [
@@ -10111,6 +10305,87 @@
 											"example": "placidus",
 											"description": "House system actually used for the natal cusps behind every house number in this response. Differs from the requested system only above the polar circle, where quadrant systems fall back to Whole Sign."
 										},
+										"houses": {
+											"type": "array",
+											"items": {
+												"type": "object",
+												"properties": {
+													"number": {
+														"type": "integer",
+														"minimum": 1,
+														"maximum": 12,
+														"example": 1,
+														"description": "House number (1-12). Each house governs specific life themes in Western astrology."
+													},
+													"longitude": {
+														"type": "number",
+														"minimum": 0,
+														"maximum": 360,
+														"example": 45.32,
+														"description": "Ecliptic longitude of this house cusp in degrees (0-360)."
+													},
+													"sign": {
+														"type": "string",
+														"example": "Taurus",
+														"description": "Zodiac sign on this house cusp. Colors the themes of this life area."
+													},
+													"degree": {
+														"type": "number",
+														"minimum": 0,
+														"maximum": 30,
+														"example": 15.32,
+														"description": "Degree within the zodiac sign on this cusp (0-29.999)."
+													},
+													"signLocalized": {
+														"type": "string",
+														"example": "Tauro",
+														"description": "Zodiac sign name on this cusp in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
+													}
+												},
+												"required": [
+													"number",
+													"longitude",
+													"sign",
+													"degree"
+												]
+											},
+											"description": "The twelve NATAL house cusps that every house number in this response is read against, in the house system named by houseSystem. Same shape as the natal-chart houses array, so a bi-wheel can be drawn with real house sectors from this one response instead of pairing it with a second call."
+										},
+										"ascendant": {
+											"type": "object",
+											"properties": {
+												"sign": {
+													"type": "string",
+													"example": "Taurus",
+													"description": "Tropical zodiac sign on the natal Ascendant. Always English, whatever the lang parameter says. Use signLocalized for anything a reader sees."
+												},
+												"signLocalized": {
+													"type": "string",
+													"example": "Tauro",
+													"description": "Ascendant sign name in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
+												},
+												"degree": {
+													"type": "number",
+													"minimum": 0,
+													"maximum": 30,
+													"example": 15.32,
+													"description": "Degree within the Ascendant sign (0-29.999)."
+												},
+												"longitude": {
+													"type": "number",
+													"minimum": 0,
+													"maximum": 360,
+													"example": 45.32,
+													"description": "Absolute ecliptic longitude of the natal Ascendant in degrees (0-360)."
+												}
+											},
+											"required": [
+												"sign",
+												"degree",
+												"longitude"
+											],
+											"description": "The natal Ascendant (rising sign): the eastern horizon at birth, and the left-hand horizon a chart wheel is oriented to. Reported alongside the cusps because the two are not the same longitude in every house system: Whole Sign puts the first cusp at 0 degrees of the rising sign, which can sit most of a sign away from the Ascendant itself."
+										},
 										"transitPlanets": {
 											"type": "array",
 											"items": {
@@ -10135,7 +10410,7 @@
 															"Black Moon Lilith"
 														],
 														"example": "Sun",
-														"description": "Body name. One of the 10 classical planets (Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto), the lunar nodes (North Node, South Node), Chiron, or Black Moon Lilith (the mean lunar apogee)."
+														"description": "Body name. One of the 10 classical planets (Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto), the lunar nodes (North Node, South Node), Chiron, or Black Moon Lilith (the mean lunar apogee). The nodes follow the request `nodeType`, which defaults to the true (osculating) node; pass \"mean\" for the smoothed node. The two differ by up to about 1.8 degrees and no other body is affected."
 													},
 													"longitude": {
 														"type": "number",
@@ -10226,7 +10501,7 @@
 															"Black Moon Lilith"
 														],
 														"example": "Sun",
-														"description": "Body name. One of the 10 classical planets (Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto), the lunar nodes (North Node, South Node), Chiron, or Black Moon Lilith (the mean lunar apogee)."
+														"description": "Body name. One of the 10 classical planets (Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto), the lunar nodes (North Node, South Node), Chiron, or Black Moon Lilith (the mean lunar apogee). The nodes follow the request `nodeType`, which defaults to the true (osculating) node; pass \"mean\" for the smoothed node. The two differ by up to about 1.8 degrees and no other body is affected."
 													},
 													"longitude": {
 														"type": "number",
@@ -10448,7 +10723,8 @@
 															"impact",
 															"guidance",
 															"keywords"
-														]
+														],
+														"description": "Rich interpretation of the transit aspect: narrative summary, timing, impact assessment, practical guidance, and keywords."
 													}
 												},
 												"required": [
@@ -10459,7 +10735,8 @@
 													"orb",
 													"isApplying",
 													"strength",
-													"interpretation"
+													"interpretation",
+													"transitInterpretation"
 												]
 											},
 											"description": "Transit-to-natal aspects with interpretations, strength ratings, and guidance. Each aspect represents a transiting planet forming a geometric angle to a natal planet."
@@ -10597,6 +10874,54 @@
 															"type": "string",
 															"example": "Trígono",
 															"description": "Aspect type name in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
+														},
+														"transitInterpretation": {
+															"type": "object",
+															"properties": {
+																"summary": {
+																	"type": "string",
+																	"example": "Sun supports your natal Moon harmoniously",
+																	"description": "Narrative interpretation of this transit aspect and its life impact."
+																},
+																"timing": {
+																	"type": "string",
+																	"example": "Active for a few days",
+																	"description": "When this transit is most active and how long its influence lasts, localized. The bucket follows the speed of the transiting body: a few hours for the Moon, a few days for the Sun, Mercury, Venus and Mars, one to two weeks for Jupiter, several weeks for Saturn, and an extended period for Uranus, Neptune and Pluto."
+																},
+																"impact": {
+																	"type": "string",
+																	"example": "Self-awareness and ego flows easily with Inner emotional life. Opportunities arise naturally in this area.",
+																	"description": "Strength and nature of this transit effect — constructive, challenging, or neutral."
+																},
+																"guidance": {
+																	"type": "string",
+																	"example": "Take advantage of this supportive energy. Things flow easily, so act on opportunities.",
+																	"description": "Practical advice for working with this transit energy."
+																},
+																"keywords": {
+																	"type": "array",
+																	"items": {
+																		"type": "string"
+																	},
+																	"example": [
+																		"accept",
+																		"accepting",
+																		"difficult",
+																		"natural",
+																		"support",
+																		"talent"
+																	],
+																	"description": "Key themes activated by this transit aspect."
+																}
+															},
+															"required": [
+																"summary",
+																"timing",
+																"impact",
+																"guidance",
+																"keywords"
+															],
+															"description": "Rich interpretation of the transit aspect: narrative summary, timing, impact assessment, practical guidance, and keywords."
 														}
 													},
 													"required": [
@@ -10607,7 +10932,8 @@
 														"orb",
 														"isApplying",
 														"strength",
-														"interpretation"
+														"interpretation",
+														"transitInterpretation"
 													],
 													"description": "The tightest aspect by orb. This is the most potent transit currently active — the one most likely to be felt."
 												},
@@ -10641,6 +10967,8 @@
 									"required": [
 										"transitDate",
 										"houseSystem",
+										"houses",
+										"ascendant",
 										"transitPlanets",
 										"natalPlanets",
 										"aspects",
@@ -11102,7 +11430,7 @@
 																	"Black Moon Lilith"
 																],
 																"example": "Sun",
-																"description": "Body name. One of the 10 classical planets (Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto), the lunar nodes (North Node, South Node), Chiron, or Black Moon Lilith (the mean lunar apogee)."
+																"description": "Body name. One of the 10 classical planets (Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto), the lunar nodes (North Node, South Node), Chiron, or Black Moon Lilith (the mean lunar apogee). The nodes follow the request `nodeType`, which defaults to the true (osculating) node; pass \"mean\" for the smoothed node. The two differ by up to about 1.8 degrees and no other body is affected."
 															},
 															"longitude": {
 																"type": "number",
@@ -11157,7 +11485,7 @@
 															"isRetrograde"
 														]
 													},
-													"description": "All 14 celestial bodies in the tropical zodiac with house placements: the 10 classical planets (Sun through Pluto), the lunar nodes (North Node, South Node), Chiron, and Black Moon Lilith."
+													"description": "All 14 celestial bodies in the tropical zodiac with house placements: the 10 classical planets (Sun through Pluto), the lunar nodes (North Node, South Node, in the requested `nodeType` convention), Chiron, and Black Moon Lilith."
 												},
 												"houses": {
 													"type": "array",
@@ -11925,7 +12253,7 @@
 																	"Black Moon Lilith"
 																],
 																"example": "Sun",
-																"description": "Body name. One of the 10 classical planets (Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto), the lunar nodes (North Node, South Node), Chiron, or Black Moon Lilith (the mean lunar apogee)."
+																"description": "Body name. One of the 10 classical planets (Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto), the lunar nodes (North Node, South Node), Chiron, or Black Moon Lilith (the mean lunar apogee). The nodes follow the request `nodeType`, which defaults to the true (osculating) node; pass \"mean\" for the smoothed node. The two differ by up to about 1.8 degrees and no other body is affected."
 															},
 															"longitude": {
 																"type": "number",
@@ -11980,7 +12308,7 @@
 															"isRetrograde"
 														]
 													},
-													"description": "All 14 celestial bodies in the tropical zodiac with house placements: the 10 classical planets (Sun through Pluto), the lunar nodes (North Node, South Node), Chiron, and Black Moon Lilith."
+													"description": "All 14 celestial bodies in the tropical zodiac with house placements: the 10 classical planets (Sun through Pluto), the lunar nodes (North Node, South Node, in the requested `nodeType` convention), Chiron, and Black Moon Lilith."
 												},
 												"houses": {
 													"type": "array",
@@ -12592,6 +12920,16 @@
 												],
 												"description": "Timezone: IANA name (e.g. \"America/New_York\", \"Europe/London\") OR decimal hours from UTC (e.g. -5 for EST, 1 for CET). IANA strings are resolved to the DST-correct offset for the given date, so you can pass `cities[0].timezone` from /location/search directly.",
 												"example": -5
+											},
+											"nodeType": {
+												"type": "string",
+												"enum": [
+													"mean",
+													"true"
+												],
+												"default": "true",
+												"example": "true",
+												"description": "Lunar node convention. \"mean\" is the smoothed average node, which always moves retrograde; \"true\" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and they almost always fall in the same sign. Applies to the North and South Node. True is what most Western software reports (Astrolabe, Cafe Astrology, TimePassages), which is why it is the default here; astro-seek and the Steven Forrest evolutionary school use mean, so pass \"mean\" to match those. Nothing else in the chart changes, and the two agree on the sign except when the node sits within about 1.8 degrees of a cusp. Defaults to \"true\"."
 											}
 										},
 										"required": [
@@ -12645,6 +12983,16 @@
 												],
 												"description": "Timezone: IANA name (e.g. \"America/New_York\", \"Europe/London\") OR decimal hours from UTC (e.g. -5 for EST, 1 for CET). IANA strings are resolved to the DST-correct offset for the given date, so you can pass `cities[0].timezone` from /location/search directly.",
 												"example": -5
+											},
+											"nodeType": {
+												"type": "string",
+												"enum": [
+													"mean",
+													"true"
+												],
+												"default": "true",
+												"example": "true",
+												"description": "Lunar node convention. \"mean\" is the smoothed average node, which always moves retrograde; \"true\" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and they almost always fall in the same sign. Applies to the North and South Node. True is what most Western software reports (Astrolabe, Cafe Astrology, TimePassages), which is why it is the default here; astro-seek and the Steven Forrest evolutionary school use mean, so pass \"mean\" to match those. Nothing else in the chart changes, and the two agree on the sign except when the node sits within about 1.8 degrees of a cusp. Defaults to \"true\"."
 											}
 										},
 										"required": [
@@ -12818,7 +13166,7 @@
 															"Black Moon Lilith"
 														],
 														"example": "Sun",
-														"description": "Body name. One of the 10 classical planets (Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto), the lunar nodes (North Node, South Node), Chiron, or Black Moon Lilith (the mean lunar apogee)."
+														"description": "Body name. One of the 10 classical planets (Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto), the lunar nodes (North Node, South Node), Chiron, or Black Moon Lilith (the mean lunar apogee). The nodes follow the request `nodeType`, which defaults to the true (osculating) node; pass \"mean\" for the smoothed node. The two differ by up to about 1.8 degrees and no other body is affected."
 													},
 													"longitude": {
 														"type": "number",
@@ -13455,6 +13803,16 @@
 												],
 												"description": "Timezone: IANA name (e.g. \"America/New_York\", \"Europe/London\") OR decimal hours from UTC (e.g. -5 for EST, 1 for CET). IANA strings are resolved to the DST-correct offset for the given date, so you can pass `cities[0].timezone` from /location/search directly.",
 												"example": -5
+											},
+											"nodeType": {
+												"type": "string",
+												"enum": [
+													"mean",
+													"true"
+												],
+												"default": "true",
+												"example": "true",
+												"description": "Lunar node convention. \"mean\" is the smoothed average node, which always moves retrograde; \"true\" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and they almost always fall in the same sign. Applies to the North and South Node. True is what most Western software reports (Astrolabe, Cafe Astrology, TimePassages), which is why it is the default here; astro-seek and the Steven Forrest evolutionary school use mean, so pass \"mean\" to match those. Nothing else in the chart changes, and the two agree on the sign except when the node sits within about 1.8 degrees of a cusp. Defaults to \"true\"."
 											}
 										},
 										"required": [
@@ -13508,6 +13866,16 @@
 												],
 												"description": "Timezone: IANA name (e.g. \"America/New_York\", \"Europe/London\") OR decimal hours from UTC (e.g. -5 for EST, 1 for CET). IANA strings are resolved to the DST-correct offset for the given date, so you can pass `cities[0].timezone` from /location/search directly.",
 												"example": -5
+											},
+											"nodeType": {
+												"type": "string",
+												"enum": [
+													"mean",
+													"true"
+												],
+												"default": "true",
+												"example": "true",
+												"description": "Lunar node convention. \"mean\" is the smoothed average node, which always moves retrograde; \"true\" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and they almost always fall in the same sign. Applies to the North and South Node. True is what most Western software reports (Astrolabe, Cafe Astrology, TimePassages), which is why it is the default here; astro-seek and the Steven Forrest evolutionary school use mean, so pass \"mean\" to match those. Nothing else in the chart changes, and the two agree on the sign except when the node sits within about 1.8 degrees of a cusp. Defaults to \"true\"."
 											}
 										},
 										"required": [
@@ -15885,7 +16253,7 @@
 																	"Black Moon Lilith"
 																],
 																"example": "Sun",
-																"description": "Body name. One of the 10 classical planets (Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto), the lunar nodes (North Node, South Node), Chiron, or Black Moon Lilith (the mean lunar apogee)."
+																"description": "Body name. One of the 10 classical planets (Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto), the lunar nodes (North Node, South Node), Chiron, or Black Moon Lilith (the mean lunar apogee). The nodes follow the request `nodeType`, which defaults to the true (osculating) node; pass \"mean\" for the smoothed node. The two differ by up to about 1.8 degrees and no other body is affected."
 															},
 															"longitude": {
 																"type": "number",
@@ -15940,7 +16308,7 @@
 															"isRetrograde"
 														]
 													},
-													"description": "All 14 celestial bodies in the tropical zodiac with house placements: the 10 classical planets (Sun through Pluto), the lunar nodes (North Node, South Node), Chiron, and Black Moon Lilith."
+													"description": "All 14 celestial bodies in the tropical zodiac with house placements: the 10 classical planets (Sun through Pluto), the lunar nodes (North Node, South Node, in the requested `nodeType` convention), Chiron, and Black Moon Lilith."
 												},
 												"houses": {
 													"type": "array",
@@ -16555,6 +16923,16 @@
 										],
 										"description": "Timezone: IANA name (e.g. \"America/New_York\", \"Europe/London\") OR decimal hours from UTC (e.g. -5 for EST, 1 for CET). IANA strings are resolved to the DST-correct offset for the given date, so you can pass `cities[0].timezone` from /location/search directly.",
 										"example": -5
+									},
+									"nodeType": {
+										"type": "string",
+										"enum": [
+											"mean",
+											"true"
+										],
+										"default": "true",
+										"example": "true",
+										"description": "Lunar node convention. \"mean\" is the smoothed average node, which always moves retrograde; \"true\" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and they almost always fall in the same sign. Applies to the North and South Node. True is what most Western software reports (Astrolabe, Cafe Astrology, TimePassages), which is why it is the default here; astro-seek and the Steven Forrest evolutionary school use mean, so pass \"mean\" to match those. Nothing else in the chart changes, and the two agree on the sign except when the node sits within about 1.8 degrees of a cusp. Defaults to \"true\"."
 									}
 								},
 								"required": [
@@ -17476,6 +17854,16 @@
 										],
 										"description": "Timezone: IANA name (e.g. \"America/New_York\", \"Europe/London\") OR decimal hours from UTC (e.g. -5 for EST, 1 for CET). IANA strings are resolved to the DST-correct offset for the given date, so you can pass `cities[0].timezone` from /location/search directly.",
 										"example": -5
+									},
+									"nodeType": {
+										"type": "string",
+										"enum": [
+											"mean",
+											"true"
+										],
+										"default": "true",
+										"example": "true",
+										"description": "Lunar node convention. \"mean\" is the smoothed average node, which always moves retrograde; \"true\" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and they almost always fall in the same sign. Applies to the North and South Node. True is what most Western software reports (Astrolabe, Cafe Astrology, TimePassages), which is why it is the default here; astro-seek and the Steven Forrest evolutionary school use mean, so pass \"mean\" to match those. Nothing else in the chart changes, and the two agree on the sign except when the node sits within about 1.8 degrees of a cusp. Defaults to \"true\"."
 									}
 								},
 								"required": [

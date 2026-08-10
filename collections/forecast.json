@@ -1,15 +1,15 @@
 {
 	"item": [
 		{
-			"id": "994efbde-3421-4a64-b1ea-5d9685972d06",
+			"id": "ef9032ea-1cc4-4ee0-9e69-2676744194ea",
 			"name": "Forecast",
 			"description": {
-				"content": "Merge upcoming transit aspects, sign ingresses, retrograde stations, new and full moons, biorhythm critical days, and Vimshottari dasha changes into one time-ordered forecast for a single subject. The only cross-domain forecast timeline behind one key, positions verified against NASA JPL Horizons, available over Remote MCP with typed SDKs. Horizon capped at 90 days.",
+				"content": "Forecast API that merges upcoming transit aspects, sign ingresses, retrograde stations, new and full moons, biorhythm critical days, and Vimshottari dasha changes into one time-ordered forecast for a single subject. The only cross-domain forecast timeline behind one key, positions verified against NASA JPL Horizons, available over Remote MCP with typed SDKs. Horizon capped at 90 days.",
 				"type": "text/plain"
 			},
 			"item": [
 				{
-					"id": "87f1aa81-19b8-493e-9c6e-6dff323b196c",
+					"id": "0e490ad7-797f-45c4-af1a-95795c82bb83",
 					"name": "Cross-domain forecast timeline - Transits, ingresses, stations, dasha changes, critical days",
 					"request": {
 						"name": "Cross-domain forecast timeline - Transits, ingresses, stations, dasha changes, critical days",
@@ -64,7 +64,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -8.257787585661795,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+							"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -1.6302620380951645,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -74,7 +74,7 @@
 					},
 					"response": [
 						{
-							"id": "98762586-630a-4962-8338-59212d869234",
+							"id": "c1ebaf23-0681-4b05-9d10-941c7bb412a0",
 							"name": "Merged forecast timeline with time-ordered events across the requested domains",
 							"originalRequest": {
 								"url": {
@@ -109,7 +109,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 7.498591971975955,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 13.81357331523255,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -130,7 +130,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1dcde69f-4a2f-442e-a938-142f3ba58fd6",
+							"id": "b8c6ce51-c946-47d9-96e1-90cf3a023051",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -165,7 +165,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 7.498591971975955,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 13.81357331523255,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -181,12 +181,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8433.28475192133,\n      \"maximum\": 5527.549677754655,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6411.741682481908,\n      \"maximum\": 9342.33178207533,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1649.2227376621493,\n      \"maximum\": 8581.011771052043,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1077.1695901787493,\n      \"maximum\": 8162.374822290954,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d70816f8-a53c-434a-b664-d64fc6b3ed76",
+							"id": "266609a6-f19b-4cbb-b187-d4e93838bab5",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -221,7 +221,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 7.498591971975955,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 13.81357331523255,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -242,7 +242,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "dd82ffee-9a6d-436b-b515-0a5450b970dc",
+							"id": "38feaea8-ed3a-42a5-a7d4-c61accb9ec95",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -277,7 +277,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 7.498591971975955,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 13.81357331523255,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -304,7 +304,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "43b8cd2f-b188-4b64-8a45-8db51bd4222d",
+							"id": "6700dda5-de6d-42c1-81d2-245129685efc",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -339,7 +339,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 7.498591971975955,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 13.81357331523255,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -360,7 +360,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0d9f232b-0e16-4790-bbe2-89773b81e539",
+							"id": "525c777c-7640-448d-aeff-c23a8a6e2b8d",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -395,7 +395,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 7.498591971975955,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 13.81357331523255,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -422,7 +422,7 @@
 					}
 				},
 				{
-					"id": "638d5ee2-6d7f-4124-a99e-d4928f7539b7",
+					"id": "1fb3648a-af68-448e-99c1-c1a01d8acce6",
 					"name": "Western astrology forecast - aspects, ingresses, stations, eclipses, moon phases",
 					"request": {
 						"name": "Western astrology forecast - aspects, ingresses, stations, eclipses, moon phases",
@@ -477,7 +477,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -2.571832962060462,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"minSignificance\": 0\n}",
+							"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -12.881762243559118,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"minSignificance\": 0\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -487,7 +487,7 @@
 					},
 					"response": [
 						{
-							"id": "75f5ac01-41b7-4bc0-be7f-dccb05b54d3d",
+							"id": "d4a4eda8-0df4-40d5-999b-4739df9dab82",
 							"name": "Time-ordered western forecast events: aspects, ingresses, stations, eclipses, and moon phases",
 							"originalRequest": {
 								"url": {
@@ -522,7 +522,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -2.571832962060462,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"minSignificance\": 0\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -12.881762243559118,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"minSignificance\": 0\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -543,7 +543,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9f6ffda1-aabc-491a-b953-d1269e090d8f",
+							"id": "9198b668-9929-4afb-867a-fa0c4078e1b0",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -578,7 +578,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -2.571832962060462,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"minSignificance\": 0\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -12.881762243559118,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"minSignificance\": 0\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -594,12 +594,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8433.28475192133,\n      \"maximum\": 5527.549677754655,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6411.741682481908,\n      \"maximum\": 9342.33178207533,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1649.2227376621493,\n      \"maximum\": 8581.011771052043,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1077.1695901787493,\n      \"maximum\": 8162.374822290954,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8872d43f-e848-4283-bc2b-43270902d6bc",
+							"id": "5089ced3-00e3-4509-a352-a0012b89145a",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -634,7 +634,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -2.571832962060462,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"minSignificance\": 0\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -12.881762243559118,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"minSignificance\": 0\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -655,7 +655,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0c16c313-b343-4587-ba99-935a315a56d6",
+							"id": "9b6276d8-9d88-4f69-9e64-d9758d869f90",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -690,7 +690,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -2.571832962060462,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"minSignificance\": 0\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -12.881762243559118,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"minSignificance\": 0\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -717,7 +717,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "25332659-e55a-4209-a5e1-ab958b935e8e",
+							"id": "21fa3f74-05ad-4f0a-8079-926b031dceec",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -752,7 +752,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -2.571832962060462,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"minSignificance\": 0\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -12.881762243559118,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"minSignificance\": 0\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -773,7 +773,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e9464f0d-6803-4c37-9a0d-a905b6ad707a",
+							"id": "d3cd5f3d-fb4d-4b8f-b065-980cab2d18d4",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -808,7 +808,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -2.571832962060462,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"minSignificance\": 0\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -12.881762243559118,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"minSignificance\": 0\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -835,7 +835,7 @@
 					}
 				},
 				{
-					"id": "73b0a5e3-41cf-4cfc-872b-abcca20fb6ff",
+					"id": "75020530-9f0a-42aa-9ddd-5f355fd95b55",
 					"name": "Significant dates - High-significance cross-domain forecast highlights",
 					"request": {
 						"name": "Significant dates - High-significance cross-domain forecast highlights",
@@ -890,7 +890,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -4.2249594250359515,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 70,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+							"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -1.1644793039662975,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 70,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -900,7 +900,7 @@
 					},
 					"response": [
 						{
-							"id": "5815fb83-d5a0-4d73-8135-32d1222f5515",
+							"id": "90cdd348-212f-4cea-acc5-da95c83f1fc4",
 							"name": "High-significance forecast events across the requested domains",
 							"originalRequest": {
 								"url": {
@@ -935,7 +935,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -7.623822794990581,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 70,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 10.486692854605565,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 70,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -956,7 +956,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "49cbb5f9-abf1-43a3-9825-a1498747f1b7",
+							"id": "846dbab3-274c-422b-af87-8175bdad2a1d",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -991,7 +991,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -7.623822794990581,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 70,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 10.486692854605565,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 70,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1007,12 +1007,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8433.28475192133,\n      \"maximum\": 5527.549677754655,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6411.741682481908,\n      \"maximum\": 9342.33178207533,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1649.2227376621493,\n      \"maximum\": 8581.011771052043,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1077.1695901787493,\n      \"maximum\": 8162.374822290954,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a83f1827-8892-4177-bc92-b0873f9668c0",
+							"id": "5b5e7265-c999-4757-a7db-e8860eb8bb97",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1047,7 +1047,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -7.623822794990581,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 70,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 10.486692854605565,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 70,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1068,7 +1068,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "4bec885a-3a3f-411f-8b6c-134260e062a5",
+							"id": "e1fe143e-e683-4385-bf6f-35bcbc03bfef",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1103,7 +1103,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -7.623822794990581,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 70,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 10.486692854605565,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 70,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1130,7 +1130,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "17ed7f5c-c68c-48ec-9874-87980a798722",
+							"id": "6ade93f2-b6d3-4063-ad2c-f82759973b13",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1165,7 +1165,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -7.623822794990581,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 70,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 10.486692854605565,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 70,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1186,7 +1186,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3d6d6eb8-ab63-4d1f-84c9-8092bb6eecf3",
+							"id": "b9eda60e-4a62-429a-a8b1-6cbb78e7695f",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1221,7 +1221,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -7.623822794990581,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 70,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 10.486692854605565,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"endDate\": \"2026-08-30\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 70,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1248,7 +1248,7 @@
 					}
 				},
 				{
-					"id": "09b77ad7-87cc-486e-8d9c-830a538eff17",
+					"id": "83355d3b-f187-4351-8430-ae008e6fd8b5",
 					"name": "Forecast digest - Pre-summarized next 24h, 7d, 30d, and 90d rollups",
 					"request": {
 						"name": "Forecast digest - Pre-summarized next 24h, 7d, 30d, and 90d rollups",
@@ -1303,7 +1303,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -7.280388669334421,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  },\n  \"top\": 3\n}",
+							"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 7.988591749429187,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  },\n  \"top\": 3\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1313,7 +1313,7 @@
 					},
 					"response": [
 						{
-							"id": "bac5b617-a69a-4c2a-9302-60ecee515057",
+							"id": "e914d6d4-7cc3-4225-9503-8644ea10c0b5",
 							"name": "Pre-summarized forecast windows: next 24h, 7d, 30d, and 90d rollups",
 							"originalRequest": {
 								"url": {
@@ -1348,7 +1348,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 3.0656790703470342,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  },\n  \"top\": 3\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -13.146564435478892,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  },\n  \"top\": 3\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1369,7 +1369,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "172793de-d395-4bd3-b707-823027d1fbcc",
+							"id": "3434622c-574f-424b-b2af-3fce68e4ab2c",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1404,7 +1404,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 3.0656790703470342,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  },\n  \"top\": 3\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -13.146564435478892,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  },\n  \"top\": 3\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1420,12 +1420,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8433.28475192133,\n      \"maximum\": 5527.549677754655,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6411.741682481908,\n      \"maximum\": 9342.33178207533,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1649.2227376621493,\n      \"maximum\": 8581.011771052043,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1077.1695901787493,\n      \"maximum\": 8162.374822290954,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "abd59b9d-e47a-461a-aac1-3ecf48c52a52",
+							"id": "1669f99b-54ed-4275-9ae0-b6d48e2f0c13",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1460,7 +1460,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 3.0656790703470342,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  },\n  \"top\": 3\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -13.146564435478892,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  },\n  \"top\": 3\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1481,7 +1481,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "faa7b5fb-e773-4735-8d58-b73d00b4c95b",
+							"id": "40e74e30-39f8-4e1c-bf0c-cf8c5c1289a3",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1516,7 +1516,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 3.0656790703470342,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  },\n  \"top\": 3\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -13.146564435478892,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  },\n  \"top\": 3\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1543,7 +1543,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6677b666-6a61-499e-82a2-9cd08272d1d9",
+							"id": "0b6a691c-d19c-4563-a23c-b9a6285575b8",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1578,7 +1578,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 3.0656790703470342,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  },\n  \"top\": 3\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -13.146564435478892,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  },\n  \"top\": 3\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1599,7 +1599,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5f515f06-a0df-486f-9185-cef1372e6a99",
+							"id": "45513560-5456-4992-aa44-f03dfef6b1c7",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1634,7 +1634,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": 3.0656790703470342,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  },\n  \"top\": 3\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:30:00\",\n    \"timezone\": -13.146564435478892,\n    \"latitude\": 0,\n    \"longitude\": 0\n  },\n  \"startDate\": \"2026-06-01\",\n  \"domains\": [\n    \"western\",\n    \"vedic\",\n    \"biorhythm\"\n  ],\n  \"minSignificance\": 0,\n  \"domainWeights\": {\n    \"vedic\": 1.5,\n    \"biorhythm\": 0.5\n  },\n  \"top\": 3\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1661,7 +1661,7 @@
 					}
 				},
 				{
-					"id": "891270d8-134a-4276-9a3f-1d94736201ce",
+					"id": "12ca29e7-64b3-4895-ac5d-1f5aea1c18d6",
 					"name": "Solar return chart - Annual birthday forecast chart for a single subject",
 					"request": {
 						"name": "Solar return chart - Annual birthday forecast chart for a single subject",
@@ -1716,7 +1716,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"14:30:00\",\n  \"year\": 2026,\n  \"latitude\": 40.7128,\n  \"longitude\": -74.006,\n  \"timezone\": 8.288281154532232,\n  \"houseSystem\": \"placidus\"\n}",
+							"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"14:30:00\",\n  \"year\": 2026,\n  \"latitude\": 40.7128,\n  \"longitude\": -74.006,\n  \"timezone\": -6.69477801067398,\n  \"houseSystem\": \"placidus\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1726,7 +1726,7 @@
 					},
 					"response": [
 						{
-							"id": "c7856fd9-e781-4b62-b8a9-357f33253cde",
+							"id": "39588929-23c9-445e-990d-d191089ab6bc",
 							"name": "Solar return chart cast for the requested year and location",
 							"originalRequest": {
 								"url": {
@@ -1761,7 +1761,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"14:30:00\",\n  \"year\": 2026,\n  \"latitude\": 40.7128,\n  \"longitude\": -74.006,\n  \"timezone\": 8.288281154532232,\n  \"houseSystem\": \"placidus\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"14:30:00\",\n  \"year\": 2026,\n  \"latitude\": 40.7128,\n  \"longitude\": -74.006,\n  \"timezone\": -6.69477801067398,\n  \"houseSystem\": \"placidus\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1782,7 +1782,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7a9a540c-84a3-408e-947e-39f8d987d5d4",
+							"id": "07979872-51f9-4575-b676-1ce3ceb4ce0c",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1817,7 +1817,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"14:30:00\",\n  \"year\": 2026,\n  \"latitude\": 40.7128,\n  \"longitude\": -74.006,\n  \"timezone\": 8.288281154532232,\n  \"houseSystem\": \"placidus\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"14:30:00\",\n  \"year\": 2026,\n  \"latitude\": 40.7128,\n  \"longitude\": -74.006,\n  \"timezone\": -6.69477801067398,\n  \"houseSystem\": \"placidus\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1833,12 +1833,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8433.28475192133,\n      \"maximum\": 5527.549677754655,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6411.741682481908,\n      \"maximum\": 9342.33178207533,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1649.2227376621493,\n      \"maximum\": 8581.011771052043,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1077.1695901787493,\n      \"maximum\": 8162.374822290954,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "52239152-8a09-4a43-a6c8-7700cfa41f6e",
+							"id": "78e8a777-c7bf-48f0-9c4a-f3052917eaaf",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1873,7 +1873,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"14:30:00\",\n  \"year\": 2026,\n  \"latitude\": 40.7128,\n  \"longitude\": -74.006,\n  \"timezone\": 8.288281154532232,\n  \"houseSystem\": \"placidus\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"14:30:00\",\n  \"year\": 2026,\n  \"latitude\": 40.7128,\n  \"longitude\": -74.006,\n  \"timezone\": -6.69477801067398,\n  \"houseSystem\": \"placidus\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1894,7 +1894,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8d4886c9-3f32-467b-a20d-dc5b66b2e6b9",
+							"id": "94e56e9f-a950-4a77-9025-08b671b26360",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1929,7 +1929,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"14:30:00\",\n  \"year\": 2026,\n  \"latitude\": 40.7128,\n  \"longitude\": -74.006,\n  \"timezone\": 8.288281154532232,\n  \"houseSystem\": \"placidus\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"14:30:00\",\n  \"year\": 2026,\n  \"latitude\": 40.7128,\n  \"longitude\": -74.006,\n  \"timezone\": -6.69477801067398,\n  \"houseSystem\": \"placidus\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1956,7 +1956,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f0462e26-71f3-4565-b8e7-c526002a6d79",
+							"id": "160aa877-88a6-418b-b5d4-d1c678aa548c",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1991,7 +1991,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"14:30:00\",\n  \"year\": 2026,\n  \"latitude\": 40.7128,\n  \"longitude\": -74.006,\n  \"timezone\": 8.288281154532232,\n  \"houseSystem\": \"placidus\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"14:30:00\",\n  \"year\": 2026,\n  \"latitude\": 40.7128,\n  \"longitude\": -74.006,\n  \"timezone\": -6.69477801067398,\n  \"houseSystem\": \"placidus\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2012,7 +2012,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a2e97b37-e24c-4b00-8671-a383483303f8",
+							"id": "8d4d453b-fd4c-4f2b-97fe-424004a972f2",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2047,7 +2047,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"14:30:00\",\n  \"year\": 2026,\n  \"latitude\": 40.7128,\n  \"longitude\": -74.006,\n  \"timezone\": 8.288281154532232,\n  \"houseSystem\": \"placidus\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"14:30:00\",\n  \"year\": 2026,\n  \"latitude\": 40.7128,\n  \"longitude\": -74.006,\n  \"timezone\": -6.69477801067398,\n  \"houseSystem\": \"placidus\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2113,11 +2113,11 @@
 		]
 	},
 	"info": {
-		"_postman_id": "6f539101-3694-44a4-9065-8e8b89f87117",
+		"_postman_id": "b24b875a-a205-4ca7-a68c-6485c19749d3",
 		"name": "Forecast API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"description": {
-			"content": "Merge upcoming transit aspects, sign ingresses, retrograde stations, new and full moons, biorhythm critical days, and Vimshottari dasha changes into one time-ordered forecast for a single subject. The only cross-domain forecast timeline behind one key, positions verified against NASA JPL Horizons, available over Remote MCP with typed SDKs. Horizon capped at 90 days.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, forecast, human design, numerology, tarot, biorhythm, I-Ching, crystals, dreams, angel numbers, location), 173+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 173+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
+			"content": "Forecast API that merges upcoming transit aspects, sign ingresses, retrograde stations, new and full moons, biorhythm critical days, and Vimshottari dasha changes into one time-ordered forecast for a single subject. The only cross-domain forecast timeline behind one key, positions verified against NASA JPL Horizons, available over Remote MCP with typed SDKs. Horizon capped at 90 days.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, forecast, human design, numerology, tarot, biorhythm, I-Ching, crystals, dreams, angel numbers, location), 176+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 176+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 to $699/month.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
 			"type": "text/plain"
 		}
 	}
