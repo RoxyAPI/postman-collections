@@ -12939,7 +12939,7 @@
 					"Western Astrology"
 				],
 				"summary": "Composite Chart - Midpoint relationship chart with interpretations",
-				"description": "Generate a composite chart by calculating midpoints between two natal charts. The composite chart represents the relationship as a single entity, showing its core identity, emotional bond, communication style, and growth direction. Returns composite planetary positions, house cusps, Ascendant, Midheaven, aspects, and relationship interpretation. Composite chart API, midpoint chart calculator, relationship astrology, couple chart analysis.",
+				"description": "Generate a composite chart by calculating midpoints between two natal charts. The composite chart represents the relationship as a single entity, showing its core identity, emotional bond, communication style, and growth direction. Uses the midpoint method: planets, angles and house cusps are each the midpoint of the two natal values, so the Ascendant always sits on the first cusp. Returns composite planetary positions, house cusps, Ascendant, Midheaven, aspects, and relationship interpretation. Composite chart API, midpoint chart calculator, relationship astrology, couple chart analysis.",
 				"security": [
 					{
 						"apiKey": []
@@ -13391,7 +13391,7 @@
 													"longitude"
 												]
 											},
-											"description": "Composite house cusps. Each house represents shared life areas in the relationship."
+											"description": "Composite house cusps, each the midpoint of the two natal cusps. Each house represents shared life areas in the relationship."
 										},
 										"compositeAscendant": {
 											"type": "object",
