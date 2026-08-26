@@ -1,7 +1,7 @@
 {
 	"item": [
 		{
-			"id": "373c896d-9b5e-4001-8df9-4e07b4bdc9dc",
+			"id": "9780109a-abc4-4dc7-aa84-e06d314c0f8d",
 			"name": "I-Ching",
 			"description": {
 				"content": "I-Ching oracle API with all 64 hexagrams, 384 changing lines, 8 trigrams, and modern interpretations for love, career, and decision-making. Cast readings with the authentic three-coin method, get a daily hexagram, and explore the Book of Changes programmatically. Built for divination apps, AI oracle chatbots, fortune-telling platforms, daily wisdom features, and spiritual guidance products. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.",
@@ -9,7 +9,7 @@
 			},
 			"item": [
 				{
-					"id": "ae8b9b86-cdb1-4d34-879c-6064f4238acb",
+					"id": "1a66fadc-a075-43c4-8cde-efc91b642e0b",
 					"name": "Get daily I-Ching hexagram",
 					"request": {
 						"name": "Get daily I-Ching hexagram",
@@ -29,7 +29,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								}
 							],
 							"variable": []
@@ -74,7 +74,7 @@
 					},
 					"response": [
 						{
-							"id": "a436e5bf-a24b-4eb3-b16e-583c081ce00a",
+							"id": "52f922d2-c3e7-4ad6-824e-a7acb40081d9",
 							"name": "Daily hexagram reading with full interpretation",
 							"originalRequest": {
 								"url": {
@@ -130,7 +130,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "436d9cfd-919e-40f3-b3a3-fcd91eb8e792",
+							"id": "f5bf728e-0e2f-40bc-b0ee-8eab8c9bf77a",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -181,12 +181,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6561.961893021141,\n      \"maximum\": 3444.3181881454334,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3074.182668644877,\n      \"maximum\": 3289.776144927543,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 493.2140476525004,\n      \"maximum\": 6773.994357793333,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5592.900061077151,\n      \"maximum\": 3997.0340978515396,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "033a78a1-7a5e-4481-b264-7c95fc42eced",
+							"id": "a924bbcb-b3db-4325-bf5e-f30f623ed251",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -242,7 +242,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3768dbc0-4c43-450e-892d-3922b9043d27",
+							"id": "7442438f-1342-45d5-b590-e5efa66f10d3",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -304,7 +304,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c05ad132-0485-4f23-a719-946c9bf4ffcd",
+							"id": "db693bd5-18c1-444f-b14e-48a0af15890b",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -360,7 +360,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "af33d523-3ddc-41a0-be49-6274995f213e",
+							"id": "2fbb80d6-3581-4371-9981-494b3793f8f7",
 							"name": "Failed to generate daily hexagram",
 							"originalRequest": {
 								"url": {
@@ -422,7 +422,7 @@
 					}
 				},
 				{
-					"id": "c65f097d-792c-4dfe-9c79-cef7ee8d8649",
+					"id": "aa56d6bf-c128-4a44-b275-d5ef7106d6d3",
 					"name": "Cast daily I-Ching reading with changing lines",
 					"request": {
 						"name": "Cast daily I-Ching reading with changing lines",
@@ -443,7 +443,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								}
 							],
 							"variable": []
@@ -488,7 +488,7 @@
 					},
 					"response": [
 						{
-							"id": "4b622d0f-15c6-4c7a-a788-4e4b653008e9",
+							"id": "3cf207a1-598a-414f-9c2e-1d8034e71f39",
 							"name": "Complete daily casting with primary and resulting hexagrams",
 							"originalRequest": {
 								"url": {
@@ -545,7 +545,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "db6755a5-4d7b-42b3-a998-546fa45303a0",
+							"id": "edf72ca3-4cdd-435d-9de9-63f1c8abe05c",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -597,12 +597,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6561.961893021141,\n      \"maximum\": 3444.3181881454334,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3074.182668644877,\n      \"maximum\": 3289.776144927543,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 493.2140476525004,\n      \"maximum\": 6773.994357793333,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5592.900061077151,\n      \"maximum\": 3997.0340978515396,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "951191ba-cae0-45a9-9bfa-bd6cd80a0a51",
+							"id": "d7a9fefd-3886-46f6-9384-7944cd439d77",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -659,7 +659,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "480dd1fe-f2b8-41ef-a554-a370304676cc",
+							"id": "291404ae-b359-4f6f-99d5-9b8883acad55",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -722,7 +722,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2ba4c701-d937-4b99-8a0d-521dc8e512fe",
+							"id": "7c58e128-6b9d-4809-b538-dc883170e195",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -779,7 +779,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8a469fec-aeb6-420b-afdb-09a2feb227f3",
+							"id": "2a7287d6-074a-47b3-9de0-30fc5f2c8dec",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -842,7 +842,7 @@
 					}
 				},
 				{
-					"id": "3efc8dd2-da1a-4185-b344-34ecdd79052d",
+					"id": "b6f02059-1ce2-4ce2-8422-2422b6f5c257",
 					"name": "List all 64 hexagrams",
 					"request": {
 						"name": "List all 64 hexagrams",
@@ -862,7 +862,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								},
 								{
 									"disabled": false,
@@ -906,7 +906,7 @@
 					},
 					"response": [
 						{
-							"id": "6008800a-4c14-4ca5-bacb-db3ce36bfb8c",
+							"id": "e7c5ebe5-7cb2-4bd5-953c-06394e157b1f",
 							"name": "List of hexagrams with basic information.",
 							"originalRequest": {
 								"url": {
@@ -962,7 +962,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a8bd5ae7-d3f2-4e1a-b2df-a5064e3bf728",
+							"id": "02365eeb-1529-4f59-8497-74512c1ea137",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1013,12 +1013,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6561.961893021141,\n      \"maximum\": 3444.3181881454334,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3074.182668644877,\n      \"maximum\": 3289.776144927543,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 493.2140476525004,\n      \"maximum\": 6773.994357793333,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5592.900061077151,\n      \"maximum\": 3997.0340978515396,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f85c8676-21a6-42ef-b036-e26faed27e7b",
+							"id": "9cf5e44c-26de-4abb-a377-8e464fb792f8",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1074,7 +1074,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d1d3b33e-6c05-4ff5-af60-bd34e23995ad",
+							"id": "b09a0bf5-fa21-4211-8ce2-2d298e4c86d4",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1136,7 +1136,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "74fc10d8-1e10-416d-86bf-e44d9eb64245",
+							"id": "f24cb111-eee9-446e-98f3-2c118b2824a0",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1192,7 +1192,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d1c16033-76d7-463f-8db2-132eb764ceac",
+							"id": "2381a125-2d86-4a20-87cc-bd966e478da6",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1254,7 +1254,7 @@
 					}
 				},
 				{
-					"id": "6f7d2ac4-859c-4982-8d4f-c20097ac06e6",
+					"id": "622caba3-1e63-4a97-8c62-ed68540d0ab8",
 					"name": "Get a random hexagram",
 					"request": {
 						"name": "Get a random hexagram",
@@ -1275,7 +1275,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								}
 							],
 							"variable": []
@@ -1307,7 +1307,7 @@
 					},
 					"response": [
 						{
-							"id": "c4663cd4-0d92-4933-96b0-5f9de9e5b922",
+							"id": "563256b5-d2b0-433c-b8ba-ad0dccc5bd95",
 							"name": "A random hexagram with full details.",
 							"originalRequest": {
 								"url": {
@@ -1356,7 +1356,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c9714eef-2045-482b-8f12-3aa3216f3ce7",
+							"id": "5cf4ec2e-19da-4ede-ad42-53667e174674",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1400,12 +1400,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6561.961893021141,\n      \"maximum\": 3444.3181881454334,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3074.182668644877,\n      \"maximum\": 3289.776144927543,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 493.2140476525004,\n      \"maximum\": 6773.994357793333,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5592.900061077151,\n      \"maximum\": 3997.0340978515396,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7af6b574-fecc-465f-92c6-694727084829",
+							"id": "57cf11ca-e655-446b-b0fd-5774a39bcda3",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1454,7 +1454,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e3a205cb-f284-4830-b6e2-c291336705a5",
+							"id": "5a473818-1bed-4ba6-812e-9f5a3faae330",
 							"name": "No hexagrams available.",
 							"originalRequest": {
 								"url": {
@@ -1503,7 +1503,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "cf194636-fe99-45ab-b217-088affdd49d9",
+							"id": "7948eda6-66e5-4eef-b35d-98784363cbca",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1558,7 +1558,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9d7d11fa-f5dd-4a42-a0f8-b507d4c5ac55",
+							"id": "dd6d9d64-e6dd-4d7a-8244-78515692bd59",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1607,7 +1607,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "cead92b3-635d-4a9d-a25a-f7a7d5c32cc8",
+							"id": "0c5b8756-96c2-4ee6-90f3-bb402c099d32",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1662,7 +1662,7 @@
 					}
 				},
 				{
-					"id": "7e98c037-dcc0-4760-a673-ec7ae3fc2758",
+					"id": "5696fc07-39ed-438c-8f29-e8ac0dd4b254",
 					"name": "Lookup hexagram by line pattern",
 					"request": {
 						"name": "Lookup hexagram by line pattern",
@@ -1683,7 +1683,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								},
 								{
 									"disabled": false,
@@ -1721,7 +1721,7 @@
 					},
 					"response": [
 						{
-							"id": "8db8552d-e652-4040-aeab-f12a4b8a5118",
+							"id": "803a45bb-14db-4652-8c6d-107f0a2b6c4d",
 							"name": "Matching hexagram.",
 							"originalRequest": {
 								"url": {
@@ -1774,7 +1774,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "10788a93-79c2-4867-98a8-65c1f3265b58",
+							"id": "8e2ad297-078c-4354-8f19-d46571b7b854",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1822,12 +1822,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6561.961893021141,\n      \"maximum\": 3444.3181881454334,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3074.182668644877,\n      \"maximum\": 3289.776144927543,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 493.2140476525004,\n      \"maximum\": 6773.994357793333,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5592.900061077151,\n      \"maximum\": 3997.0340978515396,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e5fd39a6-6aed-410a-bc01-95e7b460ae14",
+							"id": "55835278-2247-44ae-a97c-f3b37426250f",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1880,7 +1880,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "07b63126-dd49-46ce-ad5d-d91b7f512f9b",
+							"id": "d6fa0434-b933-4006-a7a3-a2ab68207ca3",
 							"name": "No hexagram found for pattern.",
 							"originalRequest": {
 								"url": {
@@ -1933,7 +1933,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "4daeb1d7-566c-45fa-a283-858e3690cc23",
+							"id": "1d9bd1cf-0973-45cd-8259-680972a817ca",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1992,7 +1992,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6a74a642-eb41-4d36-bd19-9908217545d5",
+							"id": "73dcd416-15fc-46b1-976b-f8c5cbcc740a",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2045,7 +2045,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3c207bef-e8b9-4cd5-a0dd-7eaae65da252",
+							"id": "03bbe81a-2f32-4676-a6e6-0096aac9f7df",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2104,7 +2104,7 @@
 					}
 				},
 				{
-					"id": "05535ac6-2e6f-40e4-b7f4-332403fdfe49",
+					"id": "4d7d14bd-3a59-4808-b8b2-cee2f6512acb",
 					"name": "Get hexagram by number",
 					"request": {
 						"name": "Get hexagram by number",
@@ -2125,7 +2125,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								}
 							],
 							"variable": [
@@ -2165,7 +2165,7 @@
 					},
 					"response": [
 						{
-							"id": "8120ef25-df9c-4b31-9bd9-f8a9467bcf02",
+							"id": "369a71db-8827-4537-ac7d-2ce633ad2afc",
 							"name": "Full hexagram details.",
 							"originalRequest": {
 								"url": {
@@ -2222,7 +2222,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "4604a17a-2b29-4874-9ed8-533006ce5507",
+							"id": "c0a5c0fb-3778-4c5c-b4b5-e225187aa424",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2274,12 +2274,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6561.961893021141,\n      \"maximum\": 3444.3181881454334,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3074.182668644877,\n      \"maximum\": 3289.776144927543,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 493.2140476525004,\n      \"maximum\": 6773.994357793333,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5592.900061077151,\n      \"maximum\": 3997.0340978515396,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ab4a2e9c-326b-4eae-8ee3-ce88307835f4",
+							"id": "6e469564-b9bb-4dcb-a717-610572dfd594",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2336,7 +2336,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a6bdf4f5-949e-431b-818f-773cbb4c75dc",
+							"id": "3b16020a-7697-40b4-aa00-c9f9dbb2c836",
 							"name": "Hexagram not found.",
 							"originalRequest": {
 								"url": {
@@ -2393,7 +2393,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b133e5cc-4c0a-43f0-9637-0b8511983b3c",
+							"id": "955b05c9-3214-4d9e-89cd-fa45a8356a8f",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2456,7 +2456,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f1a557e2-5c89-411b-807a-3c5f8cad4ac6",
+							"id": "e665d351-5301-4e01-8cc7-0c96c4c839e8",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2513,7 +2513,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f9c52700-5aba-494b-9462-a26c77553b40",
+							"id": "44307cb0-7247-49bb-bf95-809be6aa2709",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2576,7 +2576,7 @@
 					}
 				},
 				{
-					"id": "31dcf9fc-5a11-4267-8d4b-f0383fa78fd5",
+					"id": "95329cf0-5a13-47f1-9c06-92ac40cc3cf0",
 					"name": "Cast an I-Ching reading",
 					"request": {
 						"name": "Cast an I-Ching reading",
@@ -2596,7 +2596,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								},
 								{
 									"disabled": false,
@@ -2634,7 +2634,7 @@
 					},
 					"response": [
 						{
-							"id": "ec469f71-70e2-40fa-ada8-4e0a22af7b8c",
+							"id": "ce9e4b86-9b28-4522-8e06-b04654d65a06",
 							"name": "Complete I-Ching reading with primary and resulting hexagrams.",
 							"originalRequest": {
 								"url": {
@@ -2686,7 +2686,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c1d96013-a804-49d5-b8e6-943d98aac19e",
+							"id": "8a68a840-fe28-4f46-9858-aacd9b4368ff",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2733,12 +2733,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6561.961893021141,\n      \"maximum\": 3444.3181881454334,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3074.182668644877,\n      \"maximum\": 3289.776144927543,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 493.2140476525004,\n      \"maximum\": 6773.994357793333,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5592.900061077151,\n      \"maximum\": 3997.0340978515396,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "4b3244a3-f4af-4310-b816-30dba4b4ee65",
+							"id": "70323117-b91f-40ce-bfe4-304cbfd215b8",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2790,7 +2790,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ed4bc9c2-70cf-4b1c-93f6-f830068ca34e",
+							"id": "29fbb026-8b0e-4d12-b23e-354b9d3a453a",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2848,7 +2848,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "196ae6a8-a2b2-47b5-86e9-1fd08a8eb0ba",
+							"id": "62c51b04-3b97-48d0-9f8b-ef9224ccbbb6",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2900,7 +2900,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b42c5960-bacf-4bf9-b1d5-0db159143d2b",
+							"id": "2776943a-8f02-48a5-966c-b0e204517509",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2958,7 +2958,7 @@
 					}
 				},
 				{
-					"id": "e58ecb6c-1b84-4d10-bd69-defd201f0b5d",
+					"id": "3deb348c-753c-415a-aa02-a03ff6623a2f",
 					"name": "List all 8 trigrams",
 					"request": {
 						"name": "List all 8 trigrams",
@@ -2978,7 +2978,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								}
 							],
 							"variable": []
@@ -3010,7 +3010,7 @@
 					},
 					"response": [
 						{
-							"id": "e37b7f97-8707-40ac-a6ec-2a91d6804671",
+							"id": "0252abd4-0f86-4301-82a3-b39c49e23944",
 							"name": "List of all 8 trigrams with basic information.",
 							"originalRequest": {
 								"url": {
@@ -3058,7 +3058,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8d6b58e4-27c2-4340-a119-611ee15949f9",
+							"id": "8e0357fd-0db2-4e37-9f4c-358881677c28",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3101,12 +3101,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6561.961893021141,\n      \"maximum\": 3444.3181881454334,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3074.182668644877,\n      \"maximum\": 3289.776144927543,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 493.2140476525004,\n      \"maximum\": 6773.994357793333,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5592.900061077151,\n      \"maximum\": 3997.0340978515396,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7092ebba-b5f6-4a96-a5db-a2ce4a83934b",
+							"id": "618b0df8-fb70-4770-8f47-aaff03a6ff00",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3154,7 +3154,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0e95ad9d-7a3b-4a95-a577-35750186821c",
+							"id": "19ef6f46-1cba-4638-b2ff-72375bf42aac",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3208,7 +3208,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d8886936-a202-4b20-9711-347c0bb019e5",
+							"id": "d28915ce-f502-4311-af84-7946afca37ab",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3256,7 +3256,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c2a1b568-c31d-4e49-9548-34c43ac4a192",
+							"id": "5247fb1c-72c1-4ea5-b458-5b23a26711db",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3310,7 +3310,7 @@
 					}
 				},
 				{
-					"id": "3b1199fc-367f-48a1-b6a3-763552a941f9",
+					"id": "7dfcd6a3-4032-4a25-8bd6-59193155e603",
 					"name": "Get trigram by number or name",
 					"request": {
 						"name": "Get trigram by number or name",
@@ -3331,7 +3331,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								}
 							],
 							"variable": [
@@ -3371,7 +3371,7 @@
 					},
 					"response": [
 						{
-							"id": "02087a24-efd3-49e4-97c7-25a2ed8e648e",
+							"id": "a7369381-290c-4069-b05d-00be261ef650",
 							"name": "Trigram details.",
 							"originalRequest": {
 								"url": {
@@ -3428,7 +3428,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "252dd48b-6651-4f41-9d98-4d8b8151d7ad",
+							"id": "9efa92a8-663e-4765-8152-6b568398c282",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3480,12 +3480,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6561.961893021141,\n      \"maximum\": 3444.3181881454334,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3074.182668644877,\n      \"maximum\": 3289.776144927543,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 493.2140476525004,\n      \"maximum\": 6773.994357793333,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5592.900061077151,\n      \"maximum\": 3997.0340978515396,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e2efef6a-49e3-47eb-8d52-8c6b826a1e24",
+							"id": "4d85a88b-8562-420e-90ca-26ebb80e3f9c",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3542,7 +3542,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "4367fcf9-85b2-4028-9ac8-94c510789fd3",
+							"id": "afbbe8a2-a99d-4fdf-bcce-1db21ee6dfd9",
 							"name": "Trigram not found.",
 							"originalRequest": {
 								"url": {
@@ -3599,7 +3599,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a758eab1-6231-452f-9353-d00a9ba7b823",
+							"id": "64e22288-f096-47bd-84fe-0a07b5facd38",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3662,7 +3662,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9c3bd592-a804-4258-a539-d9ce78e799d5",
+							"id": "c5ee2fa2-8af3-4fde-ba0f-21629af5116f",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3719,7 +3719,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8a3d6afd-433f-4b92-82b2-90d2cb3d2691",
+							"id": "8ed833d3-310d-40b6-bb3b-18d49e925b39",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3821,11 +3821,11 @@
 		]
 	},
 	"info": {
-		"_postman_id": "a29d0701-2acd-4791-b755-2cfce0d64c2f",
+		"_postman_id": "c67a86ce-160c-4df4-9bd0-54769012f4c5",
 		"name": "I-Ching Oracle API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"description": {
-			"content": "I-Ching oracle API with all 64 hexagrams, 384 changing lines, 8 trigrams, and modern interpretations for love, career, and decision-making. Cast readings with the authentic three-coin method, get a daily hexagram, and explore the Book of Changes programmatically. Built for divination apps, AI oracle chatbots, fortune-telling platforms, daily wisdom features, and spiritual guidance products. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, forecast, human design, numerology, tarot, biorhythm, I-Ching, crystals, dreams, angel numbers, location), 175+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 175+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 per month for 50K requests, up to 3M requests, with custom volume above that.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
+			"content": "I-Ching oracle API with all 64 hexagrams, 384 changing lines, 8 trigrams, and modern interpretations for love, career, and decision-making. Cast readings with the authentic three-coin method, get a daily hexagram, and explore the Book of Changes programmatically. Built for divination apps, AI oracle chatbots, fortune-telling platforms, daily wisdom features, and spiritual guidance products. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 14 domains (Astrology, Vedic Astrology, Forecast, Human Design, Chinese Astrology, Feng Shui, Numerology, Tarot Reading, Biorhythm, I-Ching Oracle, Crystals and Healing Stones, Dream Interpretation, Angel Numbers, Location and Timezone), 209+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 209+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable and stable, so it is the one safe to switch on programmatically.\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`, `X-RateLimit-Reset` (Unix timestamp, seconds). Quotas reset on the 1st of every calendar month at 12:00 AM UTC, not on your renewal date.\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 per month for 50K requests, up to 3M requests, with custom volume above that.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
 			"type": "text/plain"
 		}
 	}

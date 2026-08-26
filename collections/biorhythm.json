@@ -1,7 +1,7 @@
 {
 	"item": [
 		{
-			"id": "55458616-449a-42a5-87dd-782f80528d63",
+			"id": "d55e1470-4d8f-491b-87d8-cdb0d2cbbca2",
 			"name": "Biorhythm",
 			"description": {
 				"content": "The most complete biorhythm API: 10 cycle types across 3 primary (physical, emotional, intellectual), 4 secondary (intuitive, aesthetic, awareness, spiritual), and 3 composite (passion, mastery, wisdom). Critical-day detection with severity classification, 90-day forecasts with best and worst days, two-person compatibility scoring, phase tracking for dashboards, and seeded daily readings for push notifications. 8 languages, deterministic results, and editorial-grade interpretations. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs. Ship a biorhythm feature in hours, not weeks.",
@@ -9,7 +9,7 @@
 			},
 			"item": [
 				{
-					"id": "91858e3f-6fe1-4cf6-86d2-adb7b4f53afe",
+					"id": "4dfa5fa2-cce4-42b9-8663-57666de95af4",
 					"name": "Get biorhythm reading - Complete cycle analysis for any date",
 					"request": {
 						"name": "Get biorhythm reading - Complete cycle analysis for any date",
@@ -29,7 +29,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								}
 							],
 							"variable": []
@@ -74,7 +74,7 @@
 					},
 					"response": [
 						{
-							"id": "b3b0b3e0-579a-4589-bcd0-b5e1791e1944",
+							"id": "c7898e73-5c6a-4303-9ef0-38351a536584",
 							"name": "Complete biorhythm reading with all 10 cycles, energy rating, interpretation, and critical alerts",
 							"originalRequest": {
 								"url": {
@@ -130,7 +130,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "76070680-359e-41d1-aa83-354384e8ccb7",
+							"id": "17ca4dbd-b642-49bf-bfc9-f6efb7730059",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -181,12 +181,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1706.5926283825695,\n      \"maximum\": 3357.6124336689363,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4706.839870579551,\n      \"maximum\": 6367.684687718181,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7118.036721171404,\n      \"maximum\": 4484.939747049594,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3921.7132772954856,\n      \"maximum\": 5600.349900525695,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a4314a92-2ec2-4333-8022-c3108daeba53",
+							"id": "50586542-c8b6-44ae-a4e3-2435096f2a95",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -242,7 +242,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "774b2b7c-5ae5-4c8f-9f2b-d9f99e37a35a",
+							"id": "b5946614-c658-42d9-9d1b-42a15bd41a70",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -304,7 +304,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a76b9c52-2fe1-4dd0-987a-662a6998b363",
+							"id": "12a32e66-75f0-43b3-9f1a-a39e6485ade9",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -360,7 +360,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d00ba20a-8fc2-4178-9e2f-412256f1c7f2",
+							"id": "83f675f1-77bc-4e3c-a63a-cfd73b51b7c5",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -422,7 +422,7 @@
 					}
 				},
 				{
-					"id": "33838190-c005-4fc6-84c1-a32c5d124fb9",
+					"id": "cc6182a2-41f5-41e3-bafc-68c0315af6b9",
 					"name": "Get biorhythm forecast - Multi-day cycle predictions with best and worst days",
 					"request": {
 						"name": "Get biorhythm forecast - Multi-day cycle predictions with best and worst days",
@@ -442,7 +442,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								}
 							],
 							"variable": []
@@ -487,7 +487,7 @@
 					},
 					"response": [
 						{
-							"id": "cb912881-92fa-4c8b-877f-1ab34357485e",
+							"id": "b0a46d1e-b69a-4d07-9afc-52ca076e94cd",
 							"name": "Biorhythm forecast with daily readings, summary, and best/worst day identification",
 							"originalRequest": {
 								"url": {
@@ -543,7 +543,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0a19d195-543d-457d-9da5-926a04740605",
+							"id": "38067ae4-a499-4afd-89cc-6539f7f2071d",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -594,12 +594,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1706.5926283825695,\n      \"maximum\": 3357.6124336689363,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4706.839870579551,\n      \"maximum\": 6367.684687718181,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7118.036721171404,\n      \"maximum\": 4484.939747049594,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3921.7132772954856,\n      \"maximum\": 5600.349900525695,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d97a82b7-8179-47d3-a253-fc2476d2cb9b",
+							"id": "cf3eb4c5-346f-4b8a-8778-69ecf4f15b92",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -655,7 +655,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7031123d-bf25-485a-92d4-ae62de1acb50",
+							"id": "fd554f9b-b41b-4ecc-a144-acc3161720cd",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -717,7 +717,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "dc58d1de-f7fa-4d15-b1e2-3ef3539d1d18",
+							"id": "0779970c-70c3-4c69-b14f-2b1bdb4b3438",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -773,7 +773,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "026acff7-7064-4b13-a81a-b6996497d5d0",
+							"id": "b698fc12-c3b9-4c4a-a3fb-5ed5030c3643",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -835,7 +835,7 @@
 					}
 				},
 				{
-					"id": "bf84709f-07f5-4111-bb7d-e33b70248061",
+					"id": "fb3d4b13-415f-4c42-994c-a986baf0fa51",
 					"name": "Find critical days - Zero crossing detection for any date range",
 					"request": {
 						"name": "Find critical days - Zero crossing detection for any date range",
@@ -855,7 +855,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								}
 							],
 							"variable": []
@@ -900,7 +900,7 @@
 					},
 					"response": [
 						{
-							"id": "34500a68-3767-48aa-8534-910937b2eb65",
+							"id": "68b2921f-1447-407a-ac8e-de72bcaf7a8e",
 							"name": "Critical days with zero crossing details, severity levels, and advisory text",
 							"originalRequest": {
 								"url": {
@@ -956,7 +956,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9eb2fe49-bf7e-4c6b-b53b-23b3b9ae7b16",
+							"id": "3089c3b4-7df2-46e9-9ab8-11a36caed776",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1007,12 +1007,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1706.5926283825695,\n      \"maximum\": 3357.6124336689363,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4706.839870579551,\n      \"maximum\": 6367.684687718181,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7118.036721171404,\n      \"maximum\": 4484.939747049594,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3921.7132772954856,\n      \"maximum\": 5600.349900525695,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7dbf717d-0fc8-4666-a5db-6a84b11a9243",
+							"id": "633ef2fb-abfd-449e-8557-b8d0c5734f0f",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1068,7 +1068,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "24fc0bee-5e20-4f67-ad93-9c84b423aa05",
+							"id": "1974d384-ad02-4f0b-9d50-0924007f21a8",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1130,7 +1130,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "786fc2f8-f28b-49cc-9345-e8fd56f6a151",
+							"id": "7d779cc1-9add-4d25-9b7f-173e3e0c1f17",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1186,7 +1186,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b0e7d75b-5028-493c-8843-05db2cbeb1a3",
+							"id": "ef4cf504-584f-4f11-98d3-4761c7b041d1",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1248,7 +1248,7 @@
 					}
 				},
 				{
-					"id": "00a883bb-6798-4def-a32c-24c93aa0003a",
+					"id": "38c5ae28-e149-4527-861c-d120eacc870c",
 					"name": "Calculate compatibility - Biorhythm alignment between two people",
 					"request": {
 						"name": "Calculate compatibility - Biorhythm alignment between two people",
@@ -1268,7 +1268,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								}
 							],
 							"variable": []
@@ -1313,7 +1313,7 @@
 					},
 					"response": [
 						{
-							"id": "f538c26e-30a6-44c6-a813-5f8dfdec4114",
+							"id": "966b5b04-0587-4f57-9936-3af189d1773f",
 							"name": "Biorhythm compatibility analysis with per-cycle alignment, overall score, and relationship guidance",
 							"originalRequest": {
 								"url": {
@@ -1369,7 +1369,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5aac49da-a7eb-4b49-bf5e-a89d8fb7f2cc",
+							"id": "542b81a8-228d-4002-a19b-8ca34fb23137",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1420,12 +1420,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1706.5926283825695,\n      \"maximum\": 3357.6124336689363,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4706.839870579551,\n      \"maximum\": 6367.684687718181,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7118.036721171404,\n      \"maximum\": 4484.939747049594,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3921.7132772954856,\n      \"maximum\": 5600.349900525695,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f8ae13a5-29c9-4e0a-8a6f-934edd8b36e6",
+							"id": "86af6dfb-dc33-4951-a8ac-3a4d2f8fd1bd",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1481,7 +1481,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a61fc96f-afb5-48d3-989c-7d5c524cc685",
+							"id": "5c9bc113-4489-48f1-bfd5-ffe6e5a192a9",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1543,7 +1543,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b34cf4dc-8743-4b65-bd6d-5a2d1325892c",
+							"id": "ee6c2880-192d-4d6b-847b-58fa077d8b88",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1599,7 +1599,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7621eb07-d099-4ba1-a1db-33b174abdeb2",
+							"id": "26fac774-b319-4e9d-92ab-5362e131c51c",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1661,7 +1661,7 @@
 					}
 				},
 				{
-					"id": "330e4b7e-0039-41d4-8d0c-dfa7e140f60a",
+					"id": "ebebffed-26e4-4c1d-931e-e601ccd2ca4d",
 					"name": "Get phase info - Lightweight cycle status for dashboards and widgets",
 					"request": {
 						"name": "Get phase info - Lightweight cycle status for dashboards and widgets",
@@ -1681,7 +1681,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								}
 							],
 							"variable": []
@@ -1726,7 +1726,7 @@
 					},
 					"response": [
 						{
-							"id": "5e5be2ee-f6db-4468-b6c3-8a49534406cc",
+							"id": "f34329a8-be88-48b9-892d-bfcd2155fee9",
 							"name": "Phase information for all 10 cycles with summary",
 							"originalRequest": {
 								"url": {
@@ -1777,12 +1777,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"birthDate\": \"1990-07-15\",\n  \"targetDate\": \"2026-04-10\",\n  \"daysSinceBirth\": 13049,\n  \"phases\": {\n    \"key_0\": {\n      \"value\": 74,\n      \"phase\": \"high\",\n      \"phaseLabel\": \"High Energy\",\n      \"dayInCycle\": 8,\n      \"totalDays\": 23,\n      \"daysUntilCritical\": 9,\n      \"trend\": \"rising\"\n    }\n  },\n  \"summary\": \"3 cycles rising, 2 at peak, 1 critical\"\n}",
+							"body": "{\n  \"birthDate\": \"1990-07-15\",\n  \"targetDate\": \"2026-04-10\",\n  \"daysSinceBirth\": 13049,\n  \"phases\": {\n    \"key_0\": {\n      \"value\": 74,\n      \"phase\": \"high\",\n      \"phaseLabel\": \"High Energy\",\n      \"dayInCycle\": 8,\n      \"totalDays\": 23,\n      \"daysUntilCritical\": 9,\n      \"trend\": \"rising\"\n    },\n    \"key_1\": {\n      \"value\": 74,\n      \"phase\": \"high\",\n      \"phaseLabel\": \"High Energy\",\n      \"dayInCycle\": 8,\n      \"totalDays\": 23,\n      \"daysUntilCritical\": 9,\n      \"trend\": \"rising\"\n    },\n    \"key_2\": {\n      \"value\": 74,\n      \"phase\": \"high\",\n      \"phaseLabel\": \"High Energy\",\n      \"dayInCycle\": 8,\n      \"totalDays\": 23,\n      \"daysUntilCritical\": 9,\n      \"trend\": \"rising\"\n    }\n  },\n  \"summary\": \"3 cycles rising, 2 at peak, 1 critical\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6691f99d-c4cb-4623-a556-1efd72fbadd7",
+							"id": "f0ff4796-a2f8-44af-b934-fadb4d312aee",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1833,12 +1833,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1706.5926283825695,\n      \"maximum\": 3357.6124336689363,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4706.839870579551,\n      \"maximum\": 6367.684687718181,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7118.036721171404,\n      \"maximum\": 4484.939747049594,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3921.7132772954856,\n      \"maximum\": 5600.349900525695,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b0763856-6bad-424c-adaf-001423f19009",
+							"id": "488e2f5b-0454-4508-aea7-7d62f1b25dbd",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1894,7 +1894,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "637a26e7-1d3b-4845-b4a8-670dbdded574",
+							"id": "c9af4fef-52b3-4ba1-af3e-006932e36562",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1956,7 +1956,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b1ae0ba2-a793-47f0-af61-6bb9635ab9ef",
+							"id": "0f5b2153-b66f-4a84-b8ff-67bae06720a0",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2012,7 +2012,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f8f73ff7-d99e-43d7-8481-9acf8806d87e",
+							"id": "90071fc2-c072-4295-a6ad-40eef360538a",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2074,7 +2074,7 @@
 					}
 				},
 				{
-					"id": "9b0421d9-9080-47c5-bb01-1cb13c17397a",
+					"id": "ddd9c02c-a50a-4b62-86e3-dd7111080247",
 					"name": "Get daily biorhythm - Seeded reading for daily check-in features",
 					"request": {
 						"name": "Get daily biorhythm - Seeded reading for daily check-in features",
@@ -2094,7 +2094,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								}
 							],
 							"variable": []
@@ -2139,7 +2139,7 @@
 					},
 					"response": [
 						{
-							"id": "d3700db6-8ddb-46db-a1d7-9890d781744e",
+							"id": "8ba5bc92-12db-4dda-8ba6-c686a569437b",
 							"name": "Daily biorhythm reading with spotlight cycle and actionable guidance",
 							"originalRequest": {
 								"url": {
@@ -2195,7 +2195,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ad80be2e-659f-40ac-beb3-640feb19f01f",
+							"id": "80744b0d-23e9-4c63-be00-ecb1e4b3fce9",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2246,12 +2246,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1706.5926283825695,\n      \"maximum\": 3357.6124336689363,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4706.839870579551,\n      \"maximum\": 6367.684687718181,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7118.036721171404,\n      \"maximum\": 4484.939747049594,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3921.7132772954856,\n      \"maximum\": 5600.349900525695,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d4d19189-4df0-4ff4-af1e-4909da7e43c1",
+							"id": "350edd5e-e883-463b-9191-5107e287c477",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2307,7 +2307,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d07bc418-5f1a-498f-8a62-c7a890f75f94",
+							"id": "7ed9c98b-3739-4ecf-a37c-caa09d1106b0",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2369,7 +2369,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c5b9d2f3-28f5-4e9f-8fdd-42572ed5656e",
+							"id": "1f32d11a-88e6-461d-85eb-9a6b2db6b448",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2425,7 +2425,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c7049b5a-462e-41be-b218-5df34dcf18c7",
+							"id": "125f245d-3bf6-48ec-babc-512421269511",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2526,11 +2526,11 @@
 		]
 	},
 	"info": {
-		"_postman_id": "7fc17893-ae18-4e4e-9061-016c72f43d6d",
+		"_postman_id": "95bccfc0-a3b9-4686-a137-e50b954455ff",
 		"name": "Biorhythm API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"description": {
-			"content": "The most complete biorhythm API: 10 cycle types across 3 primary (physical, emotional, intellectual), 4 secondary (intuitive, aesthetic, awareness, spiritual), and 3 composite (passion, mastery, wisdom). Critical-day detection with severity classification, 90-day forecasts with best and worst days, two-person compatibility scoring, phase tracking for dashboards, and seeded daily readings for push notifications. 8 languages, deterministic results, and editorial-grade interpretations. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs. Ship a biorhythm feature in hours, not weeks.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, forecast, human design, numerology, tarot, biorhythm, I-Ching, crystals, dreams, angel numbers, location), 182+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 182+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`, `X-RateLimit-Reset` (Unix timestamp, seconds). Quotas reset on the 1st of every calendar month at 12:00 AM UTC, not on your renewal date.\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 per month for 50K requests, up to 3M requests, with custom volume above that.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
+			"content": "The most complete biorhythm API: 10 cycle types across 3 primary (physical, emotional, intellectual), 4 secondary (intuitive, aesthetic, awareness, spiritual), and 3 composite (passion, mastery, wisdom). Critical-day detection with severity classification, 90-day forecasts with best and worst days, two-person compatibility scoring, phase tracking for dashboards, and seeded daily readings for push notifications. 8 languages, deterministic results, and editorial-grade interpretations. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs. Ship a biorhythm feature in hours, not weeks.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 14 domains (Astrology, Vedic Astrology, Forecast, Human Design, Chinese Astrology, Feng Shui, Numerology, Tarot Reading, Biorhythm, I-Ching Oracle, Crystals and Healing Stones, Dream Interpretation, Angel Numbers, Location and Timezone), 209+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 209+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable and stable, so it is the one safe to switch on programmatically.\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`, `X-RateLimit-Reset` (Unix timestamp, seconds). Quotas reset on the 1st of every calendar month at 12:00 AM UTC, not on your renewal date.\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 per month for 50K requests, up to 3M requests, with custom volume above that.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
 			"type": "text/plain"
 		}
 	}

@@ -1,7 +1,7 @@
 {
 	"item": [
 		{
-			"id": "f30f1849-ae0e-456f-9072-5034121069eb",
+			"id": "d0eee83e-d1cf-4651-b99a-efee1523fc53",
 			"name": "Human Design",
 			"description": {
 				"content": "Generate the full Human Design bodygraph from a birth moment: type, strategy, inner authority, profile, definition, incarnation cross, the nine centers, defined channels, and all 26 gate activations, plus two-person connection charts and small-group Penta analysis. Planetary positions verified against NASA JPL Horizons, the Design side solved on the exact 88 degree solar arc. One key, Remote MCP, typed SDKs.",
@@ -9,7 +9,7 @@
 			},
 			"item": [
 				{
-					"id": "7f77dec2-1ae7-4177-8f0e-6aed6df326a5",
+					"id": "00898bb4-ba57-4dee-adc5-6cc3c6df83fe",
 					"name": "Generate full Human Design bodygraph - Type, authority, profile, centers, channels, gates",
 					"request": {
 						"name": "Generate full Human Design bodygraph - Type, authority, profile, centers, channels, gates",
@@ -29,7 +29,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								}
 							],
 							"variable": []
@@ -64,7 +64,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+							"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -74,7 +74,7 @@
 					},
 					"response": [
 						{
-							"id": "7d090c60-0754-4bca-8f7b-5dade2491e18",
+							"id": "21f28a3b-b3b1-4bcf-a0f5-bfb1e72a4a2d",
 							"name": "Complete bodygraph with type, authority, profile, centers, channels, and gates",
 							"originalRequest": {
 								"url": {
@@ -109,7 +109,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -130,7 +130,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "4eb7a6a4-153e-4ccf-ac75-dbb48a4b1716",
+							"id": "7f164a53-1684-4679-9a60-fe79e2aafa5c",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -165,7 +165,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -181,12 +181,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5239.8419279714335,\n      \"maximum\": 992.0154301909912,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 774.3749321980864,\n      \"maximum\": 474.8967322271891,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8037.428610083321,\n      \"maximum\": 1006.80907979525,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1181.561998720917,\n      \"maximum\": 692.9208252412766,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b282fbd7-7091-4a0b-824b-e4164c5dfee4",
+							"id": "365b9435-4fc3-4bed-9ad1-baf0397a5391",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -221,7 +221,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -242,7 +242,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "4f20f4f3-8963-48ed-8738-ef19487f6609",
+							"id": "896dec69-babd-403e-8184-531b6aa52f1f",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -277,7 +277,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -304,7 +304,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ca2285fb-a263-4e0b-9461-54c9a0cc3637",
+							"id": "a6c06cbb-573a-43b2-9613-ab5eb1c975b4",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -339,7 +339,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -360,7 +360,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5b974db1-9dc6-4e02-80d4-768d160cea14",
+							"id": "33a43e7e-81bf-4adf-96f1-8d7821fa7dad",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -395,7 +395,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -422,7 +422,7 @@
 					}
 				},
 				{
-					"id": "31e82073-48d2-471f-9867-0c0325a3f604",
+					"id": "261505ea-9a30-4c9d-b3ec-052a95942a60",
 					"name": "Calculate Human Design connection chart - Two-person composite bodygraph compatibility",
 					"request": {
 						"name": "Calculate Human Design connection chart - Two-person composite bodygraph compatibility",
@@ -442,7 +442,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								}
 							],
 							"variable": []
@@ -477,7 +477,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"personA\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 10.441342228933088,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"personB\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 4.270549908595125,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  }\n}",
+							"raw": "{\n  \"personA\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": -3.6858222839518113,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"personB\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 1.780994220193607,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -487,7 +487,7 @@
 					},
 					"response": [
 						{
-							"id": "a9f54cb0-98d6-4278-99a1-6cf3acee0682",
+							"id": "e8ebc192-12a9-41c4-bbba-fb49d22c9901",
 							"name": "Connection chart with per-channel dynamics, combined centers, definition, and a dynamic count",
 							"originalRequest": {
 								"url": {
@@ -522,7 +522,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 10.441342228933088,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"personB\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 4.270549908595125,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  }\n}",
+									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": -3.6858222839518113,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"personB\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 1.780994220193607,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -543,7 +543,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ef01bbc0-f868-43af-a780-eb927bad9680",
+							"id": "0b292c98-59d3-495a-adb1-97135248e601",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -578,7 +578,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 10.441342228933088,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"personB\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 4.270549908595125,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  }\n}",
+									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": -3.6858222839518113,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"personB\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 1.780994220193607,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -594,12 +594,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5239.8419279714335,\n      \"maximum\": 992.0154301909912,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 774.3749321980864,\n      \"maximum\": 474.8967322271891,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8037.428610083321,\n      \"maximum\": 1006.80907979525,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1181.561998720917,\n      \"maximum\": 692.9208252412766,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "84397a2d-95f7-4d4c-9c39-b98a911d2964",
+							"id": "a9045e9a-d547-4b30-bd8e-8d1a35358f9f",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -634,7 +634,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 10.441342228933088,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"personB\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 4.270549908595125,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  }\n}",
+									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": -3.6858222839518113,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"personB\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 1.780994220193607,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -655,7 +655,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7df30308-3918-4025-90e9-a9d919e2c7c3",
+							"id": "01df10f5-163d-4907-8da9-b20371becb3b",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -690,7 +690,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 10.441342228933088,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"personB\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 4.270549908595125,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  }\n}",
+									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": -3.6858222839518113,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"personB\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 1.780994220193607,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -717,7 +717,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "4a6484be-9388-40e2-8076-0f3a620ca769",
+							"id": "80a371b2-732c-4ae5-bbba-76727a38a265",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -752,7 +752,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 10.441342228933088,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"personB\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 4.270549908595125,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  }\n}",
+									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": -3.6858222839518113,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"personB\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 1.780994220193607,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -773,7 +773,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3550c862-27f9-4e5e-848e-342f36250ae1",
+							"id": "e8893edc-5dc6-4584-8dbe-6ea322a6bd91",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -808,7 +808,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 10.441342228933088,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"personB\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 4.270549908595125,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  }\n}",
+									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": -3.6858222839518113,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"personB\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 1.780994220193607,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -835,7 +835,7 @@
 					}
 				},
 				{
-					"id": "42439574-c9df-48f0-80ef-f2c17d41e5b2",
+					"id": "71f3d9b7-5da6-4133-8287-a3126919bc34",
 					"name": "Calculate Human Design Penta - Small-group BG5 operating system for three to five people",
 					"request": {
 						"name": "Calculate Human Design Penta - Small-group BG5 operating system for three to five people",
@@ -855,7 +855,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								}
 							],
 							"variable": []
@@ -890,7 +890,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"members\": [\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -11.366462035857746,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 12.763575286147663,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -12.408555176545171,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    }\n  ]\n}",
+							"raw": "{\n  \"members\": [\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 11.739975424815455,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -7.601638995821111,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -10.646949428359614,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    }\n  ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -900,7 +900,7 @@
 					},
 					"response": [
 						{
-							"id": "b381bec5-3e4e-485f-83ca-14baa74e1978",
+							"id": "d9197220-6ce5-4b39-8154-f4904ab29952",
 							"name": "Penta chart with per-channel Strengths, per-gate fill state, and a group summary",
 							"originalRequest": {
 								"url": {
@@ -935,7 +935,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"members\": [\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -11.366462035857746,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 12.763575286147663,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -12.408555176545171,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    }\n  ]\n}",
+									"raw": "{\n  \"members\": [\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 11.739975424815455,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -7.601638995821111,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -10.646949428359614,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    }\n  ]\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -956,7 +956,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5e24d6a8-ae83-4b51-98bf-dca36d6f6a47",
+							"id": "4bbe0da2-5c53-4ab4-9377-ee1978e79ccd",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -991,7 +991,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"members\": [\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -11.366462035857746,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 12.763575286147663,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -12.408555176545171,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    }\n  ]\n}",
+									"raw": "{\n  \"members\": [\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 11.739975424815455,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -7.601638995821111,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -10.646949428359614,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    }\n  ]\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1007,12 +1007,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5239.8419279714335,\n      \"maximum\": 992.0154301909912,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 774.3749321980864,\n      \"maximum\": 474.8967322271891,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8037.428610083321,\n      \"maximum\": 1006.80907979525,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1181.561998720917,\n      \"maximum\": 692.9208252412766,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ce9b59f3-36a4-4842-a9fa-75b7d10cd9b7",
+							"id": "4764b221-0347-41f0-8d84-8381337dab74",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1047,7 +1047,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"members\": [\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -11.366462035857746,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 12.763575286147663,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -12.408555176545171,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    }\n  ]\n}",
+									"raw": "{\n  \"members\": [\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 11.739975424815455,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -7.601638995821111,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -10.646949428359614,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    }\n  ]\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1068,7 +1068,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6b6019cc-f33c-48bc-980c-b8f4eccbad64",
+							"id": "acbd0ee0-9055-4f9e-9273-06e14758858c",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1103,7 +1103,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"members\": [\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -11.366462035857746,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 12.763575286147663,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -12.408555176545171,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    }\n  ]\n}",
+									"raw": "{\n  \"members\": [\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 11.739975424815455,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -7.601638995821111,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -10.646949428359614,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    }\n  ]\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1130,7 +1130,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ac1e95a9-3f87-4652-b22f-3a546bb0bfc0",
+							"id": "45e06b7a-9819-4928-8def-4298060b614f",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1165,7 +1165,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"members\": [\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -11.366462035857746,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 12.763575286147663,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -12.408555176545171,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    }\n  ]\n}",
+									"raw": "{\n  \"members\": [\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 11.739975424815455,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -7.601638995821111,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -10.646949428359614,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    }\n  ]\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1186,7 +1186,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "aae9287d-cff8-47cd-84a9-bb7c6d149e07",
+							"id": "b28757eb-f17d-4f4e-8595-804c90dd6bf6",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1221,7 +1221,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"members\": [\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -11.366462035857746,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 12.763575286147663,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -12.408555176545171,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    }\n  ]\n}",
+									"raw": "{\n  \"members\": [\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": 11.739975424815455,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -7.601638995821111,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    },\n    {\n      \"date\": \"1990-07-15\",\n      \"time\": \"13:00:00\",\n      \"timezone\": -10.646949428359614,\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"nodeType\": \"true\"\n    }\n  ]\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1248,7 +1248,7 @@
 					}
 				},
 				{
-					"id": "30338801-67dc-42dd-8626-363dcb8e5982",
+					"id": "2f0e988d-dfd6-4a92-b104-b123fb97bf14",
 					"name": "Generate Human Design transit overlay - Current planetary activations on a natal bodygraph",
 					"request": {
 						"name": "Generate Human Design transit overlay - Current planetary activations on a natal bodygraph",
@@ -1268,7 +1268,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								}
 							],
 							"variable": []
@@ -1303,7 +1303,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 12.911168217761887,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"date\": \"2026-05-23\",\n  \"time\": \"12:00:00\"\n}",
+							"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 13.432265687081767,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"date\": \"2026-05-23\",\n  \"time\": \"12:00:00\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1313,7 +1313,7 @@
 					},
 					"response": [
 						{
-							"id": "52df2110-8881-4035-80d5-15dfce3ce8ca",
+							"id": "50cd42f0-7bd2-46a7-9a8d-e4069b0e4b1b",
 							"name": "Transit overlay with transiting activations, completed channels, temporary centers, and a summary",
 							"originalRequest": {
 								"url": {
@@ -1348,7 +1348,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 12.911168217761887,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"date\": \"2026-05-23\",\n  \"time\": \"12:00:00\"\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 13.432265687081767,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"date\": \"2026-05-23\",\n  \"time\": \"12:00:00\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1369,7 +1369,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "18eb4268-0c07-4dd1-b282-549b1cdcd190",
+							"id": "baeacd63-ef6c-4cab-bf7d-64361d411e0a",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1404,7 +1404,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 12.911168217761887,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"date\": \"2026-05-23\",\n  \"time\": \"12:00:00\"\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 13.432265687081767,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"date\": \"2026-05-23\",\n  \"time\": \"12:00:00\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1420,12 +1420,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5239.8419279714335,\n      \"maximum\": 992.0154301909912,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 774.3749321980864,\n      \"maximum\": 474.8967322271891,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8037.428610083321,\n      \"maximum\": 1006.80907979525,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1181.561998720917,\n      \"maximum\": 692.9208252412766,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "25c80b82-c34b-4fb4-b9ae-c67407201970",
+							"id": "50d21e41-aec8-406b-b0ec-4a2044fb0a9c",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1460,7 +1460,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 12.911168217761887,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"date\": \"2026-05-23\",\n  \"time\": \"12:00:00\"\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 13.432265687081767,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"date\": \"2026-05-23\",\n  \"time\": \"12:00:00\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1481,7 +1481,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "681ded28-fe5f-48c5-868e-58d684b4f673",
+							"id": "c047beb2-ca68-4de1-a975-f225c6986a09",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1516,7 +1516,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 12.911168217761887,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"date\": \"2026-05-23\",\n  \"time\": \"12:00:00\"\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 13.432265687081767,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"date\": \"2026-05-23\",\n  \"time\": \"12:00:00\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1543,7 +1543,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "86cb54f9-633a-4387-a968-59450af8e472",
+							"id": "91018ace-5065-46ee-bb37-21a3e2033fed",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1578,7 +1578,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 12.911168217761887,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"date\": \"2026-05-23\",\n  \"time\": \"12:00:00\"\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 13.432265687081767,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"date\": \"2026-05-23\",\n  \"time\": \"12:00:00\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1599,7 +1599,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "85f199ad-2832-472e-9c9b-17dd998bedde",
+							"id": "193fa97a-1749-46c6-aa9c-013bf13716d2",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1634,7 +1634,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 12.911168217761887,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"date\": \"2026-05-23\",\n  \"time\": \"12:00:00\"\n}",
+									"raw": "{\n  \"birthData\": {\n    \"date\": \"1990-07-15\",\n    \"time\": \"13:00:00\",\n    \"timezone\": 13.432265687081767,\n    \"latitude\": 0,\n    \"longitude\": 0,\n    \"nodeType\": \"true\"\n  },\n  \"date\": \"2026-05-23\",\n  \"time\": \"12:00:00\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1661,7 +1661,7 @@
 					}
 				},
 				{
-					"id": "612a1d79-f1ac-4d2d-8eac-bb4515460630",
+					"id": "bb621270-6f58-4d2b-8d57-42f60e228c5c",
 					"name": "Calculate Human Design type, authority and profile",
 					"request": {
 						"name": "Calculate Human Design type, authority and profile",
@@ -1681,7 +1681,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								}
 							],
 							"variable": []
@@ -1716,7 +1716,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+							"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1726,7 +1726,7 @@
 					},
 					"response": [
 						{
-							"id": "2961259e-77a2-434c-b364-039bf125e173",
+							"id": "375e863a-35a3-4aef-895a-b437b3d3890f",
 							"name": "Type, strategy, authority, signature, not-self theme, and profile",
 							"originalRequest": {
 								"url": {
@@ -1761,7 +1761,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1782,7 +1782,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6485bc9d-c9e2-494d-ad07-2cd2ffa1ac45",
+							"id": "79f0449b-49c3-40ad-9d4d-bf3961ce57b6",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1817,7 +1817,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1833,12 +1833,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5239.8419279714335,\n      \"maximum\": 992.0154301909912,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 774.3749321980864,\n      \"maximum\": 474.8967322271891,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8037.428610083321,\n      \"maximum\": 1006.80907979525,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1181.561998720917,\n      \"maximum\": 692.9208252412766,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9ba8d7d2-0fc5-4e16-b2be-2681fdd321d8",
+							"id": "d37c0e6e-9c92-4be8-9a02-d9595c4e127a",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1873,7 +1873,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1894,7 +1894,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "dbfafe00-8c36-4fb0-866e-861191b352eb",
+							"id": "99747514-7df3-45df-8195-8a0178cd35c1",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1929,7 +1929,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1956,7 +1956,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7efffc1a-4b66-4988-b098-5619ef9b3b07",
+							"id": "4ee1a21f-a52c-4d56-b1a7-dccac83532a3",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1991,7 +1991,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2012,7 +2012,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5f1b26d4-58f5-4a17-bb22-d3fdc7d2cdf1",
+							"id": "d54107de-551c-4641-96e3-6771f362726e",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2047,7 +2047,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2074,7 +2074,7 @@
 					}
 				},
 				{
-					"id": "c6b0b6dd-a543-4423-9003-c8797959a7bd",
+					"id": "96269db0-d9a0-4acd-b42a-c81be18c1815",
 					"name": "Calculate the 26 Human Design gate activations",
 					"request": {
 						"name": "Calculate the 26 Human Design gate activations",
@@ -2094,7 +2094,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								}
 							],
 							"variable": []
@@ -2129,7 +2129,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+							"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2139,7 +2139,7 @@
 					},
 					"response": [
 						{
-							"id": "ac5d2898-6607-43a0-b3ad-526132755a6f",
+							"id": "8d30a500-ed4d-48eb-a80e-aca3102dadbc",
 							"name": "Personality and Design activation lists, 13 each",
 							"originalRequest": {
 								"url": {
@@ -2174,7 +2174,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2195,7 +2195,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "22660459-55fc-44b7-a4c8-bb7b61aafdb6",
+							"id": "5cbdbddf-6d2b-4ca3-97f3-1a4d6c0b6d6b",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2230,7 +2230,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2246,12 +2246,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5239.8419279714335,\n      \"maximum\": 992.0154301909912,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 774.3749321980864,\n      \"maximum\": 474.8967322271891,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8037.428610083321,\n      \"maximum\": 1006.80907979525,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1181.561998720917,\n      \"maximum\": 692.9208252412766,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ca46a381-4d51-4895-a691-6649a650e8b8",
+							"id": "e5e596f0-335d-4602-902f-d7917a14a199",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2286,7 +2286,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2307,7 +2307,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9c468b8f-44a6-48eb-b6c2-6f306455d678",
+							"id": "1ed99d42-433c-467c-b9ef-ca7427f90083",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2342,7 +2342,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2369,7 +2369,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f819061f-ec8a-4f29-afac-93b40389d82d",
+							"id": "b730973d-3422-4dfb-8889-3e556f9cb7a4",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2404,7 +2404,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2425,7 +2425,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f5929888-a253-4293-bb3b-50f079be36a2",
+							"id": "fc6b1229-b314-4206-ae54-f09701859ff1",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2460,7 +2460,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2487,7 +2487,7 @@
 					}
 				},
 				{
-					"id": "21faa8f5-8447-4d90-ae9c-1a4f92599e04",
+					"id": "7c567c56-714a-4101-9d60-530b22f9e28b",
 					"name": "Look up a Human Design gate by number",
 					"request": {
 						"name": "Look up a Human Design gate by number",
@@ -2508,7 +2508,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								}
 							],
 							"variable": [
@@ -2548,7 +2548,7 @@
 					},
 					"response": [
 						{
-							"id": "83dfb06a-5fe8-410e-8eff-8a8643f63e9e",
+							"id": "4fde154c-a46c-4c61-a8f4-ef5cfef76e52",
 							"name": "Gate reference data with center, hexagram, and channel partners",
 							"originalRequest": {
 								"url": {
@@ -2605,7 +2605,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "46e9e70f-e73b-471e-997f-fa0b1dc3b361",
+							"id": "53c05313-afa8-4220-8e44-c0e9e82ad508",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2657,12 +2657,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5239.8419279714335,\n      \"maximum\": 992.0154301909912,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 774.3749321980864,\n      \"maximum\": 474.8967322271891,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8037.428610083321,\n      \"maximum\": 1006.80907979525,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1181.561998720917,\n      \"maximum\": 692.9208252412766,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0b9f8b78-8665-452f-bd4d-93f81ba3c12e",
+							"id": "528f51f0-8128-424a-8565-849e8b45cda7",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2719,7 +2719,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c679ff48-ffcb-48fe-908d-0b6d38cd8ee3",
+							"id": "081b4cba-615e-438c-bdc1-5c8e35dd928d",
 							"name": "Gate number is outside the range 1 to 64",
 							"originalRequest": {
 								"url": {
@@ -2776,7 +2776,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6b5a07fb-9daf-4c82-a5d3-f3c3bfda9670",
+							"id": "5559bcdf-ebf7-444e-810e-b426e0b1b1f8",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2839,7 +2839,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "bb52f28b-3316-4fed-8462-191690a33b05",
+							"id": "2293147e-a288-41ed-b97f-73ca9f6b40f7",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2896,7 +2896,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a4bd67a7-ec94-42a9-a9f4-78710e1ea839",
+							"id": "e5f3c278-8407-4a1b-9424-11e1ef3090bb",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2959,7 +2959,7 @@
 					}
 				},
 				{
-					"id": "80de25a0-8378-43f5-b125-bc2744ed35ee",
+					"id": "a7fd4a63-96a2-45cd-a201-9bed4b229d62",
 					"name": "Calculate the defined Human Design channels",
 					"request": {
 						"name": "Calculate the defined Human Design channels",
@@ -2979,7 +2979,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								}
 							],
 							"variable": []
@@ -3014,7 +3014,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+							"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3024,7 +3024,7 @@
 					},
 					"response": [
 						{
-							"id": "8c7d870f-0942-421e-9b45-7d83d0c16145",
+							"id": "6a0b252b-54bc-4b64-aa55-16c679e1ecb6",
 							"name": "Defined channels with circuits and the centers they define",
 							"originalRequest": {
 								"url": {
@@ -3059,7 +3059,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3080,7 +3080,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "fa048344-03a3-43a4-8131-612babbd9e58",
+							"id": "0527cc36-cad0-453e-b083-30e292223561",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3115,7 +3115,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3131,12 +3131,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5239.8419279714335,\n      \"maximum\": 992.0154301909912,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 774.3749321980864,\n      \"maximum\": 474.8967322271891,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8037.428610083321,\n      \"maximum\": 1006.80907979525,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1181.561998720917,\n      \"maximum\": 692.9208252412766,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "75e29ab1-8223-4dd6-8117-0cee13093070",
+							"id": "4eb7f796-a049-46ac-9235-851ac8c5ec72",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3171,7 +3171,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3192,7 +3192,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7fddc68e-aa66-4d13-bed1-796064e26c93",
+							"id": "497d4ddc-f04c-41a2-a862-e9e265806c30",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3227,7 +3227,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3254,7 +3254,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "cba57a87-12c1-4d39-aa06-3dce775484d7",
+							"id": "d348f716-473c-45bf-85ab-af1aec0561b1",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3289,7 +3289,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3310,7 +3310,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5756e304-897c-463e-a28e-5bc16d664f4b",
+							"id": "cf298547-22af-4d21-8f31-6a8267d98a1c",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3345,7 +3345,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3372,7 +3372,7 @@
 					}
 				},
 				{
-					"id": "f0d2a93c-f9a1-442a-93e6-58199831cea3",
+					"id": "70a0ce3f-842a-4699-8b34-42e454f59dc3",
 					"name": "Calculate the nine Human Design centers",
 					"request": {
 						"name": "Calculate the nine Human Design centers",
@@ -3392,7 +3392,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								}
 							],
 							"variable": []
@@ -3427,7 +3427,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+							"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3437,7 +3437,7 @@
 					},
 					"response": [
 						{
-							"id": "982bf31f-2115-471e-9f9d-6522d42441bd",
+							"id": "2fe4c4c5-9db5-4e2c-b569-cf542c00b668",
 							"name": "All nine centers with defined state, flags, theme, and active gates",
 							"originalRequest": {
 								"url": {
@@ -3472,7 +3472,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3493,7 +3493,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "460a31af-2e0e-4033-9d46-1da01fdba4b4",
+							"id": "7d6fbea8-becd-4382-8ae7-fc0e481c3145",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3528,7 +3528,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3544,12 +3544,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5239.8419279714335,\n      \"maximum\": 992.0154301909912,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 774.3749321980864,\n      \"maximum\": 474.8967322271891,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8037.428610083321,\n      \"maximum\": 1006.80907979525,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1181.561998720917,\n      \"maximum\": 692.9208252412766,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "be90aff2-23aa-480a-af80-06dc4470ae91",
+							"id": "89afc62f-7aef-49d3-9308-11c8b33c326f",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3584,7 +3584,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3605,7 +3605,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d09f577f-5102-46e3-a630-c22a6eb68cce",
+							"id": "bbbd2492-b177-4797-aabb-848e04778f8f",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3640,7 +3640,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3667,7 +3667,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e7f9b81d-e290-464e-b78b-87730f4b4e55",
+							"id": "0fe833d0-9a5e-4c70-9776-5631cc8ea493",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3702,7 +3702,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3723,7 +3723,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7b16013f-96eb-49c3-85a7-201ba63dab8c",
+							"id": "4723e1c7-a775-4c5f-82cc-cae8618903c3",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3758,7 +3758,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -3785,7 +3785,7 @@
 					}
 				},
 				{
-					"id": "98ac0f6b-74d7-4f33-8e2d-daca549681b2",
+					"id": "08ee9d2b-dd36-478e-8036-c8a52051b04f",
 					"name": "Look up a Human Design center by id",
 					"request": {
 						"name": "Look up a Human Design center by id",
@@ -3806,7 +3806,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								}
 							],
 							"variable": [
@@ -3846,7 +3846,7 @@
 					},
 					"response": [
 						{
-							"id": "80d2eb09-4dc6-4541-a1a6-08207b90e9a7",
+							"id": "8be413da-5b4d-42bd-9caf-f6fa2bfbec4c",
 							"name": "Center reference data with defined and undefined meanings",
 							"originalRequest": {
 								"url": {
@@ -3903,7 +3903,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "388ed8e1-e93f-4e54-80e6-fe3fd13e0b66",
+							"id": "a630f764-5961-4d81-8f69-50a1e4dbe83c",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3955,12 +3955,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5239.8419279714335,\n      \"maximum\": 992.0154301909912,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 774.3749321980864,\n      \"maximum\": 474.8967322271891,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8037.428610083321,\n      \"maximum\": 1006.80907979525,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1181.561998720917,\n      \"maximum\": 692.9208252412766,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "93e5dde2-96d1-4194-b0ff-5d2ae59b965e",
+							"id": "281b7df0-ebb1-46e3-b8df-a128f205250c",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -4017,7 +4017,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "609a54f5-a997-404d-94b6-e773dd9e1703",
+							"id": "46c50a0b-a63a-46d0-b7c4-283a622f7533",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -4080,7 +4080,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8287f57a-15ba-4955-bd83-67007ed4cb06",
+							"id": "e25e9677-3a7f-49e8-9295-e6ebacfbc627",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -4137,7 +4137,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f0424c7f-6d03-4c3a-a23e-3b65adb86909",
+							"id": "3935e527-ead8-4619-a0bd-ac7a288087e6",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -4200,7 +4200,7 @@
 					}
 				},
 				{
-					"id": "67d46725-0031-4ea1-ac5e-c0c5f20e5810",
+					"id": "071572ea-9064-42ca-9ac2-6f8540b228c2",
 					"name": "Calculate the Human Design profile and line keynotes",
 					"request": {
 						"name": "Calculate the Human Design profile and line keynotes",
@@ -4220,7 +4220,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								}
 							],
 							"variable": []
@@ -4255,7 +4255,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+							"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4265,7 +4265,7 @@
 					},
 					"response": [
 						{
-							"id": "edf1d982-faba-4b6d-a739-aa7bcbc81363",
+							"id": "aa2e2a47-ad02-4bde-9896-3274a7ce6d88",
 							"name": "Profile string, the two line numbers, and line keynotes",
 							"originalRequest": {
 								"url": {
@@ -4300,7 +4300,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4321,7 +4321,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f127c30e-487e-49ac-954d-a9b3d8a8a5ab",
+							"id": "05e94455-4651-409d-978e-cc3d663b022a",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -4356,7 +4356,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4372,12 +4372,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5239.8419279714335,\n      \"maximum\": 992.0154301909912,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 774.3749321980864,\n      \"maximum\": 474.8967322271891,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8037.428610083321,\n      \"maximum\": 1006.80907979525,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1181.561998720917,\n      \"maximum\": 692.9208252412766,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5e6fb4c2-963c-42c8-851c-ea2d4cff3aee",
+							"id": "f5aad1b3-b15e-4807-8fa8-74e0d77680f5",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -4412,7 +4412,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4433,7 +4433,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b16afe4b-cb0f-4242-b59f-2078e74bd349",
+							"id": "3661df00-3403-4859-815d-5d3a5fa8b4d6",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -4468,7 +4468,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4495,7 +4495,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c0bb48ca-1b0c-43ca-b71f-3640e5221052",
+							"id": "3c69bf8e-8c9f-4e5a-92e9-8cae8b6a0636",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -4530,7 +4530,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4551,7 +4551,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "de0fb50d-7d18-4c97-b269-62a5ab8a7fc1",
+							"id": "9e4cb36c-624d-4a57-bd47-87fc5832ac18",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -4586,7 +4586,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4613,7 +4613,7 @@
 					}
 				},
 				{
-					"id": "1745804d-703a-4424-9207-cc2dcea7c7c4",
+					"id": "c75766ba-88df-4000-afdc-c254c56e009b",
 					"name": "Calculate Human Design Variables - The four arrows and Color, Tone, Base substructure",
 					"request": {
 						"name": "Calculate Human Design Variables - The four arrows and Color, Tone, Base substructure",
@@ -4633,7 +4633,7 @@
 									"disabled": false,
 									"key": "lang",
 									"value": "en",
-									"description": "Response language (ISO 639-1). Supported: en, tr, de, es, hi, pt, fr, ru. Defaults to en. Languages without translations yet return English."
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
 								}
 							],
 							"variable": []
@@ -4668,7 +4668,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+							"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -4678,7 +4678,7 @@
 					},
 					"response": [
 						{
-							"id": "eac48b27-b235-43a7-b4ff-08a3d15a93bc",
+							"id": "f5c2624e-df31-4182-b6e5-739fd0a3995e",
 							"name": "The four Variable arrows with substructure numbers, labels, and confidence flags",
 							"originalRequest": {
 								"url": {
@@ -4713,7 +4713,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4734,7 +4734,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "55684b4d-91cf-4236-b02a-16c0b64a76fa",
+							"id": "9d165e89-e64b-4735-9729-5a79ce966742",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -4769,7 +4769,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4785,12 +4785,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5239.8419279714335,\n      \"maximum\": 992.0154301909912,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 774.3749321980864,\n      \"maximum\": 474.8967322271891,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8037.428610083321,\n      \"maximum\": 1006.80907979525,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1181.561998720917,\n      \"maximum\": 692.9208252412766,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "42ba0642-3ce9-4eb2-99df-f5776847ec10",
+							"id": "f392f183-0ca6-4fc6-886e-05726e2d0db2",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -4825,7 +4825,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4846,7 +4846,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7fba2e44-70b1-41fe-bbd1-5c1f35e70890",
+							"id": "a7f8db31-73e5-4052-af37-5e1f46c0f56f",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -4881,7 +4881,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4908,7 +4908,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "93f2c738-b9fe-402e-91b5-3798ccc70049",
+							"id": "195d99cf-dae5-400e-b1be-4b93e004c3d7",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -4943,7 +4943,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -4964,7 +4964,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7457d3b0-0c9c-4d89-baef-c587570a5f69",
+							"id": "1fb860a1-7f18-4ba4-aa26-21d848e1d0cc",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -4999,7 +4999,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -5.38194808535083,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-15\",\n  \"time\": \"13:00:00\",\n  \"timezone\": -0.37408883593914055,\n  \"latitude\": 0,\n  \"longitude\": 0,\n  \"nodeType\": \"true\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -5065,11 +5065,11 @@
 		]
 	},
 	"info": {
-		"_postman_id": "758d57cf-2570-4427-a6d9-23e31aa4de1c",
+		"_postman_id": "60bb90f9-ee53-4997-9c1c-536e07870cae",
 		"name": "Human Design API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"description": {
-			"content": "Generate the full Human Design bodygraph from a birth moment: type, strategy, inner authority, profile, definition, incarnation cross, the nine centers, defined channels, and all 26 gate activations, plus two-person connection charts and small-group Penta analysis. Planetary positions verified against NASA JPL Horizons, the Design side solved on the exact 88 degree solar arc. One key, Remote MCP, typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 12 domains (astrology, Vedic astrology, forecast, human design, numerology, tarot, biorhythm, I-Ching, crystals, dreams, angel numbers, location), 182+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 182+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable (stable — safe to switch on programmatically).\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`, `X-RateLimit-Reset` (Unix timestamp, seconds). Quotas reset on the 1st of every calendar month at 12:00 AM UTC, not on your renewal date.\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 per month for 50K requests, up to 3M requests, with custom volume above that.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
+			"content": "Generate the full Human Design bodygraph from a birth moment: type, strategy, inner authority, profile, definition, incarnation cross, the nine centers, defined channels, and all 26 gate activations, plus two-person connection charts and small-group Penta analysis. Planetary positions verified against NASA JPL Horizons, the Design side solved on the exact 88 degree solar arc. One key, Remote MCP, typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 14 domains (Astrology, Vedic Astrology, Forecast, Human Design, Chinese Astrology, Feng Shui, Numerology, Tarot Reading, Biorhythm, I-Ching Oracle, Crystals and Healing Stones, Dream Interpretation, Angel Numbers, Location and Timezone), 209+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 209+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable and stable, so it is the one safe to switch on programmatically.\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`, `X-RateLimit-Reset` (Unix timestamp, seconds). Quotas reset on the 1st of every calendar month at 12:00 AM UTC, not on your renewal date.\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 per month for 50K requests, up to 3M requests, with custom volume above that.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
 			"type": "text/plain"
 		}
 	}
