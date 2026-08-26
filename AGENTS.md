@@ -1,6 +1,6 @@
 # RoxyAPI - Agent Guide
 
-Postman collections for the RoxyAPI catalog: astrology, Vedic astrology, tarot, numerology, I Ching, biorhythm, dreams, crystals, angel numbers, Human Design, forecast, and location. One API key, every domain. This guide helps an AI agent call the API these collections cover.
+Postman collections for the RoxyAPI catalog: astrology, Vedic astrology, forecast, Human Design, Chinese astrology, feng shui, numerology, tarot, biorhythm, I Ching, crystals, dreams, angel numbers, and location. One API key, every domain. This guide helps an AI agent call the API these collections cover.
 
 ## Base URL and auth
 
