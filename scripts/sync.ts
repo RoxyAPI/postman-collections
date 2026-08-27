@@ -11,6 +11,8 @@
  *  4. Publish: resolve the existing collection UID (cache, then workspace name match), then PUT it; create + capture the UID when it does not exist yet.
  *  5. Persist: write `specs/{slug}.json` (next run's diff baseline), `collections/{slug}.json` (browsable artifact), and the auto-written `collections.json` UID cache. The workflow commits these back.
  *
+ * Every spec request retries a transient origin or edge failure with exponential backoff, so a brief outage delays a run rather than failing it or dropping a live domain from the catalog.
+ *
  * Flags: `--dry-run` (discover, diff and build but make no Postman writes; no API key required, used by CI), `--force` (rebuild and publish every domain regardless of diff), `--prune` (delete collections for domains that no longer exist; off by default so a transient outage cannot wipe the workspace).
  */
 
@@ -98,8 +100,37 @@ function fingerprint(spec: OpenAPISpec): string {
 /** Bypass edge cache so the diff baseline always compares against the freshest origin spec, not a stale CDN node. */
 const SPEC_FETCH: RequestInit = { headers: { 'Cache-Control': 'no-cache' } };
 
+/**
+ * Statuses that describe a temporary origin or edge condition rather than an answer about the
+ * resource. Everything outside this set is returned to the caller on the first attempt, so the 401
+ * and 404 that legitimately mean "not a product domain" still cost exactly one request.
+ */
+const RETRYABLE_STATUS = new Set([
+	408, 425, 429, 500, 502, 503, 504, 521, 522, 523, 524, 525, 526,
+]);
+
+const MAX_ATTEMPTS = 5;
+
+/** Fetch a spec, retrying a transient failure with exponential backoff before giving up. */
+async function fetchSpec(url: string): Promise<Response> {
+	let last: Error = new Error(`GET ${url} -> no attempt made`);
+	for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+		if (attempt > 1) await Bun.sleep(1000 * 2 ** (attempt - 2));
+		try {
+			const res = await fetch(url, SPEC_FETCH);
+			if (!RETRYABLE_STATUS.has(res.status)) return res;
+			last = new Error(`GET ${url} -> ${res.status}`);
+		} catch (err) {
+			last = err instanceof Error ? err : new Error(String(err));
+		}
+		if (attempt < MAX_ATTEMPTS)
+			console.warn(`retrying (${attempt}/${MAX_ATTEMPTS}): ${last.message}`);
+	}
+	throw last;
+}
+
 async function fetchJson<T>(url: string): Promise<T> {
-	const res = await fetch(url, SPEC_FETCH);
+	const res = await fetchSpec(url);
 	if (!res.ok) throw new Error(`GET ${url} -> ${res.status}`);
 	return (await res.json()) as T;
 }
@@ -141,10 +172,7 @@ async function discoverDomains(): Promise<
 	}
 	const probed = await Promise.all(
 		[...candidates].sort().map(async (slug) => {
-			const res = await fetch(
-				`${API_ORIGIN}/api/v2/${slug}/openapi.json`,
-				SPEC_FETCH,
-			);
+			const res = await fetchSpec(`${API_ORIGIN}/api/v2/${slug}/openapi.json`);
 			if (!res.ok) return null;
 			return { slug, spec: (await res.json()) as OpenAPISpec };
 		}),
