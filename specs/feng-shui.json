@@ -1826,7 +1826,7 @@
 												"name": {
 													"type": "string",
 													"example": "Double Star at Sitting",
-													"description": "Display name of the structure. Always English, whatever the lang parameter says."
+													"description": "Display name of the structure, TRANSLATED IN PLACE under the lang parameter. Switch on structure.id, which is the stable machine value in every language. Unlike the star and formation names beside it, this field has no nameLocalized sibling."
 												},
 												"chinese": {
 													"type": "string",
@@ -3409,10 +3409,15 @@
 										"taiSui": {
 											"type": "object",
 											"properties": {
+												"id": {
+													"type": "string",
+													"example": "taiSui",
+													"description": "Stable machine key for the affliction: taiSui, suiPo, sanSha or fiveYellow. Always English, identical in every language, and the field to branch on. Use this rather than name, which is display copy and does translate."
+												},
 												"name": {
 													"type": "string",
 													"example": "Tai Sui",
-													"description": "Display name of the affliction. Always English, whatever the lang parameter says, so it stays safe to compare against in code."
+													"description": "Display name of the affliction, translated in place when lang is set (Tai Sui in English, 太岁 under zh-Hans). Display copy, never a comparison key: branch on id instead."
 												},
 												"chinese": {
 													"type": "string",
@@ -3507,6 +3512,7 @@
 												}
 											},
 											"required": [
+												"id",
 												"name",
 												"chinese",
 												"pinyin",
@@ -3521,10 +3527,15 @@
 										"suiPo": {
 											"type": "object",
 											"properties": {
+												"id": {
+													"type": "string",
+													"example": "suiPo",
+													"description": "Stable machine key for the affliction: taiSui, suiPo, sanSha or fiveYellow. Always English, identical in every language, and the field to branch on. Use this rather than name, which is display copy and does translate."
+												},
 												"name": {
 													"type": "string",
 													"example": "Sui Po",
-													"description": "Display name of the affliction. Always English, whatever the lang parameter says, so it stays safe to compare against in code."
+													"description": "Display name of the affliction, translated in place when lang is set (Tai Sui in English, 太岁 under zh-Hans). Display copy, never a comparison key: branch on id instead."
 												},
 												"chinese": {
 													"type": "string",
@@ -3609,6 +3620,7 @@
 												}
 											},
 											"required": [
+												"id",
 												"name",
 												"chinese",
 												"pinyin",
@@ -3621,10 +3633,15 @@
 										"sanSha": {
 											"type": "object",
 											"properties": {
+												"id": {
+													"type": "string",
+													"example": "sanSha",
+													"description": "Stable machine key for the affliction: taiSui, suiPo, sanSha or fiveYellow. Always English, identical in every language, and the field to branch on. Use this rather than name, which is display copy and does translate."
+												},
 												"name": {
 													"type": "string",
 													"example": "San Sha",
-													"description": "Display name of the affliction. Always English, whatever the lang parameter says, so it stays safe to compare against in code."
+													"description": "Display name of the affliction, translated in place when lang is set (Tai Sui in English, 太岁 under zh-Hans). Display copy, never a comparison key: branch on id instead."
 												},
 												"chinese": {
 													"type": "string",
@@ -3679,7 +3696,7 @@
 															"name": {
 																"type": "string",
 																"example": "Disaster Sha",
-																"description": "Display name of the part. Always English, whatever the lang parameter says."
+																"description": "Display name of the part, translated in place when lang is set. Display copy, never a comparison key: branch on id instead."
 															},
 															"chinese": {
 																"type": "string",
@@ -3771,6 +3788,7 @@
 												}
 											},
 											"required": [
+												"id",
 												"name",
 												"chinese",
 												"pinyin",
@@ -3787,10 +3805,15 @@
 										"fiveYellow": {
 											"type": "object",
 											"properties": {
+												"id": {
+													"type": "string",
+													"example": "fiveYellow",
+													"description": "Stable machine key for the affliction: taiSui, suiPo, sanSha or fiveYellow. Always English, identical in every language, and the field to branch on. Use this rather than name, which is display copy and does translate."
+												},
 												"name": {
 													"type": "string",
 													"example": "Five Yellow",
-													"description": "Display name of the affliction. Always English, whatever the lang parameter says, so it stays safe to compare against in code."
+													"description": "Display name of the affliction, translated in place when lang is set (Tai Sui in English, 太岁 under zh-Hans). Display copy, never a comparison key: branch on id instead."
 												},
 												"chinese": {
 													"type": "string",
@@ -3824,6 +3847,7 @@
 												}
 											},
 											"required": [
+												"id",
 												"name",
 												"chinese",
 												"pinyin",
