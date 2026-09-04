@@ -20,3 +20,6 @@ pre-push:
     sync-dry-run:
       run: bun run sync --dry-run
       priority: 3
+    test:
+      run: bun test
+      priority: 4

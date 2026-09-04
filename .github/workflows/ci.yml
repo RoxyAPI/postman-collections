@@ -24,5 +24,8 @@ jobs:
       - name: Typecheck
         run: bun typecheck
 
+      - name: Test
+        run: bun test
+
       - name: Validate discovery and conversion (no Postman writes)
         run: bun run sync --dry-run

@@ -6,7 +6,7 @@
  *
  * Pipeline per run:
  *  1. Discover domains: read the combined spec, take every distinct first path segment, keep the ones that serve their own per-domain spec (a 200 at `/api/v2/{slug}/openapi.json`). App utility routes (languages, usage) return 401 and drop out, so no exclusion list is needed.
- *  2. Change-gate: compare the canonical `{ paths, components }` of each live per-domain spec against the vendored baseline in `specs/{slug}.json`. Unchanged and already-published domains are skipped (zero Postman writes).
+ *  2. Change-gate: compare the canonical `{ paths, components, info }` of each live per-domain spec against the vendored baseline in `specs/{slug}.json`, where `info` is only the slice openapi-to-postmanv2 actually reads (title, description, contact name/email; see `collectionInfo`). Unchanged and already-published domains are skipped (zero Postman writes).
  *  3. Build: rewrite the spec server to the absolute domain base so request URLs resolve correctly, convert with openapi-to-postmanv2, stamp a `roxySlug` provenance variable plus an empty `apiKey` so a forked collection is self-contained.
  *  4. Publish: resolve the existing collection UID (cache, then workspace name match), then PUT it; create + capture the UID when it does not exist yet.
  *  5. Persist: write `specs/{slug}.json` (next run's diff baseline), `collections/{slug}.json` (browsable artifact), and the auto-written `collections.json` UID cache. The workflow commits these back.
@@ -38,7 +38,13 @@ const COLLECTIONS_DIR = join(ROOT, 'collections');
 const CACHE_PATH = join(ROOT, 'collections.json');
 
 interface OpenAPISpec {
-	info: { title: string };
+	info: {
+		title: string;
+		description?: string;
+		version?: string;
+		contact?: { name?: string; email?: string; url?: string };
+		license?: unknown;
+	};
 	servers?: unknown[];
 	paths: Record<string, unknown>;
 	components?: Record<string, unknown>;
@@ -71,14 +77,14 @@ const PRUNE = args.has('--prune');
 const POSTMAN_API_KEY = process.env.POSTMAN_API_KEY;
 const DRY_RUN = args.has('--dry-run') || !POSTMAN_API_KEY;
 
-if (!POSTMAN_API_KEY && !args.has('--dry-run')) {
+if (import.meta.main && !POSTMAN_API_KEY && !args.has('--dry-run')) {
 	console.error(
 		'POSTMAN_API_KEY is not set. Export it to publish, or pass --dry-run to validate without writing.',
 	);
 	process.exit(1);
 }
 
-function canonical(value: unknown): unknown {
+export function canonical(value: unknown): unknown {
 	if (Array.isArray(value)) return value.map(canonical);
 	if (value && typeof value === 'object') {
 		const source = value as Record<string, unknown>;
@@ -90,10 +96,29 @@ function canonical(value: unknown): unknown {
 	return value;
 }
 
+/**
+ * The only `info` fields openapi-to-postmanv2 surfaces in the published collection: `title`
+ * becomes the collection name (`getCollectionName`), `description` plus `contact.name` /
+ * `contact.email` become its description (`getCollectionDescription`). `version`, `license`, and
+ * `contact.url` never reach the output, so they stay out of the fingerprint on purpose.
+ */
+export function collectionInfo(spec: OpenAPISpec): Record<string, unknown> {
+	return {
+		title: spec.info.title,
+		description: spec.info.description ?? '',
+		contactName: spec.info.contact?.name ?? null,
+		contactEmail: spec.info.contact?.email ?? null,
+	};
+}
+
 /** Stable fingerprint of the parts of a spec that affect the generated collection. */
-function fingerprint(spec: OpenAPISpec): string {
+export function fingerprint(spec: OpenAPISpec): string {
 	return JSON.stringify(
-		canonical({ paths: spec.paths, components: spec.components ?? null }),
+		canonical({
+			paths: spec.paths,
+			components: spec.components ?? null,
+			info: collectionInfo(spec),
+		}),
 	);
 }
 
@@ -320,4 +345,5 @@ async function main(): Promise<void> {
 	if (removed.length) console.log(`  pruned:    ${removed.join(', ')}`);
 }
 
-await main();
+// Guarded so tests can import fingerprint/canonical/collectionInfo without running the pipeline.
+if (import.meta.main) await main();
