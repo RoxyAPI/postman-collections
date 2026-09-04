@@ -3,7 +3,7 @@
 	"info": {
 		"title": "Vedic Astrology API",
 		"version": "2.0.0",
-		"description": "Vedic astrology (Jyotish) and KP API for kundli generation with 15 divisional charts (D1-D60), Ashtakoot Gun Milan kundli matching, Vimshottari Dasha predictions, dosha detection with remedies, a 301-entry planetary yoga glossary with 48 of them chart-detected and evidenced, complete Panchang, and KP horary with 249-level sub-lord analysis. Calculations verified against NASA JPL Horizons at arc-second-level accuracy. Built for matrimonial apps, horoscope platforms, spiritual wellness services, and AI-powered astrology chatbots. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 14 domains (Astrology, Vedic Astrology, Forecast, Human Design, Chinese Astrology, Feng Shui, Numerology, Tarot Reading, Biorhythm, I-Ching Oracle, Crystals and Healing Stones, Dream Interpretation, Angel Numbers, Location and Timezone), 209+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 209+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable and stable, so it is the one safe to switch on programmatically.\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`, `X-RateLimit-Reset` (Unix timestamp, seconds). Quotas reset on the 1st of every calendar month at 12:00 AM UTC, not on your renewal date.\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 per month for 50K requests, up to 3M requests, with custom volume above that.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n",
+		"description": "Vedic astrology (Jyotish) and KP API for kundli generation with 15 divisional charts (D1-D60), Ashtakoot Gun Milan kundli matching, Vimshottari Dasha predictions, dosha detection with remedies, a 301-entry planetary yoga glossary with 48 of them chart-detected and evidenced, complete Panchang, and KP horary with 249-level sub-lord analysis. Calculations verified against NASA JPL Horizons at arc-second-level accuracy. Built for matrimonial apps, horoscope platforms, spiritual wellness services, and AI-powered astrology chatbots. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 18 domains (Astrology, Vedic Astrology, Forecast, Human Design, Chinese Astrology, Feng Shui, Mesoamerican Astrology, Vastu Shastra, Numerology, Kabbalah, Tarot Reading, Biorhythm, Ayurveda, I-Ching Oracle, Crystals and Healing Stones, Dream Interpretation, Angel Numbers, Location and Timezone), 258+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 258+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable and stable, so it is the one safe to switch on programmatically.\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`, `X-RateLimit-Reset` (Unix timestamp, seconds). Quotas reset on the 1st of every calendar month at 12:00 AM UTC, not on your renewal date.\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 per month for 50K requests, up to 3M requests, with custom volume above that.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart): first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs): guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp): connect AI agents\n- [Open source templates](https://roxyapi.com/starters): clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq): common questions\n- [Contact](https://roxyapi.com/contact): support and API key recovery\n",
 		"contact": {
 			"name": "RoxyAPI Support",
 			"url": "https://roxyapi.com/contact"
@@ -1866,7 +1866,18 @@
 							"required": [
 								"rashi",
 								"nakshatra"
-							]
+							],
+							"example": {
+								"rashi": "Jupiter in Sagittarius (Dhanu) expresses through the energy of the Bow and Arrow. Respectful towards religion and spiritual matters, intelligent, excel in chosen subject, liberal attitude, fair",
+								"nakshatra": "Jupiter in Purva Ashadha nakshatra combines planetary energy with Apas (water deity) deity influence. These natives are confident, persuasive, and enthusiastic. They naturally inspire those around them."
+							},
+							"description": "The two composed readings for one graha: what its rashi placement says, and what its nakshatra placement says. Both are full sentences ready to render."
+						},
+						"example": {
+							"Jupiter": {
+								"rashi": "Jupiter in Sagittarius (Dhanu) expresses through the energy of the Bow and Arrow. Respectful towards religion and spiritual matters, intelligent, excel in chosen subject, liberal attitude, fair",
+								"nakshatra": "Jupiter in Purva Ashadha nakshatra combines planetary energy with Apas (water deity) deity influence. These natives are confident, persuasive, and enthusiastic. They naturally inspire those around them."
+							}
 						},
 						"description": "Planet-in-rashi and planet-in-nakshatra interpretation summaries, keyed by planet name. Translated when a supported lang is requested."
 					},
@@ -2135,7 +2146,42 @@
 								"longitude",
 								"nakshatra",
 								"isRetrograde"
-							]
+							],
+							"example": {
+								"graha": "Jupiter",
+								"rashi": "Sagittarius",
+								"longitude": 259.6848244496506,
+								"nakshatra": {
+									"name": "Purva Ashadha",
+									"pada": 2,
+									"key": 19,
+									"lord": "Venus"
+								},
+								"isRetrograde": false,
+								"house": 9,
+								"awastha": "Vriddha",
+								"jagradadi": "Jagrat",
+								"deeptadi": "Svastha"
+							},
+							"description": "One graha placement: rashi, sidereal longitude, nakshatra with pada and lord, whole-sign bhava, retrogression, and the Baladi, Jagradadi and Deeptadi avastha states."
+						},
+						"example": {
+							"Jupiter": {
+								"graha": "Jupiter",
+								"rashi": "Sagittarius",
+								"longitude": 259.6848244496506,
+								"nakshatra": {
+									"name": "Purva Ashadha",
+									"pada": 2,
+									"key": 19,
+									"lord": "Venus"
+								},
+								"isRetrograde": false,
+								"house": 9,
+								"awastha": "Vriddha",
+								"jagradadi": "Jagrat",
+								"deeptadi": "Svastha"
+							}
 						},
 						"description": "Quick lookup of all planet positions keyed by planet name. Contains Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu, Ketu, and Lagna (Ascendant)."
 					}
@@ -2367,7 +2413,36 @@
 										"longitude",
 										"nakshatra",
 										"isRetrograde"
-									]
+									],
+									"example": {
+										"graha": "Venus",
+										"rashi": "Libra",
+										"longitude": 302.0203951659894,
+										"nakshatra": {
+											"name": "Dhanishta",
+											"pada": 3,
+											"key": 22,
+											"lord": "Mars"
+										},
+										"isRetrograde": false,
+										"house": 1
+									},
+									"description": "One graha as the D9 chart places it: its Navamsa rashi and house, with the D1 longitude and nakshatra carried over so the two charts can be read side by side."
+								},
+								"example": {
+									"Venus": {
+										"graha": "Venus",
+										"rashi": "Libra",
+										"longitude": 302.0203951659894,
+										"nakshatra": {
+											"name": "Dhanishta",
+											"pada": 3,
+											"key": 22,
+											"lord": "Mars"
+										},
+										"isRetrograde": false,
+										"house": 1
+									}
 								},
 								"description": "Planet positions in the Navamsa (D9) chart keyed by planet name. Contains all 9 Navagraha plus Lagna."
 							},
@@ -2734,7 +2809,36 @@
 										"longitude",
 										"nakshatra",
 										"isRetrograde"
-									]
+									],
+									"example": {
+										"graha": "Jupiter",
+										"rashi": "Gemini",
+										"longitude": 259.6848244496506,
+										"nakshatra": {
+											"name": "Purva Ashadha",
+											"pada": 2,
+											"key": 19,
+											"lord": "Venus"
+										},
+										"isRetrograde": false,
+										"house": 11
+									},
+									"description": "One graha as the requested varga places it: the divisional rashi and house, with the D1 longitude and nakshatra carried over so a Vargottama check needs no second call."
+								},
+								"example": {
+									"Jupiter": {
+										"graha": "Jupiter",
+										"rashi": "Gemini",
+										"longitude": 259.6848244496506,
+										"nakshatra": {
+											"name": "Purva Ashadha",
+											"pada": 2,
+											"key": 19,
+											"lord": "Venus"
+										},
+										"isRetrograde": false,
+										"house": 11
+									}
 								},
 								"description": "Planet positions in the divisional chart keyed by planet name. Contains all 9 Navagraha plus Lagna."
 							},
@@ -3340,52 +3444,72 @@
 						"house",
 						"nakshatra",
 						"isRetrograde"
-					]
+					],
+					"example": {
+						"graha": "Sun",
+						"rashi": "Taurus",
+						"longitude": 30.549506246983867,
+						"latitude": -0.000012444336161568964,
+						"nakshatra": {
+							"anga": "nakshatra",
+							"key": 2,
+							"ratio": 0.2912129685237899,
+							"abhijit": false,
+							"left": 9.450493753016135,
+							"name": "Krittika",
+							"pada": 2,
+							"lord": "Sun",
+							"deity": "Agni (fire god)",
+							"symbol": "Razor or Blade",
+							"characteristics": "Krittika natives are known for their sharp intellect, courage, and independent nature. They possess a fiery determination and often stand out as leaders in their field."
+						},
+						"isRetrograde": false,
+						"house": 9,
+						"awastha": "Mrita",
+						"jagradadi": "Sushupti",
+						"deeptadi": "Dina",
+						"rashiDetails": {
+							"vedicName": "Vrishabha",
+							"symbol": "Bull",
+							"energy": "Aryaman Aditya",
+							"characteristics": "Value family, traditions, distinguished in nature"
+						}
+					},
+					"description": "Everything computed for one graha: its rashi and sidereal longitude, the nakshatra and pada it falls in, its Whole Sign house from the Lagna, retrogression, combustion where the question applies, and the Baladi avastha. Lagna carries the same shape as a planet."
 				},
 				"example": {
 					"Sun": {
 						"graha": "Sun",
-						"rashi": "Leo",
-						"longitude": 132.45,
-						"house": 5,
+						"rashi": "Taurus",
+						"longitude": 30.549506246983867,
+						"latitude": -0.000012444336161568964,
 						"nakshatra": {
-							"name": "Magha",
+							"anga": "nakshatra",
+							"key": 2,
+							"ratio": 0.2912129685237899,
+							"abhijit": false,
+							"left": 9.450493753016135,
+							"name": "Krittika",
 							"pada": 2,
-							"key": 9,
-							"deity": "Pitris (Ancestors)",
-							"symbol": "Royal Throne",
-							"characteristics": "Leadership, ancestral pride, regal nature"
+							"lord": "Sun",
+							"deity": "Agni (fire god)",
+							"symbol": "Razor or Blade",
+							"characteristics": "Krittika natives are known for their sharp intellect, courage, and independent nature. They possess a fiery determination and often stand out as leaders in their field."
 						},
+						"isRetrograde": false,
+						"house": 9,
+						"awastha": "Mrita",
+						"jagradadi": "Sushupti",
+						"deeptadi": "Dina",
 						"rashiDetails": {
-							"vedicName": "Simha",
-							"symbol": "Lion",
-							"energy": "Masculine, Fire",
-							"characteristics": "Natural leadership, confidence, creativity"
-						},
-						"isRetrograde": false
-					},
-					"Moon": {
-						"graha": "Moon",
-						"rashi": "Cancer",
-						"longitude": 98.32,
-						"house": 4,
-						"nakshatra": {
-							"name": "Punarvasu",
-							"pada": 4,
-							"key": 6,
-							"deity": "Aditi",
-							"symbol": "Bow and Quiver",
-							"characteristics": "Renewal, optimism, spiritual growth"
-						},
-						"rashiDetails": {
-							"vedicName": "Karka",
-							"symbol": "Crab",
-							"energy": "Feminine, Water",
-							"characteristics": "Nurturing, emotional depth, protective"
-						},
-						"isRetrograde": false
+							"vedicName": "Vrishabha",
+							"symbol": "Bull",
+							"energy": "Aryaman Aditya",
+							"characteristics": "Value family, traditions, distinguished in nature"
+						}
 					}
-				}
+				},
+				"description": "Every graha keyed by its English name: Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu, Ketu, plus Lagna for the Ascendant. Read a placement straight off the key you want, such as `response.Sun`, and iterate the keys to render a full navagraha table."
 			},
 			"PlanetaryPositionsRequest": {
 				"type": "object",
@@ -6424,7 +6548,34 @@
 											"subSublord",
 											"kpNumber",
 											"isRetrograde"
-										]
+										],
+										"example": {
+											"longitude": 270.7362,
+											"degreeInSign": 0.7362,
+											"sign": "Capricorn",
+											"signLord": "Saturn",
+											"nakshatra": "Uttara Ashadha",
+											"nakshatraLord": "Sun",
+											"sublord": "Rahu",
+											"subSublord": "Venus",
+											"kpNumber": 188,
+											"isRetrograde": false
+										},
+										"description": "The full KP hierarchy for one planet at this timestamp: sidereal longitude and rashi, sign lord, star lord, sublord and sub-sublord, and the 1 to 249 KP number that names the subdivision."
+									},
+									"example": {
+										"Sun": {
+											"longitude": 270.7362,
+											"degreeInSign": 0.7362,
+											"sign": "Capricorn",
+											"signLord": "Saturn",
+											"nakshatra": "Uttara Ashadha",
+											"nakshatraLord": "Sun",
+											"sublord": "Rahu",
+											"subSublord": "Venus",
+											"kpNumber": 188,
+											"isRetrograde": false
+										}
 									},
 									"description": "Planet positions keyed by planet name (Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu, Ketu)"
 								}
@@ -10778,7 +10929,7 @@
 										],
 										"default": "sidereal",
 										"example": "sidereal",
-										"description": "Coordinate system for longitude output. \"sidereal\" (Nirayana) uses Lahiri ayanamsa - standard for Vedic astrology. \"tropical\" (Sayana) uses raw ecliptic longitude matching Western astrology. Defaults to \"sidereal\"."
+										"description": "Coordinate system for longitude output. \"sidereal\" (Nirayana) uses Lahiri ayanamsa, the standard for Vedic astrology. \"tropical\" (Sayana) uses raw ecliptic longitude matching Western astrology. Defaults to \"sidereal\"."
 									}
 								}
 							}
@@ -12974,7 +13125,7 @@
 					"Vedic Astrology"
 				],
 				"summary": "Get all 9 Mahadasha periods (120-year cycle)",
-				"description": "Returns complete Vimshottari Dasha cycle starting from birth. Shows all major planetary periods from birth through 120 years.",
+				"description": "Returns the complete Vimshottari dasha cycle from birth, all 9 Mahadasha periods across the full 120 year span. Each period carries its ruling graha, exact start and end dates, and the houses it signifies, with the birth dasha balance and Moon nakshatra that anchor the sequence. This is the top level timeline a Vedic astrology report opens with, and the entry point for drilling into Antardasha and finer sub periods.",
 				"security": [
 					{
 						"apiKey": []
@@ -13688,7 +13839,7 @@
 					"Vedic Astrology"
 				],
 				"summary": "Get all Antardashas (sub-periods) for a specific Mahadasha",
-				"description": "Returns 9 Antardasha sub-periods within a Mahadasha. Each Mahadasha is divided into 9 proportional sub-periods.",
+				"description": "Returns the 9 Antardasha sub periods inside a chosen Mahadasha, each proportional to the Vimshottari years of its lord. Every period carries its ruling graha, exact start and end dates, and the houses it signifies, alongside the parent Mahadasha it sits in. Use it to narrow a multi year Mahadasha down to the months that matter for event prediction, muhurta selection, and dasha timeline UIs.",
 				"security": [
 					{
 						"apiKey": []
@@ -14599,7 +14750,7 @@
 					"Vedic Astrology"
 				],
 				"summary": "Get all Pratyantardashas (antara periods) for a Mahadasha and Antardasha",
-				"description": "Pratyantardasha calculator API. Returns the 9 Pratyantardasha (antara) periods inside a chosen Antardasha, the third level of the Vimshottari dasha hierarchy. Use it to drill from a Mahadasha into month level timing for event prediction, muhurta selection, and dasha timeline UIs. Each period is proportional to the Vimshottari years of its lord.",
+				"description": "Pratyantardasha calculator API for Vedic astrology. Returns the 9 Pratyantardasha (antara) periods inside a chosen Antardasha, the third level of the Vimshottari dasha hierarchy. Use it to drill from a Mahadasha into month level timing for event prediction, muhurta selection, and dasha timeline UIs. Each period is proportional to the Vimshottari years of its lord.",
 				"security": [
 					{
 						"apiKey": []
@@ -16640,7 +16791,7 @@
 					"Vedic Astrology"
 				],
 				"summary": "Get all Prana dashas for a Mahadasha, Antardasha, Pratyantardasha and Sookshma",
-				"description": "Prana dasha API. Returns the 9 Prana periods inside a chosen Sookshma dasha, the fifth and finest level of the Vimshottari dasha hierarchy. Completes the full vimshottari drill down from the 120-year cycle to hour level timing, typically 20 minutes to 4 days per period depending on the parent Mahadasha. Built for five column dasha drill down tables, muhurta selection, and pinpointing the trigger moment inside an event window already found at the Sookshma level.",
+				"description": "Prana dasha API for Vedic astrology. Returns the 9 Prana periods inside a chosen Sookshma dasha, the fifth and finest level of the Vimshottari dasha hierarchy. Completes the full vimshottari drill down from the 120-year cycle to hour level timing, typically 20 minutes to 4 days per period depending on the parent Mahadasha. Built for five column dasha drill down tables, muhurta selection, and pinpointing the trigger moment inside an event window already found at the Sookshma level.",
 				"security": [
 					{
 						"apiKey": []
@@ -23825,7 +23976,7 @@
 					"Vedic Astrology"
 				],
 				"summary": "Get KP-Newcomb ayanamsa - Dynamic daily calculation",
-				"description": "Get the KP-Newcomb (Krishnamurti) ayanamsa for any instant, computed continuously from Newcomb precession theory rather than looked up in a preset table, so it tracks the exact moment you ask for instead of the calendar year. Supply date alone for midnight UTC, or add time and timezone to pin a birth moment exactly. This is the precession offset subtracted from a tropical longitude to obtain the sidereal one, and it is what makes a KP chart reproduce the reference software your practitioners already use. Returns the same value every KP endpoint applies internally. KP Newcomb ayanamsa API, dynamic ayanamsa calculator, Krishnamurti ayanamsa today, current KP ayanamsa",
+				"description": "Get the KP-Newcomb (Krishnamurti) ayanamsa for any instant, computed continuously from Newcomb precession theory rather than looked up in a preset table, so it tracks the exact moment you ask for instead of the calendar year. Supply date alone for midnight UTC, or add time and timezone to pin a birth moment exactly. This is the precession offset subtracted from a tropical longitude to obtain the sidereal one, and it is what makes a KP chart reproduce the reference software your practitioners already use. Returns the same value every KP endpoint applies internally. Use it as a dynamic KP Newcomb ayanamsa calculator when you need the Krishnamurti ayanamsa for today, for a birth moment, or for any instant a chart is being rectified against.",
 				"security": [
 					{
 						"apiKey": []
@@ -24094,7 +24245,7 @@
 					"Vedic Astrology"
 				],
 				"summary": "Get KP planetary positions with sub-lords",
-				"description": "Get planetary positions with detailed KP star-lord and sub-lord calculations for precise event timing and significator analysis. Returns all 9 planets (Sun through Ketu) with nakshatra, star-lord, sub-lord, and KP horary numbers (1-249). Essential for KP astrology software, significator analysis, and event prediction. KP planet positions API, star lord sub lord calculator, KP significator API, Krishnamurti Paddhati planets",
+				"description": "Get planetary positions with detailed KP star-lord and sub-lord calculations for precise event timing and significator analysis. Returns all 9 planets (Sun through Ketu) with nakshatra, star-lord, sub-lord, and KP horary numbers (1-249). Essential for KP astrology software, significator analysis, and event prediction. Use it as a star lord and sub lord calculator wherever Krishnamurti Paddhati planet positions drive the reading.",
 				"security": [
 					{
 						"apiKey": []
@@ -24335,7 +24486,7 @@
 					"Vedic Astrology"
 				],
 				"summary": "Get KP Placidus house cusps with sub-lords",
-				"description": "Calculate unequal Placidus house cusps with ruling sign-lord, nakshatra-lord, and sub-lord for each cusp. Dynamic KP-Newcomb or custom ayanamsa support. Used in KP horary astrology, cusp sub-lord analysis, and birth chart rectification. Returns all 12 house cusps with KP sub-division details. SEO: Placidus house cusps API, KP cusp calculator, house cusps star sub lord, KP horary cusps",
+				"description": "Calculate unequal Placidus house cusps with ruling sign-lord, nakshatra-lord, and sub-lord for each cusp. Dynamic KP-Newcomb or custom ayanamsa support. Used in KP horary astrology, cusp sub-lord analysis, and birth chart rectification. Returns all 12 house cusps with KP sub-division details. Use it as a Placidus house cusp calculator that also carries the star lord and sub lord of each cusp, which is what Krishnamurti Paddhati horary work reads first.",
 				"security": [
 					{
 						"apiKey": []
@@ -24618,7 +24769,7 @@
 					"Vedic Astrology"
 				],
 				"summary": "Generate complete KP birth chart",
-				"description": "Generate authentic Krishnamurti Paddhati birth charts with Placidus house cusps, star-lord and sub-lord calculations. Supports custom ayanamsa and dynamic KP-Newcomb ayanamsa calculation. Returns complete chart with all 9 planets (Sun through Ketu), Ascendant, 12 Placidus house cusps, nakshatra details, star-lords, sub-lords, and KP horary numbers (1-249). Perfect for KP astrology software, horary prediction apps, and event timing analysis. SEO: KP astrology chart API, Placidus house cusps planets, Krishnamurti Paddhati chart generator, KP birth chart calculator",
+				"description": "Generate authentic Krishnamurti Paddhati birth charts with Placidus house cusps, star-lord and sub-lord calculations. Supports custom ayanamsa and dynamic KP-Newcomb ayanamsa calculation. Returns complete chart with all 9 planets (Sun through Ketu), Ascendant, 12 Placidus house cusps, nakshatra details, star-lords, sub-lords, and KP horary numbers (1-249). Perfect for KP astrology software, horary prediction apps, and event timing analysis. One call is a complete Krishnamurti Paddhati chart generator, returning the Placidus cusps and the planets with their sub lords together.",
 				"security": [
 					{
 						"apiKey": []
@@ -24901,7 +25052,7 @@
 					"Vedic Astrology"
 				],
 				"summary": "Get KP ruling planets with optional significators",
-				"description": "Calculate the 5 ruling planets at any moment using Krishnamurti Paddhati horary astrology. Returns Day Lord, Moon Sign/Star/Sub Lord, Lagna Sign/Star/Sub Lord. Optionally provide birth data (birthDate, birthTime) to include significators showing which houses each ruling planet signifies in the birth chart - essential for KP prediction.",
+				"description": "Calculate the 5 ruling planets at any moment using Krishnamurti Paddhati horary astrology. Returns Day Lord, Moon Sign/Star/Sub Lord, Lagna Sign/Star/Sub Lord. Optionally provide birth data (birthDate, birthTime) to include significators showing which houses each ruling planet signifies in the birth chart, which is essential for KP prediction.",
 				"security": [
 					{
 						"apiKey": []
@@ -26676,7 +26827,7 @@
 										],
 										"default": "sidereal",
 										"example": "sidereal",
-										"description": "Coordinate system for longitude output. \"sidereal\" (Nirayana) uses Lahiri ayanamsa - standard for Vedic astrology. \"tropical\" (Sayana) uses raw ecliptic longitude matching Western astrology. Defaults to \"sidereal\"."
+										"description": "Coordinate system for longitude output. \"sidereal\" (Nirayana) uses Lahiri ayanamsa, the standard for Vedic astrology. \"tropical\" (Sayana) uses raw ecliptic longitude matching Western astrology. Defaults to \"sidereal\"."
 									}
 								},
 								"required": [
@@ -27160,7 +27311,7 @@
 										],
 										"default": "sidereal",
 										"example": "sidereal",
-										"description": "Coordinate system for longitude output. \"sidereal\" (Nirayana) uses Lahiri ayanamsa - standard for Vedic astrology. \"tropical\" (Sayana) uses raw ecliptic longitude matching Western astrology. Defaults to \"sidereal\"."
+										"description": "Coordinate system for longitude output. \"sidereal\" (Nirayana) uses Lahiri ayanamsa, the standard for Vedic astrology. \"tropical\" (Sayana) uses raw ecliptic longitude matching Western astrology. Defaults to \"sidereal\"."
 									}
 								}
 							}
@@ -27572,7 +27723,7 @@
 										],
 										"default": "sidereal",
 										"example": "sidereal",
-										"description": "Coordinate system for longitude output. \"sidereal\" (Nirayana) uses Lahiri ayanamsa - standard for Vedic astrology. \"tropical\" (Sayana) uses raw ecliptic longitude matching Western astrology. Defaults to \"sidereal\"."
+										"description": "Coordinate system for longitude output. \"sidereal\" (Nirayana) uses Lahiri ayanamsa, the standard for Vedic astrology. \"tropical\" (Sayana) uses raw ecliptic longitude matching Western astrology. Defaults to \"sidereal\"."
 									}
 								}
 							}
@@ -27971,7 +28122,7 @@
 										],
 										"default": "sidereal",
 										"example": "sidereal",
-										"description": "Coordinate system for longitude output. \"sidereal\" (Nirayana) uses Lahiri ayanamsa - standard for Vedic astrology. \"tropical\" (Sayana) uses raw ecliptic longitude matching Western astrology. Defaults to \"sidereal\"."
+										"description": "Coordinate system for longitude output. \"sidereal\" (Nirayana) uses Lahiri ayanamsa, the standard for Vedic astrology. \"tropical\" (Sayana) uses raw ecliptic longitude matching Western astrology. Defaults to \"sidereal\"."
 									}
 								},
 								"required": [
@@ -28586,7 +28737,7 @@
 										],
 										"default": "sidereal",
 										"example": "sidereal",
-										"description": "Coordinate system for longitude output. \"sidereal\" (Nirayana) uses Lahiri ayanamsa - standard for Vedic astrology. \"tropical\" (Sayana) uses raw ecliptic longitude matching Western astrology. Defaults to \"sidereal\"."
+										"description": "Coordinate system for longitude output. \"sidereal\" (Nirayana) uses Lahiri ayanamsa, the standard for Vedic astrology. \"tropical\" (Sayana) uses raw ecliptic longitude matching Western astrology. Defaults to \"sidereal\"."
 									}
 								}
 							}
@@ -29776,7 +29927,7 @@
 										],
 										"default": "sidereal",
 										"example": "sidereal",
-										"description": "Coordinate system for longitude output. \"sidereal\" (Nirayana) uses Lahiri ayanamsa - standard for Vedic astrology. \"tropical\" (Sayana) uses raw ecliptic longitude matching Western astrology. Defaults to \"sidereal\"."
+										"description": "Coordinate system for longitude output. \"sidereal\" (Nirayana) uses Lahiri ayanamsa, the standard for Vedic astrology. \"tropical\" (Sayana) uses raw ecliptic longitude matching Western astrology. Defaults to \"sidereal\"."
 									}
 								},
 								"required": [
@@ -30911,7 +31062,7 @@
 					"Vedic Astrology"
 				],
 				"summary": "Get Nakshatra by ID - Lunar Mansion Detail",
-				"description": "Get detailed information for a single nakshatra (lunar mansion) by its ID slug. Returns name, zodiac range, ruling planet, presiding deity, symbol, personality characteristics, and traditional remedies including mantras, gemstones, and rituals.",
+				"description": "Get detailed information for a single nakshatra (lunar mansion) by its ID slug, one of the 27 nakshatras of Vedic astrology. Returns name, zodiac range, ruling planet, presiding deity, symbol, personality characteristics, and traditional remedies including mantras, gemstones, and rituals.",
 				"security": [
 					{
 						"apiKey": []
@@ -32300,7 +32451,7 @@
 					"Vedic Astrology"
 				],
 				"summary": "Get avastha by ID - Planetary State Detail",
-				"description": "Look up a single avastha state by its slug, which is the lowercased state name a birth chart returns in `awastha`, `jagradadi` or `deeptadi`. Returns the system it belongs to, a short label, and what the state means for the results the graha delivers.",
+				"description": "Look up a single avastha state by its slug, which is the lowercased state name a Vedic birth chart returns in `awastha`, `jagradadi` or `deeptadi`. Returns the system it belongs to, a short label, and what the state means for the results the graha delivers.",
 				"security": [
 					{
 						"apiKey": []

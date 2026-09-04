@@ -1,15 +1,15 @@
 {
 	"item": [
 		{
-			"id": "d55e1470-4d8f-491b-87d8-cdb0d2cbbca2",
+			"id": "1223c9fe-2db0-4641-9ad2-634994f9b83e",
 			"name": "Biorhythm",
 			"description": {
-				"content": "The most complete biorhythm API: 10 cycle types across 3 primary (physical, emotional, intellectual), 4 secondary (intuitive, aesthetic, awareness, spiritual), and 3 composite (passion, mastery, wisdom). Critical-day detection with severity classification, 90-day forecasts with best and worst days, two-person compatibility scoring, phase tracking for dashboards, and seeded daily readings for push notifications. 8 languages, deterministic results, and editorial-grade interpretations. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs. Ship a biorhythm feature in hours, not weeks.",
+				"content": "The most complete biorhythm API: 10 cycle types across 3 primary (physical, emotional, intellectual), 4 secondary (intuitive, aesthetic, awareness, spiritual), and 3 composite (passion, mastery, wisdom). Critical-day detection with severity classification, 90-day forecasts with best and worst days, two-person compatibility scoring, phase tracking for dashboards, and seeded daily readings for push notifications. Localized into every language this API ships, deterministic results, and editorial-grade interpretations. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs. Ship a biorhythm feature in hours, not weeks.",
 				"type": "text/plain"
 			},
 			"item": [
 				{
-					"id": "4dfa5fa2-cce4-42b9-8663-57666de95af4",
+					"id": "48011505-afef-415c-96ec-3461cc1791e5",
 					"name": "Get biorhythm reading - Complete cycle analysis for any date",
 					"request": {
 						"name": "Get biorhythm reading - Complete cycle analysis for any date",
@@ -74,7 +74,7 @@
 					},
 					"response": [
 						{
-							"id": "c7898e73-5c6a-4303-9ef0-38351a536584",
+							"id": "eee3f092-0137-4142-a35c-d692f0bd6407",
 							"name": "Complete biorhythm reading with all 10 cycles, energy rating, interpretation, and critical alerts",
 							"originalRequest": {
 								"url": {
@@ -125,12 +125,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"birthDate\": \"1990-07-15\",\n  \"targetDate\": \"2026-04-10\",\n  \"daysSinceBirth\": 13049,\n  \"cycles\": {\n    \"key_0\": {\n      \"value\": 74,\n      \"rawValue\": 0.74,\n      \"phase\": \"high\",\n      \"phaseLabel\": \"High Energy\",\n      \"dayInCycle\": 8,\n      \"daysUntilPeak\": 3,\n      \"daysUntilTrough\": 14,\n      \"daysUntilCritical\": 9,\n      \"trend\": \"rising\",\n      \"interpretation\": \"Your physical energy is strong and building. Endurance and coordination are above average. Good conditions for exercise, physical projects, and activities requiring sustained effort.\"\n    }\n  },\n  \"energyRating\": 7,\n  \"overallPhase\": \"high_energy\",\n  \"interpretation\": \"Your physical energy is strong and building. Endurance and coordination are above average. Good conditions for exercise, physical projects, and activities requiring sustained effort. Your emotional energy is also elevated, supporting your overall capacity.\",\n  \"advice\": \"Tackle physically demanding tasks while your energy remains elevated.\",\n  \"criticalAlerts\": [\n    {\n      \"cycle\": \"physical\",\n      \"type\": \"zero_crossing\",\n      \"direction\": \"ascending\",\n      \"advisory\": \"physical cycle crosses zero while ascending. Transition from recovery to active phase.\"\n    },\n    {\n      \"cycle\": \"physical\",\n      \"type\": \"zero_crossing\",\n      \"direction\": \"ascending\",\n      \"advisory\": \"physical cycle crosses zero while ascending. Transition from recovery to active phase.\"\n    }\n  ]\n}",
+							"body": "{\n  \"birthDate\": \"1990-07-15\",\n  \"targetDate\": \"2026-04-10\",\n  \"daysSinceBirth\": 13049,\n  \"cycles\": {\n    \"physical\": {\n      \"value\": -14,\n      \"rawValue\": -0.1362,\n      \"phase\": \"falling\",\n      \"phaseLabel\": \"Falling\",\n      \"dayInCycle\": 13,\n      \"daysUntilPeak\": 17,\n      \"daysUntilTrough\": 5,\n      \"daysUntilCritical\": 11,\n      \"trend\": \"falling\",\n      \"interpretation\": \"Your physical energy is declining. Endurance and strength are decreasing, and fatigue may set in more quickly than usual. This is a natural part of the cycle.\"\n    }\n  },\n  \"energyRating\": 7,\n  \"overallPhase\": \"high_energy\",\n  \"interpretation\": \"Your physical energy is strong and building. Endurance and coordination are above average. Good conditions for exercise, physical projects, and activities requiring sustained effort. Your emotional energy is also elevated, supporting your overall capacity.\",\n  \"advice\": \"Tackle physically demanding tasks while your energy remains elevated.\",\n  \"criticalAlerts\": [\n    {\n      \"cycle\": \"physical\",\n      \"type\": \"zero_crossing\",\n      \"direction\": \"ascending\",\n      \"advisory\": \"physical cycle crosses zero while ascending. Transition from recovery to active phase.\"\n    },\n    {\n      \"cycle\": \"physical\",\n      \"type\": \"zero_crossing\",\n      \"direction\": \"ascending\",\n      \"advisory\": \"physical cycle crosses zero while ascending. Transition from recovery to active phase.\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "17ca4dbd-b642-49bf-bfc9-f6efb7730059",
+							"id": "dc41b1fb-5e65-44e4-9946-860a5595722e",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -181,12 +181,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7118.036721171404,\n      \"maximum\": 4484.939747049594,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3921.7132772954856,\n      \"maximum\": 5600.349900525695,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3530.7936173511266,\n      \"maximum\": 8440.942460209551,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2740.744564374421,\n      \"maximum\": 8558.332255329376,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "50586542-c8b6-44ae-a4e3-2435096f2a95",
+							"id": "7b6083cd-2034-431d-a6d9-754a16ff626e",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -242,7 +242,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b5946614-c658-42d9-9d1b-42a15bd41a70",
+							"id": "de6d3cb5-4193-4632-a168-7330b330bb88",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -304,7 +304,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "12a32e66-75f0-43b3-9f1a-a39e6485ade9",
+							"id": "6c2367bf-30cc-4da8-a4fb-d99b4e87b922",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -360,7 +360,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "83f675f1-77bc-4e3c-a63a-cfd73b51b7c5",
+							"id": "1f3622cd-1d87-4b7d-a4a2-ea1f2bb176a1",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -422,7 +422,7 @@
 					}
 				},
 				{
-					"id": "cc6182a2-41f5-41e3-bafc-68c0315af6b9",
+					"id": "d4804fb6-965f-4497-9bbc-163f8a7de047",
 					"name": "Get biorhythm forecast - Multi-day cycle predictions with best and worst days",
 					"request": {
 						"name": "Get biorhythm forecast - Multi-day cycle predictions with best and worst days",
@@ -487,7 +487,7 @@
 					},
 					"response": [
 						{
-							"id": "b0a46d1e-b69a-4d07-9afc-52ca076e94cd",
+							"id": "be28ad93-fa1b-4b6e-a640-2af296de5bac",
 							"name": "Biorhythm forecast with daily readings, summary, and best/worst day identification",
 							"originalRequest": {
 								"url": {
@@ -543,7 +543,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "38067ae4-a499-4afd-89cc-6539f7f2071d",
+							"id": "38fa8cac-dab2-4139-916f-2bdcc8890ff0",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -594,12 +594,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7118.036721171404,\n      \"maximum\": 4484.939747049594,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3921.7132772954856,\n      \"maximum\": 5600.349900525695,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3530.7936173511266,\n      \"maximum\": 8440.942460209551,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2740.744564374421,\n      \"maximum\": 8558.332255329376,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "cf3eb4c5-346f-4b8a-8778-69ecf4f15b92",
+							"id": "b5acd1ab-7517-4ecd-88ad-ff9777e25fee",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -655,7 +655,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "fd554f9b-b41b-4ecc-a144-acc3161720cd",
+							"id": "f3c6d4b0-fd67-4c4c-86f0-15f8ba055614",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -717,7 +717,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0779970c-70c3-4c69-b14f-2b1bdb4b3438",
+							"id": "ed629f5e-8bfc-4855-80fb-930930330410",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -773,7 +773,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b698fc12-c3b9-4c4a-a3fb-5ed5030c3643",
+							"id": "2dedaa07-c8f2-4af8-81c7-28e9bd1bb9d9",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -835,7 +835,7 @@
 					}
 				},
 				{
-					"id": "fb3d4b13-415f-4c42-994c-a986baf0fa51",
+					"id": "03c491c5-9562-43f0-a489-3b3c20a86c6e",
 					"name": "Find critical days - Zero crossing detection for any date range",
 					"request": {
 						"name": "Find critical days - Zero crossing detection for any date range",
@@ -900,7 +900,7 @@
 					},
 					"response": [
 						{
-							"id": "68b2921f-1447-407a-ac8e-de72bcaf7a8e",
+							"id": "9eac4cd2-e984-442e-971d-479ebc70b104",
 							"name": "Critical days with zero crossing details, severity levels, and advisory text",
 							"originalRequest": {
 								"url": {
@@ -956,7 +956,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3089c3b4-7df2-46e9-9ab8-11a36caed776",
+							"id": "3454198e-37ff-456e-82ef-afcb8e65826e",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1007,12 +1007,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7118.036721171404,\n      \"maximum\": 4484.939747049594,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3921.7132772954856,\n      \"maximum\": 5600.349900525695,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3530.7936173511266,\n      \"maximum\": 8440.942460209551,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2740.744564374421,\n      \"maximum\": 8558.332255329376,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "633ef2fb-abfd-449e-8557-b8d0c5734f0f",
+							"id": "506a7d13-8be8-4110-8f81-4834f36889d0",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1068,7 +1068,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1974d384-ad02-4f0b-9d50-0924007f21a8",
+							"id": "f4ccc3fc-3746-4628-a113-44e673d95ac4",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1130,7 +1130,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7d779cc1-9add-4d25-9b7f-173e3e0c1f17",
+							"id": "1e2ad70a-f4d0-4d5a-b34e-18c1c9fdf2fe",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1186,7 +1186,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ef4cf504-584f-4f11-98d3-4761c7b041d1",
+							"id": "1f13ce6c-56d9-4eb6-a6d9-705a7cc20349",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1248,7 +1248,7 @@
 					}
 				},
 				{
-					"id": "38c5ae28-e149-4527-861c-d120eacc870c",
+					"id": "8560271a-1a3c-4577-a3e3-c4235c4965dd",
 					"name": "Calculate compatibility - Biorhythm alignment between two people",
 					"request": {
 						"name": "Calculate compatibility - Biorhythm alignment between two people",
@@ -1313,7 +1313,7 @@
 					},
 					"response": [
 						{
-							"id": "966b5b04-0587-4f57-9936-3af189d1773f",
+							"id": "71cce2da-1261-457b-805b-1b8fc4ad695e",
 							"name": "Biorhythm compatibility analysis with per-cycle alignment, overall score, and relationship guidance",
 							"originalRequest": {
 								"url": {
@@ -1364,12 +1364,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"person1\": {\n    \"birthDate\": \"1990-07-15\"\n  },\n  \"person2\": {\n    \"birthDate\": \"1992-03-22\"\n  },\n  \"targetDate\": \"2026-04-10\",\n  \"overallScore\": 72,\n  \"rating\": \"Well Aligned\",\n  \"cycles\": {\n    \"key_0\": {\n      \"person1Value\": 74,\n      \"person2Value\": 55,\n      \"difference\": 19,\n      \"alignment\": 90,\n      \"phase\": \"in_sync\",\n      \"description\": \"Both partners share similar physical energy levels. Shared activities, exercise, and daily rhythms align naturally.\"\n    }\n  },\n  \"strengths\": [\n    \"Good overall energy match with healthy variation\",\n    \"Complementary differences prevent stagnation\",\n    \"Strong alignment in at least two primary cycles\"\n  ],\n  \"challenges\": [\n    \"One cycle may be out of sync, requiring awareness\",\n    \"Minor timing differences in energy peaks and valleys\"\n  ],\n  \"advice\": \"Your cycles are well matched today. Lean into the aligned areas and be patient with the one dimension that may differ. Small adjustments keep your connection smooth.\",\n  \"dailySync\": {\n    \"physicalDiff\": 19,\n    \"emotionalDiff\": 45,\n    \"intellectualDiff\": 12\n  }\n}",
+							"body": "{\n  \"person1\": {\n    \"birthDate\": \"1990-07-15\"\n  },\n  \"person2\": {\n    \"birthDate\": \"1992-03-22\"\n  },\n  \"targetDate\": \"2026-04-10\",\n  \"overallScore\": 72,\n  \"rating\": \"Well Aligned\",\n  \"cycles\": {\n    \"physical\": {\n      \"person1Value\": -14,\n      \"person2Value\": -100,\n      \"difference\": 86,\n      \"alignment\": 57,\n      \"phase\": \"complementary\",\n      \"description\": \"Physical energy levels complement each other well. Minor differences in pace create healthy balance.\"\n    }\n  },\n  \"strengths\": [\n    \"Good overall energy match with healthy variation\",\n    \"Complementary differences prevent stagnation\",\n    \"Strong alignment in at least two primary cycles\"\n  ],\n  \"challenges\": [\n    \"One cycle may be out of sync, requiring awareness\",\n    \"Minor timing differences in energy peaks and valleys\"\n  ],\n  \"advice\": \"Your cycles are well matched today. Lean into the aligned areas and be patient with the one dimension that may differ. Small adjustments keep your connection smooth.\",\n  \"dailySync\": {\n    \"physicalDiff\": 19,\n    \"emotionalDiff\": 45,\n    \"intellectualDiff\": 12\n  }\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "542b81a8-228d-4002-a19b-8ca34fb23137",
+							"id": "994b63ca-e646-4a3b-a48e-2c42eb9e95b4",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1420,12 +1420,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7118.036721171404,\n      \"maximum\": 4484.939747049594,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3921.7132772954856,\n      \"maximum\": 5600.349900525695,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3530.7936173511266,\n      \"maximum\": 8440.942460209551,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2740.744564374421,\n      \"maximum\": 8558.332255329376,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "86af6dfb-dc33-4951-a8ac-3a4d2f8fd1bd",
+							"id": "11f5a3d5-80ca-492a-a014-968bf650d479",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1481,7 +1481,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5c9bc113-4489-48f1-bfd5-ffe6e5a192a9",
+							"id": "9bea18bb-89f9-4125-b26f-a0ef8dfd0030",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1543,7 +1543,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ee6c2880-192d-4d6b-847b-58fa077d8b88",
+							"id": "4f3171b0-03b9-47aa-a4d8-6a037f4281f1",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1599,7 +1599,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "26fac774-b319-4e9d-92ab-5362e131c51c",
+							"id": "14ee97bf-35cd-4556-b07e-949680d404de",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1661,7 +1661,7 @@
 					}
 				},
 				{
-					"id": "ebebffed-26e4-4c1d-931e-e601ccd2ca4d",
+					"id": "30b054ea-1394-4f43-b3c9-3d10b0cbeb6e",
 					"name": "Get phase info - Lightweight cycle status for dashboards and widgets",
 					"request": {
 						"name": "Get phase info - Lightweight cycle status for dashboards and widgets",
@@ -1726,7 +1726,7 @@
 					},
 					"response": [
 						{
-							"id": "f34329a8-be88-48b9-892d-bfcd2155fee9",
+							"id": "ab1ef2fd-9fec-4f87-b674-c793f8fb62c0",
 							"name": "Phase information for all 10 cycles with summary",
 							"originalRequest": {
 								"url": {
@@ -1777,12 +1777,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"birthDate\": \"1990-07-15\",\n  \"targetDate\": \"2026-04-10\",\n  \"daysSinceBirth\": 13049,\n  \"phases\": {\n    \"key_0\": {\n      \"value\": 74,\n      \"phase\": \"high\",\n      \"phaseLabel\": \"High Energy\",\n      \"dayInCycle\": 8,\n      \"totalDays\": 23,\n      \"daysUntilCritical\": 9,\n      \"trend\": \"rising\"\n    },\n    \"key_1\": {\n      \"value\": 74,\n      \"phase\": \"high\",\n      \"phaseLabel\": \"High Energy\",\n      \"dayInCycle\": 8,\n      \"totalDays\": 23,\n      \"daysUntilCritical\": 9,\n      \"trend\": \"rising\"\n    },\n    \"key_2\": {\n      \"value\": 74,\n      \"phase\": \"high\",\n      \"phaseLabel\": \"High Energy\",\n      \"dayInCycle\": 8,\n      \"totalDays\": 23,\n      \"daysUntilCritical\": 9,\n      \"trend\": \"rising\"\n    }\n  },\n  \"summary\": \"3 cycles rising, 2 at peak, 1 critical\"\n}",
+							"body": "{\n  \"birthDate\": \"1990-07-15\",\n  \"targetDate\": \"2026-04-10\",\n  \"daysSinceBirth\": 13049,\n  \"phases\": {\n    \"physical\": {\n      \"value\": -14,\n      \"phase\": \"falling\",\n      \"phaseLabel\": \"Falling\",\n      \"dayInCycle\": 13,\n      \"totalDays\": 23,\n      \"daysUntilCritical\": 11,\n      \"trend\": \"falling\"\n    }\n  },\n  \"summary\": \"3 cycles rising, 2 at peak, 1 critical\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f0ff4796-a2f8-44af-b934-fadb4d312aee",
+							"id": "ad5c78b5-6c82-412f-af60-05e34e2f7100",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1833,12 +1833,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7118.036721171404,\n      \"maximum\": 4484.939747049594,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3921.7132772954856,\n      \"maximum\": 5600.349900525695,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3530.7936173511266,\n      \"maximum\": 8440.942460209551,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2740.744564374421,\n      \"maximum\": 8558.332255329376,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "488e2f5b-0454-4508-aea7-7d62f1b25dbd",
+							"id": "5148e594-d686-4d8a-92c7-da13851e9eeb",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1894,7 +1894,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c9af4fef-52b3-4ba1-af3e-006932e36562",
+							"id": "f79bfcd4-2c5a-4b50-8e7c-afbc1d3ec0df",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1956,7 +1956,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0f5b2153-b66f-4a84-b8ff-67bae06720a0",
+							"id": "c1572150-6738-40a8-9888-610244387e39",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2012,7 +2012,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "90071fc2-c072-4295-a6ad-40eef360538a",
+							"id": "61ff9a98-aa17-4f59-93b6-e535a8ab8679",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2074,7 +2074,7 @@
 					}
 				},
 				{
-					"id": "ddd9c02c-a50a-4b62-86e3-dd7111080247",
+					"id": "41f000e7-f419-474e-90f3-8bcf2d51ab99",
 					"name": "Get daily biorhythm - Seeded reading for daily check-in features",
 					"request": {
 						"name": "Get daily biorhythm - Seeded reading for daily check-in features",
@@ -2139,7 +2139,7 @@
 					},
 					"response": [
 						{
-							"id": "8ba5bc92-12db-4dda-8ba6-c686a569437b",
+							"id": "04e2134e-559d-44cb-a2ec-9f11b22b4118",
 							"name": "Daily biorhythm reading with spotlight cycle and actionable guidance",
 							"originalRequest": {
 								"url": {
@@ -2195,7 +2195,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "80744b0d-23e9-4c63-be00-ecb1e4b3fce9",
+							"id": "af305f76-37fa-45c9-b7fe-c651bbc0f0db",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2246,12 +2246,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7118.036721171404,\n      \"maximum\": 4484.939747049594,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3921.7132772954856,\n      \"maximum\": 5600.349900525695,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3530.7936173511266,\n      \"maximum\": 8440.942460209551,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2740.744564374421,\n      \"maximum\": 8558.332255329376,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "350edd5e-e883-463b-9191-5107e287c477",
+							"id": "1778d5fb-5679-4cbe-8212-3a6a5620ef28",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2307,7 +2307,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7ed9c98b-3739-4ecf-a37c-caa09d1106b0",
+							"id": "feebf36f-75e0-4403-9f74-e7e99ee561ec",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2369,7 +2369,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1f32d11a-88e6-461d-85eb-9a6b2db6b448",
+							"id": "51f8bfbd-5e91-4996-9491-9288e44eb180",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2425,7 +2425,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "125f245d-3bf6-48ec-babc-512421269511",
+							"id": "c54cd467-8d3e-4606-b2b1-dbbc5616f13c",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2526,11 +2526,11 @@
 		]
 	},
 	"info": {
-		"_postman_id": "95bccfc0-a3b9-4686-a137-e50b954455ff",
+		"_postman_id": "29180e69-8673-4676-bb37-7c892bdee39a",
 		"name": "Biorhythm API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"description": {
-			"content": "The most complete biorhythm API: 10 cycle types across 3 primary (physical, emotional, intellectual), 4 secondary (intuitive, aesthetic, awareness, spiritual), and 3 composite (passion, mastery, wisdom). Critical-day detection with severity classification, 90-day forecasts with best and worst days, two-person compatibility scoring, phase tracking for dashboards, and seeded daily readings for push notifications. 8 languages, deterministic results, and editorial-grade interpretations. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs. Ship a biorhythm feature in hours, not weeks.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 14 domains (Astrology, Vedic Astrology, Forecast, Human Design, Chinese Astrology, Feng Shui, Numerology, Tarot Reading, Biorhythm, I-Ching Oracle, Crystals and Healing Stones, Dream Interpretation, Angel Numbers, Location and Timezone), 209+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 209+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable and stable, so it is the one safe to switch on programmatically.\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`, `X-RateLimit-Reset` (Unix timestamp, seconds). Quotas reset on the 1st of every calendar month at 12:00 AM UTC, not on your renewal date.\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 per month for 50K requests, up to 3M requests, with custom volume above that.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
+			"content": "The most complete biorhythm API: 10 cycle types across 3 primary (physical, emotional, intellectual), 4 secondary (intuitive, aesthetic, awareness, spiritual), and 3 composite (passion, mastery, wisdom). Critical-day detection with severity classification, 90-day forecasts with best and worst days, two-person compatibility scoring, phase tracking for dashboards, and seeded daily readings for push notifications. Localized into every language this API ships, deterministic results, and editorial-grade interpretations. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs. Ship a biorhythm feature in hours, not weeks.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 18 domains (Astrology, Vedic Astrology, Forecast, Human Design, Chinese Astrology, Feng Shui, Mesoamerican Astrology, Vastu Shastra, Numerology, Kabbalah, Tarot Reading, Biorhythm, Ayurveda, I-Ching Oracle, Crystals and Healing Stones, Dream Interpretation, Angel Numbers, Location and Timezone), 258+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 258+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable and stable, so it is the one safe to switch on programmatically.\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`, `X-RateLimit-Reset` (Unix timestamp, seconds). Quotas reset on the 1st of every calendar month at 12:00 AM UTC, not on your renewal date.\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 per month for 50K requests, up to 3M requests, with custom volume above that.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart): first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs): guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp): connect AI agents\n- [Open source templates](https://roxyapi.com/starters): clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq): common questions\n- [Contact](https://roxyapi.com/contact): support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
 			"type": "text/plain"
 		}
 	}

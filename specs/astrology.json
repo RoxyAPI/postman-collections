@@ -3,7 +3,7 @@
 	"info": {
 		"title": "Astrology API",
 		"version": "2.0.0",
-		"description": "Western astrology API for natal birth charts, daily, weekly, monthly, and yearly horoscopes with unique content per sign and the dated sky events behind every reading, synastry compatibility scores, composite charts, solar and lunar returns, real-time transit aspects, and moon phases. 4 house systems (Placidus, Koch, Whole Sign, Equal) with accurate tropical ephemeris, aspect-pattern detection (Grand Trine, T-Square, Yod), astrocartography planetary lines, relocation charts, and local space maps for location based astrology, plus classical and professional points like fixed star conjunctions, Arabic lots, the asteroid goddesses (Ceres, Pallas, Juno, Vesta), mean and true Black Moon Lilith, and timing techniques like secondary progressions, solar arc directions, and annual profections. Built for horoscope platforms, astrology dating apps, AI chatbots, wellness products, and zodiac content engines. Schedule future horoscopes by date or by year for editorial workflows, no astronomy expertise needed. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 14 domains (Astrology, Vedic Astrology, Forecast, Human Design, Chinese Astrology, Feng Shui, Numerology, Tarot Reading, Biorhythm, I-Ching Oracle, Crystals and Healing Stones, Dream Interpretation, Angel Numbers, Location and Timezone), 210+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 210+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable and stable, so it is the one safe to switch on programmatically.\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`, `X-RateLimit-Reset` (Unix timestamp, seconds). Quotas reset on the 1st of every calendar month at 12:00 AM UTC, not on your renewal date.\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 per month for 50K requests, up to 3M requests, with custom volume above that.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n",
+		"description": "Western astrology API for natal birth charts, daily, weekly, monthly, and yearly horoscopes with unique content per sign and the dated sky events behind every reading, synastry compatibility scores, composite charts, solar and lunar returns, real-time transit aspects, and moon phases. 4 house systems (Placidus, Koch, Whole Sign, Equal) with accurate tropical ephemeris, aspect-pattern detection (Grand Trine, T-Square, Yod), astrocartography planetary lines, relocation charts, and local space maps for location based astrology, plus classical and professional points like fixed star conjunctions, Arabic lots, the asteroid goddesses (Ceres, Pallas, Juno, Vesta), mean and true Black Moon Lilith, and timing techniques like secondary progressions, solar arc directions, and annual profections. Built for horoscope platforms, astrology dating apps, AI chatbots, wellness products, and zodiac content engines. Schedule future horoscopes by date or by year for editorial workflows, no astronomy expertise needed. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 18 domains (Astrology, Vedic Astrology, Forecast, Human Design, Chinese Astrology, Feng Shui, Mesoamerican Astrology, Vastu Shastra, Numerology, Kabbalah, Tarot Reading, Biorhythm, Ayurveda, I-Ching Oracle, Crystals and Healing Stones, Dream Interpretation, Angel Numbers, Location and Timezone), 258+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 258+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable and stable, so it is the one safe to switch on programmatically.\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`, `X-RateLimit-Reset` (Unix timestamp, seconds). Quotas reset on the 1st of every calendar month at 12:00 AM UTC, not on your renewal date.\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 per month for 50K requests, up to 3M requests, with custom volume above that.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart): first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs): guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp): connect AI agents\n- [Open source templates](https://roxyapi.com/starters): clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq): common questions\n- [Contact](https://roxyapi.com/contact): support and API key recovery\n",
 		"contact": {
 			"name": "RoxyAPI Support",
 			"url": "https://roxyapi.com/contact"
@@ -993,9 +993,164 @@
 							},
 							"required": [
 								"houses"
-							]
+							],
+							"example": {
+								"houses": [
+									{
+										"number": 1,
+										"longitude": 210,
+										"sign": "Scorpio",
+										"degree": 0
+									},
+									{
+										"number": 2,
+										"longitude": 240,
+										"sign": "Sagittarius",
+										"degree": 0
+									},
+									{
+										"number": 3,
+										"longitude": 270,
+										"sign": "Capricorn",
+										"degree": 0
+									},
+									{
+										"number": 4,
+										"longitude": 300,
+										"sign": "Aquarius",
+										"degree": 0
+									},
+									{
+										"number": 5,
+										"longitude": 330,
+										"sign": "Pisces",
+										"degree": 0
+									},
+									{
+										"number": 6,
+										"longitude": 0,
+										"sign": "Aries",
+										"degree": 0
+									},
+									{
+										"number": 7,
+										"longitude": 30,
+										"sign": "Taurus",
+										"degree": 0
+									},
+									{
+										"number": 8,
+										"longitude": 60,
+										"sign": "Gemini",
+										"degree": 0
+									},
+									{
+										"number": 9,
+										"longitude": 90,
+										"sign": "Cancer",
+										"degree": 0
+									},
+									{
+										"number": 10,
+										"longitude": 120,
+										"sign": "Leo",
+										"degree": 0
+									},
+									{
+										"number": 11,
+										"longitude": 150,
+										"sign": "Virgo",
+										"degree": 0
+									},
+									{
+										"number": 12,
+										"longitude": 180,
+										"sign": "Libra",
+										"degree": 0
+									}
+								]
+							},
+							"description": "The twelve cusps under the one house system this key names, in the same shape as the top level houses array, so a caller can render any system through the same component."
 						},
-						"description": "Side-by-side house cusp comparison across all four systems (Placidus, Whole Sign, Equal, Koch). Only included when houseSystem is set to \"all\". Useful for educational tools and system comparison."
+						"example": {
+							"whole-sign": {
+								"houses": [
+									{
+										"number": 1,
+										"longitude": 210,
+										"sign": "Scorpio",
+										"degree": 0
+									},
+									{
+										"number": 2,
+										"longitude": 240,
+										"sign": "Sagittarius",
+										"degree": 0
+									},
+									{
+										"number": 3,
+										"longitude": 270,
+										"sign": "Capricorn",
+										"degree": 0
+									},
+									{
+										"number": 4,
+										"longitude": 300,
+										"sign": "Aquarius",
+										"degree": 0
+									},
+									{
+										"number": 5,
+										"longitude": 330,
+										"sign": "Pisces",
+										"degree": 0
+									},
+									{
+										"number": 6,
+										"longitude": 0,
+										"sign": "Aries",
+										"degree": 0
+									},
+									{
+										"number": 7,
+										"longitude": 30,
+										"sign": "Taurus",
+										"degree": 0
+									},
+									{
+										"number": 8,
+										"longitude": 60,
+										"sign": "Gemini",
+										"degree": 0
+									},
+									{
+										"number": 9,
+										"longitude": 90,
+										"sign": "Cancer",
+										"degree": 0
+									},
+									{
+										"number": 10,
+										"longitude": 120,
+										"sign": "Leo",
+										"degree": 0
+									},
+									{
+										"number": 11,
+										"longitude": 150,
+										"sign": "Virgo",
+										"degree": 0
+									},
+									{
+										"number": 12,
+										"longitude": 180,
+										"sign": "Libra",
+										"degree": 0
+									}
+								]
+							}
+						},
+						"description": "Side-by-side house cusp comparison keyed by house system id: placidus, whole-sign, equal, koch. Only included when houseSystem is set to \"all\". Useful for educational tools and system comparison."
 					}
 				},
 				"required": [
@@ -9085,7 +9240,7 @@
 										"type": "string",
 										"format": "time",
 										"example": "14:30:00",
-										"description": "Birth time in 24-hour HH:MM:SS format. Time is ESSENTIAL for accurate house cusps - even minutes matter. The Ascendant (1st house cusp) changes roughly every 4 minutes. Without accurate time, house placements will be incorrect."
+										"description": "Birth time in 24-hour HH:MM:SS format. Time is ESSENTIAL for accurate house cusps, and even minutes matter. The Ascendant (1st house cusp) changes roughly every 4 minutes. Without accurate time, house placements will be incorrect."
 									},
 									"latitude": {
 										"type": "number",
@@ -13006,6 +13161,15 @@
 				"requestBody": {
 					"content": {
 						"application/json": {
+							"example": {
+								"birthDate": "1990-07-15",
+								"birthTime": "14:30:00",
+								"returnYear": 2024,
+								"latitude": 40.7128,
+								"longitude": -74.006,
+								"timezone": -5,
+								"houseSystem": "placidus"
+							},
 							"schema": {
 								"type": "object",
 								"properties": {
@@ -13075,15 +13239,6 @@
 									"longitude",
 									"timezone"
 								]
-							},
-							"example": {
-								"birthDate": "1990-07-15",
-								"birthTime": "14:30:00",
-								"returnYear": 2024,
-								"latitude": 40.7128,
-								"longitude": -74.006,
-								"timezone": -5,
-								"houseSystem": "placidus"
 							}
 						}
 					}
@@ -13851,6 +14006,15 @@
 				"requestBody": {
 					"content": {
 						"application/json": {
+							"example": {
+								"birthDate": "1990-07-15",
+								"birthTime": "14:30:00",
+								"returnDate": "2024-08-12",
+								"latitude": 40.7128,
+								"longitude": -74.006,
+								"timezone": -5,
+								"houseSystem": "placidus"
+							},
 							"schema": {
 								"type": "object",
 								"properties": {
@@ -13921,15 +14085,6 @@
 									"longitude",
 									"timezone"
 								]
-							},
-							"example": {
-								"birthDate": "1990-07-15",
-								"birthTime": "14:30:00",
-								"returnDate": "2024-08-12",
-								"latitude": 40.7128,
-								"longitude": -74.006,
-								"timezone": -5,
-								"houseSystem": "placidus"
 							}
 						}
 					}
@@ -14691,6 +14846,23 @@
 				"requestBody": {
 					"content": {
 						"application/json": {
+							"example": {
+								"person1": {
+									"date": "1990-07-15",
+									"time": "14:30:00",
+									"latitude": 40.7128,
+									"longitude": -74.006,
+									"timezone": -5
+								},
+								"person2": {
+									"date": "1992-03-20",
+									"time": "09:15:00",
+									"latitude": 34.0522,
+									"longitude": -118.2437,
+									"timezone": -8
+								},
+								"houseSystem": "placidus"
+							},
 							"schema": {
 								"type": "object",
 								"properties": {
@@ -14837,23 +15009,6 @@
 									"person1",
 									"person2"
 								]
-							},
-							"example": {
-								"person1": {
-									"date": "1990-07-15",
-									"time": "14:30:00",
-									"latitude": 40.7128,
-									"longitude": -74.006,
-									"timezone": -5
-								},
-								"person2": {
-									"date": "1992-03-20",
-									"time": "09:15:00",
-									"latitude": 34.0522,
-									"longitude": -118.2437,
-									"timezone": -8
-								},
-								"houseSystem": "placidus"
 							}
 						}
 					}
@@ -15540,7 +15695,7 @@
 				"tags": [
 					"Western Astrology"
 				],
-				"summary": "Compatibility Score. Relationship compatibility analysis with category breakdown",
+				"summary": "Compatibility score - Relationship compatibility API",
 				"description": "Calculate a detailed compatibility score between two birth charts using Western synastry (inter-chart aspects). Returns overall score (0-100) plus category breakdowns for romantic, emotional, intellectual, physical, and spiritual compatibility. Each category analyzes specific planetary pairs: Venus-Mars for romance, Moon-Moon for emotions, Mercury-Mercury for intellect. Includes Sun, Moon, Venus, and Mars sign compatibility narratives, element balance analysis, relationship archetype classification, and the most significant inter-chart aspects with relationship-specific interpretations.",
 				"security": [
 					{
@@ -15576,6 +15731,22 @@
 				"requestBody": {
 					"content": {
 						"application/json": {
+							"example": {
+								"person1": {
+									"date": "1990-07-15",
+									"time": "14:30:00",
+									"latitude": 40.7128,
+									"longitude": -74.006,
+									"timezone": -5
+								},
+								"person2": {
+									"date": "1992-03-20",
+									"time": "09:15:00",
+									"latitude": 34.0522,
+									"longitude": -118.2437,
+									"timezone": -8
+								}
+							},
 							"schema": {
 								"type": "object",
 								"properties": {
@@ -15710,22 +15881,6 @@
 									"person1",
 									"person2"
 								]
-							},
-							"example": {
-								"person1": {
-									"date": "1990-07-15",
-									"time": "14:30:00",
-									"latitude": 40.7128,
-									"longitude": -74.006,
-									"timezone": -5
-								},
-								"person2": {
-									"date": "1992-03-20",
-									"time": "09:15:00",
-									"latitude": 34.0522,
-									"longitude": -118.2437,
-									"timezone": -8
-								}
 							}
 						}
 					}
@@ -19006,6 +19161,16 @@
 				"requestBody": {
 					"content": {
 						"application/json": {
+							"example": {
+								"birthDate": "1990-07-15",
+								"birthTime": "14:30:00",
+								"planet": "Jupiter",
+								"approximateDate": "2024-08-15",
+								"latitude": 40.7128,
+								"longitude": -74.006,
+								"timezone": -5,
+								"houseSystem": "placidus"
+							},
 							"schema": {
 								"type": "object",
 								"properties": {
@@ -19089,16 +19254,6 @@
 									"longitude",
 									"timezone"
 								]
-							},
-							"example": {
-								"birthDate": "1990-07-15",
-								"birthTime": "14:30:00",
-								"planet": "Jupiter",
-								"approximateDate": "2024-08-15",
-								"latitude": 40.7128,
-								"longitude": -74.006,
-								"timezone": -5,
-								"houseSystem": "placidus"
 							}
 						}
 					}

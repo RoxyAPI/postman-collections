@@ -1,0 +1,4312 @@
+{
+	"item": [
+		{
+			"id": "852a5954-d72d-4cd7-913e-7d32c58f06ce",
+			"name": "Vastu",
+			"description": {
+				"content": "Vastu Shastra API for directional home and plot analysis: entrance padas with the classical effect of each of the 32 perimeter positions, the Vastu Purusha Mandala projected over a real plot on the 81 pada or the 64 pada grid, room placement checks over a closed room enum, Ayadi shadvarga across three text families, plot shape and ground level under two schools that genuinely disagree, and griha pravesh dates composed over a verified panchang. Every verdict carries the chapter and verse it rests on as a typed field, or says plainly that it is convention. Directional design from Indian architecture, sitting beside our feng shui endpoints on one key, with Remote MCP and typed SDKs.",
+				"type": "text/plain"
+			},
+			"item": [
+				{
+					"id": "28a96b37-1584-4f84-a4cb-fbf665d1dfa9",
+					"name": "Calculate entrance pada - Vastu main door direction API",
+					"request": {
+						"name": "Calculate entrance pada - Vastu main door direction API",
+						"description": {
+							"content": "Vastu entrance analysis for a main door: send the plot and where the door sits, and the API returns which of the 32 perimeter padas it falls on, the devata of that square, the effect the classical chapter gives that pada, and the favourable padas on the same side to move toward. Every verdict carries the chapter and verse it comes from as a typed field, and the reading holds on either the 81 pada or the 64 pada division. Built for property and interior design tools, practitioner reports, and any product that has to say whether a front door is well placed.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"entrance"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "POST",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						},
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"facing\": \"North\",\n  \"facingDegrees\": 15,\n  \"door\": {\n    \"x\": 15,\n    \"y\": 0\n  },\n  \"doorPosition\": 0.4,\n  \"grid\": \"81-pada\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": [
+						{
+							"id": "f9916d16-9ef9-4a60-892a-c4b464e1aab4",
+							"name": "Entrance pada, its devata, the classical effect and the favourable padas",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"entrance"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"facing\": \"North\",\n  \"facingDegrees\": 15,\n  \"door\": {\n    \"x\": 15,\n    \"y\": 0\n  },\n  \"doorPosition\": 0.4,\n  \"grid\": \"81-pada\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"pada\": 3,\n  \"side\": \"East\",\n  \"startCorner\": \"Northeast\",\n  \"ordinalOnSide\": 3,\n  \"square\": 3,\n  \"cell\": {\n    \"rowFromNorth\": 3,\n    \"columnFromWest\": 9\n  },\n  \"effect\": \"Great wealth.\",\n  \"auspiciousness\": \"inauspicious\",\n  \"reading\": \"The main entrance falls on pada 3 of the East side, counted from the Northeast corner. That pada is the square of Jayanta. Great wealth.\",\n  \"recommendedPadas\": [\n    3,\n    4\n  ],\n  \"source\": {\n    \"text\": \"Brihat Samhita\",\n    \"chapter\": 53,\n    \"verse\": \"118\",\n    \"translation\": \"N. Chidambaram Iyer\",\n    \"year\": 1884,\n    \"publicDomain\": true,\n    \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n  },\n  \"conventions\": {\n    \"grid\": \"81-pada\"\n  },\n  \"devata\": {\n    \"id\": \"jayanta\",\n    \"name\": \"Jayanta\",\n    \"padaCount\": 2\n  }\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "f9f87237-219a-4e07-9cc4-aa3ec9b98427",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"entrance"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"facing\": \"North\",\n  \"facingDegrees\": 15,\n  \"door\": {\n    \"x\": 15,\n    \"y\": 0\n  },\n  \"doorPosition\": 0.4,\n  \"grid\": \"81-pada\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9296.721457084866,\n      \"maximum\": 6517.85294376954,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4458.531615867621,\n      \"maximum\": 8284.936670944093,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "9e9a5024-2bbf-4874-9bc7-804b911fedc1",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"entrance"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"facing\": \"North\",\n  \"facingDegrees\": 15,\n  \"door\": {\n    \"x\": 15,\n    \"y\": 0\n  },\n  \"doorPosition\": 0.4,\n  \"grid\": \"81-pada\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "3213bb2c-117e-4d5b-bfa0-b64d13d85710",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"entrance"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"facing\": \"North\",\n  \"facingDegrees\": 15,\n  \"door\": {\n    \"x\": 15,\n    \"y\": 0\n  },\n  \"doorPosition\": 0.4,\n  \"grid\": \"81-pada\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "f60e7991-364c-4c97-9786-acb781b20326",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"entrance"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"facing\": \"North\",\n  \"facingDegrees\": 15,\n  \"door\": {\n    \"x\": 15,\n    \"y\": 0\n  },\n  \"doorPosition\": 0.4,\n  \"grid\": \"81-pada\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "c9bca7c9-4a8d-4a19-ba28-f965ff3ef8e8",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"entrance"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"facing\": \"North\",\n  \"facingDegrees\": 15,\n  \"door\": {\n    \"x\": 15,\n    \"y\": 0\n  },\n  \"doorPosition\": 0.4,\n  \"grid\": \"81-pada\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "f22972b3-bb5f-4bc8-a499-a50c8cd137aa",
+					"name": "Generate Vastu Purusha Mandala - 81 pada and 64 pada grid API",
+					"request": {
+						"name": "Generate Vastu Purusha Mandala - 81 pada and 64 pada grid API",
+						"description": {
+							"content": "Vastu Purusha Mandala projected over a real plot: send the ground and the API returns every square with the devata holding it, the brahmasthan as a polygon you can draw, the marma points, the six vamsa diagonals named by their devatas and the nine atimarma crossings. Choose the 81 pada Paramasayika or the 64 pada Manduka, and the response says which verses each part rests on. Built for floor plan overlays, practitioner reports and any tool that has to place rooms against the classical grid.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"mandala"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "POST",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						},
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"grid\": \"81-pada\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": [
+						{
+							"id": "eba810e7-9069-4397-a547-a9dfaf79e965",
+							"name": "Every cell of the projected mandala with its devata, brahmasthan and geometry",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"mandala"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"grid\": \"81-pada\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"grid\": \"81-pada\",\n  \"cells\": [\n    {\n      \"square\": 41,\n      \"rowFromNorth\": 5,\n      \"columnFromWest\": 5,\n      \"center\": {\n        \"x\": 15,\n        \"y\": 0\n      },\n      \"withinPlot\": true,\n      \"devata\": \"brahma\",\n      \"devataName\": \"Brahmā\",\n      \"class\": \"center\",\n      \"group\": \"dvipada\",\n      \"role\": \"around-brahma\"\n    },\n    {\n      \"square\": 41,\n      \"rowFromNorth\": 5,\n      \"columnFromWest\": 5,\n      \"center\": {\n        \"x\": 15,\n        \"y\": 0\n      },\n      \"withinPlot\": true,\n      \"devata\": \"brahma\",\n      \"devataName\": \"Brahmā\",\n      \"class\": \"center\",\n      \"group\": \"dvipada\",\n      \"role\": \"around-brahma\"\n    }\n  ],\n  \"brahmasthan\": {\n    \"squares\": [\n      31,\n      32,\n      33,\n      40,\n      41,\n      42,\n      49,\n      50,\n      51\n    ],\n    \"polygon\": [\n      {\n        \"x\": 15,\n        \"y\": 0\n      },\n      {\n        \"x\": 15,\n        \"y\": 0\n      }\n    ],\n    \"area\": 133.33\n  },\n  \"sources\": [\n    {\n      \"text\": \"Brihat Samhita\",\n      \"chapter\": 53,\n      \"verse\": \"118\",\n      \"translation\": \"N. Chidambaram Iyer\",\n      \"year\": 1884,\n      \"publicDomain\": true,\n      \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n    },\n    {\n      \"text\": \"Brihat Samhita\",\n      \"chapter\": 53,\n      \"verse\": \"118\",\n      \"translation\": \"N. Chidambaram Iyer\",\n      \"year\": 1884,\n      \"publicDomain\": true,\n      \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n    }\n  ],\n  \"conventions\": {\n    \"grid\": \"81-pada\"\n  },\n  \"marma\": {\n    \"points\": [\n      {\n        \"x\": 15,\n        \"y\": 0\n      },\n      {\n        \"x\": 15,\n        \"y\": 0\n      }\n    ],\n    \"areaEach\": 1.85\n  },\n  \"vamsa\": [\n    {\n      \"fromSquare\": 73,\n      \"fromDevata\": \"roga\",\n      \"toSquare\": 9,\n      \"toDevata\": \"vayu\",\n      \"axis\": \"northwest-southeast\",\n      \"isMainDiagonal\": true,\n      \"from\": {\n        \"x\": 15,\n        \"y\": 0\n      },\n      \"to\": {\n        \"x\": 15,\n        \"y\": 0\n      }\n    },\n    {\n      \"fromSquare\": 73,\n      \"fromDevata\": \"roga\",\n      \"toSquare\": 9,\n      \"toDevata\": \"vayu\",\n      \"axis\": \"northwest-southeast\",\n      \"isMainDiagonal\": true,\n      \"from\": {\n        \"x\": 15,\n        \"y\": 0\n      },\n      \"to\": {\n        \"x\": 15,\n        \"y\": 0\n      }\n    }\n  ],\n  \"atimarma\": [\n    23,\n    31,\n    33,\n    39,\n    41,\n    43,\n    49,\n    51,\n    59\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "da3e09fe-9bbc-465c-b9d9-085956c5605d",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"mandala"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"grid\": \"81-pada\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9296.721457084866,\n      \"maximum\": 6517.85294376954,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4458.531615867621,\n      \"maximum\": 8284.936670944093,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "bca3dc49-5594-4cad-8335-4dc952e99305",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"mandala"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"grid\": \"81-pada\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "267ec180-929c-49ac-93ec-c14e6aaf678d",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"mandala"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"grid\": \"81-pada\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "b0298703-37bc-4ce6-8757-0abaffde7765",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"mandala"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"grid\": \"81-pada\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "e9f304b9-b341-4c7e-a425-a43a74e65894",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"mandala"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"grid\": \"81-pada\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "2d410381-70ad-4224-a46b-d97e583e348b",
+					"name": "Analyse a plot - Vastu land and site assessment API",
+					"request": {
+						"name": "Analyse a plot - Vastu land and site assessment API",
+						"description": {
+							"content": "Vastu plot analysis from typed geometry: send the outline, the facing, where the ground falls and where the water is, and the API returns a verdict on the shape, the proportion, the ground level under two schools, each corner extension and cut, the road and the water. Every verdict names the chapter and verse behind it, or says plainly that it is convention, which matters because the ground level verses and the widely taught modern rule genuinely disagree. Built for listing and land assessment tools, practitioner site reports and buyer facing checks.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"plot"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "POST",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						},
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"facing\": \"North\",\n  \"facingDegrees\": 15,\n  \"slopeLowDirection\": \"Northeast\",\n  \"road\": \"North\",\n  \"extensions\": [\n    \"Northeast\"\n  ],\n  \"cuts\": [\n    \"Southwest\"\n  ],\n  \"water\": \"Northeast\",\n  \"slopeSchool\": \"brihat-samhita\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": [
+						{
+							"id": "9a96f699-55c1-48d4-b0cc-b532585f49b1",
+							"name": "Shape, proportion, ground level under both schools, corners, road and water verdicts",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"plot"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"facing\": \"North\",\n  \"facingDegrees\": 15,\n  \"slopeLowDirection\": \"Northeast\",\n  \"road\": \"North\",\n  \"extensions\": [\n    \"Northeast\"\n  ],\n  \"cuts\": [\n    \"Southwest\"\n  ],\n  \"water\": \"Northeast\",\n  \"slopeSchool\": \"brihat-samhita\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"orientation\": {\n    \"facing\": \"Northeast\",\n    \"sitting\": \"South\",\n    \"facingDegrees\": 15,\n    \"mountain\": \"N3\"\n  },\n  \"dimensions\": {\n    \"length\": 40,\n    \"breadth\": 30,\n    \"area\": 1200,\n    \"ratio\": 1.333\n  },\n  \"shape\": {\n    \"verdict\": \"irregular\",\n    \"effect\": \"The ground is not a regular four sided figure. The chapter gives the death of kinsmen for an irregular shape and barrenness for irregular sides.\",\n    \"source\": {\n      \"text\": \"Brihat Samhita\",\n      \"chapter\": 53,\n      \"verse\": \"118\",\n      \"translation\": \"N. Chidambaram Iyer\",\n      \"year\": 1884,\n      \"publicDomain\": true,\n      \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n    }\n  },\n  \"ratio\": {\n    \"verdict\": \"irregular\",\n    \"effect\": \"The ground is not a regular four sided figure. The chapter gives the death of kinsmen for an irregular shape and barrenness for irregular sides.\",\n    \"source\": {\n      \"text\": \"Brihat Samhita\",\n      \"chapter\": 53,\n      \"verse\": \"118\",\n      \"translation\": \"N. Chidambaram Iyer\",\n      \"year\": 1884,\n      \"publicDomain\": true,\n      \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n    }\n  },\n  \"extensions\": [\n    {\n      \"direction\": \"Northeast\",\n      \"auspiciousness\": \"inauspicious\",\n      \"effect\": \"An extension of the north-east quarter is the one enlargement modern practice treats as favourable. The chapter itself states no rule for a corner extension.\",\n      \"source\": {\n        \"text\": \"Brihat Samhita\",\n        \"chapter\": 53,\n        \"verse\": \"118\",\n        \"translation\": \"N. Chidambaram Iyer\",\n        \"year\": 1884,\n        \"publicDomain\": true,\n        \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n      }\n    },\n    {\n      \"direction\": \"Northeast\",\n      \"auspiciousness\": \"inauspicious\",\n      \"effect\": \"An extension of the north-east quarter is the one enlargement modern practice treats as favourable. The chapter itself states no rule for a corner extension.\",\n      \"source\": {\n        \"text\": \"Brihat Samhita\",\n        \"chapter\": 53,\n        \"verse\": \"118\",\n        \"translation\": \"N. Chidambaram Iyer\",\n        \"year\": 1884,\n        \"publicDomain\": true,\n        \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n      }\n    }\n  ],\n  \"cuts\": [\n    {\n      \"direction\": \"Northeast\",\n      \"auspiciousness\": \"inauspicious\",\n      \"effect\": \"Modern practice treats a missing corner as unfavourable. The chapter itself states no rule for a cut, and the nearest verses give the loss of wealth, grain or virtue where the figure of the Vastupurusha has an arm or a head wanting.\",\n      \"source\": {\n        \"text\": \"Brihat Samhita\",\n        \"chapter\": 53,\n        \"verse\": \"118\",\n        \"translation\": \"N. Chidambaram Iyer\",\n        \"year\": 1884,\n        \"publicDomain\": true,\n        \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n      }\n    },\n    {\n      \"direction\": \"Northeast\",\n      \"auspiciousness\": \"inauspicious\",\n      \"effect\": \"Modern practice treats a missing corner as unfavourable. The chapter itself states no rule for a cut, and the nearest verses give the loss of wealth, grain or virtue where the figure of the Vastupurusha has an arm or a head wanting.\",\n      \"source\": {\n        \"text\": \"Brihat Samhita\",\n        \"chapter\": 53,\n        \"verse\": \"118\",\n        \"translation\": \"N. Chidambaram Iyer\",\n        \"year\": 1884,\n        \"publicDomain\": true,\n        \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n      }\n    }\n  ],\n  \"sources\": [\n    {\n      \"text\": \"Brihat Samhita\",\n      \"chapter\": 53,\n      \"verse\": \"118\",\n      \"translation\": \"N. Chidambaram Iyer\",\n      \"year\": 1884,\n      \"publicDomain\": true,\n      \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n    },\n    {\n      \"text\": \"Brihat Samhita\",\n      \"chapter\": 53,\n      \"verse\": \"118\",\n      \"translation\": \"N. Chidambaram Iyer\",\n      \"year\": 1884,\n      \"publicDomain\": true,\n      \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n    }\n  ],\n  \"conventions\": {\n    \"slopeSchool\": \"brihat-samhita\"\n  },\n  \"slope\": {\n    \"lowDirection\": \"Northeast\",\n    \"highDirection\": \"Southwest\",\n    \"reading\": \"The high ground lies to the Southwest and the low ground to the Northeast.\",\n    \"schools\": [\n      {\n        \"school\": \"brihat-samhita\",\n        \"verdict\": \"not-stated\",\n        \"verse\": \"53.117\",\n        \"effect\": \"Hatred of friends.\"\n      },\n      {\n        \"school\": \"brihat-samhita\",\n        \"verdict\": \"not-stated\",\n        \"verse\": \"53.117\",\n        \"effect\": \"Hatred of friends.\"\n      }\n    ],\n    \"chosen\": \"brihat-samhita\"\n  },\n  \"water\": {\n    \"direction\": \"Northeast\",\n    \"effect\": \"Sons.\",\n    \"auspiciousness\": \"inauspicious\",\n    \"source\": {\n      \"text\": \"Brihat Samhita\",\n      \"chapter\": 53,\n      \"verse\": \"118\",\n      \"translation\": \"N. Chidambaram Iyer\",\n      \"year\": 1884,\n      \"publicDomain\": true,\n      \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n    }\n  },\n  \"road\": {\n    \"direction\": \"Northeast\",\n    \"auspiciousness\": \"inauspicious\",\n    \"effect\": \"Modern practice reads a road on the north or the east as favourable. The chapter states no rule for the side a road runs on.\",\n    \"source\": {\n      \"text\": \"Brihat Samhita\",\n      \"chapter\": 53,\n      \"verse\": \"118\",\n      \"translation\": \"N. Chidambaram Iyer\",\n      \"year\": 1884,\n      \"publicDomain\": true,\n      \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n    }\n  }\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "44aa971a-190e-4c54-9dce-ea548e61a7cf",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"plot"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"facing\": \"North\",\n  \"facingDegrees\": 15,\n  \"slopeLowDirection\": \"Northeast\",\n  \"road\": \"North\",\n  \"extensions\": [\n    \"Northeast\"\n  ],\n  \"cuts\": [\n    \"Southwest\"\n  ],\n  \"water\": \"Northeast\",\n  \"slopeSchool\": \"brihat-samhita\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9296.721457084866,\n      \"maximum\": 6517.85294376954,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4458.531615867621,\n      \"maximum\": 8284.936670944093,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "43d4060a-dc83-4f91-a0b8-5f63cc1b93b5",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"plot"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"facing\": \"North\",\n  \"facingDegrees\": 15,\n  \"slopeLowDirection\": \"Northeast\",\n  \"road\": \"North\",\n  \"extensions\": [\n    \"Northeast\"\n  ],\n  \"cuts\": [\n    \"Southwest\"\n  ],\n  \"water\": \"Northeast\",\n  \"slopeSchool\": \"brihat-samhita\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "8f4622d0-8623-476f-b9d1-76ef1eae9283",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"plot"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"facing\": \"North\",\n  \"facingDegrees\": 15,\n  \"slopeLowDirection\": \"Northeast\",\n  \"road\": \"North\",\n  \"extensions\": [\n    \"Northeast\"\n  ],\n  \"cuts\": [\n    \"Southwest\"\n  ],\n  \"water\": \"Northeast\",\n  \"slopeSchool\": \"brihat-samhita\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "3f0b834f-5287-4dbe-a8d3-7b829a0fc186",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"plot"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"facing\": \"North\",\n  \"facingDegrees\": 15,\n  \"slopeLowDirection\": \"Northeast\",\n  \"road\": \"North\",\n  \"extensions\": [\n    \"Northeast\"\n  ],\n  \"cuts\": [\n    \"Southwest\"\n  ],\n  \"water\": \"Northeast\",\n  \"slopeSchool\": \"brihat-samhita\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "7593db73-8059-48aa-81ea-1ba197080ba9",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"plot"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"facing\": \"North\",\n  \"facingDegrees\": 15,\n  \"slopeLowDirection\": \"Northeast\",\n  \"road\": \"North\",\n  \"extensions\": [\n    \"Northeast\"\n  ],\n  \"cuts\": [\n    \"Southwest\"\n  ],\n  \"water\": \"Northeast\",\n  \"slopeSchool\": \"brihat-samhita\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "55881828-6906-4353-a684-0bf9cfa8621d",
+					"name": "Calculate Ayadi shadvarga - Vastu proportion and yoni calculator API",
+					"request": {
+						"name": "Calculate Ayadi shadvarga - Vastu proportion and yoni calculator API",
+						"description": {
+							"content": "Ayadi shadvarga calculator for a building or a room: send the dimensions and the API returns all six proportional formulas with the multiplier, the divisor and the remainder shown, the member each remainder names, and the two verdict rules the texts state. Choose between three text families, which genuinely disagree, and choose your own cubit length, because every remainder is unit sensitive. Built for practitioner tools, plan checking software and anyone who has to justify a dimension rather than assert it.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"ayadi"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "POST",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						},
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"length\": 11,\n  \"breadth\": 11,\n  \"perimeter\": 11,\n  \"circumference\": 11,\n  \"unit\": \"hasta\",\n  \"hastaInches\": 18,\n  \"ayadiText\": \"manasara\",\n  \"vyayaFormula\": \"p9-10\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": [
+						{
+							"id": "5d1eb6b0-d7a2-45c5-a4dd-319d15b44065",
+							"name": "The six vargas with their arithmetic, the vayas quotient and the verdict",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"ayadi"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"length\": 11,\n  \"breadth\": 11,\n  \"perimeter\": 11,\n  \"circumference\": 11,\n  \"unit\": \"hasta\",\n  \"hastaInches\": 18,\n  \"ayadiText\": \"manasara\",\n  \"vyayaFormula\": \"p9-10\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"measures\": {\n    \"length\": 11,\n    \"breadth\": 11,\n    \"perimeter\": 11,\n    \"circumference\": 11,\n    \"area\": 121\n  },\n  \"vargas\": [\n    {\n      \"varga\": \"yoni\",\n      \"operand\": \"perimeter\",\n      \"operandValue\": 11,\n      \"multiplier\": 3,\n      \"divisor\": 8,\n      \"product\": 33,\n      \"remainder\": 1,\n      \"groupSize\": 8,\n      \"source\": {\n        \"text\": \"Brihat Samhita\",\n        \"chapter\": 53,\n        \"verse\": \"118\",\n        \"translation\": \"N. Chidambaram Iyer\",\n        \"year\": 1884,\n        \"publicDomain\": true,\n        \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n      },\n      \"name\": \"Dhvaja\",\n      \"firstName\": \"Siddhi\",\n      \"gloss\": \"flag\",\n      \"auspicious\": true\n    },\n    {\n      \"varga\": \"yoni\",\n      \"operand\": \"perimeter\",\n      \"operandValue\": 11,\n      \"multiplier\": 3,\n      \"divisor\": 8,\n      \"product\": 33,\n      \"remainder\": 1,\n      \"groupSize\": 8,\n      \"source\": {\n        \"text\": \"Brihat Samhita\",\n        \"chapter\": 53,\n        \"verse\": \"118\",\n        \"translation\": \"N. Chidambaram Iyer\",\n        \"year\": 1884,\n        \"publicDomain\": true,\n        \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n      },\n      \"name\": \"Dhvaja\",\n      \"firstName\": \"Siddhi\",\n      \"gloss\": \"flag\",\n      \"auspicious\": true\n    }\n  ],\n  \"vayas\": 3,\n  \"verdict\": {\n    \"yoniAuspicious\": true,\n    \"ayaVyaya\": \"aya-greater\",\n    \"reading\": \"The yoni remainder is 1, which names Dhvaja, the flag. The aya remainder 4 exceeds the vyaya remainder 9, which the text calls conducive to prosperity.\",\n    \"source\": {\n      \"text\": \"Brihat Samhita\",\n      \"chapter\": 53,\n      \"verse\": \"118\",\n      \"translation\": \"N. Chidambaram Iyer\",\n      \"year\": 1884,\n      \"publicDomain\": true,\n      \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n    }\n  },\n  \"conventions\": {\n    \"ayadiText\": \"manasara\",\n    \"vyayaFormula\": \"p9-10\",\n    \"unit\": \"hasta\",\n    \"hastaInches\": 18\n  }\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "b0f839b9-d551-4be5-b542-7b9c0d553711",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"ayadi"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"length\": 11,\n  \"breadth\": 11,\n  \"perimeter\": 11,\n  \"circumference\": 11,\n  \"unit\": \"hasta\",\n  \"hastaInches\": 18,\n  \"ayadiText\": \"manasara\",\n  \"vyayaFormula\": \"p9-10\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9296.721457084866,\n      \"maximum\": 6517.85294376954,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4458.531615867621,\n      \"maximum\": 8284.936670944093,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "952322f3-8774-4465-be85-eefccc8b11f4",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"ayadi"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"length\": 11,\n  \"breadth\": 11,\n  \"perimeter\": 11,\n  \"circumference\": 11,\n  \"unit\": \"hasta\",\n  \"hastaInches\": 18,\n  \"ayadiText\": \"manasara\",\n  \"vyayaFormula\": \"p9-10\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "f27c4ff7-adda-4ed5-b7bf-d139443febc8",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"ayadi"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"length\": 11,\n  \"breadth\": 11,\n  \"perimeter\": 11,\n  \"circumference\": 11,\n  \"unit\": \"hasta\",\n  \"hastaInches\": 18,\n  \"ayadiText\": \"manasara\",\n  \"vyayaFormula\": \"p9-10\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "894250cf-4927-45fe-ade2-49c764deb138",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"ayadi"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"length\": 11,\n  \"breadth\": 11,\n  \"perimeter\": 11,\n  \"circumference\": 11,\n  \"unit\": \"hasta\",\n  \"hastaInches\": 18,\n  \"ayadiText\": \"manasara\",\n  \"vyayaFormula\": \"p9-10\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "058d8b9b-252d-4865-9944-33cf00febf1d",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"ayadi"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"length\": 11,\n  \"breadth\": 11,\n  \"perimeter\": 11,\n  \"circumference\": 11,\n  \"unit\": \"hasta\",\n  \"hastaInches\": 18,\n  \"ayadiText\": \"manasara\",\n  \"vyayaFormula\": \"p9-10\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "6dbaee87-a62a-42d9-83e5-8fd9cb53d9f8",
+					"name": "Check room placement - Vastu room direction compliance API",
+					"request": {
+						"name": "Check room placement - Vastu room direction compliance API",
+						"description": {
+							"content": "Vastu room direction check for a whole floor plan: send the plot and a list of rooms, by quarter or by outline, and the API returns a verdict per room with the quarters it belongs in, the quarters to keep it out of, a remedy when it is misplaced, and a composite score with the weights published. Four of the twelve room types carry a chapter and verse and the other eight are labelled convention, so a report can say which half of it is classical. Built for floor plan tools, listing checks and practitioner reports.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"rooms"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "POST",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						},
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"rooms\": [\n    {\n      \"type\": \"kitchen\",\n      \"direction\": \"Southeast\",\n      \"polygon\": [\n        {\n          \"x\": 20,\n          \"y\": 2\n        },\n        {\n          \"x\": 28,\n          \"y\": 2\n        },\n        {\n          \"x\": 28,\n          \"y\": 12\n        },\n        {\n          \"x\": 20,\n          \"y\": 12\n        }\n      ]\n    }\n  ],\n  \"facing\": \"North\",\n  \"facingDegrees\": 15\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": [
+						{
+							"id": "f790a842-8c10-4881-96b1-9ede8e52f335",
+							"name": "A verdict per room, the composite score and the weights behind it",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"rooms"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"rooms\": [\n    {\n      \"type\": \"kitchen\",\n      \"direction\": \"Southeast\",\n      \"polygon\": [\n        {\n          \"x\": 20,\n          \"y\": 2\n        },\n        {\n          \"x\": 28,\n          \"y\": 2\n        },\n        {\n          \"x\": 28,\n          \"y\": 12\n        },\n        {\n          \"x\": 20,\n          \"y\": 12\n        }\n      ]\n    }\n  ],\n  \"facing\": \"North\",\n  \"facingDegrees\": 15\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"rooms\": [\n    {\n      \"type\": \"kitchen\",\n      \"zone\": \"Southeast\",\n      \"verdict\": \"ideal\",\n      \"idealDirections\": [\n        \"Southeast\"\n      ],\n      \"avoidDirections\": [\n        \"Northeast\"\n      ],\n      \"reading\": \"The kitchen stands in the Southeast quarter, which is where it belongs.\",\n      \"remedy\": \"Move the cooking hearth to the south-east quarter, which is where the chapter puts the kitchen. Where the room cannot move, shift the hob itself to the south-east corner of the room and cook facing east.\",\n      \"source\": {\n        \"text\": \"Brihat Samhita\",\n        \"chapter\": 53,\n        \"verse\": \"118\",\n        \"translation\": \"N. Chidambaram Iyer\",\n        \"year\": 1884,\n        \"publicDomain\": true,\n        \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n      }\n    },\n    {\n      \"type\": \"kitchen\",\n      \"zone\": \"Southeast\",\n      \"verdict\": \"ideal\",\n      \"idealDirections\": [\n        \"Southeast\"\n      ],\n      \"avoidDirections\": [\n        \"Northeast\"\n      ],\n      \"reading\": \"The kitchen stands in the Southeast quarter, which is where it belongs.\",\n      \"remedy\": \"Move the cooking hearth to the south-east quarter, which is where the chapter puts the kitchen. Where the room cannot move, shift the hob itself to the south-east corner of the room and cook facing east.\",\n      \"source\": {\n        \"text\": \"Brihat Samhita\",\n        \"chapter\": 53,\n        \"verse\": \"118\",\n        \"translation\": \"N. Chidambaram Iyer\",\n        \"year\": 1884,\n        \"publicDomain\": true,\n        \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n      }\n    }\n  ],\n  \"score\": 83.3,\n  \"scoring\": {\n    \"sourcedWeight\": 2,\n    \"conventionWeight\": 1,\n    \"idealPoints\": 1,\n    \"neutralPoints\": 0.5,\n    \"avoidPoints\": 0\n  },\n  \"facing\": \"North\",\n  \"sources\": [\n    {\n      \"text\": \"Brihat Samhita\",\n      \"chapter\": 53,\n      \"verse\": \"118\",\n      \"translation\": \"N. Chidambaram Iyer\",\n      \"year\": 1884,\n      \"publicDomain\": true,\n      \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n    },\n    {\n      \"text\": \"Brihat Samhita\",\n      \"chapter\": 53,\n      \"verse\": \"118\",\n      \"translation\": \"N. Chidambaram Iyer\",\n      \"year\": 1884,\n      \"publicDomain\": true,\n      \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "6276d532-9975-4806-bec4-d3a343947b47",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"rooms"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"rooms\": [\n    {\n      \"type\": \"kitchen\",\n      \"direction\": \"Southeast\",\n      \"polygon\": [\n        {\n          \"x\": 20,\n          \"y\": 2\n        },\n        {\n          \"x\": 28,\n          \"y\": 2\n        },\n        {\n          \"x\": 28,\n          \"y\": 12\n        },\n        {\n          \"x\": 20,\n          \"y\": 12\n        }\n      ]\n    }\n  ],\n  \"facing\": \"North\",\n  \"facingDegrees\": 15\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9296.721457084866,\n      \"maximum\": 6517.85294376954,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4458.531615867621,\n      \"maximum\": 8284.936670944093,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "b9f49392-a65f-4d35-8982-9c104d57bf4a",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"rooms"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"rooms\": [\n    {\n      \"type\": \"kitchen\",\n      \"direction\": \"Southeast\",\n      \"polygon\": [\n        {\n          \"x\": 20,\n          \"y\": 2\n        },\n        {\n          \"x\": 28,\n          \"y\": 2\n        },\n        {\n          \"x\": 28,\n          \"y\": 12\n        },\n        {\n          \"x\": 20,\n          \"y\": 12\n        }\n      ]\n    }\n  ],\n  \"facing\": \"North\",\n  \"facingDegrees\": 15\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "9d5de69b-baa9-4006-bdf3-d3f622f544d7",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"rooms"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"rooms\": [\n    {\n      \"type\": \"kitchen\",\n      \"direction\": \"Southeast\",\n      \"polygon\": [\n        {\n          \"x\": 20,\n          \"y\": 2\n        },\n        {\n          \"x\": 28,\n          \"y\": 2\n        },\n        {\n          \"x\": 28,\n          \"y\": 12\n        },\n        {\n          \"x\": 20,\n          \"y\": 12\n        }\n      ]\n    }\n  ],\n  \"facing\": \"North\",\n  \"facingDegrees\": 15\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "704da47b-7ccd-4c0c-bcda-a737227f290f",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"rooms"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"rooms\": [\n    {\n      \"type\": \"kitchen\",\n      \"direction\": \"Southeast\",\n      \"polygon\": [\n        {\n          \"x\": 20,\n          \"y\": 2\n        },\n        {\n          \"x\": 28,\n          \"y\": 2\n        },\n        {\n          \"x\": 28,\n          \"y\": 12\n        },\n        {\n          \"x\": 20,\n          \"y\": 12\n        }\n      ]\n    }\n  ],\n  \"facing\": \"North\",\n  \"facingDegrees\": 15\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "23a5d68e-58ff-4286-ac03-bc7c4cd2d989",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"rooms"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"plot\": {\n    \"width\": 30,\n    \"depth\": 40,\n    \"polygon\": [\n      {\n        \"x\": 0,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 0\n      },\n      {\n        \"x\": 30,\n        \"y\": 40\n      },\n      {\n        \"x\": 0,\n        \"y\": 40\n      }\n    ],\n    \"unit\": \"feet\"\n  },\n  \"rooms\": [\n    {\n      \"type\": \"kitchen\",\n      \"direction\": \"Southeast\",\n      \"polygon\": [\n        {\n          \"x\": 20,\n          \"y\": 2\n        },\n        {\n          \"x\": 28,\n          \"y\": 2\n        },\n        {\n          \"x\": 28,\n          \"y\": 12\n        },\n        {\n          \"x\": 20,\n          \"y\": 12\n        }\n      ]\n    }\n  ],\n  \"facing\": \"North\",\n  \"facingDegrees\": 15\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "a569f43a-9416-4e27-9777-c75f8f9af2b2",
+					"name": "Find griha pravesh dates - Vastu house warming muhurta API",
+					"request": {
+						"name": "Find griha pravesh dates - Vastu house warming muhurta API",
+						"description": {
+							"content": "Griha pravesh muhurta search over a date window: send the window and the place, and the API returns every day that clears the classical day-level rules, with the nakshatra, tithi, weekday and solar position that qualified it and the rule ids that admitted it. Two Muhurta texts disagree on the admissible nakshatras and you choose which one leads, and the rules a date search cannot settle are published rather than dropped. Built for house warming date pickers, practitioner scheduling and agent assistants that have to answer when a family should move in.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"timing",
+								"griha-pravesh"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "POST",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						},
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"startDate\": \"2027-01-20\",\n  \"endDate\": \"2027-03-20\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": 0.8825991984218327,\n  \"muhurtaText\": \"muhurta-chintamani\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						}
+					},
+					"response": [
+						{
+							"id": "b242a309-0e56-4f27-8891-ab277f79eadc",
+							"name": "Every admitted day with its panchang limbs, plus the rules and the rejections",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"timing",
+										"griha-pravesh"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"startDate\": \"2027-01-20\",\n  \"endDate\": \"2027-03-20\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": 0.8825991984218327,\n  \"muhurtaText\": \"muhurta-chintamani\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"days\": [\n    {\n      \"date\": \"2027-02-11\",\n      \"nakshatra\": {\n        \"number\": 4,\n        \"id\": \"rohini\",\n        \"name\": \"Rohini\"\n      },\n      \"tithi\": {\n        \"number\": 6,\n        \"name\": \"Ṣaṣṭī\",\n        \"paksha\": \"Shukla\"\n      },\n      \"vara\": {\n        \"number\": 4,\n        \"name\": \"Thursday\"\n      },\n      \"ayana\": \"uttarayana\",\n      \"solarLongitude\": 296.412,\n      \"karana\": \"Bava\",\n      \"quality\": \"preferred\",\n      \"admittedBy\": [\n        \"nakshatra-admissible\",\n        \"tithi-window\"\n      ],\n      \"reading\": \"The day clears every rule this search can test, on the nakshatra Rohini, the tithi Ṣaṣṭī and a Thursday.\",\n      \"sunrise\": \"2027-02-11T01:32:11.000Z\"\n    },\n    {\n      \"date\": \"2027-02-11\",\n      \"nakshatra\": {\n        \"number\": 4,\n        \"id\": \"rohini\",\n        \"name\": \"Rohini\"\n      },\n      \"tithi\": {\n        \"number\": 6,\n        \"name\": \"Ṣaṣṭī\",\n        \"paksha\": \"Shukla\"\n      },\n      \"vara\": {\n        \"number\": 4,\n        \"name\": \"Thursday\"\n      },\n      \"ayana\": \"uttarayana\",\n      \"solarLongitude\": 296.412,\n      \"karana\": \"Bava\",\n      \"quality\": \"preferred\",\n      \"admittedBy\": [\n        \"nakshatra-admissible\",\n        \"tithi-window\"\n      ],\n      \"reading\": \"The day clears every rule this search can test, on the nakshatra Rohini, the tithi Ṣaṣṭī and a Thursday.\",\n      \"sunrise\": \"2027-02-11T01:32:11.000Z\"\n    }\n  ],\n  \"total\": 4,\n  \"window\": {\n    \"startDate\": \"2027-01-20\",\n    \"endDate\": \"2027-03-20\",\n    \"daysEvaluated\": 60\n  },\n  \"rejectionsByRule\": {\n    \"uttarayana\": 21,\n    \"nakshatra-admissible\": 45\n  },\n  \"rules\": [\n    {\n      \"id\": \"nakshatra-admissible\",\n      \"requirement\": \"The nakshatra at sunrise must be one the chosen text admits for entering a new house.\",\n      \"confidence\": \"high\",\n      \"source\": {\n        \"text\": \"Brihat Samhita\",\n        \"chapter\": 53,\n        \"verse\": \"118\",\n        \"translation\": \"N. Chidambaram Iyer\",\n        \"year\": 1884,\n        \"publicDomain\": true,\n        \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n      }\n    },\n    {\n      \"id\": \"nakshatra-admissible\",\n      \"requirement\": \"The nakshatra at sunrise must be one the chosen text admits for entering a new house.\",\n      \"confidence\": \"high\",\n      \"source\": {\n        \"text\": \"Brihat Samhita\",\n        \"chapter\": 53,\n        \"verse\": \"118\",\n        \"translation\": \"N. Chidambaram Iyer\",\n        \"year\": 1884,\n        \"publicDomain\": true,\n        \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n      }\n    }\n  ],\n  \"leftToTheAstrologer\": [\n    \"The rising sign at the moment of entry should be one of the four fixed signs, or a sign benefic to the owner. One text admits a movable sign only when the rising navamsa is the Bull.\"\n  ],\n  \"sources\": [\n    {\n      \"text\": \"Brihat Samhita\",\n      \"chapter\": 53,\n      \"verse\": \"118\",\n      \"translation\": \"N. Chidambaram Iyer\",\n      \"year\": 1884,\n      \"publicDomain\": true,\n      \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n    },\n    {\n      \"text\": \"Brihat Samhita\",\n      \"chapter\": 53,\n      \"verse\": \"118\",\n      \"translation\": \"N. Chidambaram Iyer\",\n      \"year\": 1884,\n      \"publicDomain\": true,\n      \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n    }\n  ],\n  \"conventions\": {\n    \"muhurtaText\": \"muhurta-chintamani\",\n    \"timezone\": 5.5\n  }\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "3b7bf4e0-1779-43c8-b399-cbb50c052151",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"timing",
+										"griha-pravesh"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"startDate\": \"2027-01-20\",\n  \"endDate\": \"2027-03-20\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": 0.8825991984218327,\n  \"muhurtaText\": \"muhurta-chintamani\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9296.721457084866,\n      \"maximum\": 6517.85294376954,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4458.531615867621,\n      \"maximum\": 8284.936670944093,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "5c177765-2c9e-42dc-89ae-4c3dde774f3a",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"timing",
+										"griha-pravesh"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"startDate\": \"2027-01-20\",\n  \"endDate\": \"2027-03-20\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": 0.8825991984218327,\n  \"muhurtaText\": \"muhurta-chintamani\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "d211b06c-da66-4c7b-aa14-5a5039a46515",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"timing",
+										"griha-pravesh"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"startDate\": \"2027-01-20\",\n  \"endDate\": \"2027-03-20\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": 0.8825991984218327,\n  \"muhurtaText\": \"muhurta-chintamani\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "b6a4e39e-a182-429c-a88c-4739c1d52a80",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"timing",
+										"griha-pravesh"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"startDate\": \"2027-01-20\",\n  \"endDate\": \"2027-03-20\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": 0.8825991984218327,\n  \"muhurtaText\": \"muhurta-chintamani\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "c7892043-63d3-4052-bf3e-e4a7c00f3633",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"timing",
+										"griha-pravesh"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "POST",
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"startDate\": \"2027-01-20\",\n  \"endDate\": \"2027-03-20\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": 0.8825991984218327,\n  \"muhurtaText\": \"muhurta-chintamani\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "03abce21-3f1b-4e31-8cdb-ca8fef804345",
+					"name": "List the eight directions - Vastu dikpala and direction reference API",
+					"request": {
+						"name": "List the eight directions - Vastu dikpala and direction reference API",
+						"description": {
+							"content": "Reference table of the eight Vastu directions: the dikpala who rules each quarter of the horizon, the squares of the mandala it covers with their devatas, what the chapter places on that side, and what standing water there brings. A pure reference endpoint with no plot required, for building a picker or a directions guide. Every row says which verse each part comes from and labels the element as the later convention it is.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"directions"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
+								},
+								{
+									"disabled": false,
+									"key": "limit",
+									"value": "8",
+									"description": "Maximum items to return per page. Range: 1-8, default 8."
+								},
+								{
+									"disabled": false,
+									"key": "offset",
+									"value": "0",
+									"description": "Number of items to skip for pagination. Default 0."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "GET",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "7ed66505-228f-4fee-8c8d-a453e5d32820",
+							"name": "The eight directions with their dikpalas, devatas and water effects",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"directions"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										},
+										{
+											"key": "limit",
+											"value": "8"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"total\": 8,\n  \"limit\": 8,\n  \"offset\": 0,\n  \"directions\": [\n    {\n      \"id\": \"Northeast\",\n      \"dikpala\": \"Isana\",\n      \"kind\": \"intercardinal\",\n      \"squares\": [\n        1,\n        2,\n        10,\n        11,\n        21\n      ],\n      \"devatas\": [\n        {\n          \"square\": 1,\n          \"id\": \"agni\",\n          \"name\": \"Agni\"\n        },\n        {\n          \"square\": 1,\n          \"id\": \"agni\",\n          \"name\": \"Agni\"\n        }\n      ],\n      \"water\": {\n        \"effect\": \"Sons.\",\n        \"auspiciousness\": \"auspicious\"\n      },\n      \"sources\": [\n        {\n          \"text\": \"Brihat Samhita\",\n          \"chapter\": 53,\n          \"verse\": \"118\",\n          \"translation\": \"N. Chidambaram Iyer\",\n          \"year\": 1884,\n          \"publicDomain\": true,\n          \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n        },\n        {\n          \"text\": \"Brihat Samhita\",\n          \"chapter\": 53,\n          \"verse\": \"118\",\n          \"translation\": \"N. Chidambaram Iyer\",\n          \"year\": 1884,\n          \"publicDomain\": true,\n          \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n        }\n      ],\n      \"element\": \"water\",\n      \"places\": \"the apartment for the Devas\"\n    },\n    {\n      \"id\": \"Northeast\",\n      \"dikpala\": \"Isana\",\n      \"kind\": \"intercardinal\",\n      \"squares\": [\n        1,\n        2,\n        10,\n        11,\n        21\n      ],\n      \"devatas\": [\n        {\n          \"square\": 1,\n          \"id\": \"agni\",\n          \"name\": \"Agni\"\n        },\n        {\n          \"square\": 1,\n          \"id\": \"agni\",\n          \"name\": \"Agni\"\n        }\n      ],\n      \"water\": {\n        \"effect\": \"Sons.\",\n        \"auspiciousness\": \"auspicious\"\n      },\n      \"sources\": [\n        {\n          \"text\": \"Brihat Samhita\",\n          \"chapter\": 53,\n          \"verse\": \"118\",\n          \"translation\": \"N. Chidambaram Iyer\",\n          \"year\": 1884,\n          \"publicDomain\": true,\n          \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n        },\n        {\n          \"text\": \"Brihat Samhita\",\n          \"chapter\": 53,\n          \"verse\": \"118\",\n          \"translation\": \"N. Chidambaram Iyer\",\n          \"year\": 1884,\n          \"publicDomain\": true,\n          \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n        }\n      ],\n      \"element\": \"water\",\n      \"places\": \"the apartment for the Devas\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "925863f9-1b3d-41f2-bf99-8865a200a2f3",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"directions"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										},
+										{
+											"key": "limit",
+											"value": "8"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9296.721457084866,\n      \"maximum\": 6517.85294376954,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4458.531615867621,\n      \"maximum\": 8284.936670944093,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "c7a5efe5-b4cc-4ff3-b476-8721f728f03f",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"directions"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										},
+										{
+											"key": "limit",
+											"value": "8"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "1d17386f-8d2e-4c90-9f09-0ed297308954",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"directions"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										},
+										{
+											"key": "limit",
+											"value": "8"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "00aaa64d-58ab-477e-97b7-8f77321276d5",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"directions"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										},
+										{
+											"key": "limit",
+											"value": "8"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "cfacc71c-1bc3-4963-a74e-3e899723e340",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"directions"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										},
+										{
+											"key": "limit",
+											"value": "8"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "38d3b996-b4ce-4a0c-a1a5-e0a858730456",
+					"name": "Look up one direction - Vastu dikpala reference API",
+					"request": {
+						"name": "Look up one direction - Vastu dikpala reference API",
+						"description": {
+							"content": "Look up one Vastu direction: its dikpala, the mandala squares it covers with their devatas, what the chapter places there, and what standing water in that quarter brings. Case and punctuation in the id are folded, so north-east, northeast and NorthEast all resolve to the same entry, and the id space is the one the feng shui and I Ching endpoints use.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"directions",
+								":id"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
+								}
+							],
+							"variable": [
+								{
+									"disabled": false,
+									"type": "any",
+									"value": "Northeast",
+									"key": "id",
+									"description": "(Required) Direction id, one of North, Northeast, East, Southeast, South, Southwest, West, Northwest. Case and punctuation are folded."
+								}
+							]
+						},
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "GET",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "d6e316f1-a913-4814-a8dd-eac93b931eb5",
+							"name": "One direction with its dikpala, devatas and water effect",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"directions",
+										":id"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "Northeast",
+											"key": "id",
+											"description": "(Required) Direction id, one of North, Northeast, East, Southeast, South, Southwest, West, Northwest. Case and punctuation are folded."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"id\": \"Northeast\",\n  \"dikpala\": \"Isana\",\n  \"kind\": \"intercardinal\",\n  \"squares\": [\n    1,\n    2,\n    10,\n    11,\n    21\n  ],\n  \"devatas\": [\n    {\n      \"square\": 1,\n      \"id\": \"agni\",\n      \"name\": \"Agni\"\n    },\n    {\n      \"square\": 1,\n      \"id\": \"agni\",\n      \"name\": \"Agni\"\n    }\n  ],\n  \"water\": {\n    \"effect\": \"Sons.\",\n    \"auspiciousness\": \"auspicious\"\n  },\n  \"sources\": [\n    {\n      \"text\": \"Brihat Samhita\",\n      \"chapter\": 53,\n      \"verse\": \"118\",\n      \"translation\": \"N. Chidambaram Iyer\",\n      \"year\": 1884,\n      \"publicDomain\": true,\n      \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n    },\n    {\n      \"text\": \"Brihat Samhita\",\n      \"chapter\": 53,\n      \"verse\": \"118\",\n      \"translation\": \"N. Chidambaram Iyer\",\n      \"year\": 1884,\n      \"publicDomain\": true,\n      \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n    }\n  ],\n  \"element\": \"water\",\n  \"places\": \"the apartment for the Devas\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "b4539a5f-58d6-451c-8a50-974d129434d3",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"directions",
+										":id"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "Northeast",
+											"key": "id",
+											"description": "(Required) Direction id, one of North, Northeast, East, Southeast, South, Southwest, West, Northwest. Case and punctuation are folded."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9296.721457084866,\n      \"maximum\": 6517.85294376954,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4458.531615867621,\n      \"maximum\": 8284.936670944093,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "7636925a-0f59-42d4-a98b-dfc9fcb56753",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"directions",
+										":id"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "Northeast",
+											"key": "id",
+											"description": "(Required) Direction id, one of North, Northeast, East, Southeast, South, Southwest, West, Northwest. Case and punctuation are folded."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "860df85f-7fa7-4250-bdd7-f99419b91a1d",
+							"name": "No direction with that id",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"directions",
+										":id"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "Northeast",
+											"key": "id",
+											"description": "(Required) Direction id, one of North, Northeast, East, Southeast, South, Southwest, West, Northwest. Case and punctuation are folded."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"Resource not found\",\n  \"code\": \"not_found\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "3915e39a-b5de-41b6-9bd2-00462378c098",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"directions",
+										":id"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "Northeast",
+											"key": "id",
+											"description": "(Required) Direction id, one of North, Northeast, East, Southeast, South, Southwest, West, Northwest. Case and punctuation are folded."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "bfc2fe29-dd32-49da-be18-c5dd2754b325",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"directions",
+										":id"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "Northeast",
+											"key": "id",
+											"description": "(Required) Direction id, one of North, Northeast, East, Southeast, South, Southwest, West, Northwest. Case and punctuation are folded."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "b89b042f-c0ac-4763-baa7-9956dbbcd9b3",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"directions",
+										":id"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "Northeast",
+											"key": "id",
+											"description": "(Required) Direction id, one of North, Northeast, East, Southeast, South, Southwest, West, Northwest. Case and punctuation are folded."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "92831286-2dba-4915-a5f4-eda5d73838a5",
+					"name": "List the 45 devatas - Vastu Purusha Mandala reference API",
+					"request": {
+						"name": "List the 45 devatas - Vastu Purusha Mandala reference API",
+						"description": {
+							"content": "Reference table of the 45 devatas of the Vastu Purusha Mandala: which squares of the 81 pada grid each one holds, which ring and which side, how many padas, and the verses that place it. A pure reference endpoint with no plot required, for building a mandala diagram or a glossary. Where the sources contradict each other, and they do on several rows, the row says so instead of quietly picking a side.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"devatas"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
+								},
+								{
+									"disabled": false,
+									"key": "limit",
+									"value": "45",
+									"description": "Maximum items to return per page. Range: 1-45, default 45."
+								},
+								{
+									"disabled": false,
+									"key": "offset",
+									"value": "0",
+									"description": "Number of items to skip for pagination. Default 0."
+								}
+							],
+							"variable": []
+						},
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "GET",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "e7096b89-3821-4a82-a55b-f3c08956ab2c",
+							"name": "The devatas of the mandala with their squares, class and verses",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"devatas"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										},
+										{
+											"key": "limit",
+											"value": "45"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"total\": 45,\n  \"limit\": 45,\n  \"offset\": 0,\n  \"devatas\": [\n    {\n      \"id\": \"jayanta\",\n      \"name\": \"Jayanta\",\n      \"class\": \"perimeter\",\n      \"squares\": [\n        3,\n        12\n      ],\n      \"cells\": [\n        {\n          \"rowFromNorth\": 3,\n          \"columnFromWest\": 9\n        },\n        {\n          \"rowFromNorth\": 3,\n          \"columnFromWest\": 9\n        }\n      ],\n      \"padaCount\": 2,\n      \"role\": \"The devata Jayanta holds 2 of the eighty one squares on the East side of the mandala.\",\n      \"verses\": [\n        \"53.43\",\n        \"53.44\",\n        \"53.45\",\n        \"53.49\",\n        \"53.50\"\n      ],\n      \"source\": {\n        \"text\": \"Brihat Samhita\",\n        \"chapter\": 53,\n        \"verse\": \"118\",\n        \"translation\": \"N. Chidambaram Iyer\",\n        \"year\": 1884,\n        \"publicDomain\": true,\n        \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n      },\n      \"group\": \"dvipada\",\n      \"side\": \"East\",\n      \"quadrant\": \"Northeast\",\n      \"entrancePada\": 3,\n      \"note\": \"Iyer prints Indra for BOTH this square and the other; the printed text therefore yields 44 distinct names for 45 padas.\"\n    },\n    {\n      \"id\": \"jayanta\",\n      \"name\": \"Jayanta\",\n      \"class\": \"perimeter\",\n      \"squares\": [\n        3,\n        12\n      ],\n      \"cells\": [\n        {\n          \"rowFromNorth\": 3,\n          \"columnFromWest\": 9\n        },\n        {\n          \"rowFromNorth\": 3,\n          \"columnFromWest\": 9\n        }\n      ],\n      \"padaCount\": 2,\n      \"role\": \"The devata Jayanta holds 2 of the eighty one squares on the East side of the mandala.\",\n      \"verses\": [\n        \"53.43\",\n        \"53.44\",\n        \"53.45\",\n        \"53.49\",\n        \"53.50\"\n      ],\n      \"source\": {\n        \"text\": \"Brihat Samhita\",\n        \"chapter\": 53,\n        \"verse\": \"118\",\n        \"translation\": \"N. Chidambaram Iyer\",\n        \"year\": 1884,\n        \"publicDomain\": true,\n        \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n      },\n      \"group\": \"dvipada\",\n      \"side\": \"East\",\n      \"quadrant\": \"Northeast\",\n      \"entrancePada\": 3,\n      \"note\": \"Iyer prints Indra for BOTH this square and the other; the printed text therefore yields 44 distinct names for 45 padas.\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "3a7051ac-ee8f-4334-bf0f-7e577e03e9e3",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"devatas"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										},
+										{
+											"key": "limit",
+											"value": "45"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9296.721457084866,\n      \"maximum\": 6517.85294376954,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4458.531615867621,\n      \"maximum\": 8284.936670944093,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "54abd16e-9803-4a3f-a843-2a8bbe0c3173",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"devatas"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										},
+										{
+											"key": "limit",
+											"value": "45"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "b758f1a1-294e-4f08-bf57-e74cb33ee73c",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"devatas"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										},
+										{
+											"key": "limit",
+											"value": "45"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "1baec900-379c-4927-a85c-4e168d8988ee",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"devatas"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										},
+										{
+											"key": "limit",
+											"value": "45"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "46250d1c-658f-476c-bb1c-f1e3d0859992",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"devatas"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										},
+										{
+											"key": "limit",
+											"value": "45"
+										},
+										{
+											"key": "offset",
+											"value": "0"
+										}
+									],
+									"variable": []
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				},
+				{
+					"id": "876539cb-08c6-4cc0-b83f-c2a21136cc2a",
+					"name": "Look up one devata - Vastu mandala devata reference API",
+					"request": {
+						"name": "Look up one devata - Vastu mandala devata reference API",
+						"description": {
+							"content": "Look up one devata of the Vastu Purusha Mandala: the squares it holds, its ring and side, its pada count, the entrance pada it governs where it sits on the perimeter, and the verses that place it. Case and punctuation in the id are folded, so indra-outer, Indra_Outer and INDRA OUTER all resolve.",
+							"type": "text/plain"
+						},
+						"url": {
+							"path": [
+								"devatas",
+								":id"
+							],
+							"host": [
+								"{{baseUrl}}"
+							],
+							"query": [
+								{
+									"disabled": false,
+									"key": "lang",
+									"value": "en",
+									"description": "Response language (BCP 47). Supported: en, tr, de, es, hi, pt, fr, ru, zh-Hans, zh-Hant. Defaults to en. Coverage varies by domain, and a field with no translation in the requested language returns English."
+								}
+							],
+							"variable": [
+								{
+									"disabled": false,
+									"type": "any",
+									"value": "jayanta",
+									"key": "id",
+									"description": "(Required) Devata id, lower case transliteration. The two Indras are indra-outer for the east perimeter square and indra-inner for the inner ring one. Case and punctuation are folded."
+								}
+							]
+						},
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"method": "GET",
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "key",
+									"value": "X-API-Key"
+								},
+								{
+									"key": "value",
+									"value": "{{apiKey}}"
+								},
+								{
+									"key": "in",
+									"value": "header"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "48376b10-ac3d-478d-b073-de6e0bef6843",
+							"name": "One devata with its squares, class, entrance pada and verses",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"devatas",
+										":id"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "jayanta",
+											"key": "id",
+											"description": "(Required) Devata id, lower case transliteration. The two Indras are indra-outer for the east perimeter square and indra-inner for the inner ring one. Case and punctuation are folded."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "OK",
+							"code": 200,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"id\": \"jayanta\",\n  \"name\": \"Jayanta\",\n  \"class\": \"perimeter\",\n  \"squares\": [\n    3,\n    12\n  ],\n  \"cells\": [\n    {\n      \"rowFromNorth\": 3,\n      \"columnFromWest\": 9\n    },\n    {\n      \"rowFromNorth\": 3,\n      \"columnFromWest\": 9\n    }\n  ],\n  \"padaCount\": 2,\n  \"role\": \"The devata Jayanta holds 2 of the eighty one squares on the East side of the mandala.\",\n  \"verses\": [\n    \"53.43\",\n    \"53.44\",\n    \"53.45\",\n    \"53.49\",\n    \"53.50\"\n  ],\n  \"source\": {\n    \"text\": \"Brihat Samhita\",\n    \"chapter\": 53,\n    \"verse\": \"118\",\n    \"translation\": \"N. Chidambaram Iyer\",\n    \"year\": 1884,\n    \"publicDomain\": true,\n    \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n  },\n  \"group\": \"dvipada\",\n  \"side\": \"East\",\n  \"quadrant\": \"Northeast\",\n  \"entrancePada\": 3,\n  \"note\": \"Iyer prints Indra for BOTH this square and the other; the printed text therefore yields 44 distinct names for 45 padas.\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "6ad003ff-a1f8-4708-8f5c-40ee8bfbce47",
+							"name": "Validation error. `issues[]` lists every failed field.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"devatas",
+										":id"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "jayanta",
+											"key": "id",
+											"description": "(Required) Devata id, lower case transliteration. The two Indras are indra-outer for the east perimeter square and indra-inner for the inner ring one. Case and punctuation are folded."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9296.721457084866,\n      \"maximum\": 6517.85294376954,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4458.531615867621,\n      \"maximum\": 8284.936670944093,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "88c8505b-c563-40eb-9418-16b76156d015",
+							"name": "Invalid or missing API key",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"devatas",
+										":id"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "jayanta",
+											"key": "id",
+											"description": "(Required) Devata id, lower case transliteration. The two Indras are indra-outer for the east perimeter square and indra-inner for the inner ring one. Case and punctuation are folded."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "68fec197-8c61-4df9-a409-6c27d68b3395",
+							"name": "No devata with that id",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"devatas",
+										":id"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "jayanta",
+											"key": "id",
+											"description": "(Required) Devata id, lower case transliteration. The two Indras are indra-outer for the east perimeter square and indra-inner for the inner ring one. Case and punctuation are folded."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"Resource not found\",\n  \"code\": \"not_found\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "ac004290-880f-4d68-bfe6-211221fb58ab",
+							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"devatas",
+										":id"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "jayanta",
+											"key": "id",
+											"description": "(Required) Devata id, lower case transliteration. The two Indras are indra-outer for the east perimeter square and indra-inner for the inner ring one. Case and punctuation are folded."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"header": [
+								{
+									"disabled": false,
+									"description": "Comma-separated list of allowed methods (RFC 9110).",
+									"key": "Allow",
+									"value": "string"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "96c7cd72-a5ef-41fa-b531-f87a769faaa7",
+							"name": "Monthly rate limit exceeded",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"devatas",
+										":id"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "jayanta",
+											"key": "id",
+											"description": "(Required) Devata id, lower case transliteration. The two Indras are indra-outer for the east perimeter square and indra-inner for the inner ring one. Case and punctuation are folded."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						},
+						{
+							"id": "987aad5f-1c7e-4622-9fae-f7440742dd58",
+							"name": "Internal server error",
+							"originalRequest": {
+								"url": {
+									"path": [
+										"devatas",
+										":id"
+									],
+									"host": [
+										"{{baseUrl}}"
+									],
+									"query": [
+										{
+											"key": "lang",
+											"value": "en"
+										}
+									],
+									"variable": [
+										{
+											"disabled": false,
+											"type": "any",
+											"value": "jayanta",
+											"key": "id",
+											"description": "(Required) Devata id, lower case transliteration. The two Indras are indra-outer for the east perimeter square and indra-inner for the inner ring one. Case and punctuation are folded."
+										}
+									]
+								},
+								"header": [
+									{
+										"description": {
+											"content": "Added as a part of security scheme: apikey",
+											"type": "text/plain"
+										},
+										"key": "X-API-Key",
+										"value": "<API Key>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"method": "GET",
+								"body": {}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"cookie": [],
+							"_postman_previewlanguage": "json"
+						}
+					],
+					"event": [],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					}
+				}
+			],
+			"event": []
+		}
+	],
+	"event": [],
+	"variable": [
+		{
+			"type": "string",
+			"value": "https://roxyapi.com/api/v2/vastu",
+			"key": "baseUrl"
+		},
+		{
+			"key": "apiKey",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "roxySlug",
+			"value": "vastu",
+			"type": "string"
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "X-API-Key"
+			},
+			{
+				"key": "value",
+				"value": "{{apiKey}}"
+			},
+			{
+				"key": "in",
+				"value": "header"
+			}
+		]
+	},
+	"info": {
+		"_postman_id": "00d77fd9-a5cc-4838-9c3a-7e2d04ee003d",
+		"name": "Vastu Shastra API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"description": {
+			"content": "Vastu Shastra API for directional home and plot analysis: entrance padas with the classical effect of each of the 32 perimeter positions, the Vastu Purusha Mandala projected over a real plot on the 81 pada or the 64 pada grid, room placement checks over a closed room enum, Ayadi shadvarga across three text families, plot shape and ground level under two schools that genuinely disagree, and griha pravesh dates composed over a verified panchang. Every verdict carries the chapter and verse it rests on as a typed field, or says plainly that it is convention. Directional design from Indian architecture, sitting beside our feng shui endpoints on one key, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 18 domains (Astrology, Vedic Astrology, Forecast, Human Design, Chinese Astrology, Feng Shui, Mesoamerican Astrology, Vastu Shastra, Numerology, Kabbalah, Tarot Reading, Biorhythm, Ayurveda, I-Ching Oracle, Crystals and Healing Stones, Dream Interpretation, Angel Numbers, Location and Timezone), 258+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 258+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable and stable, so it is the one safe to switch on programmatically.\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`, `X-RateLimit-Reset` (Unix timestamp, seconds). Quotas reset on the 1st of every calendar month at 12:00 AM UTC, not on your renewal date.\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 per month for 50K requests, up to 3M requests, with custom volume above that.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart): first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs): guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp): connect AI agents\n- [Open source templates](https://roxyapi.com/starters): clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq): common questions\n- [Contact](https://roxyapi.com/contact): support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
+			"type": "text/plain"
+		}
+	}
+}

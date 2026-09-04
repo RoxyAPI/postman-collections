@@ -1,7 +1,7 @@
 {
 	"item": [
 		{
-			"id": "9780109a-abc4-4dc7-aa84-e06d314c0f8d",
+			"id": "fa2a33ae-0d6f-4fc4-9a66-80fba4d8ff36",
 			"name": "I-Ching",
 			"description": {
 				"content": "I-Ching oracle API with all 64 hexagrams, 384 changing lines, 8 trigrams, and modern interpretations for love, career, and decision-making. Cast readings with the authentic three-coin method, get a daily hexagram, and explore the Book of Changes programmatically. Built for divination apps, AI oracle chatbots, fortune-telling platforms, daily wisdom features, and spiritual guidance products. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.",
@@ -9,12 +9,12 @@
 			},
 			"item": [
 				{
-					"id": "1a66fadc-a075-43c4-8cde-efc91b642e0b",
-					"name": "Get daily I-Ching hexagram",
+					"id": "c75badf7-cfbc-495c-baa1-571a2e7fad39",
+					"name": "Daily hexagram - Daily I-Ching oracle API",
 					"request": {
-						"name": "Get daily I-Ching hexagram",
+						"name": "Daily hexagram - Daily I-Ching oracle API",
 						"description": {
-							"content": "Receive a daily I-Ching hexagram for guidance and reflection. This endpoint uses seeded randomness to ensure the same seed gets the same hexagram on the same day - perfect for \"Hexagram of the Day\" features in oracle apps, meditation platforms, and daily wisdom tools. Returns the hexagram with judgment, image, and interpretations for love, career, decisions, and practical advice based on ancient Chinese wisdom from the Book of Changes.",
+							"content": "Receive a daily I-Ching hexagram for guidance and reflection. This endpoint uses seeded randomness to ensure the same seed gets the same hexagram on the same day, perfect for \"Hexagram of the Day\" features in oracle apps, meditation platforms, and daily wisdom tools. Returns the hexagram with judgment, image, and interpretations for love, career, decisions, and practical advice based on ancient Chinese wisdom from the Book of Changes.",
 							"type": "text/plain"
 						},
 						"url": {
@@ -74,7 +74,7 @@
 					},
 					"response": [
 						{
-							"id": "52f922d2-c3e7-4ad6-824e-a7acb40081d9",
+							"id": "f731c77d-687f-4937-946d-cc0c9bfe8ab3",
 							"name": "Daily hexagram reading with full interpretation",
 							"originalRequest": {
 								"url": {
@@ -130,7 +130,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f5bf728e-0e2f-40bc-b0ee-8eab8c9bf77a",
+							"id": "3fef7368-b2e2-4ca1-8ce3-bb2e52bd7b38",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -181,12 +181,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 493.2140476525004,\n      \"maximum\": 6773.994357793333,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5592.900061077151,\n      \"maximum\": 3997.0340978515396,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4251.427236068128,\n      \"maximum\": 7143.840572898636,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 832.9977557817502,\n      \"maximum\": 2103.778181385678,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a924bbcb-b3db-4325-bf5e-f30f623ed251",
+							"id": "038ab865-c683-440a-b431-9afdfd2185c9",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -242,7 +242,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7442438f-1342-45d5-b590-e5efa66f10d3",
+							"id": "adaa3c03-cd06-42f5-9638-649e44b064a4",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -304,7 +304,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "db693bd5-18c1-444f-b14e-48a0af15890b",
+							"id": "7d003e5c-552f-4241-bcf9-f005c261231d",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -360,8 +360,8 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2fbb80d6-3581-4371-9981-494b3793f8f7",
-							"name": "Failed to generate daily hexagram",
+							"id": "6cb4492d-c264-42f6-a471-64afd41b093d",
+							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
 									"path": [
@@ -411,7 +411,7 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"Resource not found\",\n  \"code\": \"not_found\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						}
@@ -422,10 +422,10 @@
 					}
 				},
 				{
-					"id": "aa56d6bf-c128-4a44-b275-d5ef7106d6d3",
-					"name": "Cast daily I-Ching reading with changing lines",
+					"id": "ae149e3c-fa9b-4327-8eb8-5f1cccab8b9a",
+					"name": "Cast daily reading with changing lines - I-Ching divination API",
 					"request": {
-						"name": "Cast daily I-Ching reading with changing lines",
+						"name": "Cast daily reading with changing lines - I-Ching divination API",
 						"description": {
 							"content": "Cast a complete daily I-Ching reading using the traditional three-coin method with seeded randomness. Unlike the simple daily hexagram, this provides the full casting experience with line values (6-9), changing line positions, and the resulting hexagram if transformation occurs. Same seed + same date = same casting result. Perfect for I-Ching divination apps requiring authentic oracle experience with daily consistency.",
 							"type": "text/plain"
@@ -488,7 +488,7 @@
 					},
 					"response": [
 						{
-							"id": "3cf207a1-598a-414f-9c2e-1d8034e71f39",
+							"id": "647da3e1-c0b8-4927-963e-aee15d58d7ca",
 							"name": "Complete daily casting with primary and resulting hexagrams",
 							"originalRequest": {
 								"url": {
@@ -545,7 +545,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "edf72ca3-4cdd-435d-9de9-63f1c8abe05c",
+							"id": "d2a805ee-a114-4016-9176-b90359895221",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -597,12 +597,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 493.2140476525004,\n      \"maximum\": 6773.994357793333,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5592.900061077151,\n      \"maximum\": 3997.0340978515396,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4251.427236068128,\n      \"maximum\": 7143.840572898636,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 832.9977557817502,\n      \"maximum\": 2103.778181385678,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d7a9fefd-3886-46f6-9384-7944cd439d77",
+							"id": "4b869c77-00c0-4582-857f-6486bea96c98",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -659,7 +659,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "291404ae-b359-4f6f-99d5-9b8883acad55",
+							"id": "4e7f5d29-5053-4800-a90b-e90e1efeb825",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -722,7 +722,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7c58e128-6b9d-4809-b538-dc883170e195",
+							"id": "dcc0ec57-bf5e-46dd-af7d-b9571526a8cd",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -779,7 +779,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2a7287d6-074a-47b3-9de0-30fc5f2c8dec",
+							"id": "b762ee01-93b7-483a-9b68-138a529dd8e7",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -842,10 +842,10 @@
 					}
 				},
 				{
-					"id": "b6f02059-1ce2-4ce2-8422-2422b6f5c257",
-					"name": "List all 64 hexagrams",
+					"id": "c4a5b947-c987-45a9-9056-977e1fed5930",
+					"name": "List all 64 hexagrams - I-Ching hexagram catalog API",
 					"request": {
-						"name": "List all 64 hexagrams",
+						"name": "List all 64 hexagrams - I-Ching hexagram catalog API",
 						"description": {
 							"content": "Browse all 64 I-Ching hexagrams from the Book of Changes with their Chinese names, English translations, and trigram compositions. The hexagrams are ordered by the traditional King Wen sequence used in I-Ching divination for 3,000 years. Each hexagram represents a unique life situation combining two trigrams (Heaven, Earth, Thunder, Wind, Water, Fire, Mountain, Lake) into profound wisdom for decision-making and self-understanding.",
 							"type": "text/plain"
@@ -906,7 +906,7 @@
 					},
 					"response": [
 						{
-							"id": "e7c5ebe5-7cb2-4bd5-953c-06394e157b1f",
+							"id": "021af185-e74f-47fa-90df-89620bbd6cca",
 							"name": "List of hexagrams with basic information.",
 							"originalRequest": {
 								"url": {
@@ -962,7 +962,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "02365eeb-1529-4f59-8497-74512c1ea137",
+							"id": "f0504a04-c788-4ca9-8bb4-ce785bc32a7d",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1013,12 +1013,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 493.2140476525004,\n      \"maximum\": 6773.994357793333,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5592.900061077151,\n      \"maximum\": 3997.0340978515396,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4251.427236068128,\n      \"maximum\": 7143.840572898636,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 832.9977557817502,\n      \"maximum\": 2103.778181385678,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9cf5e44c-26de-4abb-a377-8e464fb792f8",
+							"id": "c0a12c98-cf9a-4a04-b632-10e605bdfc9a",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1074,7 +1074,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b09a0bf5-fa21-4211-8ce2-2d298e4c86d4",
+							"id": "eed4b7cc-e0ec-4170-8ad7-5835ab39a8ae",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1136,7 +1136,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f24cb111-eee9-446e-98f3-2c118b2824a0",
+							"id": "303f1819-f30b-4ce5-9369-a507619b9e94",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1192,7 +1192,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2381a125-2d86-4a20-87cc-bd966e478da6",
+							"id": "3aed5c19-33a4-42bb-b1e7-d42f8cbf7870",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1254,10 +1254,10 @@
 					}
 				},
 				{
-					"id": "622caba3-1e63-4a97-8c62-ed68540d0ab8",
-					"name": "Get a random hexagram",
+					"id": "cfb8ada2-20c2-4777-96c9-3cb4463335bc",
+					"name": "Random hexagram - I-Ching hexagram picker API",
 					"request": {
-						"name": "Get a random hexagram",
+						"name": "Random hexagram - I-Ching hexagram picker API",
 						"description": {
 							"content": "Receive a random I-Ching hexagram with full interpretation. Perfect for daily oracle features, meditation prompts, or exploring the Book of Changes. Returns complete hexagram data including judgment, image, interpretations for love/career/decisions, and all six changing line meanings.",
 							"type": "text/plain"
@@ -1307,7 +1307,7 @@
 					},
 					"response": [
 						{
-							"id": "563256b5-d2b0-433c-b8ba-ad0dccc5bd95",
+							"id": "0bca828b-8170-4bab-95f7-179519f5c1e2",
 							"name": "A random hexagram with full details.",
 							"originalRequest": {
 								"url": {
@@ -1356,7 +1356,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5cf4ec2e-19da-4ede-ad42-53667e174674",
+							"id": "a24adc6e-dbe8-475a-bf7c-a895cbe42de2",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1400,12 +1400,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 493.2140476525004,\n      \"maximum\": 6773.994357793333,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5592.900061077151,\n      \"maximum\": 3997.0340978515396,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4251.427236068128,\n      \"maximum\": 7143.840572898636,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 832.9977557817502,\n      \"maximum\": 2103.778181385678,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "57cf11ca-e655-446b-b0fd-5774a39bcda3",
+							"id": "13c20bfb-b8dd-4aae-ba46-caa258b486d1",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1454,7 +1454,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5a473818-1bed-4ba6-812e-9f5a3faae330",
+							"id": "28226331-aaa0-4d89-a97c-0d34821ac7b6",
 							"name": "No hexagrams available.",
 							"originalRequest": {
 								"url": {
@@ -1503,7 +1503,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7948eda6-66e5-4eef-b35d-98784363cbca",
+							"id": "be55de2e-5f0c-4932-96d9-b0ff3d77691e",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1558,7 +1558,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "dd6d9d64-e6dd-4d7a-8244-78515692bd59",
+							"id": "59d54dda-1dfd-4d61-9928-ef40f2afa3ea",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1607,7 +1607,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0c5b8756-96c2-4ee6-90f3-bb402c099d32",
+							"id": "c3d464c6-a5e8-4f0b-845b-933c3eca30e2",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1662,10 +1662,10 @@
 					}
 				},
 				{
-					"id": "5696fc07-39ed-438c-8f29-e8ac0dd4b254",
-					"name": "Lookup hexagram by line pattern",
+					"id": "5201bc4e-a49d-4db2-b50f-24ddcc4b72b3",
+					"name": "Lookup hexagram by line pattern - I-Ching binary lookup API",
 					"request": {
-						"name": "Lookup hexagram by line pattern",
+						"name": "Lookup hexagram by line pattern - I-Ching binary lookup API",
 						"description": {
 							"content": "Find an I-Ching hexagram by its binary line pattern. Provide 6 digits (0 or 1) representing broken (yin) and solid (yang) lines from bottom to top. Use this for custom divination interfaces where users input their own line configurations, or to find hexagrams matching specific trigram combinations. Example: \"111111\" returns Hexagram 1 (The Creative), \"000000\" returns Hexagram 2 (The Receptive).",
 							"type": "text/plain"
@@ -1721,7 +1721,7 @@
 					},
 					"response": [
 						{
-							"id": "803a45bb-14db-4652-8c6d-107f0a2b6c4d",
+							"id": "8e24f54d-924d-40e0-9747-5092e3e9b263",
 							"name": "Matching hexagram.",
 							"originalRequest": {
 								"url": {
@@ -1774,7 +1774,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8e2ad297-078c-4354-8f19-d46571b7b854",
+							"id": "8babc325-7161-4723-aec4-06c7ff0ca2c1",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1822,12 +1822,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 493.2140476525004,\n      \"maximum\": 6773.994357793333,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5592.900061077151,\n      \"maximum\": 3997.0340978515396,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4251.427236068128,\n      \"maximum\": 7143.840572898636,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 832.9977557817502,\n      \"maximum\": 2103.778181385678,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "55835278-2247-44ae-a97c-f3b37426250f",
+							"id": "b554e329-7463-4692-927a-b7a68b36f3cc",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1880,7 +1880,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d6fa0434-b933-4006-a7a3-a2ab68207ca3",
+							"id": "cd3a6cf4-1d85-484c-85e0-c80e6a2c8a53",
 							"name": "No hexagram found for pattern.",
 							"originalRequest": {
 								"url": {
@@ -1933,7 +1933,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1d9bd1cf-0973-45cd-8259-680972a817ca",
+							"id": "f49205ce-fe08-42f5-89da-e81ab8aef92e",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1992,7 +1992,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "73dcd416-15fc-46b1-976b-f8c5cbcc740a",
+							"id": "6caa88b7-f46f-4992-92f8-f9c5b2178a56",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2045,7 +2045,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "03bbe81a-2f32-4676-a6e6-0096aac9f7df",
+							"id": "9b49890d-919c-40c2-88c1-3da26ef6f302",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2104,10 +2104,10 @@
 					}
 				},
 				{
-					"id": "4d7d14bd-3a59-4808-b8b2-cee2f6512acb",
-					"name": "Get hexagram by number",
+					"id": "6a550846-4ff9-43c8-8491-9d1eb7066e9f",
+					"name": "Get hexagram by number - I-Ching hexagram detail API",
 					"request": {
-						"name": "Get hexagram by number",
+						"name": "Get hexagram by number - I-Ching hexagram detail API",
 						"description": {
 							"content": "Retrieve complete I-Ching hexagram details by King Wen sequence number (1-64). Returns the full hexagram with Chinese name, English translation, judgment text, image text, modern interpretations for general situations, love, career, and decision-making, plus all six changing line meanings. Use this to display detailed hexagram information after casting or for educational reference.",
 							"type": "text/plain"
@@ -2165,7 +2165,7 @@
 					},
 					"response": [
 						{
-							"id": "369a71db-8827-4537-ac7d-2ce633ad2afc",
+							"id": "146f2552-9c30-4cc7-b566-ad9e9ecbc986",
 							"name": "Full hexagram details.",
 							"originalRequest": {
 								"url": {
@@ -2222,7 +2222,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c0a5c0fb-3778-4c5c-b4b5-e225187aa424",
+							"id": "478b99d4-a9f5-44b2-b64e-efc05ac7ea9d",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2274,12 +2274,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 493.2140476525004,\n      \"maximum\": 6773.994357793333,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5592.900061077151,\n      \"maximum\": 3997.0340978515396,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4251.427236068128,\n      \"maximum\": 7143.840572898636,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 832.9977557817502,\n      \"maximum\": 2103.778181385678,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6e469564-b9bb-4dcb-a717-610572dfd594",
+							"id": "9011a156-02c6-4e8f-924e-9ed2b0db6405",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2336,7 +2336,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3b16020a-7697-40b4-aa00-c9f9dbb2c836",
+							"id": "19155ecf-1a94-4b2a-beac-73f4712b1e09",
 							"name": "Hexagram not found.",
 							"originalRequest": {
 								"url": {
@@ -2393,7 +2393,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "955b05c9-3214-4d9e-89cd-fa45a8356a8f",
+							"id": "ca635ae9-ce9c-4f39-b87f-e0de398e089a",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2456,7 +2456,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e665d351-5301-4e01-8cc7-0c96c4c839e8",
+							"id": "af56c925-cc45-4f2b-ace3-a551ad4db972",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2513,7 +2513,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "44307cb0-7247-49bb-bf95-809be6aa2709",
+							"id": "f61c251e-0885-496e-bf49-f8cec7f48c9f",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2576,10 +2576,10 @@
 					}
 				},
 				{
-					"id": "95329cf0-5a13-47f1-9c06-92ac40cc3cf0",
-					"name": "Cast an I-Ching reading",
+					"id": "87b48612-8c0f-4cce-a1f2-76dc1da94c0b",
+					"name": "Cast an I-Ching reading - Hexagram divination API",
 					"request": {
-						"name": "Cast an I-Ching reading",
+						"name": "Cast an I-Ching reading - Hexagram divination API",
 						"description": {
 							"content": "Generate an authentic I-Ching reading using the traditional three-coin casting method. Each of the six lines is determined by virtually tossing three coins, producing values 6-9 where 6 (old yin) and 9 (old yang) are changing lines. Returns the primary hexagram with full interpretation, the line values showing which lines are changing, and if any lines change, the resulting hexagram that the primary transforms into. Optionally provide a seed for reproducible castings. Perfect for divination apps, oracle features, and decision-making tools.",
 							"type": "text/plain"
@@ -2634,7 +2634,7 @@
 					},
 					"response": [
 						{
-							"id": "ce9e4b86-9b28-4522-8e06-b04654d65a06",
+							"id": "2b3766db-6d60-475b-9fd6-36c568884a46",
 							"name": "Complete I-Ching reading with primary and resulting hexagrams.",
 							"originalRequest": {
 								"url": {
@@ -2686,7 +2686,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8a68a840-fe28-4f46-9858-aacd9b4368ff",
+							"id": "caf2fc69-0cb4-434c-9e32-21cbaa95bfb5",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2733,12 +2733,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 493.2140476525004,\n      \"maximum\": 6773.994357793333,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5592.900061077151,\n      \"maximum\": 3997.0340978515396,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4251.427236068128,\n      \"maximum\": 7143.840572898636,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 832.9977557817502,\n      \"maximum\": 2103.778181385678,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "70323117-b91f-40ce-bfe4-304cbfd215b8",
+							"id": "cd1e564e-bb1f-4765-9a93-f163fc8530d4",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2790,7 +2790,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "29fbb026-8b0e-4d12-b23e-354b9d3a453a",
+							"id": "889eb88a-aa0e-4a3b-9b69-39734d84be69",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2848,7 +2848,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "62c51b04-3b97-48d0-9f8b-ef9224ccbbb6",
+							"id": "528a7da6-1fa4-4b88-917d-5657be94b042",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2900,7 +2900,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2776943a-8f02-48a5-966c-b0e204517509",
+							"id": "f5e78001-6cd4-4148-9b7c-bbefe0cc9e5c",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2958,12 +2958,12 @@
 					}
 				},
 				{
-					"id": "3deb348c-753c-415a-aa02-a03ff6623a2f",
-					"name": "List all 8 trigrams",
+					"id": "d34f5780-23c6-4cbe-b54d-5d19c98222e9",
+					"name": "List all 8 trigrams - Bagua trigram catalog API",
 					"request": {
-						"name": "List all 8 trigrams",
+						"name": "List all 8 trigrams - Bagua trigram catalog API",
 						"description": {
-							"content": "Retrieve all 8 I-Ching trigrams (bagua) - the fundamental building blocks of hexagrams. Each trigram consists of three lines and represents a primal force of nature: Heaven (Qian), Earth (Kun), Thunder (Zhen), Wind (Xun), Water (Kan), Fire (Li), Mountain (Gen), and Lake (Dui). Understanding trigrams is essential for interpreting hexagram meanings, as each hexagram combines an upper and lower trigram.",
+							"content": "Retrieve all 8 I-Ching trigrams (bagua), the fundamental building blocks of hexagrams. Each trigram consists of three lines and represents a primal force of nature: Heaven (Qian), Earth (Kun), Thunder (Zhen), Wind (Xun), Water (Kan), Fire (Li), Mountain (Gen), and Lake (Dui). Understanding trigrams is essential for interpreting hexagram meanings, as each hexagram combines an upper and lower trigram.",
 							"type": "text/plain"
 						},
 						"url": {
@@ -3010,7 +3010,7 @@
 					},
 					"response": [
 						{
-							"id": "0252abd4-0f86-4301-82a3-b39c49e23944",
+							"id": "0a29bf8c-a1de-44e9-a7ea-109faf0de49b",
 							"name": "List of all 8 trigrams with basic information.",
 							"originalRequest": {
 								"url": {
@@ -3058,7 +3058,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8e0357fd-0db2-4e37-9f4c-358881677c28",
+							"id": "4a92bfa2-ee3b-4c9f-ba4a-a718712ca205",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3101,12 +3101,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 493.2140476525004,\n      \"maximum\": 6773.994357793333,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5592.900061077151,\n      \"maximum\": 3997.0340978515396,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4251.427236068128,\n      \"maximum\": 7143.840572898636,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 832.9977557817502,\n      \"maximum\": 2103.778181385678,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "618b0df8-fb70-4770-8f47-aaff03a6ff00",
+							"id": "8795d955-91be-4e3e-b237-75fceba0a6d9",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3154,7 +3154,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "19ef6f46-1cba-4638-b2ff-72375bf42aac",
+							"id": "d8272aaa-ae0c-4185-a0da-d76290d97bbd",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3208,7 +3208,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d28915ce-f502-4311-af84-7946afca37ab",
+							"id": "698f6447-871f-4e5e-b8d3-e06442484c1c",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3256,7 +3256,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5247fb1c-72c1-4ea5-b458-5b23a26711db",
+							"id": "405a4a4e-ed78-446b-a6f6-b81afa370c11",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3310,10 +3310,10 @@
 					}
 				},
 				{
-					"id": "7dfcd6a3-4032-4a25-8bd6-59193155e603",
-					"name": "Get trigram by number or name",
+					"id": "d9f4ac87-d7a5-4c2c-b550-c865458ccecf",
+					"name": "Get trigram by number or name - Bagua trigram detail API",
 					"request": {
-						"name": "Get trigram by number or name",
+						"name": "Get trigram by number or name - Bagua trigram detail API",
 						"description": {
 							"content": "Retrieve a specific I-Ching trigram by its number (1-8) or English name (Heaven, Earth, Thunder, Wind, Water, Fire, Mountain, Lake). Returns complete trigram information including Chinese name, pinyin, element associations, core attributes, and symbolic meaning. Use this to understand the component trigrams of any hexagram.",
 							"type": "text/plain"
@@ -3371,7 +3371,7 @@
 					},
 					"response": [
 						{
-							"id": "a7369381-290c-4069-b05d-00be261ef650",
+							"id": "a1d9a40d-143d-4ed1-ab8d-cdcb270c5e68",
 							"name": "Trigram details.",
 							"originalRequest": {
 								"url": {
@@ -3428,7 +3428,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9efa92a8-663e-4765-8152-6b568398c282",
+							"id": "f360c2ba-5765-442c-9570-b5f1d1db1552",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3480,12 +3480,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 493.2140476525004,\n      \"maximum\": 6773.994357793333,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5592.900061077151,\n      \"maximum\": 3997.0340978515396,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4251.427236068128,\n      \"maximum\": 7143.840572898636,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 832.9977557817502,\n      \"maximum\": 2103.778181385678,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "4d85a88b-8562-420e-90ca-26ebb80e3f9c",
+							"id": "bdaa79a2-47be-49fe-9aa1-5313aa93ecdd",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3542,7 +3542,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "afbbe8a2-a99d-4fdf-bcce-1db21ee6dfd9",
+							"id": "059002e5-2123-45a2-bd1d-1132bd1aadf4",
 							"name": "Trigram not found.",
 							"originalRequest": {
 								"url": {
@@ -3599,7 +3599,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "64e22288-f096-47bd-84fe-0a07b5facd38",
+							"id": "b97517d5-9449-4ed0-9531-2b16ce173253",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3662,7 +3662,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c5ee2fa2-8af3-4fde-ba0f-21629af5116f",
+							"id": "c72e0c53-2dea-4768-bb35-0a7a11fea0c3",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3719,7 +3719,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8ed833d3-310d-40b6-bb3b-18d49e925b39",
+							"id": "db1b28ed-d014-41b7-a2f6-f2fb8ea01b0c",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3821,11 +3821,11 @@
 		]
 	},
 	"info": {
-		"_postman_id": "c67a86ce-160c-4df4-9bd0-54769012f4c5",
+		"_postman_id": "148cbff4-d25f-4b25-b2b0-74bcd4f701fa",
 		"name": "I-Ching Oracle API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"description": {
-			"content": "I-Ching oracle API with all 64 hexagrams, 384 changing lines, 8 trigrams, and modern interpretations for love, career, and decision-making. Cast readings with the authentic three-coin method, get a daily hexagram, and explore the Book of Changes programmatically. Built for divination apps, AI oracle chatbots, fortune-telling platforms, daily wisdom features, and spiritual guidance products. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 14 domains (Astrology, Vedic Astrology, Forecast, Human Design, Chinese Astrology, Feng Shui, Numerology, Tarot Reading, Biorhythm, I-Ching Oracle, Crystals and Healing Stones, Dream Interpretation, Angel Numbers, Location and Timezone), 209+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 209+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable and stable, so it is the one safe to switch on programmatically.\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`, `X-RateLimit-Reset` (Unix timestamp, seconds). Quotas reset on the 1st of every calendar month at 12:00 AM UTC, not on your renewal date.\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 per month for 50K requests, up to 3M requests, with custom volume above that.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart) - first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs) - guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp) - connect AI agents\n- [Starter apps](https://roxyapi.com/starters) - clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq) - common questions\n- [Contact](https://roxyapi.com/contact) - support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
+			"content": "I-Ching oracle API with all 64 hexagrams, 384 changing lines, 8 trigrams, and modern interpretations for love, career, and decision-making. Cast readings with the authentic three-coin method, get a daily hexagram, and explore the Book of Changes programmatically. Built for divination apps, AI oracle chatbots, fortune-telling platforms, daily wisdom features, and spiritual guidance products. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 18 domains (Astrology, Vedic Astrology, Forecast, Human Design, Chinese Astrology, Feng Shui, Mesoamerican Astrology, Vastu Shastra, Numerology, Kabbalah, Tarot Reading, Biorhythm, Ayurveda, I-Ching Oracle, Crystals and Healing Stones, Dream Interpretation, Angel Numbers, Location and Timezone), 258+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 258+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable and stable, so it is the one safe to switch on programmatically.\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`, `X-RateLimit-Reset` (Unix timestamp, seconds). Quotas reset on the 1st of every calendar month at 12:00 AM UTC, not on your renewal date.\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 per month for 50K requests, up to 3M requests, with custom volume above that.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart): first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs): guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp): connect AI agents\n- [Open source templates](https://roxyapi.com/starters): clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq): common questions\n- [Contact](https://roxyapi.com/contact): support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
 			"type": "text/plain"
 		}
 	}
