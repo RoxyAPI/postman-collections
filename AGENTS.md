@@ -1,6 +1,6 @@
 # RoxyAPI - Agent Guide
 
-Postman collections for the RoxyAPI catalog: astrology, Vedic astrology, forecast, Human Design, Chinese astrology, feng shui, numerology, tarot, biorhythm, I Ching, crystals, dreams, angel numbers, and location. One API key, every domain. This guide helps an AI agent call the API these collections cover.
+Postman collections for the RoxyAPI catalog: astrology, Vedic astrology, forecast, Human Design, Chinese astrology, feng shui, Mesoamerican astrology, Vastu, numerology, Kabbalah, tarot, biorhythm, Ayurveda, I Ching, crystals, dreams, angel numbers, and location. One API key, every domain. This guide helps an AI agent call the API these collections cover.
 
 ## Base URL and auth
 
@@ -14,15 +14,21 @@ Postman collections for the RoxyAPI catalog: astrology, Vedic astrology, forecas
 |---|---|
 | Western astrology | `/api/v2/astrology` |
 | Vedic astrology | `/api/v2/vedic-astrology` |
-| Tarot | `/api/v2/tarot` |
-| Numerology | `/api/v2/numerology` |
-| I Ching | `/api/v2/iching` |
-| Biorhythm | `/api/v2/biorhythm` |
-| Dreams | `/api/v2/dreams` |
-| Crystals | `/api/v2/crystals` |
-| Angel numbers | `/api/v2/angel-numbers` |
-| Human Design | `/api/v2/human-design` |
 | Forecast | `/api/v2/forecast` |
+| Human Design | `/api/v2/human-design` |
+| Chinese astrology | `/api/v2/chinese-astrology` |
+| Feng shui | `/api/v2/feng-shui` |
+| Mesoamerican astrology | `/api/v2/mesoamerican-astrology` |
+| Vastu | `/api/v2/vastu` |
+| Numerology | `/api/v2/numerology` |
+| Kabbalah | `/api/v2/kabbalah` |
+| Tarot | `/api/v2/tarot` |
+| Biorhythm | `/api/v2/biorhythm` |
+| Ayurveda | `/api/v2/ayurveda` |
+| I Ching | `/api/v2/iching` |
+| Crystals | `/api/v2/crystals` |
+| Dreams | `/api/v2/dreams` |
+| Angel numbers | `/api/v2/angel-numbers` |
 | Location | `/api/v2/location` |
 
 The exact endpoints, parameters, and response fields are in the [API reference](https://roxyapi.com/api-reference) and the OpenAPI spec at `https://roxyapi.com/api/v2/{domain}/openapi.json`. Always read field names from the spec, never guess.
@@ -33,7 +39,7 @@ Astrology and Vedic chart endpoints need latitude and longitude. Resolve a place
 
 ## Multi-language responses
 
-Add `?lang=` to any request. Supported: `en`, `tr`, `de`, `es`, `hi`, `pt`, `fr`, `ru`. Defaults to English. Domains without a translation yet fall back to English.
+Add `?lang=` to any request. Supported: `en`, `tr`, `de`, `es`, `hi`, `pt`, `fr`, `ru`, `zh-Hans`, `zh-Hant`. Defaults to English. Domains without a translation yet fall back to English.
 
 ## Errors
 

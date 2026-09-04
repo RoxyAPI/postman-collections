@@ -8,7 +8,7 @@
 [![Pricing](https://img.shields.io/badge/pricing-roxyapi.com-blue)](https://roxyapi.com/pricing)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 
-Ready to run Postman collections for the full RoxyAPI catalog: Western and Vedic astrology, Forecast, Human Design, Chinese astrology, Feng Shui, numerology, tarot, biorhythm, I Ching, crystals, dreams, angel numbers, and location. One workspace, one API key, every domain. Remote MCP, typed SDKs, and drop in UI components live alongside at [roxyapi.com](https://roxyapi.com).
+Ready to run Postman collections for the full RoxyAPI catalog: Western and Vedic astrology, Forecast, Human Design, Chinese astrology, Feng Shui, Mesoamerican astrology, Vastu, numerology, Kabbalah, tarot, biorhythm, Ayurveda, I Ching, crystals, dreams, angel numbers, and location. One workspace, one API key, every domain. Remote MCP, typed SDKs, and drop in UI components live alongside at [roxyapi.com](https://roxyapi.com).
 
 These collections track the live RoxyAPI catalog, so they stay current as the API grows.
 
