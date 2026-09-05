@@ -219,12 +219,9 @@
 																	"description": "Machine identifier of the cipher. Call the ciphers endpoint for the definition, the tradition and the sources behind each one."
 																},
 																"value": {
-																	"type": [
-																		"number",
-																		"null"
-																	],
+																	"type": "number",
 																	"example": 376,
-																	"description": "The number this cipher gives for the string. Null on the one catalogued cipher this API does not compute, which is stated on its catalogue entry rather than left to guess."
+																	"description": "The number this cipher gives for the string. Always a number: the one catalogued cipher this API does not compute is absent from this array rather than present without a value, so no row here has to be guarded. Its catalogue entry carries computed false and says why."
 																},
 																"alternateValues": {
 																	"type": "array",
@@ -255,7 +252,7 @@
 																"source"
 															]
 														},
-														"description": "Every cipher applied to this spelling."
+														"description": "Every computed cipher applied to this spelling, in catalogue order. The rows carry no display name, because they are the same ciphers in the same order for every spelling: read the names off the top level values array once."
 													},
 													"letters": {
 														"type": "array",
@@ -339,12 +336,9 @@
 														"description": "Machine identifier of the cipher. Call the ciphers endpoint for the definition, the tradition and the sources behind each one."
 													},
 													"value": {
-														"type": [
-															"number",
-															"null"
-														],
+														"type": "number",
 														"example": 376,
-														"description": "The number this cipher gives for the string. Null on the one catalogued cipher this API does not compute, which is stated on its catalogue entry rather than left to guess."
+														"description": "The number this cipher gives for the string. Always a number: the one catalogued cipher this API does not compute is absent from this array rather than present without a value, so no row here has to be guarded. Its catalogue entry carries computed false and says why."
 													},
 													"alternateValues": {
 														"type": "array",
@@ -366,16 +360,22 @@
 														"type": "string",
 														"example": "https://en.wikipedia.org/wiki/Gematria",
 														"description": "The first published source this cipher was taken from."
+													},
+													"name": {
+														"type": "string",
+														"example": "Mispar hechrachi (absolute value)",
+														"description": "Display name of the cipher in the requested language, the same string the ciphers catalogue serves for this id. Present so a caller holding one response can label a row without humanizing the identifier or fetching the catalogue. Switch on id, never on this."
 													}
 												},
 												"required": [
 													"id",
 													"value",
 													"tradition",
-													"source"
+													"source",
+													"name"
 												]
 											},
-											"description": "Every requested cipher applied to the chosen spelling."
+											"description": "Every requested cipher applied to the chosen spelling, in catalogue order, each named as the catalogue names it. Only computed ciphers appear, so every row carries a number."
 										},
 										"transformations": {
 											"type": "array",
@@ -386,6 +386,11 @@
 														"type": "string",
 														"example": "atbash",
 														"description": "Machine identifier of the transformation."
+													},
+													"name": {
+														"type": "string",
+														"example": "AtBash",
+														"description": "Display name of the transformation as the catalogue names it, in the requested language."
 													},
 													"output": {
 														"type": "string",
@@ -415,6 +420,7 @@
 												},
 												"required": [
 													"id",
+													"name",
 													"tradition",
 													"source"
 												]
@@ -1358,12 +1364,9 @@
 																	"description": "Machine identifier of the cipher. Call the ciphers endpoint for the definition, the tradition and the sources behind each one."
 																},
 																"value": {
-																	"type": [
-																		"number",
-																		"null"
-																	],
+																	"type": "number",
 																	"example": 376,
-																	"description": "The number this cipher gives for the string. Null on the one catalogued cipher this API does not compute, which is stated on its catalogue entry rather than left to guess."
+																	"description": "The number this cipher gives for the string. Always a number: the one catalogued cipher this API does not compute is absent from this array rather than present without a value, so no row here has to be guarded. Its catalogue entry carries computed false and says why."
 																},
 																"alternateValues": {
 																	"type": "array",
@@ -1394,7 +1397,7 @@
 																"source"
 															]
 														},
-														"description": "Every cipher applied to this spelling."
+														"description": "Every computed cipher applied to this spelling, in catalogue order. The rows carry no display name, because they are the same ciphers in the same order for every spelling: read the names off the top level values array once."
 													},
 													"letters": {
 														"type": "array",

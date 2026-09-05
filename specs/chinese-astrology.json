@@ -1269,6 +1269,11 @@
 											"example": "xiao-shu",
 											"description": "The minor solar term the count ran to. One of the twelve that also move the month pillar. Always the pinyin identifier, whatever the lang parameter says."
 										},
+										"boundaryTermName": {
+											"type": "string",
+											"example": "Minor Heat",
+											"description": "Display name of that same term, in the requested language. Always present, and English when lang is en. Several English renderings of a term are in circulation, so treat this as the label and boundaryTerm as the value."
+										},
 										"luckPillars": {
 											"type": "array",
 											"items": {
@@ -1571,6 +1576,7 @@
 										"startAgeMonths",
 										"daysToTerm",
 										"boundaryTerm",
+										"boundaryTermName",
 										"luckPillars",
 										"summary"
 									]
@@ -9338,6 +9344,11 @@
 											"type": "string",
 											"example": "rat",
 											"description": "Echo of the animal protected. Absent when none was sent, rather than null."
+										},
+										"avoidAnimalLocalized": {
+											"type": "string",
+											"example": "Ratte",
+											"description": "Display name of the protected animal in the requested language, beside the avoidAnimal identifier. Absent when no animal was sent and absent when lang is en, so an English response is unchanged."
 										},
 										"total": {
 											"type": "number",

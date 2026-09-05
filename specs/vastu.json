@@ -210,7 +210,7 @@
 										"minimum": 0,
 										"maximum": 1,
 										"example": 0.4,
-										"description": "Where the main door sits along the facing side, as a fraction from 0 to 1 measured from the corner the chapter starts that side at: the north-east for an east facing, the south-east for a south facing, the south-west for a west facing and the north-west for a north facing. Requires a cardinal facing, since an intercardinal facing names no single side. Send this or door, never both."
+										"description": "Where the main door sits along the facing side, as a fraction from 0 to 1 measured from the corner the chapter starts that side at: the north-east for an east facing, the south-east for a south facing, the south-west for a west facing and the north-west for a north facing. The side carries 8 padas, so to aim at pada n of 8 send its midpoint, (n - 0.5) / 8: 0.0625 for the first pada, 0.4375 for the fourth, 0.9375 for the eighth. The response names the pada the fraction resolved to in ordinalOnSide. Requires a cardinal facing, since an intercardinal facing names no single side. Send this or door, never both."
 									},
 									"grid": {
 										"type": "string",
@@ -386,10 +386,20 @@
 													"type": "string",
 													"example": "81-pada",
 													"description": "Which division of the ground was read. Echoes the resolved value whether it was sent or defaulted."
+												},
+												"unit": {
+													"type": "string",
+													"enum": [
+														"feet",
+														"metres"
+													],
+													"example": "feet",
+													"description": "Unit every distance and area in the response is measured in, areas in its square. Echoes the resolved value whether it was sent or defaulted."
 												}
 											},
 											"required": [
-												"grid"
+												"grid",
+												"unit"
 											],
 											"description": "The switches this reading resolved, echoed so a stored response can be reproduced years later without knowing what the defaults were on the day it was made."
 										}
@@ -799,6 +809,12 @@
 													},
 													"class": {
 														"type": "string",
+														"enum": [
+															"perimeter",
+															"innerRing",
+															"innerCorner",
+															"center"
+														],
 														"example": "center",
 														"description": "Which ring of the mandala the devata belongs to: perimeter for the outer 32, innerRing for the eight around Brahma, innerCorner for the four on the inner diagonals, center for Brahma. Present only on the 81 pada grid."
 													},
@@ -809,6 +825,14 @@
 													},
 													"role": {
 														"type": "string",
+														"enum": [
+															"brahma",
+															"halved-inner-corner",
+															"halved-outer-corner",
+															"around-brahma",
+															"dvipada",
+															"outer"
+														],
 														"example": "around-brahma",
 														"description": "The structural role 53.55 to 56 gives this square of the 64 pada division: brahma, halved-inner-corner, halved-outer-corner, around-brahma, dvipada or outer. Present only on the 64 pada grid, which is the only thing that chapter states about it."
 													},
@@ -1105,10 +1129,20 @@
 													"type": "string",
 													"example": "81-pada",
 													"description": "Which division of the ground was projected. Echoes the resolved value whether it was sent or defaulted."
+												},
+												"unit": {
+													"type": "string",
+													"enum": [
+														"feet",
+														"metres"
+													],
+													"example": "feet",
+													"description": "Unit every distance and area in the response is measured in, areas in its square. Echoes the resolved value whether it was sent or defaulted."
 												}
 											},
 											"required": [
-												"grid"
+												"grid",
+												"unit"
 											],
 											"description": "The switches this projection resolved, echoed so a stored response can be reproduced later."
 										}
@@ -5406,6 +5440,12 @@
 													},
 													"class": {
 														"type": "string",
+														"enum": [
+															"perimeter",
+															"innerRing",
+															"innerCorner",
+															"center"
+														],
 														"example": "perimeter",
 														"description": "Which ring of the mandala the devata belongs to: perimeter for the outer 32, innerRing for the eight around Brahma, innerCorner for the four on the inner diagonals, center for Brahma alone. 32 plus 8 plus 4 plus 1 is 45. Always English."
 													},
@@ -5887,6 +5927,12 @@
 										},
 										"class": {
 											"type": "string",
+											"enum": [
+												"perimeter",
+												"innerRing",
+												"innerCorner",
+												"center"
+											],
 											"example": "perimeter",
 											"description": "Which ring of the mandala the devata belongs to: perimeter for the outer 32, innerRing for the eight around Brahma, innerCorner for the four on the inner diagonals, center for Brahma alone. 32 plus 8 plus 4 plus 1 is 45. Always English."
 										},

@@ -1,7 +1,7 @@
 {
 	"item": [
 		{
-			"id": "641b5fdb-a83c-47fb-9bde-54ef94fab4c4",
+			"id": "203c2ea4-d5d1-4d60-b107-8c2e08d3741a",
 			"name": "Kabbalah",
 			"description": {
 				"content": "Kabbalah API for gematria, the 72 names, the Tree of Life and the Hebrew birthday, from one key. Score a Hebrew word or a Latin name across ten rabbinic ciphers with the per letter breakdown, every candidate Hebrew spelling shown and the rule that chose one, plus a cited equal value lexicon. The 72 names are derived from the verses rather than copied from a table, the birth name is dated by the exact position of the Sun or by the civil wheel as you choose, and the sephirot, the 22 paths and the 22 letters come back under typed school variants cross linked to the tarot deck. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.",
@@ -9,7 +9,7 @@
 			},
 			"item": [
 				{
-					"id": "5722a1e0-9d21-431b-8546-9a7a1bccf77b",
+					"id": "6b05ed44-71c0-4e01-a51c-4d57ee7a057d",
 					"name": "Calculate gematria - Hebrew gematria calculator API with every spelling shown",
 					"request": {
 						"name": "Calculate gematria - Hebrew gematria calculator API with every spelling shown",
@@ -74,7 +74,7 @@
 					},
 					"response": [
 						{
-							"id": "ca435f69-df9b-48d8-b874-ec4e0ee82715",
+							"id": "d405f34f-90ee-41bf-9fc3-ef9a023ee72e",
 							"name": "Every candidate spelling with its values, the chosen one, and the matches.",
 							"originalRequest": {
 								"url": {
@@ -125,12 +125,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"input\": {\n    \"text\": \"Sarah\",\n    \"textHebrew\": \"שלום\"\n  },\n  \"hebrewForms\": [\n    {\n      \"hebrew\": \"שרה\",\n      \"romanization\": \"ShRH\",\n      \"rule\": \"Longest match first: every two letter group the table prints is read as one Hebrew letter before the single letters are tried.\",\n      \"values\": [\n        {\n          \"id\": \"mispar-hechrachi\",\n          \"value\": 376,\n          \"tradition\": \"rabbinic\",\n          \"source\": \"https://en.wikipedia.org/wiki/Gematria\",\n          \"alternateValues\": [\n            527,\n            536\n          ]\n        },\n        {\n          \"id\": \"mispar-hechrachi\",\n          \"value\": 376,\n          \"tradition\": \"rabbinic\",\n          \"source\": \"https://en.wikipedia.org/wiki/Gematria\",\n          \"alternateValues\": [\n            527,\n            536\n          ]\n        }\n      ],\n      \"letters\": [\n        {\n          \"glyph\": \"ש\",\n          \"letterId\": \"shin\",\n          \"name\": \"Shin\",\n          \"isFinal\": false,\n          \"value\": 300\n        },\n        {\n          \"glyph\": \"ש\",\n          \"letterId\": \"shin\",\n          \"name\": \"Shin\",\n          \"isFinal\": false,\n          \"value\": 300\n        }\n      ]\n    },\n    {\n      \"hebrew\": \"שרה\",\n      \"romanization\": \"ShRH\",\n      \"rule\": \"Longest match first: every two letter group the table prints is read as one Hebrew letter before the single letters are tried.\",\n      \"values\": [\n        {\n          \"id\": \"mispar-hechrachi\",\n          \"value\": 376,\n          \"tradition\": \"rabbinic\",\n          \"source\": \"https://en.wikipedia.org/wiki/Gematria\",\n          \"alternateValues\": [\n            527,\n            536\n          ]\n        },\n        {\n          \"id\": \"mispar-hechrachi\",\n          \"value\": 376,\n          \"tradition\": \"rabbinic\",\n          \"source\": \"https://en.wikipedia.org/wiki/Gematria\",\n          \"alternateValues\": [\n            527,\n            536\n          ]\n        }\n      ],\n      \"letters\": [\n        {\n          \"glyph\": \"ש\",\n          \"letterId\": \"shin\",\n          \"name\": \"Shin\",\n          \"isFinal\": false,\n          \"value\": 300\n        },\n        {\n          \"glyph\": \"ש\",\n          \"letterId\": \"shin\",\n          \"name\": \"Shin\",\n          \"isFinal\": false,\n          \"value\": 300\n        }\n      ]\n    }\n  ],\n  \"chosen\": {\n    \"hebrew\": \"שרה\",\n    \"rule\": \"Longest match first: every two letter group the table prints is read as one Hebrew letter before the single letters are tried.\"\n  },\n  \"values\": [\n    {\n      \"id\": \"mispar-hechrachi\",\n      \"value\": 376,\n      \"tradition\": \"rabbinic\",\n      \"source\": \"https://en.wikipedia.org/wiki/Gematria\",\n      \"alternateValues\": [\n        527,\n        536\n      ]\n    },\n    {\n      \"id\": \"mispar-hechrachi\",\n      \"value\": 376,\n      \"tradition\": \"rabbinic\",\n      \"source\": \"https://en.wikipedia.org/wiki/Gematria\",\n      \"alternateValues\": [\n        527,\n        536\n      ]\n    }\n  ],\n  \"transformations\": [\n    {\n      \"id\": \"atbash\",\n      \"tradition\": \"rabbinic\",\n      \"source\": \"https://en.wikipedia.org/wiki/Gematria\",\n      \"output\": \"בבל\",\n      \"outputRomanization\": \"BBL\",\n      \"value\": 34\n    },\n    {\n      \"id\": \"atbash\",\n      \"tradition\": \"rabbinic\",\n      \"source\": \"https://en.wikipedia.org/wiki/Gematria\",\n      \"output\": \"בבל\",\n      \"outputRomanization\": \"BBL\",\n      \"value\": 34\n    }\n  ],\n  \"matches\": [\n    {\n      \"id\": \"shalom\",\n      \"hebrew\": \"שלום\",\n      \"romanization\": \"ShLVM\",\n      \"meaning\": \"peace\",\n      \"value\": 376,\n      \"note\": \"Peace and the name Esau share a value, which the sources treat as a deliberate pairing.\",\n      \"sources\": [\n        \"https://www.sefaria.org/Noam_Elimelekh%2C_Additions%2C_Likutei_Shoshana.61.1\"\n      ]\n    },\n    {\n      \"id\": \"shalom\",\n      \"hebrew\": \"שלום\",\n      \"romanization\": \"ShLVM\",\n      \"meaning\": \"peace\",\n      \"value\": 376,\n      \"note\": \"Peace and the name Esau share a value, which the sources treat as a deliberate pairing.\",\n      \"sources\": [\n        \"https://www.sefaria.org/Noam_Elimelekh%2C_Additions%2C_Likutei_Shoshana.61.1\"\n      ]\n    }\n  ],\n  \"conventions\": {\n    \"misparGadol\": \"finals-500-900\",\n    \"atbashOutput\": \"both\",\n    \"transliteration\": \"letter-map-mathers\"\n  },\n  \"latinValues\": [\n    {\n      \"id\": \"simple-ordinal\",\n      \"value\": 52,\n      \"tradition\": \"renaissance-latin\",\n      \"lineage\": \"A Latin analogue of Greek isopsephy. Traced through Etienne Tabourot 1583, Pietro Bongo, Georg Philipp Harsdorffer 1651, Athanasius Kircher 1665 and Johann Henning 1683, and called the Alphabetum Cabbalisticum Vulgare by Johann Christoph Maennling 1704 and Christian Friedrich Hunold 1707.\"\n    },\n    {\n      \"id\": \"simple-ordinal\",\n      \"value\": 52,\n      \"tradition\": \"renaissance-latin\",\n      \"lineage\": \"A Latin analogue of Greek isopsephy. Traced through Etienne Tabourot 1583, Pietro Bongo, Georg Philipp Harsdorffer 1651, Athanasius Kircher 1665 and Johann Henning 1683, and called the Alphabetum Cabbalisticum Vulgare by Johann Christoph Maennling 1704 and Christian Friedrich Hunold 1707.\"\n    }\n  ]\n}",
+							"body": "{\n  \"input\": {\n    \"text\": \"Sarah\",\n    \"textHebrew\": \"שלום\"\n  },\n  \"hebrewForms\": [\n    {\n      \"hebrew\": \"שרה\",\n      \"romanization\": \"ShRH\",\n      \"rule\": \"Longest match first: every two letter group the table prints is read as one Hebrew letter before the single letters are tried.\",\n      \"values\": [\n        {\n          \"id\": \"mispar-hechrachi\",\n          \"value\": 376,\n          \"tradition\": \"rabbinic\",\n          \"source\": \"https://en.wikipedia.org/wiki/Gematria\",\n          \"alternateValues\": [\n            527,\n            536\n          ]\n        },\n        {\n          \"id\": \"mispar-hechrachi\",\n          \"value\": 376,\n          \"tradition\": \"rabbinic\",\n          \"source\": \"https://en.wikipedia.org/wiki/Gematria\",\n          \"alternateValues\": [\n            527,\n            536\n          ]\n        }\n      ],\n      \"letters\": [\n        {\n          \"glyph\": \"ש\",\n          \"letterId\": \"shin\",\n          \"name\": \"Shin\",\n          \"isFinal\": false,\n          \"value\": 300\n        },\n        {\n          \"glyph\": \"ש\",\n          \"letterId\": \"shin\",\n          \"name\": \"Shin\",\n          \"isFinal\": false,\n          \"value\": 300\n        }\n      ]\n    },\n    {\n      \"hebrew\": \"שרה\",\n      \"romanization\": \"ShRH\",\n      \"rule\": \"Longest match first: every two letter group the table prints is read as one Hebrew letter before the single letters are tried.\",\n      \"values\": [\n        {\n          \"id\": \"mispar-hechrachi\",\n          \"value\": 376,\n          \"tradition\": \"rabbinic\",\n          \"source\": \"https://en.wikipedia.org/wiki/Gematria\",\n          \"alternateValues\": [\n            527,\n            536\n          ]\n        },\n        {\n          \"id\": \"mispar-hechrachi\",\n          \"value\": 376,\n          \"tradition\": \"rabbinic\",\n          \"source\": \"https://en.wikipedia.org/wiki/Gematria\",\n          \"alternateValues\": [\n            527,\n            536\n          ]\n        }\n      ],\n      \"letters\": [\n        {\n          \"glyph\": \"ש\",\n          \"letterId\": \"shin\",\n          \"name\": \"Shin\",\n          \"isFinal\": false,\n          \"value\": 300\n        },\n        {\n          \"glyph\": \"ש\",\n          \"letterId\": \"shin\",\n          \"name\": \"Shin\",\n          \"isFinal\": false,\n          \"value\": 300\n        }\n      ]\n    }\n  ],\n  \"chosen\": {\n    \"hebrew\": \"שרה\",\n    \"rule\": \"Longest match first: every two letter group the table prints is read as one Hebrew letter before the single letters are tried.\"\n  },\n  \"values\": [\n    {\n      \"id\": \"mispar-hechrachi\",\n      \"value\": 376,\n      \"tradition\": \"rabbinic\",\n      \"source\": \"https://en.wikipedia.org/wiki/Gematria\",\n      \"name\": \"Mispar hechrachi (absolute value)\",\n      \"alternateValues\": [\n        527,\n        536\n      ]\n    },\n    {\n      \"id\": \"mispar-hechrachi\",\n      \"value\": 376,\n      \"tradition\": \"rabbinic\",\n      \"source\": \"https://en.wikipedia.org/wiki/Gematria\",\n      \"name\": \"Mispar hechrachi (absolute value)\",\n      \"alternateValues\": [\n        527,\n        536\n      ]\n    }\n  ],\n  \"transformations\": [\n    {\n      \"id\": \"atbash\",\n      \"name\": \"AtBash\",\n      \"tradition\": \"rabbinic\",\n      \"source\": \"https://en.wikipedia.org/wiki/Gematria\",\n      \"output\": \"בבל\",\n      \"outputRomanization\": \"BBL\",\n      \"value\": 34\n    },\n    {\n      \"id\": \"atbash\",\n      \"name\": \"AtBash\",\n      \"tradition\": \"rabbinic\",\n      \"source\": \"https://en.wikipedia.org/wiki/Gematria\",\n      \"output\": \"בבל\",\n      \"outputRomanization\": \"BBL\",\n      \"value\": 34\n    }\n  ],\n  \"matches\": [\n    {\n      \"id\": \"shalom\",\n      \"hebrew\": \"שלום\",\n      \"romanization\": \"ShLVM\",\n      \"meaning\": \"peace\",\n      \"value\": 376,\n      \"note\": \"Peace and the name Esau share a value, which the sources treat as a deliberate pairing.\",\n      \"sources\": [\n        \"https://www.sefaria.org/Noam_Elimelekh%2C_Additions%2C_Likutei_Shoshana.61.1\"\n      ]\n    },\n    {\n      \"id\": \"shalom\",\n      \"hebrew\": \"שלום\",\n      \"romanization\": \"ShLVM\",\n      \"meaning\": \"peace\",\n      \"value\": 376,\n      \"note\": \"Peace and the name Esau share a value, which the sources treat as a deliberate pairing.\",\n      \"sources\": [\n        \"https://www.sefaria.org/Noam_Elimelekh%2C_Additions%2C_Likutei_Shoshana.61.1\"\n      ]\n    }\n  ],\n  \"conventions\": {\n    \"misparGadol\": \"finals-500-900\",\n    \"atbashOutput\": \"both\",\n    \"transliteration\": \"letter-map-mathers\"\n  },\n  \"latinValues\": [\n    {\n      \"id\": \"simple-ordinal\",\n      \"value\": 52,\n      \"tradition\": \"renaissance-latin\",\n      \"lineage\": \"A Latin analogue of Greek isopsephy. Traced through Etienne Tabourot 1583, Pietro Bongo, Georg Philipp Harsdorffer 1651, Athanasius Kircher 1665 and Johann Henning 1683, and called the Alphabetum Cabbalisticum Vulgare by Johann Christoph Maennling 1704 and Christian Friedrich Hunold 1707.\"\n    },\n    {\n      \"id\": \"simple-ordinal\",\n      \"value\": 52,\n      \"tradition\": \"renaissance-latin\",\n      \"lineage\": \"A Latin analogue of Greek isopsephy. Traced through Etienne Tabourot 1583, Pietro Bongo, Georg Philipp Harsdorffer 1651, Athanasius Kircher 1665 and Johann Henning 1683, and called the Alphabetum Cabbalisticum Vulgare by Johann Christoph Maennling 1704 and Christian Friedrich Hunold 1707.\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "cae80718-5725-4cd7-8527-9a8ab647ad5b",
+							"id": "c82e4a81-a983-4136-9c3a-8c8690dded03",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -181,12 +181,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8174.63224369124,\n      \"maximum\": 7201.332216598144,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6383.139830102777,\n      \"maximum\": 8293.401748490112,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3310.167312409815,\n      \"maximum\": 1202.1062595444243,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7073.929051767205,\n      \"maximum\": 9839.499971107212,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "53f4204c-cca1-4705-8cef-d105a673a684",
+							"id": "856377e6-832c-440c-9893-e3797f69025f",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -242,7 +242,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ecd6da86-bb5b-4ca5-919b-fef4893322ae",
+							"id": "d7a6827d-9b48-4f8f-bc4a-3baa27399ccd",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -304,7 +304,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "52150ef1-3622-47d2-976c-44237a955d2c",
+							"id": "febf1b08-a4f0-4b71-a0b5-794a3aa2ce5d",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -360,7 +360,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "74c8d517-f8e4-451c-b353-61b965eb89e1",
+							"id": "cd5c5673-fafa-4df5-a4b4-8cadd5435c55",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -422,7 +422,7 @@
 					}
 				},
 				{
-					"id": "714bba48-6eeb-4826-b001-10fe0f0245df",
+					"id": "d2087c3c-94dd-4751-afa2-4ca0ce28537f",
 					"name": "List gematria ciphers - gematria methods API with provenance on every row",
 					"request": {
 						"name": "List gematria ciphers - gematria methods API with provenance on every row",
@@ -474,7 +474,7 @@
 					},
 					"response": [
 						{
-							"id": "1108b5ec-fb33-4f7f-860c-ba5f72beb58a",
+							"id": "8d1b84ca-21ce-4fe7-92ea-198775921c80",
 							"name": "The cipher catalogue, split by kind.",
 							"originalRequest": {
 								"url": {
@@ -522,7 +522,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "4b7abbef-8538-489e-b870-de2147f7490e",
+							"id": "876240e1-3bcb-4aa3-9cf7-179ee94fc7ce",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -565,12 +565,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8174.63224369124,\n      \"maximum\": 7201.332216598144,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6383.139830102777,\n      \"maximum\": 8293.401748490112,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3310.167312409815,\n      \"maximum\": 1202.1062595444243,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7073.929051767205,\n      \"maximum\": 9839.499971107212,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "24d6b16f-4791-4b6a-9d96-e6704f11113a",
+							"id": "580ef6dd-7182-4083-a623-81199dd07482",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -618,7 +618,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2a5ba31d-2edd-4702-b531-168cbe5bbf2f",
+							"id": "c46f8d7b-f94b-48f5-8f9a-2aa705853a84",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -672,7 +672,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6a57abf8-45d8-4af2-9325-bd2a76e140af",
+							"id": "4034ab44-9740-4c5b-8757-818b13b72abf",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -720,7 +720,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "59654fdb-e6ff-4c07-83a7-f9fefb345ac9",
+							"id": "97b633cf-ab0c-4715-a797-b0a516dc374d",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -774,7 +774,7 @@
 					}
 				},
 				{
-					"id": "f6cf7eb6-b3e3-4968-a861-11be509b5b88",
+					"id": "61fe54d9-a440-4d9d-bdb6-ec8755bdf5fa",
 					"name": "Generate a name profile - Kabbalah name numerology API with the spelling shown",
 					"request": {
 						"name": "Generate a name profile - Kabbalah name numerology API with the spelling shown",
@@ -839,7 +839,7 @@
 					},
 					"response": [
 						{
-							"id": "e85d3242-ca97-48da-b44e-ac03cb6472c9",
+							"id": "02d7128d-4e63-4bcb-83d5-40c8da49c775",
 							"name": "The name profile.",
 							"originalRequest": {
 								"url": {
@@ -895,7 +895,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c2225dc4-a342-42a2-80a9-3477c74692e5",
+							"id": "14cfe7e7-4f93-4a12-8c98-1d38575e1c16",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -946,12 +946,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8174.63224369124,\n      \"maximum\": 7201.332216598144,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6383.139830102777,\n      \"maximum\": 8293.401748490112,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3310.167312409815,\n      \"maximum\": 1202.1062595444243,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7073.929051767205,\n      \"maximum\": 9839.499971107212,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c3409510-7768-44a7-9895-415f400773b2",
+							"id": "82e41438-84e3-4d7c-b951-2ff1abb35c39",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1007,7 +1007,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7e73065d-0661-4e25-8df4-cb1e567a6c52",
+							"id": "91928106-748c-4a6f-9de4-4ab324621a2c",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1069,7 +1069,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ba15018e-fce4-4975-9026-b10ab21dd3eb",
+							"id": "6dcde4f4-e212-43b1-b7ad-7764efb79142",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1125,7 +1125,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b12412c4-f1f3-4523-ab23-974af9e1cca9",
+							"id": "40d9acb3-5b68-4e88-b633-ed38c3789f62",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1187,7 +1187,7 @@
 					}
 				},
 				{
-					"id": "150dc110-51ef-47b2-98ee-ce0df4f98841",
+					"id": "f09c6e68-dcd2-4820-b782-f9d23f6546de",
 					"name": "Generate a birth profile - Hebrew birthday and birth angel API",
 					"request": {
 						"name": "Generate a birth profile - Hebrew birthday and birth angel API",
@@ -1242,7 +1242,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"date\": \"1990-06-15\",\n  \"timezone\": -9.96679599220817,\n  \"time\": \"14:30:00\",\n  \"angelDating\": \"solar-longitude\",\n  \"yearStart\": \"march-21\",\n  \"leapDayPolicy\": \"extend-previous\",\n  \"afterSunset\": false\n}",
+							"raw": "{\n  \"date\": \"1990-06-15\",\n  \"timezone\": -0.8864497692954529,\n  \"time\": \"14:30:00\",\n  \"angelDating\": \"solar-longitude\",\n  \"yearStart\": \"march-21\",\n  \"leapDayPolicy\": \"extend-previous\",\n  \"afterSunset\": false\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1252,7 +1252,7 @@
 					},
 					"response": [
 						{
-							"id": "31ace813-c896-484f-a1d8-704e6e9c4f77",
+							"id": "50a6baf1-ab30-4941-9c8d-915abbf8f6e1",
 							"name": "The Hebrew date, the birthday, the three names and the sephirah.",
 							"originalRequest": {
 								"url": {
@@ -1287,7 +1287,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"timezone\": -9.96679599220817,\n  \"time\": \"14:30:00\",\n  \"angelDating\": \"solar-longitude\",\n  \"yearStart\": \"march-21\",\n  \"leapDayPolicy\": \"extend-previous\",\n  \"afterSunset\": false\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"timezone\": -0.8864497692954529,\n  \"time\": \"14:30:00\",\n  \"angelDating\": \"solar-longitude\",\n  \"yearStart\": \"march-21\",\n  \"leapDayPolicy\": \"extend-previous\",\n  \"afterSunset\": false\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1308,7 +1308,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c10ee544-5598-43b7-9557-ebe05739f691",
+							"id": "fbb4693c-0ebb-43bc-aa89-470ffeb75180",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1343,7 +1343,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"timezone\": -9.96679599220817,\n  \"time\": \"14:30:00\",\n  \"angelDating\": \"solar-longitude\",\n  \"yearStart\": \"march-21\",\n  \"leapDayPolicy\": \"extend-previous\",\n  \"afterSunset\": false\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"timezone\": -0.8864497692954529,\n  \"time\": \"14:30:00\",\n  \"angelDating\": \"solar-longitude\",\n  \"yearStart\": \"march-21\",\n  \"leapDayPolicy\": \"extend-previous\",\n  \"afterSunset\": false\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1359,12 +1359,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8174.63224369124,\n      \"maximum\": 7201.332216598144,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6383.139830102777,\n      \"maximum\": 8293.401748490112,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3310.167312409815,\n      \"maximum\": 1202.1062595444243,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7073.929051767205,\n      \"maximum\": 9839.499971107212,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0b6a14c3-17e0-4561-b72e-a5be92f85841",
+							"id": "9ff9d897-523a-47ff-8832-bd17a2363595",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1399,7 +1399,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"timezone\": -9.96679599220817,\n  \"time\": \"14:30:00\",\n  \"angelDating\": \"solar-longitude\",\n  \"yearStart\": \"march-21\",\n  \"leapDayPolicy\": \"extend-previous\",\n  \"afterSunset\": false\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"timezone\": -0.8864497692954529,\n  \"time\": \"14:30:00\",\n  \"angelDating\": \"solar-longitude\",\n  \"yearStart\": \"march-21\",\n  \"leapDayPolicy\": \"extend-previous\",\n  \"afterSunset\": false\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1420,7 +1420,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7105234b-075d-4a54-bb94-bece1953c2f4",
+							"id": "017e8a1d-3954-4ab2-a47b-5859d5ae937f",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1455,7 +1455,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"timezone\": -9.96679599220817,\n  \"time\": \"14:30:00\",\n  \"angelDating\": \"solar-longitude\",\n  \"yearStart\": \"march-21\",\n  \"leapDayPolicy\": \"extend-previous\",\n  \"afterSunset\": false\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"timezone\": -0.8864497692954529,\n  \"time\": \"14:30:00\",\n  \"angelDating\": \"solar-longitude\",\n  \"yearStart\": \"march-21\",\n  \"leapDayPolicy\": \"extend-previous\",\n  \"afterSunset\": false\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1482,7 +1482,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c80e4e89-5ac6-4240-9de6-34ff47e0459e",
+							"id": "236c08b7-8f4d-463a-b93b-02d061f35c32",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1517,7 +1517,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"timezone\": -9.96679599220817,\n  \"time\": \"14:30:00\",\n  \"angelDating\": \"solar-longitude\",\n  \"yearStart\": \"march-21\",\n  \"leapDayPolicy\": \"extend-previous\",\n  \"afterSunset\": false\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"timezone\": -0.8864497692954529,\n  \"time\": \"14:30:00\",\n  \"angelDating\": \"solar-longitude\",\n  \"yearStart\": \"march-21\",\n  \"leapDayPolicy\": \"extend-previous\",\n  \"afterSunset\": false\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1538,7 +1538,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "36498f6b-4e86-4cdc-bb6f-73ecf069868b",
+							"id": "24a9ed48-0602-4d0c-bd32-4b02caef9a54",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1573,7 +1573,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"timezone\": -9.96679599220817,\n  \"time\": \"14:30:00\",\n  \"angelDating\": \"solar-longitude\",\n  \"yearStart\": \"march-21\",\n  \"leapDayPolicy\": \"extend-previous\",\n  \"afterSunset\": false\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"timezone\": -0.8864497692954529,\n  \"time\": \"14:30:00\",\n  \"angelDating\": \"solar-longitude\",\n  \"yearStart\": \"march-21\",\n  \"leapDayPolicy\": \"extend-previous\",\n  \"afterSunset\": false\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1600,7 +1600,7 @@
 					}
 				},
 				{
-					"id": "5f7410f0-545f-496b-84fb-731106594868",
+					"id": "c9b917d7-3df0-42a4-bac3-224344c7ac66",
 					"name": "List the 72 names - Shem HaMephorash API derived from the verses",
 					"request": {
 						"name": "List the 72 names - Shem HaMephorash API derived from the verses",
@@ -1670,7 +1670,7 @@
 					},
 					"response": [
 						{
-							"id": "0e383440-6750-455f-8155-e2a172cfd87f",
+							"id": "c94f5b90-d0e4-4b16-a2db-613e04e7d930",
 							"name": "The names, or the one name governing the requested longitude.",
 							"originalRequest": {
 								"url": {
@@ -1730,7 +1730,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "74ed037d-2ea3-457a-a743-f33f4215fd17",
+							"id": "d1c4dc93-40c4-467f-ba3d-19ee2309467a",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1785,12 +1785,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8174.63224369124,\n      \"maximum\": 7201.332216598144,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6383.139830102777,\n      \"maximum\": 8293.401748490112,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3310.167312409815,\n      \"maximum\": 1202.1062595444243,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7073.929051767205,\n      \"maximum\": 9839.499971107212,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2a650218-9845-4543-a9de-8c966d9f45b1",
+							"id": "7d11825c-191f-446a-9d81-afe7e960ceef",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1850,7 +1850,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "396c4510-99e1-458c-a889-e97f8d169e69",
+							"id": "0f11cbc7-30b5-4990-a119-797a6d1d5b10",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1916,7 +1916,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "459e8d38-27a6-4a84-8a72-e20789345eba",
+							"id": "7ab8fd84-4fe2-4fb1-b5cf-ea041e5ba335",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1976,7 +1976,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "936b5bcc-143e-47ca-b56b-c9eec1343e19",
+							"id": "eec9776b-be05-4c16-8474-67e497c60853",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2042,7 +2042,7 @@
 					}
 				},
 				{
-					"id": "3f7b2d89-bd6b-487d-8d3e-978af7037cd5",
+					"id": "4466f1c5-042b-47c2-a069-2fd249287dd8",
 					"name": "Get one of the 72 names - 72 names of God API by index",
 					"request": {
 						"name": "Get one of the 72 names - 72 names of God API by index",
@@ -2103,7 +2103,7 @@
 					},
 					"response": [
 						{
-							"id": "a79b018d-267e-498e-b531-18fb30813267",
+							"id": "3877154f-a0d2-470f-a327-2ad357368cf2",
 							"name": "The name.",
 							"originalRequest": {
 								"url": {
@@ -2160,7 +2160,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6205f00f-56d7-4fa1-b81a-799770ff978f",
+							"id": "8acc9466-ba77-45b7-8191-026bdef99c71",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2212,12 +2212,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8174.63224369124,\n      \"maximum\": 7201.332216598144,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6383.139830102777,\n      \"maximum\": 8293.401748490112,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3310.167312409815,\n      \"maximum\": 1202.1062595444243,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7073.929051767205,\n      \"maximum\": 9839.499971107212,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2f261b18-0c31-4c07-90be-0dd2c3c54e0e",
+							"id": "a3409613-83bc-4e97-a6b2-2b99ad7e292e",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2274,7 +2274,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "12e25c01-5fef-4900-b29f-49d4b7d2009f",
+							"id": "63cb63c1-e935-4267-a5cf-91f23e9fc5ad",
 							"name": "No name carries that index.",
 							"originalRequest": {
 								"url": {
@@ -2331,7 +2331,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "05bb0fef-9f03-49e1-9eda-67525fa088c3",
+							"id": "081467bb-4b48-4ff1-a3e1-539701e98c35",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2394,7 +2394,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6ca5c52b-5e30-41a0-8190-1f7b184c5d13",
+							"id": "5cb6e6da-a400-4c27-88b5-f4d96e1c7768",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2451,7 +2451,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6f83b658-a008-40c3-8396-ccc9c1a4f05f",
+							"id": "05298e31-eea8-4217-b8fb-3730b87373dc",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2514,7 +2514,7 @@
 					}
 				},
 				{
-					"id": "d4df39b6-d9ac-4052-a815-686a0ac21a3e",
+					"id": "0d85adb8-a0a5-4b44-9fd5-01e3156f034e",
 					"name": "Get the Tree of Life - sephirot and 22 paths API with typed school variants",
 					"request": {
 						"name": "Get the Tree of Life - sephirot and 22 paths API with typed school variants",
@@ -2584,7 +2584,7 @@
 					},
 					"response": [
 						{
-							"id": "54d46ec7-819a-4163-94c6-3bfbab7a92d8",
+							"id": "1e00e167-3c5b-4753-a45a-5adb8e761991",
 							"name": "The sephirot, the paths, the worlds and the lightning flash.",
 							"originalRequest": {
 								"url": {
@@ -2644,7 +2644,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1b3b44c8-ee59-46e0-a9ed-7348d3516e51",
+							"id": "96bd5ec7-3278-4088-b41c-ebc71fe31e48",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2699,12 +2699,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8174.63224369124,\n      \"maximum\": 7201.332216598144,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6383.139830102777,\n      \"maximum\": 8293.401748490112,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3310.167312409815,\n      \"maximum\": 1202.1062595444243,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7073.929051767205,\n      \"maximum\": 9839.499971107212,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2192f380-6d95-4146-98ce-d283ebe6468f",
+							"id": "18115bee-3aa0-45e2-8977-747c4658599b",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2764,7 +2764,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2f45e6f5-91da-4c3f-84e2-2b747bfbe76a",
+							"id": "504f58ec-5abf-40a3-becf-57d02017373f",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2830,7 +2830,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "72a3d62a-e5a4-4a8d-b38b-5c02f95f8e8a",
+							"id": "53856c43-c303-463e-919c-20fd056275f6",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2890,7 +2890,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e7b4e29d-7860-42d6-93a3-1f6cb3e3272b",
+							"id": "3ac5953b-204d-4ee8-abe5-34074128e6c8",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2956,7 +2956,7 @@
 					}
 				},
 				{
-					"id": "7426afbf-d03d-4cf8-b031-1473d4e31580",
+					"id": "8fc99e65-e6fb-46b3-8f00-7663fb9a8f9a",
 					"name": "Get one sephirah - sefirot meaning API with the paths that touch it",
 					"request": {
 						"name": "Get one sephirah - sefirot meaning API with the paths that touch it",
@@ -3029,7 +3029,7 @@
 					},
 					"response": [
 						{
-							"id": "bb8afb47-98db-481e-a632-fef7027158db",
+							"id": "e2fd7e7c-e00a-4056-8ed3-107ae6183ea4",
 							"name": "The sephirah, with the paths that touch it.",
 							"originalRequest": {
 								"url": {
@@ -3094,7 +3094,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9c4920b7-234c-4468-8841-779cc6bfef9e",
+							"id": "e9b9faf5-09af-40e8-abcb-25a6d90346e1",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3154,12 +3154,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8174.63224369124,\n      \"maximum\": 7201.332216598144,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6383.139830102777,\n      \"maximum\": 8293.401748490112,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3310.167312409815,\n      \"maximum\": 1202.1062595444243,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7073.929051767205,\n      \"maximum\": 9839.499971107212,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3bf14694-ac40-4d97-9b32-ea173768b04e",
+							"id": "d00f76de-0c70-4c59-8de7-cf2550c7fa01",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3224,7 +3224,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "81f2ffbc-63fe-4fde-81ba-9e70cc9ab835",
+							"id": "d172b27f-4269-45f9-91a4-0b4b01678cb2",
 							"name": "No sephirah carries that identifier.",
 							"originalRequest": {
 								"url": {
@@ -3289,7 +3289,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d4a92d88-7d7f-4360-83c9-482fe3759aea",
+							"id": "3d5c4af0-6238-4c7e-9c61-e57dd1e79141",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3360,7 +3360,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5b05e839-3026-4eca-8399-4c24074936a2",
+							"id": "550125d1-2448-4756-a64a-afdff99d9098",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3425,7 +3425,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "58ae296f-c781-40ae-9818-ee7690e63d4f",
+							"id": "dca0cc25-2e8f-4d7a-9a1c-25d4b111375c",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3496,7 +3496,7 @@
 					}
 				},
 				{
-					"id": "6e892a9e-4e9d-4c6c-8dc3-00a3243a8395",
+					"id": "14ec3c98-aa28-4c3c-bb6c-fca1edb5c962",
 					"name": "List the Hebrew letters - Hebrew alphabet API with the Sefer Yetzirah attributions",
 					"request": {
 						"name": "List the Hebrew letters - Hebrew alphabet API with the Sefer Yetzirah attributions",
@@ -3554,7 +3554,7 @@
 					},
 					"response": [
 						{
-							"id": "90459f85-8a7a-49fc-9c76-da13711cf8c9",
+							"id": "3450190f-3fa9-4e84-b2ae-7c3b89e22f9c",
 							"name": "All 22 letters in alphabet order.",
 							"originalRequest": {
 								"url": {
@@ -3606,7 +3606,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "966141f1-3307-4fe0-aa91-008d2259a115",
+							"id": "bd92ad01-9b8e-4678-b64f-1a112ab7ff11",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3653,12 +3653,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8174.63224369124,\n      \"maximum\": 7201.332216598144,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6383.139830102777,\n      \"maximum\": 8293.401748490112,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3310.167312409815,\n      \"maximum\": 1202.1062595444243,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7073.929051767205,\n      \"maximum\": 9839.499971107212,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3cfecbdb-743e-458b-b65f-96269006a1b6",
+							"id": "41cee9b1-7631-41a0-a504-dadb090ddfac",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3710,7 +3710,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9477dc86-95b6-4553-a9da-24e47bf7f1cc",
+							"id": "5c61e14d-7e87-4b7a-8e03-4fd97402d152",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3768,7 +3768,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a536a189-bdba-49bd-ab61-caca9c478b20",
+							"id": "32392540-a51d-45f3-a674-ad2cc39f7d62",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3820,7 +3820,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1c2b0c2a-73c7-4f52-ac16-653c8aa295f3",
+							"id": "6e217252-1f2b-4519-8976-2347283871f4",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3878,7 +3878,7 @@
 					}
 				},
 				{
-					"id": "67fbf138-a624-4549-9e0b-279abeb86e19",
+					"id": "31a0479e-6b7a-46e6-a1b9-d354cd827f36",
 					"name": "Get one Hebrew letter - Hebrew letter meaning API",
 					"request": {
 						"name": "Get one Hebrew letter - Hebrew letter meaning API",
@@ -3945,7 +3945,7 @@
 					},
 					"response": [
 						{
-							"id": "5de16696-8b02-43a1-80d4-184e338ba76d",
+							"id": "96168d04-62ed-4b56-85a3-eebafb381aa2",
 							"name": "The letter.",
 							"originalRequest": {
 								"url": {
@@ -4006,7 +4006,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3fe8bed1-70ee-4215-8ab5-a1f32591a2ad",
+							"id": "6f5b7ad3-a429-4264-b1c3-de7dc455fc3a",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -4062,12 +4062,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8174.63224369124,\n      \"maximum\": 7201.332216598144,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6383.139830102777,\n      \"maximum\": 8293.401748490112,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3310.167312409815,\n      \"maximum\": 1202.1062595444243,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7073.929051767205,\n      \"maximum\": 9839.499971107212,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d2d35113-fbc1-4b68-9737-112f20d583de",
+							"id": "b514ee21-7aab-407d-8eaf-b428d87ff88f",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -4128,7 +4128,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "29e2c5f1-8542-479e-85f6-faa07d614496",
+							"id": "02d0283a-505b-47bc-9d66-9dc480463066",
 							"name": "No letter carries that identifier.",
 							"originalRequest": {
 								"url": {
@@ -4189,7 +4189,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "26e098c0-c275-4dbe-bd35-e27fdd85e49e",
+							"id": "848e8198-5641-4150-96c0-1ccdaecaa10f",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -4256,7 +4256,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9320cec0-e303-4bd1-83a1-a0b7e5a221f7",
+							"id": "4f5d7ea1-bd88-4978-9b6d-764d812be8e3",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -4317,7 +4317,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "4862f43d-6232-49f3-92bf-da1596846bda",
+							"id": "fd304625-a485-48a8-b484-f400bea0a8d1",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -4384,7 +4384,7 @@
 					}
 				},
 				{
-					"id": "2b03e9b5-f372-4714-bfb6-a13dad00d0e4",
+					"id": "f3f07bce-bc0e-4d82-91ca-507eba817b2d",
 					"name": "Compare two names - gematria name compatibility API with every component published",
 					"request": {
 						"name": "Compare two names - gematria name compatibility API with every component published",
@@ -4449,7 +4449,7 @@
 					},
 					"response": [
 						{
-							"id": "bc9ad2ac-db4e-48f2-bdfc-9ceab936041a",
+							"id": "2688b67e-72b4-49a2-9900-d3e2bd1caf6b",
 							"name": "Both profiles, what they share, and the composite with its components.",
 							"originalRequest": {
 								"url": {
@@ -4505,7 +4505,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1bcb3074-29b6-4ed3-8131-188635a23391",
+							"id": "ba17ac57-1b3b-465d-a157-a9eefc0d7566",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -4556,12 +4556,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8174.63224369124,\n      \"maximum\": 7201.332216598144,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6383.139830102777,\n      \"maximum\": 8293.401748490112,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3310.167312409815,\n      \"maximum\": 1202.1062595444243,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7073.929051767205,\n      \"maximum\": 9839.499971107212,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b32881e9-8673-4176-8777-1632d38dc576",
+							"id": "94625fe3-b59a-4e45-89fa-2dbe5829d638",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -4617,7 +4617,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "976fff55-8e33-4d82-aae2-70582066aa5c",
+							"id": "486ec3fb-d9e4-4347-ab9e-9192314d37d6",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -4679,7 +4679,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e15e5826-c7e5-47cf-8d47-dc9d73f3bf43",
+							"id": "ec09b5da-a070-4892-97d9-181c7ab407b7",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -4735,7 +4735,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "420df6f2-77a6-4aeb-9ce6-0ff238906591",
+							"id": "6bbcc3fe-11dc-4faa-be28-6d07b6f7dad7",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -4797,7 +4797,7 @@
 					}
 				},
 				{
-					"id": "ce96c45e-4ebc-4054-9f10-099592ba9747",
+					"id": "a5afd46c-fc23-4827-a586-e505e55036c7",
 					"name": "Get the sephirah of the day - Omer count API with the sephirot pairing",
 					"request": {
 						"name": "Get the sephirah of the day - Omer count API with the sephirot pairing",
@@ -4867,7 +4867,7 @@
 					},
 					"response": [
 						{
-							"id": "4397603c-b8f5-4bab-adef-d13947f7b91e",
+							"id": "713e9539-52ae-4bd5-86ad-2d2c57a8e6f7",
 							"name": "The Omer day, or a statement that the count is not running.",
 							"originalRequest": {
 								"url": {
@@ -4927,7 +4927,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a090eb9e-1ac9-4e0b-afe5-d16c27738799",
+							"id": "6622e7aa-872e-4860-923f-a2d7fcbbc4d6",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -4982,12 +4982,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8174.63224369124,\n      \"maximum\": 7201.332216598144,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6383.139830102777,\n      \"maximum\": 8293.401748490112,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3310.167312409815,\n      \"maximum\": 1202.1062595444243,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7073.929051767205,\n      \"maximum\": 9839.499971107212,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8f6886db-b6f9-4c89-b5ed-13c022c89a9a",
+							"id": "5c0b0402-d187-4976-8568-7d48ca01fc7d",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -5047,7 +5047,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2cc7dfb8-8557-47eb-8585-34fa6aa5326c",
+							"id": "ab0cc568-991e-457b-ba3c-3846f689bd13",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -5113,7 +5113,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "922f8352-0f1a-465c-9a4c-33964134fb06",
+							"id": "78916ddb-83c5-43ff-98bd-6fb9adaaf6ab",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -5173,7 +5173,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3782be0e-10e1-4c8d-b534-679b4eed9454",
+							"id": "c297f0a2-9282-4b20-a2b0-c7d34cba7475",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -5278,7 +5278,7 @@
 		]
 	},
 	"info": {
-		"_postman_id": "66b401fa-cbac-4fc5-b794-b03fef989d47",
+		"_postman_id": "e4263b64-506a-438d-b9fb-27c1a2af2e9e",
 		"name": "Kabbalah API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"description": {

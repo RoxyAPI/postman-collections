@@ -1,7 +1,7 @@
 {
 	"item": [
 		{
-			"id": "4632ad3c-e1b8-4904-8b24-41df6c425c3f",
+			"id": "9cd7001a-292d-4097-a62b-5e1ff8ea27a8",
 			"name": "Ayurveda",
 			"description": {
 				"content": "Ayurveda API for dosha profiles, the dinacharya daily routine and the ritucharya seasonal regimen, with a verse cited on every value. Read the vata, pitta and kapha constitution from a verified sidereal birth chart, compute brahma muhurta and the six dosha periods from the real sunrise at any location, resolve the Ayurvedic season from actual solar ingress instants under two published conventions, and serve the catalogue of three doshas, fifteen sub-doshas, six tastes and twenty qualities straight from the primary texts. Deterministic, cacheable and localized. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.",
@@ -9,7 +9,7 @@
 			},
 			"item": [
 				{
-					"id": "7d156c9d-fd8e-47ab-a46e-dc850d12c7be",
+					"id": "65e1bbed-e150-4623-bb6f-0a3ce977d388",
 					"name": "Ayurvedic constitution from a birth chart - Dosha profile API",
 					"request": {
 						"name": "Ayurvedic constitution from a birth chart - Dosha profile API",
@@ -64,7 +64,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"date\": \"1990-07-04\",\n  \"time\": \"10:12:00\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": -9.434175423292656,\n  \"ayanamsa\": \"lahiri\",\n  \"ayanamsaValue\": 24,\n  \"signDoshaScheme\": \"satyacharya\"\n}",
+							"raw": "{\n  \"date\": \"1990-07-04\",\n  \"time\": \"10:12:00\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": -11.097871490287574,\n  \"ayanamsa\": \"lahiri\",\n  \"ayanamsaValue\": 24,\n  \"signDoshaScheme\": \"satyacharya\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -74,7 +74,7 @@
 					},
 					"response": [
 						{
-							"id": "b953e7e5-4cb2-4251-82d6-2f146636019a",
+							"id": "a7529aa1-6cff-45d8-9571-aaf4c9d25f77",
 							"name": "The constitution, its cited factors, and the graha table behind them.",
 							"originalRequest": {
 								"url": {
@@ -109,7 +109,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-04\",\n  \"time\": \"10:12:00\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": -9.434175423292656,\n  \"ayanamsa\": \"lahiri\",\n  \"ayanamsaValue\": 24,\n  \"signDoshaScheme\": \"satyacharya\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-04\",\n  \"time\": \"10:12:00\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": -11.097871490287574,\n  \"ayanamsa\": \"lahiri\",\n  \"ayanamsaValue\": 24,\n  \"signDoshaScheme\": \"satyacharya\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -130,7 +130,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e5ba53f0-a8e3-4d53-8fc0-a664d7390920",
+							"id": "8c2f50f4-48ab-4d7a-a262-e48f25069d94",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -165,7 +165,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-04\",\n  \"time\": \"10:12:00\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": -9.434175423292656,\n  \"ayanamsa\": \"lahiri\",\n  \"ayanamsaValue\": 24,\n  \"signDoshaScheme\": \"satyacharya\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-04\",\n  \"time\": \"10:12:00\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": -11.097871490287574,\n  \"ayanamsa\": \"lahiri\",\n  \"ayanamsaValue\": 24,\n  \"signDoshaScheme\": \"satyacharya\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -181,12 +181,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 882.0183107057721,\n      \"maximum\": 6946.726898714006,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6236.907071767647,\n      \"maximum\": 3683.0732722715366,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 766.9206353114821,\n      \"maximum\": 8503.835528770085,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6915.314189988398,\n      \"maximum\": 7162.857475940803,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8b00e776-9cf2-4838-a2bf-bd0c57aa6672",
+							"id": "af964dd9-594f-48ad-9a69-aea11405ab5d",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -221,7 +221,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-04\",\n  \"time\": \"10:12:00\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": -9.434175423292656,\n  \"ayanamsa\": \"lahiri\",\n  \"ayanamsaValue\": 24,\n  \"signDoshaScheme\": \"satyacharya\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-04\",\n  \"time\": \"10:12:00\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": -11.097871490287574,\n  \"ayanamsa\": \"lahiri\",\n  \"ayanamsaValue\": 24,\n  \"signDoshaScheme\": \"satyacharya\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -242,7 +242,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7fbe64b3-6e5b-4ce8-bd10-bc0932bddec9",
+							"id": "e94afa7a-8cfa-42a7-b0be-c394d560af98",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -277,7 +277,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-04\",\n  \"time\": \"10:12:00\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": -9.434175423292656,\n  \"ayanamsa\": \"lahiri\",\n  \"ayanamsaValue\": 24,\n  \"signDoshaScheme\": \"satyacharya\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-04\",\n  \"time\": \"10:12:00\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": -11.097871490287574,\n  \"ayanamsa\": \"lahiri\",\n  \"ayanamsaValue\": 24,\n  \"signDoshaScheme\": \"satyacharya\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -304,7 +304,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "cba4a2d4-75df-4267-b60d-828fb47aa00d",
+							"id": "92af7ad8-18eb-4e11-86ed-932742d3df72",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -339,7 +339,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-04\",\n  \"time\": \"10:12:00\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": -9.434175423292656,\n  \"ayanamsa\": \"lahiri\",\n  \"ayanamsaValue\": 24,\n  \"signDoshaScheme\": \"satyacharya\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-04\",\n  \"time\": \"10:12:00\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": -11.097871490287574,\n  \"ayanamsa\": \"lahiri\",\n  \"ayanamsaValue\": 24,\n  \"signDoshaScheme\": \"satyacharya\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -360,7 +360,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "964f19a2-2b91-4f40-a48c-09bfe7c7ae0c",
+							"id": "03dd32e9-163c-4174-9c68-5aee87d4fbe9",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -395,7 +395,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-07-04\",\n  \"time\": \"10:12:00\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": -9.434175423292656,\n  \"ayanamsa\": \"lahiri\",\n  \"ayanamsaValue\": 24,\n  \"signDoshaScheme\": \"satyacharya\"\n}",
+									"raw": "{\n  \"date\": \"1990-07-04\",\n  \"time\": \"10:12:00\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": -11.097871490287574,\n  \"ayanamsa\": \"lahiri\",\n  \"ayanamsaValue\": 24,\n  \"signDoshaScheme\": \"satyacharya\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -422,7 +422,7 @@
 					}
 				},
 				{
-					"id": "d2cec5e2-a031-4398-94de-9bc2c8a64945",
+					"id": "1df67522-4a00-4b17-ae4b-0e396587717d",
 					"name": "Dinacharya daily routine - Brahma muhurta and dosha clock API",
 					"request": {
 						"name": "Dinacharya daily routine - Brahma muhurta and dosha clock API",
@@ -477,7 +477,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"date\": \"2026-06-21\",\n  \"latitude\": 51.5074,\n  \"longitude\": -0.1278,\n  \"timezone\": -10.281614429873114,\n  \"doshaClock\": \"sunrise-anchored\"\n}",
+							"raw": "{\n  \"date\": \"2026-06-21\",\n  \"latitude\": 51.5074,\n  \"longitude\": -0.1278,\n  \"timezone\": 11.619775286907249,\n  \"doshaClock\": \"sunrise-anchored\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -487,7 +487,7 @@
 					},
 					"response": [
 						{
-							"id": "ab8112b9-1348-43f6-8bd7-1815e8b77379",
+							"id": "457996d9-b0fd-46e6-bb8d-ead80ae7a171",
 							"name": "The day divided, with the routine the chapter gives.",
 							"originalRequest": {
 								"url": {
@@ -522,7 +522,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"2026-06-21\",\n  \"latitude\": 51.5074,\n  \"longitude\": -0.1278,\n  \"timezone\": -10.281614429873114,\n  \"doshaClock\": \"sunrise-anchored\"\n}",
+									"raw": "{\n  \"date\": \"2026-06-21\",\n  \"latitude\": 51.5074,\n  \"longitude\": -0.1278,\n  \"timezone\": 11.619775286907249,\n  \"doshaClock\": \"sunrise-anchored\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -543,7 +543,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f912b5d5-ab91-4670-a946-924ebaf38758",
+							"id": "0cb71b7e-ea54-4593-8de4-e6ca61c8c080",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -578,7 +578,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"2026-06-21\",\n  \"latitude\": 51.5074,\n  \"longitude\": -0.1278,\n  \"timezone\": -10.281614429873114,\n  \"doshaClock\": \"sunrise-anchored\"\n}",
+									"raw": "{\n  \"date\": \"2026-06-21\",\n  \"latitude\": 51.5074,\n  \"longitude\": -0.1278,\n  \"timezone\": 11.619775286907249,\n  \"doshaClock\": \"sunrise-anchored\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -594,12 +594,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 882.0183107057721,\n      \"maximum\": 6946.726898714006,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6236.907071767647,\n      \"maximum\": 3683.0732722715366,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 766.9206353114821,\n      \"maximum\": 8503.835528770085,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6915.314189988398,\n      \"maximum\": 7162.857475940803,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b74a69e0-716c-419e-a877-455229ab83ee",
+							"id": "9706bed3-dee8-4ea8-b823-9d0934417d49",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -634,7 +634,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"2026-06-21\",\n  \"latitude\": 51.5074,\n  \"longitude\": -0.1278,\n  \"timezone\": -10.281614429873114,\n  \"doshaClock\": \"sunrise-anchored\"\n}",
+									"raw": "{\n  \"date\": \"2026-06-21\",\n  \"latitude\": 51.5074,\n  \"longitude\": -0.1278,\n  \"timezone\": 11.619775286907249,\n  \"doshaClock\": \"sunrise-anchored\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -655,7 +655,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1dbc3615-6a0c-46da-b29f-777e798e9028",
+							"id": "8c2784d7-b1a5-44d7-b7f4-96836163b9cc",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -690,7 +690,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"2026-06-21\",\n  \"latitude\": 51.5074,\n  \"longitude\": -0.1278,\n  \"timezone\": -10.281614429873114,\n  \"doshaClock\": \"sunrise-anchored\"\n}",
+									"raw": "{\n  \"date\": \"2026-06-21\",\n  \"latitude\": 51.5074,\n  \"longitude\": -0.1278,\n  \"timezone\": 11.619775286907249,\n  \"doshaClock\": \"sunrise-anchored\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -717,7 +717,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "49341dd1-cbf1-4ef7-98ca-7a73f1160857",
+							"id": "a1e4b0bc-2fff-4761-9cb2-8506e53fe8c8",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -752,7 +752,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"2026-06-21\",\n  \"latitude\": 51.5074,\n  \"longitude\": -0.1278,\n  \"timezone\": -10.281614429873114,\n  \"doshaClock\": \"sunrise-anchored\"\n}",
+									"raw": "{\n  \"date\": \"2026-06-21\",\n  \"latitude\": 51.5074,\n  \"longitude\": -0.1278,\n  \"timezone\": 11.619775286907249,\n  \"doshaClock\": \"sunrise-anchored\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -773,7 +773,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e3b840f2-09c3-4108-959c-ff887f66176d",
+							"id": "c5cdeaf2-65d0-464c-b169-92dc8f03cef4",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -808,7 +808,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"2026-06-21\",\n  \"latitude\": 51.5074,\n  \"longitude\": -0.1278,\n  \"timezone\": -10.281614429873114,\n  \"doshaClock\": \"sunrise-anchored\"\n}",
+									"raw": "{\n  \"date\": \"2026-06-21\",\n  \"latitude\": 51.5074,\n  \"longitude\": -0.1278,\n  \"timezone\": 11.619775286907249,\n  \"doshaClock\": \"sunrise-anchored\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -835,7 +835,7 @@
 					}
 				},
 				{
-					"id": "4d6613d1-19c0-4e7f-b95e-4cecd6b51085",
+					"id": "d6754540-bd1d-4820-a93b-2016197092cb",
 					"name": "Ayurveda seasonal regimen - Ritucharya and ritu resolution API",
 					"request": {
 						"name": "Ayurveda seasonal regimen - Ritucharya and ritu resolution API",
@@ -900,7 +900,7 @@
 					},
 					"response": [
 						{
-							"id": "88643695-388a-4ddd-94a9-b81ab8f8d28d",
+							"id": "e6f219bd-673a-4b62-9500-0d0cb0f0b6fe",
 							"name": "The season, its boundaries, and what the chapter states for it.",
 							"originalRequest": {
 								"url": {
@@ -956,7 +956,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "faefc263-96e2-41c7-a0f1-fb573cae2038",
+							"id": "94b8333a-81d7-4f1e-880a-9834be4d503e",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1007,12 +1007,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 882.0183107057721,\n      \"maximum\": 6946.726898714006,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6236.907071767647,\n      \"maximum\": 3683.0732722715366,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 766.9206353114821,\n      \"maximum\": 8503.835528770085,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6915.314189988398,\n      \"maximum\": 7162.857475940803,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8a4d80d8-037b-4a4b-8739-000989bce1e4",
+							"id": "58a5d7b4-dd48-481d-a14b-fd2690c9a455",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1068,7 +1068,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ec019648-cfcd-47f3-844b-6be2a0e3617a",
+							"id": "b42b9858-9ff9-4974-a55e-1d01bb36ae8d",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1130,7 +1130,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "18a5d104-cbfe-4747-9f94-6394f433e405",
+							"id": "c6ce4811-bba4-4324-9fb8-4f398ee5f927",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1186,7 +1186,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "449a6335-712e-48d3-a869-06e582e50fa7",
+							"id": "aaa33d08-83d6-4522-93b2-e74d6df7f8de",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1248,7 +1248,7 @@
 					}
 				},
 				{
-					"id": "ac779b27-6211-4934-822f-251ce48b82f3",
+					"id": "621f4c1f-7662-4a41-bead-69dba9ece73b",
 					"name": "Daily Ayurveda reading - Dosha clock and brahma muhurta by location API",
 					"request": {
 						"name": "Daily Ayurveda reading - Dosha clock and brahma muhurta by location API",
@@ -1324,7 +1324,7 @@
 					},
 					"response": [
 						{
-							"id": "ae6e8430-fc6a-43ab-9d1b-6738952098ab",
+							"id": "3feebc00-0d54-481d-a4a6-d14fdcd4854c",
 							"name": "The day, composed from the routine and the season.",
 							"originalRequest": {
 								"url": {
@@ -1388,7 +1388,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "42e3829c-a68e-4290-90ce-aaf2deb7793f",
+							"id": "e4f8d318-87df-414b-a361-860c7cecf477",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1447,12 +1447,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 882.0183107057721,\n      \"maximum\": 6946.726898714006,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6236.907071767647,\n      \"maximum\": 3683.0732722715366,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 766.9206353114821,\n      \"maximum\": 8503.835528770085,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6915.314189988398,\n      \"maximum\": 7162.857475940803,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "503bd450-2a65-4cda-bd04-6ba746bfc131",
+							"id": "ff0febce-32f8-40f2-aad2-3834dd85c530",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1516,7 +1516,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "cca0393f-6ae6-42bc-b13e-111d67be703f",
+							"id": "a3087119-a501-4982-8509-bc18525202fe",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1586,7 +1586,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "88b1d5a3-28cb-43ef-a6c5-532d53ea69f6",
+							"id": "a6c5da33-a4fe-4805-88dc-33049ae52313",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1650,7 +1650,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "efdd7113-ff7e-4533-b993-3817eedefd05",
+							"id": "984a2ef0-8442-4d5d-95f4-228f46a4f7b3",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1720,7 +1720,7 @@
 					}
 				},
 				{
-					"id": "bcb9951a-dfa5-40fd-be41-fae9f388ad0d",
+					"id": "ea69ff0a-bc19-4809-9e75-5ede923a19ab",
 					"name": "List the three doshas - Dosha catalogue API",
 					"request": {
 						"name": "List the three doshas - Dosha catalogue API",
@@ -1784,7 +1784,7 @@
 					},
 					"response": [
 						{
-							"id": "12d2bff4-c2a0-47d4-8b61-e21c07923ed3",
+							"id": "d1214704-adf9-4048-a248-8c794a67633c",
 							"name": "The three doshas.",
 							"originalRequest": {
 								"url": {
@@ -1840,7 +1840,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ba6066e2-4d7e-4a60-a309-6c343d37c9f0",
+							"id": "5b0cd257-4e41-4094-bc25-6488d2651ad6",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1891,12 +1891,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 882.0183107057721,\n      \"maximum\": 6946.726898714006,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6236.907071767647,\n      \"maximum\": 3683.0732722715366,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 766.9206353114821,\n      \"maximum\": 8503.835528770085,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6915.314189988398,\n      \"maximum\": 7162.857475940803,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "76ae9df3-bf4f-4772-868a-b3d62dc5f276",
+							"id": "9efad677-74e6-4a39-8ac8-951aa59ce353",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1952,7 +1952,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "53a92b49-8fc5-4985-adf0-e976b5947c8b",
+							"id": "ffa53e55-ebc8-4955-9839-26f27e785b83",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2014,7 +2014,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1fdb2658-447b-4657-a195-79155b4db8a9",
+							"id": "2a0c518d-37d9-4967-b640-f8175f1e5357",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2070,7 +2070,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "cc3af07a-eb3f-4501-9240-5bf35f57a048",
+							"id": "5602d453-dba0-466f-b0b9-4f9c28dcde28",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2132,7 +2132,7 @@
 					}
 				},
 				{
-					"id": "bb5ca070-fac5-4d74-8a3b-ac718f291754",
+					"id": "4c870acb-d659-4a50-bd84-968668c9a0ee",
 					"name": "Get one dosha - Vata pitta kapha profile API",
 					"request": {
 						"name": "Get one dosha - Vata pitta kapha profile API",
@@ -2193,7 +2193,7 @@
 					},
 					"response": [
 						{
-							"id": "001ee25b-0528-4c0e-9c54-ee1570497548",
+							"id": "2a92a58b-1d3d-40db-b0f9-20ba1629275d",
 							"name": "The dosha.",
 							"originalRequest": {
 								"url": {
@@ -2250,7 +2250,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "667fdfa3-788b-48c4-b25c-b070ee58ef64",
+							"id": "7b58fac7-388f-4846-831f-e55f15896a96",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2302,12 +2302,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 882.0183107057721,\n      \"maximum\": 6946.726898714006,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6236.907071767647,\n      \"maximum\": 3683.0732722715366,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 766.9206353114821,\n      \"maximum\": 8503.835528770085,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6915.314189988398,\n      \"maximum\": 7162.857475940803,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c6f57cf5-c63f-4e20-a5b1-8de20ca96308",
+							"id": "fc01335f-7a62-4e33-975b-5d7d68837497",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2364,7 +2364,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e3c28884-6ec6-4b7e-9a42-597cc11e78bc",
+							"id": "6badccb7-280a-428f-a36c-4c0d06028931",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2427,7 +2427,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "aa08c84c-68ac-422c-b6ff-464f3bf0af3b",
+							"id": "534bfddd-4cf2-4f0d-9b24-ac7d37eac62b",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2484,7 +2484,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c72a393f-d7ba-423c-bfe4-02c5b2b60e5d",
+							"id": "fde9a164-7697-4189-93d9-1930fe0b8e48",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2547,7 +2547,7 @@
 					}
 				},
 				{
-					"id": "407aeb9a-ddad-4456-bb04-aee091585db4",
+					"id": "cc2f4a8f-826f-4cd5-864a-2dd63fe7ec13",
 					"name": "List the six tastes - Ayurveda rasa and dosha matrix API",
 					"request": {
 						"name": "List the six tastes - Ayurveda rasa and dosha matrix API",
@@ -2611,7 +2611,7 @@
 					},
 					"response": [
 						{
-							"id": "5879da12-360e-4796-a2cb-aef1b2b296b9",
+							"id": "c6785005-6a77-4dbf-a3df-d40e82095da3",
 							"name": "The six tastes and the matrix.",
 							"originalRequest": {
 								"url": {
@@ -2667,7 +2667,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e090ca7a-573b-434c-b4e5-d2f8e6ee95cf",
+							"id": "1dffbcfd-456f-4f37-89af-7cf2003e4201",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2718,12 +2718,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 882.0183107057721,\n      \"maximum\": 6946.726898714006,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6236.907071767647,\n      \"maximum\": 3683.0732722715366,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 766.9206353114821,\n      \"maximum\": 8503.835528770085,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6915.314189988398,\n      \"maximum\": 7162.857475940803,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e6d3a386-c108-4749-9e20-516e057866f3",
+							"id": "b61cea3c-1ea0-4562-82e3-5978f9afbb10",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2779,7 +2779,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f25784cb-7de9-4992-8e5c-2d9172f136b4",
+							"id": "f0fb3ab7-5a9f-4efa-8d1d-115b2ccbe319",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2841,7 +2841,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2a1ab6bf-4ede-4dda-bdbe-a9a87b859ff3",
+							"id": "99dd2ef2-9352-4824-8a81-08ddf424158c",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2897,7 +2897,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b0ff2eeb-372a-41ae-aacc-315a0b3d4020",
+							"id": "ce1fc5a0-c09b-46c7-a158-ba189543d5ce",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2959,7 +2959,7 @@
 					}
 				},
 				{
-					"id": "05e548d5-5219-4d70-8e2d-042990d3c661",
+					"id": "55f88ba8-6076-4e77-bd41-3b96a8854707",
 					"name": "List the twenty qualities - Ayurveda guna pairs API",
 					"request": {
 						"name": "List the twenty qualities - Ayurveda guna pairs API",
@@ -3023,7 +3023,7 @@
 					},
 					"response": [
 						{
-							"id": "51cc49a4-78bd-4910-8972-42b287ec592f",
+							"id": "399f56ad-f607-4923-83c8-8a8d9048cbb2",
 							"name": "The ten pairs and the rule they operate under.",
 							"originalRequest": {
 								"url": {
@@ -3079,7 +3079,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2dc76885-98ab-44bd-9569-4c45b64aa620",
+							"id": "c5edc9e9-3684-4db2-98de-02fb5f10b065",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3130,12 +3130,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 882.0183107057721,\n      \"maximum\": 6946.726898714006,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6236.907071767647,\n      \"maximum\": 3683.0732722715366,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 766.9206353114821,\n      \"maximum\": 8503.835528770085,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6915.314189988398,\n      \"maximum\": 7162.857475940803,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "44c42bcd-db07-41b2-9a04-5e3bdf87de31",
+							"id": "047cb394-d3e2-44e2-9f8b-8c1d5a303d52",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3191,7 +3191,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a214125c-f985-4f81-97ce-b9850fa78323",
+							"id": "fbeece4f-2507-4046-a5f4-3c7e4ca747b0",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3253,7 +3253,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f1a85890-e8ee-4056-9be8-90c48eed2775",
+							"id": "156c5ef5-42c7-428e-a9d8-979a54d296b5",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3309,7 +3309,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "538d190e-9a1f-45c0-9a79-46c2dfe7e0ef",
+							"id": "3a8766e9-0521-460d-aa18-385607e064f3",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3410,7 +3410,7 @@
 		]
 	},
 	"info": {
-		"_postman_id": "016addb7-7fb4-4d63-a70a-537c8c4cb300",
+		"_postman_id": "82f57f52-408c-4674-b2b6-eab3e593bc56",
 		"name": "Ayurveda API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"description": {

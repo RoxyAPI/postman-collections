@@ -1,7 +1,7 @@
 {
 	"item": [
 		{
-			"id": "41f36749-c7eb-476d-93dd-f882ea007c0b",
+			"id": "f0b797dc-e047-4a80-964b-8327a344754d",
 			"name": "Feng Shui",
 			"description": {
 				"content": "Compute classical feng shui from one API: Xuan Kong flying star natal charts for any of the nine periods and 24 mountains, Kua numbers and the full Eight Mansions map of favourable and unfavourable directions, annual and monthly star plates, the four annual afflictions with exact degree spans, the compass Bagua map and the 1864 to 2043 period table. Chinese years resolve at Li Chun, computed astronomically, so the boundary is right rather than assumed. One key, Remote MCP, typed SDKs.",
@@ -9,7 +9,7 @@
 			},
 			"item": [
 				{
-					"id": "94bd6650-5667-40f4-b36d-c514e29fcac0",
+					"id": "f5d58b95-36c2-4f35-b2be-a457726c8083",
 					"name": "Calculate Kua number - Feng shui personal direction calculator API",
 					"request": {
 						"name": "Calculate Kua number - Feng shui personal direction calculator API",
@@ -74,7 +74,7 @@
 					},
 					"response": [
 						{
-							"id": "9106ab18-3b60-44a5-b16e-b1f1fe2669d2",
+							"id": "c87aa55a-576e-434c-bcf4-bc7c4584a16f",
 							"name": "Kua number, life group, personal trigram and all eight classified sectors",
 							"originalRequest": {
 								"url": {
@@ -125,12 +125,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"kua\": 6,\n  \"rawKua\": 6,\n  \"reassigned\": false,\n  \"gender\": \"male\",\n  \"group\": \"west\",\n  \"solarYear\": 1985,\n  \"boundaryDate\": \"1985-02-04\",\n  \"trigram\": {\n    \"number\": 4,\n    \"chinese\": \"巽\",\n    \"english\": \"Wind\",\n    \"pinyin\": \"Xùn\",\n    \"symbol\": \"☴\",\n    \"binary\": \"011\",\n    \"element\": \"Wood\",\n    \"direction\": \"Southeast\",\n    \"familyMember\": \"Eldest Daughter\"\n  },\n  \"sectors\": [\n    {\n      \"direction\": \"Southeast\",\n      \"star\": \"sheng-chi\",\n      \"starName\": \"Sheng Chi\",\n      \"nature\": \"auspicious\",\n      \"rank\": 1,\n      \"domain\": \"Growth and income\",\n      \"starNameLocalized\": \"Aliento generador\"\n    },\n    {\n      \"direction\": \"Southeast\",\n      \"star\": \"sheng-chi\",\n      \"starName\": \"Sheng Chi\",\n      \"nature\": \"auspicious\",\n      \"rank\": 1,\n      \"domain\": \"Growth and income\",\n      \"starNameLocalized\": \"Aliento generador\"\n    }\n  ],\n  \"conventions\": {\n    \"yearBoundary\": \"li-chun\"\n  }\n}",
+							"body": "{\n  \"kua\": 6,\n  \"rawKua\": 6,\n  \"reassigned\": false,\n  \"gender\": \"male\",\n  \"group\": \"west\",\n  \"solarYear\": 1985,\n  \"boundaryDate\": \"1985-02-04\",\n  \"trigram\": {\n    \"number\": 4,\n    \"chinese\": \"巽\",\n    \"english\": \"Wind\",\n    \"pinyin\": \"Xùn\",\n    \"symbol\": \"☴\",\n    \"binary\": \"011\",\n    \"element\": \"Wood\",\n    \"direction\": \"Southeast\",\n    \"familyMember\": \"Eldest Daughter\",\n    \"nameLocalized\": \"Viento\",\n    \"elementLocalized\": \"Madera\",\n    \"directionLocalized\": \"Sureste\"\n  },\n  \"sectors\": [\n    {\n      \"direction\": \"Southeast\",\n      \"star\": \"sheng-chi\",\n      \"starName\": \"Sheng Chi\",\n      \"nature\": \"auspicious\",\n      \"rank\": 1,\n      \"domain\": \"Growth and income\",\n      \"starNameLocalized\": \"Aliento generador\"\n    },\n    {\n      \"direction\": \"Southeast\",\n      \"star\": \"sheng-chi\",\n      \"starName\": \"Sheng Chi\",\n      \"nature\": \"auspicious\",\n      \"rank\": 1,\n      \"domain\": \"Growth and income\",\n      \"starNameLocalized\": \"Aliento generador\"\n    }\n  ],\n  \"conventions\": {\n    \"yearBoundary\": \"li-chun\"\n  }\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0e3860b2-5555-4eb2-96d8-7f76ac5a9764",
+							"id": "6a45971c-a436-4d89-81f9-19535c0507c6",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -181,12 +181,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6207.958814806236,\n      \"maximum\": 9406.626823067354,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2360.526079858023,\n      \"maximum\": 8086.116908444519,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5459.8307661702875,\n      \"maximum\": 5511.2080509008765,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9783.31240029736,\n      \"maximum\": 4228.686500869825,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "26bf1c7c-d9d2-4ed4-9ab0-1fcc938fe4d9",
+							"id": "a075484d-2d42-407a-a955-246770a2b8ef",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -242,7 +242,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a83849d3-fb39-4ce5-a637-90fb7b65c032",
+							"id": "8095245e-b96c-46d0-ba12-d48e19428be8",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -304,7 +304,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "929bea0d-bae8-45e6-a3a9-3ce2520659d5",
+							"id": "4277e93e-44ad-4b40-8d1e-9c4dfa76fb32",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -360,7 +360,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ccf85492-54c6-45c5-85da-83db5e86a34c",
+							"id": "2e8fbf70-8c93-465a-8a6d-4cbf5e862415",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -422,7 +422,7 @@
 					}
 				},
 				{
-					"id": "383e2776-8885-4b7d-96c7-821f04f168de",
+					"id": "575991a8-98de-4bf9-9c0a-d9c0099ee8b2",
 					"name": "Look up a Kua number - Eight Mansions reference API",
 					"request": {
 						"name": "Look up a Kua number - Eight Mansions reference API",
@@ -483,7 +483,7 @@
 					},
 					"response": [
 						{
-							"id": "cf5b4d9a-0b1c-4a55-b370-d9924808266d",
+							"id": "fcadc39b-5340-4e70-bb4e-e0a630599ea4",
 							"name": "Kua reference chart with trigram, life group and eight classified sectors",
 							"originalRequest": {
 								"url": {
@@ -535,12 +535,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"number\": 8,\n  \"group\": \"west\",\n  \"trigram\": {\n    \"number\": 4,\n    \"chinese\": \"巽\",\n    \"english\": \"Wind\",\n    \"pinyin\": \"Xùn\",\n    \"symbol\": \"☴\",\n    \"binary\": \"011\",\n    \"element\": \"Wood\",\n    \"direction\": \"Southeast\",\n    \"familyMember\": \"Eldest Daughter\"\n  },\n  \"sectors\": [\n    {\n      \"direction\": \"Southeast\",\n      \"star\": \"sheng-chi\",\n      \"starName\": \"Sheng Chi\",\n      \"nature\": \"auspicious\",\n      \"rank\": 1,\n      \"domain\": \"Growth and income\",\n      \"starNameLocalized\": \"Aliento generador\"\n    },\n    {\n      \"direction\": \"Southeast\",\n      \"star\": \"sheng-chi\",\n      \"starName\": \"Sheng Chi\",\n      \"nature\": \"auspicious\",\n      \"rank\": 1,\n      \"domain\": \"Growth and income\",\n      \"starNameLocalized\": \"Aliento generador\"\n    }\n  ]\n}",
+							"body": "{\n  \"number\": 8,\n  \"group\": \"west\",\n  \"trigram\": {\n    \"number\": 4,\n    \"chinese\": \"巽\",\n    \"english\": \"Wind\",\n    \"pinyin\": \"Xùn\",\n    \"symbol\": \"☴\",\n    \"binary\": \"011\",\n    \"element\": \"Wood\",\n    \"direction\": \"Southeast\",\n    \"familyMember\": \"Eldest Daughter\",\n    \"nameLocalized\": \"Viento\",\n    \"elementLocalized\": \"Madera\",\n    \"directionLocalized\": \"Sureste\"\n  },\n  \"sectors\": [\n    {\n      \"direction\": \"Southeast\",\n      \"star\": \"sheng-chi\",\n      \"starName\": \"Sheng Chi\",\n      \"nature\": \"auspicious\",\n      \"rank\": 1,\n      \"domain\": \"Growth and income\",\n      \"starNameLocalized\": \"Aliento generador\"\n    },\n    {\n      \"direction\": \"Southeast\",\n      \"star\": \"sheng-chi\",\n      \"starName\": \"Sheng Chi\",\n      \"nature\": \"auspicious\",\n      \"rank\": 1,\n      \"domain\": \"Growth and income\",\n      \"starNameLocalized\": \"Aliento generador\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a2b53a6a-bafe-4839-bdb1-31d7b05833cb",
+							"id": "061a11eb-f1cd-4bbf-8328-3507f22fff45",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -592,12 +592,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6207.958814806236,\n      \"maximum\": 9406.626823067354,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2360.526079858023,\n      \"maximum\": 8086.116908444519,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5459.8307661702875,\n      \"maximum\": 5511.2080509008765,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9783.31240029736,\n      \"maximum\": 4228.686500869825,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e81c13a2-9805-4d85-a9c8-83e0290a200f",
+							"id": "b25a6e8e-2b06-4756-8003-eaf9c13abd7a",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -654,7 +654,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "135c5eca-df44-4846-b023-9588fb27e7ac",
+							"id": "cdfff21a-2ab6-4c77-83ad-dc92fa347bdc",
 							"name": "No Kua chart for that number",
 							"originalRequest": {
 								"url": {
@@ -711,7 +711,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f546329a-674d-4510-8e46-cc6eff9eba83",
+							"id": "804e8762-5456-412b-adae-452037f8bd1c",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -774,7 +774,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "36946243-f06c-4f70-bb26-2749ad43b233",
+							"id": "0140ea49-58a3-4ec5-8520-5ebfe595b61c",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -831,7 +831,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c210c61d-d888-4886-a5b6-cd08a36ee9c7",
+							"id": "2bff9b46-8a29-4b85-983c-022a3affa55c",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -894,7 +894,7 @@
 					}
 				},
 				{
-					"id": "6d22c3a8-9f09-4043-a5c6-5d35452a3228",
+					"id": "33b4bacf-18d3-47eb-88c6-c76eb3782e86",
 					"name": "Generate Eight Mansions map - Ba Zhai lucky direction API",
 					"request": {
 						"name": "Generate Eight Mansions map - Ba Zhai lucky direction API",
@@ -959,7 +959,7 @@
 					},
 					"response": [
 						{
-							"id": "376c2df2-526f-4161-be86-d06650d3259c",
+							"id": "0f80b0cf-2a04-4adc-97d3-594643ebcdcd",
 							"name": "Eight classified sectors ordered best to worst, with readings",
 							"originalRequest": {
 								"url": {
@@ -1010,12 +1010,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"kua\": 6,\n  \"group\": \"west\",\n  \"trigram\": {\n    \"number\": 4,\n    \"chinese\": \"巽\",\n    \"english\": \"Wind\",\n    \"pinyin\": \"Xùn\",\n    \"symbol\": \"☴\",\n    \"binary\": \"011\",\n    \"element\": \"Wood\",\n    \"direction\": \"Southeast\",\n    \"familyMember\": \"Eldest Daughter\"\n  },\n  \"sectors\": [\n    {\n      \"direction\": \"Southeast\",\n      \"star\": \"sheng-chi\",\n      \"starName\": \"Sheng Chi\",\n      \"chinese\": \"生氣\",\n      \"pinyin\": \"Shēng Qì\",\n      \"nature\": \"auspicious\",\n      \"rank\": 1,\n      \"domain\": \"Growth and income\",\n      \"trigram\": {\n        \"number\": 4,\n        \"chinese\": \"巽\",\n        \"english\": \"Wind\",\n        \"pinyin\": \"Xùn\",\n        \"symbol\": \"☴\",\n        \"binary\": \"011\",\n        \"element\": \"Wood\",\n        \"direction\": \"Southeast\",\n        \"familyMember\": \"Eldest Daughter\"\n      },\n      \"reading\": \"The West sector reads Sheng Chi for Kua 6. This is one of the four favourable sectors for Kua 6, ranked 1 of four. The generating breath, and the strongest of the four favourable sectors. It is the direction to face while working, to seat a main door in, and to put a desk against, because it reads as advancement, new business and the kind of momentum that compounds. Where a household has to choose one sector to get right, this is the one.\",\n      \"starNameLocalized\": \"Aliento generador\"\n    },\n    {\n      \"direction\": \"Southeast\",\n      \"star\": \"sheng-chi\",\n      \"starName\": \"Sheng Chi\",\n      \"chinese\": \"生氣\",\n      \"pinyin\": \"Shēng Qì\",\n      \"nature\": \"auspicious\",\n      \"rank\": 1,\n      \"domain\": \"Growth and income\",\n      \"trigram\": {\n        \"number\": 4,\n        \"chinese\": \"巽\",\n        \"english\": \"Wind\",\n        \"pinyin\": \"Xùn\",\n        \"symbol\": \"☴\",\n        \"binary\": \"011\",\n        \"element\": \"Wood\",\n        \"direction\": \"Southeast\",\n        \"familyMember\": \"Eldest Daughter\"\n      },\n      \"reading\": \"The West sector reads Sheng Chi for Kua 6. This is one of the four favourable sectors for Kua 6, ranked 1 of four. The generating breath, and the strongest of the four favourable sectors. It is the direction to face while working, to seat a main door in, and to put a desk against, because it reads as advancement, new business and the kind of momentum that compounds. Where a household has to choose one sector to get right, this is the one.\",\n      \"starNameLocalized\": \"Aliento generador\"\n    }\n  ],\n  \"bestSector\": \"Southeast\",\n  \"worstSector\": \"Southeast\",\n  \"conventions\": {\n    \"yearBoundary\": \"li-chun\"\n  },\n  \"facingSector\": {\n    \"direction\": \"Southeast\",\n    \"star\": \"sheng-chi\",\n    \"nature\": \"auspicious\"\n  }\n}",
+							"body": "{\n  \"kua\": 6,\n  \"group\": \"west\",\n  \"trigram\": {\n    \"number\": 4,\n    \"chinese\": \"巽\",\n    \"english\": \"Wind\",\n    \"pinyin\": \"Xùn\",\n    \"symbol\": \"☴\",\n    \"binary\": \"011\",\n    \"element\": \"Wood\",\n    \"direction\": \"Southeast\",\n    \"familyMember\": \"Eldest Daughter\",\n    \"nameLocalized\": \"Viento\",\n    \"elementLocalized\": \"Madera\",\n    \"directionLocalized\": \"Sureste\"\n  },\n  \"sectors\": [\n    {\n      \"direction\": \"Southeast\",\n      \"star\": \"sheng-chi\",\n      \"starName\": \"Sheng Chi\",\n      \"chinese\": \"生氣\",\n      \"pinyin\": \"Shēng Qì\",\n      \"nature\": \"auspicious\",\n      \"rank\": 1,\n      \"domain\": \"Growth and income\",\n      \"trigram\": {\n        \"number\": 4,\n        \"chinese\": \"巽\",\n        \"english\": \"Wind\",\n        \"pinyin\": \"Xùn\",\n        \"symbol\": \"☴\",\n        \"binary\": \"011\",\n        \"element\": \"Wood\",\n        \"direction\": \"Southeast\",\n        \"familyMember\": \"Eldest Daughter\",\n        \"nameLocalized\": \"Viento\",\n        \"elementLocalized\": \"Madera\",\n        \"directionLocalized\": \"Sureste\"\n      },\n      \"reading\": \"The West sector reads Sheng Chi for Kua 6. This is one of the four favourable sectors for Kua 6, ranked 1 of four. The generating breath, and the strongest of the four favourable sectors. It is the direction to face while working, to seat a main door in, and to put a desk against, because it reads as advancement, new business and the kind of momentum that compounds. Where a household has to choose one sector to get right, this is the one.\",\n      \"starNameLocalized\": \"Aliento generador\"\n    },\n    {\n      \"direction\": \"Southeast\",\n      \"star\": \"sheng-chi\",\n      \"starName\": \"Sheng Chi\",\n      \"chinese\": \"生氣\",\n      \"pinyin\": \"Shēng Qì\",\n      \"nature\": \"auspicious\",\n      \"rank\": 1,\n      \"domain\": \"Growth and income\",\n      \"trigram\": {\n        \"number\": 4,\n        \"chinese\": \"巽\",\n        \"english\": \"Wind\",\n        \"pinyin\": \"Xùn\",\n        \"symbol\": \"☴\",\n        \"binary\": \"011\",\n        \"element\": \"Wood\",\n        \"direction\": \"Southeast\",\n        \"familyMember\": \"Eldest Daughter\",\n        \"nameLocalized\": \"Viento\",\n        \"elementLocalized\": \"Madera\",\n        \"directionLocalized\": \"Sureste\"\n      },\n      \"reading\": \"The West sector reads Sheng Chi for Kua 6. This is one of the four favourable sectors for Kua 6, ranked 1 of four. The generating breath, and the strongest of the four favourable sectors. It is the direction to face while working, to seat a main door in, and to put a desk against, because it reads as advancement, new business and the kind of momentum that compounds. Where a household has to choose one sector to get right, this is the one.\",\n      \"starNameLocalized\": \"Aliento generador\"\n    }\n  ],\n  \"bestSector\": \"Southeast\",\n  \"worstSector\": \"Southeast\",\n  \"conventions\": {\n    \"yearBoundary\": \"li-chun\"\n  },\n  \"facingSector\": {\n    \"direction\": \"Southeast\",\n    \"star\": \"sheng-chi\",\n    \"nature\": \"auspicious\"\n  }\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c3d38448-5479-49ac-98bf-37f4049b3f58",
+							"id": "1b21eb87-562c-4cca-b328-4086d213a9ed",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1066,12 +1066,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6207.958814806236,\n      \"maximum\": 9406.626823067354,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2360.526079858023,\n      \"maximum\": 8086.116908444519,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5459.8307661702875,\n      \"maximum\": 5511.2080509008765,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9783.31240029736,\n      \"maximum\": 4228.686500869825,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d10ae700-4208-451b-9ee4-4def02c0cb74",
+							"id": "f92419e8-c834-4465-9c42-9b2b7081d80e",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1127,7 +1127,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5cf1b9d0-6ae5-40e7-80bc-c2eb71333093",
+							"id": "d48e7a96-c742-4473-840c-4a65887b6fcd",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1189,7 +1189,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "cdc80b33-77ad-44f4-b44e-a84b832996f2",
+							"id": "2275873c-762a-4485-a29d-8e0e32bee2be",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1245,7 +1245,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7927f004-673a-42db-9774-5a3e33d635f5",
+							"id": "9bdeb4e8-c22b-482b-ae6a-5aec17a58213",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1307,7 +1307,7 @@
 					}
 				},
 				{
-					"id": "f940394f-3e66-4642-a761-4df28d7a4486",
+					"id": "3410d78c-e195-4c19-a27c-271012628fb6",
 					"name": "Generate flying star natal chart - Xuan Kong Fei Xing API",
 					"request": {
 						"name": "Generate flying star natal chart - Xuan Kong Fei Xing API",
@@ -1373,7 +1373,7 @@
 					},
 					"response": [
 						{
-							"id": "a54c7695-4458-4a93-a605-d8e01ed02c9b",
+							"id": "a73d8dbc-ae03-439a-b361-44f0887bffad",
 							"name": "Nine palaces with period, mountain and water stars, readings and structure",
 							"originalRequest": {
 								"url": {
@@ -1430,7 +1430,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1447b05b-7339-4b3a-a374-e93f54e8f5c8",
+							"id": "6e48ee96-95cf-4c4d-b580-4cb5215d873e",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1482,12 +1482,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6207.958814806236,\n      \"maximum\": 9406.626823067354,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2360.526079858023,\n      \"maximum\": 8086.116908444519,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5459.8307661702875,\n      \"maximum\": 5511.2080509008765,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9783.31240029736,\n      \"maximum\": 4228.686500869825,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "246877c7-b21c-4813-8c75-2113bb5e9fce",
+							"id": "b45c0920-e1e1-45a0-b731-425064525ee5",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1544,7 +1544,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c49d3ebf-ec66-44f1-a1b9-fa63fa30a40c",
+							"id": "e909f05a-f18d-4ef6-bb7e-60981794d15e",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1607,7 +1607,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "304b63a7-32ff-4b7e-bb7f-21dd59b2be0a",
+							"id": "429247bb-789d-45d5-9c2b-5b2c0cec9e26",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1664,7 +1664,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "bf25d161-2bfa-4edd-8f78-a6744e43fe42",
+							"id": "8d532915-4925-4e9f-bf93-e6d8102f3013",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1727,7 +1727,7 @@
 					}
 				},
 				{
-					"id": "a39ca36f-2c39-448c-bed9-b657164c50df",
+					"id": "a0781107-60a3-46c3-9815-d219ddaef5ee",
 					"name": "Annual flying stars - Yearly feng shui star chart API",
 					"request": {
 						"name": "Annual flying stars - Yearly feng shui star chart API",
@@ -1789,7 +1789,7 @@
 					},
 					"response": [
 						{
-							"id": "e7966144-2790-4ec9-8fc7-46e5dada5f67",
+							"id": "8eb07b91-e9e4-45cd-87cb-ad50002a6ccd",
 							"name": "The nine palaces of the annual plate with meanings and remedies",
 							"originalRequest": {
 								"url": {
@@ -1847,7 +1847,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f0b8636a-cb25-47b5-97b0-a9be271f8367",
+							"id": "704bf602-9387-4020-9508-59f93203b4f3",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1900,12 +1900,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6207.958814806236,\n      \"maximum\": 9406.626823067354,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2360.526079858023,\n      \"maximum\": 8086.116908444519,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5459.8307661702875,\n      \"maximum\": 5511.2080509008765,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9783.31240029736,\n      \"maximum\": 4228.686500869825,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "047bd245-428f-4ac5-a1fa-e4e9ccb84079",
+							"id": "e18fa9fa-22ae-4338-9235-36abb4c375eb",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1963,7 +1963,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "fc2b3a22-801b-4d00-b6ea-ede61b2ae335",
+							"id": "4e785a11-73b8-4f6d-9c50-6b289dd717fa",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2027,7 +2027,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "93054912-981e-4715-81f5-ebd21671da6b",
+							"id": "e7af11f3-5ab0-45a7-a9d7-93ad16ef41ee",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2085,7 +2085,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "dfabe86a-ff3a-45ea-addf-37caf22ca546",
+							"id": "458ed2bb-6e96-41ae-94a5-386b1d866e40",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2149,7 +2149,7 @@
 					}
 				},
 				{
-					"id": "e853fec4-862c-4928-bbf7-61f31d160d65",
+					"id": "684b59a8-46b3-484e-83df-32a812940420",
 					"name": "Monthly flying stars - Month by month feng shui overlay API",
 					"request": {
 						"name": "Monthly flying stars - Month by month feng shui overlay API",
@@ -2214,7 +2214,7 @@
 					},
 					"response": [
 						{
-							"id": "fd2344c3-8ea2-4cdb-b8e2-b44336b72f0a",
+							"id": "e01499c3-32bb-43af-aca5-9bc16cdf0b74",
 							"name": "The nine palaces of the monthly plate with meanings and remedies",
 							"originalRequest": {
 								"url": {
@@ -2271,7 +2271,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "30b93b97-5826-4148-905b-7180e70ab22f",
+							"id": "2bedae44-fb6c-4dfd-b20d-fedaeb86d7d6",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2323,12 +2323,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6207.958814806236,\n      \"maximum\": 9406.626823067354,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2360.526079858023,\n      \"maximum\": 8086.116908444519,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5459.8307661702875,\n      \"maximum\": 5511.2080509008765,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9783.31240029736,\n      \"maximum\": 4228.686500869825,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7bfff154-aa7d-436a-96a2-2ccdf5ee4066",
+							"id": "c9e7cfe2-c97e-4ba7-a0b6-91679d266dd3",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2385,7 +2385,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "16b8c0fe-f202-4780-a41c-107a2475cf55",
+							"id": "72b8a507-2d1b-4d20-b82f-af931945f25c",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2448,7 +2448,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "eb5483ba-8d26-4912-9738-a4e82bc4b165",
+							"id": "be6f99c3-69a1-4ab6-9122-c3e1f2cfee63",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2505,7 +2505,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "489b84af-79ce-4f4c-9e94-00f498efa918",
+							"id": "5e1953b5-a1ac-4537-aa8c-265ea142187f",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2568,7 +2568,7 @@
 					}
 				},
 				{
-					"id": "2489af7f-eda2-476e-b216-2bf12055a196",
+					"id": "8a6254f0-1dbe-47c5-ae7d-81b5547a10bb",
 					"name": "List the nine flying stars - Xuan Kong star reference API",
 					"request": {
 						"name": "List the nine flying stars - Xuan Kong star reference API",
@@ -2594,14 +2594,14 @@
 								{
 									"disabled": false,
 									"key": "limit",
-									"value": "20",
-									"description": "Maximum stars to return per page. Range 1 to 9, default 20."
+									"value": "9",
+									"description": "Maximum items to return per page. Range: 1-9, default 9."
 								},
 								{
 									"disabled": false,
 									"key": "offset",
 									"value": "0",
-									"description": "Number of stars to skip for pagination. Default 0."
+									"description": "Number of items to skip for pagination. Default 0."
 								}
 							],
 							"variable": []
@@ -2633,7 +2633,7 @@
 					},
 					"response": [
 						{
-							"id": "53d0c009-311e-4a53-b9e8-7181044b8a6b",
+							"id": "04330f52-eba3-406f-9ba7-ad470b28f6f9",
 							"name": "The nine flying stars with meanings, elements and remedies",
 							"originalRequest": {
 								"url": {
@@ -2651,7 +2651,7 @@
 										},
 										{
 											"key": "limit",
-											"value": "20"
+											"value": "9"
 										},
 										{
 											"key": "offset",
@@ -2690,7 +2690,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "13a979d7-d918-4a03-a189-ab1fbc099ef9",
+							"id": "1d5f773c-bae8-4a15-a249-e7b4aff9b5cf",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2708,7 +2708,7 @@
 										},
 										{
 											"key": "limit",
-											"value": "20"
+											"value": "9"
 										},
 										{
 											"key": "offset",
@@ -2742,12 +2742,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6207.958814806236,\n      \"maximum\": 9406.626823067354,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2360.526079858023,\n      \"maximum\": 8086.116908444519,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5459.8307661702875,\n      \"maximum\": 5511.2080509008765,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9783.31240029736,\n      \"maximum\": 4228.686500869825,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "fdd4ed85-6d81-462f-b1a8-b94f7ff63670",
+							"id": "f0590860-a81e-4a74-a1b2-4dcebd60dad7",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2765,7 +2765,7 @@
 										},
 										{
 											"key": "limit",
-											"value": "20"
+											"value": "9"
 										},
 										{
 											"key": "offset",
@@ -2804,7 +2804,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "cb0bf1e8-8d31-4438-bd63-9641ef8d9cc3",
+							"id": "80d72f12-ad0d-4745-91bd-90c6d1609b83",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2822,7 +2822,7 @@
 										},
 										{
 											"key": "limit",
-											"value": "20"
+											"value": "9"
 										},
 										{
 											"key": "offset",
@@ -2867,7 +2867,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "251bdca1-42c0-44eb-8c9c-f8a9246da02e",
+							"id": "63b8a5a0-e76f-42b5-a80d-9b4abf27df06",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2885,7 +2885,7 @@
 										},
 										{
 											"key": "limit",
-											"value": "20"
+											"value": "9"
 										},
 										{
 											"key": "offset",
@@ -2924,7 +2924,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "76f0bb47-65fe-453f-8230-42c22c587cf3",
+							"id": "b10d87d6-0a39-4bcd-bfe4-d5bb5dfcf1d1",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2942,7 +2942,7 @@
 										},
 										{
 											"key": "limit",
-											"value": "20"
+											"value": "9"
 										},
 										{
 											"key": "offset",
@@ -2987,7 +2987,7 @@
 					}
 				},
 				{
-					"id": "ec65bae4-6904-4352-8ee4-0eee63f6cf72",
+					"id": "a8b71173-5afb-4fdc-8cad-1e6934a1948a",
 					"name": "Annual afflictions - Tai Sui, San Sha and Five Yellow API",
 					"request": {
 						"name": "Annual afflictions - Tai Sui, San Sha and Five Yellow API",
@@ -3048,7 +3048,7 @@
 					},
 					"response": [
 						{
-							"id": "f6b22ff2-3f81-4205-a441-9f817688c9ba",
+							"id": "f6d79c3f-d20e-442a-97d0-2a752750b695",
 							"name": "The four annual afflictions with mountains, degree spans and meanings",
 							"originalRequest": {
 								"url": {
@@ -3105,7 +3105,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "48251464-7f09-4b5e-9a42-d0132974b1f3",
+							"id": "c67d13d7-e49d-4984-a1d5-7305176588c7",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3157,12 +3157,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6207.958814806236,\n      \"maximum\": 9406.626823067354,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2360.526079858023,\n      \"maximum\": 8086.116908444519,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5459.8307661702875,\n      \"maximum\": 5511.2080509008765,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9783.31240029736,\n      \"maximum\": 4228.686500869825,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0ed1ee06-f009-4500-8881-d056f7fce8f7",
+							"id": "3d639b3b-fa7b-4799-92d0-43e11cc3642e",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3219,7 +3219,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a34d1642-4119-46b3-9fb0-bcab0119d06d",
+							"id": "1476de28-63f6-4bb4-8581-dc8f193781dc",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3282,7 +3282,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f77b8650-c69f-4480-a33f-dc74d5559dc6",
+							"id": "3cb1c309-eb1d-469e-9fd2-e8399bddd6d2",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3339,7 +3339,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c2a3309a-7e94-42c4-99aa-4eedde6d594d",
+							"id": "948fa712-1dfd-432f-aab3-c4db2d321d26",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3402,7 +3402,7 @@
 					}
 				},
 				{
-					"id": "d63f8cfc-bee4-43c6-8770-020d6a6ac4c5",
+					"id": "08cd27d7-dd2b-4c09-990b-6606028d9f7f",
 					"name": "List Bagua sectors - Feng shui bagua map API",
 					"request": {
 						"name": "List Bagua sectors - Feng shui bagua map API",
@@ -3427,14 +3427,14 @@
 								{
 									"disabled": false,
 									"key": "limit",
-									"value": "20",
-									"description": "Maximum sectors to return per page. Range 1 to 9, default 20."
+									"value": "9",
+									"description": "Maximum items to return per page. Range: 1-9, default 9."
 								},
 								{
 									"disabled": false,
 									"key": "offset",
 									"value": "0",
-									"description": "Number of sectors to skip for pagination. Default 0."
+									"description": "Number of items to skip for pagination. Default 0."
 								}
 							],
 							"variable": []
@@ -3466,7 +3466,7 @@
 					},
 					"response": [
 						{
-							"id": "6caf4ae5-2f4d-4226-b761-8128206cfdcf",
+							"id": "978022e8-4e0b-4d1a-a93a-3cdd4ed2a896",
 							"name": "The nine Bagua palaces with life areas, elements, colours and trigrams",
 							"originalRequest": {
 								"url": {
@@ -3483,7 +3483,7 @@
 										},
 										{
 											"key": "limit",
-											"value": "20"
+											"value": "9"
 										},
 										{
 											"key": "offset",
@@ -3517,12 +3517,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"total\": 9,\n  \"limit\": 20,\n  \"offset\": 0,\n  \"sectors\": [\n    {\n      \"id\": \"wealth\",\n      \"name\": \"Wealth and Abundance\",\n      \"number\": 4,\n      \"palace\": \"Southeast\",\n      \"element\": \"Wood\",\n      \"colors\": [\n        \"green\",\n        \"teal\",\n        \"brown\"\n      ],\n      \"focus\": \"Income, resources, accumulation\",\n      \"meaning\": \"The southeastern palace, held by Wind, and the sector most households want working. Wind is gradual and persistent, which is the point: this reads as income that builds through repeated effort rather than as sudden gain.\",\n      \"nameLocalized\": \"Riqueza y abundancia\",\n      \"direction\": \"Southeast\",\n      \"trigram\": {\n        \"number\": 4,\n        \"chinese\": \"巽\",\n        \"english\": \"Wind\",\n        \"pinyin\": \"Xùn\",\n        \"symbol\": \"☴\",\n        \"binary\": \"011\",\n        \"element\": \"Wood\",\n        \"direction\": \"Southeast\",\n        \"familyMember\": \"Eldest Daughter\"\n      },\n      \"earlierHeavenTrigram\": {\n        \"number\": 4,\n        \"chinese\": \"巽\",\n        \"english\": \"Wind\",\n        \"pinyin\": \"Xùn\",\n        \"symbol\": \"☴\",\n        \"binary\": \"011\",\n        \"element\": \"Wood\",\n        \"direction\": \"Southeast\",\n        \"familyMember\": \"Eldest Daughter\"\n      }\n    },\n    {\n      \"id\": \"wealth\",\n      \"name\": \"Wealth and Abundance\",\n      \"number\": 4,\n      \"palace\": \"Southeast\",\n      \"element\": \"Wood\",\n      \"colors\": [\n        \"green\",\n        \"teal\",\n        \"brown\"\n      ],\n      \"focus\": \"Income, resources, accumulation\",\n      \"meaning\": \"The southeastern palace, held by Wind, and the sector most households want working. Wind is gradual and persistent, which is the point: this reads as income that builds through repeated effort rather than as sudden gain.\",\n      \"nameLocalized\": \"Riqueza y abundancia\",\n      \"direction\": \"Southeast\",\n      \"trigram\": {\n        \"number\": 4,\n        \"chinese\": \"巽\",\n        \"english\": \"Wind\",\n        \"pinyin\": \"Xùn\",\n        \"symbol\": \"☴\",\n        \"binary\": \"011\",\n        \"element\": \"Wood\",\n        \"direction\": \"Southeast\",\n        \"familyMember\": \"Eldest Daughter\"\n      },\n      \"earlierHeavenTrigram\": {\n        \"number\": 4,\n        \"chinese\": \"巽\",\n        \"english\": \"Wind\",\n        \"pinyin\": \"Xùn\",\n        \"symbol\": \"☴\",\n        \"binary\": \"011\",\n        \"element\": \"Wood\",\n        \"direction\": \"Southeast\",\n        \"familyMember\": \"Eldest Daughter\"\n      }\n    }\n  ]\n}",
+							"body": "{\n  \"total\": 9,\n  \"limit\": 20,\n  \"offset\": 0,\n  \"sectors\": [\n    {\n      \"id\": \"wealth\",\n      \"name\": \"Wealth and Abundance\",\n      \"number\": 4,\n      \"palace\": \"Southeast\",\n      \"element\": \"Wood\",\n      \"colors\": [\n        \"green\",\n        \"teal\",\n        \"brown\"\n      ],\n      \"focus\": \"Income, resources, accumulation\",\n      \"meaning\": \"The southeastern palace, held by Wind, and the sector most households want working. Wind is gradual and persistent, which is the point: this reads as income that builds through repeated effort rather than as sudden gain.\",\n      \"nameLocalized\": \"Riqueza y abundancia\",\n      \"direction\": \"Southeast\",\n      \"trigram\": {\n        \"number\": 4,\n        \"chinese\": \"巽\",\n        \"english\": \"Wind\",\n        \"pinyin\": \"Xùn\",\n        \"symbol\": \"☴\",\n        \"binary\": \"011\",\n        \"element\": \"Wood\",\n        \"direction\": \"Southeast\",\n        \"familyMember\": \"Eldest Daughter\",\n        \"nameLocalized\": \"Viento\",\n        \"elementLocalized\": \"Madera\",\n        \"directionLocalized\": \"Sureste\"\n      },\n      \"earlierHeavenTrigram\": {\n        \"number\": 4,\n        \"chinese\": \"巽\",\n        \"english\": \"Wind\",\n        \"pinyin\": \"Xùn\",\n        \"symbol\": \"☴\",\n        \"binary\": \"011\",\n        \"element\": \"Wood\",\n        \"direction\": \"Southeast\",\n        \"familyMember\": \"Eldest Daughter\",\n        \"nameLocalized\": \"Viento\",\n        \"elementLocalized\": \"Madera\",\n        \"directionLocalized\": \"Sureste\"\n      }\n    },\n    {\n      \"id\": \"wealth\",\n      \"name\": \"Wealth and Abundance\",\n      \"number\": 4,\n      \"palace\": \"Southeast\",\n      \"element\": \"Wood\",\n      \"colors\": [\n        \"green\",\n        \"teal\",\n        \"brown\"\n      ],\n      \"focus\": \"Income, resources, accumulation\",\n      \"meaning\": \"The southeastern palace, held by Wind, and the sector most households want working. Wind is gradual and persistent, which is the point: this reads as income that builds through repeated effort rather than as sudden gain.\",\n      \"nameLocalized\": \"Riqueza y abundancia\",\n      \"direction\": \"Southeast\",\n      \"trigram\": {\n        \"number\": 4,\n        \"chinese\": \"巽\",\n        \"english\": \"Wind\",\n        \"pinyin\": \"Xùn\",\n        \"symbol\": \"☴\",\n        \"binary\": \"011\",\n        \"element\": \"Wood\",\n        \"direction\": \"Southeast\",\n        \"familyMember\": \"Eldest Daughter\",\n        \"nameLocalized\": \"Viento\",\n        \"elementLocalized\": \"Madera\",\n        \"directionLocalized\": \"Sureste\"\n      },\n      \"earlierHeavenTrigram\": {\n        \"number\": 4,\n        \"chinese\": \"巽\",\n        \"english\": \"Wind\",\n        \"pinyin\": \"Xùn\",\n        \"symbol\": \"☴\",\n        \"binary\": \"011\",\n        \"element\": \"Wood\",\n        \"direction\": \"Southeast\",\n        \"familyMember\": \"Eldest Daughter\",\n        \"nameLocalized\": \"Viento\",\n        \"elementLocalized\": \"Madera\",\n        \"directionLocalized\": \"Sureste\"\n      }\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c946ebc0-b282-49dc-8d71-af64124bcd63",
+							"id": "61314acc-e000-4b37-af8b-cec9af24711a",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3539,7 +3539,7 @@
 										},
 										{
 											"key": "limit",
-											"value": "20"
+											"value": "9"
 										},
 										{
 											"key": "offset",
@@ -3573,12 +3573,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6207.958814806236,\n      \"maximum\": 9406.626823067354,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2360.526079858023,\n      \"maximum\": 8086.116908444519,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5459.8307661702875,\n      \"maximum\": 5511.2080509008765,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9783.31240029736,\n      \"maximum\": 4228.686500869825,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "78baa889-b8c0-475d-bfe8-7787b69e5d6f",
+							"id": "03f8fade-385a-4d1a-9554-aeb6dd605aef",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3595,7 +3595,7 @@
 										},
 										{
 											"key": "limit",
-											"value": "20"
+											"value": "9"
 										},
 										{
 											"key": "offset",
@@ -3634,7 +3634,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c66fc361-6a3d-47a1-a2d4-c4b75d9e0880",
+							"id": "8ddc8374-1773-4155-84c7-ac6387d24498",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3651,7 +3651,7 @@
 										},
 										{
 											"key": "limit",
-											"value": "20"
+											"value": "9"
 										},
 										{
 											"key": "offset",
@@ -3696,7 +3696,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "caaaf989-6cd1-4c28-98e8-c61e4d41b136",
+							"id": "a37dfc4f-49b9-494e-a7e4-c48e0406e0a0",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3713,7 +3713,7 @@
 										},
 										{
 											"key": "limit",
-											"value": "20"
+											"value": "9"
 										},
 										{
 											"key": "offset",
@@ -3752,7 +3752,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e3461c9e-e12a-4e52-bfb2-8e15c44d83e0",
+							"id": "7c5f9360-2e64-446a-b6af-1b0545259dab",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3769,7 +3769,7 @@
 										},
 										{
 											"key": "limit",
-											"value": "20"
+											"value": "9"
 										},
 										{
 											"key": "offset",
@@ -3814,7 +3814,7 @@
 					}
 				},
 				{
-					"id": "cf45510a-376e-4c1e-aa10-bbc3ebd22c90",
+					"id": "4d62c7a6-880d-496e-b415-a85c282f17ca",
 					"name": "Look up a Bagua sector - Life area reference API",
 					"request": {
 						"name": "Look up a Bagua sector - Life area reference API",
@@ -3875,7 +3875,7 @@
 					},
 					"response": [
 						{
-							"id": "855c9c00-2c16-4daf-bdd3-89387af4b351",
+							"id": "ef3552fd-a0c7-443e-921d-5ca750a826db",
 							"name": "One Bagua palace with its life area, element, colours and trigrams",
 							"originalRequest": {
 								"url": {
@@ -3927,12 +3927,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"id\": \"wealth\",\n  \"name\": \"Wealth and Abundance\",\n  \"number\": 4,\n  \"palace\": \"Southeast\",\n  \"element\": \"Wood\",\n  \"colors\": [\n    \"green\",\n    \"teal\",\n    \"brown\"\n  ],\n  \"focus\": \"Income, resources, accumulation\",\n  \"meaning\": \"The southeastern palace, held by Wind, and the sector most households want working. Wind is gradual and persistent, which is the point: this reads as income that builds through repeated effort rather than as sudden gain.\",\n  \"nameLocalized\": \"Riqueza y abundancia\",\n  \"direction\": \"Southeast\",\n  \"trigram\": {\n    \"number\": 4,\n    \"chinese\": \"巽\",\n    \"english\": \"Wind\",\n    \"pinyin\": \"Xùn\",\n    \"symbol\": \"☴\",\n    \"binary\": \"011\",\n    \"element\": \"Wood\",\n    \"direction\": \"Southeast\",\n    \"familyMember\": \"Eldest Daughter\"\n  },\n  \"earlierHeavenTrigram\": {\n    \"number\": 4,\n    \"chinese\": \"巽\",\n    \"english\": \"Wind\",\n    \"pinyin\": \"Xùn\",\n    \"symbol\": \"☴\",\n    \"binary\": \"011\",\n    \"element\": \"Wood\",\n    \"direction\": \"Southeast\",\n    \"familyMember\": \"Eldest Daughter\"\n  }\n}",
+							"body": "{\n  \"id\": \"wealth\",\n  \"name\": \"Wealth and Abundance\",\n  \"number\": 4,\n  \"palace\": \"Southeast\",\n  \"element\": \"Wood\",\n  \"colors\": [\n    \"green\",\n    \"teal\",\n    \"brown\"\n  ],\n  \"focus\": \"Income, resources, accumulation\",\n  \"meaning\": \"The southeastern palace, held by Wind, and the sector most households want working. Wind is gradual and persistent, which is the point: this reads as income that builds through repeated effort rather than as sudden gain.\",\n  \"nameLocalized\": \"Riqueza y abundancia\",\n  \"direction\": \"Southeast\",\n  \"trigram\": {\n    \"number\": 4,\n    \"chinese\": \"巽\",\n    \"english\": \"Wind\",\n    \"pinyin\": \"Xùn\",\n    \"symbol\": \"☴\",\n    \"binary\": \"011\",\n    \"element\": \"Wood\",\n    \"direction\": \"Southeast\",\n    \"familyMember\": \"Eldest Daughter\",\n    \"nameLocalized\": \"Viento\",\n    \"elementLocalized\": \"Madera\",\n    \"directionLocalized\": \"Sureste\"\n  },\n  \"earlierHeavenTrigram\": {\n    \"number\": 4,\n    \"chinese\": \"巽\",\n    \"english\": \"Wind\",\n    \"pinyin\": \"Xùn\",\n    \"symbol\": \"☴\",\n    \"binary\": \"011\",\n    \"element\": \"Wood\",\n    \"direction\": \"Southeast\",\n    \"familyMember\": \"Eldest Daughter\",\n    \"nameLocalized\": \"Viento\",\n    \"elementLocalized\": \"Madera\",\n    \"directionLocalized\": \"Sureste\"\n  }\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7fb94001-41bc-4df0-8ed1-3540718dfb76",
+							"id": "754a84df-5d62-4ae7-af48-f3fa7aa62ff3",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3984,12 +3984,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6207.958814806236,\n      \"maximum\": 9406.626823067354,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2360.526079858023,\n      \"maximum\": 8086.116908444519,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5459.8307661702875,\n      \"maximum\": 5511.2080509008765,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9783.31240029736,\n      \"maximum\": 4228.686500869825,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ecd2cba1-79bb-42c2-836b-365f62c68060",
+							"id": "f865cebd-a976-459d-bdad-d212351d04fc",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -4046,7 +4046,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "de5ffaa7-752b-4245-957f-758e5b54291a",
+							"id": "0348c2b3-9ab4-42d0-9372-20fbd4b87b38",
 							"name": "No Bagua sector with that life area id",
 							"originalRequest": {
 								"url": {
@@ -4103,7 +4103,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3da2f195-c93b-4898-ab98-2f2347fa00c7",
+							"id": "6c484ee3-c1ac-465c-bb3e-f37297db9989",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -4166,7 +4166,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5fb13eab-29bd-452d-be5f-bd878ecba5d7",
+							"id": "375ed370-a23e-49ef-a9de-1037c4ad922f",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -4223,7 +4223,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a51da449-16e0-4dc8-995c-23aaccb17912",
+							"id": "810151cf-315e-40f6-89b6-d639bfd6f8ac",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -4286,7 +4286,7 @@
 					}
 				},
 				{
-					"id": "ee888a8c-9578-4545-8f98-a42db24b635b",
+					"id": "4050b46c-761e-4f53-8082-501614cae6e9",
 					"name": "List the nine periods - San Yuan period table API",
 					"request": {
 						"name": "List the nine periods - San Yuan period table API",
@@ -4344,7 +4344,7 @@
 					},
 					"response": [
 						{
-							"id": "9eb7528f-f140-4bbb-a55e-e5795facebda",
+							"id": "0dee5ca2-33ad-406f-a211-0dfb205e4c15",
 							"name": "The nine periods with ruling stars and the period in force",
 							"originalRequest": {
 								"url": {
@@ -4396,7 +4396,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "249e4512-0695-412a-80a5-74e70c589b37",
+							"id": "977feb57-bb5d-4cb3-a0c5-8d6a1b7ba31d",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -4443,12 +4443,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6207.958814806236,\n      \"maximum\": 9406.626823067354,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2360.526079858023,\n      \"maximum\": 8086.116908444519,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5459.8307661702875,\n      \"maximum\": 5511.2080509008765,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9783.31240029736,\n      \"maximum\": 4228.686500869825,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "64996ef3-2823-46db-a945-eed0ed6b231a",
+							"id": "78ca3073-5aca-4dfc-85f0-0a7b086f1f68",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -4500,7 +4500,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5122dadc-8ce3-409e-b27a-b06400b5af0c",
+							"id": "bdb22d28-f32d-4658-a2ac-079b775a71ba",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -4558,7 +4558,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1a3e1374-df91-4e6a-860a-c4585c1e2ad3",
+							"id": "691d80a5-f416-46b3-bd1f-1918e7594d46",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -4610,7 +4610,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "bfe25cc7-6364-4654-9e1b-c40c995cbc7c",
+							"id": "f347ab4c-1cc6-4af8-b5c0-4ebf1875fb2b",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -4707,7 +4707,7 @@
 		]
 	},
 	"info": {
-		"_postman_id": "710d9a06-3414-4381-b521-d5641ded1ad7",
+		"_postman_id": "3ec79e8a-2ea5-406e-93e0-baa39db8f7d1",
 		"name": "Feng Shui API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"description": {

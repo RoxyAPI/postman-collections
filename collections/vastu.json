@@ -1,7 +1,7 @@
 {
 	"item": [
 		{
-			"id": "59626c7b-0f19-4934-b45f-e19b6e6667e4",
+			"id": "b6674e77-d6b5-4549-90f3-2f215cfb5396",
 			"name": "Vastu",
 			"description": {
 				"content": "Vastu Shastra API for directional home and plot analysis: entrance padas with the classical effect of each of the 32 perimeter positions, the Vastu Purusha Mandala projected over a real plot on the 81 pada or the 64 pada grid, room placement checks over a closed room enum, Ayadi shadvarga across three text families, plot shape and ground level under two schools that genuinely disagree, and griha pravesh dates composed over a verified panchang. Every verdict carries the chapter and verse it rests on as a typed field, or says plainly that it is convention. Directional design from Indian architecture, sitting beside our feng shui endpoints on one key, with Remote MCP and typed SDKs.",
@@ -9,7 +9,7 @@
 			},
 			"item": [
 				{
-					"id": "e952dafe-5dd2-48c6-bac5-e94fee308cec",
+					"id": "6d343358-d29a-4868-8999-03c3e160968c",
 					"name": "Calculate entrance pada - Vastu main door direction API",
 					"request": {
 						"name": "Calculate entrance pada - Vastu main door direction API",
@@ -74,7 +74,7 @@
 					},
 					"response": [
 						{
-							"id": "8d2e5502-233e-4172-b413-36915ce13d2d",
+							"id": "8a648b31-2674-4a9a-a94c-a6c71ff8014a",
 							"name": "Entrance pada, its devata, the classical effect and the favourable padas",
 							"originalRequest": {
 								"url": {
@@ -125,12 +125,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"pada\": 3,\n  \"side\": \"East\",\n  \"startCorner\": \"Northeast\",\n  \"ordinalOnSide\": 3,\n  \"square\": 3,\n  \"cell\": {\n    \"rowFromNorth\": 3,\n    \"columnFromWest\": 9\n  },\n  \"effect\": \"Great wealth.\",\n  \"auspiciousness\": \"inauspicious\",\n  \"reading\": \"The main entrance falls on pada 3 of the East side, counted from the Northeast corner. That pada is the square of Jayanta. Great wealth.\",\n  \"recommendedPadas\": [\n    3,\n    4\n  ],\n  \"source\": {\n    \"text\": \"Brihat Samhita\",\n    \"chapter\": 53,\n    \"verse\": \"118\",\n    \"translation\": \"N. Chidambaram Iyer\",\n    \"year\": 1884,\n    \"publicDomain\": true,\n    \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n  },\n  \"conventions\": {\n    \"grid\": \"81-pada\"\n  },\n  \"devata\": {\n    \"id\": \"jayanta\",\n    \"name\": \"Jayanta\",\n    \"padaCount\": 2\n  }\n}",
+							"body": "{\n  \"pada\": 3,\n  \"side\": \"East\",\n  \"startCorner\": \"Northeast\",\n  \"ordinalOnSide\": 3,\n  \"square\": 3,\n  \"cell\": {\n    \"rowFromNorth\": 3,\n    \"columnFromWest\": 9\n  },\n  \"effect\": \"Great wealth.\",\n  \"auspiciousness\": \"inauspicious\",\n  \"reading\": \"The main entrance falls on pada 3 of the East side, counted from the Northeast corner. That pada is the square of Jayanta. Great wealth.\",\n  \"recommendedPadas\": [\n    3,\n    4\n  ],\n  \"source\": {\n    \"text\": \"Brihat Samhita\",\n    \"chapter\": 53,\n    \"verse\": \"118\",\n    \"translation\": \"N. Chidambaram Iyer\",\n    \"year\": 1884,\n    \"publicDomain\": true,\n    \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n  },\n  \"conventions\": {\n    \"grid\": \"81-pada\",\n    \"unit\": \"feet\"\n  },\n  \"devata\": {\n    \"id\": \"jayanta\",\n    \"name\": \"Jayanta\",\n    \"padaCount\": 2\n  }\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0b7f60ff-72c8-4acb-8996-6b39b9c1e49b",
+							"id": "4c1778aa-0be8-4fc4-b579-39a8f2cb4128",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -181,12 +181,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5483.2504165637865,\n      \"maximum\": 207.66035777975978,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2809.7987082304353,\n      \"maximum\": 900.7384478838454,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1289.0239839322992,\n      \"maximum\": 886.625166975531,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5126.049424402364,\n      \"maximum\": 9660.966021234613,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "45942f7e-cbe0-4670-a756-6e9d3422fe8d",
+							"id": "8d972fe2-eb08-4745-a6b6-c2e66782b788",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -242,7 +242,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b906e424-c697-4045-aee3-4190b7203db3",
+							"id": "9c1d3cdf-db97-4a40-a948-1b4da3564f40",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -304,7 +304,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "79fa4dbe-8b58-4988-b0c2-e9ddf93a4528",
+							"id": "dfd9505b-d3dc-452d-9b21-448db66faddc",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -360,7 +360,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "38a070e8-896e-4bc3-acc3-394e94c8f221",
+							"id": "d95fbf3d-9c39-45ad-a36a-ebc841db7dc4",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -422,7 +422,7 @@
 					}
 				},
 				{
-					"id": "990eb1ae-a546-4ab6-a841-00135adae9ac",
+					"id": "ff8392bd-1100-47b1-8a2e-8ff080723cde",
 					"name": "Generate Vastu Purusha Mandala - 81 pada and 64 pada grid API",
 					"request": {
 						"name": "Generate Vastu Purusha Mandala - 81 pada and 64 pada grid API",
@@ -487,7 +487,7 @@
 					},
 					"response": [
 						{
-							"id": "5b54fca3-1289-43a3-83d8-ee31b0e1b90a",
+							"id": "9c4e75fd-6196-4c0a-a63d-685e7357c023",
 							"name": "Every cell of the projected mandala with its devata, brahmasthan and geometry",
 							"originalRequest": {
 								"url": {
@@ -538,12 +538,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"grid\": \"81-pada\",\n  \"cells\": [\n    {\n      \"square\": 41,\n      \"rowFromNorth\": 5,\n      \"columnFromWest\": 5,\n      \"center\": {\n        \"x\": 15,\n        \"y\": 0\n      },\n      \"withinPlot\": true,\n      \"devata\": \"brahma\",\n      \"devataName\": \"Brahmā\",\n      \"class\": \"center\",\n      \"group\": \"dvipada\",\n      \"role\": \"around-brahma\"\n    },\n    {\n      \"square\": 41,\n      \"rowFromNorth\": 5,\n      \"columnFromWest\": 5,\n      \"center\": {\n        \"x\": 15,\n        \"y\": 0\n      },\n      \"withinPlot\": true,\n      \"devata\": \"brahma\",\n      \"devataName\": \"Brahmā\",\n      \"class\": \"center\",\n      \"group\": \"dvipada\",\n      \"role\": \"around-brahma\"\n    }\n  ],\n  \"brahmasthan\": {\n    \"squares\": [\n      31,\n      32,\n      33,\n      40,\n      41,\n      42,\n      49,\n      50,\n      51\n    ],\n    \"polygon\": [\n      {\n        \"x\": 15,\n        \"y\": 0\n      },\n      {\n        \"x\": 15,\n        \"y\": 0\n      }\n    ],\n    \"area\": 133.33\n  },\n  \"sources\": [\n    {\n      \"text\": \"Brihat Samhita\",\n      \"chapter\": 53,\n      \"verse\": \"118\",\n      \"translation\": \"N. Chidambaram Iyer\",\n      \"year\": 1884,\n      \"publicDomain\": true,\n      \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n    },\n    {\n      \"text\": \"Brihat Samhita\",\n      \"chapter\": 53,\n      \"verse\": \"118\",\n      \"translation\": \"N. Chidambaram Iyer\",\n      \"year\": 1884,\n      \"publicDomain\": true,\n      \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n    }\n  ],\n  \"conventions\": {\n    \"grid\": \"81-pada\"\n  },\n  \"marma\": {\n    \"points\": [\n      {\n        \"x\": 15,\n        \"y\": 0\n      },\n      {\n        \"x\": 15,\n        \"y\": 0\n      }\n    ],\n    \"areaEach\": 1.85\n  },\n  \"vamsa\": [\n    {\n      \"fromSquare\": 73,\n      \"fromDevata\": \"roga\",\n      \"toSquare\": 9,\n      \"toDevata\": \"vayu\",\n      \"axis\": \"northwest-southeast\",\n      \"isMainDiagonal\": true,\n      \"from\": {\n        \"x\": 15,\n        \"y\": 0\n      },\n      \"to\": {\n        \"x\": 15,\n        \"y\": 0\n      }\n    },\n    {\n      \"fromSquare\": 73,\n      \"fromDevata\": \"roga\",\n      \"toSquare\": 9,\n      \"toDevata\": \"vayu\",\n      \"axis\": \"northwest-southeast\",\n      \"isMainDiagonal\": true,\n      \"from\": {\n        \"x\": 15,\n        \"y\": 0\n      },\n      \"to\": {\n        \"x\": 15,\n        \"y\": 0\n      }\n    }\n  ],\n  \"atimarma\": [\n    23,\n    31,\n    33,\n    39,\n    41,\n    43,\n    49,\n    51,\n    59\n  ]\n}",
+							"body": "{\n  \"grid\": \"81-pada\",\n  \"cells\": [\n    {\n      \"square\": 41,\n      \"rowFromNorth\": 5,\n      \"columnFromWest\": 5,\n      \"center\": {\n        \"x\": 15,\n        \"y\": 0\n      },\n      \"withinPlot\": true,\n      \"devata\": \"brahma\",\n      \"devataName\": \"Brahmā\",\n      \"class\": \"center\",\n      \"group\": \"dvipada\",\n      \"role\": \"around-brahma\"\n    },\n    {\n      \"square\": 41,\n      \"rowFromNorth\": 5,\n      \"columnFromWest\": 5,\n      \"center\": {\n        \"x\": 15,\n        \"y\": 0\n      },\n      \"withinPlot\": true,\n      \"devata\": \"brahma\",\n      \"devataName\": \"Brahmā\",\n      \"class\": \"center\",\n      \"group\": \"dvipada\",\n      \"role\": \"around-brahma\"\n    }\n  ],\n  \"brahmasthan\": {\n    \"squares\": [\n      31,\n      32,\n      33,\n      40,\n      41,\n      42,\n      49,\n      50,\n      51\n    ],\n    \"polygon\": [\n      {\n        \"x\": 15,\n        \"y\": 0\n      },\n      {\n        \"x\": 15,\n        \"y\": 0\n      }\n    ],\n    \"area\": 133.33\n  },\n  \"sources\": [\n    {\n      \"text\": \"Brihat Samhita\",\n      \"chapter\": 53,\n      \"verse\": \"118\",\n      \"translation\": \"N. Chidambaram Iyer\",\n      \"year\": 1884,\n      \"publicDomain\": true,\n      \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n    },\n    {\n      \"text\": \"Brihat Samhita\",\n      \"chapter\": 53,\n      \"verse\": \"118\",\n      \"translation\": \"N. Chidambaram Iyer\",\n      \"year\": 1884,\n      \"publicDomain\": true,\n      \"basis\": \"the south-west placement of the principal bedroom is later Vastu practice; chapter 53 places no bedroom\"\n    }\n  ],\n  \"conventions\": {\n    \"grid\": \"81-pada\",\n    \"unit\": \"feet\"\n  },\n  \"marma\": {\n    \"points\": [\n      {\n        \"x\": 15,\n        \"y\": 0\n      },\n      {\n        \"x\": 15,\n        \"y\": 0\n      }\n    ],\n    \"areaEach\": 1.85\n  },\n  \"vamsa\": [\n    {\n      \"fromSquare\": 73,\n      \"fromDevata\": \"roga\",\n      \"toSquare\": 9,\n      \"toDevata\": \"vayu\",\n      \"axis\": \"northwest-southeast\",\n      \"isMainDiagonal\": true,\n      \"from\": {\n        \"x\": 15,\n        \"y\": 0\n      },\n      \"to\": {\n        \"x\": 15,\n        \"y\": 0\n      }\n    },\n    {\n      \"fromSquare\": 73,\n      \"fromDevata\": \"roga\",\n      \"toSquare\": 9,\n      \"toDevata\": \"vayu\",\n      \"axis\": \"northwest-southeast\",\n      \"isMainDiagonal\": true,\n      \"from\": {\n        \"x\": 15,\n        \"y\": 0\n      },\n      \"to\": {\n        \"x\": 15,\n        \"y\": 0\n      }\n    }\n  ],\n  \"atimarma\": [\n    23,\n    31,\n    33,\n    39,\n    41,\n    43,\n    49,\n    51,\n    59\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "cb961dfa-3839-47bf-9bbc-6e2983c37399",
+							"id": "ea38d96a-d7b9-41cd-8fe4-404d04d20d21",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -594,12 +594,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5483.2504165637865,\n      \"maximum\": 207.66035777975978,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2809.7987082304353,\n      \"maximum\": 900.7384478838454,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1289.0239839322992,\n      \"maximum\": 886.625166975531,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5126.049424402364,\n      \"maximum\": 9660.966021234613,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5ca15800-1d65-476c-937f-893a514c81c3",
+							"id": "cb395705-0510-4bad-a972-f60b51526601",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -655,7 +655,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "af0a7013-c178-4048-82e9-931266f75365",
+							"id": "af498c91-5c93-435a-9209-398ca9c31d87",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -717,7 +717,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a2557a19-826d-4045-b48b-713a69d6104d",
+							"id": "ea76adbf-0fe1-4f32-bd63-a260536fe130",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -773,7 +773,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e092f883-0f85-47ea-ad8a-9aa9ab7c5238",
+							"id": "9169b568-a524-4992-9407-80494d45e44f",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -835,7 +835,7 @@
 					}
 				},
 				{
-					"id": "8a1bc074-e67b-42a2-8558-a241d10d8f5a",
+					"id": "a72275f1-f3b9-4773-9a66-a9682feb405c",
 					"name": "Analyse a plot - Vastu land and site assessment API",
 					"request": {
 						"name": "Analyse a plot - Vastu land and site assessment API",
@@ -900,7 +900,7 @@
 					},
 					"response": [
 						{
-							"id": "0cf6fb49-a1a3-4bca-b623-2a266d7fc82d",
+							"id": "2d842ebe-1c69-49c5-9c9b-5e26eb41e85d",
 							"name": "Shape, proportion, ground level under both schools, corners, road and water verdicts",
 							"originalRequest": {
 								"url": {
@@ -956,7 +956,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "07589800-edca-48c0-9009-bb5d5cb2f524",
+							"id": "99a2d1e6-074a-4605-b428-c2a7c3eeff34",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1007,12 +1007,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5483.2504165637865,\n      \"maximum\": 207.66035777975978,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2809.7987082304353,\n      \"maximum\": 900.7384478838454,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1289.0239839322992,\n      \"maximum\": 886.625166975531,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5126.049424402364,\n      \"maximum\": 9660.966021234613,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "269e68eb-25f8-4b3e-8cbf-0e545c35f0e8",
+							"id": "0fdbdf5e-7d1b-4381-8069-14f5ffa6f0f3",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1068,7 +1068,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "225d7fd5-67b5-4868-a5e9-dd2925702eeb",
+							"id": "d353f4ea-fe46-4788-a986-3ffc5244a95b",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1130,7 +1130,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "efece9dc-2fe2-4710-b507-ddc55065ff47",
+							"id": "f0f4fe24-09ee-4f00-bdd7-dfdee0f2af19",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1186,7 +1186,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3cf13ede-9dc3-4d9e-9195-015327ff56af",
+							"id": "2c07d530-966d-45d2-aabc-728966efa99a",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1248,7 +1248,7 @@
 					}
 				},
 				{
-					"id": "321e9de8-3cbd-4381-a686-2141732a497c",
+					"id": "d0767fe6-387d-4c2c-a9b1-a133e167be1c",
 					"name": "Calculate Ayadi shadvarga - Vastu proportion and yoni calculator API",
 					"request": {
 						"name": "Calculate Ayadi shadvarga - Vastu proportion and yoni calculator API",
@@ -1313,7 +1313,7 @@
 					},
 					"response": [
 						{
-							"id": "776af004-2699-4cd8-8a29-a244c053d108",
+							"id": "7e760c95-c67a-4084-b75a-f46ffa53e447",
 							"name": "The six vargas with their arithmetic, the vayas quotient and the verdict",
 							"originalRequest": {
 								"url": {
@@ -1369,7 +1369,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "31d1aa58-468c-44a7-8930-4504b070349d",
+							"id": "894aab31-6750-4660-8b6c-26d5de2155ca",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1420,12 +1420,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5483.2504165637865,\n      \"maximum\": 207.66035777975978,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2809.7987082304353,\n      \"maximum\": 900.7384478838454,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1289.0239839322992,\n      \"maximum\": 886.625166975531,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5126.049424402364,\n      \"maximum\": 9660.966021234613,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "904e6cd4-0b29-4cd1-af86-19a78b8875fa",
+							"id": "2f81beae-4326-471f-b204-df6de39586ec",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1481,7 +1481,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e589a1e9-bc23-4db5-acef-916104d1ce83",
+							"id": "9bbe3f49-166b-43de-a9ef-878be1c3f03b",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1543,7 +1543,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8b44b61f-c9b6-422c-9277-45acf31edb71",
+							"id": "f96a76fa-28b2-43b1-86d5-a58fec7f9cd6",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1599,7 +1599,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3b65dc78-4c41-40b2-a22c-4a67bdbe8e29",
+							"id": "ff035d02-30f3-43d8-95b1-45aef5cb6d83",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1661,7 +1661,7 @@
 					}
 				},
 				{
-					"id": "8213c252-6503-4402-b25c-7576d63b856e",
+					"id": "3b1d430b-2c59-4253-9deb-66c2d4383abb",
 					"name": "Check room placement - Vastu room direction compliance API",
 					"request": {
 						"name": "Check room placement - Vastu room direction compliance API",
@@ -1726,7 +1726,7 @@
 					},
 					"response": [
 						{
-							"id": "51b199cf-83f8-4df8-b7c7-ad8d054a1dab",
+							"id": "e13fdc30-de99-47a4-b133-7f546a5c730c",
 							"name": "A verdict per room, the composite score and the weights behind it",
 							"originalRequest": {
 								"url": {
@@ -1782,7 +1782,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "edfe877a-ce49-4590-ad64-8d431ec789b2",
+							"id": "89bd06de-e448-4f78-983b-5c552e764500",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1833,12 +1833,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5483.2504165637865,\n      \"maximum\": 207.66035777975978,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2809.7987082304353,\n      \"maximum\": 900.7384478838454,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1289.0239839322992,\n      \"maximum\": 886.625166975531,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5126.049424402364,\n      \"maximum\": 9660.966021234613,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0e9302cf-264f-4613-9466-5f63c52ae2d5",
+							"id": "d88487f5-038f-4ded-be2c-238716b3713a",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1894,7 +1894,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c4e48891-d207-448d-a9ee-83b997cbdd7b",
+							"id": "b561469e-3716-4355-b17b-6eb4cdcf6cee",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1956,7 +1956,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3808f7c4-d16d-429c-b42c-27c21d8a1ab7",
+							"id": "0916551e-dff3-48c8-bb54-126e3de02c15",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2012,7 +2012,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f56da3e8-0946-440b-8fb1-3372a15bc143",
+							"id": "c95a410f-1cd4-4fe8-8b0e-e6fe61499dc4",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2074,7 +2074,7 @@
 					}
 				},
 				{
-					"id": "474510ec-3278-46fa-aa56-9c6b68b21e4b",
+					"id": "b2996524-a696-4e9a-a2d5-b8c42a6298a1",
 					"name": "Find griha pravesh dates - Vastu house warming muhurta API",
 					"request": {
 						"name": "Find griha pravesh dates - Vastu house warming muhurta API",
@@ -2130,7 +2130,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"startDate\": \"2027-01-20\",\n  \"endDate\": \"2027-03-20\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": 6.387845100530765,\n  \"muhurtaText\": \"muhurta-chintamani\"\n}",
+							"raw": "{\n  \"startDate\": \"2027-01-20\",\n  \"endDate\": \"2027-03-20\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": -3.5308060374121624,\n  \"muhurtaText\": \"muhurta-chintamani\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2140,7 +2140,7 @@
 					},
 					"response": [
 						{
-							"id": "6069bf03-3218-417a-a215-ebecde485d75",
+							"id": "449b32ae-c95e-4a77-b632-334dbd2594d5",
 							"name": "Every admitted day with its panchang limbs, plus the rules and the rejections",
 							"originalRequest": {
 								"url": {
@@ -2176,7 +2176,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"startDate\": \"2027-01-20\",\n  \"endDate\": \"2027-03-20\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": 6.387845100530765,\n  \"muhurtaText\": \"muhurta-chintamani\"\n}",
+									"raw": "{\n  \"startDate\": \"2027-01-20\",\n  \"endDate\": \"2027-03-20\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": -3.5308060374121624,\n  \"muhurtaText\": \"muhurta-chintamani\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2197,7 +2197,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9a28ba2c-75a2-49b2-963b-41357daa6376",
+							"id": "b73390e4-47e1-42db-aeae-9fd9263c8b7d",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2233,7 +2233,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"startDate\": \"2027-01-20\",\n  \"endDate\": \"2027-03-20\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": 6.387845100530765,\n  \"muhurtaText\": \"muhurta-chintamani\"\n}",
+									"raw": "{\n  \"startDate\": \"2027-01-20\",\n  \"endDate\": \"2027-03-20\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": -3.5308060374121624,\n  \"muhurtaText\": \"muhurta-chintamani\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2249,12 +2249,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5483.2504165637865,\n      \"maximum\": 207.66035777975978,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2809.7987082304353,\n      \"maximum\": 900.7384478838454,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1289.0239839322992,\n      \"maximum\": 886.625166975531,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5126.049424402364,\n      \"maximum\": 9660.966021234613,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c770139b-8299-45de-aa13-f4b59bfb97b4",
+							"id": "c87a70c5-8ffa-4dbd-9c2b-d9393a328d0f",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2290,7 +2290,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"startDate\": \"2027-01-20\",\n  \"endDate\": \"2027-03-20\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": 6.387845100530765,\n  \"muhurtaText\": \"muhurta-chintamani\"\n}",
+									"raw": "{\n  \"startDate\": \"2027-01-20\",\n  \"endDate\": \"2027-03-20\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": -3.5308060374121624,\n  \"muhurtaText\": \"muhurta-chintamani\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2311,7 +2311,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "be2c5e63-a321-4ea6-abf9-a0f8a81d9656",
+							"id": "6bea743a-cf6a-4f75-93ab-6bb0b875c92e",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2347,7 +2347,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"startDate\": \"2027-01-20\",\n  \"endDate\": \"2027-03-20\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": 6.387845100530765,\n  \"muhurtaText\": \"muhurta-chintamani\"\n}",
+									"raw": "{\n  \"startDate\": \"2027-01-20\",\n  \"endDate\": \"2027-03-20\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": -3.5308060374121624,\n  \"muhurtaText\": \"muhurta-chintamani\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2374,7 +2374,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "dbccb4c9-825e-43f9-8a81-9d9bafe97032",
+							"id": "86c4b0ba-bdf5-409c-8b19-38f1a78b10eb",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2410,7 +2410,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"startDate\": \"2027-01-20\",\n  \"endDate\": \"2027-03-20\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": 6.387845100530765,\n  \"muhurtaText\": \"muhurta-chintamani\"\n}",
+									"raw": "{\n  \"startDate\": \"2027-01-20\",\n  \"endDate\": \"2027-03-20\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": -3.5308060374121624,\n  \"muhurtaText\": \"muhurta-chintamani\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2431,7 +2431,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f30d9bd9-cec2-4fee-ab81-0f38e2a5f617",
+							"id": "a5054432-e71d-4b0f-b99a-b5f0fb09582d",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2467,7 +2467,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"startDate\": \"2027-01-20\",\n  \"endDate\": \"2027-03-20\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": 6.387845100530765,\n  \"muhurtaText\": \"muhurta-chintamani\"\n}",
+									"raw": "{\n  \"startDate\": \"2027-01-20\",\n  \"endDate\": \"2027-03-20\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.209,\n  \"timezone\": -3.5308060374121624,\n  \"muhurtaText\": \"muhurta-chintamani\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2494,7 +2494,7 @@
 					}
 				},
 				{
-					"id": "c6f77247-6be9-4a9c-b39b-f4355a5a8972",
+					"id": "1b5aa550-0669-47c7-8ec8-6617560bce9e",
 					"name": "List the eight directions - Vastu dikpala and direction reference API",
 					"request": {
 						"name": "List the eight directions - Vastu dikpala and direction reference API",
@@ -2558,7 +2558,7 @@
 					},
 					"response": [
 						{
-							"id": "ac7c2f5d-4458-4b63-bec7-630dc0777969",
+							"id": "79bc7b2c-84c2-46fc-a2ae-3db000312884",
 							"name": "The eight directions with their dikpalas, devatas and water effects",
 							"originalRequest": {
 								"url": {
@@ -2614,7 +2614,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "eabc31ad-a281-441e-b2db-508dfd4ca30d",
+							"id": "97c1599b-b322-4ecb-b666-585769c86034",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2665,12 +2665,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5483.2504165637865,\n      \"maximum\": 207.66035777975978,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2809.7987082304353,\n      \"maximum\": 900.7384478838454,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1289.0239839322992,\n      \"maximum\": 886.625166975531,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5126.049424402364,\n      \"maximum\": 9660.966021234613,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "86e45fea-000f-43b4-855e-11a0d832e147",
+							"id": "b05311b5-4d30-4c29-9d52-478ac1ee2ce0",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2726,7 +2726,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a5ea2d00-23ab-4a25-b0e7-3cbf01d03167",
+							"id": "b7018bb7-1c49-442b-b36d-9406dc8f6473",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2788,7 +2788,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "fcf21763-f208-4582-a171-fa7b33bef759",
+							"id": "d3fd4457-23ce-42db-92df-3f8cb720ce47",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2844,7 +2844,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "acbd5de6-d0c2-42e7-aa6d-46c17f578756",
+							"id": "e4835fc3-8e6a-4cb8-ab85-d0cd36dafedf",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2906,7 +2906,7 @@
 					}
 				},
 				{
-					"id": "8ed552bb-5a5a-4cc8-a481-f984524593d6",
+					"id": "9c0cbf7f-0922-46c7-bf25-562862019921",
 					"name": "Look up one direction - Vastu dikpala reference API",
 					"request": {
 						"name": "Look up one direction - Vastu dikpala reference API",
@@ -2967,7 +2967,7 @@
 					},
 					"response": [
 						{
-							"id": "a63b8221-5248-4bfa-b709-9a16519f6d07",
+							"id": "b2f0d74a-4909-4eed-86f2-b7b36864c726",
 							"name": "One direction with its dikpala, devatas and water effect",
 							"originalRequest": {
 								"url": {
@@ -3024,7 +3024,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9b1ece65-127e-4b16-924d-d96216ff7d62",
+							"id": "bfab2afa-8068-4ace-9695-eb5d2bf5b894",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3076,12 +3076,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5483.2504165637865,\n      \"maximum\": 207.66035777975978,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2809.7987082304353,\n      \"maximum\": 900.7384478838454,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1289.0239839322992,\n      \"maximum\": 886.625166975531,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5126.049424402364,\n      \"maximum\": 9660.966021234613,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "df4cecb9-557e-4fc3-a4d0-c7615fc23799",
+							"id": "234ad924-37a8-4290-8f9c-c749d5c616a6",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3138,7 +3138,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f1961378-828e-478b-b75e-84399c8a9e94",
+							"id": "b4d1a6e7-92b3-4d09-ac2a-75911293913a",
 							"name": "No direction with that id",
 							"originalRequest": {
 								"url": {
@@ -3195,7 +3195,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "eeca1f02-bd0f-4544-a8cf-4a9064fa60fa",
+							"id": "cf9b0dae-9730-4a49-8583-17e8e6231a39",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3258,7 +3258,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "478a35dd-8701-47b0-b395-7289dc6430ac",
+							"id": "63412dd1-b65a-4ed3-8ce9-e4de1b914544",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3315,7 +3315,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f0381b9a-a5ea-4015-9a84-9e6d39faef81",
+							"id": "9601049f-89f6-415e-af85-3375e4fc87b8",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3378,7 +3378,7 @@
 					}
 				},
 				{
-					"id": "4a9c20bb-e2da-4497-992f-5a1e00408ed2",
+					"id": "6037d978-cddc-4425-8411-f8eb4dfcc496",
 					"name": "List the 45 devatas - Vastu Purusha Mandala reference API",
 					"request": {
 						"name": "List the 45 devatas - Vastu Purusha Mandala reference API",
@@ -3442,7 +3442,7 @@
 					},
 					"response": [
 						{
-							"id": "7c82418e-b425-4909-9eb9-664ed79b6693",
+							"id": "45aee272-5f56-45e1-b6d4-d979cd675a7a",
 							"name": "The devatas of the mandala with their squares, class and verses",
 							"originalRequest": {
 								"url": {
@@ -3498,7 +3498,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "844c5eaa-b7ba-498a-b574-6b1cc3de460c",
+							"id": "1f6419f5-f534-4168-b674-afe9e6c2d8ee",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3549,12 +3549,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5483.2504165637865,\n      \"maximum\": 207.66035777975978,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2809.7987082304353,\n      \"maximum\": 900.7384478838454,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1289.0239839322992,\n      \"maximum\": 886.625166975531,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5126.049424402364,\n      \"maximum\": 9660.966021234613,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a87d3fef-243f-4f59-82dd-01dcb2c66c61",
+							"id": "634fc166-b911-4fa5-9309-7139b75356b1",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3610,7 +3610,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "793adf9e-cae8-464f-95b7-aabdee1dda49",
+							"id": "66c90525-94fb-4b18-9d00-b0a6be9f3c42",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3672,7 +3672,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9190de02-b1ca-490c-b3a1-23f925f44c4c",
+							"id": "ab3c38ba-ea97-4ec2-bbc9-35dd4497ae97",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3728,7 +3728,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5a8a65a1-4f0d-4ec9-9903-2c890158b0de",
+							"id": "0ea5fc38-97d8-4e24-86c8-d9c5d37c7c81",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3790,7 +3790,7 @@
 					}
 				},
 				{
-					"id": "09be48ef-1965-46e5-9dfa-431e42afa366",
+					"id": "6f728043-4f4b-408d-9426-22cd19d25b3d",
 					"name": "Look up one devata - Vastu mandala devata reference API",
 					"request": {
 						"name": "Look up one devata - Vastu mandala devata reference API",
@@ -3851,7 +3851,7 @@
 					},
 					"response": [
 						{
-							"id": "2b0f5c2e-570e-4089-a3bb-124313d06903",
+							"id": "8d47ce69-1011-4aef-9918-434c13ab532d",
 							"name": "One devata with its squares, class, entrance pada and verses",
 							"originalRequest": {
 								"url": {
@@ -3908,7 +3908,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "281b6573-9e98-40a2-a5b0-1b1c58aed81e",
+							"id": "0af700b2-78c9-4274-8e48-2d7be06e36df",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3960,12 +3960,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5483.2504165637865,\n      \"maximum\": 207.66035777975978,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2809.7987082304353,\n      \"maximum\": 900.7384478838454,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1289.0239839322992,\n      \"maximum\": 886.625166975531,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5126.049424402364,\n      \"maximum\": 9660.966021234613,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ef872d55-7bd8-45ec-b2ee-3dc24bef132a",
+							"id": "dafbf568-2be2-463d-a128-9edd889b94fd",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -4022,7 +4022,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "743e170b-9b0b-4e8c-9ad6-9531bfea9dd6",
+							"id": "823c85b1-252d-491f-87b1-9cd95cdf2bb1",
 							"name": "No devata with that id",
 							"originalRequest": {
 								"url": {
@@ -4079,7 +4079,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "379654e3-0132-441b-9c83-4f6bf7d3e603",
+							"id": "bac44eba-1b14-440f-a6f0-3ec9f9f4ece6",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -4142,7 +4142,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "fc4b1b5f-c654-4bc5-b9a4-d7b5b10eb736",
+							"id": "2153ba80-d430-4409-8e2a-53891bc77196",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -4199,7 +4199,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5cb04449-9247-47f3-990f-da620485c2c3",
+							"id": "96307005-26cc-47d2-8486-2ee1caf3dbb5",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -4301,7 +4301,7 @@
 		]
 	},
 	"info": {
-		"_postman_id": "aa64028e-8800-4e61-9f88-14c00e9c5b63",
+		"_postman_id": "4882ba6b-68a6-4af8-b78b-7a011823d9c5",
 		"name": "Vastu Shastra API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"description": {
