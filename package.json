@@ -6,7 +6,7 @@
 	"type": "module",
 	"scripts": {
 		"sync": "bun run scripts/sync.ts",
-		"check": "biome check . --fix",
+		"check": "biome check . --fix --no-errors-on-unmatched",
 		"typecheck": "tsc --noEmit",
 		"test": "bun test"
 	},
