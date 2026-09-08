@@ -52,7 +52,7 @@ The astrology and Vedic domains are verified against NASA JPL Horizons. See the 
 - API docs and reference: [roxyapi.com/docs](https://roxyapi.com/docs)
 - Postman guide: [roxyapi.com/docs/guides/postman](https://roxyapi.com/docs/guides/postman)
 - TypeScript, Python, and PHP SDKs: [roxyapi.com/docs/sdk](https://roxyapi.com/docs/sdk)
-- Remote MCP and starters: [roxyapi.com/starters](https://roxyapi.com/starters)
+- Remote MCP and starters: [roxyapi.com/templates](https://roxyapi.com/templates)
 
 ## License
 
