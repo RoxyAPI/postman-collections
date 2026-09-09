@@ -294,7 +294,7 @@
 												"name": {
 													"type": "string",
 													"example": "Jayanta",
-													"description": "Display name of the devata, with the diacritics the transliteration carries."
+													"description": "Display name of the devata. A Sanskrit proper noun: romanised with the diacritics the transliteration carries in every language, and written in Devanagari as the Sanskrit text prints it when lang is hi. Compare on id, never on this."
 												},
 												"padaCount": {
 													"type": "number",
@@ -321,7 +321,7 @@
 										},
 										"reading": {
 											"type": "string",
-											"example": "The main entrance falls on pada 3 of the East side, counted from the Northeast corner. That pada is the square of Jayanta. Great wealth.",
+											"example": "The main entrance falls on pada 3 of the East side, counted from the Northeast corner. That pada is the square of Jayanta. The effect the verse gives for this pada: Great wealth.",
 											"description": "The verdict as a sentence, for a report or a chat answer. Composed from the pada, its side and its effect, and translated in place when lang is set."
 										},
 										"recommendedPadas": {
@@ -805,7 +805,7 @@
 													"devataName": {
 														"type": "string",
 														"example": "Brahmā",
-														"description": "Display name of that devata, with the diacritics the transliteration carries. Present only on the 81 pada grid."
+														"description": "Display name of that devata. A Sanskrit proper noun: romanised with the diacritics the transliteration carries in every language, and written in Devanagari as the Sanskrit text prints it when lang is hi. Present only on the 81 pada grid."
 													},
 													"class": {
 														"type": "string",
@@ -3365,7 +3365,7 @@
 													"remedy": {
 														"type": "string",
 														"example": "Move the cooking hearth to the south-east quarter, which is where the chapter puts the kitchen. Where the room cannot move, shift the hob itself to the south-east corner of the room and cook facing east.",
-														"description": "What to do when the room is not where it belongs. Original prose, translated in place when lang is set."
+														"description": "What to do when the room is not where it belongs. Present when the verdict is acceptable or avoid, and absent on an ideal placement, which has nothing to fix. Original prose, translated in place when lang is set."
 													},
 													"source": {
 														"type": "object",
@@ -3419,7 +3419,6 @@
 													"idealDirections",
 													"avoidDirections",
 													"reading",
-													"remedy",
 													"source"
 												]
 											},
@@ -4518,8 +4517,8 @@
 													},
 													"dikpala": {
 														"type": "string",
-														"example": "Isana",
-														"description": "The lord of this quarter of the horizon, per Brihat Samhita 54.3. Always English transliteration, safe to compare against. These are NOT the 45 mandala devatas and the two sets must not be merged: Agni is the north-east mandala square and the south-east dikpala."
+														"example": "Īśāna",
+														"description": "The lord of this quarter of the horizon, per Brihat Samhita 54.3. A Sanskrit proper noun: romanised with the diacritics the transliteration carries in every language, and written in Devanagari as the Sanskrit text prints it when lang is hi. Compare on id, never on this. These are NOT the 45 mandala devatas and the two sets must not be merged: Agni is the north-east mandala square and the south-east dikpala."
 													},
 													"kind": {
 														"type": "string",
@@ -4563,7 +4562,7 @@
 																"name": {
 																	"type": "string",
 																	"example": "Agni",
-																	"description": "Display name of the devata, with the diacritics the transliteration carries."
+																	"description": "Display name of the devata. A Sanskrit proper noun: romanised with the diacritics the transliteration carries in every language, and written in Devanagari as the Sanskrit text prints it when lang is hi."
 																}
 															},
 															"required": [
@@ -4954,8 +4953,8 @@
 										},
 										"dikpala": {
 											"type": "string",
-											"example": "Isana",
-											"description": "The lord of this quarter of the horizon, per Brihat Samhita 54.3. Always English transliteration, safe to compare against. These are NOT the 45 mandala devatas and the two sets must not be merged: Agni is the north-east mandala square and the south-east dikpala."
+											"example": "Īśāna",
+											"description": "The lord of this quarter of the horizon, per Brihat Samhita 54.3. A Sanskrit proper noun: romanised with the diacritics the transliteration carries in every language, and written in Devanagari as the Sanskrit text prints it when lang is hi. Compare on id, never on this. These are NOT the 45 mandala devatas and the two sets must not be merged: Agni is the north-east mandala square and the south-east dikpala."
 										},
 										"kind": {
 											"type": "string",
@@ -4999,7 +4998,7 @@
 													"name": {
 														"type": "string",
 														"example": "Agni",
-														"description": "Display name of the devata, with the diacritics the transliteration carries."
+														"description": "Display name of the devata. A Sanskrit proper noun: romanised with the diacritics the transliteration carries in every language, and written in Devanagari as the Sanskrit text prints it when lang is hi."
 													}
 												},
 												"required": [
@@ -5199,32 +5198,6 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
-										}
-									},
-									"required": [
-										"error",
-										"code"
-									]
-								}
-							}
-						}
-					},
-					"404": {
-						"description": "No direction with that id",
-						"content": {
-							"application/json": {
-								"schema": {
-									"type": "object",
-									"properties": {
-										"error": {
-											"type": "string",
-											"example": "Resource not found",
-											"description": "Human-readable error message. The wording may change, so do not parse it programmatically. Switch on the stable code instead."
-										},
-										"code": {
-											"type": "string",
-											"example": "not_found",
-											"description": "Machine-readable error code. Stable identifier for programmatic error handling."
 										}
 									},
 									"required": [
@@ -5436,7 +5409,7 @@
 													"name": {
 														"type": "string",
 														"example": "Jayanta",
-														"description": "Display name of the devata, with the diacritics the transliteration carries. A Sanskrit proper noun, so it stays as it is in every language."
+														"description": "Display name of the devata. A Sanskrit proper noun: romanised with the diacritics the transliteration carries in every language, and written in Devanagari as the Sanskrit text prints it when lang is hi. Compare on id, never on this."
 													},
 													"class": {
 														"type": "string",
@@ -5923,7 +5896,7 @@
 										"name": {
 											"type": "string",
 											"example": "Jayanta",
-											"description": "Display name of the devata, with the diacritics the transliteration carries. A Sanskrit proper noun, so it stays as it is in every language."
+											"description": "Display name of the devata. A Sanskrit proper noun: romanised with the diacritics the transliteration carries in every language, and written in Devanagari as the Sanskrit text prints it when lang is hi. Compare on id, never on this."
 										},
 										"class": {
 											"type": "string",
@@ -6181,32 +6154,6 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
-										}
-									},
-									"required": [
-										"error",
-										"code"
-									]
-								}
-							}
-						}
-					},
-					"404": {
-						"description": "No devata with that id",
-						"content": {
-							"application/json": {
-								"schema": {
-									"type": "object",
-									"properties": {
-										"error": {
-											"type": "string",
-											"example": "Resource not found",
-											"description": "Human-readable error message. The wording may change, so do not parse it programmatically. Switch on the stable code instead."
-										},
-										"code": {
-											"type": "string",
-											"example": "not_found",
-											"description": "Machine-readable error code. Stable identifier for programmatic error handling."
 										}
 									},
 									"required": [

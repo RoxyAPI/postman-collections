@@ -23598,32 +23598,6 @@
 							}
 						}
 					},
-					"404": {
-						"description": "Yoga not found",
-						"content": {
-							"application/json": {
-								"schema": {
-									"type": "object",
-									"properties": {
-										"error": {
-											"type": "string",
-											"example": "Resource not found",
-											"description": "Human-readable error message. The wording may change, so do not parse it programmatically. Switch on the stable code instead."
-										},
-										"code": {
-											"type": "string",
-											"example": "not_found",
-											"description": "Machine-readable error code. Stable identifier for programmatic error handling."
-										}
-									},
-									"required": [
-										"error",
-										"code"
-									]
-								}
-							}
-						}
-					},
 					"405": {
 						"description": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 						"headers": {
@@ -30693,32 +30667,6 @@
 							}
 						}
 					},
-					"404": {
-						"description": "Rashi not found",
-						"content": {
-							"application/json": {
-								"schema": {
-									"type": "object",
-									"properties": {
-										"error": {
-											"type": "string",
-											"example": "Resource not found",
-											"description": "Human-readable error message. The wording may change, so do not parse it programmatically. Switch on the stable code instead."
-										},
-										"code": {
-											"type": "string",
-											"example": "not_found",
-											"description": "Machine-readable error code. Stable identifier for programmatic error handling."
-										}
-									},
-									"required": [
-										"error",
-										"code"
-									]
-								}
-							}
-						}
-					},
 					"405": {
 						"description": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 						"headers": {
@@ -31265,32 +31213,6 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
-										}
-									},
-									"required": [
-										"error",
-										"code"
-									]
-								}
-							}
-						}
-					},
-					"404": {
-						"description": "Nakshatra not found",
-						"content": {
-							"application/json": {
-								"schema": {
-									"type": "object",
-									"properties": {
-										"error": {
-											"type": "string",
-											"example": "Resource not found",
-											"description": "Human-readable error message. The wording may change, so do not parse it programmatically. Switch on the stable code instead."
-										},
-										"code": {
-											"type": "string",
-											"example": "not_found",
-											"description": "Machine-readable error code. Stable identifier for programmatic error handling."
 										}
 									},
 									"required": [
@@ -32683,32 +32605,6 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
-										}
-									},
-									"required": [
-										"error",
-										"code"
-									]
-								}
-							}
-						}
-					},
-					"404": {
-						"description": "No avastha state matches that slug.",
-						"content": {
-							"application/json": {
-								"schema": {
-									"type": "object",
-									"properties": {
-										"error": {
-											"type": "string",
-											"example": "Resource not found",
-											"description": "Human-readable error message. The wording may change, so do not parse it programmatically. Switch on the stable code instead."
-										},
-										"code": {
-											"type": "string",
-											"example": "not_found",
-											"description": "Machine-readable error code. Stable identifier for programmatic error handling."
 										}
 									},
 									"required": [
