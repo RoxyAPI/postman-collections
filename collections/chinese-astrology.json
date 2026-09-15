@@ -1,7 +1,7 @@
 {
 	"item": [
 		{
-			"id": "e5d05f0a-4521-40d9-979c-b0c19e599fb2",
+			"id": "b40fcae6-a869-4cfa-a550-cbaee8438416",
 			"name": "Chinese Astrology",
 			"description": {
 				"content": "Calculate BaZi Four Pillars charts, Chinese zodiac signs, and the Chinese lunisolar calendar from any birth moment: year, month, day and hour pillars with hidden stems, Na Yin and Ten God relations, luck pillars, day master strength, and animal compatibility. The school splits that make two calculators disagree are typed parameters rather than hidden defaults, and every chart echoes the conventions it was computed under. Solar terms come back as astronomical instants, lunar dates convert in both directions with leap months placed correctly, and the Tong Shu almanac covers day officers, lunar mansions and date selection. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.",
@@ -9,7 +9,7 @@
 			},
 			"item": [
 				{
-					"id": "e577571e-9e5d-450c-9c9a-86882724a956",
+					"id": "9e96d6c7-cd7f-474e-89db-97b466f184f9",
 					"name": "Generate BaZi chart - Four Pillars of Destiny calculator API",
 					"request": {
 						"name": "Generate BaZi chart - Four Pillars of Destiny calculator API",
@@ -65,7 +65,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -1.5547932166762806,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+							"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 4.613656642480063,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -75,7 +75,7 @@
 					},
 					"response": [
 						{
-							"id": "26548b0d-04d6-49d5-a903-6a6499417ef0",
+							"id": "b3843088-09cb-446d-86d9-ae389148dff3",
 							"name": "Four pillars, Day Master, element balance, interactions, and the conventions",
 							"originalRequest": {
 								"url": {
@@ -111,7 +111,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -1.5547932166762806,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 4.613656642480063,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -132,7 +132,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "59affb7a-71b0-4435-9e5b-53abed0abd34",
+							"id": "f2f454bd-fd30-4a2f-871f-3d3959412eec",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -168,7 +168,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -1.5547932166762806,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 4.613656642480063,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -184,12 +184,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1236.8489039883334,\n      \"maximum\": 2476.108018910369,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7934.221578766826,\n      \"maximum\": 7149.394445176651,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6102.331074277221,\n      \"maximum\": 9250.142934020356,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4154.604907286842,\n      \"maximum\": 627.9790498943216,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "bd12a68e-86d9-4f9b-bbc1-cad40e7fae72",
+							"id": "58cadab1-76b8-4a1b-b1d7-f67ccdc34309",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -225,7 +225,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -1.5547932166762806,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 4.613656642480063,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -246,7 +246,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "16e10484-c371-42ba-8182-c0e763d9bfb2",
+							"id": "01e2f6f3-fe29-4da7-beb9-1ed09cfb0332",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -282,7 +282,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -1.5547932166762806,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 4.613656642480063,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -309,7 +309,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6d85542e-0c6f-4533-b97c-46ec4b6e50f5",
+							"id": "0106b758-470f-4ffb-bb5e-2e8c5977dd7e",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -345,7 +345,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -1.5547932166762806,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 4.613656642480063,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -366,7 +366,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "27a936bb-4a16-49aa-9a30-58a045dd6d6d",
+							"id": "5b9924e0-6d2e-4813-8e0a-ae3e8d5a0670",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -402,7 +402,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -1.5547932166762806,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 4.613656642480063,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -429,7 +429,7 @@
 					}
 				},
 				{
-					"id": "5c142305-7fce-41aa-8502-6e62cdaf1d47",
+					"id": "f51ee41c-10fd-467a-9bf0-3b25d1f40ae5",
 					"name": "Calculate luck pillars - BaZi Da Yun ten-year cycle API",
 					"request": {
 						"name": "Calculate luck pillars - BaZi Da Yun ten-year cycle API",
@@ -485,7 +485,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 13.428907351654441,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
+							"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -2.714818642452375,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -495,7 +495,7 @@
 					},
 					"response": [
 						{
-							"id": "1fa7d235-e444-4166-bebf-ebb9c7a1420b",
+							"id": "7317c844-cbc6-4c49-aa69-9c17c1f2eca7",
 							"name": "Luck pillar sequence with start age, direction, and optional annual overlay",
 							"originalRequest": {
 								"url": {
@@ -531,7 +531,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 13.428907351654441,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -2.714818642452375,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -552,7 +552,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d4973b8c-55b0-40cf-adab-19602673a8e9",
+							"id": "11bdb1f6-e4cf-4165-85d1-cf7a4e417bdd",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -588,7 +588,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 13.428907351654441,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -2.714818642452375,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -604,12 +604,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1236.8489039883334,\n      \"maximum\": 2476.108018910369,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7934.221578766826,\n      \"maximum\": 7149.394445176651,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6102.331074277221,\n      \"maximum\": 9250.142934020356,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4154.604907286842,\n      \"maximum\": 627.9790498943216,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2ad898e5-0cf2-4b65-a99a-81d16e4ddf9a",
+							"id": "f708c55a-9476-464d-86ea-6fc306126ae4",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -645,7 +645,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 13.428907351654441,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -2.714818642452375,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -666,7 +666,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "124bd3cf-8ea4-4354-9912-5cb687e3240a",
+							"id": "b03ec49f-1f49-4e37-beff-48db04672576",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -702,7 +702,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 13.428907351654441,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -2.714818642452375,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -729,7 +729,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f6ab229b-7680-467b-8328-b5703189910c",
+							"id": "cd279e03-fdd0-4b12-b33b-140552d01329",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -765,7 +765,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 13.428907351654441,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -2.714818642452375,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -786,7 +786,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "aa434a1d-9ba5-4577-87ec-290ccc4501f5",
+							"id": "b8c88195-fa06-49ed-af04-cc690da0dac2",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -822,7 +822,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 13.428907351654441,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -2.714818642452375,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -849,7 +849,7 @@
 					}
 				},
 				{
-					"id": "89721f1d-3a1c-4591-bb2f-409668daec5b",
+					"id": "2279fe95-5f57-4230-a70a-67a0c1755ec3",
 					"name": "Calculate Day Master strength - BaZi favorable element API",
 					"request": {
 						"name": "Calculate Day Master strength - BaZi favorable element API",
@@ -905,7 +905,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -1.5547932166762806,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+							"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 4.613656642480063,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -915,7 +915,7 @@
 					},
 					"response": [
 						{
-							"id": "e1dbce76-be08-4103-bafd-bb36c1e1688d",
+							"id": "ec3a8c2e-f7eb-4106-ac03-692be285d825",
 							"name": "Strength verdict, contributing factors, and favorable elements",
 							"originalRequest": {
 								"url": {
@@ -951,7 +951,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -1.5547932166762806,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 4.613656642480063,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -972,7 +972,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3387b993-e443-4f73-a11a-eace99d8af7f",
+							"id": "16cc713d-8c0f-4927-9a45-ca67ccfb06b4",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1008,7 +1008,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -1.5547932166762806,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 4.613656642480063,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1024,12 +1024,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1236.8489039883334,\n      \"maximum\": 2476.108018910369,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7934.221578766826,\n      \"maximum\": 7149.394445176651,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6102.331074277221,\n      \"maximum\": 9250.142934020356,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4154.604907286842,\n      \"maximum\": 627.9790498943216,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "debaae07-64e6-424a-b414-2123c81c92a8",
+							"id": "46825fe2-40ef-4a4e-94f1-f98912665623",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1065,7 +1065,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -1.5547932166762806,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 4.613656642480063,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1086,7 +1086,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "85411802-2ee0-41bd-b86a-4c054d30d369",
+							"id": "321e7675-557f-4443-94dc-b20937cdba35",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1122,7 +1122,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -1.5547932166762806,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 4.613656642480063,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1149,7 +1149,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "12c96859-16b9-48e1-ac40-959cda6e5b65",
+							"id": "ff9dfa63-f100-4f89-9955-e5a99f2c710d",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1185,7 +1185,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -1.5547932166762806,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 4.613656642480063,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1206,7 +1206,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "725f2372-fd15-4230-ac72-16c1ef4cf083",
+							"id": "a30d46f2-77a7-4130-8db9-a44c346b79d4",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1242,7 +1242,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -1.5547932166762806,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 4.613656642480063,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1269,7 +1269,7 @@
 					}
 				},
 				{
-					"id": "007abfa0-4e70-43e7-a8e7-580c1cf68c81",
+					"id": "07fc239b-d702-4431-a42b-d387b512a45a",
 					"name": "Calculate BaZi compatibility - Four Pillars matchmaking API",
 					"request": {
 						"name": "Calculate BaZi compatibility - Four Pillars matchmaking API",
@@ -1325,7 +1325,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -4.078064060998525,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -8.32408628138725,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
+							"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -7.466179866531848,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": 7.385137388248335,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1335,7 +1335,7 @@
 					},
 					"response": [
 						{
-							"id": "2d67cdb0-6f7d-4d57-ac97-9eb31dcad7ca",
+							"id": "8734b524-a713-4c31-b23b-626dc056de39",
 							"name": "Both charts, the cross-chart interactions, and the compatibility score",
 							"originalRequest": {
 								"url": {
@@ -1371,7 +1371,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -4.078064060998525,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -8.32408628138725,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
+									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -7.466179866531848,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": 7.385137388248335,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1392,7 +1392,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ac93e215-c7f2-4e9a-b796-554976adba82",
+							"id": "01f78fda-e567-4666-b673-9c630840495e",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1428,7 +1428,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -4.078064060998525,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -8.32408628138725,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
+									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -7.466179866531848,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": 7.385137388248335,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1444,12 +1444,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1236.8489039883334,\n      \"maximum\": 2476.108018910369,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7934.221578766826,\n      \"maximum\": 7149.394445176651,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6102.331074277221,\n      \"maximum\": 9250.142934020356,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4154.604907286842,\n      \"maximum\": 627.9790498943216,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "de10252e-744c-4b0f-b74e-bea1b4280b0f",
+							"id": "c7f26647-72a4-434c-84b0-decc09c2ee7a",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1485,7 +1485,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -4.078064060998525,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -8.32408628138725,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
+									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -7.466179866531848,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": 7.385137388248335,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1506,7 +1506,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8d6a9ce9-9e71-49a9-9320-0de41b12405e",
+							"id": "d34699f4-d31c-4134-bfcc-27aa155045f6",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1542,7 +1542,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -4.078064060998525,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -8.32408628138725,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
+									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -7.466179866531848,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": 7.385137388248335,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1569,7 +1569,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "522a62c3-2490-44b2-b408-71b2b237909c",
+							"id": "8811c237-99d7-46f5-870f-602eb6466ee1",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1605,7 +1605,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -4.078064060998525,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -8.32408628138725,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
+									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -7.466179866531848,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": 7.385137388248335,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1626,7 +1626,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "bb2c799d-7fcd-41de-9452-14acbf79a228",
+							"id": "483f22c6-f11c-4ef4-bfa0-4343ea4329f3",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1662,7 +1662,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -4.078064060998525,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -8.32408628138725,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
+									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -7.466179866531848,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": 7.385137388248335,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1689,7 +1689,7 @@
 					}
 				},
 				{
-					"id": "e0bbc1cd-20a8-4cc1-8e3f-561ebd86aab9",
+					"id": "1cf4ea0f-f65a-4622-aee6-66b24bdee491",
 					"name": "Calculate BaZi annual forecast - Liu Nian yearly pillar API",
 					"request": {
 						"name": "Calculate BaZi annual forecast - Liu Nian yearly pillar API",
@@ -1745,7 +1745,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 10.684036179051962,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+							"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -13.317727172725007,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1755,7 +1755,7 @@
 					},
 					"response": [
 						{
-							"id": "28d87d11-b168-4bdb-bf67-d7c3675652b7",
+							"id": "8f16e984-be53-4b0b-af76-14f2d3855e8f",
 							"name": "Annual pillar, its relation to the Day Master, and the natal interactions",
 							"originalRequest": {
 								"url": {
@@ -1791,7 +1791,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 10.684036179051962,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -13.317727172725007,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1812,7 +1812,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6e2c3f29-07f1-4cbc-bb30-3d7083fcc349",
+							"id": "61a0496d-dbac-4136-ae91-8685df93e0ad",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1848,7 +1848,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 10.684036179051962,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -13.317727172725007,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1864,12 +1864,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1236.8489039883334,\n      \"maximum\": 2476.108018910369,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7934.221578766826,\n      \"maximum\": 7149.394445176651,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6102.331074277221,\n      \"maximum\": 9250.142934020356,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4154.604907286842,\n      \"maximum\": 627.9790498943216,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9bab51ab-adc2-40bd-92ae-0d3c1e171730",
+							"id": "26e2866c-3004-45b5-9575-c3ca6d781a97",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1905,7 +1905,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 10.684036179051962,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -13.317727172725007,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1926,7 +1926,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b52dd7a5-6a06-429f-a5a4-4667c687eadd",
+							"id": "c4c21f69-ce3a-499b-92f5-ffe817a1ac61",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1962,7 +1962,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 10.684036179051962,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -13.317727172725007,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1989,7 +1989,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3c0904b5-12a7-4bc2-9bf3-6b11e3abaf30",
+							"id": "db490681-f6fd-44c1-8b9a-ba51057fd34b",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2025,7 +2025,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 10.684036179051962,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -13.317727172725007,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2046,7 +2046,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "31b62e87-5afd-4ebd-b418-1f5faa6bf98c",
+							"id": "187fade2-8a71-4952-a359-154781f377fe",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2082,7 +2082,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 10.684036179051962,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -13.317727172725007,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2109,7 +2109,7 @@
 					}
 				},
 				{
-					"id": "efe30853-fb99-4d43-b658-4186df583820",
+					"id": "1de0560e-191c-45fd-861f-d3667ae64020",
 					"name": "List the 12 Chinese zodiac animals - Sheng Xiao sign catalogue",
 					"request": {
 						"name": "List the 12 Chinese zodiac animals - Sheng Xiao sign catalogue",
@@ -2174,7 +2174,7 @@
 					},
 					"response": [
 						{
-							"id": "88d06202-9d52-4c7a-9c49-9578dc1e1230",
+							"id": "20d76bc1-5966-4e90-be2d-901259c15028",
 							"name": "The zodiac animal catalogue.",
 							"originalRequest": {
 								"url": {
@@ -2231,7 +2231,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "43fa0b3d-c702-4523-b891-83733abea3a8",
+							"id": "c2fd513a-0544-4b5a-8869-8c83a4895828",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2283,12 +2283,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1236.8489039883334,\n      \"maximum\": 2476.108018910369,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7934.221578766826,\n      \"maximum\": 7149.394445176651,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6102.331074277221,\n      \"maximum\": 9250.142934020356,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4154.604907286842,\n      \"maximum\": 627.9790498943216,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8a50a11d-d92c-4771-8630-7180eaee1d87",
+							"id": "ae59d270-7937-4b70-8042-70783b575c96",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2345,7 +2345,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3d1c5882-ec22-4c1c-a614-f2c67043ff68",
+							"id": "07b2407d-93f0-4a15-9b33-3d70e72bb61e",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2408,7 +2408,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b1ecf36e-8f23-4281-b52c-bec3d1b89939",
+							"id": "c7e03de0-fa08-4afd-9d84-78187975f7b7",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2465,7 +2465,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f15f45c3-7ffc-40e9-bf71-6f0b9d5d8b8c",
+							"id": "ba872faf-8943-4249-a8fb-6af8cfedf2fe",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2528,7 +2528,7 @@
 					}
 				},
 				{
-					"id": "43e42f02-f3c5-4910-892f-63bebc4bc903",
+					"id": "3c067ff0-81fa-4bc3-9fd5-8ecb9695daa7",
 					"name": "Get one Chinese zodiac animal - Full sign profile with compatibility partners",
 					"request": {
 						"name": "Get one Chinese zodiac animal - Full sign profile with compatibility partners",
@@ -2590,7 +2590,7 @@
 					},
 					"response": [
 						{
-							"id": "cec18d40-4685-43b4-aef5-0637ed915a8e",
+							"id": "8c7fe78d-43b7-4728-8ce6-6e0596e212c7",
 							"name": "Full animal profile.",
 							"originalRequest": {
 								"url": {
@@ -2648,7 +2648,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9eb25a38-7683-41fa-a368-8dd3110029cb",
+							"id": "ec600913-7749-46b7-8ba2-29c0a96fd095",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2701,12 +2701,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1236.8489039883334,\n      \"maximum\": 2476.108018910369,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7934.221578766826,\n      \"maximum\": 7149.394445176651,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6102.331074277221,\n      \"maximum\": 9250.142934020356,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4154.604907286842,\n      \"maximum\": 627.9790498943216,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "67683be4-7e96-4fc8-9bdd-a145b32b0ca3",
+							"id": "f979fd8f-8309-4ab7-8003-48b9f5b695d2",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2764,7 +2764,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8d818820-e209-4841-ae0a-03ca0e404c09",
+							"id": "db92a65d-eb6e-4658-9bc3-8265a64d8633",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2828,7 +2828,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e6e117b9-9949-4122-8f1a-c20620f15821",
+							"id": "bdb44cfb-7d84-4e09-a0c6-c70bc9e5679b",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2886,7 +2886,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "278050b8-dec8-4ad0-9825-9871b0d50ec1",
+							"id": "b5ba335c-53e6-4ad9-b18b-7e5aca755892",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2950,7 +2950,7 @@
 					}
 				},
 				{
-					"id": "e1c922b8-2d74-4f58-93b5-3d75c7778890",
+					"id": "98c2c0b4-8501-43fa-946c-22b7394dd7f9",
 					"name": "Find the Chinese zodiac animal for a birth date - Sheng Xiao calculator",
 					"request": {
 						"name": "Find the Chinese zodiac animal for a birth date - Sheng Xiao calculator",
@@ -3016,7 +3016,7 @@
 					},
 					"response": [
 						{
-							"id": "3da33c43-1256-426a-ba3d-21183d2fb4b3",
+							"id": "9a29c7f2-853d-4285-95b4-dd2eea21ee35",
 							"name": "The zodiac animal for this birth date.",
 							"originalRequest": {
 								"url": {
@@ -3073,7 +3073,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ae933a42-b542-4444-a211-7f825db6385e",
+							"id": "d241e16b-b741-4319-bfcf-de411957292f",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3125,12 +3125,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1236.8489039883334,\n      \"maximum\": 2476.108018910369,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7934.221578766826,\n      \"maximum\": 7149.394445176651,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6102.331074277221,\n      \"maximum\": 9250.142934020356,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4154.604907286842,\n      \"maximum\": 627.9790498943216,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1407ec8b-8fd7-49df-bc02-2306770cdf78",
+							"id": "3420a2a6-2c14-4666-bbe4-ebff88ce5a49",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3187,7 +3187,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d900760a-d1f1-434c-b369-7bc7f7c4e3db",
+							"id": "3c58e2f2-e032-438e-999e-8def47a3fccf",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3250,7 +3250,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "865ecbce-35be-4b71-9421-a0d6738e5d77",
+							"id": "37d3a52a-c4fe-4b6d-a7a1-20bcef858b03",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3307,7 +3307,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6a837b75-68c6-4c9e-bf95-38cea46479d9",
+							"id": "23cca061-16e1-4d7d-b965-908544e0fdb3",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3370,7 +3370,7 @@
 					}
 				},
 				{
-					"id": "6548de3c-6cb3-44db-9a93-1e686c3a0820",
+					"id": "70884d70-5610-4abc-b6a0-7ba943cfde58",
 					"name": "Chinese zodiac compatibility - Trine, six harmony, clash and harm analysis",
 					"request": {
 						"name": "Chinese zodiac compatibility - Trine, six harmony, clash and harm analysis",
@@ -3440,7 +3440,7 @@
 					},
 					"response": [
 						{
-							"id": "d956cf63-b14f-4cbc-bc10-01d40c126bb1",
+							"id": "0c251925-bd35-434c-89c8-07d8d4916ce2",
 							"name": "Compatibility between the two signs.",
 							"originalRequest": {
 								"url": {
@@ -3506,7 +3506,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "cb582a76-1d65-4f8a-ad04-638c9a20d449",
+							"id": "237cdcf0-c33b-4e2a-8cf3-114ef901d611",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3567,12 +3567,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1236.8489039883334,\n      \"maximum\": 2476.108018910369,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7934.221578766826,\n      \"maximum\": 7149.394445176651,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6102.331074277221,\n      \"maximum\": 9250.142934020356,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4154.604907286842,\n      \"maximum\": 627.9790498943216,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "84f6fa8d-e2ea-4063-b38e-f2a76fc7cca9",
+							"id": "30b81b52-944e-4ade-9519-71bccddda31b",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3638,7 +3638,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "427d01d3-9c7c-4b89-961a-dd977d637cda",
+							"id": "8da039d1-cb7e-4ef7-8eae-757bcecb4429",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3710,7 +3710,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c7efae75-46c7-44a1-a034-3f0712578da4",
+							"id": "6310ded7-2756-4255-9255-6b4861589794",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3776,7 +3776,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e1e0991d-a131-4a23-847b-14e9e11234c2",
+							"id": "5024be06-c519-485d-b17e-a373eb46d6c1",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3848,7 +3848,7 @@
 					}
 				},
 				{
-					"id": "9689a967-a401-4429-bcdf-263cd3fd0a8c",
+					"id": "dbb4c953-d012-467f-b508-949dc52d5535",
 					"name": "Daily Chinese zodiac reading - Day pillar forecast by animal sign",
 					"request": {
 						"name": "Daily Chinese zodiac reading - Day pillar forecast by animal sign",
@@ -3922,7 +3922,7 @@
 					},
 					"response": [
 						{
-							"id": "1fff44a3-ddf2-47f8-ac35-2e70f5a8dbfa",
+							"id": "1f21de3e-9580-487c-a78a-b89fee14cbf6",
 							"name": "The daily reading for this sign.",
 							"originalRequest": {
 								"url": {
@@ -3988,7 +3988,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "166e34cb-7f95-41c2-89c2-7cc1dc8ab822",
+							"id": "5486eb54-033f-499e-b8c1-d72d6e45161d",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -4049,12 +4049,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1236.8489039883334,\n      \"maximum\": 2476.108018910369,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7934.221578766826,\n      \"maximum\": 7149.394445176651,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6102.331074277221,\n      \"maximum\": 9250.142934020356,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4154.604907286842,\n      \"maximum\": 627.9790498943216,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6781429e-0515-4356-8156-ac2cd9a2ab28",
+							"id": "654b2d06-9e65-4a28-aa68-cac8121b3c9b",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -4120,7 +4120,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "02e659d6-1689-43d2-83f7-8fc6ba73f7d4",
+							"id": "bfa7c26d-5df6-4dc9-8866-86ca5a95f839",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -4192,7 +4192,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "60a410ae-6010-4054-a63f-81950d604e14",
+							"id": "b7403477-018a-460e-a515-9025279cce2e",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -4258,7 +4258,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "462327c3-d4da-4496-bf62-4620c51848db",
+							"id": "f79b02db-8499-454b-8aa4-ec65551cc770",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -4330,7 +4330,7 @@
 					}
 				},
 				{
-					"id": "7a20bb2d-53df-4328-8078-5af1a961e107",
+					"id": "31c3220e-3aad-42cd-a8b4-c55122aa3164",
 					"name": "List the 24 solar terms - Jie Qi calendar API with exact instants",
 					"request": {
 						"name": "List the 24 solar terms - Jie Qi calendar API with exact instants",
@@ -4392,7 +4392,7 @@
 					},
 					"response": [
 						{
-							"id": "9036e387-a054-4d14-8259-15f5219616b0",
+							"id": "6ae28232-b20d-4098-b88e-aa973295d45a",
 							"name": "The 24 solar terms of the year, in chronological order from Li Chun.",
 							"originalRequest": {
 								"url": {
@@ -4450,7 +4450,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1dd5d991-7b28-460d-ba6a-a3c1c6807be8",
+							"id": "89ee31d4-940c-413a-b377-c201b3b16917",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -4503,12 +4503,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1236.8489039883334,\n      \"maximum\": 2476.108018910369,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7934.221578766826,\n      \"maximum\": 7149.394445176651,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6102.331074277221,\n      \"maximum\": 9250.142934020356,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4154.604907286842,\n      \"maximum\": 627.9790498943216,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "993cd1c3-88bf-4835-9c2d-d95c94227a3c",
+							"id": "90e116ed-79da-4cb6-96b3-b3b7b7b3dbad",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -4566,7 +4566,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "de9ea272-d90f-4550-b987-2ab743cbdd1f",
+							"id": "c40cfefe-b910-4c5a-a949-fdfa6a77084d",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -4630,7 +4630,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c26ecf07-37e8-4b50-8424-87e6ffce230b",
+							"id": "44808484-359f-4871-be86-7cc5137a8c91",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -4688,7 +4688,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0850b1f2-2da1-4674-9f03-450eb3a3c76a",
+							"id": "b062122b-a637-48f5-9d40-9432939fb13d",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -4752,7 +4752,7 @@
 					}
 				},
 				{
-					"id": "f089d9eb-ad20-49f1-8b26-6635b8eb7e8f",
+					"id": "15532a4c-583f-4a08-a930-eb6872cfe432",
 					"name": "Convert lunar and Gregorian dates - Chinese lunisolar calendar API",
 					"request": {
 						"name": "Convert lunar and Gregorian dates - Chinese lunisolar calendar API",
@@ -4818,7 +4818,7 @@
 					},
 					"response": [
 						{
-							"id": "3f1ae752-d611-44a1-a47d-54cca55c8ba6",
+							"id": "4f903739-7c96-48a4-92db-dded27ac8c69",
 							"name": "The converted date, in both calendars.",
 							"originalRequest": {
 								"url": {
@@ -4875,7 +4875,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9f4a9b9e-9820-43da-93c6-fbeedd567df5",
+							"id": "ca278e34-4b66-4683-b891-fe7bd3d9e9a2",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -4927,12 +4927,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1236.8489039883334,\n      \"maximum\": 2476.108018910369,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7934.221578766826,\n      \"maximum\": 7149.394445176651,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6102.331074277221,\n      \"maximum\": 9250.142934020356,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4154.604907286842,\n      \"maximum\": 627.9790498943216,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "257e44cc-f25a-4c92-9acd-4466f723329d",
+							"id": "70fc5e73-d7cc-47d2-9009-4632f753b217",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -4989,7 +4989,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "15900146-7223-41d8-a81a-843f77caaf2e",
+							"id": "9bc23fae-0ba3-4e78-af68-3c9b26c39566",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -5052,7 +5052,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a44d4c3c-9b97-4e29-84df-46bde0216c50",
+							"id": "2086515e-6215-41f2-aba5-3d2d9b0914a6",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -5109,7 +5109,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "085aa123-1946-467e-87fc-726f12280488",
+							"id": "4e688e6d-2ba4-456f-b160-e00ff806c064",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -5172,7 +5172,7 @@
 					}
 				},
 				{
-					"id": "de34b2dd-d68b-487e-9a56-a44b51a8d352",
+					"id": "90dcc7c8-1e08-4ff4-9cc3-ed78d3bfd008",
 					"name": "Get the almanac for a day - Tong Shu API with day officers and mansions",
 					"request": {
 						"name": "Get the almanac for a day - Tong Shu API with day officers and mansions",
@@ -5234,7 +5234,7 @@
 					},
 					"response": [
 						{
-							"id": "4874a966-d813-4109-998c-6644e98a2a89",
+							"id": "476aa94f-18ac-48be-8eed-1af373682470",
 							"name": "The almanac reading for the day.",
 							"originalRequest": {
 								"url": {
@@ -5292,7 +5292,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6ec94ccd-cc41-48ed-891f-7c99ccd3044e",
+							"id": "87fc5c1e-0b94-4f3c-9c9d-f3adc545dd82",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -5345,12 +5345,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1236.8489039883334,\n      \"maximum\": 2476.108018910369,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7934.221578766826,\n      \"maximum\": 7149.394445176651,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6102.331074277221,\n      \"maximum\": 9250.142934020356,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4154.604907286842,\n      \"maximum\": 627.9790498943216,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5f7a6f86-91d9-4566-a35f-8f55b50acbc8",
+							"id": "db60056d-1751-4358-a57e-94f422635d20",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -5408,7 +5408,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0cf6e742-cfc9-4600-a45a-46728519befa",
+							"id": "2efc179b-69bf-42a6-af8f-23d178d37134",
 							"name": "The date is outside the supported range.",
 							"originalRequest": {
 								"url": {
@@ -5466,7 +5466,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "86a86d2c-8d1c-4827-ae62-b1491948ce8d",
+							"id": "062e7175-28c3-4bd9-8fea-56ea62bf1529",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -5530,7 +5530,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "eb876ad8-e366-4f47-b857-9c522b378ac2",
+							"id": "69754eb5-ae01-4234-9c37-2615b9733e88",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -5588,7 +5588,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "af6692f3-2226-4862-88c9-5280c855d306",
+							"id": "55600686-b43e-40d5-8504-dda5ab1ca840",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -5652,7 +5652,7 @@
 					}
 				},
 				{
-					"id": "484a3ff4-fa43-484d-8b6f-f7168052855a",
+					"id": "2661b392-ec75-4d38-a0d7-c9dddf948f1a",
 					"name": "Get a month of almanac days - Chinese calendar month view API",
 					"request": {
 						"name": "Get a month of almanac days - Chinese calendar month view API",
@@ -5717,7 +5717,7 @@
 					},
 					"response": [
 						{
-							"id": "40fa2769-b5a5-4ab9-9fd9-994f5f824a96",
+							"id": "8a32eaba-c3ac-41be-a413-097e72ff08bb",
 							"name": "Every day of the month, with the solar terms it contains.",
 							"originalRequest": {
 								"url": {
@@ -5774,7 +5774,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "14eb2ab5-3c29-4200-ad77-09adfaa16c3f",
+							"id": "617042b2-d24b-4696-a179-d3508b1b1a9e",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -5826,12 +5826,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1236.8489039883334,\n      \"maximum\": 2476.108018910369,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7934.221578766826,\n      \"maximum\": 7149.394445176651,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6102.331074277221,\n      \"maximum\": 9250.142934020356,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4154.604907286842,\n      \"maximum\": 627.9790498943216,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "22576c92-f2e4-47cf-ace6-d6546f295353",
+							"id": "7e589737-34fa-4580-bf35-ae123dcd288b",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -5888,7 +5888,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "35219a71-9d7b-441a-a834-ab5edd97921d",
+							"id": "4d00502f-0676-4eca-b357-bb2ee8df3273",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -5951,7 +5951,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a7bdf2b8-ffb1-49af-9653-cb35e0f45ba2",
+							"id": "9fa02196-1f3a-4ba9-92be-4656e1ef6910",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -6008,7 +6008,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "00d11505-6036-4092-86ec-f0b685a3b025",
+							"id": "e0971d41-5b4b-4bc7-a656-8bc14f4bc2b4",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -6071,7 +6071,7 @@
 					}
 				},
 				{
-					"id": "a6fae115-f602-454c-8a41-bc05cd4ccf2e",
+					"id": "2a7b8fe5-8a45-4fa4-9cd4-90613271e99e",
 					"name": "Find auspicious days - Chinese date selection API for weddings and openings",
 					"request": {
 						"name": "Find auspicious days - Chinese date selection API for weddings and openings",
@@ -6137,7 +6137,7 @@
 					},
 					"response": [
 						{
-							"id": "bcb1785b-8b9e-412d-965f-d88a82c8f351",
+							"id": "4076b081-78ab-432e-8149-0ce579a10c0d",
 							"name": "The favoured days inside the range.",
 							"originalRequest": {
 								"url": {
@@ -6194,7 +6194,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ffbd685c-e5f9-4702-8e90-044483fea636",
+							"id": "32bc9baa-d3c1-4068-821e-b4a25cd9c622",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -6246,12 +6246,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1236.8489039883334,\n      \"maximum\": 2476.108018910369,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7934.221578766826,\n      \"maximum\": 7149.394445176651,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6102.331074277221,\n      \"maximum\": 9250.142934020356,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4154.604907286842,\n      \"maximum\": 627.9790498943216,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "40de099f-d872-428e-ae4a-58d5582e0845",
+							"id": "62e76f47-08d0-45d2-b886-01f8a75b125b",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -6308,7 +6308,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "46cd6633-d564-413b-aaf1-dddf0f27a17c",
+							"id": "45102047-5d87-4699-b250-2c3d2aeba9d5",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -6371,7 +6371,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3c13376b-678a-4436-a973-3cc1e9e7b3ac",
+							"id": "d3093dbc-6856-46ea-94eb-62aba9300a49",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -6428,7 +6428,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "80b27cae-3b42-4156-acfc-e49be2150d3e",
+							"id": "41fb51e2-6cad-4130-b3e0-2aa6d7055529",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -6491,7 +6491,7 @@
 					}
 				},
 				{
-					"id": "fdc2b2d7-d563-40f6-ac35-1c4b75233550",
+					"id": "668d1b7e-85c4-41b7-9806-557735836e38",
 					"name": "List the five elements - Wu Xing API with generating and controlling cycles",
 					"request": {
 						"name": "List the five elements - Wu Xing API with generating and controlling cycles",
@@ -6555,7 +6555,7 @@
 					},
 					"response": [
 						{
-							"id": "95ff610e-ba93-4598-816b-0fa67964f2a9",
+							"id": "a4fd26e2-e5cb-4fe4-826b-a3a4bad94062",
 							"name": "The five phases with both cycles.",
 							"originalRequest": {
 								"url": {
@@ -6611,7 +6611,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f139fe72-0122-4ccc-81ba-2d7a1feab88e",
+							"id": "017dc78c-2135-43a0-b3f1-69a3d8b118d1",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -6662,12 +6662,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 1236.8489039883334,\n      \"maximum\": 2476.108018910369,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 7934.221578766826,\n      \"maximum\": 7149.394445176651,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 6102.331074277221,\n      \"maximum\": 9250.142934020356,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4154.604907286842,\n      \"maximum\": 627.9790498943216,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "bc7705a5-b57a-425c-af70-c9b1a24e969c",
+							"id": "6101ac6b-cb61-4ac0-9c64-7356d0f52552",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -6723,7 +6723,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b3c4493d-900b-404b-ad72-c5a2aa68be87",
+							"id": "d4dd50bb-2022-41e9-bcc1-e7f8c6f3f39d",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -6785,7 +6785,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "27459a2e-2206-48c6-a695-e1a30f61bb0d",
+							"id": "830609f9-0a92-469d-8a95-a8cd4a02394b",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -6841,7 +6841,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "43c6eec2-0a2d-456a-91b9-b5cc2922a501",
+							"id": "def92b3a-f8da-4df7-a259-62537f7d2445",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -6942,11 +6942,11 @@
 		]
 	},
 	"info": {
-		"_postman_id": "55a03215-6d06-45b5-b42b-01a36ab9675d",
+		"_postman_id": "c616a92c-fc45-4a8b-99b7-a3910287c609",
 		"name": "Chinese Astrology API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"description": {
-			"content": "Calculate BaZi Four Pillars charts, Chinese zodiac signs, and the Chinese lunisolar calendar from any birth moment: year, month, day and hour pillars with hidden stems, Na Yin and Ten God relations, luck pillars, day master strength, and animal compatibility. The school splits that make two calculators disagree are typed parameters rather than hidden defaults, and every chart echoes the conventions it was computed under. Solar terms come back as astronomical instants, lunar dates convert in both directions with leap months placed correctly, and the Tong Shu almanac covers day officers, lunar mansions and date selection. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 18 domains (Astrology, Vedic Astrology, Forecast, Human Design, Chinese Astrology, Feng Shui, Mesoamerican Astrology, Vastu Shastra, Numerology, Kabbalah, Tarot Reading, Biorhythm, Ayurveda, I-Ching Oracle, Crystals and Healing Stones, Dream Interpretation, Angel Numbers, Location and Timezone), 258+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 258+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable and stable, so it is the one safe to switch on programmatically.\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`, `X-RateLimit-Reset` (Unix timestamp, seconds). Quotas reset on the 1st of every calendar month at 12:00 AM UTC, not on your renewal date.\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 per month for 50K requests, up to 3M requests, with custom volume above that.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart): first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs): guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp): connect AI agents\n- [Open source templates](https://roxyapi.com/templates): clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq): common questions\n- [Contact](https://roxyapi.com/contact): support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
+			"content": "Calculate BaZi Four Pillars charts, Chinese zodiac signs, and the Chinese lunisolar calendar from any birth moment: year, month, day and hour pillars with hidden stems, Na Yin and Ten God relations, luck pillars, day master strength, and animal compatibility. The school splits that make two calculators disagree are typed parameters rather than hidden defaults, and every chart echoes the conventions it was computed under. Solar terms come back as astronomical instants, lunar dates convert in both directions with leap months placed correctly, and the Tong Shu almanac covers day officers, lunar mansions and date selection. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 18 domains (Astrology, Vedic Astrology, Forecast, Human Design, Chinese Astrology, Feng Shui, Mesoamerican Astrology, Vastu Shastra, Numerology, Kabbalah, Tarot Reading, Biorhythm, Ayurveda, I-Ching Oracle, Crystals and Healing Stones, Dream Interpretation, Angel Numbers, Location and Timezone), 259+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 259+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable and stable, so it is the one safe to switch on programmatically.\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`, `X-RateLimit-Reset` (Unix timestamp, seconds). Quotas reset on the 1st of every calendar month at 12:00 AM UTC, not on your renewal date.\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 per month for 50K requests, up to 3M requests, with custom volume above that.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart): first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs): guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp): connect AI agents\n- [Open source templates](https://roxyapi.com/templates): clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq): common questions\n- [Contact](https://roxyapi.com/contact): support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
 			"type": "text/plain"
 		}
 	}
