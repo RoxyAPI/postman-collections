@@ -110,11 +110,12 @@
 									"transliteration": {
 										"type": "string",
 										"enum": [
-											"letter-map-mathers"
+											"letter-map-mathers",
+											"letter-map-modern"
 										],
 										"default": "letter-map-mathers",
 										"example": "letter-map-mathers",
-										"description": "How a Latin name is written in Hebrew before it is scored. One member, a deterministic published letter map. Phonetic Ashkenazi and Sephardi schemes are not offered because no two references agree on a rule for that direction, and every published Hebrew standard romanizes the other way. Send textHebrew to control the spelling yourself."
+										"description": "How a Latin name is written in Hebrew before it is scored. Two members. letter-map-mathers is the 1887 Hermetic letter map, with e read as its author practised it: a point inside a word and alef at the start of one. It writes no c, f, w or x, so a name carrying one of them outside a two letter group returns 400 naming the letter. letter-map-modern follows the modern Israeli transcription rules for the sound each Latin letter carries in English and French spelling, covers every Latin letter, drops the geresh and does not double vav or yod, so send textHebrew for the ktiv male form. Every form states the readings it used in rule. Phonetic Ashkenazi and Sephardi schemes are not offered because no two references agree on a rule for that direction."
 									},
 									"ciphers": {
 										"type": "array",
@@ -206,7 +207,7 @@
 													"rule": {
 														"type": "string",
 														"example": "Longest match first: every two letter group the table prints is read as one Hebrew letter before the single letters are tried.",
-														"description": "Why this spelling came out of the map, so a caller can tell the parses apart."
+														"description": "Why this spelling came out of the map: the parse rule first, then one sentence for every reading the scheme applied that the letters alone would not show, so a caller can tell the parses apart."
 													},
 													"values": {
 														"type": "array",
@@ -272,7 +273,7 @@
 																"name": {
 																	"type": "string",
 																	"example": "Shin",
-																	"description": "Display name of the letter."
+																	"description": "Display name of the letter, in the requested language. Branch on letterId, never on this."
 																},
 																"isFinal": {
 																	"type": "boolean",
@@ -1289,11 +1290,12 @@
 									"transliteration": {
 										"type": "string",
 										"enum": [
-											"letter-map-mathers"
+											"letter-map-mathers",
+											"letter-map-modern"
 										],
 										"default": "letter-map-mathers",
 										"example": "letter-map-mathers",
-										"description": "How a Latin name is written in Hebrew before it is scored. One member, a deterministic published letter map. Phonetic Ashkenazi and Sephardi schemes are not offered because no two references agree on a rule for that direction, and every published Hebrew standard romanizes the other way. Send textHebrew to control the spelling yourself."
+										"description": "How a Latin name is written in Hebrew before it is scored. Two members. letter-map-mathers is the 1887 Hermetic letter map, with e read as its author practised it: a point inside a word and alef at the start of one. It writes no c, f, w or x, so a name carrying one of them outside a two letter group returns 400 naming the letter. letter-map-modern follows the modern Israeli transcription rules for the sound each Latin letter carries in English and French spelling, covers every Latin letter, drops the geresh and does not double vav or yod, so send textHebrew for the ktiv male form. Every form states the readings it used in rule. Phonetic Ashkenazi and Sephardi schemes are not offered because no two references agree on a rule for that direction."
 									},
 									"misparGadol": {
 										"type": "string",
@@ -1351,7 +1353,7 @@
 													"rule": {
 														"type": "string",
 														"example": "Longest match first: every two letter group the table prints is read as one Hebrew letter before the single letters are tried.",
-														"description": "Why this spelling came out of the map, so a caller can tell the parses apart."
+														"description": "Why this spelling came out of the map: the parse rule first, then one sentence for every reading the scheme applied that the letters alone would not show, so a caller can tell the parses apart."
 													},
 													"values": {
 														"type": "array",
@@ -1417,7 +1419,7 @@
 																"name": {
 																	"type": "string",
 																	"example": "Shin",
-																	"description": "Display name of the letter."
+																	"description": "Display name of the letter, in the requested language. Branch on letterId, never on this."
 																},
 																"isFinal": {
 																	"type": "boolean",
@@ -5380,11 +5382,12 @@
 									"transliteration": {
 										"type": "string",
 										"enum": [
-											"letter-map-mathers"
+											"letter-map-mathers",
+											"letter-map-modern"
 										],
 										"default": "letter-map-mathers",
 										"example": "letter-map-mathers",
-										"description": "How a Latin name is written in Hebrew before it is scored. One member, a deterministic published letter map. Phonetic Ashkenazi and Sephardi schemes are not offered because no two references agree on a rule for that direction, and every published Hebrew standard romanizes the other way. Send textHebrew to control the spelling yourself."
+										"description": "How a Latin name is written in Hebrew before it is scored. Two members. letter-map-mathers is the 1887 Hermetic letter map, with e read as its author practised it: a point inside a word and alef at the start of one. It writes no c, f, w or x, so a name carrying one of them outside a two letter group returns 400 naming the letter. letter-map-modern follows the modern Israeli transcription rules for the sound each Latin letter carries in English and French spelling, covers every Latin letter, drops the geresh and does not double vav or yod, so send textHebrew for the ktiv male form. Every form states the readings it used in rule. Phonetic Ashkenazi and Sephardi schemes are not offered because no two references agree on a rule for that direction."
 									},
 									"misparGadol": {
 										"type": "string",
@@ -5604,7 +5607,7 @@
 												"transliteration": {
 													"type": "string",
 													"example": "letter-map-mathers",
-													"description": "The Latin to Hebrew scheme applied. Absent when both names arrived in Hebrew."
+													"description": "The Latin to Hebrew scheme applied. Absent when the caller sent Hebrew directly."
 												},
 												"misparGadol": {
 													"type": "string",
@@ -5614,8 +5617,7 @@
 											},
 											"required": [
 												"misparGadol"
-											],
-											"description": "The conventions this answer was computed under."
+											]
 										}
 									},
 									"required": [
