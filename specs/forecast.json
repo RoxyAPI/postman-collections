@@ -118,7 +118,7 @@
 														"type": "string"
 													}
 												],
-												"description": "IANA name (e.g. \"America/New_York\", \"Europe/London\", \"UTC\"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. \"-05:00\", \"+01:00\"). Prefer the IANA name: it is resolved to the DST-correct offset for the birth date, while a fixed offset or decimal is taken literally and will be wrong if it does not match the daylight-saving state on that date. Invalid timezones return 400 with a validation error.",
+												"description": "IANA name (e.g. \"America/New_York\", \"Europe/London\", \"UTC\"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. \"-05:00\", \"+01:00\"). Prefer the IANA name: it is resolved to the offset in force at the birth date and time, historical daylight-saving rules included, while a fixed offset or decimal is taken literally and will be wrong if it does not match the daylight-saving state at that moment. On a transition day a time in the repeated hour is read as its first occurrence and a time in the skipped hour is moved forward past the gap. Invalid timezones return 400 with a validation error.",
 												"example": "America/New_York"
 											},
 											"latitude": {
@@ -248,7 +248,7 @@
 												"timezone": {
 													"type": "number",
 													"example": -4,
-													"description": "Decimal UTC offset the forecast was computed with, resolved from whatever the request sent. An IANA name is resolved to the DST-correct offset for the birth date, so this is the literal number applied, never the name."
+													"description": "Decimal UTC offset the forecast was computed with, resolved from whatever the request sent. An IANA name is resolved to the offset in force at the birth date and time, so this is the literal number applied, never the name."
 												},
 												"latitude": {
 													"type": "number",
@@ -696,7 +696,7 @@
 														"type": "string"
 													}
 												],
-												"description": "IANA name (e.g. \"America/New_York\", \"Europe/London\", \"UTC\"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. \"-05:00\", \"+01:00\"). Prefer the IANA name: it is resolved to the DST-correct offset for the birth date, while a fixed offset or decimal is taken literally and will be wrong if it does not match the daylight-saving state on that date. Invalid timezones return 400 with a validation error.",
+												"description": "IANA name (e.g. \"America/New_York\", \"Europe/London\", \"UTC\"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. \"-05:00\", \"+01:00\"). Prefer the IANA name: it is resolved to the offset in force at the birth date and time, historical daylight-saving rules included, while a fixed offset or decimal is taken literally and will be wrong if it does not match the daylight-saving state at that moment. On a transition day a time in the repeated hour is read as its first occurrence and a time in the skipped hour is moved forward past the gap. Invalid timezones return 400 with a validation error.",
 												"example": "America/New_York"
 											},
 											"latitude": {
@@ -776,7 +776,7 @@
 												"timezone": {
 													"type": "number",
 													"example": -4,
-													"description": "Decimal UTC offset the forecast was computed with, resolved from whatever the request sent. An IANA name is resolved to the DST-correct offset for the birth date, so this is the literal number applied, never the name."
+													"description": "Decimal UTC offset the forecast was computed with, resolved from whatever the request sent. An IANA name is resolved to the offset in force at the birth date and time, so this is the literal number applied, never the name."
 												},
 												"latitude": {
 													"type": "number",
@@ -1224,7 +1224,7 @@
 														"type": "string"
 													}
 												],
-												"description": "IANA name (e.g. \"America/New_York\", \"Europe/London\", \"UTC\"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. \"-05:00\", \"+01:00\"). Prefer the IANA name: it is resolved to the DST-correct offset for the birth date, while a fixed offset or decimal is taken literally and will be wrong if it does not match the daylight-saving state on that date. Invalid timezones return 400 with a validation error.",
+												"description": "IANA name (e.g. \"America/New_York\", \"Europe/London\", \"UTC\"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. \"-05:00\", \"+01:00\"). Prefer the IANA name: it is resolved to the offset in force at the birth date and time, historical daylight-saving rules included, while a fixed offset or decimal is taken literally and will be wrong if it does not match the daylight-saving state at that moment. On a transition day a time in the repeated hour is read as its first occurrence and a time in the skipped hour is moved forward past the gap. Invalid timezones return 400 with a validation error.",
 												"example": "America/New_York"
 											},
 											"latitude": {
@@ -1354,7 +1354,7 @@
 												"timezone": {
 													"type": "number",
 													"example": -4,
-													"description": "Decimal UTC offset the forecast was computed with, resolved from whatever the request sent. An IANA name is resolved to the DST-correct offset for the birth date, so this is the literal number applied, never the name."
+													"description": "Decimal UTC offset the forecast was computed with, resolved from whatever the request sent. An IANA name is resolved to the offset in force at the birth date and time, so this is the literal number applied, never the name."
 												},
 												"latitude": {
 													"type": "number",
@@ -1802,7 +1802,7 @@
 														"type": "string"
 													}
 												],
-												"description": "IANA name (e.g. \"America/New_York\", \"Europe/London\", \"UTC\"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. \"-05:00\", \"+01:00\"). Prefer the IANA name: it is resolved to the DST-correct offset for the birth date, while a fixed offset or decimal is taken literally and will be wrong if it does not match the daylight-saving state on that date. Invalid timezones return 400 with a validation error.",
+												"description": "IANA name (e.g. \"America/New_York\", \"Europe/London\", \"UTC\"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. \"-05:00\", \"+01:00\"). Prefer the IANA name: it is resolved to the offset in force at the birth date and time, historical daylight-saving rules included, while a fixed offset or decimal is taken literally and will be wrong if it does not match the daylight-saving state at that moment. On a transition day a time in the repeated hour is read as its first occurrence and a time in the skipped hour is moved forward past the gap. Invalid timezones return 400 with a validation error.",
 												"example": "America/New_York"
 											},
 											"latitude": {
@@ -1933,7 +1933,7 @@
 												"timezone": {
 													"type": "number",
 													"example": -4,
-													"description": "Decimal UTC offset the forecast was computed with, resolved from whatever the request sent. An IANA name is resolved to the DST-correct offset for the birth date, so this is the literal number applied, never the name."
+													"description": "Decimal UTC offset the forecast was computed with, resolved from whatever the request sent. An IANA name is resolved to the offset in force at the birth date and time, so this is the literal number applied, never the name."
 												},
 												"latitude": {
 													"type": "number",
@@ -2503,7 +2503,7 @@
 												"type": "string"
 											}
 										],
-										"description": "IANA name (e.g. \"America/New_York\", \"Europe/London\", \"UTC\"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. \"-05:00\", \"+01:00\"). Prefer the IANA name: it is resolved to the DST-correct offset for the birth date, while a fixed offset or decimal is taken literally and will be wrong if it does not match the daylight-saving state on that date. Invalid timezones return 400 with a validation error.",
+										"description": "IANA name (e.g. \"America/New_York\", \"Europe/London\", \"UTC\"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. \"-05:00\", \"+01:00\"). Prefer the IANA name: it is resolved to the offset in force at the birth date and time, historical daylight-saving rules included, while a fixed offset or decimal is taken literally and will be wrong if it does not match the daylight-saving state at that moment. On a transition day a time in the repeated hour is read as its first occurrence and a time in the skipped hour is moved forward past the gap. Invalid timezones return 400 with a validation error.",
 										"example": "America/New_York"
 									},
 									"houseSystem": {
