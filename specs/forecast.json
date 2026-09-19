@@ -2679,19 +2679,19 @@
 																	"Black Moon Lilith"
 																],
 																"example": "Sun",
-																"description": "Body name. One of the 10 classical planets (Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto), the lunar nodes (North Node, South Node), Chiron, or Black Moon Lilith (the mean lunar apogee). The nodes follow the request `nodeType`, which defaults to the true (osculating) node; pass \"mean\" for the smoothed node. The two differ by up to about 1.8 degrees and no other body is affected."
+																"description": "Body name. One of the 10 classical planets (Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto), the lunar nodes (North Node, South Node), Chiron, or Black Moon Lilith (the mean lunar apogee). The lunar nodes follow the request nodeType, which defaults to the true (osculating) node; pass \"mean\" for the smoothed node. The two differ by up to about 1.8 degrees and no other body is affected."
 															},
 															"longitude": {
 																"type": "number",
 																"minimum": 0,
 																"maximum": 360,
 																"example": 112.45,
-																"description": "Tropical ecliptic longitude in degrees (0-360). Primary coordinate for zodiac sign and aspect calculations."
+																"description": "Apparent geocentric tropical longitude on the true ecliptic of date, in degrees (0-360): light time and aberration applied, nutation included, the convention desktop chart software and the NASA JPL Horizons observer tables print, so it compares directly with either. Primary coordinate for zodiac sign and aspect calculations."
 															},
 															"latitude": {
 																"type": "number",
 																"example": 0.01,
-																"description": "Ecliptic latitude in degrees. Near zero for most planets, varies for the Moon and Pluto, and reaches up to about 5 degrees for Black Moon Lilith (projected from the inclined mean lunar orbit)."
+																"description": "Apparent geocentric ecliptic latitude of date, in degrees. Near zero for most planets, varies for the Moon and Pluto, and reaches up to about 5 degrees for Black Moon Lilith (projected from the inclined mean lunar orbit)."
 															},
 															"sign": {
 																"type": "string",

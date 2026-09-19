@@ -341,7 +341,7 @@
 												"name": {
 													"type": "string",
 													"example": "Left Angle Cross of the Clarion",
-													"description": "Canonical published name of the incarnation cross, determined by the Personality Sun gate and the angle. Falls back to a name composed from the angle and the four gates if no canonical name exists."
+													"description": "Canonical published name of the incarnation cross, determined by the Personality Sun gate and the angle. All 192 crosses (64 Personality Sun gates times three angles) carry their published name, numbered variants included, so this is never a composed placeholder. Always begins with the angle followed by Cross of. Always English, whatever the lang parameter says."
 												},
 												"description": {
 													"type": "string",
@@ -3452,10 +3452,9 @@
 				"parameters": [
 					{
 						"schema": {
-							"type": [
-								"integer",
-								"null"
-							],
+							"type": "integer",
+							"minimum": 1,
+							"maximum": 64,
 							"example": 34,
 							"description": "Gate number from 1 to 64."
 						},
@@ -3690,32 +3689,6 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
-										}
-									},
-									"required": [
-										"error",
-										"code"
-									]
-								}
-							}
-						}
-					},
-					"404": {
-						"description": "Gate number is outside the range 1 to 64",
-						"content": {
-							"application/json": {
-								"schema": {
-									"type": "object",
-									"properties": {
-										"error": {
-											"type": "string",
-											"example": "Resource not found",
-											"description": "Human-readable error message. The wording may change, so do not parse it programmatically. Switch on the stable code instead."
-										},
-										"code": {
-											"type": "string",
-											"example": "not_found",
-											"description": "Machine-readable error code. Stable identifier for programmatic error handling."
 										}
 									},
 									"required": [

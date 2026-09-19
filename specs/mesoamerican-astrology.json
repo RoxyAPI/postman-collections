@@ -1992,6 +1992,8 @@
 					{
 						"schema": {
 							"type": "integer",
+							"minimum": 1900,
+							"maximum": 2100,
 							"example": 2026,
 							"description": "Gregorian year of the grid, 1900 to 2100. Defaults to the current year in UTC. Wider historical ranges are available on the single date routes, which are not bounded to this window."
 						},
@@ -2003,6 +2005,8 @@
 					{
 						"schema": {
 							"type": "integer",
+							"minimum": 1,
+							"maximum": 12,
 							"example": 9,
 							"description": "Calendar month of the grid, 1 to 12. Defaults to the current month in UTC."
 						},

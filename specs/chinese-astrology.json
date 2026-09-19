@@ -7148,7 +7148,9 @@
 				"parameters": [
 					{
 						"schema": {
-							"type": "number",
+							"type": "integer",
+							"minimum": 1900,
+							"maximum": 2100,
 							"example": 2026,
 							"description": "Solar year, 1900 to 2100. The year opens at Li Chun rather than on 1 January, so its last two terms fall in the following January."
 						},
@@ -7874,6 +7876,7 @@
 					{
 						"schema": {
 							"type": "string",
+							"format": "date",
 							"example": "1990-06-15",
 							"description": "Gregorian date in YYYY-MM-DD format, evaluated at the reference meridian. Years 1900 to 2100."
 						},
@@ -8542,7 +8545,9 @@
 					},
 					{
 						"schema": {
-							"type": "number",
+							"type": "integer",
+							"minimum": 1900,
+							"maximum": 2100,
 							"example": 1990,
 							"description": "Gregorian year, 1900 to 2100. Defaults to the current UTC year when omitted, together with month."
 						},
@@ -8553,7 +8558,9 @@
 					},
 					{
 						"schema": {
-							"type": "number",
+							"type": "integer",
+							"minimum": 1,
+							"maximum": 12,
 							"example": 6,
 							"description": "Gregorian month, 1 to 12. Defaults to the current UTC month when omitted, together with year."
 						},

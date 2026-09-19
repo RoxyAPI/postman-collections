@@ -2941,14 +2941,13 @@
 				"parameters": [
 					{
 						"schema": {
-							"type": [
-								"integer",
-								"null"
-							],
+							"type": "integer",
+							"minimum": 1,
+							"maximum": 72,
 							"example": 27,
 							"description": "Index of the name, 1 to 72."
 						},
-						"required": false,
+						"required": true,
 						"description": "Index of the name, 1 to 72.",
 						"name": "number",
 						"in": "path"
@@ -3187,32 +3186,6 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
-										}
-									},
-									"required": [
-										"error",
-										"code"
-									]
-								}
-							}
-						}
-					},
-					"404": {
-						"description": "No name carries that index.",
-						"content": {
-							"application/json": {
-								"schema": {
-									"type": "object",
-									"properties": {
-										"error": {
-											"type": "string",
-											"example": "Resource not found",
-											"description": "Human-readable error message. The wording may change, so do not parse it programmatically. Switch on the stable code instead."
-										},
-										"code": {
-											"type": "string",
-											"example": "not_found",
-											"description": "Machine-readable error code. Stable identifier for programmatic error handling."
 										}
 									},
 									"required": [
