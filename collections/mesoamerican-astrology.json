@@ -1,7 +1,7 @@
 {
 	"item": [
 		{
-			"id": "e463ba36-5ef6-451f-bd46-4e8d0144db91",
+			"id": "9aff8336-e697-49af-9fc2-c42ea95279a6",
 			"name": "Mesoamerican Astrology",
 			"description": {
 				"content": "Calculate Mayan astrology day signs, the Tzolkin sacred round, the Haab year, the full Long Count and the Aztec tonalpohualli from any date: day sign and coefficient, trecena, Calendar Round, Lord of the Night, Year Bearer and the five point Cruz Maya, each with a composed reading. The correlation constant that makes two Mayan calculators disagree is a typed parameter with a named default rather than a hidden pick, and every response echoes the conventions it was computed under, so a saved chart stays reproducible. Both naming traditions ship on every sign, the Yucatec spelling and the Kʼicheʼ name daykeepers actually use, and readings come back in every language the API ships. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.",
@@ -9,7 +9,7 @@
 			},
 			"item": [
 				{
-					"id": "81a111a7-57ed-4e8f-a896-328fa603acaf",
+					"id": "d0d10227-0ae7-47a7-ac1d-e2fa0124ef86",
 					"name": "Mayan day sign for a date - Tzolkin calculator API",
 					"request": {
 						"name": "Mayan day sign for a date - Tzolkin calculator API",
@@ -75,7 +75,7 @@
 					},
 					"response": [
 						{
-							"id": "5bc57cf3-516b-4404-b5cc-299484ebe3f6",
+							"id": "458b77b7-c677-427b-b74c-1acc31b06126",
 							"name": "The Tzolkin day for this date.",
 							"originalRequest": {
 								"url": {
@@ -132,7 +132,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "67cc9cff-7930-4b77-8203-1f307e8eaec4",
+							"id": "d0800be5-d589-42fc-a0ed-21a8e56eb572",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -184,12 +184,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5859.239592799876,\n      \"maximum\": 8331.740500068358,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2113.8791686077807,\n      \"maximum\": 8534.038856309557,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8805.82142176188,\n      \"maximum\": 3197.691396539587,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9162.308871960131,\n      \"maximum\": 1189.2395696221192,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d36864e4-a104-40a3-a506-7736e5cc1211",
+							"id": "2c0c7c88-de5d-4418-963c-39daaaa7b66c",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -241,12 +241,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c6327efd-9f73-4855-b1ef-1da316aa5afb",
+							"id": "2c7a3410-d619-4baf-81ff-33c4f1574da8",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -304,12 +304,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"doc_url\": \"string\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "09beee91-2132-4c25-9094-99ade7d14523",
+							"id": "f1af5800-c28c-4b27-9e58-2d3e18393d68",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -361,12 +361,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ed4d047f-8e42-499a-b280-ca615d85e18c",
+							"id": "9eb4fa24-a9a8-4b40-a119-70778bc86ea1",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -418,7 +418,7 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						}
@@ -429,7 +429,7 @@
 					}
 				},
 				{
-					"id": "f0d0e4e0-042e-4fd8-8a0a-1f3573cd1387",
+					"id": "de95f07d-77a1-4394-af6c-839cf10f5e51",
 					"name": "Generate a Mayan chart - Tzolkin, Haab and Long Count calculator API",
 					"request": {
 						"name": "Generate a Mayan chart - Tzolkin, Haab and Long Count calculator API",
@@ -495,7 +495,7 @@
 					},
 					"response": [
 						{
-							"id": "08555140-7ade-4884-ad51-540619adaf02",
+							"id": "780973db-8fef-47db-9a6a-8a383be63aa9",
 							"name": "The full Maya chart for this date.",
 							"originalRequest": {
 								"url": {
@@ -552,7 +552,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3f622fad-7559-400c-8368-0e6743b16283",
+							"id": "9a903aa9-ca41-4ea5-9e6b-4d185b635ff5",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -604,12 +604,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5859.239592799876,\n      \"maximum\": 8331.740500068358,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2113.8791686077807,\n      \"maximum\": 8534.038856309557,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8805.82142176188,\n      \"maximum\": 3197.691396539587,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9162.308871960131,\n      \"maximum\": 1189.2395696221192,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ccc88504-82e4-41c6-95ad-3e447b296faa",
+							"id": "eef96ea2-cbcd-4942-8249-0467bf6ff400",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -661,12 +661,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1630c1ce-90c7-4b3f-84e6-2dbdc73454f1",
+							"id": "7794d825-cc18-49de-9910-e37c878b9ed2",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -724,12 +724,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"doc_url\": \"string\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "04b08976-827a-4c9e-b93b-e89995a90a7c",
+							"id": "8622aba2-0058-4082-bb29-a20cc9521b58",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -781,12 +781,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ae1adea4-9cb4-4693-828d-a151b944e6b4",
+							"id": "8e59c1c1-defd-42e9-8123-921c841d110d",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -838,7 +838,7 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						}
@@ -849,7 +849,7 @@
 					}
 				},
 				{
-					"id": "d2901420-b31b-4c77-acb4-3abd5b9b0d7d",
+					"id": "8c677bd0-872b-4b09-ac92-56e1d1498ebe",
 					"name": "Convert a Maya Long Count - Long Count calendar converter API",
 					"request": {
 						"name": "Convert a Maya Long Count - Long Count calendar converter API",
@@ -916,7 +916,7 @@
 					},
 					"response": [
 						{
-							"id": "b22f8258-975d-4d76-b6df-f2ac1a7747e0",
+							"id": "65294f2f-4a7f-45cf-ab14-c777c5bdcfe3",
 							"name": "The converted date.",
 							"originalRequest": {
 								"url": {
@@ -974,7 +974,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0f4db1ed-346e-4a69-8563-6e25842c0382",
+							"id": "1d4de6ab-59f3-4796-9574-04e0dc9e6535",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1027,12 +1027,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5859.239592799876,\n      \"maximum\": 8331.740500068358,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2113.8791686077807,\n      \"maximum\": 8534.038856309557,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8805.82142176188,\n      \"maximum\": 3197.691396539587,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9162.308871960131,\n      \"maximum\": 1189.2395696221192,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b53e15b7-ca12-4662-8c56-94c6f2adfc41",
+							"id": "68185967-d8a5-40c0-bc20-f7df854866c7",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1085,12 +1085,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3f51d28a-d48d-4c98-8dd0-aba337bfda8c",
+							"id": "c55829b7-4ddd-43d8-958e-cb9474ade5f4",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1149,12 +1149,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"doc_url\": \"string\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "cca77b41-95d8-4074-9b50-3b9786b17d99",
+							"id": "63012fa6-255f-4892-b444-ed18cfbf89a6",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1207,12 +1207,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "042415a7-1ae1-49bc-bd33-9c9e06a81eb8",
+							"id": "d273bb0c-68a7-49b7-8f81-d6ef2355d4bd",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1265,7 +1265,7 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						}
@@ -1276,7 +1276,7 @@
 					}
 				},
 				{
-					"id": "f62ce86e-f860-4818-b0ed-780d7823e32e",
+					"id": "7e6f0dcd-739e-45a4-a55a-be1c4b2b95ea",
 					"name": "Daily Mayan energy reading - Tzolkin day sign of the day API",
 					"request": {
 						"name": "Daily Mayan energy reading - Tzolkin day sign of the day API",
@@ -1341,7 +1341,7 @@
 					},
 					"response": [
 						{
-							"id": "17267708-5a4b-4c3c-81c1-f079c6af31c5",
+							"id": "cf4b8582-226b-4672-a3a1-de900c3511f0",
 							"name": "The Tzolkin reading for this day.",
 							"originalRequest": {
 								"url": {
@@ -1398,7 +1398,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "84d4b4dd-d598-4a74-b52c-2290a8828654",
+							"id": "a97bacf2-c036-4b82-9a94-81f9a632756a",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1450,12 +1450,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5859.239592799876,\n      \"maximum\": 8331.740500068358,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2113.8791686077807,\n      \"maximum\": 8534.038856309557,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8805.82142176188,\n      \"maximum\": 3197.691396539587,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9162.308871960131,\n      \"maximum\": 1189.2395696221192,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d395b87a-2255-4fbf-8e69-edbcb9bce4a0",
+							"id": "6848a986-6938-4750-8e26-e13e1cac1c7a",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1507,12 +1507,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6e904389-a91b-4462-ad28-ddca9d708338",
+							"id": "11de788c-01eb-4dc6-b482-ed28be411d37",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1570,12 +1570,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"doc_url\": \"string\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5d436f93-effa-4efb-aa20-b91be51c5f88",
+							"id": "58df2c79-95ce-49c6-b4f7-f65640b4cb33",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1627,12 +1627,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "378ab0d7-67a4-481f-806a-a19d214bc11e",
+							"id": "385944fd-40a8-49aa-b4ab-6c48e1d2246b",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1684,7 +1684,7 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						}
@@ -1695,7 +1695,7 @@
 					}
 				},
 				{
-					"id": "1b9bf9ea-7c6b-4be6-920a-a4b62fd4c05b",
+					"id": "244749f9-a1d3-421b-b99c-59fba2549e8a",
 					"name": "Monthly Tzolkin calendar grid - Maya calendar month API",
 					"request": {
 						"name": "Monthly Tzolkin calendar grid - Maya calendar month API",
@@ -1767,7 +1767,7 @@
 					},
 					"response": [
 						{
-							"id": "328f084a-e105-4fa3-b39b-ce85ad88b7f6",
+							"id": "6c553ec7-be2a-4baa-bca8-8ace1449ecfb",
 							"name": "Every day of the month with its Maya date.",
 							"originalRequest": {
 								"url": {
@@ -1829,7 +1829,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "00718591-1158-462c-9592-8a1e3767f22a",
+							"id": "8698792c-9b6f-41a9-a1de-5433aa349b92",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1886,12 +1886,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5859.239592799876,\n      \"maximum\": 8331.740500068358,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2113.8791686077807,\n      \"maximum\": 8534.038856309557,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8805.82142176188,\n      \"maximum\": 3197.691396539587,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9162.308871960131,\n      \"maximum\": 1189.2395696221192,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "4b1e97b3-58d8-46e6-a0d9-47efe32b8835",
+							"id": "04693324-fb0e-4819-9938-1874cb2a2526",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1948,12 +1948,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f4326d5f-c433-4424-a43f-2c489e7bf71c",
+							"id": "437367ba-e0ad-4a10-8ec5-66ebfb419ea6",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2016,12 +2016,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"doc_url\": \"string\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d3b023cc-f987-473c-af25-8ea80b2f800c",
+							"id": "bb8e3569-7237-4b04-b1af-98feb60fcaa7",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2078,12 +2078,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "933967d2-2d02-44ca-aa96-ad5eccf1e2bd",
+							"id": "e1e4c04b-b55c-4508-b94c-db20ae4b7d88",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2140,7 +2140,7 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						}
@@ -2151,7 +2151,7 @@
 					}
 				},
 				{
-					"id": "c36c2f5a-f37c-4161-82cf-a6a132517ae1",
+					"id": "aae455a2-9884-4a56-9dcb-fb3ce28d38ff",
 					"name": "Mayan nawal compatibility - Tzolkin pair analysis API",
 					"request": {
 						"name": "Mayan nawal compatibility - Tzolkin pair analysis API",
@@ -2217,7 +2217,7 @@
 					},
 					"response": [
 						{
-							"id": "50991e78-01d1-4662-99cf-f49160b01d70",
+							"id": "f03a9561-3713-4f3d-a3b7-1e3efdf9b01c",
 							"name": "The comparison of the two days.",
 							"originalRequest": {
 								"url": {
@@ -2274,7 +2274,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "dbdd656c-ea81-46bb-833a-84fdbb3317ab",
+							"id": "106b3f37-f573-448b-8b49-95da69aa751b",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2326,12 +2326,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5859.239592799876,\n      \"maximum\": 8331.740500068358,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2113.8791686077807,\n      \"maximum\": 8534.038856309557,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8805.82142176188,\n      \"maximum\": 3197.691396539587,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9162.308871960131,\n      \"maximum\": 1189.2395696221192,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3f843bc9-fc1c-4a10-8bcc-9f70ab64146a",
+							"id": "d6b1eb41-61f4-4a50-9142-458631fc3255",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2383,12 +2383,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8c2a2a7e-959e-4bd4-ab06-eba36fd009b7",
+							"id": "71f49400-a483-47c3-9ebb-f8807a341252",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2446,12 +2446,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"doc_url\": \"string\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "abc3c4d8-6892-425a-8b49-709f6b058cc9",
+							"id": "70cddc35-c53a-49df-81c3-8a3b1811a6c9",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2503,12 +2503,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1555bcc7-1594-4364-b47e-1e7a4dde11b0",
+							"id": "42de60f1-8196-41bb-bdbf-cf091d069c4d",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2560,7 +2560,7 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						}
@@ -2571,7 +2571,7 @@
 					}
 				},
 				{
-					"id": "38800505-eae2-4f7c-987e-3007e0999d97",
+					"id": "ed71906a-ed82-46c4-923e-ea6951ad32f7",
 					"name": "List the 20 Mayan day signs - Tzolkin nawal catalogue API",
 					"request": {
 						"name": "List the 20 Mayan day signs - Tzolkin nawal catalogue API",
@@ -2642,7 +2642,7 @@
 					},
 					"response": [
 						{
-							"id": "966a71dc-e1c7-4879-94dd-2134296a6518",
+							"id": "fb28de32-e0a3-4ca0-b4b2-890d334dd375",
 							"name": "The day sign catalogue.",
 							"originalRequest": {
 								"url": {
@@ -2703,7 +2703,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3166a88f-f71a-4a77-ab71-40947ff55437",
+							"id": "00522f55-89a7-4e2f-a470-191935d30ad7",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2759,12 +2759,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5859.239592799876,\n      \"maximum\": 8331.740500068358,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2113.8791686077807,\n      \"maximum\": 8534.038856309557,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8805.82142176188,\n      \"maximum\": 3197.691396539587,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9162.308871960131,\n      \"maximum\": 1189.2395696221192,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "bc01c5da-6bf4-42e5-a97b-ece58988a7d4",
+							"id": "1eba5444-745e-485a-83e9-faf2013b2a5a",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2820,12 +2820,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "066e5703-4280-4866-8cd5-78eae8e32ac3",
+							"id": "ef6c8fe7-d403-4eaa-9a6e-77f48961a7dd",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2887,12 +2887,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"doc_url\": \"string\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "4d65c574-2ace-428b-9fe3-91af7bb1500c",
+							"id": "aa33e493-c48f-4635-81b6-6f23e37a6a01",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2948,12 +2948,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d69537a1-94dd-468c-b9a9-d09c3378742d",
+							"id": "d2b693b7-9619-45cc-b353-b275e8364fe4",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3009,7 +3009,7 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						}
@@ -3020,7 +3020,7 @@
 					}
 				},
 				{
-					"id": "824153ec-f035-4cfa-93cc-8ef2ccc2c5bf",
+					"id": "1e4ffa09-38e2-4b4f-b68c-112adc134ff2",
 					"name": "Get one Mayan day sign - Nawal profile API",
 					"request": {
 						"name": "Get one Mayan day sign - Nawal profile API",
@@ -3088,7 +3088,7 @@
 					},
 					"response": [
 						{
-							"id": "d043a9f9-f9e7-4185-956a-ca26489bfcfe",
+							"id": "e9859104-101a-4046-abbe-de208e59f13e",
 							"name": "Full day sign profile.",
 							"originalRequest": {
 								"url": {
@@ -3150,7 +3150,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6c9216ae-81a9-4d96-a118-153575718a95",
+							"id": "c44ce183-096a-42c4-83d2-5e6f05dada6f",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3207,12 +3207,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5859.239592799876,\n      \"maximum\": 8331.740500068358,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2113.8791686077807,\n      \"maximum\": 8534.038856309557,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8805.82142176188,\n      \"maximum\": 3197.691396539587,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9162.308871960131,\n      \"maximum\": 1189.2395696221192,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e87db257-8afe-45d5-b8cb-338654312dc0",
+							"id": "42356a8a-ba23-4ad9-8c8c-3738789fbe4f",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3269,12 +3269,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3fe71f1b-887d-483f-8f42-d6348078a3d9",
+							"id": "57a69c07-7d64-480d-ba30-ab7369ce83ae",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3337,12 +3337,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"doc_url\": \"string\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1f2c9b68-ec3f-47a0-a5e5-6d8eebb81431",
+							"id": "1eb017a5-3653-4b30-abda-592f746fb397",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3399,12 +3399,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c0b6d5a1-f3af-4a42-8953-16fa27ecf637",
+							"id": "0fac3b3d-687b-4445-8170-071ca91ae64e",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3461,7 +3461,7 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						}
@@ -3472,7 +3472,7 @@
 					}
 				},
 				{
-					"id": "26b7a102-71d6-42a0-9413-9c053b912413",
+					"id": "8d4d24fb-a6e9-4b2f-9aab-59ee3c7de23e",
 					"name": "List the 20 Mayan trecenas - Tzolkin thirteen day period API",
 					"request": {
 						"name": "List the 20 Mayan trecenas - Tzolkin thirteen day period API",
@@ -3537,7 +3537,7 @@
 					},
 					"response": [
 						{
-							"id": "f1b9dc8d-58fa-48e3-af15-170ac617c112",
+							"id": "b2b3d94c-66ef-4374-9995-0b10bd6e1ae0",
 							"name": "The trecena catalogue.",
 							"originalRequest": {
 								"url": {
@@ -3594,7 +3594,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3711e10e-4a86-4e6c-86d5-156dca3b5d6a",
+							"id": "26bed0db-6145-418a-aa6e-c0f788846dd5",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3646,12 +3646,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5859.239592799876,\n      \"maximum\": 8331.740500068358,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2113.8791686077807,\n      \"maximum\": 8534.038856309557,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8805.82142176188,\n      \"maximum\": 3197.691396539587,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9162.308871960131,\n      \"maximum\": 1189.2395696221192,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d0e61cc5-886e-45a5-9e75-ba6f5b123ff6",
+							"id": "c4a25cd6-2278-4bc6-9f0f-5c10cb67a34c",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3703,12 +3703,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f9fd80ad-5e78-49b8-9a89-5256116fca45",
+							"id": "f877fa5b-0d82-49e1-92f3-00c9c4d5a334",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3766,12 +3766,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"doc_url\": \"string\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5e81b69c-6ba9-49bb-9a05-f28381f442b5",
+							"id": "b5af5b58-7083-46b4-8f40-951d76c075de",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3823,12 +3823,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a2299dd9-bc9a-4121-88be-2f358ac5c6b6",
+							"id": "3f664d53-e79a-4386-b97d-511037cc3b49",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3880,7 +3880,7 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						}
@@ -3891,7 +3891,7 @@
 					}
 				},
 				{
-					"id": "991bb5c7-3e1e-4655-958a-5bedf5d92660",
+					"id": "4744932f-0cc7-472e-a22f-e164d2726060",
 					"name": "Get one Mayan trecena - Thirteen day period profile API",
 					"request": {
 						"name": "Get one Mayan trecena - Thirteen day period profile API",
@@ -3953,7 +3953,7 @@
 					},
 					"response": [
 						{
-							"id": "5934a644-72ba-4bcc-bd9a-6c74cb96d57c",
+							"id": "9c14dfee-3103-44c8-91dc-0d5fbda341ed",
 							"name": "The trecena.",
 							"originalRequest": {
 								"url": {
@@ -4011,7 +4011,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2f046261-baf9-4301-bcdb-a2ec4877e2e9",
+							"id": "6fcc8738-3726-4a82-aeb8-56524850de7e",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -4064,12 +4064,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5859.239592799876,\n      \"maximum\": 8331.740500068358,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2113.8791686077807,\n      \"maximum\": 8534.038856309557,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8805.82142176188,\n      \"maximum\": 3197.691396539587,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9162.308871960131,\n      \"maximum\": 1189.2395696221192,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e4f1a8e6-5ae7-4be7-a89f-c9f58e4c04a7",
+							"id": "0ece1c1e-a5dc-4168-95d3-c0748cd077f8",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -4122,12 +4122,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "856aeee9-6a91-4f92-ad3b-f87b1d1b8323",
+							"id": "ea547325-f3ec-4ace-bf62-0fe97cf0e7a7",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -4186,12 +4186,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"doc_url\": \"string\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ebf7b422-efa8-442e-a990-9f768b45d6d8",
+							"id": "0e9dc8e1-e4f7-4946-97be-f4d27aa51610",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -4244,12 +4244,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "05a7c0ac-0f58-49b4-9b2d-7a500768e6b4",
+							"id": "d555c63f-d8cb-4a92-9af8-0047064eafa7",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -4302,7 +4302,7 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						}
@@ -4313,7 +4313,7 @@
 					}
 				},
 				{
-					"id": "322d1ffe-8616-4750-aa3d-85dfbf697b44",
+					"id": "6798e54a-6e02-4e12-bf32-81dc60178dcb",
 					"name": "List the 19 Haab periods - Maya solar calendar month API",
 					"request": {
 						"name": "List the 19 Haab periods - Maya solar calendar month API",
@@ -4378,7 +4378,7 @@
 					},
 					"response": [
 						{
-							"id": "ebed5cfe-623c-44d1-9630-cd4e3bc7b57c",
+							"id": "6d4a9452-f23d-470c-a180-c2a829204d8f",
 							"name": "The Haab period catalogue.",
 							"originalRequest": {
 								"url": {
@@ -4435,7 +4435,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5cd5b1eb-dcb2-40dd-bb9a-5aecc73be193",
+							"id": "201c4ca8-d4fd-4fb7-85bd-87eb3217fbe7",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -4487,12 +4487,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5859.239592799876,\n      \"maximum\": 8331.740500068358,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2113.8791686077807,\n      \"maximum\": 8534.038856309557,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8805.82142176188,\n      \"maximum\": 3197.691396539587,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9162.308871960131,\n      \"maximum\": 1189.2395696221192,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5bf74bc1-c890-472a-88e4-406b3e0ef40a",
+							"id": "8b48e2a9-fa3d-49e3-a256-9f767fbbd49b",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -4544,12 +4544,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b6e77a23-af76-4e24-b0a9-c74b8cbc13d4",
+							"id": "fc59b2a7-651d-466b-bb4d-e87dad335740",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -4607,12 +4607,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"doc_url\": \"string\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e541ac5d-9062-47fd-bc3a-a68f7be8fe84",
+							"id": "ab87b0a9-cf7b-4038-a16d-886df14b153e",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -4664,12 +4664,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "4315d3fa-dee1-49fb-b725-00bb8f36bcd8",
+							"id": "973f4dcb-9db0-451e-9cbb-b93e917f7b3b",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -4721,7 +4721,7 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						}
@@ -4732,7 +4732,7 @@
 					}
 				},
 				{
-					"id": "efd56547-e53b-4d70-be79-2d3437936306",
+					"id": "688a611f-b299-4b0e-99e2-a0dd49bc5080",
 					"name": "Get one Haab period - Maya solar calendar month profile API",
 					"request": {
 						"name": "Get one Haab period - Maya solar calendar month profile API",
@@ -4794,7 +4794,7 @@
 					},
 					"response": [
 						{
-							"id": "f3b95d22-9ad7-4000-a64d-7bb0799b754e",
+							"id": "07bce7f8-e6d7-449d-a2cb-ab4061ef31de",
 							"name": "The Haab period.",
 							"originalRequest": {
 								"url": {
@@ -4852,7 +4852,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f9c971c1-9e16-4656-84a0-f08032316e20",
+							"id": "2e4b68a3-636c-4a60-8a98-6b1497741069",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -4905,12 +4905,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5859.239592799876,\n      \"maximum\": 8331.740500068358,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2113.8791686077807,\n      \"maximum\": 8534.038856309557,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8805.82142176188,\n      \"maximum\": 3197.691396539587,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9162.308871960131,\n      \"maximum\": 1189.2395696221192,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "66991a74-7c1e-4e11-989a-fdd5c5fd78d7",
+							"id": "7ee2f366-64be-4369-8bf1-5538af6b5922",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -4963,12 +4963,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "23b25fc7-038a-4feb-99ba-f9f5fd34f258",
+							"id": "15f7b471-68fa-4408-b525-514a05cd5367",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -5027,12 +5027,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"doc_url\": \"string\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e3c17142-003e-42a0-a438-e33706dfcf09",
+							"id": "60349cf4-369d-410b-a240-578b73b6d5a7",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -5085,12 +5085,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7ba4ec7b-f736-43e8-8a38-e62afe294c20",
+							"id": "be8397d0-926e-452d-a311-6e18eaa393f1",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -5143,7 +5143,7 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						}
@@ -5154,7 +5154,7 @@
 					}
 				},
 				{
-					"id": "83511a54-cc68-4bc1-b7b6-f343187de3b9",
+					"id": "43559518-fd96-4b39-93d2-481a9abfe24b",
 					"name": "Aztec day sign for a date - Tonalpohualli calculator API",
 					"request": {
 						"name": "Aztec day sign for a date - Tonalpohualli calculator API",
@@ -5220,7 +5220,7 @@
 					},
 					"response": [
 						{
-							"id": "43f2d5e7-cfaf-4b1a-aaa5-d0edf839dbbf",
+							"id": "0a22d33f-adc5-4c94-8f1c-8b5fabc976ba",
 							"name": "The tonalpohualli day for this date.",
 							"originalRequest": {
 								"url": {
@@ -5277,7 +5277,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ed2cf848-2281-4184-b693-032208aa836c",
+							"id": "9f040c3b-30e6-4985-a5cd-c70aa5c4b968",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -5329,12 +5329,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5859.239592799876,\n      \"maximum\": 8331.740500068358,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2113.8791686077807,\n      \"maximum\": 8534.038856309557,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8805.82142176188,\n      \"maximum\": 3197.691396539587,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9162.308871960131,\n      \"maximum\": 1189.2395696221192,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3711bd32-cb46-4259-a9ac-f3f47a6134d3",
+							"id": "56430797-651f-43e7-b486-266495231ef8",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -5386,12 +5386,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c2a75f6f-eb13-43c8-84df-56424dfd6987",
+							"id": "7cae08d0-2326-4f57-8dd5-a0ad0e8cbe36",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -5449,12 +5449,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"doc_url\": \"string\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "64797a7c-30a7-402e-a9f2-aaca96fe8cc1",
+							"id": "b8a4f83b-d2de-4c45-a88b-fda9ab3f9b22",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -5506,12 +5506,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "59d74675-44fb-498c-9c96-efb977073256",
+							"id": "0908515e-cf4a-44b5-befd-0b100d67ef28",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -5563,7 +5563,7 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						}
@@ -5574,7 +5574,7 @@
 					}
 				},
 				{
-					"id": "6263b158-7264-4f5b-9bf6-3ebbe875d73d",
+					"id": "c1a9845c-b255-426c-860d-303b44a7e948",
 					"name": "Daily Aztec energy reading - Tonalpohualli day sign of the day API",
 					"request": {
 						"name": "Daily Aztec energy reading - Tonalpohualli day sign of the day API",
@@ -5633,7 +5633,7 @@
 					},
 					"response": [
 						{
-							"id": "57ff5d3d-1e28-4636-bb58-ac3bb76008d8",
+							"id": "e6473146-077c-48b8-829a-3807ff2c1e03",
 							"name": "The tonalpohualli reading for this day.",
 							"originalRequest": {
 								"url": {
@@ -5686,7 +5686,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f793deec-d09c-4893-9351-713dc2c67049",
+							"id": "834efd76-73f9-4c1f-8ea7-edcdf1c9b5e2",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -5734,12 +5734,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5859.239592799876,\n      \"maximum\": 8331.740500068358,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2113.8791686077807,\n      \"maximum\": 8534.038856309557,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8805.82142176188,\n      \"maximum\": 3197.691396539587,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9162.308871960131,\n      \"maximum\": 1189.2395696221192,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "174dbb06-1775-4448-91fe-916198fdf3b4",
+							"id": "3ec11fb3-86bc-42ef-9da2-8796d5529aff",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -5787,12 +5787,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f76eaf55-edee-41d0-ade4-e66afcf6abf8",
+							"id": "869b1228-9b09-442a-9a98-ffdc029a2350",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -5846,12 +5846,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"doc_url\": \"string\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "565342e8-de29-44ec-869b-c16c126e7c5b",
+							"id": "ddebd8a6-4a88-4a98-90a1-2fd715bc6c43",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -5899,12 +5899,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "310ecfae-0d06-448b-8360-09be96979af5",
+							"id": "9e8985e0-0156-4b77-9fa6-eae355c6d2a7",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -5952,7 +5952,7 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						}
@@ -5963,7 +5963,7 @@
 					}
 				},
 				{
-					"id": "aa65ce23-83eb-4272-8b05-846feb3a422a",
+					"id": "8b21599c-a6f4-49a8-a4f5-f5c83a6548c3",
 					"name": "List the 20 Aztec day signs - Tonalpohualli sign catalogue API",
 					"request": {
 						"name": "List the 20 Aztec day signs - Tonalpohualli sign catalogue API",
@@ -6028,7 +6028,7 @@
 					},
 					"response": [
 						{
-							"id": "1b1da659-d17f-4159-9e9f-c86ecf3e8f16",
+							"id": "d0a2d53c-630c-424f-a87e-0dde71fa1777",
 							"name": "The tonalpohualli day sign catalogue.",
 							"originalRequest": {
 								"url": {
@@ -6085,7 +6085,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b3957ac4-b092-4f22-9ad6-ccce54800773",
+							"id": "0beb7e80-436e-4787-817b-5eff4d252fcb",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -6137,12 +6137,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5859.239592799876,\n      \"maximum\": 8331.740500068358,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2113.8791686077807,\n      \"maximum\": 8534.038856309557,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8805.82142176188,\n      \"maximum\": 3197.691396539587,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9162.308871960131,\n      \"maximum\": 1189.2395696221192,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c0eb6adb-e90f-45bf-b557-078d0efd7752",
+							"id": "13ac63f7-b5ed-4b25-a6fa-59d2df4b0fcb",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -6194,12 +6194,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a7dd3a85-6b76-42bf-8a91-7be28921ad6e",
+							"id": "eab14bc9-1c59-4981-a143-3ee3d6267420",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -6257,12 +6257,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"doc_url\": \"string\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "14f45c4d-a5d4-4280-a62e-02f35ffbb12c",
+							"id": "68a129f7-2a67-4a62-9728-c5f079e8de0e",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -6314,12 +6314,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "2023c532-f60e-4728-ad38-642585e77422",
+							"id": "9b033442-343e-4293-82f2-cdc8db8a229b",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -6371,7 +6371,7 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						}
@@ -6382,7 +6382,7 @@
 					}
 				},
 				{
-					"id": "6009b2b5-c5d2-4fec-ad3d-9dfbbf960680",
+					"id": "8f102eb1-da1e-49df-9c90-62f3486aacfd",
 					"name": "Get one Aztec day sign - Tonalpohualli sign profile API",
 					"request": {
 						"name": "Get one Aztec day sign - Tonalpohualli sign profile API",
@@ -6444,7 +6444,7 @@
 					},
 					"response": [
 						{
-							"id": "c9622323-0521-4e85-aaaa-9a16f3146490",
+							"id": "c7d5bbd3-0673-4eeb-b227-61fd691e9efb",
 							"name": "The tonalpohualli day sign.",
 							"originalRequest": {
 								"url": {
@@ -6502,7 +6502,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1fecdae5-f3a9-4f6a-88ee-2eb088783653",
+							"id": "5c52df4a-5b2c-4de6-8961-666a2647acfe",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -6555,12 +6555,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5859.239592799876,\n      \"maximum\": 8331.740500068358,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2113.8791686077807,\n      \"maximum\": 8534.038856309557,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8805.82142176188,\n      \"maximum\": 3197.691396539587,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9162.308871960131,\n      \"maximum\": 1189.2395696221192,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "637e103c-3b61-4e59-b661-8a37290dc66d",
+							"id": "d7568986-6a79-4bcf-9725-8e300e88ed75",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -6613,12 +6613,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d8634695-2a3e-4773-b12a-3c81df8e41c4",
+							"id": "461cd96e-85ba-41c8-90e0-c292175eace1",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -6677,12 +6677,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"doc_url\": \"string\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0c3eb130-695f-4d0c-9c77-0ed6a4d2e3d4",
+							"id": "dc0691cc-9a8c-411c-957c-d5169160995a",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -6735,12 +6735,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "59de9c75-95e9-4fd4-a386-cdd7745c0eb0",
+							"id": "b62b46ef-858d-4e93-8f65-69e4264f468c",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -6793,7 +6793,7 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						}
@@ -6804,7 +6804,7 @@
 					}
 				},
 				{
-					"id": "32a01a56-43ff-460b-b8c3-e852209ff18f",
+					"id": "72f7221c-25b2-4f95-a657-4c1182d3af67",
 					"name": "List the 20 Aztec trecenas - Tonalpohualli thirteen day period API",
 					"request": {
 						"name": "List the 20 Aztec trecenas - Tonalpohualli thirteen day period API",
@@ -6869,7 +6869,7 @@
 					},
 					"response": [
 						{
-							"id": "fd425ad7-6af0-4439-8f01-98192516db4a",
+							"id": "4df9f93a-172e-4b03-a963-e62bdce8dae7",
 							"name": "The tonalpohualli trecena catalogue.",
 							"originalRequest": {
 								"url": {
@@ -6926,7 +6926,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "4adbc948-2225-40d0-8c8a-4e6b8135d727",
+							"id": "8e3c4715-7c9f-458a-9799-9d4bb2e3e437",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -6978,12 +6978,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5859.239592799876,\n      \"maximum\": 8331.740500068358,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2113.8791686077807,\n      \"maximum\": 8534.038856309557,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8805.82142176188,\n      \"maximum\": 3197.691396539587,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9162.308871960131,\n      \"maximum\": 1189.2395696221192,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8edfae56-3cf6-43bc-b839-fbf3dc95bb81",
+							"id": "40d5c283-52e5-42e1-976b-4b6bbc99908a",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -7035,12 +7035,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8329ef75-096b-440b-91e2-9c8b3efebabf",
+							"id": "4fc2637c-b389-4dc0-b47a-fa79ea43c418",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -7098,12 +7098,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"doc_url\": \"string\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "bdb8dd3b-3d59-4bad-a6f7-e9ad6abdce27",
+							"id": "18f388ad-44af-4c17-9df3-8063f6698177",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -7155,12 +7155,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8db265d7-a1a0-4015-99e5-b9635d690c7a",
+							"id": "3ffdfd40-88df-43d8-bef7-afe1d42ca034",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -7212,7 +7212,7 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						}
@@ -7223,7 +7223,7 @@
 					}
 				},
 				{
-					"id": "f59cbac9-857a-41d5-8de3-e110cf789da5",
+					"id": "e5348083-8bee-41a6-8097-6b69770c5757",
 					"name": "Get one Aztec trecena - Tonalpohualli period profile API",
 					"request": {
 						"name": "Get one Aztec trecena - Tonalpohualli period profile API",
@@ -7285,7 +7285,7 @@
 					},
 					"response": [
 						{
-							"id": "fc650b25-1271-4d10-a325-9f938e91ffc0",
+							"id": "8c3732ce-3d14-4efd-88c1-88ae4152d55f",
 							"name": "The tonalpohualli trecena.",
 							"originalRequest": {
 								"url": {
@@ -7343,7 +7343,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6f850b75-4406-417e-b05f-074e4f8b5121",
+							"id": "991d92b1-82fa-40b2-add8-a4b10407d517",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -7396,12 +7396,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 5859.239592799876,\n      \"maximum\": 8331.740500068358,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2113.8791686077807,\n      \"maximum\": 8534.038856309557,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 8805.82142176188,\n      \"maximum\": 3197.691396539587,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 9162.308871960131,\n      \"maximum\": 1189.2395696221192,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "12bcf67c-f30d-474a-a049-9834a19458d5",
+							"id": "53907a44-b6fa-4633-a22d-01f5ba59c49e",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -7454,12 +7454,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5fdff763-d287-49c0-b81c-ebd3cb0800ad",
+							"id": "9831d4e3-2788-49d3-ad37-41ece98c1220",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -7518,12 +7518,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"method_not_allowed\",\n  \"doc_url\": \"string\",\n  \"allow\": [\n    \"string\",\n    \"string\"\n  ],\n  \"docs\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a428c7e7-db71-4033-98bd-2b56289b84be",
+							"id": "29c38bda-e46d-4970-95fa-1655fec39d21",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -7576,12 +7576,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "75666e8c-70ac-43d2-b0e3-ba65cff39a97",
+							"id": "66e546ea-7902-4ed8-ae81-4d016fd922d7",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -7634,7 +7634,7 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\"\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"string\",\n  \"doc_url\": \"string\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						}
@@ -7684,11 +7684,11 @@
 		]
 	},
 	"info": {
-		"_postman_id": "774459ee-2ed4-4e2f-b8fd-d901e1102897",
+		"_postman_id": "8aa128ca-fa41-413e-9047-03a6bdec88f3",
 		"name": "Mesoamerican Astrology API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"description": {
-			"content": "Calculate Mayan astrology day signs, the Tzolkin sacred round, the Haab year, the full Long Count and the Aztec tonalpohualli from any date: day sign and coefficient, trecena, Calendar Round, Lord of the Night, Year Bearer and the five point Cruz Maya, each with a composed reading. The correlation constant that makes two Mayan calculators disagree is a typed parameter with a named default rather than a hidden pick, and every response echoes the conventions it was computed under, so a saved chart stays reproducible. Both naming traditions ship on every sign, the Yucatec spelling and the Kʼicheʼ name daykeepers actually use, and readings come back in every language the API ships. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 18 domains (Astrology, Vedic Astrology, Forecast, Human Design, Chinese Astrology, Feng Shui, Mesoamerican Astrology, Vastu Shastra, Numerology, Kabbalah, Tarot Reading, Biorhythm, Ayurveda, I-Ching Oracle, Crystals and Healing Stones, Dream Interpretation, Angel Numbers, Location and Timezone), 259+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 259+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable and stable, so it is the one safe to switch on programmatically.\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`, `X-RateLimit-Reset` (Unix timestamp, seconds). Quotas reset on the 1st of every calendar month at 12:00 AM UTC, not on your renewal date.\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 per month for 50K requests, up to 3M requests, with custom volume above that.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart): first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs): guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp): connect AI agents\n- [Open source templates](https://roxyapi.com/templates): clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq): common questions\n- [Contact](https://roxyapi.com/contact): support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
+			"content": "Calculate Mayan astrology day signs, the Tzolkin sacred round, the Haab year, the full Long Count and the Aztec tonalpohualli from any date: day sign and coefficient, trecena, Calendar Round, Lord of the Night, Year Bearer and the five point Cruz Maya, each with a composed reading. The correlation constant that makes two Mayan calculators disagree is a typed parameter with a named default rather than a hidden pick, and every response echoes the conventions it was computed under, so a saved chart stays reproducible. Both naming traditions ship on every sign, the Yucatec spelling and the Kʼicheʼ name daykeepers actually use, and readings come back in every language the API ships. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 18 domains (Astrology, Vedic Astrology, Forecast, Human Design, Chinese Astrology, Feng Shui, Mesoamerican Astrology, Vastu Shastra, Numerology, Kabbalah, Tarot Reading, Biorhythm, Ayurveda, I-Ching Oracle, Crystals and Healing Stones, Dream Interpretation, Angel Numbers, Location and Timezone), 261+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 261+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable and stable, so it is the one safe to switch on programmatically.\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`, `X-RateLimit-Reset` (Unix timestamp, seconds). Quotas reset on the 1st of every calendar month at 12:00 AM UTC, not on your renewal date.\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 per month for 50K requests, up to 3M requests, with custom volume above that.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart): first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs): guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp): connect AI agents\n- [Open source templates](https://roxyapi.com/templates): clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq): common questions\n- [Contact](https://roxyapi.com/contact): support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
 			"type": "text/plain"
 		}
 	}

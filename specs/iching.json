@@ -3,7 +3,7 @@
 	"info": {
 		"title": "I-Ching Oracle API",
 		"version": "2.0.0",
-		"description": "I-Ching oracle API with all 64 hexagrams, 384 changing lines, 8 trigrams, and modern interpretations for love, career, and decision-making. Cast readings with the authentic three-coin method, get a daily hexagram, and explore the Book of Changes programmatically. Built for divination apps, AI oracle chatbots, fortune-telling platforms, daily wisdom features, and spiritual guidance products. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 18 domains (Astrology, Vedic Astrology, Forecast, Human Design, Chinese Astrology, Feng Shui, Mesoamerican Astrology, Vastu Shastra, Numerology, Kabbalah, Tarot Reading, Biorhythm, Ayurveda, I-Ching Oracle, Crystals and Healing Stones, Dream Interpretation, Angel Numbers, Location and Timezone), 259+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 259+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable and stable, so it is the one safe to switch on programmatically.\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`, `X-RateLimit-Reset` (Unix timestamp, seconds). Quotas reset on the 1st of every calendar month at 12:00 AM UTC, not on your renewal date.\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 per month for 50K requests, up to 3M requests, with custom volume above that.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart): first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs): guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp): connect AI agents\n- [Open source templates](https://roxyapi.com/templates): clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq): common questions\n- [Contact](https://roxyapi.com/contact): support and API key recovery\n",
+		"description": "I-Ching oracle API with all 64 hexagrams, 384 changing lines, 8 trigrams, and modern interpretations for love, career, and decision-making. Cast readings with the authentic three-coin method, get a daily hexagram, and explore the Book of Changes programmatically. Built for divination apps, AI oracle chatbots, fortune-telling platforms, daily wisdom features, and spiritual guidance products. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 18 domains (Astrology, Vedic Astrology, Forecast, Human Design, Chinese Astrology, Feng Shui, Mesoamerican Astrology, Vastu Shastra, Numerology, Kabbalah, Tarot Reading, Biorhythm, Ayurveda, I-Ching Oracle, Crystals and Healing Stones, Dream Interpretation, Angel Numbers, Location and Timezone), 261+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 261+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable and stable, so it is the one safe to switch on programmatically.\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`, `X-RateLimit-Reset` (Unix timestamp, seconds). Quotas reset on the 1st of every calendar month at 12:00 AM UTC, not on your renewal date.\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 per month for 50K requests, up to 3M requests, with custom volume above that.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart): first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs): guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp): connect AI agents\n- [Open source templates](https://roxyapi.com/templates): clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq): common questions\n- [Contact](https://roxyapi.com/contact): support and API key recovery\n",
 		"contact": {
 			"name": "RoxyAPI Support",
 			"url": "https://roxyapi.com/contact"
@@ -596,6 +596,10 @@
 												"validation_error"
 											]
 										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
+										},
 										"issues": {
 											"type": "array",
 											"description": "Every validation failure. Use this to rebuild a valid request.",
@@ -661,6 +665,7 @@
 									"required": [
 										"error",
 										"code",
+										"doc_url",
 										"issues"
 									]
 								}
@@ -681,11 +686,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -715,6 +725,10 @@
 												"method_not_allowed"
 											]
 										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
+										},
 										"allow": {
 											"type": "array",
 											"items": {
@@ -730,6 +744,7 @@
 									"required": [
 										"error",
 										"code",
+										"doc_url",
 										"allow"
 									]
 								}
@@ -750,11 +765,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -774,11 +794,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -1129,6 +1154,10 @@
 												"validation_error"
 											]
 										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
+										},
 										"issues": {
 											"type": "array",
 											"description": "Every validation failure. Use this to rebuild a valid request.",
@@ -1194,6 +1223,7 @@
 									"required": [
 										"error",
 										"code",
+										"doc_url",
 										"issues"
 									]
 								}
@@ -1214,11 +1244,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -1248,6 +1283,10 @@
 												"method_not_allowed"
 											]
 										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
+										},
 										"allow": {
 											"type": "array",
 											"items": {
@@ -1263,6 +1302,7 @@
 									"required": [
 										"error",
 										"code",
+										"doc_url",
 										"allow"
 									]
 								}
@@ -1283,11 +1323,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -1307,11 +1352,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -1447,6 +1497,10 @@
 												"validation_error"
 											]
 										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
+										},
 										"issues": {
 											"type": "array",
 											"description": "Every validation failure. Use this to rebuild a valid request.",
@@ -1512,6 +1566,7 @@
 									"required": [
 										"error",
 										"code",
+										"doc_url",
 										"issues"
 									]
 								}
@@ -1532,11 +1587,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -1566,6 +1626,10 @@
 												"method_not_allowed"
 											]
 										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
+										},
 										"allow": {
 											"type": "array",
 											"items": {
@@ -1581,6 +1645,7 @@
 									"required": [
 										"error",
 										"code",
+										"doc_url",
 										"allow"
 									]
 								}
@@ -1601,11 +1666,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -1625,11 +1695,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -1705,6 +1780,10 @@
 												"validation_error"
 											]
 										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
+										},
 										"issues": {
 											"type": "array",
 											"description": "Every validation failure. Use this to rebuild a valid request.",
@@ -1770,6 +1849,7 @@
 									"required": [
 										"error",
 										"code",
+										"doc_url",
 										"issues"
 									]
 								}
@@ -1790,11 +1870,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -1816,11 +1901,17 @@
 											"type": "string",
 											"example": "not_found",
 											"description": "Machine-readable error code. Stable identifier for programmatic error handling."
+										},
+										"doc_url": {
+											"type": "string",
+											"example": "https://roxyapi.com/docs/errors#not_found",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself. The same URL in every environment, so it is safe to log, print in a CLI, or paste into a bug report."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -1850,6 +1941,10 @@
 												"method_not_allowed"
 											]
 										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
+										},
 										"allow": {
 											"type": "array",
 											"items": {
@@ -1865,6 +1960,7 @@
 									"required": [
 										"error",
 										"code",
+										"doc_url",
 										"allow"
 									]
 								}
@@ -1885,11 +1981,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -1909,11 +2010,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -2001,6 +2107,10 @@
 												"validation_error"
 											]
 										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
+										},
 										"issues": {
 											"type": "array",
 											"description": "Every validation failure. Use this to rebuild a valid request.",
@@ -2066,6 +2176,7 @@
 									"required": [
 										"error",
 										"code",
+										"doc_url",
 										"issues"
 									]
 								}
@@ -2086,11 +2197,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -2112,11 +2228,17 @@
 											"type": "string",
 											"example": "not_found",
 											"description": "Machine-readable error code. Stable identifier for programmatic error handling."
+										},
+										"doc_url": {
+											"type": "string",
+											"example": "https://roxyapi.com/docs/errors#not_found",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself. The same URL in every environment, so it is safe to log, print in a CLI, or paste into a bug report."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -2146,6 +2268,10 @@
 												"method_not_allowed"
 											]
 										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
+										},
 										"allow": {
 											"type": "array",
 											"items": {
@@ -2161,6 +2287,7 @@
 									"required": [
 										"error",
 										"code",
+										"doc_url",
 										"allow"
 									]
 								}
@@ -2181,11 +2308,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -2205,11 +2337,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -2298,6 +2435,10 @@
 												"validation_error"
 											]
 										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
+										},
 										"issues": {
 											"type": "array",
 											"description": "Every validation failure. Use this to rebuild a valid request.",
@@ -2363,6 +2504,7 @@
 									"required": [
 										"error",
 										"code",
+										"doc_url",
 										"issues"
 									]
 								}
@@ -2383,11 +2525,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -2409,11 +2556,17 @@
 											"type": "string",
 											"example": "not_found",
 											"description": "Machine-readable error code. Stable identifier for programmatic error handling."
+										},
+										"doc_url": {
+											"type": "string",
+											"example": "https://roxyapi.com/docs/errors#not_found",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself. The same URL in every environment, so it is safe to log, print in a CLI, or paste into a bug report."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -2443,6 +2596,10 @@
 												"method_not_allowed"
 											]
 										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
+										},
 										"allow": {
 											"type": "array",
 											"items": {
@@ -2458,6 +2615,7 @@
 									"required": [
 										"error",
 										"code",
+										"doc_url",
 										"allow"
 									]
 								}
@@ -2478,11 +2636,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -2502,11 +2665,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -2650,6 +2818,10 @@
 												"validation_error"
 											]
 										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
+										},
 										"issues": {
 											"type": "array",
 											"description": "Every validation failure. Use this to rebuild a valid request.",
@@ -2715,6 +2887,7 @@
 									"required": [
 										"error",
 										"code",
+										"doc_url",
 										"issues"
 									]
 								}
@@ -2735,11 +2908,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -2769,6 +2947,10 @@
 												"method_not_allowed"
 											]
 										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
+										},
 										"allow": {
 											"type": "array",
 											"items": {
@@ -2784,6 +2966,7 @@
 									"required": [
 										"error",
 										"code",
+										"doc_url",
 										"allow"
 									]
 								}
@@ -2804,11 +2987,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -2828,11 +3016,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -2926,6 +3119,10 @@
 												"validation_error"
 											]
 										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
+										},
 										"issues": {
 											"type": "array",
 											"description": "Every validation failure. Use this to rebuild a valid request.",
@@ -2991,6 +3188,7 @@
 									"required": [
 										"error",
 										"code",
+										"doc_url",
 										"issues"
 									]
 								}
@@ -3011,11 +3209,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -3045,6 +3248,10 @@
 												"method_not_allowed"
 											]
 										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
+										},
 										"allow": {
 											"type": "array",
 											"items": {
@@ -3060,6 +3267,7 @@
 									"required": [
 										"error",
 										"code",
+										"doc_url",
 										"allow"
 									]
 								}
@@ -3080,11 +3288,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -3104,11 +3317,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -3195,6 +3413,10 @@
 												"validation_error"
 											]
 										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
+										},
 										"issues": {
 											"type": "array",
 											"description": "Every validation failure. Use this to rebuild a valid request.",
@@ -3260,6 +3482,7 @@
 									"required": [
 										"error",
 										"code",
+										"doc_url",
 										"issues"
 									]
 								}
@@ -3280,11 +3503,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -3306,11 +3534,17 @@
 											"type": "string",
 											"example": "not_found",
 											"description": "Machine-readable error code. Stable identifier for programmatic error handling."
+										},
+										"doc_url": {
+											"type": "string",
+											"example": "https://roxyapi.com/docs/errors#not_found",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself. The same URL in every environment, so it is safe to log, print in a CLI, or paste into a bug report."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -3340,6 +3574,10 @@
 												"method_not_allowed"
 											]
 										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
+										},
 										"allow": {
 											"type": "array",
 											"items": {
@@ -3355,6 +3593,7 @@
 									"required": [
 										"error",
 										"code",
+										"doc_url",
 										"allow"
 									]
 								}
@@ -3375,11 +3614,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
@@ -3399,11 +3643,16 @@
 										"code": {
 											"type": "string",
 											"description": "Machine-readable error code. Stable identifier."
+										},
+										"doc_url": {
+											"type": "string",
+											"description": "Absolute URL of the documented explanation of this code, anchored at the code itself, for example https://roxyapi.com/docs/errors#not_found."
 										}
 									},
 									"required": [
 										"error",
-										"code"
+										"code",
+										"doc_url"
 									]
 								}
 							}
