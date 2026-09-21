@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://roxyapi.com">
-    <img src="https://raw.githubusercontent.com/RoxyAPI/postman-collections/main/assets/hero.png" alt="RoxyAPI Postman collections: the Spiritual OS layer for agentic AI. One key, flat pricing." width="100%">
+    <img src="https://raw.githubusercontent.com/RoxyAPI/postman-collections/main/assets/hero.png" alt="RoxyAPI Postman collections, synced from the spec. The Spiritual OS layer for agentic AI. One key, flat pricing." width="100%">
   </a>
 </p>
 

@@ -161,6 +161,11 @@
 												"description": "Unit the plot dimensions are given in. Every distance the response returns is in this same unit. The mandala projection is scale free, so this affects the areas and the marma size and nothing else."
 											}
 										},
+										"example": {
+											"width": 30,
+											"depth": 40,
+											"unit": "feet"
+										},
 										"description": "The ground the mandala is projected over. Send width and depth for a compass-aligned rectangle, or polygon for anything else. The x axis runs east and the y axis north, and the mandala is aligned to the compass rather than to the building."
 									},
 									"facing": {
@@ -225,7 +230,17 @@
 								},
 								"required": [
 									"plot"
-								]
+								],
+								"example": {
+									"plot": {
+										"width": 30,
+										"depth": 40,
+										"unit": "feet"
+									},
+									"facing": "North",
+									"doorPosition": 0.4
+								},
+								"description": "Where the main door sits on the plot. Send facing or facingDegrees, never both, and locate the door with either door coordinates or doorPosition, never both."
 							}
 						}
 					}
@@ -768,6 +783,11 @@
 												"example": "feet",
 												"description": "Unit the plot dimensions are given in. Every distance the response returns is in this same unit. The mandala projection is scale free, so this affects the areas and the marma size and nothing else."
 											}
+										},
+										"example": {
+											"width": 30,
+											"depth": 40,
+											"unit": "feet"
 										},
 										"description": "The ground the mandala is projected over. Send width and depth for a compass-aligned rectangle, or polygon for anything else. The x axis runs east and the y axis north, and the mandala is aligned to the compass rather than to the building."
 									},
@@ -1530,6 +1550,11 @@
 												"description": "Unit the plot dimensions are given in. Every distance the response returns is in this same unit. The mandala projection is scale free, so this affects the areas and the marma size and nothing else."
 											}
 										},
+										"example": {
+											"width": 30,
+											"depth": 40,
+											"unit": "feet"
+										},
 										"description": "The ground the mandala is projected over. Send width and depth for a compass-aligned rectangle, or polygon for anything else. The x axis runs east and the y axis north, and the mandala is aligned to the compass rather than to the building."
 									},
 									"facing": {
@@ -1654,7 +1679,25 @@
 								},
 								"required": [
 									"plot"
-								]
+								],
+								"example": {
+									"plot": {
+										"width": 30,
+										"depth": 40,
+										"unit": "feet"
+									},
+									"facing": "North",
+									"slopeLowDirection": "Northeast",
+									"road": "North",
+									"extensions": [
+										"Northeast"
+									],
+									"cuts": [
+										"Southwest"
+									],
+									"water": "Northeast"
+								},
+								"description": "The site to read: the ground, which way the front looks, and whichever of the slope, road, extensions, cuts and water you know. Send facing or facingDegrees, never both, and the same for the two plot forms."
 							}
 						}
 					}
@@ -3281,6 +3324,11 @@
 												"description": "Unit the plot dimensions are given in. Every distance the response returns is in this same unit. The mandala projection is scale free, so this affects the areas and the marma size and nothing else."
 											}
 										},
+										"example": {
+											"width": 30,
+											"depth": 40,
+											"unit": "feet"
+										},
 										"description": "The ground the mandala is projected over. Send width and depth for a compass-aligned rectangle, or polygon for anything else. The x axis runs east and the y axis north, and the mandala is aligned to the compass rather than to the building."
 									},
 									"facing": {
@@ -3400,7 +3448,26 @@
 								"required": [
 									"plot",
 									"rooms"
-								]
+								],
+								"example": {
+									"plot": {
+										"width": 30,
+										"depth": 40,
+										"unit": "feet"
+									},
+									"facing": "North",
+									"rooms": [
+										{
+											"type": "kitchen",
+											"direction": "Southeast"
+										},
+										{
+											"type": "master-bedroom",
+											"direction": "Southwest"
+										}
+									]
+								},
+								"description": "The floor plan to check. Send facing or facingDegrees, never both, and give each room either its quarter or its outline, never both."
 							}
 						}
 					}
@@ -4617,12 +4684,7 @@
 					},
 					{
 						"schema": {
-							"type": [
-								"integer",
-								"null"
-							],
-							"minimum": 0,
-							"default": 0,
+							"type": "integer",
 							"example": 0,
 							"description": "Number of items to skip for pagination. Default 0."
 						},
@@ -5558,12 +5620,7 @@
 					},
 					{
 						"schema": {
-							"type": [
-								"integer",
-								"null"
-							],
-							"minimum": 0,
-							"default": 0,
+							"type": "integer",
 							"example": 0,
 							"description": "Number of items to skip for pagination. Default 0."
 						},

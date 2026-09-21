@@ -120,7 +120,19 @@
 									"ciphers": {
 										"type": "array",
 										"items": {
-											"type": "string"
+											"type": "string",
+											"enum": [
+												"mispar-hechrachi",
+												"mispar-gadol",
+												"otiyot-be-milui",
+												"mispar-katan",
+												"mispar-kidmi",
+												"mispar-prati",
+												"mispar-ha-merubah-ha-klali",
+												"mispar-meshulash",
+												"mispar-musafi",
+												"kolel"
+											]
 										},
 										"example": [
 											"mispar-hechrachi",
@@ -161,7 +173,15 @@
 										"example": false,
 										"description": "Whether to also score the Latin text with the three Latin alphabet ciphers. They are Renaissance Christian and modern in lineage rather than rabbinic, and the response labels each one. Ignored when textHebrew was sent."
 									}
-								}
+								},
+								"example": {
+									"text": "Sarah",
+									"ciphers": [
+										"mispar-hechrachi",
+										"mispar-gadol"
+									]
+								},
+								"description": "What to score and how. Send text for a Latin input or textHebrew for a Hebrew one, never both: which one you send decides whether a transliteration step runs at all. Every other field has a default."
 							}
 						}
 					}
@@ -1357,7 +1377,11 @@
 										"example": "finals-500-900",
 										"description": "Which method the name mispar gadol means, because the sources use it for two. Use finals-500-900 to score the five word final letters as 500 to 900, or milui to score each letter as the value of its own spelled out name."
 									}
-								}
+								},
+								"example": {
+									"name": "Sarah"
+								},
+								"description": "The name to profile. Send name for a Latin input or nameHebrew for a Hebrew one, never both: which one you send decides whether a transliteration step runs at all."
 							}
 						}
 					}
@@ -2645,12 +2669,7 @@
 					},
 					{
 						"schema": {
-							"type": [
-								"integer",
-								"null"
-							],
-							"minimum": 0,
-							"default": 0,
+							"type": "integer",
 							"example": 0,
 							"description": "Number of items to skip for pagination. Default 0."
 						},
@@ -2661,12 +2680,7 @@
 					},
 					{
 						"schema": {
-							"type": [
-								"number",
-								"null"
-							],
-							"minimum": 0,
-							"exclusiveMaximum": 360,
+							"type": "number",
 							"example": 131.18,
 							"description": "Ecliptic longitude in degrees, 0 inclusive to 360 exclusive, measured from 0 Aries. Returns the single name governing that degree instead of the list. 360 is rejected because it is the same point as 0 and the arcs are half open at the top."
 						},
@@ -5622,7 +5636,12 @@
 										"example": "finals-500-900",
 										"description": "Which method the name mispar gadol means, because the sources use it for two. Use finals-500-900 to score the five word final letters as 500 to 900, or milui to score each letter as the value of its own spelled out name."
 									}
-								}
+								},
+								"example": {
+									"firstName": "Sarah",
+									"secondName": "David"
+								},
+								"description": "The two names to compare. Each side takes the Latin field or the Hebrew one, never both: which one you send decides whether a transliteration step runs for that side."
 							}
 						}
 					}

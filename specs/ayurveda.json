@@ -2659,32 +2659,22 @@
 					},
 					{
 						"schema": {
-							"type": [
-								"number",
-								"null"
-							],
-							"minimum": -90,
-							"maximum": 90,
+							"type": "number",
 							"example": 51.5074,
 							"description": "Latitude in decimal degrees. It sets how long the day and the night actually are, which is what the dosha periods are cut from."
 						},
-						"required": false,
+						"required": true,
 						"description": "Latitude in decimal degrees. It sets how long the day and the night actually are, which is what the dosha periods are cut from.",
 						"name": "latitude",
 						"in": "query"
 					},
 					{
 						"schema": {
-							"type": [
-								"number",
-								"null"
-							],
-							"minimum": -180,
-							"maximum": 180,
+							"type": "number",
 							"example": -0.1278,
 							"description": "Longitude in decimal degrees. It sets the clock time of sunrise at this place."
 						},
-						"required": false,
+						"required": true,
 						"description": "Longitude in decimal degrees. It sets the clock time of sunrise at this place.",
 						"name": "longitude",
 						"in": "query"
@@ -3281,12 +3271,7 @@
 					},
 					{
 						"schema": {
-							"type": [
-								"integer",
-								"null"
-							],
-							"minimum": 0,
-							"default": 0,
+							"type": "integer",
 							"example": 0,
 							"description": "Number of items to skip for pagination. Default 0."
 						},
@@ -4807,12 +4792,7 @@
 					},
 					{
 						"schema": {
-							"type": [
-								"integer",
-								"null"
-							],
-							"minimum": 0,
-							"default": 0,
+							"type": "integer",
 							"example": 0,
 							"description": "Number of items to skip for pagination. Default 0."
 						},
@@ -5375,12 +5355,7 @@
 					},
 					{
 						"schema": {
-							"type": [
-								"integer",
-								"null"
-							],
-							"minimum": 0,
-							"default": 0,
+							"type": "integer",
 							"example": 0,
 							"description": "Number of items to skip for pagination. Default 0."
 						},

@@ -4809,12 +4809,7 @@
 					},
 					{
 						"schema": {
-							"type": [
-								"integer",
-								"null"
-							],
-							"minimum": 0,
-							"default": 0,
+							"type": "integer",
 							"example": 0,
 							"description": "Number of items to skip for pagination. Default 0."
 						},
@@ -7845,7 +7840,10 @@
 										"description": "Set true to address the leap repetition of lunarMonth rather than the first pass. Requesting a leap month a year does not have returns 400."
 									}
 								},
-								"description": "Send a Gregorian date to convert forward, or a lunar year, month and day to convert back."
+								"example": {
+									"date": "1990-06-15"
+								},
+								"description": "Send a Gregorian date to convert forward, or a lunar year, month and day to convert back. The two sides are exclusive, which is why the whole body carries one example rather than leaving the per field ones to be read together."
 							}
 						}
 					}
@@ -10376,12 +10374,7 @@
 					},
 					{
 						"schema": {
-							"type": [
-								"integer",
-								"null"
-							],
-							"minimum": 0,
-							"default": 0,
+							"type": "integer",
 							"example": 0,
 							"description": "Number of items to skip for pagination. Default 0."
 						},
