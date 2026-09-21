@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://roxyapi.com">
+    <img src="https://raw.githubusercontent.com/RoxyAPI/postman-collections/main/assets/hero.png" alt="RoxyAPI Postman collections: the Spiritual OS layer for agentic AI. One key, flat pricing." width="100%">
+  </a>
+</p>
+
 # RoxyAPI Postman Collections
 
 [![Postman workspace](https://img.shields.io/badge/Postman-public%20workspace-FF6C37?logo=postman&logoColor=white)](https://www.postman.com/roxylabs-7113570/roxyapi)
