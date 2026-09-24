@@ -1,7 +1,7 @@
 {
 	"item": [
 		{
-			"id": "fbb86729-14d7-4268-97aa-fc6a28f4d97f",
+			"id": "109d81f6-b463-4361-bb9f-ec818cb87de0",
 			"name": "Chinese Astrology",
 			"description": {
 				"content": "Chinese zodiac and BaZi astrology API: Four Pillars charts, Chinese zodiac signs and the Chinese lunisolar calendar from any birth moment: year, month, day and hour pillars with hidden stems, Na Yin and Ten God relations, luck pillars, day master strength, and animal compatibility. The school splits that make two calculators disagree are typed parameters rather than hidden defaults, and every chart echoes the conventions it was computed under. Solar terms come back as astronomical instants, lunar dates convert in both directions with leap months placed correctly, and the Tong Shu almanac covers day officers, lunar mansions and date selection. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.",
@@ -9,7 +9,7 @@
 			},
 			"item": [
 				{
-					"id": "837c7eee-0e19-472e-998e-d9f96ea9b24f",
+					"id": "857a92b5-60a9-40ad-9f86-9edf4e8681ac",
 					"name": "Generate BaZi chart - Four Pillars of Destiny calculator API",
 					"request": {
 						"name": "Generate BaZi chart - Four Pillars of Destiny calculator API",
@@ -65,7 +65,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -13.643653572071592,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+							"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -6.515368206230718,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -75,7 +75,7 @@
 					},
 					"response": [
 						{
-							"id": "2d9664b3-a12c-4a22-b3a4-fafa84fd0dbf",
+							"id": "a7de520e-0ac1-4e7c-aa8a-bc8f921d21ee",
 							"name": "Four pillars, Day Master, element balance, interactions, and the conventions",
 							"originalRequest": {
 								"url": {
@@ -111,7 +111,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -13.643653572071592,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -6.515368206230718,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -127,12 +127,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"birthData\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": 8,\n    \"latitude\": 0,\n    \"longitude\": 116.4\n  },\n  \"conventions\": {\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"pillars\": [\n    {\n      \"position\": \"year\",\n      \"id\": \"geng-wu\",\n      \"number\": 7,\n      \"stem\": {\n        \"id\": \"geng\",\n        \"chinese\": \"庚\",\n        \"pinyin\": \"gēng\",\n        \"element\": \"Metal\",\n        \"polarity\": \"yang\",\n        \"elementLocalized\": \"Metal\"\n      },\n      \"branch\": {\n        \"id\": \"wu\",\n        \"chinese\": \"午\",\n        \"pinyin\": \"wǔ\",\n        \"animal\": \"horse\",\n        \"element\": \"Fire\",\n        \"polarity\": \"yang\",\n        \"animalLocalized\": \"Caballo\",\n        \"elementLocalized\": \"Fuego\"\n      },\n      \"tenGod\": {\n        \"id\": \"rob-wealth\",\n        \"name\": \"Rob Wealth\",\n        \"chinese\": \"劫財\",\n        \"pinyin\": \"jié cái\",\n        \"category\": \"peer\",\n        \"keynote\": \"Drive, nerve, and competition for the same ground\",\n        \"nameLocalized\": \"Roba Riqueza\"\n      },\n      \"hiddenStems\": [\n        {\n          \"stem\": {\n            \"id\": \"geng\",\n            \"chinese\": \"庚\",\n            \"pinyin\": \"gēng\",\n            \"element\": \"Metal\",\n            \"polarity\": \"yang\",\n            \"elementLocalized\": \"Metal\"\n          },\n          \"role\": \"principal\",\n          \"tenGod\": {\n            \"id\": \"rob-wealth\",\n            \"name\": \"Rob Wealth\",\n            \"chinese\": \"劫財\",\n            \"pinyin\": \"jié cái\",\n            \"category\": \"peer\",\n            \"keynote\": \"Drive, nerve, and competition for the same ground\",\n            \"nameLocalized\": \"Roba Riqueza\"\n          }\n        },\n        {\n          \"stem\": {\n            \"id\": \"geng\",\n            \"chinese\": \"庚\",\n            \"pinyin\": \"gēng\",\n            \"element\": \"Metal\",\n            \"polarity\": \"yang\",\n            \"elementLocalized\": \"Metal\"\n          },\n          \"role\": \"principal\",\n          \"tenGod\": {\n            \"id\": \"rob-wealth\",\n            \"name\": \"Rob Wealth\",\n            \"chinese\": \"劫財\",\n            \"pinyin\": \"jié cái\",\n            \"category\": \"peer\",\n            \"keynote\": \"Drive, nerve, and competition for the same ground\",\n            \"nameLocalized\": \"Roba Riqueza\"\n          }\n        }\n      ],\n      \"naYin\": \"Earth by the Roadside\",\n      \"naYinChinese\": \"路旁土\",\n      \"naYinElement\": \"Earth\"\n    },\n    {\n      \"position\": \"year\",\n      \"id\": \"geng-wu\",\n      \"number\": 7,\n      \"stem\": {\n        \"id\": \"geng\",\n        \"chinese\": \"庚\",\n        \"pinyin\": \"gēng\",\n        \"element\": \"Metal\",\n        \"polarity\": \"yang\",\n        \"elementLocalized\": \"Metal\"\n      },\n      \"branch\": {\n        \"id\": \"wu\",\n        \"chinese\": \"午\",\n        \"pinyin\": \"wǔ\",\n        \"animal\": \"horse\",\n        \"element\": \"Fire\",\n        \"polarity\": \"yang\",\n        \"animalLocalized\": \"Caballo\",\n        \"elementLocalized\": \"Fuego\"\n      },\n      \"tenGod\": {\n        \"id\": \"rob-wealth\",\n        \"name\": \"Rob Wealth\",\n        \"chinese\": \"劫財\",\n        \"pinyin\": \"jié cái\",\n        \"category\": \"peer\",\n        \"keynote\": \"Drive, nerve, and competition for the same ground\",\n        \"nameLocalized\": \"Roba Riqueza\"\n      },\n      \"hiddenStems\": [\n        {\n          \"stem\": {\n            \"id\": \"geng\",\n            \"chinese\": \"庚\",\n            \"pinyin\": \"gēng\",\n            \"element\": \"Metal\",\n            \"polarity\": \"yang\",\n            \"elementLocalized\": \"Metal\"\n          },\n          \"role\": \"principal\",\n          \"tenGod\": {\n            \"id\": \"rob-wealth\",\n            \"name\": \"Rob Wealth\",\n            \"chinese\": \"劫財\",\n            \"pinyin\": \"jié cái\",\n            \"category\": \"peer\",\n            \"keynote\": \"Drive, nerve, and competition for the same ground\",\n            \"nameLocalized\": \"Roba Riqueza\"\n          }\n        },\n        {\n          \"stem\": {\n            \"id\": \"geng\",\n            \"chinese\": \"庚\",\n            \"pinyin\": \"gēng\",\n            \"element\": \"Metal\",\n            \"polarity\": \"yang\",\n            \"elementLocalized\": \"Metal\"\n          },\n          \"role\": \"principal\",\n          \"tenGod\": {\n            \"id\": \"rob-wealth\",\n            \"name\": \"Rob Wealth\",\n            \"chinese\": \"劫財\",\n            \"pinyin\": \"jié cái\",\n            \"category\": \"peer\",\n            \"keynote\": \"Drive, nerve, and competition for the same ground\",\n            \"nameLocalized\": \"Roba Riqueza\"\n          }\n        }\n      ],\n      \"naYin\": \"Earth by the Roadside\",\n      \"naYinChinese\": \"路旁土\",\n      \"naYinElement\": \"Earth\"\n    }\n  ],\n  \"dayMaster\": {\n    \"stem\": \"xin\",\n    \"chinese\": \"辛\",\n    \"pinyin\": \"xīn\",\n    \"element\": \"Metal\",\n    \"polarity\": \"yin\",\n    \"nature\": \"Jewel, coin and finished blade rather than raw ore: cool, smooth and already refined. Heaped earth buries it, which is the one thing it truly fears, while moving water rinses it until it shows what it is. Under summer heat it wants damp earth for cover. In deep winter it wants the small contained fire and never the open blaze, which would only melt what took so long to refine.\",\n    \"elementLocalized\": \"Metal\"\n  },\n  \"zodiacAnimal\": \"horse\",\n  \"fiveElements\": [\n    {\n      \"element\": \"Fire\",\n      \"count\": 2,\n      \"level\": \"balanced\",\n      \"reading\": \"Fire is present in proportion. There is enough heat to be seen and to convince, without the chart burning through what it builds.\",\n      \"elementLocalized\": \"Fuego\"\n    },\n    {\n      \"element\": \"Fire\",\n      \"count\": 2,\n      \"level\": \"balanced\",\n      \"reading\": \"Fire is present in proportion. There is enough heat to be seen and to convince, without the chart burning through what it builds.\",\n      \"elementLocalized\": \"Fuego\"\n    }\n  ],\n  \"interactions\": [\n    {\n      \"type\": \"clash\",\n      \"id\": \"wu-zi\",\n      \"chinese\": \"子午沖\",\n      \"pinyin\": \"zǐ wǔ chōng\",\n      \"quality\": \"challenging\",\n      \"positions\": [\n        \"year\",\n        \"month\"\n      ],\n      \"members\": [\n        \"zi\",\n        \"wu\"\n      ],\n      \"meaning\": \"Two Earthly Branches directly opposite on the cycle, six positions apart. A clash moves things: it breaks what was settled, and what it breaks is whatever the two positions govern. Not simply bad, and never quiet.\",\n      \"transformsTo\": \"Water\",\n      \"variety\": \"ungrateful\",\n      \"complete\": false\n    },\n    {\n      \"type\": \"clash\",\n      \"id\": \"wu-zi\",\n      \"chinese\": \"子午沖\",\n      \"pinyin\": \"zǐ wǔ chōng\",\n      \"quality\": \"challenging\",\n      \"positions\": [\n        \"year\",\n        \"month\"\n      ],\n      \"members\": [\n        \"zi\",\n        \"wu\"\n      ],\n      \"meaning\": \"Two Earthly Branches directly opposite on the cycle, six positions apart. A clash moves things: it breaks what was settled, and what it breaks is whatever the two positions govern. Not simply bad, and never quiet.\",\n      \"transformsTo\": \"Water\",\n      \"variety\": \"ungrateful\",\n      \"complete\": false\n    }\n  ],\n  \"summary\": \"A Metal Day Master born in a Fire month. Jewel, coin and finished blade rather than raw ore: cool, smooth and already refined. Heaped earth buries it, which is the one thing it truly fears, while moving water rinses it until it shows what it is. Under summer heat it wants damp earth for cover. In deep winter it wants the small contained fire and never the open blaze, which would only melt what took so long to refine. The season controls the Day Master element, the weakest of the five seasonal states. Everything the chart does from here has to be paid for by support found elsewhere.\",\n  \"zodiacAnimalLocalized\": \"Caballo\"\n}",
+							"body": "{\n  \"birthData\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": 8,\n    \"latitude\": 0,\n    \"longitude\": 116.4\n  },\n  \"conventions\": {\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"pillars\": [\n    {\n      \"position\": \"year\",\n      \"id\": \"geng-wu\",\n      \"number\": 7,\n      \"stem\": {\n        \"id\": \"geng\",\n        \"chinese\": \"庚\",\n        \"pinyin\": \"gēng\",\n        \"element\": \"Metal\",\n        \"polarity\": \"yang\",\n        \"elementLocalized\": \"Metal\"\n      },\n      \"branch\": {\n        \"id\": \"wu\",\n        \"chinese\": \"午\",\n        \"pinyin\": \"wǔ\",\n        \"animal\": \"horse\",\n        \"element\": \"Fire\",\n        \"polarity\": \"yang\",\n        \"animalLocalized\": \"Caballo\",\n        \"elementLocalized\": \"Fuego\"\n      },\n      \"tenGod\": {\n        \"id\": \"rob-wealth\",\n        \"name\": \"Rob Wealth\",\n        \"chinese\": \"劫財\",\n        \"pinyin\": \"jié cái\",\n        \"category\": \"peer\",\n        \"keynote\": \"Drive, nerve, and competition for the same ground\",\n        \"nameLocalized\": \"Roba Riqueza\"\n      },\n      \"hiddenStems\": [\n        {\n          \"stem\": {\n            \"id\": \"geng\",\n            \"chinese\": \"庚\",\n            \"pinyin\": \"gēng\",\n            \"element\": \"Metal\",\n            \"polarity\": \"yang\",\n            \"elementLocalized\": \"Metal\"\n          },\n          \"role\": \"principal\",\n          \"tenGod\": {\n            \"id\": \"rob-wealth\",\n            \"name\": \"Rob Wealth\",\n            \"chinese\": \"劫財\",\n            \"pinyin\": \"jié cái\",\n            \"category\": \"peer\",\n            \"keynote\": \"Drive, nerve, and competition for the same ground\",\n            \"nameLocalized\": \"Roba Riqueza\"\n          }\n        },\n        {\n          \"stem\": {\n            \"id\": \"geng\",\n            \"chinese\": \"庚\",\n            \"pinyin\": \"gēng\",\n            \"element\": \"Metal\",\n            \"polarity\": \"yang\",\n            \"elementLocalized\": \"Metal\"\n          },\n          \"role\": \"principal\",\n          \"tenGod\": {\n            \"id\": \"rob-wealth\",\n            \"name\": \"Rob Wealth\",\n            \"chinese\": \"劫財\",\n            \"pinyin\": \"jié cái\",\n            \"category\": \"peer\",\n            \"keynote\": \"Drive, nerve, and competition for the same ground\",\n            \"nameLocalized\": \"Roba Riqueza\"\n          }\n        }\n      ],\n      \"naYin\": \"Earth by the Roadside\",\n      \"naYinChinese\": \"路旁土\",\n      \"naYinElement\": \"Earth\",\n      \"naYinElementLocalized\": \"Earth\"\n    },\n    {\n      \"position\": \"year\",\n      \"id\": \"geng-wu\",\n      \"number\": 7,\n      \"stem\": {\n        \"id\": \"geng\",\n        \"chinese\": \"庚\",\n        \"pinyin\": \"gēng\",\n        \"element\": \"Metal\",\n        \"polarity\": \"yang\",\n        \"elementLocalized\": \"Metal\"\n      },\n      \"branch\": {\n        \"id\": \"wu\",\n        \"chinese\": \"午\",\n        \"pinyin\": \"wǔ\",\n        \"animal\": \"horse\",\n        \"element\": \"Fire\",\n        \"polarity\": \"yang\",\n        \"animalLocalized\": \"Caballo\",\n        \"elementLocalized\": \"Fuego\"\n      },\n      \"tenGod\": {\n        \"id\": \"rob-wealth\",\n        \"name\": \"Rob Wealth\",\n        \"chinese\": \"劫財\",\n        \"pinyin\": \"jié cái\",\n        \"category\": \"peer\",\n        \"keynote\": \"Drive, nerve, and competition for the same ground\",\n        \"nameLocalized\": \"Roba Riqueza\"\n      },\n      \"hiddenStems\": [\n        {\n          \"stem\": {\n            \"id\": \"geng\",\n            \"chinese\": \"庚\",\n            \"pinyin\": \"gēng\",\n            \"element\": \"Metal\",\n            \"polarity\": \"yang\",\n            \"elementLocalized\": \"Metal\"\n          },\n          \"role\": \"principal\",\n          \"tenGod\": {\n            \"id\": \"rob-wealth\",\n            \"name\": \"Rob Wealth\",\n            \"chinese\": \"劫財\",\n            \"pinyin\": \"jié cái\",\n            \"category\": \"peer\",\n            \"keynote\": \"Drive, nerve, and competition for the same ground\",\n            \"nameLocalized\": \"Roba Riqueza\"\n          }\n        },\n        {\n          \"stem\": {\n            \"id\": \"geng\",\n            \"chinese\": \"庚\",\n            \"pinyin\": \"gēng\",\n            \"element\": \"Metal\",\n            \"polarity\": \"yang\",\n            \"elementLocalized\": \"Metal\"\n          },\n          \"role\": \"principal\",\n          \"tenGod\": {\n            \"id\": \"rob-wealth\",\n            \"name\": \"Rob Wealth\",\n            \"chinese\": \"劫財\",\n            \"pinyin\": \"jié cái\",\n            \"category\": \"peer\",\n            \"keynote\": \"Drive, nerve, and competition for the same ground\",\n            \"nameLocalized\": \"Roba Riqueza\"\n          }\n        }\n      ],\n      \"naYin\": \"Earth by the Roadside\",\n      \"naYinChinese\": \"路旁土\",\n      \"naYinElement\": \"Earth\",\n      \"naYinElementLocalized\": \"Earth\"\n    }\n  ],\n  \"dayMaster\": {\n    \"stem\": \"xin\",\n    \"chinese\": \"辛\",\n    \"pinyin\": \"xīn\",\n    \"element\": \"Metal\",\n    \"polarity\": \"yin\",\n    \"nature\": \"Jewel, coin and finished blade rather than raw ore: cool, smooth and already refined. Heaped earth buries it, which is the one thing it truly fears, while moving water rinses it until it shows what it is. Under summer heat it wants damp earth for cover. In deep winter it wants the small contained fire and never the open blaze, which would only melt what took so long to refine.\",\n    \"elementLocalized\": \"Metal\"\n  },\n  \"zodiacAnimal\": \"horse\",\n  \"fiveElements\": [\n    {\n      \"element\": \"Fire\",\n      \"count\": 2,\n      \"level\": \"balanced\",\n      \"reading\": \"Fire is present in proportion. There is enough heat to be seen and to convince, without the chart burning through what it builds.\",\n      \"elementLocalized\": \"Fuego\"\n    },\n    {\n      \"element\": \"Fire\",\n      \"count\": 2,\n      \"level\": \"balanced\",\n      \"reading\": \"Fire is present in proportion. There is enough heat to be seen and to convince, without the chart burning through what it builds.\",\n      \"elementLocalized\": \"Fuego\"\n    }\n  ],\n  \"interactions\": [\n    {\n      \"type\": \"clash\",\n      \"id\": \"wu-zi\",\n      \"chinese\": \"子午沖\",\n      \"pinyin\": \"zǐ wǔ chōng\",\n      \"quality\": \"challenging\",\n      \"positions\": [\n        \"year\",\n        \"month\"\n      ],\n      \"members\": [\n        \"zi\",\n        \"wu\"\n      ],\n      \"meaning\": \"Two Earthly Branches directly opposite on the cycle, six positions apart. A clash moves things: it breaks what was settled, and what it breaks is whatever the two positions govern. Not simply bad, and never quiet.\",\n      \"transformsTo\": \"Water\",\n      \"variety\": \"ungrateful\",\n      \"complete\": false\n    },\n    {\n      \"type\": \"clash\",\n      \"id\": \"wu-zi\",\n      \"chinese\": \"子午沖\",\n      \"pinyin\": \"zǐ wǔ chōng\",\n      \"quality\": \"challenging\",\n      \"positions\": [\n        \"year\",\n        \"month\"\n      ],\n      \"members\": [\n        \"zi\",\n        \"wu\"\n      ],\n      \"meaning\": \"Two Earthly Branches directly opposite on the cycle, six positions apart. A clash moves things: it breaks what was settled, and what it breaks is whatever the two positions govern. Not simply bad, and never quiet.\",\n      \"transformsTo\": \"Water\",\n      \"variety\": \"ungrateful\",\n      \"complete\": false\n    }\n  ],\n  \"summary\": \"A Metal Day Master born in a Fire month. Jewel, coin and finished blade rather than raw ore: cool, smooth and already refined. Heaped earth buries it, which is the one thing it truly fears, while moving water rinses it until it shows what it is. Under summer heat it wants damp earth for cover. In deep winter it wants the small contained fire and never the open blaze, which would only melt what took so long to refine. The season controls the Day Master element, the weakest of the five seasonal states. Everything the chart does from here has to be paid for by support found elsewhere.\",\n  \"zodiacAnimalLocalized\": \"Caballo\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "fbaf1c96-bdbd-420b-b20c-87dc2460e5c1",
+							"id": "c7b1b7bd-7a13-483d-a09f-a4d0d5fd8ca8",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -168,7 +168,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -13.643653572071592,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -6.515368206230718,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -184,12 +184,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 650.68874319263,\n      \"maximum\": 9606.54893811401,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2147.3108728163315,\n      \"maximum\": 6832.698422740901,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3415.814099491864,\n      \"maximum\": 2810.4862639774065,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4408.075580818555,\n      \"maximum\": 2748.4578817253105,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "816a4ea6-07ea-4562-a571-1d5aeff13270",
+							"id": "c9852f01-9481-4011-bf6e-9310437cceff",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -225,7 +225,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -13.643653572071592,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -6.515368206230718,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -246,7 +246,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3001facb-df27-45be-9494-f0fa7d0fd648",
+							"id": "66accac3-3d40-4e4b-ba86-771396dc22d2",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -282,7 +282,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -13.643653572071592,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -6.515368206230718,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -309,7 +309,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "080cb98d-17a4-42ac-8274-6b5df5e2e4bf",
+							"id": "6672c96d-9269-41e8-b8f8-0319b07c2ce1",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -345,7 +345,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -13.643653572071592,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -6.515368206230718,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -366,7 +366,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "11456127-77bb-47fb-bdc6-f73e21d5a23d",
+							"id": "c517b8c9-c7bb-4a14-851b-90e1a42071b2",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -402,7 +402,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -13.643653572071592,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -6.515368206230718,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -429,7 +429,7 @@
 					}
 				},
 				{
-					"id": "b5403747-971e-42b7-b144-7565eea212b9",
+					"id": "c141c55a-f2e5-412c-82d5-a65084fcb8fc",
 					"name": "Calculate luck pillars - BaZi Da Yun ten-year cycle API",
 					"request": {
 						"name": "Calculate luck pillars - BaZi Da Yun ten-year cycle API",
@@ -485,7 +485,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -0.21438818788128522,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
+							"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 0.5351628690836758,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -495,7 +495,7 @@
 					},
 					"response": [
 						{
-							"id": "deefc2d3-75ae-4384-b03f-25bf38d956b8",
+							"id": "a4ecfb0f-4d57-4c1f-99ac-2f761996b69c",
 							"name": "Luck pillar sequence with start age, direction, and optional annual overlay",
 							"originalRequest": {
 								"url": {
@@ -531,7 +531,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -0.21438818788128522,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 0.5351628690836758,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -552,7 +552,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "09649ab8-e3fc-4f78-ba0f-bd49cbb013cc",
+							"id": "509122f6-a342-4eb8-ad2f-4d640a13266d",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -588,7 +588,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -0.21438818788128522,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 0.5351628690836758,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -604,12 +604,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 650.68874319263,\n      \"maximum\": 9606.54893811401,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2147.3108728163315,\n      \"maximum\": 6832.698422740901,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3415.814099491864,\n      \"maximum\": 2810.4862639774065,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4408.075580818555,\n      \"maximum\": 2748.4578817253105,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "943756f3-9143-4b64-a133-707374782100",
+							"id": "f785abc1-98a1-407f-bc23-3ce18e11269c",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -645,7 +645,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -0.21438818788128522,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 0.5351628690836758,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -666,7 +666,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ed0bcab3-5246-4603-a81e-13f0b9a433a0",
+							"id": "17bb99c8-711a-437d-8252-a898351174f2",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -702,7 +702,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -0.21438818788128522,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 0.5351628690836758,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -729,7 +729,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b8d731bd-da88-4005-a7e2-e053246267ad",
+							"id": "5c3f3ea0-cce9-4a71-89a5-162efd8ff24f",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -765,7 +765,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -0.21438818788128522,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 0.5351628690836758,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -786,7 +786,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "4e38facc-2048-4e95-8622-6c317e8fcbe2",
+							"id": "94f4ddaa-ab19-402e-94a4-c0da57fa7ff4",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -822,7 +822,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -0.21438818788128522,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 0.5351628690836758,\n  \"gender\": \"male\",\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\",\n  \"count\": 8,\n  \"annualFromYear\": 2026,\n  \"annualYears\": 10\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -849,7 +849,7 @@
 					}
 				},
 				{
-					"id": "a904f3ee-9a5d-4249-9e4a-5fa729a95fc4",
+					"id": "e692599b-cd10-44b0-bf7b-6397e534a946",
 					"name": "Calculate Day Master strength - BaZi favorable element API",
 					"request": {
 						"name": "Calculate Day Master strength - BaZi favorable element API",
@@ -905,7 +905,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -13.643653572071592,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+							"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -6.515368206230718,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -915,7 +915,7 @@
 					},
 					"response": [
 						{
-							"id": "8d849422-d748-4d8b-9151-62ec8dd588f7",
+							"id": "6fad6561-54b7-4827-b694-91f08fc3d5ec",
 							"name": "Strength verdict, contributing factors, and favorable elements",
 							"originalRequest": {
 								"url": {
@@ -951,7 +951,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -13.643653572071592,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -6.515368206230718,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -972,7 +972,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "453470b9-69fe-4cfb-b86e-024db78a133f",
+							"id": "f06d8846-66ff-418f-9879-272ffbd6c2a0",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1008,7 +1008,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -13.643653572071592,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -6.515368206230718,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1024,12 +1024,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 650.68874319263,\n      \"maximum\": 9606.54893811401,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2147.3108728163315,\n      \"maximum\": 6832.698422740901,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3415.814099491864,\n      \"maximum\": 2810.4862639774065,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4408.075580818555,\n      \"maximum\": 2748.4578817253105,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d2dacbec-f7f4-4a23-adb5-9a9a99cb6fa1",
+							"id": "c010ba1a-6808-4dfa-9963-7634b926d643",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1065,7 +1065,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -13.643653572071592,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -6.515368206230718,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1086,7 +1086,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9d88356f-a843-4506-88ba-4f37fab8da71",
+							"id": "c911d3d5-5d61-43d7-a536-b9874f19e694",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1122,7 +1122,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -13.643653572071592,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -6.515368206230718,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1149,7 +1149,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c6a9b017-47e7-4868-a23c-09cf93936ad4",
+							"id": "b882ffa7-0148-4fb2-8736-7a8f54d4bc01",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1185,7 +1185,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -13.643653572071592,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -6.515368206230718,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1206,7 +1206,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9fd208fa-5d88-41b1-a44c-d6553768205d",
+							"id": "7f00b0b1-28d9-4a0b-aa8d-ad3e82434cea",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1242,7 +1242,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -13.643653572071592,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": -6.515368206230718,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1269,7 +1269,7 @@
 					}
 				},
 				{
-					"id": "fd1ad45a-e6b1-433d-a904-d827390d8caf",
+					"id": "225e457e-bf63-4536-9271-376e33300405",
 					"name": "Calculate BaZi compatibility - Four Pillars matchmaking API",
 					"request": {
 						"name": "Calculate BaZi compatibility - Four Pillars matchmaking API",
@@ -1325,7 +1325,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -7.243424323359919,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -1.4545071609044253,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
+							"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": 2.9163430180680727,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -0.8023756399790827,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1335,7 +1335,7 @@
 					},
 					"response": [
 						{
-							"id": "abeb1e6e-bc60-432d-a8f9-d70749dcd641",
+							"id": "a6351208-b140-4f74-bd29-e714c43abbaa",
 							"name": "Both charts, the cross-chart interactions, and the compatibility score",
 							"originalRequest": {
 								"url": {
@@ -1371,7 +1371,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -7.243424323359919,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -1.4545071609044253,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
+									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": 2.9163430180680727,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -0.8023756399790827,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1387,12 +1387,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"personA\": {\n    \"pillars\": [\n      {\n        \"position\": \"year\",\n        \"id\": \"geng-wu\",\n        \"number\": 7,\n        \"stem\": {\n          \"id\": \"geng\",\n          \"chinese\": \"庚\",\n          \"pinyin\": \"gēng\",\n          \"element\": \"Metal\",\n          \"polarity\": \"yang\",\n          \"elementLocalized\": \"Metal\"\n        },\n        \"branch\": {\n          \"id\": \"wu\",\n          \"chinese\": \"午\",\n          \"pinyin\": \"wǔ\",\n          \"animal\": \"horse\",\n          \"element\": \"Fire\",\n          \"polarity\": \"yang\",\n          \"animalLocalized\": \"Caballo\",\n          \"elementLocalized\": \"Fuego\"\n        },\n        \"tenGod\": {\n          \"id\": \"rob-wealth\",\n          \"name\": \"Rob Wealth\",\n          \"chinese\": \"劫財\",\n          \"pinyin\": \"jié cái\",\n          \"category\": \"peer\",\n          \"keynote\": \"Drive, nerve, and competition for the same ground\",\n          \"nameLocalized\": \"Roba Riqueza\"\n        },\n        \"hiddenStems\": [\n          {\n            \"stem\": {\n              \"id\": \"geng\",\n              \"chinese\": \"庚\",\n              \"pinyin\": \"gēng\",\n              \"element\": \"Metal\",\n              \"polarity\": \"yang\",\n              \"elementLocalized\": \"Metal\"\n            },\n            \"role\": \"principal\",\n            \"tenGod\": {\n              \"id\": \"rob-wealth\",\n              \"name\": \"Rob Wealth\",\n              \"chinese\": \"劫財\",\n              \"pinyin\": \"jié cái\",\n              \"category\": \"peer\",\n              \"keynote\": \"Drive, nerve, and competition for the same ground\",\n              \"nameLocalized\": \"Roba Riqueza\"\n            }\n          },\n          {\n            \"stem\": {\n              \"id\": \"geng\",\n              \"chinese\": \"庚\",\n              \"pinyin\": \"gēng\",\n              \"element\": \"Metal\",\n              \"polarity\": \"yang\",\n              \"elementLocalized\": \"Metal\"\n            },\n            \"role\": \"principal\",\n            \"tenGod\": {\n              \"id\": \"rob-wealth\",\n              \"name\": \"Rob Wealth\",\n              \"chinese\": \"劫財\",\n              \"pinyin\": \"jié cái\",\n              \"category\": \"peer\",\n              \"keynote\": \"Drive, nerve, and competition for the same ground\",\n              \"nameLocalized\": \"Roba Riqueza\"\n            }\n          }\n        ],\n        \"naYin\": \"Earth by the Roadside\",\n        \"naYinChinese\": \"路旁土\",\n        \"naYinElement\": \"Earth\"\n      },\n      {\n        \"position\": \"year\",\n        \"id\": \"geng-wu\",\n        \"number\": 7,\n        \"stem\": {\n          \"id\": \"geng\",\n          \"chinese\": \"庚\",\n          \"pinyin\": \"gēng\",\n          \"element\": \"Metal\",\n          \"polarity\": \"yang\",\n          \"elementLocalized\": \"Metal\"\n        },\n        \"branch\": {\n          \"id\": \"wu\",\n          \"chinese\": \"午\",\n          \"pinyin\": \"wǔ\",\n          \"animal\": \"horse\",\n          \"element\": \"Fire\",\n          \"polarity\": \"yang\",\n          \"animalLocalized\": \"Caballo\",\n          \"elementLocalized\": \"Fuego\"\n        },\n        \"tenGod\": {\n          \"id\": \"rob-wealth\",\n          \"name\": \"Rob Wealth\",\n          \"chinese\": \"劫財\",\n          \"pinyin\": \"jié cái\",\n          \"category\": \"peer\",\n          \"keynote\": \"Drive, nerve, and competition for the same ground\",\n          \"nameLocalized\": \"Roba Riqueza\"\n        },\n        \"hiddenStems\": [\n          {\n            \"stem\": {\n              \"id\": \"geng\",\n              \"chinese\": \"庚\",\n              \"pinyin\": \"gēng\",\n              \"element\": \"Metal\",\n              \"polarity\": \"yang\",\n              \"elementLocalized\": \"Metal\"\n            },\n            \"role\": \"principal\",\n            \"tenGod\": {\n              \"id\": \"rob-wealth\",\n              \"name\": \"Rob Wealth\",\n              \"chinese\": \"劫財\",\n              \"pinyin\": \"jié cái\",\n              \"category\": \"peer\",\n              \"keynote\": \"Drive, nerve, and competition for the same ground\",\n              \"nameLocalized\": \"Roba Riqueza\"\n            }\n          },\n          {\n            \"stem\": {\n              \"id\": \"geng\",\n              \"chinese\": \"庚\",\n              \"pinyin\": \"gēng\",\n              \"element\": \"Metal\",\n              \"polarity\": \"yang\",\n              \"elementLocalized\": \"Metal\"\n            },\n            \"role\": \"principal\",\n            \"tenGod\": {\n              \"id\": \"rob-wealth\",\n              \"name\": \"Rob Wealth\",\n              \"chinese\": \"劫財\",\n              \"pinyin\": \"jié cái\",\n              \"category\": \"peer\",\n              \"keynote\": \"Drive, nerve, and competition for the same ground\",\n              \"nameLocalized\": \"Roba Riqueza\"\n            }\n          }\n        ],\n        \"naYin\": \"Earth by the Roadside\",\n        \"naYinChinese\": \"路旁土\",\n        \"naYinElement\": \"Earth\"\n      }\n    ],\n    \"dayMaster\": {\n      \"stem\": \"xin\",\n      \"chinese\": \"辛\",\n      \"pinyin\": \"xīn\",\n      \"element\": \"Metal\",\n      \"polarity\": \"yin\",\n      \"nature\": \"Jewel, coin and finished blade rather than raw ore: cool, smooth and already refined. Heaped earth buries it, which is the one thing it truly fears, while moving water rinses it until it shows what it is. Under summer heat it wants damp earth for cover. In deep winter it wants the small contained fire and never the open blaze, which would only melt what took so long to refine.\",\n      \"elementLocalized\": \"Metal\"\n    },\n    \"strength\": \"weak\",\n    \"conventions\": {\n      \"dayBoundary\": \"split-zi\",\n      \"yearBoundary\": \"li-chun\",\n      \"hourClock\": \"clock\"\n    }\n  },\n  \"personB\": {\n    \"pillars\": [\n      {\n        \"position\": \"year\",\n        \"id\": \"geng-wu\",\n        \"number\": 7,\n        \"stem\": {\n          \"id\": \"geng\",\n          \"chinese\": \"庚\",\n          \"pinyin\": \"gēng\",\n          \"element\": \"Metal\",\n          \"polarity\": \"yang\",\n          \"elementLocalized\": \"Metal\"\n        },\n        \"branch\": {\n          \"id\": \"wu\",\n          \"chinese\": \"午\",\n          \"pinyin\": \"wǔ\",\n          \"animal\": \"horse\",\n          \"element\": \"Fire\",\n          \"polarity\": \"yang\",\n          \"animalLocalized\": \"Caballo\",\n          \"elementLocalized\": \"Fuego\"\n        },\n        \"tenGod\": {\n          \"id\": \"rob-wealth\",\n          \"name\": \"Rob Wealth\",\n          \"chinese\": \"劫財\",\n          \"pinyin\": \"jié cái\",\n          \"category\": \"peer\",\n          \"keynote\": \"Drive, nerve, and competition for the same ground\",\n          \"nameLocalized\": \"Roba Riqueza\"\n        },\n        \"hiddenStems\": [\n          {\n            \"stem\": {\n              \"id\": \"geng\",\n              \"chinese\": \"庚\",\n              \"pinyin\": \"gēng\",\n              \"element\": \"Metal\",\n              \"polarity\": \"yang\",\n              \"elementLocalized\": \"Metal\"\n            },\n            \"role\": \"principal\",\n            \"tenGod\": {\n              \"id\": \"rob-wealth\",\n              \"name\": \"Rob Wealth\",\n              \"chinese\": \"劫財\",\n              \"pinyin\": \"jié cái\",\n              \"category\": \"peer\",\n              \"keynote\": \"Drive, nerve, and competition for the same ground\",\n              \"nameLocalized\": \"Roba Riqueza\"\n            }\n          },\n          {\n            \"stem\": {\n              \"id\": \"geng\",\n              \"chinese\": \"庚\",\n              \"pinyin\": \"gēng\",\n              \"element\": \"Metal\",\n              \"polarity\": \"yang\",\n              \"elementLocalized\": \"Metal\"\n            },\n            \"role\": \"principal\",\n            \"tenGod\": {\n              \"id\": \"rob-wealth\",\n              \"name\": \"Rob Wealth\",\n              \"chinese\": \"劫財\",\n              \"pinyin\": \"jié cái\",\n              \"category\": \"peer\",\n              \"keynote\": \"Drive, nerve, and competition for the same ground\",\n              \"nameLocalized\": \"Roba Riqueza\"\n            }\n          }\n        ],\n        \"naYin\": \"Earth by the Roadside\",\n        \"naYinChinese\": \"路旁土\",\n        \"naYinElement\": \"Earth\"\n      },\n      {\n        \"position\": \"year\",\n        \"id\": \"geng-wu\",\n        \"number\": 7,\n        \"stem\": {\n          \"id\": \"geng\",\n          \"chinese\": \"庚\",\n          \"pinyin\": \"gēng\",\n          \"element\": \"Metal\",\n          \"polarity\": \"yang\",\n          \"elementLocalized\": \"Metal\"\n        },\n        \"branch\": {\n          \"id\": \"wu\",\n          \"chinese\": \"午\",\n          \"pinyin\": \"wǔ\",\n          \"animal\": \"horse\",\n          \"element\": \"Fire\",\n          \"polarity\": \"yang\",\n          \"animalLocalized\": \"Caballo\",\n          \"elementLocalized\": \"Fuego\"\n        },\n        \"tenGod\": {\n          \"id\": \"rob-wealth\",\n          \"name\": \"Rob Wealth\",\n          \"chinese\": \"劫財\",\n          \"pinyin\": \"jié cái\",\n          \"category\": \"peer\",\n          \"keynote\": \"Drive, nerve, and competition for the same ground\",\n          \"nameLocalized\": \"Roba Riqueza\"\n        },\n        \"hiddenStems\": [\n          {\n            \"stem\": {\n              \"id\": \"geng\",\n              \"chinese\": \"庚\",\n              \"pinyin\": \"gēng\",\n              \"element\": \"Metal\",\n              \"polarity\": \"yang\",\n              \"elementLocalized\": \"Metal\"\n            },\n            \"role\": \"principal\",\n            \"tenGod\": {\n              \"id\": \"rob-wealth\",\n              \"name\": \"Rob Wealth\",\n              \"chinese\": \"劫財\",\n              \"pinyin\": \"jié cái\",\n              \"category\": \"peer\",\n              \"keynote\": \"Drive, nerve, and competition for the same ground\",\n              \"nameLocalized\": \"Roba Riqueza\"\n            }\n          },\n          {\n            \"stem\": {\n              \"id\": \"geng\",\n              \"chinese\": \"庚\",\n              \"pinyin\": \"gēng\",\n              \"element\": \"Metal\",\n              \"polarity\": \"yang\",\n              \"elementLocalized\": \"Metal\"\n            },\n            \"role\": \"principal\",\n            \"tenGod\": {\n              \"id\": \"rob-wealth\",\n              \"name\": \"Rob Wealth\",\n              \"chinese\": \"劫財\",\n              \"pinyin\": \"jié cái\",\n              \"category\": \"peer\",\n              \"keynote\": \"Drive, nerve, and competition for the same ground\",\n              \"nameLocalized\": \"Roba Riqueza\"\n            }\n          }\n        ],\n        \"naYin\": \"Earth by the Roadside\",\n        \"naYinChinese\": \"路旁土\",\n        \"naYinElement\": \"Earth\"\n      }\n    ],\n    \"dayMaster\": {\n      \"stem\": \"xin\",\n      \"chinese\": \"辛\",\n      \"pinyin\": \"xīn\",\n      \"element\": \"Metal\",\n      \"polarity\": \"yin\",\n      \"nature\": \"Jewel, coin and finished blade rather than raw ore: cool, smooth and already refined. Heaped earth buries it, which is the one thing it truly fears, while moving water rinses it until it shows what it is. Under summer heat it wants damp earth for cover. In deep winter it wants the small contained fire and never the open blaze, which would only melt what took so long to refine.\",\n      \"elementLocalized\": \"Metal\"\n    },\n    \"strength\": \"weak\",\n    \"conventions\": {\n      \"dayBoundary\": \"split-zi\",\n      \"yearBoundary\": \"li-chun\",\n      \"hourClock\": \"clock\"\n    }\n  },\n  \"dayMasterRelation\": \"peer\",\n  \"interactions\": [\n    {\n      \"type\": \"clash\",\n      \"id\": \"wu-zi\",\n      \"chinese\": \"子午沖\",\n      \"pinyin\": \"zǐ wǔ chōng\",\n      \"quality\": \"challenging\",\n      \"positions\": [\n        \"year\",\n        \"month\"\n      ],\n      \"members\": [\n        \"zi\",\n        \"wu\"\n      ],\n      \"meaning\": \"Two Earthly Branches directly opposite on the cycle, six positions apart. A clash moves things: it breaks what was settled, and what it breaks is whatever the two positions govern. Not simply bad, and never quiet.\",\n      \"transformsTo\": \"Water\",\n      \"variety\": \"ungrateful\",\n      \"complete\": false\n    },\n    {\n      \"type\": \"clash\",\n      \"id\": \"wu-zi\",\n      \"chinese\": \"子午沖\",\n      \"pinyin\": \"zǐ wǔ chōng\",\n      \"quality\": \"challenging\",\n      \"positions\": [\n        \"year\",\n        \"month\"\n      ],\n      \"members\": [\n        \"zi\",\n        \"wu\"\n      ],\n      \"meaning\": \"Two Earthly Branches directly opposite on the cycle, six positions apart. A clash moves things: it breaks what was settled, and what it breaks is whatever the two positions govern. Not simply bad, and never quiet.\",\n      \"transformsTo\": \"Water\",\n      \"variety\": \"ungrateful\",\n      \"complete\": false\n    }\n  ],\n  \"score\": 50,\n  \"harmoniousCount\": 1,\n  \"challengingCount\": 2,\n  \"summary\": \"The two charts form 1 binding interactions and 2 breaking ones across their pillars.\"\n}",
+							"body": "{\n  \"personA\": {\n    \"pillars\": [\n      {\n        \"position\": \"year\",\n        \"id\": \"geng-wu\",\n        \"number\": 7,\n        \"stem\": {\n          \"id\": \"geng\",\n          \"chinese\": \"庚\",\n          \"pinyin\": \"gēng\",\n          \"element\": \"Metal\",\n          \"polarity\": \"yang\",\n          \"elementLocalized\": \"Metal\"\n        },\n        \"branch\": {\n          \"id\": \"wu\",\n          \"chinese\": \"午\",\n          \"pinyin\": \"wǔ\",\n          \"animal\": \"horse\",\n          \"element\": \"Fire\",\n          \"polarity\": \"yang\",\n          \"animalLocalized\": \"Caballo\",\n          \"elementLocalized\": \"Fuego\"\n        },\n        \"tenGod\": {\n          \"id\": \"rob-wealth\",\n          \"name\": \"Rob Wealth\",\n          \"chinese\": \"劫財\",\n          \"pinyin\": \"jié cái\",\n          \"category\": \"peer\",\n          \"keynote\": \"Drive, nerve, and competition for the same ground\",\n          \"nameLocalized\": \"Roba Riqueza\"\n        },\n        \"hiddenStems\": [\n          {\n            \"stem\": {\n              \"id\": \"geng\",\n              \"chinese\": \"庚\",\n              \"pinyin\": \"gēng\",\n              \"element\": \"Metal\",\n              \"polarity\": \"yang\",\n              \"elementLocalized\": \"Metal\"\n            },\n            \"role\": \"principal\",\n            \"tenGod\": {\n              \"id\": \"rob-wealth\",\n              \"name\": \"Rob Wealth\",\n              \"chinese\": \"劫財\",\n              \"pinyin\": \"jié cái\",\n              \"category\": \"peer\",\n              \"keynote\": \"Drive, nerve, and competition for the same ground\",\n              \"nameLocalized\": \"Roba Riqueza\"\n            }\n          },\n          {\n            \"stem\": {\n              \"id\": \"geng\",\n              \"chinese\": \"庚\",\n              \"pinyin\": \"gēng\",\n              \"element\": \"Metal\",\n              \"polarity\": \"yang\",\n              \"elementLocalized\": \"Metal\"\n            },\n            \"role\": \"principal\",\n            \"tenGod\": {\n              \"id\": \"rob-wealth\",\n              \"name\": \"Rob Wealth\",\n              \"chinese\": \"劫財\",\n              \"pinyin\": \"jié cái\",\n              \"category\": \"peer\",\n              \"keynote\": \"Drive, nerve, and competition for the same ground\",\n              \"nameLocalized\": \"Roba Riqueza\"\n            }\n          }\n        ],\n        \"naYin\": \"Earth by the Roadside\",\n        \"naYinChinese\": \"路旁土\",\n        \"naYinElement\": \"Earth\",\n        \"naYinElementLocalized\": \"Earth\"\n      },\n      {\n        \"position\": \"year\",\n        \"id\": \"geng-wu\",\n        \"number\": 7,\n        \"stem\": {\n          \"id\": \"geng\",\n          \"chinese\": \"庚\",\n          \"pinyin\": \"gēng\",\n          \"element\": \"Metal\",\n          \"polarity\": \"yang\",\n          \"elementLocalized\": \"Metal\"\n        },\n        \"branch\": {\n          \"id\": \"wu\",\n          \"chinese\": \"午\",\n          \"pinyin\": \"wǔ\",\n          \"animal\": \"horse\",\n          \"element\": \"Fire\",\n          \"polarity\": \"yang\",\n          \"animalLocalized\": \"Caballo\",\n          \"elementLocalized\": \"Fuego\"\n        },\n        \"tenGod\": {\n          \"id\": \"rob-wealth\",\n          \"name\": \"Rob Wealth\",\n          \"chinese\": \"劫財\",\n          \"pinyin\": \"jié cái\",\n          \"category\": \"peer\",\n          \"keynote\": \"Drive, nerve, and competition for the same ground\",\n          \"nameLocalized\": \"Roba Riqueza\"\n        },\n        \"hiddenStems\": [\n          {\n            \"stem\": {\n              \"id\": \"geng\",\n              \"chinese\": \"庚\",\n              \"pinyin\": \"gēng\",\n              \"element\": \"Metal\",\n              \"polarity\": \"yang\",\n              \"elementLocalized\": \"Metal\"\n            },\n            \"role\": \"principal\",\n            \"tenGod\": {\n              \"id\": \"rob-wealth\",\n              \"name\": \"Rob Wealth\",\n              \"chinese\": \"劫財\",\n              \"pinyin\": \"jié cái\",\n              \"category\": \"peer\",\n              \"keynote\": \"Drive, nerve, and competition for the same ground\",\n              \"nameLocalized\": \"Roba Riqueza\"\n            }\n          },\n          {\n            \"stem\": {\n              \"id\": \"geng\",\n              \"chinese\": \"庚\",\n              \"pinyin\": \"gēng\",\n              \"element\": \"Metal\",\n              \"polarity\": \"yang\",\n              \"elementLocalized\": \"Metal\"\n            },\n            \"role\": \"principal\",\n            \"tenGod\": {\n              \"id\": \"rob-wealth\",\n              \"name\": \"Rob Wealth\",\n              \"chinese\": \"劫財\",\n              \"pinyin\": \"jié cái\",\n              \"category\": \"peer\",\n              \"keynote\": \"Drive, nerve, and competition for the same ground\",\n              \"nameLocalized\": \"Roba Riqueza\"\n            }\n          }\n        ],\n        \"naYin\": \"Earth by the Roadside\",\n        \"naYinChinese\": \"路旁土\",\n        \"naYinElement\": \"Earth\",\n        \"naYinElementLocalized\": \"Earth\"\n      }\n    ],\n    \"dayMaster\": {\n      \"stem\": \"xin\",\n      \"chinese\": \"辛\",\n      \"pinyin\": \"xīn\",\n      \"element\": \"Metal\",\n      \"polarity\": \"yin\",\n      \"nature\": \"Jewel, coin and finished blade rather than raw ore: cool, smooth and already refined. Heaped earth buries it, which is the one thing it truly fears, while moving water rinses it until it shows what it is. Under summer heat it wants damp earth for cover. In deep winter it wants the small contained fire and never the open blaze, which would only melt what took so long to refine.\",\n      \"elementLocalized\": \"Metal\"\n    },\n    \"strength\": \"weak\",\n    \"conventions\": {\n      \"dayBoundary\": \"split-zi\",\n      \"yearBoundary\": \"li-chun\",\n      \"hourClock\": \"clock\"\n    }\n  },\n  \"personB\": {\n    \"pillars\": [\n      {\n        \"position\": \"year\",\n        \"id\": \"geng-wu\",\n        \"number\": 7,\n        \"stem\": {\n          \"id\": \"geng\",\n          \"chinese\": \"庚\",\n          \"pinyin\": \"gēng\",\n          \"element\": \"Metal\",\n          \"polarity\": \"yang\",\n          \"elementLocalized\": \"Metal\"\n        },\n        \"branch\": {\n          \"id\": \"wu\",\n          \"chinese\": \"午\",\n          \"pinyin\": \"wǔ\",\n          \"animal\": \"horse\",\n          \"element\": \"Fire\",\n          \"polarity\": \"yang\",\n          \"animalLocalized\": \"Caballo\",\n          \"elementLocalized\": \"Fuego\"\n        },\n        \"tenGod\": {\n          \"id\": \"rob-wealth\",\n          \"name\": \"Rob Wealth\",\n          \"chinese\": \"劫財\",\n          \"pinyin\": \"jié cái\",\n          \"category\": \"peer\",\n          \"keynote\": \"Drive, nerve, and competition for the same ground\",\n          \"nameLocalized\": \"Roba Riqueza\"\n        },\n        \"hiddenStems\": [\n          {\n            \"stem\": {\n              \"id\": \"geng\",\n              \"chinese\": \"庚\",\n              \"pinyin\": \"gēng\",\n              \"element\": \"Metal\",\n              \"polarity\": \"yang\",\n              \"elementLocalized\": \"Metal\"\n            },\n            \"role\": \"principal\",\n            \"tenGod\": {\n              \"id\": \"rob-wealth\",\n              \"name\": \"Rob Wealth\",\n              \"chinese\": \"劫財\",\n              \"pinyin\": \"jié cái\",\n              \"category\": \"peer\",\n              \"keynote\": \"Drive, nerve, and competition for the same ground\",\n              \"nameLocalized\": \"Roba Riqueza\"\n            }\n          },\n          {\n            \"stem\": {\n              \"id\": \"geng\",\n              \"chinese\": \"庚\",\n              \"pinyin\": \"gēng\",\n              \"element\": \"Metal\",\n              \"polarity\": \"yang\",\n              \"elementLocalized\": \"Metal\"\n            },\n            \"role\": \"principal\",\n            \"tenGod\": {\n              \"id\": \"rob-wealth\",\n              \"name\": \"Rob Wealth\",\n              \"chinese\": \"劫財\",\n              \"pinyin\": \"jié cái\",\n              \"category\": \"peer\",\n              \"keynote\": \"Drive, nerve, and competition for the same ground\",\n              \"nameLocalized\": \"Roba Riqueza\"\n            }\n          }\n        ],\n        \"naYin\": \"Earth by the Roadside\",\n        \"naYinChinese\": \"路旁土\",\n        \"naYinElement\": \"Earth\",\n        \"naYinElementLocalized\": \"Earth\"\n      },\n      {\n        \"position\": \"year\",\n        \"id\": \"geng-wu\",\n        \"number\": 7,\n        \"stem\": {\n          \"id\": \"geng\",\n          \"chinese\": \"庚\",\n          \"pinyin\": \"gēng\",\n          \"element\": \"Metal\",\n          \"polarity\": \"yang\",\n          \"elementLocalized\": \"Metal\"\n        },\n        \"branch\": {\n          \"id\": \"wu\",\n          \"chinese\": \"午\",\n          \"pinyin\": \"wǔ\",\n          \"animal\": \"horse\",\n          \"element\": \"Fire\",\n          \"polarity\": \"yang\",\n          \"animalLocalized\": \"Caballo\",\n          \"elementLocalized\": \"Fuego\"\n        },\n        \"tenGod\": {\n          \"id\": \"rob-wealth\",\n          \"name\": \"Rob Wealth\",\n          \"chinese\": \"劫財\",\n          \"pinyin\": \"jié cái\",\n          \"category\": \"peer\",\n          \"keynote\": \"Drive, nerve, and competition for the same ground\",\n          \"nameLocalized\": \"Roba Riqueza\"\n        },\n        \"hiddenStems\": [\n          {\n            \"stem\": {\n              \"id\": \"geng\",\n              \"chinese\": \"庚\",\n              \"pinyin\": \"gēng\",\n              \"element\": \"Metal\",\n              \"polarity\": \"yang\",\n              \"elementLocalized\": \"Metal\"\n            },\n            \"role\": \"principal\",\n            \"tenGod\": {\n              \"id\": \"rob-wealth\",\n              \"name\": \"Rob Wealth\",\n              \"chinese\": \"劫財\",\n              \"pinyin\": \"jié cái\",\n              \"category\": \"peer\",\n              \"keynote\": \"Drive, nerve, and competition for the same ground\",\n              \"nameLocalized\": \"Roba Riqueza\"\n            }\n          },\n          {\n            \"stem\": {\n              \"id\": \"geng\",\n              \"chinese\": \"庚\",\n              \"pinyin\": \"gēng\",\n              \"element\": \"Metal\",\n              \"polarity\": \"yang\",\n              \"elementLocalized\": \"Metal\"\n            },\n            \"role\": \"principal\",\n            \"tenGod\": {\n              \"id\": \"rob-wealth\",\n              \"name\": \"Rob Wealth\",\n              \"chinese\": \"劫財\",\n              \"pinyin\": \"jié cái\",\n              \"category\": \"peer\",\n              \"keynote\": \"Drive, nerve, and competition for the same ground\",\n              \"nameLocalized\": \"Roba Riqueza\"\n            }\n          }\n        ],\n        \"naYin\": \"Earth by the Roadside\",\n        \"naYinChinese\": \"路旁土\",\n        \"naYinElement\": \"Earth\",\n        \"naYinElementLocalized\": \"Earth\"\n      }\n    ],\n    \"dayMaster\": {\n      \"stem\": \"xin\",\n      \"chinese\": \"辛\",\n      \"pinyin\": \"xīn\",\n      \"element\": \"Metal\",\n      \"polarity\": \"yin\",\n      \"nature\": \"Jewel, coin and finished blade rather than raw ore: cool, smooth and already refined. Heaped earth buries it, which is the one thing it truly fears, while moving water rinses it until it shows what it is. Under summer heat it wants damp earth for cover. In deep winter it wants the small contained fire and never the open blaze, which would only melt what took so long to refine.\",\n      \"elementLocalized\": \"Metal\"\n    },\n    \"strength\": \"weak\",\n    \"conventions\": {\n      \"dayBoundary\": \"split-zi\",\n      \"yearBoundary\": \"li-chun\",\n      \"hourClock\": \"clock\"\n    }\n  },\n  \"dayMasterRelation\": \"peer\",\n  \"interactions\": [\n    {\n      \"type\": \"clash\",\n      \"id\": \"wu-zi\",\n      \"chinese\": \"子午沖\",\n      \"pinyin\": \"zǐ wǔ chōng\",\n      \"quality\": \"challenging\",\n      \"positions\": [\n        \"year\",\n        \"month\"\n      ],\n      \"members\": [\n        \"zi\",\n        \"wu\"\n      ],\n      \"meaning\": \"Two Earthly Branches directly opposite on the cycle, six positions apart. A clash moves things: it breaks what was settled, and what it breaks is whatever the two positions govern. Not simply bad, and never quiet.\",\n      \"transformsTo\": \"Water\",\n      \"variety\": \"ungrateful\",\n      \"complete\": false\n    },\n    {\n      \"type\": \"clash\",\n      \"id\": \"wu-zi\",\n      \"chinese\": \"子午沖\",\n      \"pinyin\": \"zǐ wǔ chōng\",\n      \"quality\": \"challenging\",\n      \"positions\": [\n        \"year\",\n        \"month\"\n      ],\n      \"members\": [\n        \"zi\",\n        \"wu\"\n      ],\n      \"meaning\": \"Two Earthly Branches directly opposite on the cycle, six positions apart. A clash moves things: it breaks what was settled, and what it breaks is whatever the two positions govern. Not simply bad, and never quiet.\",\n      \"transformsTo\": \"Water\",\n      \"variety\": \"ungrateful\",\n      \"complete\": false\n    }\n  ],\n  \"score\": 50,\n  \"harmoniousCount\": 1,\n  \"challengingCount\": 2,\n  \"summary\": \"The two charts form 1 binding interactions and 2 breaking ones across their pillars.\"\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1e6d9044-e3a0-4f24-a353-5d8183c4d804",
+							"id": "926f9b32-917b-445a-9ccd-1d2368ebb913",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1428,7 +1428,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -7.243424323359919,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -1.4545071609044253,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
+									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": 2.9163430180680727,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -0.8023756399790827,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1444,12 +1444,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 650.68874319263,\n      \"maximum\": 9606.54893811401,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2147.3108728163315,\n      \"maximum\": 6832.698422740901,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3415.814099491864,\n      \"maximum\": 2810.4862639774065,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4408.075580818555,\n      \"maximum\": 2748.4578817253105,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "52212e7e-c0aa-48dc-87f5-f54c206e6417",
+							"id": "b8872a9f-4b9f-4744-b50e-35d493376999",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1485,7 +1485,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -7.243424323359919,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -1.4545071609044253,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
+									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": 2.9163430180680727,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -0.8023756399790827,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1506,7 +1506,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "dd90eb91-c361-44b1-9567-a8f92bec4a94",
+							"id": "969eb289-0ada-49b3-9c06-e366d3a01d39",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1542,7 +1542,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -7.243424323359919,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -1.4545071609044253,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
+									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": 2.9163430180680727,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -0.8023756399790827,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1569,7 +1569,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ef5d541c-31de-49f8-b557-4b5df6dbbd6b",
+							"id": "fb685cf8-9218-43b1-a6ff-b1edb0ddc4da",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -1605,7 +1605,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -7.243424323359919,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -1.4545071609044253,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
+									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": 2.9163430180680727,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -0.8023756399790827,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1626,7 +1626,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "022959dd-1dbe-4929-9095-ad1fd8ce4f68",
+							"id": "14fe8945-e843-4f04-9827-e6e985caa017",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -1662,7 +1662,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -7.243424323359919,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -1.4545071609044253,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
+									"raw": "{\n  \"personA\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": 2.9163430180680727,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  },\n  \"personB\": {\n    \"date\": \"1990-06-15\",\n    \"time\": \"14:30:00\",\n    \"timezone\": -0.8023756399790827,\n    \"latitude\": 0,\n    \"longitude\": 116.4,\n    \"dayBoundary\": \"split-zi\",\n    \"yearBoundary\": \"li-chun\",\n    \"hourClock\": \"clock\"\n  }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1689,7 +1689,7 @@
 					}
 				},
 				{
-					"id": "a8c359bb-064b-4ca7-9133-927a2ed2312d",
+					"id": "07f66314-3c31-447a-8bf9-14624ba18f93",
 					"name": "Calculate BaZi annual forecast - Liu Nian yearly pillar API",
 					"request": {
 						"name": "Calculate BaZi annual forecast - Liu Nian yearly pillar API",
@@ -1745,7 +1745,7 @@
 						},
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 8.966827528420968,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+							"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 7.709665288548937,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1755,7 +1755,7 @@
 					},
 					"response": [
 						{
-							"id": "11cce872-acfd-412f-b9a2-78f47c93b5e2",
+							"id": "4d4b6ca7-eeaa-4620-8843-21960919d693",
 							"name": "Annual pillar, its relation to the Day Master, and the natal interactions",
 							"originalRequest": {
 								"url": {
@@ -1791,7 +1791,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 8.966827528420968,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 7.709665288548937,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1812,7 +1812,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "8f04324a-deaf-4d14-97f9-10931f3b404b",
+							"id": "6b5d9e4e-d465-4dbb-8e0a-4a15e7bbfa4a",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -1848,7 +1848,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 8.966827528420968,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 7.709665288548937,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1864,12 +1864,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 650.68874319263,\n      \"maximum\": 9606.54893811401,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2147.3108728163315,\n      \"maximum\": 6832.698422740901,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3415.814099491864,\n      \"maximum\": 2810.4862639774065,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4408.075580818555,\n      \"maximum\": 2748.4578817253105,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0fc0901d-7cd6-42f0-a113-138a2e9bf826",
+							"id": "b0df4549-44c8-4fba-a214-925eeb9de7e0",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -1905,7 +1905,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 8.966827528420968,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 7.709665288548937,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1926,7 +1926,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "05cf207d-21da-433e-aab9-c95674589c5c",
+							"id": "483358cc-fa46-4f57-89be-0b2bc573bae4",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -1962,7 +1962,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 8.966827528420968,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 7.709665288548937,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1989,7 +1989,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e126fad1-42ba-40eb-afd3-e5360f61c3d6",
+							"id": "6496f1e8-4d57-4d15-830a-6a4d07f3acc8",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2025,7 +2025,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 8.966827528420968,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 7.709665288548937,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2046,7 +2046,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1868bb0a-f4bc-4d90-afe4-f09487d6b682",
+							"id": "5637bf89-2746-4fea-b9e8-897ea0169819",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2082,7 +2082,7 @@
 								"method": "POST",
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 8.966827528420968,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
+									"raw": "{\n  \"date\": \"1990-06-15\",\n  \"time\": \"14:30:00\",\n  \"timezone\": 7.709665288548937,\n  \"year\": 2026,\n  \"latitude\": 0,\n  \"longitude\": 116.4,\n  \"dayBoundary\": \"split-zi\",\n  \"yearBoundary\": \"li-chun\",\n  \"hourClock\": \"clock\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2109,7 +2109,7 @@
 					}
 				},
 				{
-					"id": "a5e540dc-4d4c-471e-87ef-f2742dbaef50",
+					"id": "c62fe870-3d69-4c0c-af48-fc45b35bf51b",
 					"name": "List the 12 Chinese zodiac animals - Sheng Xiao sign catalogue",
 					"request": {
 						"name": "List the 12 Chinese zodiac animals - Sheng Xiao sign catalogue",
@@ -2174,7 +2174,7 @@
 					},
 					"response": [
 						{
-							"id": "5d756c5d-a02b-4efb-9dc9-ff7c1724840a",
+							"id": "3e3d5ab7-6113-4a21-92c0-b09ebdae382b",
 							"name": "The zodiac animal catalogue.",
 							"originalRequest": {
 								"url": {
@@ -2231,7 +2231,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e03af83e-68ca-4f20-891d-120362564a6f",
+							"id": "8d3e24d1-1f60-4dc4-b208-d20d93af7938",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2283,12 +2283,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 650.68874319263,\n      \"maximum\": 9606.54893811401,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2147.3108728163315,\n      \"maximum\": 6832.698422740901,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3415.814099491864,\n      \"maximum\": 2810.4862639774065,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4408.075580818555,\n      \"maximum\": 2748.4578817253105,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "12c6f106-fbeb-4be3-8fa0-c5f91bc9018a",
+							"id": "764b9483-c95f-4892-ba77-5a6b92433b95",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2345,7 +2345,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "833cb32f-0255-4186-92d7-f46839199cdc",
+							"id": "32385b07-69cb-4cca-b344-ecfadcb09e4a",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2408,7 +2408,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "fc98a042-7bfd-4fe8-a250-ff3dd9782d22",
+							"id": "1d60b203-1c0b-48e8-a3ff-8c5fe8381bd8",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2465,7 +2465,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "01d32a54-f217-4465-8a8d-58a85b18b854",
+							"id": "d6aa5759-168b-454f-a890-3c2de9e5f259",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2528,7 +2528,7 @@
 					}
 				},
 				{
-					"id": "c91fa26b-73d3-40e8-9c98-069f81c59b99",
+					"id": "0491c4e1-73bc-4ced-b709-721c22f6573b",
 					"name": "Get one Chinese zodiac animal - Full sign profile with compatibility partners",
 					"request": {
 						"name": "Get one Chinese zodiac animal - Full sign profile with compatibility partners",
@@ -2590,7 +2590,7 @@
 					},
 					"response": [
 						{
-							"id": "9a8336f7-a4e7-4efc-9bba-af35ccc3d72d",
+							"id": "b6160fd4-8f83-4c33-8b2a-04efdfbaded9",
 							"name": "Full animal profile.",
 							"originalRequest": {
 								"url": {
@@ -2648,7 +2648,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "c0fda0d6-8621-4e20-971a-a64c1d2db1eb",
+							"id": "4b51aac4-9a35-48a6-8c87-c63c213670f7",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -2701,12 +2701,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 650.68874319263,\n      \"maximum\": 9606.54893811401,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2147.3108728163315,\n      \"maximum\": 6832.698422740901,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3415.814099491864,\n      \"maximum\": 2810.4862639774065,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4408.075580818555,\n      \"maximum\": 2748.4578817253105,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "23adff95-fa27-49ff-b150-b1a7254bab4a",
+							"id": "6f71e618-9b85-4a91-a1e2-2f887756cf25",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -2764,7 +2764,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "743da781-017a-4001-b633-a0693add05af",
+							"id": "90c82a02-1a72-494f-a915-b66294421303",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -2828,7 +2828,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "294b85cc-0ce4-4874-b1a8-b5ab36c9c020",
+							"id": "8d3f4ec3-d03d-4754-aed7-07be2b4da516",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -2886,7 +2886,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7217a536-b713-4af9-9aa5-5a2537e30e9f",
+							"id": "ee49951c-355f-4035-9fa9-3161e2a422b4",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -2950,7 +2950,7 @@
 					}
 				},
 				{
-					"id": "3e72c614-1064-42c4-b4a1-c5258a5fbd2f",
+					"id": "3a41d482-24fd-442f-86ab-9239b0b7246d",
 					"name": "Find the Chinese zodiac animal for a birth date - Sheng Xiao calculator",
 					"request": {
 						"name": "Find the Chinese zodiac animal for a birth date - Sheng Xiao calculator",
@@ -3016,7 +3016,7 @@
 					},
 					"response": [
 						{
-							"id": "4d3a37c9-a17a-4208-8fd1-9cfc6796c203",
+							"id": "79672929-4074-4cf3-b456-72ddef6b4a3f",
 							"name": "The zodiac animal for this birth date.",
 							"originalRequest": {
 								"url": {
@@ -3073,7 +3073,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "dbd05667-a7a6-48fb-a827-43299c81f5ec",
+							"id": "95f99c09-38ca-455d-b787-984de3cace7c",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3125,12 +3125,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 650.68874319263,\n      \"maximum\": 9606.54893811401,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2147.3108728163315,\n      \"maximum\": 6832.698422740901,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3415.814099491864,\n      \"maximum\": 2810.4862639774065,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4408.075580818555,\n      \"maximum\": 2748.4578817253105,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9b53e3c2-7f1e-4f64-b0ca-db34fdf93956",
+							"id": "fdb8f21d-f1d8-407d-af4a-9580cf76cdbf",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3187,7 +3187,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "1500c9fc-81bc-4a92-a4f8-0958674ccc0e",
+							"id": "53285e40-4ace-4ac2-a9f9-965998526fda",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3250,7 +3250,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e2535c1a-94f8-462c-bae1-ad376327741e",
+							"id": "32db2223-316f-478b-b354-6da6be9c6b93",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3307,7 +3307,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "98dccb4b-34a4-44bf-a9e9-eaa85cd109f7",
+							"id": "d7a9970e-cc5f-4755-b388-223b37821999",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3370,7 +3370,7 @@
 					}
 				},
 				{
-					"id": "697d7867-b9f4-4f9d-b38e-024b9afcee36",
+					"id": "b727eb33-f972-47f1-a7d2-b075e333981f",
 					"name": "Chinese zodiac compatibility - Trine, six harmony, clash and harm analysis",
 					"request": {
 						"name": "Chinese zodiac compatibility - Trine, six harmony, clash and harm analysis",
@@ -3440,7 +3440,7 @@
 					},
 					"response": [
 						{
-							"id": "8b57ab51-c3ab-42c9-b877-39ab0ddf1a71",
+							"id": "e40f05c2-6077-434a-a415-84a2d64c303f",
 							"name": "Compatibility between the two signs.",
 							"originalRequest": {
 								"url": {
@@ -3506,7 +3506,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3487a98c-7ace-4248-8b46-9ef4c9e20524",
+							"id": "ced3c735-5cd3-42b1-8b71-cae0282178eb",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -3567,12 +3567,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 650.68874319263,\n      \"maximum\": 9606.54893811401,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2147.3108728163315,\n      \"maximum\": 6832.698422740901,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3415.814099491864,\n      \"maximum\": 2810.4862639774065,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4408.075580818555,\n      \"maximum\": 2748.4578817253105,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "46fa5699-4065-4a53-9b79-abbce124c9d8",
+							"id": "08f8db31-f41a-455b-a903-63e664ebed94",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -3638,7 +3638,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "531d93e6-fa15-4468-bf04-d03cd7df5e09",
+							"id": "d5659c99-b9eb-42e8-a429-1e49ce55d7f2",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -3710,7 +3710,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "369804a8-b1e4-46dc-b183-641c9aa565f9",
+							"id": "de957a7b-3808-432b-b507-10f497292d7b",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -3776,7 +3776,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "a022165c-8f4e-416c-94ed-879c571ace69",
+							"id": "d4de1807-335d-4c3e-9883-9c8f53b726b9",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -3848,7 +3848,7 @@
 					}
 				},
 				{
-					"id": "cd65c7e2-86e1-487a-b2ec-7f820274f663",
+					"id": "c49c6918-d531-4fe7-9bc6-62196f94f7e2",
 					"name": "Daily Chinese zodiac reading - Day pillar forecast by animal sign",
 					"request": {
 						"name": "Daily Chinese zodiac reading - Day pillar forecast by animal sign",
@@ -3922,7 +3922,7 @@
 					},
 					"response": [
 						{
-							"id": "fa767408-e8c8-45b2-8727-48bbe2a5b6e4",
+							"id": "630b566e-12c3-4702-933d-eba3f2464c87",
 							"name": "The daily reading for this sign.",
 							"originalRequest": {
 								"url": {
@@ -3988,7 +3988,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7cd8bc44-82d4-4681-a78c-032788ff0139",
+							"id": "b1af7aef-2463-4d30-8a30-118e0b7eb07d",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -4049,12 +4049,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 650.68874319263,\n      \"maximum\": 9606.54893811401,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2147.3108728163315,\n      \"maximum\": 6832.698422740901,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3415.814099491864,\n      \"maximum\": 2810.4862639774065,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4408.075580818555,\n      \"maximum\": 2748.4578817253105,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "825909c3-eb04-4e73-8f11-af4d798842da",
+							"id": "3abe9747-cf56-44b9-8341-ec76e6d3d7e2",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -4120,7 +4120,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5cc77151-2652-4685-a0e3-5d50a2d22849",
+							"id": "9b92beaa-3262-4fea-be56-0826020f1272",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -4192,7 +4192,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "eb00365e-068f-4a64-b4cd-47753ca1b9aa",
+							"id": "85c334f7-3013-4817-80da-acd4cadd254b",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -4258,7 +4258,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "33c66c74-2b26-4ced-b8e8-da71f58c0e37",
+							"id": "4d517dc3-3439-43b4-889a-05b989141664",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -4330,7 +4330,7 @@
 					}
 				},
 				{
-					"id": "92d0ca99-42a3-4855-a5ef-700e91bfe444",
+					"id": "3eff4821-5df8-40fb-a1c9-16ad39126cff",
 					"name": "List the 24 solar terms - Jie Qi calendar API with exact instants",
 					"request": {
 						"name": "List the 24 solar terms - Jie Qi calendar API with exact instants",
@@ -4392,7 +4392,7 @@
 					},
 					"response": [
 						{
-							"id": "be0be68b-6dae-4ab7-85be-824f6fa45b3f",
+							"id": "7c810081-da8a-4aec-975c-b24778a51a1e",
 							"name": "The 24 solar terms of the year, in chronological order from Li Chun.",
 							"originalRequest": {
 								"url": {
@@ -4450,7 +4450,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "fd6b91dc-7099-46ac-bbe4-a85baeeb8e6d",
+							"id": "87b43ba8-0e24-4ee6-9530-12f8a47c63d0",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -4503,12 +4503,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 650.68874319263,\n      \"maximum\": 9606.54893811401,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2147.3108728163315,\n      \"maximum\": 6832.698422740901,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3415.814099491864,\n      \"maximum\": 2810.4862639774065,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4408.075580818555,\n      \"maximum\": 2748.4578817253105,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "17c84857-9e48-4d62-b92b-eddbba7ddd69",
+							"id": "8bfedf31-984a-47f5-a8dc-601d29ee3021",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -4566,7 +4566,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0ead2d95-c501-4747-b556-e0e2a058a6f6",
+							"id": "bf7e7380-3f7c-47d4-8428-f0cd4f15ee95",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -4630,7 +4630,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0e481445-8b74-4155-b99c-08e463b3ea20",
+							"id": "39c14049-9e3a-488b-a2cd-c7820453398e",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -4688,7 +4688,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "cea4f640-12d8-4e24-a1a2-4b6d5de4aad1",
+							"id": "56eb6bb7-c1c8-47ea-b75c-e5bf236038e7",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -4752,7 +4752,7 @@
 					}
 				},
 				{
-					"id": "1a4874f2-e7cd-4540-9569-a1c803819ff2",
+					"id": "a02c1f5f-fce0-4e38-afdf-0ecbe08323b5",
 					"name": "Convert lunar and Gregorian dates - Chinese lunisolar calendar API",
 					"request": {
 						"name": "Convert lunar and Gregorian dates - Chinese lunisolar calendar API",
@@ -4818,7 +4818,7 @@
 					},
 					"response": [
 						{
-							"id": "c4f8517f-e751-4549-bb68-8bbc591201ba",
+							"id": "b9e583e4-3390-4b9e-ac4e-a63677d28215",
 							"name": "The converted date, in both calendars.",
 							"originalRequest": {
 								"url": {
@@ -4875,7 +4875,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "0db3ebfa-58c1-475d-aadd-5ab3c7a5477c",
+							"id": "0bb2952d-95ed-43d5-8dd9-7a6357952791",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -4927,12 +4927,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 650.68874319263,\n      \"maximum\": 9606.54893811401,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2147.3108728163315,\n      \"maximum\": 6832.698422740901,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3415.814099491864,\n      \"maximum\": 2810.4862639774065,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4408.075580818555,\n      \"maximum\": 2748.4578817253105,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "f192d860-a681-4992-a4d2-e6d541300eb2",
+							"id": "f7f2f77a-b34f-48c4-b735-b903314b827a",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -4989,7 +4989,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7d667b18-0e17-4aef-a971-ae1f45f69d5f",
+							"id": "36d3c2da-094f-49f3-bbca-346c94ad1301",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -5052,7 +5052,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b5a788a9-3d56-4588-81eb-a4c3de1e0390",
+							"id": "976e09e6-0c4d-46fd-8c78-be55c72acd11",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -5109,7 +5109,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "03073533-8ee8-4515-b288-5d2a90dcfe51",
+							"id": "f45992a1-d9d6-44f0-b2ec-c825c560efb3",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -5172,7 +5172,7 @@
 					}
 				},
 				{
-					"id": "a8cb210f-3d94-41fa-9663-70afd5220d20",
+					"id": "ca97ba61-7adb-4f1f-9ea7-a8bcde5e214c",
 					"name": "Get the almanac for a day - Tong Shu API with day officers and mansions",
 					"request": {
 						"name": "Get the almanac for a day - Tong Shu API with day officers and mansions",
@@ -5234,7 +5234,7 @@
 					},
 					"response": [
 						{
-							"id": "b9d8fc7a-d67f-4f43-a572-460e387e5944",
+							"id": "092ad63f-3c27-4a61-9e81-5d6b25011583",
 							"name": "The almanac reading for the day.",
 							"originalRequest": {
 								"url": {
@@ -5292,7 +5292,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "6f125ef8-fbb8-42e6-be07-81a1544ae0c7",
+							"id": "6b73387a-753d-4211-a240-34c9c481fa12",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -5345,12 +5345,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 650.68874319263,\n      \"maximum\": 9606.54893811401,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2147.3108728163315,\n      \"maximum\": 6832.698422740901,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3415.814099491864,\n      \"maximum\": 2810.4862639774065,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4408.075580818555,\n      \"maximum\": 2748.4578817253105,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "050132e2-f47c-4adc-aa79-b18a2d34dd39",
+							"id": "ec3d57f6-e872-4532-b390-23a46332c1f2",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -5408,7 +5408,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "01994407-1398-4464-a2d3-cf5aaed4ec12",
+							"id": "05b936c4-575b-427b-acc6-8a39f7b7b95e",
 							"name": "The date is outside the supported range.",
 							"originalRequest": {
 								"url": {
@@ -5466,7 +5466,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "cd8854e6-a5be-4bed-9cf7-25f16456a73d",
+							"id": "98e46729-fc22-4952-ba6b-67ab4448f959",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -5530,7 +5530,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5d4e8e96-91c5-463b-b811-78aa501e8b19",
+							"id": "b3d416c6-0f20-4141-a1f6-6d3ff11be5b2",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -5588,7 +5588,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "3f6d816d-9f4f-4fcf-b460-a2b026f8efbf",
+							"id": "d84fcf31-9c61-41d2-b9ac-376bdb9c139f",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -5652,7 +5652,7 @@
 					}
 				},
 				{
-					"id": "ed07ac44-71d0-494a-9d4f-748d292d51e2",
+					"id": "ea45162e-b961-41f0-b130-a61bf26a28f6",
 					"name": "Get a month of almanac days - Chinese calendar month view API",
 					"request": {
 						"name": "Get a month of almanac days - Chinese calendar month view API",
@@ -5717,7 +5717,7 @@
 					},
 					"response": [
 						{
-							"id": "68dba270-31a1-4b8b-841e-0abd2962c8ce",
+							"id": "8829ef59-1ba6-4449-a3f6-1f46cdae2e23",
 							"name": "Every day of the month, with the solar terms it contains.",
 							"originalRequest": {
 								"url": {
@@ -5774,7 +5774,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "036bcf42-277a-406d-aaaf-6ab40e8b9f8b",
+							"id": "a389b143-c5c6-4283-8231-669a875a54d9",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -5826,12 +5826,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 650.68874319263,\n      \"maximum\": 9606.54893811401,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2147.3108728163315,\n      \"maximum\": 6832.698422740901,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3415.814099491864,\n      \"maximum\": 2810.4862639774065,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4408.075580818555,\n      \"maximum\": 2748.4578817253105,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7ca94417-2b87-478d-8880-d90faa422c7e",
+							"id": "a5a4ebae-407d-4bb9-8fd2-7d990dde53a9",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -5888,7 +5888,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "ed4b6c23-f401-4471-80be-30b021eed43a",
+							"id": "a91bd1b0-7fc0-4f92-848e-2368250f5122",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -5951,7 +5951,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "692dc0d3-e498-4668-b5b2-afe569bce86f",
+							"id": "ec101693-db93-401e-a430-0790dc388233",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -6008,7 +6008,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "d5096572-cf29-475c-87bc-62a6dfa952b7",
+							"id": "fb99c7e9-de97-4aff-8e3a-e2643f4ab41b",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -6071,7 +6071,7 @@
 					}
 				},
 				{
-					"id": "dfbb54aa-7e03-41ee-8e73-42a312c2123c",
+					"id": "85f250fe-6e1f-456d-a650-6521d9a96e9b",
 					"name": "Find auspicious days - Chinese date selection API for weddings and openings",
 					"request": {
 						"name": "Find auspicious days - Chinese date selection API for weddings and openings",
@@ -6137,7 +6137,7 @@
 					},
 					"response": [
 						{
-							"id": "ea0a9ea1-7ef9-4415-b6e9-47f83fe0b2b9",
+							"id": "12997dbd-e56a-4cc7-93eb-1871f5f4ae8a",
 							"name": "The favoured days inside the range.",
 							"originalRequest": {
 								"url": {
@@ -6194,7 +6194,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "471efd5d-67f2-4cdf-8281-2caed0bee48d",
+							"id": "9be530ae-b6cf-4496-9915-f4ccf8862b12",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -6246,12 +6246,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 650.68874319263,\n      \"maximum\": 9606.54893811401,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2147.3108728163315,\n      \"maximum\": 6832.698422740901,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3415.814099491864,\n      \"maximum\": 2810.4862639774065,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4408.075580818555,\n      \"maximum\": 2748.4578817253105,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "5937d59e-81f1-477a-8f98-f2b309df555a",
+							"id": "cdcb7471-bca2-4e4c-8231-d9c92a86dd65",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -6308,7 +6308,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "91fbebba-3049-4dcd-9ac0-022c2bbe7a23",
+							"id": "f04e4482-5841-45ef-a9da-694f3533b853",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -6371,7 +6371,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "9d0d20f1-09f3-4070-b0ad-5483a736b322",
+							"id": "eb03a682-04cf-46f6-a331-d4cb1ca0d90d",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -6428,7 +6428,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "b5ceef63-c339-4e9a-b2c1-f0892f02f61e",
+							"id": "f9f81ec7-829a-467d-b575-b28346470446",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -6491,7 +6491,7 @@
 					}
 				},
 				{
-					"id": "7e294cad-5cdf-4eda-aeb3-7c6a2c60e783",
+					"id": "1be4a33d-f9cb-4830-94fd-e85f217012b1",
 					"name": "List the five elements - Wu Xing API with generating and controlling cycles",
 					"request": {
 						"name": "List the five elements - Wu Xing API with generating and controlling cycles",
@@ -6555,7 +6555,7 @@
 					},
 					"response": [
 						{
-							"id": "a8d00ee6-2682-40dd-9152-29f57dd2ed2c",
+							"id": "6b07f764-859b-409b-9562-3185e674447a",
 							"name": "The five phases with both cycles.",
 							"originalRequest": {
 								"url": {
@@ -6611,7 +6611,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "e422b728-526d-4548-86ea-e1d69a4b4df2",
+							"id": "4fa46e3a-fd38-4f71-9dfd-de7f2dfd8a10",
 							"name": "Validation error. `issues[]` lists every failed field.",
 							"originalRequest": {
 								"url": {
@@ -6662,12 +6662,12 @@
 									"value": "application/json"
 								}
 							],
-							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 650.68874319263,\n      \"maximum\": 9606.54893811401,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 2147.3108728163315,\n      \"maximum\": 6832.698422740901,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
+							"body": "{\n  \"error\": \"string\",\n  \"code\": \"validation_error\",\n  \"doc_url\": \"string\",\n  \"issues\": [\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 3415.814099491864,\n      \"maximum\": 2810.4862639774065,\n      \"inclusive\": false,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    },\n    {\n      \"path\": \"string\",\n      \"message\": \"string\",\n      \"code\": \"string\",\n      \"expected\": \"string\",\n      \"minimum\": 4408.075580818555,\n      \"maximum\": 2748.4578817253105,\n      \"inclusive\": true,\n      \"format\": \"string\",\n      \"pattern\": \"string\"\n    }\n  ]\n}",
 							"cookie": [],
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "50ed5690-e658-408a-9603-6f43e1aa7c17",
+							"id": "8ac33588-9150-4d76-9452-642e848c3207",
 							"name": "Invalid or missing API key",
 							"originalRequest": {
 								"url": {
@@ -6723,7 +6723,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "78074354-593d-460a-9c64-5ba1c7e66752",
+							"id": "f22796cb-e771-449f-94ba-7ac52071c9ea",
 							"name": "Method not allowed. The path exists but only responds to the methods listed in `allow[]` and the `Allow` response header.",
 							"originalRequest": {
 								"url": {
@@ -6785,7 +6785,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "7742f121-9468-4328-8cb8-9b4909cee216",
+							"id": "e5e7b137-608e-45df-afaf-934699438b4b",
 							"name": "Monthly rate limit exceeded",
 							"originalRequest": {
 								"url": {
@@ -6841,7 +6841,7 @@
 							"_postman_previewlanguage": "json"
 						},
 						{
-							"id": "468542f2-3ec0-498e-89c7-ed05dfa2f747",
+							"id": "b322c1dd-8397-4098-9d98-1a7ec8dcf83f",
 							"name": "Internal server error",
 							"originalRequest": {
 								"url": {
@@ -6942,11 +6942,11 @@
 		]
 	},
 	"info": {
-		"_postman_id": "ee1ed328-1b53-4ffa-b873-f210a05c40fa",
+		"_postman_id": "0252ec6d-fc3e-4971-a32b-459f3dba7302",
 		"name": "Chinese Astrology API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"description": {
-			"content": "Chinese zodiac and BaZi astrology API: Four Pillars charts, Chinese zodiac signs and the Chinese lunisolar calendar from any birth moment: year, month, day and hour pillars with hidden stems, Na Yin and Ten God relations, luck pillars, day master strength, and animal compatibility. The school splits that make two calculators disagree are typed parameters rather than hidden defaults, and every chart echoes the conventions it was computed under. Solar terms come back as astronomical instants, lunar dates convert in both directions with leap months placed correctly, and the Tong Shu almanac covers day officers, lunar mansions and date selection. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: AI-Native Insight Infrastructure\n\n> **Base URL:** `https://roxyapi.com/api/v2`\n> All endpoint paths below are relative to this base URL.\n\nThe only multi-domain spiritual intelligence API. 18 domains (Astrology, Vedic Astrology, Forecast, Human Design, Chinese Astrology, Feng Shui, Mesoamerican Astrology, Vastu Shastra, Numerology, Kabbalah, Tarot Reading, Biorhythm, Ayurveda, I-Ching Oracle, Crystals and Healing Stones, Dream Interpretation, Angel Numbers, Location and Timezone), 261+ endpoints, one API key, instant activation. Remote MCP server per domain plus AGENTS.md for AI coding agents.\n\n## Who uses RoxyAPI\n\n- **Developers** building astrology apps, tarot platforms, numerology calculators, or dream journals\n- **AI agent builders** connecting Claude, GPT, or Gemini to real calculation engines via MCP\n- **Vibe coders** shipping insight apps with Cursor, Bolt, or Replit using zero domain knowledge\n- **Founders and brands** launching branded spiritual experiences for their audience\n\n## Quick start (60 seconds)\n\n**1. Get your API key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). Instant delivery, no account required.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/tarot/draw -X POST -H \"Content-Type: application/json\" -d '{\"count\": 3}'\n```\n\n**3. Monitor usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agent integration (Remote MCP)\n\nRoxyAPI ships a Remote MCP server per product over Streamable HTTP, with no local setup and no Docker. Your AI agent auto-discovers all 261+ endpoints as callable tools with zero configuration:\n- **Claude Desktop, Cursor, Windsurf**: Add MCP server URL in settings\n- **OpenAI Agents, Gemini ADK**: Connect via Streamable HTTP transport\n- **Custom agents**: Use the MCP Python/TypeScript SDK\n\nMCP endpoints: `https://roxyapi.com/mcp/{domain}` (e.g., `/mcp/astrology`, `/mcp/tarot`)\n\nSetup guide: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp)\n\n## Authentication\n\nAll endpoints require an API key via header or query param:\n- **Header (recommended):** `X-API-Key: YOUR_KEY`\n- **Query param (testing):** `?api_key=YOUR_KEY`\n\n## Response format\n\nClean JSON, no wrapper objects. Errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`. The `error` field is human-readable (may change wording). The `code` field is machine-readable and stable, so it is the one safe to switch on programmatically.\n\nRate limit headers on every response: `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used`, `X-RateLimit-Reset` (Unix timestamp, seconds). Quotas reset on the 1st of every calendar month at 12:00 AM UTC, not on your renewal date.\n\n## Errors\n\nAll errors return `{ \"error\": \"message\", \"code\": \"error_code\" }`:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | `validation_error` | Missing or invalid parameters. Response includes `issues[]` with per-field `path`, `message`, `code`, `expected`, `minimum`, `maximum`, `format`, `pattern`. |\n| 401 | `api_key_required` | No API key provided |\n| 401 | `invalid_api_key` | Key format invalid or tampered |\n| 401 | `subscription_not_found` | Key references non-existent subscription |\n| 401 | `subscription_inactive` | Subscription cancelled, expired, or suspended |\n| 404 | `not_found` | Resource not found. Response may include a ranked `suggestions[]` array (each with `endpoint`, `hint`, and a `docs` deep link) for typo recovery. |\n| 405 | `method_not_allowed` | Path exists for a different HTTP method. Response includes `allow[]` and the `Allow` header lists valid methods. |\n| 429 | `rate_limit_exceeded` | Monthly quota reached |\n| 500 | `internal_error` | Server error |\n\n## Pricing\n\nFlat per-request pricing. Every call counts the same, whether a planet position or a full birth chart with aspects. No credit systems, no variable costs. Plans from $39 per month for 50K requests, up to 3M requests, with custom volume above that.\n\nSee [roxyapi.com/pricing](https://roxyapi.com/pricing)\n\n## Resources\n\n- [Quickstart guide](https://roxyapi.com/docs/quickstart): first API call in 60 seconds\n- [Documentation](https://roxyapi.com/docs): guides, tutorials, domain reference\n- [MCP setup](https://roxyapi.com/docs/mcp): connect AI agents\n- [Open source templates](https://roxyapi.com/templates): clone and deploy in 30 minutes\n- [FAQ](https://roxyapi.com/faq): common questions\n- [Contact](https://roxyapi.com/contact): support and API key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
+			"content": "Chinese zodiac and BaZi astrology API: Four Pillars charts, Chinese zodiac signs and the Chinese lunisolar calendar from any birth moment: year, month, day and hour pillars with hidden stems, Na Yin and Ten God relations, luck pillars, day master strength, and animal compatibility. The school splits that make two calculators disagree are typed parameters rather than hidden defaults, and every chart echoes the conventions it was computed under. Solar terms come back as astronomical instants, lunar dates convert in both directions with leap months placed correctly, and the Tong Shu almanac covers day officers, lunar mansions and date selection. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: the Spiritual OS layer for agentic AI\n\n> **Base URL:** `https://roxyapi.com/api/v2`. Every path below is relative to it.\n\nOne API key for 18 insight domains (Astrology, Vedic Astrology, Forecast, Human Design, Chinese Astrology, Feng Shui, Mesoamerican Astrology, Vastu Shastra, Numerology, Kabbalah, Tarot Reading, Biorhythm, Ayurveda, I-Ching Oracle, Crystals and Healing Stones, Dream Interpretation, Angel Numbers, Location and Timezone), 261+ endpoints, planetary positions verified against NASA JPL Horizons and the calculations held by 2,961 gold standard tests. Readings come back as structured data with editorial interpretation text, translated into 10+ languages via `?lang=` on translated endpoints. Remote MCP servers, typed SDKs for TypeScript, Python, PHP, C#, and Go, drop-in UI components and copy-paste widgets, and open source Templates all run on this one document.\n\n## Who builds on RoxyAPI\n\n- **Developers** shipping astrology, tarot, numerology and wellness apps without learning each system first\n- **AI agent builders** giving Claude, GPT or Gemini real calculations instead of guesses, over Remote MCP\n- **Vibe coders** building with Cursor, Claude Code, Bolt or Replit from the spec and AGENTS.md\n- **Founders and brands** launching insight products for their audience in days instead of months\n\n## Quick start\n\n**1. Get a key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). It is ready the moment payment clears.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/astrology/horoscope/aries/daily\n```\n\n**3. Check your usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agents: Remote MCP\n\nEvery domain has its own Remote MCP server over Streamable HTTP at `https://roxyapi.com/mcp/{domain}` (for example `/mcp/astrology`), 258+ tools in all, with nothing to install or host. Add the URL to Claude, Cursor, VS Code, ChatGPT or any MCP client, or connect from the OpenAI Agents SDK and Gemini ADK. Coding agents that build against this API use the documentation server at `/mcp/docs`. Setup for every client: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp).\n\n## Authentication\n\nSend your key as `X-API-Key: YOUR_KEY` (recommended), as `Authorization: Bearer YOUR_KEY`, or as the `?api_key=` query parameter for quick tests. Keep secret keys on a server; publishable keys are for the browser.\n\n## Responses and limits\n\nClean JSON with no wrapper. An error returns `{ \"error\", \"code\", \"doc_url\" }`: `error` is readable and may change wording, `code` is stable and the one to switch on, and `doc_url` links to the fix for that exact code.\n\nEvery response carries `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used` and `X-RateLimit-Reset` for your monthly allowance, which resets on the 1st of each month at 00:00 UTC. Each plan also has a per-minute limit for bursts, from 600 requests per minute on Starter; going over it answers `429` with a `Retry-After` and never counts against the month.\n\n## Errors\n\nEvery code the API returns, also published machine-readably as `x-error-codes` on the `info` object of this document:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | [`validation_error`](https://roxyapi.com/docs/errors#validation_error) | A field is missing or invalid. The body lists every failing field at once in issues, each with its path and the expected shape. |\n| 400 | [`bad_request`](https://roxyapi.com/docs/errors#bad_request) | The request was rejected as a whole, for example a body that is not valid JSON or a date range that ends before it starts. |\n| 401 | [`api_key_required`](https://roxyapi.com/docs/errors#api_key_required) | No API key was sent. |\n| 401 | [`invalid_api_key`](https://roxyapi.com/docs/errors#invalid_api_key) | The key sent is malformed or cannot be verified. |\n| 401 | [`api_key_revoked`](https://roxyapi.com/docs/errors#api_key_revoked) | The key was valid once and has since been revoked from the account page. |\n| 401 | [`subscription_not_found`](https://roxyapi.com/docs/errors#subscription_not_found) | The key verifies, but the subscription behind it no longer exists. |\n| 401 | [`subscription_inactive`](https://roxyapi.com/docs/errors#subscription_inactive) | The subscription behind the key is cancelled, expired or suspended, or a trial is past its end date. |\n| 401 | [`publishable_key_not_allowed_on_mcp`](https://roxyapi.com/docs/errors#publishable_key_not_allowed_on_mcp) | A publishable key was used on a Remote MCP server, which takes a secret key. |\n| 401 | [`invalid_client_ip`](https://roxyapi.com/docs/errors#invalid_client_ip) | A keyless request could not be attributed to a caller. |\n| 401 | [`unauthorized`](https://roxyapi.com/docs/errors#unauthorized) | Authentication failed with no more specific reason to give. |\n| 403 | [`forbidden`](https://roxyapi.com/docs/errors#forbidden) | The key is valid, but this request is not permitted. |\n| 403 | [`origin_required`](https://roxyapi.com/docs/errors#origin_required) | A publishable key with an origin allowlist was used with no Origin header, as from a server or a native app. |\n| 403 | [`origin_not_allowed`](https://roxyapi.com/docs/errors#origin_not_allowed) | The calling site is not on the origin allowlist of this publishable key. |\n| 404 | [`not_found`](https://roxyapi.com/docs/errors#not_found) | Nothing is served at this path, or the identifier in it does not exist. A path miss adds suggestions, the closest real endpoints. |\n| 405 | [`method_not_allowed`](https://roxyapi.com/docs/errors#method_not_allowed) | The path exists for a different HTTP method. The body lists the accepted methods in allow, as does the Allow header. |\n| 409 | [`conflict`](https://roxyapi.com/docs/errors#conflict) | The request cannot be applied in the current state. |\n| 410 | [`gone`](https://roxyapi.com/docs/errors#gone) | The path was removed permanently. |\n| 413 | [`payload_too_large`](https://roxyapi.com/docs/errors#payload_too_large) | The request body is larger than the API accepts. |\n| 415 | [`unsupported_media_type`](https://roxyapi.com/docs/errors#unsupported_media_type) | A request with a body was sent without Content-Type: application/json. |\n| 422 | [`unprocessable_entity`](https://roxyapi.com/docs/errors#unprocessable_entity) | Every field is valid, but the combination cannot be computed. |\n| 429 | [`rate_limit_exceeded`](https://roxyapi.com/docs/errors#rate_limit_exceeded) | The monthly request allowance is used up. Retry-After gives the seconds to the reset. |\n| 429 | [`rate_limit_per_minute`](https://roxyapi.com/docs/errors#rate_limit_per_minute) | The per-minute limit of the plan was reached. Retry-After gives the seconds to the next minute, and the monthly allowance is not charged. |\n| 429 | [`rate_limited`](https://roxyapi.com/docs/errors#rate_limited) | A rate limit was reached, reported without the plan detail. |\n| 429 | [`free_tier_exhausted`](https://roxyapi.com/docs/errors#free_tier_exhausted) | A keyless request has used up its trial allowance. |\n| 500 | [`internal_error`](https://roxyapi.com/docs/errors#internal_error) | The request failed inside our service. Retry with exponential backoff. |\n| 503 | [`compute_saturated`](https://roxyapi.com/docs/errors#compute_saturated) | Heavy calculations are briefly at capacity. Send the same request again after Retry-After seconds. |\n| Any | [`error`](https://roxyapi.com/docs/errors#error) | A fallback for a status with no more specific code. The status and the error field carry the signal. |\n\n## Pricing\n\nOne flat subscription covers every domain, every endpoint, Remote MCP, the SDKs, UI components, widgets and every language. Every call counts the same, a planet position or a full birth chart, with no credits and no per-product fees. From $39 per month for 50K requests, up to 3M requests, with custom volume above that: [roxyapi.com/pricing](https://roxyapi.com/pricing).\n\n## Resources\n\n- [Quickstart](https://roxyapi.com/docs/quickstart): the first call in 60 seconds\n- [Documentation](https://roxyapi.com/docs): guides, tutorials and a reference per domain\n- [Remote MCP](https://roxyapi.com/docs/mcp): connect an AI agent\n- [SDKs](https://roxyapi.com/docs/sdk) and [UI components](https://roxyapi.com/ui)\n- [Templates](https://roxyapi.com/templates): open source apps to clone and deploy\n- [Methodology](https://roxyapi.com/methodology): how accuracy is verified\n- [Contact](https://roxyapi.com/contact): support and key recovery\n\n\nContact Support:\n Name: RoxyAPI Support",
 			"type": "text/plain"
 		}
 	}
