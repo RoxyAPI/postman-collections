@@ -2031,7 +2031,12 @@
 												"No",
 												"Maybe"
 											],
-											"description": "Tarot-derived answer. Yes = upright card supports a positive outcome. No = reversed card suggests obstacles. Maybe = inherently ambiguous card drawn (The Hanged Man, Wheel of Fortune, Temperance, Two of Swords, Four of Swords) signaling pause, reflection, or shifting circumstances."
+											"description": "Tarot-derived answer. Yes = upright card supports a positive outcome. No = reversed card suggests obstacles. Maybe = inherently ambiguous card drawn (The Hanged Man, Wheel of Fortune, Temperance, Two of Swords, Four of Swords) signaling pause, reflection, or shifting circumstances. Always English, whatever the lang parameter says, so it stays safe to compare against in code. Use answerLocalized for anything a reader sees."
+										},
+										"answerLocalized": {
+											"type": "string",
+											"example": "Sí",
+											"description": "Answer in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
 										},
 										"strength": {
 											"type": "string",
@@ -2039,7 +2044,12 @@
 												"Strong",
 												"Qualified"
 											],
-											"description": "Confidence level of the answer. Strong = Major Arcana card drawn (powerful, definitive cosmic energy). Qualified = Minor Arcana card drawn (nuanced, situational guidance)."
+											"description": "Confidence level of the answer. Strong = Major Arcana card drawn (powerful, definitive cosmic energy). Qualified = Minor Arcana card drawn (nuanced, situational guidance). Always English, whatever the lang parameter says. Use strengthLocalized for anything a reader sees."
+										},
+										"strengthLocalized": {
+											"type": "string",
+											"example": "Fuerte",
+											"description": "Answer strength in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
 										},
 										"card": {
 											"type": "object",
