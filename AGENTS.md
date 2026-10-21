@@ -43,7 +43,7 @@ Add `?lang=` to any request. Supported: `en`, `tr`, `de`, `es`, `hi`, `pt`, `fr`
 
 ## Errors
 
-Success returns the data directly. Failures return `{ "error": "...", "code": "..." }` with an HTTP status. There is no success wrapper.
+Success returns the data directly. Failures return `{ "error": "...", "code": "...", "doc_url": "..." }` with an HTTP status: switch on `code`, follow `doc_url` for the fix, and honour `Retry-After` when the response sends it. There is no success wrapper. Every code: https://roxyapi.com/docs/errors.
 
 ## Using these collections
 
