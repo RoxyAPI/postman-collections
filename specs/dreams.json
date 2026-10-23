@@ -1480,7 +1480,7 @@
 									"seed": {
 										"type": "string",
 										"example": "user123",
-										"description": "Optional seed for reproducible readings. Same seed + same date = same symbol every time. Pass any unique identifier (userId, email hash, session token). Omit for anonymous daily readings."
+										"description": "Optional seed for reproducible readings. Same seed + same date = same symbol every time. Pass any unique identifier (userId, email hash, session token) to give each user their own symbol for the day. Without a seed every caller receives the same shared symbol of the day."
 									},
 									"date": {
 										"type": "string",

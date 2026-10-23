@@ -3023,6 +3023,28 @@
 		"/maturity": {
 			"post": {
 				"operationId": "calculateMaturity",
+				"x-required-any-of": [
+					[
+						"fullName",
+						"year",
+						"month",
+						"day"
+					],
+					[
+						"lifePath",
+						"expression"
+					],
+					[
+						"lifePath",
+						"fullName"
+					],
+					[
+						"expression",
+						"year",
+						"month",
+						"day"
+					]
+				],
 				"tags": [
 					"Numerology"
 				],
@@ -8266,7 +8288,7 @@
 									"seed": {
 										"type": "string",
 										"example": "user123",
-										"description": "Optional seed for reproducible readings. Same seed + same date = same number every time. Pass any unique identifier (userId, email hash, session token). Omit for anonymous daily readings."
+										"description": "Optional seed for reproducible readings. Same seed + same date = same number every time. Pass any unique identifier (userId, email hash, session token) to give each user their own number for the day. Without a seed every caller receives the same shared number of the day."
 									},
 									"date": {
 										"type": "string",

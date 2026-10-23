@@ -1179,6 +1179,15 @@
 		"/eight-mansions": {
 			"post": {
 				"operationId": "generateEightMansions",
+				"x-required-any-of": [
+					[
+						"date",
+						"gender"
+					],
+					[
+						"kua"
+					]
+				],
 				"tags": [
 					"Feng Shui"
 				],
@@ -1814,6 +1823,14 @@
 		"/flying-stars/natal": {
 			"post": {
 				"operationId": "generateFlyingStarChart",
+				"x-required-any-of": [
+					[
+						"facingDegrees"
+					],
+					[
+						"facing"
+					]
+				],
 				"tags": [
 					"Feng Shui"
 				],

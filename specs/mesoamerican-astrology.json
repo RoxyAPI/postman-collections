@@ -1356,6 +1356,14 @@
 		"/mayan/long-count/convert": {
 			"post": {
 				"operationId": "convertLongCount",
+				"x-required-any-of": [
+					[
+						"date"
+					],
+					[
+						"longCount"
+					]
+				],
 				"tags": [
 					"Mesoamerican Astrology"
 				],

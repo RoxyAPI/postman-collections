@@ -192,6 +192,14 @@
 		"/gematria": {
 			"post": {
 				"operationId": "calculateGematria",
+				"x-required-any-of": [
+					[
+						"text"
+					],
+					[
+						"textHebrew"
+					]
+				],
 				"tags": [
 					"Kabbalah"
 				],
@@ -1442,6 +1450,14 @@
 		"/name-profile": {
 			"post": {
 				"operationId": "generateNameProfile",
+				"x-required-any-of": [
+					[
+						"name"
+					],
+					[
+						"nameHebrew"
+					]
+				],
 				"tags": [
 					"Kabbalah"
 				],
@@ -5691,6 +5707,24 @@
 		"/compatibility": {
 			"post": {
 				"operationId": "calculateNameCompatibility",
+				"x-required-any-of": [
+					[
+						"firstName",
+						"secondName"
+					],
+					[
+						"firstName",
+						"secondNameHebrew"
+					],
+					[
+						"firstNameHebrew",
+						"secondName"
+					],
+					[
+						"firstNameHebrew",
+						"secondNameHebrew"
+					]
+				],
 				"tags": [
 					"Kabbalah"
 				],
