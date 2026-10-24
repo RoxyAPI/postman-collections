@@ -303,6 +303,15 @@
 												"description": "Unit the plot dimensions are given in. Every distance the response returns is in this same unit. The mandala projection is scale free, so this affects the areas and the marma size and nothing else."
 											}
 										},
+										"x-required-any-of": [
+											[
+												"width",
+												"depth"
+											],
+											[
+												"polygon"
+											]
+										],
 										"example": {
 											"width": 30,
 											"depth": 40,
@@ -372,6 +381,24 @@
 								},
 								"required": [
 									"plot"
+								],
+								"x-required-any-of": [
+									[
+										"facing",
+										"doorPosition"
+									],
+									[
+										"facing",
+										"door"
+									],
+									[
+										"facingDegrees",
+										"doorPosition"
+									],
+									[
+										"facingDegrees",
+										"door"
+									]
 								],
 								"example": {
 									"plot": {
@@ -926,6 +953,15 @@
 												"description": "Unit the plot dimensions are given in. Every distance the response returns is in this same unit. The mandala projection is scale free, so this affects the areas and the marma size and nothing else."
 											}
 										},
+										"x-required-any-of": [
+											[
+												"width",
+												"depth"
+											],
+											[
+												"polygon"
+											]
+										],
 										"example": {
 											"width": 30,
 											"depth": 40,
@@ -1692,6 +1728,15 @@
 												"description": "Unit the plot dimensions are given in. Every distance the response returns is in this same unit. The mandala projection is scale free, so this affects the areas and the marma size and nothing else."
 											}
 										},
+										"x-required-any-of": [
+											[
+												"width",
+												"depth"
+											],
+											[
+												"polygon"
+											]
+										],
 										"example": {
 											"width": 30,
 											"depth": 40,
@@ -1821,6 +1866,14 @@
 								},
 								"required": [
 									"plot"
+								],
+								"x-required-any-of": [
+									[
+										"facing"
+									],
+									[
+										"facingDegrees"
+									]
 								],
 								"example": {
 									"plot": {
@@ -3466,6 +3519,15 @@
 												"description": "Unit the plot dimensions are given in. Every distance the response returns is in this same unit. The mandala projection is scale free, so this affects the areas and the marma size and nothing else."
 											}
 										},
+										"x-required-any-of": [
+											[
+												"width",
+												"depth"
+											],
+											[
+												"polygon"
+											]
+										],
 										"example": {
 											"width": 30,
 											"depth": 40,
@@ -3580,6 +3642,14 @@
 											},
 											"required": [
 												"type"
+											],
+											"x-required-any-of": [
+												[
+													"direction"
+												],
+												[
+													"polygon"
+												]
 											]
 										},
 										"minItems": 1,
@@ -3590,6 +3660,14 @@
 								"required": [
 									"plot",
 									"rooms"
+								],
+								"x-required-any-of": [
+									[
+										"facing"
+									],
+									[
+										"facingDegrees"
+									]
 								],
 								"example": {
 									"plot": {

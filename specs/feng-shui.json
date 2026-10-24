@@ -1179,15 +1179,6 @@
 		"/eight-mansions": {
 			"post": {
 				"operationId": "generateEightMansions",
-				"x-required-any-of": [
-					[
-						"date",
-						"gender"
-					],
-					[
-						"kua"
-					]
-				],
 				"tags": [
 					"Feng Shui"
 				],
@@ -1278,6 +1269,15 @@
 										"description": "Optional compass sector the main door faces, one of North, Northeast, East, Southeast, South, Southwest, West, Northwest. When sent, the response names the star sitting on that sector so a caller can judge an entrance without scanning the whole map."
 									}
 								},
+								"x-required-any-of": [
+									[
+										"date",
+										"gender"
+									],
+									[
+										"kua"
+									]
+								],
 								"description": "Send either a kua number, or a date and gender to derive one. Sending neither is a 400."
 							}
 						}
@@ -1823,14 +1823,6 @@
 		"/flying-stars/natal": {
 			"post": {
 				"operationId": "generateFlyingStarChart",
-				"x-required-any-of": [
-					[
-						"facingDegrees"
-					],
-					[
-						"facing"
-					]
-				],
 				"tags": [
 					"Feng Shui"
 				],
@@ -1945,7 +1937,15 @@
 										"example": 180,
 										"description": "The compass bearing the front of the building faces, 0 to 360 degrees, measured looking out from inside. Resolved to one of the 24 mountains. Send this or facing, not neither."
 									}
-								}
+								},
+								"x-required-any-of": [
+									[
+										"facingDegrees"
+									],
+									[
+										"facing"
+									]
+								]
 							}
 						}
 					}

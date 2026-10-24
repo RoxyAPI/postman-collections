@@ -192,14 +192,6 @@
 		"/gematria": {
 			"post": {
 				"operationId": "calculateGematria",
-				"x-required-any-of": [
-					[
-						"text"
-					],
-					[
-						"textHebrew"
-					]
-				],
 				"tags": [
 					"Kabbalah"
 				],
@@ -324,6 +316,14 @@
 										"description": "Whether to also score the Latin text with the three Latin alphabet ciphers. They are Renaissance Christian and modern in lineage rather than rabbinic, and the response labels each one. Ignored when textHebrew was sent."
 									}
 								},
+								"x-required-any-of": [
+									[
+										"text"
+									],
+									[
+										"textHebrew"
+									]
+								],
 								"example": {
 									"text": "Sarah",
 									"ciphers": [
@@ -1450,14 +1450,6 @@
 		"/name-profile": {
 			"post": {
 				"operationId": "generateNameProfile",
-				"x-required-any-of": [
-					[
-						"name"
-					],
-					[
-						"nameHebrew"
-					]
-				],
 				"tags": [
 					"Kabbalah"
 				],
@@ -1536,6 +1528,14 @@
 										"description": "Which method the name mispar gadol means, because the sources use it for two. Use finals-500-900 to score the five word final letters as 500 to 900, or milui to score each letter as the value of its own spelled out name."
 									}
 								},
+								"x-required-any-of": [
+									[
+										"name"
+									],
+									[
+										"nameHebrew"
+									]
+								],
 								"example": {
 									"name": "Sarah"
 								},
@@ -5707,24 +5707,6 @@
 		"/compatibility": {
 			"post": {
 				"operationId": "calculateNameCompatibility",
-				"x-required-any-of": [
-					[
-						"firstName",
-						"secondName"
-					],
-					[
-						"firstName",
-						"secondNameHebrew"
-					],
-					[
-						"firstNameHebrew",
-						"secondName"
-					],
-					[
-						"firstNameHebrew",
-						"secondNameHebrew"
-					]
-				],
 				"tags": [
 					"Kabbalah"
 				],
@@ -5817,6 +5799,24 @@
 										"description": "Which method the name mispar gadol means, because the sources use it for two. Use finals-500-900 to score the five word final letters as 500 to 900, or milui to score each letter as the value of its own spelled out name."
 									}
 								},
+								"x-required-any-of": [
+									[
+										"firstName",
+										"secondName"
+									],
+									[
+										"firstName",
+										"secondNameHebrew"
+									],
+									[
+										"firstNameHebrew",
+										"secondName"
+									],
+									[
+										"firstNameHebrew",
+										"secondNameHebrew"
+									]
+								],
 								"example": {
 									"firstName": "Sarah",
 									"secondName": "David"

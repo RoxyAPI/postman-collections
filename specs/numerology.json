@@ -3023,28 +3023,6 @@
 		"/maturity": {
 			"post": {
 				"operationId": "calculateMaturity",
-				"x-required-any-of": [
-					[
-						"fullName",
-						"year",
-						"month",
-						"day"
-					],
-					[
-						"lifePath",
-						"expression"
-					],
-					[
-						"lifePath",
-						"fullName"
-					],
-					[
-						"expression",
-						"year",
-						"month",
-						"day"
-					]
-				],
 				"tags": [
 					"Numerology"
 				],
@@ -3129,7 +3107,29 @@
 										"example": 15,
 										"description": "Birth day (1-31). Required with year and month for automatic Life Path calculation."
 									}
-								}
+								},
+								"x-required-any-of": [
+									[
+										"fullName",
+										"year",
+										"month",
+										"day"
+									],
+									[
+										"lifePath",
+										"expression"
+									],
+									[
+										"lifePath",
+										"fullName"
+									],
+									[
+										"expression",
+										"year",
+										"month",
+										"day"
+									]
+								]
 							}
 						}
 					}
@@ -5493,7 +5493,20 @@
 												"example": 6,
 												"description": "Person 1 Soul Urge number (1-9, 11, 22, 33). Optional if fullName is provided."
 											}
-										}
+										},
+										"x-required-any-of": [
+											[
+												"fullName",
+												"year",
+												"month",
+												"day"
+											],
+											[
+												"lifePath",
+												"expression",
+												"soulUrge"
+											]
+										]
 									},
 									"person2": {
 										"type": "object",
@@ -5547,7 +5560,20 @@
 												"example": 2,
 												"description": "Person 2 Soul Urge number (1-9, 11, 22, 33). Optional if fullName is provided."
 											}
-										}
+										},
+										"x-required-any-of": [
+											[
+												"fullName",
+												"year",
+												"month",
+												"day"
+											],
+											[
+												"lifePath",
+												"expression",
+												"soulUrge"
+											]
+										]
 									}
 								},
 								"required": [
