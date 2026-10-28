@@ -2187,7 +2187,7 @@
 							}
 						],
 						"default": 0,
-						"description": "Transit timezone: decimal hours from UTC OR IANA name (e.g. \"America/New_York\"). IANA resolved to the DST-correct offset for the transit date. Defaults to 0 (UTC).",
+						"description": "Transit timezone: decimal hours from UTC OR IANA name (e.g. \"America/New_York\"). IANA resolved to the DST-correct offset for the transit date. When `date` or `time` is omitted, the current moment is read in this zone, so `transitDate` and `transitTime` come back as its local clock. Defaults to 0 (UTC).",
 						"example": 0
 					},
 					"nodeType": {
@@ -7634,10 +7634,10 @@
 						"schema": {
 							"type": "string",
 							"example": "America/New_York",
-							"description": "IANA name (e.g. \"America/New_York\", \"Europe/London\"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. \"-05:00\"). IANA resolved to the DST-correct offset for the given date. Defaults to 0 (UTC)."
+							"description": "IANA name (e.g. \"America/New_York\", \"Europe/London\"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. \"-05:00\"). IANA resolved to the DST-correct offset for the given date. With `date` omitted, today is the date in this zone. Defaults to 0 (UTC)."
 						},
 						"required": false,
-						"description": "IANA name (e.g. \"America/New_York\", \"Europe/London\"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. \"-05:00\"). IANA resolved to the DST-correct offset for the given date. Defaults to 0 (UTC).",
+						"description": "IANA name (e.g. \"America/New_York\", \"Europe/London\"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. \"-05:00\"). IANA resolved to the DST-correct offset for the given date. With `date` omitted, today is the date in this zone. Defaults to 0 (UTC).",
 						"name": "timezone",
 						"in": "query"
 					}
