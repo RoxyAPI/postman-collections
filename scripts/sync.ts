@@ -11,7 +11,7 @@
  *  4. Publish: resolve the existing collection UID (cache, then workspace name match), then PUT it; create + capture the UID when it does not exist yet.
  *  5. Persist: write `specs/{slug}.json` (next run's diff baseline), `collections/{slug}.json` (browsable artifact), and the auto-written `collections.json` UID cache. The workflow commits these back.
  *
- * Every spec request retries a transient origin or edge failure with exponential backoff, so a brief outage delays a run rather than failing it or dropping a live domain from the catalog.
+ * Every spec request and every idempotent Postman call retries a transient origin or edge failure with exponential backoff, so a brief outage delays a run rather than failing it or dropping a live domain from the catalog. A create is sent once, so a retry never makes a duplicate collection. The workspace is listed only when a domain must be published and has no cached UID, so a day with no spec change makes no Postman call at all.
  *
  * Flags: `--dry-run` (discover, diff and build but make no Postman writes; no API key required, used by CI), `--force` (rebuild and publish every domain regardless of diff), `--prune` (delete collections for domains that no longer exist; off by default so a transient outage cannot wipe the workspace).
  */
@@ -136,22 +136,34 @@ const RETRYABLE_STATUS = new Set([
 
 const MAX_ATTEMPTS = 5;
 
-/** Fetch a spec, retrying a transient failure with exponential backoff before giving up. */
-async function fetchSpec(url: string): Promise<Response> {
-	let last: Error = new Error(`GET ${url} -> no attempt made`);
-	for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
-		if (attempt > 1) await Bun.sleep(1000 * 2 ** (attempt - 2));
+/** A request, retried on a transient failure with exponential backoff, then thrown, so a passing outage never reads as an answer; a POST is sent once, because a create that landed and lost its reply must not land twice. */
+export async function fetchRetrying(
+	url: string,
+	init: RequestInit,
+	baseDelayMs = 1000,
+): Promise<Response> {
+	const method = init.method ?? 'GET';
+	const attempts = method === 'POST' ? 1 : MAX_ATTEMPTS;
+	let last: Error = new Error(`${method} ${url} -> no attempt made`);
+	for (let attempt = 1; attempt <= attempts; attempt++) {
+		if (attempt > 1) await Bun.sleep(baseDelayMs * 2 ** (attempt - 2));
 		try {
-			const res = await fetch(url, SPEC_FETCH);
+			const res = await fetch(url, init);
 			if (!RETRYABLE_STATUS.has(res.status)) return res;
-			last = new Error(`GET ${url} -> ${res.status}`);
+			last = new Error(
+				`${method} ${url} -> ${res.status}: ${await res.text()}`,
+			);
 		} catch (err) {
 			last = err instanceof Error ? err : new Error(String(err));
 		}
-		if (attempt < MAX_ATTEMPTS)
-			console.warn(`retrying (${attempt}/${MAX_ATTEMPTS}): ${last.message}`);
+		if (attempt < attempts)
+			console.warn(`retrying (${attempt}/${attempts}): ${last.message}`);
 	}
 	throw last;
+}
+
+function fetchSpec(url: string): Promise<Response> {
+	return fetchRetrying(url, SPEC_FETCH);
 }
 
 async function fetchJson<T>(url: string): Promise<T> {
@@ -170,7 +182,7 @@ function writeJsonFile(path: string, data: unknown): Promise<number> {
 }
 
 async function postman<T>(path: string, init?: RequestInit): Promise<T> {
-	const res = await fetch(`${POSTMAN_API}${path}`, {
+	const res = await fetchRetrying(`${POSTMAN_API}${path}`, {
 		...init,
 		headers: {
 			'X-Api-Key': POSTMAN_API_KEY as string,
@@ -251,18 +263,25 @@ async function main(): Promise<void> {
 
 	const cache: Cache = (await readJsonFile<Cache>(CACHE_PATH)) ?? {};
 
-	// Resolve existing collections by name from the live workspace (source of truth for UIDs).
-	const nameToUid = new Map<string, string>();
-	if (!DRY_RUN) {
-		const { collections } = await postman<{
-			collections: { uid: string; name: string }[];
-		}>(`/collections?workspace=${WORKSPACE_ID}`);
-		for (const c of collections) {
-			if (nameToUid.has(c.name))
-				console.warn(`warn: duplicate collection name in workspace: ${c.name}`);
-			else nameToUid.set(c.name, c.uid);
+	// Existing collections by name from the live workspace, read once and only for a domain with no cached UID.
+	let workspace: Map<string, string> | undefined;
+	const workspaceUid = async (title: string): Promise<string | undefined> => {
+		if (DRY_RUN) return undefined;
+		if (!workspace) {
+			workspace = new Map();
+			const { collections } = await postman<{
+				collections: { uid: string; name: string }[];
+			}>(`/collections?workspace=${WORKSPACE_ID}`);
+			for (const c of collections) {
+				if (workspace.has(c.name))
+					console.warn(
+						`warn: duplicate collection name in workspace: ${c.name}`,
+					);
+				else workspace.set(c.name, c.uid);
+			}
 		}
-	}
+		return workspace.get(title);
+	};
 
 	const created: string[] = [];
 	const updated: string[] = [];
@@ -275,7 +294,7 @@ async function main(): Promise<void> {
 		);
 		const specChanged =
 			!baseline || fingerprint(baseline) !== fingerprint(spec);
-		const uid = cache[slug]?.uid ?? nameToUid.get(title);
+		const uid = cache[slug]?.uid ?? (await workspaceUid(title));
 		const needsBuild = FORCE || specChanged || (!DRY_RUN && !uid);
 
 		if (!needsBuild) {

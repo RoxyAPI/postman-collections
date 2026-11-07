@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { canonical, fingerprint } from './sync';
+import { canonical, fetchRetrying, fingerprint } from './sync';
 
 /** Minimal spec shape the fingerprint reads from. Extra `info` fields (version, license, contact.url) are included where a case needs them. */
 function spec(overrides: {
@@ -98,5 +98,54 @@ describe('canonical', () => {
 		const a = canonical({ b: 1, a: { d: 2, c: 3 } });
 		const b = canonical({ a: { c: 3, d: 2 }, b: 1 });
 		expect(JSON.stringify(a)).toBe(JSON.stringify(b));
+	});
+});
+
+describe('fetchRetrying', () => {
+	/** A local server that answers with each status in turn and counts the requests. */
+	function serve(statuses: number[]) {
+		let hits = 0;
+		const server = Bun.serve({
+			port: 0,
+			fetch: () => new Response('{}', { status: statuses[hits++] ?? 200 }),
+		});
+		return {
+			url: `http://localhost:${server.port}/`,
+			hits: () => hits,
+			server,
+		};
+	}
+
+	test('a transient failure is retried until the answer arrives', async () => {
+		const s = serve([500, 503]);
+		const res = await fetchRetrying(s.url, {}, 1);
+		expect(res.status).toBe(200);
+		expect(s.hits()).toBe(3);
+		s.server.stop();
+	});
+
+	test('an answer about the resource returns on the first attempt', async () => {
+		const s = serve([404]);
+		expect((await fetchRetrying(s.url, {}, 1)).status).toBe(404);
+		expect(s.hits()).toBe(1);
+		s.server.stop();
+	});
+
+	test('an outage that outlasts every attempt throws instead of reading as an answer', async () => {
+		const s = serve([500, 500, 500, 500, 500]);
+		await expect(fetchRetrying(s.url, { method: 'PUT' }, 1)).rejects.toThrow(
+			'PUT',
+		);
+		expect(s.hits()).toBe(5);
+		s.server.stop();
+	});
+
+	test('a create is sent once', async () => {
+		const s = serve([500]);
+		await expect(fetchRetrying(s.url, { method: 'POST' }, 1)).rejects.toThrow(
+			'POST',
+		);
+		expect(s.hits()).toBe(1);
+		s.server.stop();
 	});
 });
