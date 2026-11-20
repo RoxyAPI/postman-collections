@@ -3,7 +3,7 @@
 	"info": {
 		"title": "Vedic Astrology API",
 		"version": "2.0.0",
-		"description": "Vedic astrology (Jyotish) and KP API for kundli generation with the sixteen Shodasavarga divisional charts (D1 to D60), panchang with choghadiya, hora and the classical muhurta windows, kundli matching by Ashtakoot Gun Milan, the South Indian ten porutham with Rajju and Vedha vetoes and Papasamyam, Vimshottari Dasha predictions, dosha detection with remedies, a 301-entry planetary yoga glossary with 48 of them chart-detected and evidenced, and KP horary with 249-level sub-lord analysis. Calculations verified against NASA JPL Horizons at arc-second-level accuracy. Built for matrimonial apps, horoscope platforms, spiritual wellness services, and AI-powered astrology chatbots. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: the Spiritual OS layer for agentic AI\n\n> **Base URL:** `https://roxyapi.com/api/v2`. Every path below is relative to it.\n\nOne API key for 18+ insight domains (Western Astrology, Vedic Astrology, Forecast, Human Design, Chinese Astrology, Feng Shui, Mesoamerican Astrology, Vastu Shastra, Numerology, Kabbalah, Tarot Reading, Biorhythm, Ayurveda, I-Ching Oracle, Crystals and Healing Stones, Dream Interpretation, Angel Numbers, Location and Timezone), 261+ endpoints, planetary positions read directly from the NASA JPL DE440 ephemeris and verified against NASA JPL Horizons, and every calculation held by 3,683 gold standard tests. Readings come back as structured data with editorial interpretation text, translated into 10+ languages via `?lang=` on translated endpoints. Remote MCP servers, typed SDKs for TypeScript, Python, PHP, C#, Go, Rust, and Dart, drop-in UI components and copy-paste widgets, and open source Templates all run on this one document.\n\n## Who builds on RoxyAPI\n\n- **Developers** shipping astrology, tarot, numerology and wellness apps without learning each system first\n- **AI agent builders** giving Claude, GPT or Gemini real calculations instead of guesses, over Remote MCP\n- **Vibe coders** building with Cursor, Claude Code, Bolt or Replit from the spec and AGENTS.md\n- **Founders and brands** launching insight products for their audience on one key\n\n## Quick start\n\n**1. Get a key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). It is ready the moment payment clears.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/astrology/horoscope/aries/daily\n```\n\n**3. Check your usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agents: Remote MCP\n\nEvery domain has its own Remote MCP server over Streamable HTTP at `https://roxyapi.com/mcp/{domain}` (for example `/mcp/astrology`), 258+ tools in all, with nothing to install or host. Add the URL to Claude, Cursor, VS Code, ChatGPT or any MCP client, or connect from the OpenAI Agents SDK and Gemini ADK. Coding agents that build against this API use the documentation server at `/mcp/docs`. Setup for every client: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp).\n\n## Authentication\n\nSend your key as `X-API-Key: YOUR_KEY` (recommended), as `Authorization: Bearer YOUR_KEY`, or as the `?api_key=` query parameter for quick tests. Keep secret keys on a server; publishable keys are for the browser.\n\n## Responses and limits\n\nClean JSON with no wrapper. An error returns `{ \"error\", \"code\", \"doc_url\" }`: `error` is readable and may change wording, `code` is stable and the one to switch on, and `doc_url` links to the fix for that exact code.\n\nEvery response carries `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used` and `X-RateLimit-Reset` for your monthly allowance, which resets on the 1st of each month at 00:00 UTC. Each plan also has a per-minute limit for bursts, from 600 requests per minute on Starter; going over it answers `429` with a `Retry-After` and never counts against the month.\n\n## Errors\n\nEvery code the API returns, also published machine-readably as `x-error-codes` on the `info` object of this document:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | [`validation_error`](https://roxyapi.com/docs/errors#validation_error) | A field is missing or invalid. The body lists every failing field at once in issues, each with its path and the expected shape. |\n| 400 | [`bad_request`](https://roxyapi.com/docs/errors#bad_request) | The request was rejected as a whole, for example a body that is not valid JSON or a date range that ends before it starts. |\n| 400 | [`date_out_of_range`](https://roxyapi.com/docs/errors#date_out_of_range) | A date lies outside the span the planetary positions are served for. The error names the supported dates. |\n| 400 | [`invalid_branding`](https://roxyapi.com/docs/errors#invalid_branding) | The report branding cannot be used, for example a logo that is not a PNG, JPEG, WebP or SVG image. |\n| 400 | [`logo_fetch_failed`](https://roxyapi.com/docs/errors#logo_fetch_failed) | The report logo could not be fetched: it must be an HTTPS URL on a public host that answers within the size limit. |\n| 400 | [`unsupported_character`](https://roxyapi.com/docs/errors#unsupported_character) | The report text holds a character no report font draws. The error names it: remove or replace it. |\n| 401 | [`api_key_required`](https://roxyapi.com/docs/errors#api_key_required) | No API key was sent. |\n| 401 | [`invalid_api_key`](https://roxyapi.com/docs/errors#invalid_api_key) | The key sent is malformed or cannot be verified. |\n| 401 | [`api_key_revoked`](https://roxyapi.com/docs/errors#api_key_revoked) | The key was valid once and has since been revoked from the account page. |\n| 401 | [`subscription_not_found`](https://roxyapi.com/docs/errors#subscription_not_found) | The key verifies, but the subscription behind it no longer exists. |\n| 401 | [`subscription_inactive`](https://roxyapi.com/docs/errors#subscription_inactive) | The subscription behind the key is cancelled, expired or suspended, or a trial is past its end date. |\n| 401 | [`publishable_key_not_allowed_on_mcp`](https://roxyapi.com/docs/errors#publishable_key_not_allowed_on_mcp) | A publishable key was used on a Remote MCP server, which takes a secret key. |\n| 401 | [`invalid_client_ip`](https://roxyapi.com/docs/errors#invalid_client_ip) | A keyless request could not be attributed to a caller. |\n| 401 | [`unauthorized`](https://roxyapi.com/docs/errors#unauthorized) | Authentication failed with no more specific reason to give. |\n| 403 | [`forbidden`](https://roxyapi.com/docs/errors#forbidden) | The key is valid, but this request is not permitted. |\n| 403 | [`origin_required`](https://roxyapi.com/docs/errors#origin_required) | A publishable key with an origin allowlist was used with no Origin header, as from a server or a native app. |\n| 403 | [`origin_not_allowed`](https://roxyapi.com/docs/errors#origin_not_allowed) | The calling site is not on the origin allowlist of this publishable key. |\n| 404 | [`not_found`](https://roxyapi.com/docs/errors#not_found) | Nothing is served at this path, or the identifier in it does not exist. A path miss adds suggestions, the closest real endpoints. |\n| 405 | [`method_not_allowed`](https://roxyapi.com/docs/errors#method_not_allowed) | The path exists for a different HTTP method. The body lists the accepted methods in allow, as does the Allow header. |\n| 409 | [`conflict`](https://roxyapi.com/docs/errors#conflict) | The request cannot be applied in the current state. |\n| 410 | [`gone`](https://roxyapi.com/docs/errors#gone) | The path was removed permanently. |\n| 413 | [`payload_too_large`](https://roxyapi.com/docs/errors#payload_too_large) | The request body is larger than the API accepts. A body far over the cap is refused before it reaches the API and returns a bare 413 with no JSON body. |\n| 415 | [`unsupported_media_type`](https://roxyapi.com/docs/errors#unsupported_media_type) | A request with a body was sent without Content-Type: application/json. |\n| 422 | [`unprocessable_entity`](https://roxyapi.com/docs/errors#unprocessable_entity) | Every field is valid, but the combination cannot be computed. |\n| 429 | [`rate_limit_exceeded`](https://roxyapi.com/docs/errors#rate_limit_exceeded) | The monthly request allowance is used up. Retry-After gives the seconds to the reset. |\n| 429 | [`rate_limit_per_minute`](https://roxyapi.com/docs/errors#rate_limit_per_minute) | The per-minute limit of the plan was reached. Retry-After gives the seconds to the next minute, and the monthly allowance is not charged. |\n| 429 | [`rate_limited`](https://roxyapi.com/docs/errors#rate_limited) | A rate limit was reached, reported without the plan detail. |\n| 429 | [`free_tier_exhausted`](https://roxyapi.com/docs/errors#free_tier_exhausted) | A keyless request has used up its trial allowance. |\n| 429 | [`reports_rate_limited`](https://roxyapi.com/docs/errors#reports_rate_limited) | Too many reports were requested this minute. Retry-After gives the seconds to the next minute. |\n| 500 | [`internal_error`](https://roxyapi.com/docs/errors#internal_error) | The request failed inside our service. Retry with exponential backoff. |\n| 503 | [`compute_saturated`](https://roxyapi.com/docs/errors#compute_saturated) | Heavy calculations are briefly at capacity. Send the same request again after Retry-After seconds. |\n| 503 | [`reports_busy`](https://roxyapi.com/docs/errors#reports_busy) | Report rendering is briefly at capacity. Send the same request again after Retry-After seconds. |\n| 503 | [`report_render_timeout`](https://roxyapi.com/docs/errors#report_render_timeout) | The report took too long to render. Send the same request again. |\n| Any | [`error`](https://roxyapi.com/docs/errors#error) | A fallback for a status with no more specific code. The status and the error field carry the signal. |\n\n## Pricing\n\nOne flat subscription covers every domain, every endpoint, Remote MCP, the SDKs, UI components, widgets and every language. Every data endpoint is one request, a planet position or a full birth chart, with no credits and no per-product fees. From $39 per month for 50K requests, up to 3M requests, with custom volume above that: [roxyapi.com/pricing](https://roxyapi.com/pricing).\n\n## Resources\n\n- [Quickstart](https://roxyapi.com/docs/quickstart): the first call in three steps\n- [Documentation](https://roxyapi.com/docs): guides, tutorials and a reference per domain\n- [Remote MCP](https://roxyapi.com/docs/mcp): connect an AI agent\n- [SDKs](https://roxyapi.com/docs/sdk) and [UI components](https://roxyapi.com/ui)\n- [Templates](https://roxyapi.com/templates): open source apps to clone and deploy\n- [Methodology](https://roxyapi.com/methodology): how accuracy is verified\n- [Contact](https://roxyapi.com/contact): support and key recovery\n",
+		"description": "Vedic astrology (Jyotish) and KP API for kundli generation with an editorial reading of the whole chart, the sixteen Shodasavarga divisional charts (D1 to D60), panchang with choghadiya, hora and the classical muhurta windows, kundli matching by Ashtakoot Gun Milan, the South Indian ten porutham with Rajju and Vedha vetoes and Papasamyam, Vimshottari Dasha predictions, dosha detection with remedies, a 301-entry planetary yoga glossary with 48 of them chart-detected and evidenced, and KP horary with 249-level sub-lord analysis. Calculations verified against NASA JPL Horizons at arc-second-level accuracy. Built for matrimonial apps, horoscope platforms, spiritual wellness services, and AI-powered astrology chatbots. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs.\n\n# RoxyAPI: the Spiritual OS layer for agentic AI\n\n> **Base URL:** `https://roxyapi.com/api/v2`. Every path below is relative to it.\n\nOne API key for 18+ insight domains (Western Astrology, Vedic Astrology, Forecast, Human Design, Chinese Astrology, Feng Shui, Mesoamerican Astrology, Vastu Shastra, Numerology, Kabbalah, Tarot Reading, Biorhythm, Ayurveda, I-Ching Oracle, Crystals and Healing Stones, Dream Interpretation, Angel Numbers, Location and Timezone), 261+ endpoints, planetary positions read directly from the NASA JPL DE440 ephemeris and verified against NASA JPL Horizons, and every calculation held by 3,683 gold standard tests. Readings come back as structured data with editorial interpretation text, translated into 10+ languages via `?lang=` on translated endpoints. Remote MCP servers, typed SDKs for TypeScript, Python, PHP, C#, Go, Rust, and Dart, drop-in UI components and copy-paste widgets, and open source Templates all run on this one document.\n\n## Who builds on RoxyAPI\n\n- **Developers** shipping astrology, tarot, numerology and wellness apps without learning each system first\n- **AI agent builders** giving Claude, GPT or Gemini real calculations instead of guesses, over Remote MCP\n- **Vibe coders** building with Cursor, Claude Code, Bolt or Replit from the spec and AGENTS.md\n- **Founders and brands** launching insight products for their audience on one key\n\n## Quick start\n\n**1. Get a key** at [roxyapi.com/pricing](https://roxyapi.com/pricing). It is ready the moment payment clears.\n\n**2. Make your first call:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/astrology/horoscope/aries/daily\n```\n\n**3. Check your usage:**\n```bash\ncurl -H \"X-API-Key: YOUR_KEY\" https://roxyapi.com/api/v2/usage\n```\n\n## AI agents: Remote MCP\n\nEvery domain has its own Remote MCP server over Streamable HTTP at `https://roxyapi.com/mcp/{domain}` (for example `/mcp/astrology`), 258+ tools in all, with nothing to install or host. Add the URL to Claude, Cursor, VS Code, ChatGPT or any MCP client, or connect from the OpenAI Agents SDK and Gemini ADK. Coding agents that build against this API use the documentation server at `/mcp/docs`. Setup for every client: [roxyapi.com/docs/mcp](https://roxyapi.com/docs/mcp).\n\n## Authentication\n\nSend your key as `X-API-Key: YOUR_KEY` (recommended), as `Authorization: Bearer YOUR_KEY`, or as the `?api_key=` query parameter for quick tests. Keep secret keys on a server; publishable keys are for the browser.\n\n## Responses and limits\n\nClean JSON with no wrapper. An error returns `{ \"error\", \"code\", \"doc_url\" }`: `error` is readable and may change wording, `code` is stable and the one to switch on, and `doc_url` links to the fix for that exact code.\n\nEvery response carries `X-RateLimit-Limit`, `X-RateLimit-Remaining`, `X-RateLimit-Used` and `X-RateLimit-Reset` for your monthly allowance, which resets on the 1st of each month at 00:00 UTC. Each plan also has a per-minute limit for bursts, from 600 requests per minute on Starter; going over it answers `429` with a `Retry-After` and never counts against the month.\n\n## Errors\n\nEvery code the API returns, also published machine-readably as `x-error-codes` on the `info` object of this document:\n\n| Status | Code | When |\n|--------|------|------|\n| 400 | [`validation_error`](https://roxyapi.com/docs/errors#validation_error) | A field is missing or invalid. The body lists every failing field at once in issues, each with its path and the expected shape. |\n| 400 | [`bad_request`](https://roxyapi.com/docs/errors#bad_request) | The request was rejected as a whole, for example a body that is not valid JSON or a date range that ends before it starts. |\n| 400 | [`date_out_of_range`](https://roxyapi.com/docs/errors#date_out_of_range) | A date lies outside the span the planetary positions are served for. The error names the supported dates. |\n| 400 | [`invalid_branding`](https://roxyapi.com/docs/errors#invalid_branding) | The report branding cannot be used, for example a logo that is not a PNG, JPEG, WebP or SVG image. |\n| 400 | [`logo_fetch_failed`](https://roxyapi.com/docs/errors#logo_fetch_failed) | The report logo could not be fetched: it must be an HTTPS URL on a public host that answers within the size limit. |\n| 400 | [`unsupported_character`](https://roxyapi.com/docs/errors#unsupported_character) | The report text holds a character no report font draws. The error names it: remove or replace it. |\n| 401 | [`api_key_required`](https://roxyapi.com/docs/errors#api_key_required) | No API key was sent. |\n| 401 | [`invalid_api_key`](https://roxyapi.com/docs/errors#invalid_api_key) | The key sent is malformed or cannot be verified. |\n| 401 | [`api_key_revoked`](https://roxyapi.com/docs/errors#api_key_revoked) | The key was valid once and has since been revoked from the account page. |\n| 401 | [`subscription_not_found`](https://roxyapi.com/docs/errors#subscription_not_found) | The key verifies, but the subscription behind it no longer exists. |\n| 401 | [`subscription_inactive`](https://roxyapi.com/docs/errors#subscription_inactive) | The subscription behind the key is cancelled, expired or suspended, or a trial is past its end date. |\n| 401 | [`publishable_key_not_allowed_on_mcp`](https://roxyapi.com/docs/errors#publishable_key_not_allowed_on_mcp) | A publishable key was used on a Remote MCP server, which takes a secret key. |\n| 401 | [`invalid_client_ip`](https://roxyapi.com/docs/errors#invalid_client_ip) | A keyless request could not be attributed to a caller. |\n| 401 | [`unauthorized`](https://roxyapi.com/docs/errors#unauthorized) | Authentication failed with no more specific reason to give. |\n| 403 | [`forbidden`](https://roxyapi.com/docs/errors#forbidden) | The key is valid, but this request is not permitted. |\n| 403 | [`origin_required`](https://roxyapi.com/docs/errors#origin_required) | A publishable key with an origin allowlist was used with no Origin header, as from a server or a native app. |\n| 403 | [`origin_not_allowed`](https://roxyapi.com/docs/errors#origin_not_allowed) | The calling site is not on the origin allowlist of this publishable key. |\n| 404 | [`not_found`](https://roxyapi.com/docs/errors#not_found) | Nothing is served at this path, or the identifier in it does not exist. A path miss adds suggestions, the closest real endpoints. |\n| 405 | [`method_not_allowed`](https://roxyapi.com/docs/errors#method_not_allowed) | The path exists for a different HTTP method. The body lists the accepted methods in allow, as does the Allow header. |\n| 409 | [`conflict`](https://roxyapi.com/docs/errors#conflict) | The request cannot be applied in the current state. |\n| 410 | [`gone`](https://roxyapi.com/docs/errors#gone) | The path was removed permanently. |\n| 413 | [`payload_too_large`](https://roxyapi.com/docs/errors#payload_too_large) | The request body is larger than the API accepts. A body far over the cap is refused before it reaches the API and returns a bare 413 with no JSON body. |\n| 415 | [`unsupported_media_type`](https://roxyapi.com/docs/errors#unsupported_media_type) | A request with a body was sent without Content-Type: application/json. |\n| 422 | [`unprocessable_entity`](https://roxyapi.com/docs/errors#unprocessable_entity) | Every field is valid, but the combination cannot be computed. |\n| 429 | [`rate_limit_exceeded`](https://roxyapi.com/docs/errors#rate_limit_exceeded) | The monthly request allowance is used up. Retry-After gives the seconds to the reset. |\n| 429 | [`rate_limit_per_minute`](https://roxyapi.com/docs/errors#rate_limit_per_minute) | The per-minute limit of the plan was reached. Retry-After gives the seconds to the next minute, and the monthly allowance is not charged. |\n| 429 | [`rate_limited`](https://roxyapi.com/docs/errors#rate_limited) | A rate limit was reached, reported without the plan detail. |\n| 429 | [`free_tier_exhausted`](https://roxyapi.com/docs/errors#free_tier_exhausted) | A keyless request has used up its trial allowance. |\n| 429 | [`reports_rate_limited`](https://roxyapi.com/docs/errors#reports_rate_limited) | Too many reports were requested this minute. Retry-After gives the seconds to the next minute. |\n| 500 | [`internal_error`](https://roxyapi.com/docs/errors#internal_error) | The request failed inside our service. Retry with exponential backoff. |\n| 503 | [`compute_saturated`](https://roxyapi.com/docs/errors#compute_saturated) | Heavy calculations are briefly at capacity. Send the same request again after Retry-After seconds. |\n| 503 | [`reports_busy`](https://roxyapi.com/docs/errors#reports_busy) | Report rendering is briefly at capacity. Send the same request again after Retry-After seconds. |\n| 503 | [`report_render_timeout`](https://roxyapi.com/docs/errors#report_render_timeout) | The report took too long to render. Send the same request again. |\n| Any | [`error`](https://roxyapi.com/docs/errors#error) | A fallback for a status with no more specific code. The status and the error field carry the signal. |\n\n## Pricing\n\nOne flat subscription covers every domain, every endpoint, Remote MCP, the SDKs, UI components, widgets and every language. Every data endpoint is one request, a planet position or a full birth chart, with no credits and no per-product fees. From $39 per month for 50K requests, up to 3M requests, with custom volume above that: [roxyapi.com/pricing](https://roxyapi.com/pricing).\n\n## Resources\n\n- [Quickstart](https://roxyapi.com/docs/quickstart): the first call in three steps\n- [Documentation](https://roxyapi.com/docs): guides, tutorials and a reference per domain\n- [Remote MCP](https://roxyapi.com/docs/mcp): connect an AI agent\n- [SDKs](https://roxyapi.com/docs/sdk) and [UI components](https://roxyapi.com/ui)\n- [Templates](https://roxyapi.com/templates): open source apps to clone and deploy\n- [Methodology](https://roxyapi.com/methodology): how accuracy is verified\n- [Contact](https://roxyapi.com/contact): support and key recovery\n",
 		"x-error-codes": [
 			{
 				"code": "validation_error",
@@ -203,7 +203,7 @@
 	"tags": [
 		{
 			"name": "Vedic Astrology",
-			"description": "Vedic astrology (Jyotish) and KP API for kundli generation with the sixteen Shodasavarga divisional charts (D1 to D60), panchang with choghadiya, hora and the classical muhurta windows, kundli matching by Ashtakoot Gun Milan, the South Indian ten porutham with Rajju and Vedha vetoes and Papasamyam, Vimshottari Dasha predictions, dosha detection with remedies, a 301-entry planetary yoga glossary with 48 of them chart-detected and evidenced, and KP horary with 249-level sub-lord analysis. Calculations verified against NASA JPL Horizons at arc-second-level accuracy. Built for matrimonial apps, horoscope platforms, spiritual wellness services, and AI-powered astrology chatbots. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs."
+			"description": "Vedic astrology (Jyotish) and KP API for kundli generation with an editorial reading of the whole chart, the sixteen Shodasavarga divisional charts (D1 to D60), panchang with choghadiya, hora and the classical muhurta windows, kundli matching by Ashtakoot Gun Milan, the South Indian ten porutham with Rajju and Vedha vetoes and Papasamyam, Vimshottari Dasha predictions, dosha detection with remedies, a 301-entry planetary yoga glossary with 48 of them chart-detected and evidenced, and KP horary with 249-level sub-lord analysis. Calculations verified against NASA JPL Horizons at arc-second-level accuracy. Built for matrimonial apps, horoscope platforms, spiritual wellness services, and AI-powered astrology chatbots. One key covers every RoxyAPI domain, with Remote MCP and typed SDKs."
 		}
 	],
 	"components": {
@@ -239,7 +239,7 @@
 										},
 										"longitude": {
 											"type": "number",
-											"example": 15.42,
+											"example": 0.51,
 											"description": "Sidereal longitude in degrees (0-360) using Lahiri ayanamsa."
 										},
 										"nakshatra": {
@@ -247,17 +247,17 @@
 											"properties": {
 												"name": {
 													"type": "string",
-													"example": "Bharani",
+													"example": "Ashwini",
 													"description": "Nakshatra (lunar mansion, 1 of 27) the planet occupies."
 												},
 												"pada": {
 													"type": "number",
-													"example": 2,
+													"example": 1,
 													"description": "Nakshatra pada (quarter, 1-4). Each nakshatra has 4 padas of 3 degrees 20 each."
 												},
 												"key": {
 													"type": "number",
-													"example": 2,
+													"example": 1,
 													"description": "Nakshatra index (1-27) in the zodiac sequence starting from Ashwini."
 												},
 												"lord": {
@@ -273,7 +273,7 @@
 														"Saturn",
 														"Mercury"
 													],
-													"example": "Venus",
+													"example": "Ketu",
 													"description": "Vimshottari ruling planet of this nakshatra. One of the nine grahas (Ketu, Venus, Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury). Drives the dasha sequence and the nakshatra qualities."
 												}
 											},
@@ -293,7 +293,7 @@
 											"type": "integer",
 											"minimum": 1,
 											"maximum": 12,
-											"example": 3,
+											"example": 9,
 											"description": "Bhava (house) number 1-12, counted whole-sign from the Lagna (house 1 is the Lagna rashi). Present on the D1 birth chart; divisional charts (navamsa, varga) omit it."
 										},
 										"awastha": {
@@ -305,7 +305,7 @@
 												"Vriddha",
 												"Mrita"
 											],
-											"example": "Yuva",
+											"example": "Bala",
 											"description": "Baladi avastha, the planetary age-state set by the graha degree within its sign: Bala (infant), Kumara (child), Yuva (adult, strongest results), Vriddha (old), Mrita (dead, weakest). Bands run forward in odd signs and reversed in even signs. D1 birth chart only."
 										},
 										"jagradadi": {
@@ -315,7 +315,7 @@
 												"Swapna",
 												"Sushupti"
 											],
-											"example": "Swapna",
+											"example": "Jagrat",
 											"description": "Jagradadi avastha, the waking state of the graha set by its sign dignity: Jagrat (awake, own sign or exaltation, full results), Swapna (dreaming, a friendly or neutral sign, medium results), Sushupti (sleeping, an enemy sign or debilitation, no results). Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna own no sign and are omitted."
 										},
 										"deeptadi": {
@@ -331,7 +331,7 @@
 												"Khala",
 												"Kopa"
 											],
-											"example": "Pramudita",
+											"example": "Svastha",
 											"description": "Deeptadi avastha, the dispositional state of the graha, one of nine: Dipta (exalted, blazing), Svastha (own sign, healthy), Pramudita (great friend sign, delighted), Shanta (friendly sign, at peace), Dina (neutral sign, helpless), Duhkhita (enemy sign, sorrowful), Khala (great enemy sign, harsh), Vikala (joined by a natural malefic, disabled), Kopa (eclipsed by the Sun, enraged). Where more than one applies the more severe is returned, so combustion outranks a malefic conjunction, which outranks the sign reading. Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna are omitted."
 										}
 									},
@@ -370,7 +370,7 @@
 										},
 										"longitude": {
 											"type": "number",
-											"example": 15.42,
+											"example": 0.51,
 											"description": "Sidereal longitude in degrees (0-360) using Lahiri ayanamsa."
 										},
 										"nakshatra": {
@@ -378,17 +378,17 @@
 											"properties": {
 												"name": {
 													"type": "string",
-													"example": "Bharani",
+													"example": "Ashwini",
 													"description": "Nakshatra (lunar mansion, 1 of 27) the planet occupies."
 												},
 												"pada": {
 													"type": "number",
-													"example": 2,
+													"example": 1,
 													"description": "Nakshatra pada (quarter, 1-4). Each nakshatra has 4 padas of 3 degrees 20 each."
 												},
 												"key": {
 													"type": "number",
-													"example": 2,
+													"example": 1,
 													"description": "Nakshatra index (1-27) in the zodiac sequence starting from Ashwini."
 												},
 												"lord": {
@@ -404,7 +404,7 @@
 														"Saturn",
 														"Mercury"
 													],
-													"example": "Venus",
+													"example": "Ketu",
 													"description": "Vimshottari ruling planet of this nakshatra. One of the nine grahas (Ketu, Venus, Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury). Drives the dasha sequence and the nakshatra qualities."
 												}
 											},
@@ -424,7 +424,7 @@
 											"type": "integer",
 											"minimum": 1,
 											"maximum": 12,
-											"example": 3,
+											"example": 9,
 											"description": "Bhava (house) number 1-12, counted whole-sign from the Lagna (house 1 is the Lagna rashi). Present on the D1 birth chart; divisional charts (navamsa, varga) omit it."
 										},
 										"awastha": {
@@ -436,7 +436,7 @@
 												"Vriddha",
 												"Mrita"
 											],
-											"example": "Yuva",
+											"example": "Bala",
 											"description": "Baladi avastha, the planetary age-state set by the graha degree within its sign: Bala (infant), Kumara (child), Yuva (adult, strongest results), Vriddha (old), Mrita (dead, weakest). Bands run forward in odd signs and reversed in even signs. D1 birth chart only."
 										},
 										"jagradadi": {
@@ -446,7 +446,7 @@
 												"Swapna",
 												"Sushupti"
 											],
-											"example": "Swapna",
+											"example": "Jagrat",
 											"description": "Jagradadi avastha, the waking state of the graha set by its sign dignity: Jagrat (awake, own sign or exaltation, full results), Swapna (dreaming, a friendly or neutral sign, medium results), Sushupti (sleeping, an enemy sign or debilitation, no results). Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna own no sign and are omitted."
 										},
 										"deeptadi": {
@@ -462,7 +462,7 @@
 												"Khala",
 												"Kopa"
 											],
-											"example": "Pramudita",
+											"example": "Svastha",
 											"description": "Deeptadi avastha, the dispositional state of the graha, one of nine: Dipta (exalted, blazing), Svastha (own sign, healthy), Pramudita (great friend sign, delighted), Shanta (friendly sign, at peace), Dina (neutral sign, helpless), Duhkhita (enemy sign, sorrowful), Khala (great enemy sign, harsh), Vikala (joined by a natural malefic, disabled), Kopa (eclipsed by the Sun, enraged). Where more than one applies the more severe is returned, so combustion outranks a malefic conjunction, which outranks the sign reading. Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna are omitted."
 										}
 									},
@@ -501,7 +501,7 @@
 										},
 										"longitude": {
 											"type": "number",
-											"example": 15.42,
+											"example": 0.51,
 											"description": "Sidereal longitude in degrees (0-360) using Lahiri ayanamsa."
 										},
 										"nakshatra": {
@@ -509,17 +509,17 @@
 											"properties": {
 												"name": {
 													"type": "string",
-													"example": "Bharani",
+													"example": "Ashwini",
 													"description": "Nakshatra (lunar mansion, 1 of 27) the planet occupies."
 												},
 												"pada": {
 													"type": "number",
-													"example": 2,
+													"example": 1,
 													"description": "Nakshatra pada (quarter, 1-4). Each nakshatra has 4 padas of 3 degrees 20 each."
 												},
 												"key": {
 													"type": "number",
-													"example": 2,
+													"example": 1,
 													"description": "Nakshatra index (1-27) in the zodiac sequence starting from Ashwini."
 												},
 												"lord": {
@@ -535,7 +535,7 @@
 														"Saturn",
 														"Mercury"
 													],
-													"example": "Venus",
+													"example": "Ketu",
 													"description": "Vimshottari ruling planet of this nakshatra. One of the nine grahas (Ketu, Venus, Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury). Drives the dasha sequence and the nakshatra qualities."
 												}
 											},
@@ -555,7 +555,7 @@
 											"type": "integer",
 											"minimum": 1,
 											"maximum": 12,
-											"example": 3,
+											"example": 9,
 											"description": "Bhava (house) number 1-12, counted whole-sign from the Lagna (house 1 is the Lagna rashi). Present on the D1 birth chart; divisional charts (navamsa, varga) omit it."
 										},
 										"awastha": {
@@ -567,7 +567,7 @@
 												"Vriddha",
 												"Mrita"
 											],
-											"example": "Yuva",
+											"example": "Bala",
 											"description": "Baladi avastha, the planetary age-state set by the graha degree within its sign: Bala (infant), Kumara (child), Yuva (adult, strongest results), Vriddha (old), Mrita (dead, weakest). Bands run forward in odd signs and reversed in even signs. D1 birth chart only."
 										},
 										"jagradadi": {
@@ -577,7 +577,7 @@
 												"Swapna",
 												"Sushupti"
 											],
-											"example": "Swapna",
+											"example": "Jagrat",
 											"description": "Jagradadi avastha, the waking state of the graha set by its sign dignity: Jagrat (awake, own sign or exaltation, full results), Swapna (dreaming, a friendly or neutral sign, medium results), Sushupti (sleeping, an enemy sign or debilitation, no results). Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna own no sign and are omitted."
 										},
 										"deeptadi": {
@@ -593,7 +593,7 @@
 												"Khala",
 												"Kopa"
 											],
-											"example": "Pramudita",
+											"example": "Svastha",
 											"description": "Deeptadi avastha, the dispositional state of the graha, one of nine: Dipta (exalted, blazing), Svastha (own sign, healthy), Pramudita (great friend sign, delighted), Shanta (friendly sign, at peace), Dina (neutral sign, helpless), Duhkhita (enemy sign, sorrowful), Khala (great enemy sign, harsh), Vikala (joined by a natural malefic, disabled), Kopa (eclipsed by the Sun, enraged). Where more than one applies the more severe is returned, so combustion outranks a malefic conjunction, which outranks the sign reading. Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna are omitted."
 										}
 									},
@@ -632,7 +632,7 @@
 										},
 										"longitude": {
 											"type": "number",
-											"example": 15.42,
+											"example": 0.51,
 											"description": "Sidereal longitude in degrees (0-360) using Lahiri ayanamsa."
 										},
 										"nakshatra": {
@@ -640,17 +640,17 @@
 											"properties": {
 												"name": {
 													"type": "string",
-													"example": "Bharani",
+													"example": "Ashwini",
 													"description": "Nakshatra (lunar mansion, 1 of 27) the planet occupies."
 												},
 												"pada": {
 													"type": "number",
-													"example": 2,
+													"example": 1,
 													"description": "Nakshatra pada (quarter, 1-4). Each nakshatra has 4 padas of 3 degrees 20 each."
 												},
 												"key": {
 													"type": "number",
-													"example": 2,
+													"example": 1,
 													"description": "Nakshatra index (1-27) in the zodiac sequence starting from Ashwini."
 												},
 												"lord": {
@@ -666,7 +666,7 @@
 														"Saturn",
 														"Mercury"
 													],
-													"example": "Venus",
+													"example": "Ketu",
 													"description": "Vimshottari ruling planet of this nakshatra. One of the nine grahas (Ketu, Venus, Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury). Drives the dasha sequence and the nakshatra qualities."
 												}
 											},
@@ -686,7 +686,7 @@
 											"type": "integer",
 											"minimum": 1,
 											"maximum": 12,
-											"example": 3,
+											"example": 9,
 											"description": "Bhava (house) number 1-12, counted whole-sign from the Lagna (house 1 is the Lagna rashi). Present on the D1 birth chart; divisional charts (navamsa, varga) omit it."
 										},
 										"awastha": {
@@ -698,7 +698,7 @@
 												"Vriddha",
 												"Mrita"
 											],
-											"example": "Yuva",
+											"example": "Bala",
 											"description": "Baladi avastha, the planetary age-state set by the graha degree within its sign: Bala (infant), Kumara (child), Yuva (adult, strongest results), Vriddha (old), Mrita (dead, weakest). Bands run forward in odd signs and reversed in even signs. D1 birth chart only."
 										},
 										"jagradadi": {
@@ -708,7 +708,7 @@
 												"Swapna",
 												"Sushupti"
 											],
-											"example": "Swapna",
+											"example": "Jagrat",
 											"description": "Jagradadi avastha, the waking state of the graha set by its sign dignity: Jagrat (awake, own sign or exaltation, full results), Swapna (dreaming, a friendly or neutral sign, medium results), Sushupti (sleeping, an enemy sign or debilitation, no results). Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna own no sign and are omitted."
 										},
 										"deeptadi": {
@@ -724,7 +724,7 @@
 												"Khala",
 												"Kopa"
 											],
-											"example": "Pramudita",
+											"example": "Svastha",
 											"description": "Deeptadi avastha, the dispositional state of the graha, one of nine: Dipta (exalted, blazing), Svastha (own sign, healthy), Pramudita (great friend sign, delighted), Shanta (friendly sign, at peace), Dina (neutral sign, helpless), Duhkhita (enemy sign, sorrowful), Khala (great enemy sign, harsh), Vikala (joined by a natural malefic, disabled), Kopa (eclipsed by the Sun, enraged). Where more than one applies the more severe is returned, so combustion outranks a malefic conjunction, which outranks the sign reading. Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna are omitted."
 										}
 									},
@@ -763,7 +763,7 @@
 										},
 										"longitude": {
 											"type": "number",
-											"example": 15.42,
+											"example": 0.51,
 											"description": "Sidereal longitude in degrees (0-360) using Lahiri ayanamsa."
 										},
 										"nakshatra": {
@@ -771,17 +771,17 @@
 											"properties": {
 												"name": {
 													"type": "string",
-													"example": "Bharani",
+													"example": "Ashwini",
 													"description": "Nakshatra (lunar mansion, 1 of 27) the planet occupies."
 												},
 												"pada": {
 													"type": "number",
-													"example": 2,
+													"example": 1,
 													"description": "Nakshatra pada (quarter, 1-4). Each nakshatra has 4 padas of 3 degrees 20 each."
 												},
 												"key": {
 													"type": "number",
-													"example": 2,
+													"example": 1,
 													"description": "Nakshatra index (1-27) in the zodiac sequence starting from Ashwini."
 												},
 												"lord": {
@@ -797,7 +797,7 @@
 														"Saturn",
 														"Mercury"
 													],
-													"example": "Venus",
+													"example": "Ketu",
 													"description": "Vimshottari ruling planet of this nakshatra. One of the nine grahas (Ketu, Venus, Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury). Drives the dasha sequence and the nakshatra qualities."
 												}
 											},
@@ -817,7 +817,7 @@
 											"type": "integer",
 											"minimum": 1,
 											"maximum": 12,
-											"example": 3,
+											"example": 9,
 											"description": "Bhava (house) number 1-12, counted whole-sign from the Lagna (house 1 is the Lagna rashi). Present on the D1 birth chart; divisional charts (navamsa, varga) omit it."
 										},
 										"awastha": {
@@ -829,7 +829,7 @@
 												"Vriddha",
 												"Mrita"
 											],
-											"example": "Yuva",
+											"example": "Bala",
 											"description": "Baladi avastha, the planetary age-state set by the graha degree within its sign: Bala (infant), Kumara (child), Yuva (adult, strongest results), Vriddha (old), Mrita (dead, weakest). Bands run forward in odd signs and reversed in even signs. D1 birth chart only."
 										},
 										"jagradadi": {
@@ -839,7 +839,7 @@
 												"Swapna",
 												"Sushupti"
 											],
-											"example": "Swapna",
+											"example": "Jagrat",
 											"description": "Jagradadi avastha, the waking state of the graha set by its sign dignity: Jagrat (awake, own sign or exaltation, full results), Swapna (dreaming, a friendly or neutral sign, medium results), Sushupti (sleeping, an enemy sign or debilitation, no results). Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna own no sign and are omitted."
 										},
 										"deeptadi": {
@@ -855,7 +855,7 @@
 												"Khala",
 												"Kopa"
 											],
-											"example": "Pramudita",
+											"example": "Svastha",
 											"description": "Deeptadi avastha, the dispositional state of the graha, one of nine: Dipta (exalted, blazing), Svastha (own sign, healthy), Pramudita (great friend sign, delighted), Shanta (friendly sign, at peace), Dina (neutral sign, helpless), Duhkhita (enemy sign, sorrowful), Khala (great enemy sign, harsh), Vikala (joined by a natural malefic, disabled), Kopa (eclipsed by the Sun, enraged). Where more than one applies the more severe is returned, so combustion outranks a malefic conjunction, which outranks the sign reading. Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna are omitted."
 										}
 									},
@@ -894,7 +894,7 @@
 										},
 										"longitude": {
 											"type": "number",
-											"example": 15.42,
+											"example": 0.51,
 											"description": "Sidereal longitude in degrees (0-360) using Lahiri ayanamsa."
 										},
 										"nakshatra": {
@@ -902,17 +902,17 @@
 											"properties": {
 												"name": {
 													"type": "string",
-													"example": "Bharani",
+													"example": "Ashwini",
 													"description": "Nakshatra (lunar mansion, 1 of 27) the planet occupies."
 												},
 												"pada": {
 													"type": "number",
-													"example": 2,
+													"example": 1,
 													"description": "Nakshatra pada (quarter, 1-4). Each nakshatra has 4 padas of 3 degrees 20 each."
 												},
 												"key": {
 													"type": "number",
-													"example": 2,
+													"example": 1,
 													"description": "Nakshatra index (1-27) in the zodiac sequence starting from Ashwini."
 												},
 												"lord": {
@@ -928,7 +928,7 @@
 														"Saturn",
 														"Mercury"
 													],
-													"example": "Venus",
+													"example": "Ketu",
 													"description": "Vimshottari ruling planet of this nakshatra. One of the nine grahas (Ketu, Venus, Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury). Drives the dasha sequence and the nakshatra qualities."
 												}
 											},
@@ -948,7 +948,7 @@
 											"type": "integer",
 											"minimum": 1,
 											"maximum": 12,
-											"example": 3,
+											"example": 9,
 											"description": "Bhava (house) number 1-12, counted whole-sign from the Lagna (house 1 is the Lagna rashi). Present on the D1 birth chart; divisional charts (navamsa, varga) omit it."
 										},
 										"awastha": {
@@ -960,7 +960,7 @@
 												"Vriddha",
 												"Mrita"
 											],
-											"example": "Yuva",
+											"example": "Bala",
 											"description": "Baladi avastha, the planetary age-state set by the graha degree within its sign: Bala (infant), Kumara (child), Yuva (adult, strongest results), Vriddha (old), Mrita (dead, weakest). Bands run forward in odd signs and reversed in even signs. D1 birth chart only."
 										},
 										"jagradadi": {
@@ -970,7 +970,7 @@
 												"Swapna",
 												"Sushupti"
 											],
-											"example": "Swapna",
+											"example": "Jagrat",
 											"description": "Jagradadi avastha, the waking state of the graha set by its sign dignity: Jagrat (awake, own sign or exaltation, full results), Swapna (dreaming, a friendly or neutral sign, medium results), Sushupti (sleeping, an enemy sign or debilitation, no results). Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna own no sign and are omitted."
 										},
 										"deeptadi": {
@@ -986,7 +986,7 @@
 												"Khala",
 												"Kopa"
 											],
-											"example": "Pramudita",
+											"example": "Svastha",
 											"description": "Deeptadi avastha, the dispositional state of the graha, one of nine: Dipta (exalted, blazing), Svastha (own sign, healthy), Pramudita (great friend sign, delighted), Shanta (friendly sign, at peace), Dina (neutral sign, helpless), Duhkhita (enemy sign, sorrowful), Khala (great enemy sign, harsh), Vikala (joined by a natural malefic, disabled), Kopa (eclipsed by the Sun, enraged). Where more than one applies the more severe is returned, so combustion outranks a malefic conjunction, which outranks the sign reading. Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna are omitted."
 										}
 									},
@@ -1025,7 +1025,7 @@
 										},
 										"longitude": {
 											"type": "number",
-											"example": 15.42,
+											"example": 0.51,
 											"description": "Sidereal longitude in degrees (0-360) using Lahiri ayanamsa."
 										},
 										"nakshatra": {
@@ -1033,17 +1033,17 @@
 											"properties": {
 												"name": {
 													"type": "string",
-													"example": "Bharani",
+													"example": "Ashwini",
 													"description": "Nakshatra (lunar mansion, 1 of 27) the planet occupies."
 												},
 												"pada": {
 													"type": "number",
-													"example": 2,
+													"example": 1,
 													"description": "Nakshatra pada (quarter, 1-4). Each nakshatra has 4 padas of 3 degrees 20 each."
 												},
 												"key": {
 													"type": "number",
-													"example": 2,
+													"example": 1,
 													"description": "Nakshatra index (1-27) in the zodiac sequence starting from Ashwini."
 												},
 												"lord": {
@@ -1059,7 +1059,7 @@
 														"Saturn",
 														"Mercury"
 													],
-													"example": "Venus",
+													"example": "Ketu",
 													"description": "Vimshottari ruling planet of this nakshatra. One of the nine grahas (Ketu, Venus, Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury). Drives the dasha sequence and the nakshatra qualities."
 												}
 											},
@@ -1079,7 +1079,7 @@
 											"type": "integer",
 											"minimum": 1,
 											"maximum": 12,
-											"example": 3,
+											"example": 9,
 											"description": "Bhava (house) number 1-12, counted whole-sign from the Lagna (house 1 is the Lagna rashi). Present on the D1 birth chart; divisional charts (navamsa, varga) omit it."
 										},
 										"awastha": {
@@ -1091,7 +1091,7 @@
 												"Vriddha",
 												"Mrita"
 											],
-											"example": "Yuva",
+											"example": "Bala",
 											"description": "Baladi avastha, the planetary age-state set by the graha degree within its sign: Bala (infant), Kumara (child), Yuva (adult, strongest results), Vriddha (old), Mrita (dead, weakest). Bands run forward in odd signs and reversed in even signs. D1 birth chart only."
 										},
 										"jagradadi": {
@@ -1101,7 +1101,7 @@
 												"Swapna",
 												"Sushupti"
 											],
-											"example": "Swapna",
+											"example": "Jagrat",
 											"description": "Jagradadi avastha, the waking state of the graha set by its sign dignity: Jagrat (awake, own sign or exaltation, full results), Swapna (dreaming, a friendly or neutral sign, medium results), Sushupti (sleeping, an enemy sign or debilitation, no results). Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna own no sign and are omitted."
 										},
 										"deeptadi": {
@@ -1117,7 +1117,7 @@
 												"Khala",
 												"Kopa"
 											],
-											"example": "Pramudita",
+											"example": "Svastha",
 											"description": "Deeptadi avastha, the dispositional state of the graha, one of nine: Dipta (exalted, blazing), Svastha (own sign, healthy), Pramudita (great friend sign, delighted), Shanta (friendly sign, at peace), Dina (neutral sign, helpless), Duhkhita (enemy sign, sorrowful), Khala (great enemy sign, harsh), Vikala (joined by a natural malefic, disabled), Kopa (eclipsed by the Sun, enraged). Where more than one applies the more severe is returned, so combustion outranks a malefic conjunction, which outranks the sign reading. Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna are omitted."
 										}
 									},
@@ -1156,7 +1156,7 @@
 										},
 										"longitude": {
 											"type": "number",
-											"example": 15.42,
+											"example": 0.51,
 											"description": "Sidereal longitude in degrees (0-360) using Lahiri ayanamsa."
 										},
 										"nakshatra": {
@@ -1164,17 +1164,17 @@
 											"properties": {
 												"name": {
 													"type": "string",
-													"example": "Bharani",
+													"example": "Ashwini",
 													"description": "Nakshatra (lunar mansion, 1 of 27) the planet occupies."
 												},
 												"pada": {
 													"type": "number",
-													"example": 2,
+													"example": 1,
 													"description": "Nakshatra pada (quarter, 1-4). Each nakshatra has 4 padas of 3 degrees 20 each."
 												},
 												"key": {
 													"type": "number",
-													"example": 2,
+													"example": 1,
 													"description": "Nakshatra index (1-27) in the zodiac sequence starting from Ashwini."
 												},
 												"lord": {
@@ -1190,7 +1190,7 @@
 														"Saturn",
 														"Mercury"
 													],
-													"example": "Venus",
+													"example": "Ketu",
 													"description": "Vimshottari ruling planet of this nakshatra. One of the nine grahas (Ketu, Venus, Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury). Drives the dasha sequence and the nakshatra qualities."
 												}
 											},
@@ -1210,7 +1210,7 @@
 											"type": "integer",
 											"minimum": 1,
 											"maximum": 12,
-											"example": 3,
+											"example": 9,
 											"description": "Bhava (house) number 1-12, counted whole-sign from the Lagna (house 1 is the Lagna rashi). Present on the D1 birth chart; divisional charts (navamsa, varga) omit it."
 										},
 										"awastha": {
@@ -1222,7 +1222,7 @@
 												"Vriddha",
 												"Mrita"
 											],
-											"example": "Yuva",
+											"example": "Bala",
 											"description": "Baladi avastha, the planetary age-state set by the graha degree within its sign: Bala (infant), Kumara (child), Yuva (adult, strongest results), Vriddha (old), Mrita (dead, weakest). Bands run forward in odd signs and reversed in even signs. D1 birth chart only."
 										},
 										"jagradadi": {
@@ -1232,7 +1232,7 @@
 												"Swapna",
 												"Sushupti"
 											],
-											"example": "Swapna",
+											"example": "Jagrat",
 											"description": "Jagradadi avastha, the waking state of the graha set by its sign dignity: Jagrat (awake, own sign or exaltation, full results), Swapna (dreaming, a friendly or neutral sign, medium results), Sushupti (sleeping, an enemy sign or debilitation, no results). Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna own no sign and are omitted."
 										},
 										"deeptadi": {
@@ -1248,7 +1248,7 @@
 												"Khala",
 												"Kopa"
 											],
-											"example": "Pramudita",
+											"example": "Svastha",
 											"description": "Deeptadi avastha, the dispositional state of the graha, one of nine: Dipta (exalted, blazing), Svastha (own sign, healthy), Pramudita (great friend sign, delighted), Shanta (friendly sign, at peace), Dina (neutral sign, helpless), Duhkhita (enemy sign, sorrowful), Khala (great enemy sign, harsh), Vikala (joined by a natural malefic, disabled), Kopa (eclipsed by the Sun, enraged). Where more than one applies the more severe is returned, so combustion outranks a malefic conjunction, which outranks the sign reading. Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna are omitted."
 										}
 									},
@@ -1287,7 +1287,7 @@
 										},
 										"longitude": {
 											"type": "number",
-											"example": 15.42,
+											"example": 0.51,
 											"description": "Sidereal longitude in degrees (0-360) using Lahiri ayanamsa."
 										},
 										"nakshatra": {
@@ -1295,17 +1295,17 @@
 											"properties": {
 												"name": {
 													"type": "string",
-													"example": "Bharani",
+													"example": "Ashwini",
 													"description": "Nakshatra (lunar mansion, 1 of 27) the planet occupies."
 												},
 												"pada": {
 													"type": "number",
-													"example": 2,
+													"example": 1,
 													"description": "Nakshatra pada (quarter, 1-4). Each nakshatra has 4 padas of 3 degrees 20 each."
 												},
 												"key": {
 													"type": "number",
-													"example": 2,
+													"example": 1,
 													"description": "Nakshatra index (1-27) in the zodiac sequence starting from Ashwini."
 												},
 												"lord": {
@@ -1321,7 +1321,7 @@
 														"Saturn",
 														"Mercury"
 													],
-													"example": "Venus",
+													"example": "Ketu",
 													"description": "Vimshottari ruling planet of this nakshatra. One of the nine grahas (Ketu, Venus, Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury). Drives the dasha sequence and the nakshatra qualities."
 												}
 											},
@@ -1341,7 +1341,7 @@
 											"type": "integer",
 											"minimum": 1,
 											"maximum": 12,
-											"example": 3,
+											"example": 9,
 											"description": "Bhava (house) number 1-12, counted whole-sign from the Lagna (house 1 is the Lagna rashi). Present on the D1 birth chart; divisional charts (navamsa, varga) omit it."
 										},
 										"awastha": {
@@ -1353,7 +1353,7 @@
 												"Vriddha",
 												"Mrita"
 											],
-											"example": "Yuva",
+											"example": "Bala",
 											"description": "Baladi avastha, the planetary age-state set by the graha degree within its sign: Bala (infant), Kumara (child), Yuva (adult, strongest results), Vriddha (old), Mrita (dead, weakest). Bands run forward in odd signs and reversed in even signs. D1 birth chart only."
 										},
 										"jagradadi": {
@@ -1363,7 +1363,7 @@
 												"Swapna",
 												"Sushupti"
 											],
-											"example": "Swapna",
+											"example": "Jagrat",
 											"description": "Jagradadi avastha, the waking state of the graha set by its sign dignity: Jagrat (awake, own sign or exaltation, full results), Swapna (dreaming, a friendly or neutral sign, medium results), Sushupti (sleeping, an enemy sign or debilitation, no results). Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna own no sign and are omitted."
 										},
 										"deeptadi": {
@@ -1379,7 +1379,7 @@
 												"Khala",
 												"Kopa"
 											],
-											"example": "Pramudita",
+											"example": "Svastha",
 											"description": "Deeptadi avastha, the dispositional state of the graha, one of nine: Dipta (exalted, blazing), Svastha (own sign, healthy), Pramudita (great friend sign, delighted), Shanta (friendly sign, at peace), Dina (neutral sign, helpless), Duhkhita (enemy sign, sorrowful), Khala (great enemy sign, harsh), Vikala (joined by a natural malefic, disabled), Kopa (eclipsed by the Sun, enraged). Where more than one applies the more severe is returned, so combustion outranks a malefic conjunction, which outranks the sign reading. Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna are omitted."
 										}
 									},
@@ -1418,7 +1418,7 @@
 										},
 										"longitude": {
 											"type": "number",
-											"example": 15.42,
+											"example": 0.51,
 											"description": "Sidereal longitude in degrees (0-360) using Lahiri ayanamsa."
 										},
 										"nakshatra": {
@@ -1426,17 +1426,17 @@
 											"properties": {
 												"name": {
 													"type": "string",
-													"example": "Bharani",
+													"example": "Ashwini",
 													"description": "Nakshatra (lunar mansion, 1 of 27) the planet occupies."
 												},
 												"pada": {
 													"type": "number",
-													"example": 2,
+													"example": 1,
 													"description": "Nakshatra pada (quarter, 1-4). Each nakshatra has 4 padas of 3 degrees 20 each."
 												},
 												"key": {
 													"type": "number",
-													"example": 2,
+													"example": 1,
 													"description": "Nakshatra index (1-27) in the zodiac sequence starting from Ashwini."
 												},
 												"lord": {
@@ -1452,7 +1452,7 @@
 														"Saturn",
 														"Mercury"
 													],
-													"example": "Venus",
+													"example": "Ketu",
 													"description": "Vimshottari ruling planet of this nakshatra. One of the nine grahas (Ketu, Venus, Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury). Drives the dasha sequence and the nakshatra qualities."
 												}
 											},
@@ -1472,7 +1472,7 @@
 											"type": "integer",
 											"minimum": 1,
 											"maximum": 12,
-											"example": 3,
+											"example": 9,
 											"description": "Bhava (house) number 1-12, counted whole-sign from the Lagna (house 1 is the Lagna rashi). Present on the D1 birth chart; divisional charts (navamsa, varga) omit it."
 										},
 										"awastha": {
@@ -1484,7 +1484,7 @@
 												"Vriddha",
 												"Mrita"
 											],
-											"example": "Yuva",
+											"example": "Bala",
 											"description": "Baladi avastha, the planetary age-state set by the graha degree within its sign: Bala (infant), Kumara (child), Yuva (adult, strongest results), Vriddha (old), Mrita (dead, weakest). Bands run forward in odd signs and reversed in even signs. D1 birth chart only."
 										},
 										"jagradadi": {
@@ -1494,7 +1494,7 @@
 												"Swapna",
 												"Sushupti"
 											],
-											"example": "Swapna",
+											"example": "Jagrat",
 											"description": "Jagradadi avastha, the waking state of the graha set by its sign dignity: Jagrat (awake, own sign or exaltation, full results), Swapna (dreaming, a friendly or neutral sign, medium results), Sushupti (sleeping, an enemy sign or debilitation, no results). Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna own no sign and are omitted."
 										},
 										"deeptadi": {
@@ -1510,7 +1510,7 @@
 												"Khala",
 												"Kopa"
 											],
-											"example": "Pramudita",
+											"example": "Svastha",
 											"description": "Deeptadi avastha, the dispositional state of the graha, one of nine: Dipta (exalted, blazing), Svastha (own sign, healthy), Pramudita (great friend sign, delighted), Shanta (friendly sign, at peace), Dina (neutral sign, helpless), Duhkhita (enemy sign, sorrowful), Khala (great enemy sign, harsh), Vikala (joined by a natural malefic, disabled), Kopa (eclipsed by the Sun, enraged). Where more than one applies the more severe is returned, so combustion outranks a malefic conjunction, which outranks the sign reading. Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna are omitted."
 										}
 									},
@@ -1549,7 +1549,7 @@
 										},
 										"longitude": {
 											"type": "number",
-											"example": 15.42,
+											"example": 0.51,
 											"description": "Sidereal longitude in degrees (0-360) using Lahiri ayanamsa."
 										},
 										"nakshatra": {
@@ -1557,17 +1557,17 @@
 											"properties": {
 												"name": {
 													"type": "string",
-													"example": "Bharani",
+													"example": "Ashwini",
 													"description": "Nakshatra (lunar mansion, 1 of 27) the planet occupies."
 												},
 												"pada": {
 													"type": "number",
-													"example": 2,
+													"example": 1,
 													"description": "Nakshatra pada (quarter, 1-4). Each nakshatra has 4 padas of 3 degrees 20 each."
 												},
 												"key": {
 													"type": "number",
-													"example": 2,
+													"example": 1,
 													"description": "Nakshatra index (1-27) in the zodiac sequence starting from Ashwini."
 												},
 												"lord": {
@@ -1583,7 +1583,7 @@
 														"Saturn",
 														"Mercury"
 													],
-													"example": "Venus",
+													"example": "Ketu",
 													"description": "Vimshottari ruling planet of this nakshatra. One of the nine grahas (Ketu, Venus, Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury). Drives the dasha sequence and the nakshatra qualities."
 												}
 											},
@@ -1603,7 +1603,7 @@
 											"type": "integer",
 											"minimum": 1,
 											"maximum": 12,
-											"example": 3,
+											"example": 9,
 											"description": "Bhava (house) number 1-12, counted whole-sign from the Lagna (house 1 is the Lagna rashi). Present on the D1 birth chart; divisional charts (navamsa, varga) omit it."
 										},
 										"awastha": {
@@ -1615,7 +1615,7 @@
 												"Vriddha",
 												"Mrita"
 											],
-											"example": "Yuva",
+											"example": "Bala",
 											"description": "Baladi avastha, the planetary age-state set by the graha degree within its sign: Bala (infant), Kumara (child), Yuva (adult, strongest results), Vriddha (old), Mrita (dead, weakest). Bands run forward in odd signs and reversed in even signs. D1 birth chart only."
 										},
 										"jagradadi": {
@@ -1625,7 +1625,7 @@
 												"Swapna",
 												"Sushupti"
 											],
-											"example": "Swapna",
+											"example": "Jagrat",
 											"description": "Jagradadi avastha, the waking state of the graha set by its sign dignity: Jagrat (awake, own sign or exaltation, full results), Swapna (dreaming, a friendly or neutral sign, medium results), Sushupti (sleeping, an enemy sign or debilitation, no results). Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna own no sign and are omitted."
 										},
 										"deeptadi": {
@@ -1641,7 +1641,7 @@
 												"Khala",
 												"Kopa"
 											],
-											"example": "Pramudita",
+											"example": "Svastha",
 											"description": "Deeptadi avastha, the dispositional state of the graha, one of nine: Dipta (exalted, blazing), Svastha (own sign, healthy), Pramudita (great friend sign, delighted), Shanta (friendly sign, at peace), Dina (neutral sign, helpless), Duhkhita (enemy sign, sorrowful), Khala (great enemy sign, harsh), Vikala (joined by a natural malefic, disabled), Kopa (eclipsed by the Sun, enraged). Where more than one applies the more severe is returned, so combustion outranks a malefic conjunction, which outranks the sign reading. Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna are omitted."
 										}
 									},
@@ -1680,7 +1680,7 @@
 										},
 										"longitude": {
 											"type": "number",
-											"example": 15.42,
+											"example": 0.51,
 											"description": "Sidereal longitude in degrees (0-360) using Lahiri ayanamsa."
 										},
 										"nakshatra": {
@@ -1688,17 +1688,17 @@
 											"properties": {
 												"name": {
 													"type": "string",
-													"example": "Bharani",
+													"example": "Ashwini",
 													"description": "Nakshatra (lunar mansion, 1 of 27) the planet occupies."
 												},
 												"pada": {
 													"type": "number",
-													"example": 2,
+													"example": 1,
 													"description": "Nakshatra pada (quarter, 1-4). Each nakshatra has 4 padas of 3 degrees 20 each."
 												},
 												"key": {
 													"type": "number",
-													"example": 2,
+													"example": 1,
 													"description": "Nakshatra index (1-27) in the zodiac sequence starting from Ashwini."
 												},
 												"lord": {
@@ -1714,7 +1714,7 @@
 														"Saturn",
 														"Mercury"
 													],
-													"example": "Venus",
+													"example": "Ketu",
 													"description": "Vimshottari ruling planet of this nakshatra. One of the nine grahas (Ketu, Venus, Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury). Drives the dasha sequence and the nakshatra qualities."
 												}
 											},
@@ -1734,7 +1734,7 @@
 											"type": "integer",
 											"minimum": 1,
 											"maximum": 12,
-											"example": 3,
+											"example": 9,
 											"description": "Bhava (house) number 1-12, counted whole-sign from the Lagna (house 1 is the Lagna rashi). Present on the D1 birth chart; divisional charts (navamsa, varga) omit it."
 										},
 										"awastha": {
@@ -1746,7 +1746,7 @@
 												"Vriddha",
 												"Mrita"
 											],
-											"example": "Yuva",
+											"example": "Bala",
 											"description": "Baladi avastha, the planetary age-state set by the graha degree within its sign: Bala (infant), Kumara (child), Yuva (adult, strongest results), Vriddha (old), Mrita (dead, weakest). Bands run forward in odd signs and reversed in even signs. D1 birth chart only."
 										},
 										"jagradadi": {
@@ -1756,7 +1756,7 @@
 												"Swapna",
 												"Sushupti"
 											],
-											"example": "Swapna",
+											"example": "Jagrat",
 											"description": "Jagradadi avastha, the waking state of the graha set by its sign dignity: Jagrat (awake, own sign or exaltation, full results), Swapna (dreaming, a friendly or neutral sign, medium results), Sushupti (sleeping, an enemy sign or debilitation, no results). Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna own no sign and are omitted."
 										},
 										"deeptadi": {
@@ -1772,7 +1772,7 @@
 												"Khala",
 												"Kopa"
 											],
-											"example": "Pramudita",
+											"example": "Svastha",
 											"description": "Deeptadi avastha, the dispositional state of the graha, one of nine: Dipta (exalted, blazing), Svastha (own sign, healthy), Pramudita (great friend sign, delighted), Shanta (friendly sign, at peace), Dina (neutral sign, helpless), Duhkhita (enemy sign, sorrowful), Khala (great enemy sign, harsh), Vikala (joined by a natural malefic, disabled), Kopa (eclipsed by the Sun, enraged). Where more than one applies the more severe is returned, so combustion outranks a malefic conjunction, which outranks the sign reading. Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna are omitted."
 										}
 									},
@@ -1926,13 +1926,13 @@
 								},
 								"name": {
 									"type": "string",
-									"example": "Tanu Bhava",
-									"description": "Classical name of the bhava (house). Present when an interpretation entry exists for this house."
+									"example": "Lagna",
+									"description": "Classical name of the bhava (house)."
 								},
 								"description": {
 									"type": "string",
-									"example": "Self, body, personality, and overall life direction.",
-									"description": "Significations of the bhava (house). Present when an interpretation entry exists for this house."
+									"example": "Self-assurance draws allies to your aims, with your 1st lord in the 11th, the bhava of gains. You remember names, connect people who should meet and find the right introduction coming through your circle again and again. Counting on the network without tending it leaves gaps, and the friend who calls first is the one whose circle is still there in a lean year.",
+									"description": "Reading of the bhava (house), written for this chart in English, German, Spanish, French, Hindi, Portuguese, Russian, Turkish: where its lord sits, each graha it holds, and, for a bhava no graha occupies, the drishti Jupiter or Saturn casts on it."
 								},
 								"themes": {
 									"type": "array",
@@ -1946,11 +1946,14 @@
 										"personality",
 										"vitality"
 									],
-									"description": "Significations of the bhava as short keywords, the compact form of description. Bhava 1 covers self, body and vitality; 2 wealth and speech; 7 marriage and partnership; 10 career and status. Suited to chart labels, table cells and legends where the full classical description is too long, and identical to the houseThemes map returned by the Vimshottari dasha and KP chart routes. Localized by the lang query parameter."
+									"description": "Significations of the bhava as short keywords. Bhava 1 covers self, body and vitality; 2 wealth and speech; 7 marriage and partnership; 10 career and status. Suited to chart labels, table cells and legends, and identical to the houseThemes map returned by the Vimshottari dasha and KP chart routes. Localized by the lang query parameter."
 								}
 							},
 							"required": [
-								"number"
+								"number",
+								"name",
+								"description",
+								"themes"
 							]
 						},
 						"description": "The twelve bhavas (houses) in order, each with its classical name and significations. Houses are counted whole-sign from the Lagna."
@@ -2026,13 +2029,13 @@
 							"properties": {
 								"rashi": {
 									"type": "string",
-									"example": "Confident, authoritative, and self-driven expression.",
-									"description": "Interpretation of the planet placement in its rashi (sign)."
+									"example": "Guru in Mithuna speaks through a scholarly, eloquent voice, courteous to elders and generous with advice to friends. Your shelves hold philosophy beside poetry beside a manual on bookbinding, and you can quote all three at the right moment. Clever answers come to you more easily than deep ones, which is exactly why one framework, lived inside for years, gives your learning its roots. Near the Sun at your birth, Jupiter turns generosity toward purpose and makes belief a private compass you consult often. Your wisdom speaks in many registers, and its courtesy lets difficult truths sound like an invitation.",
+									"description": "Reading of the graha in its rashi (sign), with its dignity, combustion, retrograde motion and planetary war where the chart holds them."
 								},
 								"nakshatra": {
 									"type": "string",
-									"example": "Ambitious and disciplined, with a focus on legacy.",
-									"description": "Interpretation of the planet placement in its nakshatra."
+									"example": "Twice at home in Punarvasu, your Jupiter makes things come back through you: friendships, chances and good humor alike.",
+									"description": "Reading of the graha in its nakshatra and the star lord it serves; for the Moon, the janma nakshatra."
 								}
 							},
 							"required": [
@@ -2040,18 +2043,38 @@
 								"nakshatra"
 							],
 							"example": {
-								"rashi": "Jupiter in Sagittarius (Dhanu) expresses through the energy of the Bow and Arrow. Respectful towards religion and spiritual matters, intelligent, excel in chosen subject, liberal attitude, fair",
-								"nakshatra": "Jupiter in Purva Ashadha nakshatra combines planetary energy with Apas (water deity) deity influence. These natives are confident, persuasive, and enthusiastic. They naturally inspire those around them."
+								"rashi": "Guru in Mithuna speaks through a scholarly, eloquent voice, courteous to elders and generous with advice to friends. Your shelves hold philosophy beside poetry beside a manual on bookbinding, and you can quote all three at the right moment. Clever answers come to you more easily than deep ones, which is exactly why one framework, lived inside for years, gives your learning its roots. Near the Sun at your birth, Jupiter turns generosity toward purpose and makes belief a private compass you consult often. Your wisdom speaks in many registers, and its courtesy lets difficult truths sound like an invitation.",
+								"nakshatra": "Twice at home in Punarvasu, your Jupiter makes things come back through you: friendships, chances and good humor alike."
 							},
 							"description": "The two composed readings for one graha: what its rashi placement says, and what its nakshatra placement says. Both are full sentences ready to render."
 						},
 						"example": {
 							"Jupiter": {
-								"rashi": "Jupiter in Sagittarius (Dhanu) expresses through the energy of the Bow and Arrow. Respectful towards religion and spiritual matters, intelligent, excel in chosen subject, liberal attitude, fair",
-								"nakshatra": "Jupiter in Purva Ashadha nakshatra combines planetary energy with Apas (water deity) deity influence. These natives are confident, persuasive, and enthusiastic. They naturally inspire those around them."
+								"rashi": "Guru in Mithuna speaks through a scholarly, eloquent voice, courteous to elders and generous with advice to friends. Your shelves hold philosophy beside poetry beside a manual on bookbinding, and you can quote all three at the right moment. Clever answers come to you more easily than deep ones, which is exactly why one framework, lived inside for years, gives your learning its roots. Near the Sun at your birth, Jupiter turns generosity toward purpose and makes belief a private compass you consult often. Your wisdom speaks in many registers, and its courtesy lets difficult truths sound like an invitation.",
+								"nakshatra": "Twice at home in Punarvasu, your Jupiter makes things come back through you: friendships, chances and good humor alike."
 							}
 						},
-						"description": "Planet-in-rashi and planet-in-nakshatra interpretation summaries, keyed by planet name. Translated when a supported lang is requested."
+						"description": "Rashi and nakshatra readings for every graha and the Lagna, keyed by planet name, written for this chart in English, German, Spanish, French, Hindi, Portuguese, Russian, Turkish."
+					},
+					"interpretation": {
+						"type": "object",
+						"properties": {
+							"summary": {
+								"type": "string",
+								"example": "Counted fourth and tenth from each other, Leo rising and a Moon in Scorpio turn inner friction into steady output. Prosperity and self-respect travel together for you while the Sun, steward of the Lagna, works from the eleventh bhava.",
+								"description": "The chart thesis in two sentences: how the Lagna (ascendant) rashi and the Moon rashi relate, the two placements a Vedic reading opens on, then where the Lagna lord sits."
+							},
+							"detailed": {
+								"type": "string",
+								"example": "Matched in pace and crossed in element, Leo rising and the Moon in Scorpio let you start projects with the poise of a host and live with them with loyal depth. Heart and will vie for your hours, and learning to let each lead in turn is how the pairing matures. Born in Shukla paksha, the bright fortnight, under a Moon gaining light, you find that feeling grows in you by being shared.\n\nProsperity keeps company with your Lagna lord, the Sun, in the eleventh bhava, and a practical sense of value runs through how you see yourself. Strain runs between the Moon and the Sun, which holds the eighth rashi counted from it, yet the friction teaches you to read your own moods before they surprise you.\n\nStrength gathers in Venus, which forms Malavya Yoga from a kendra, and its qualities give the chart its lead. Seldom still, Leo outwardly and Scorpio within, you get a great deal done, and that motion is one of your gifts.",
+								"description": "The whole-chart reading in three paragraphs separated by a blank line: how the Lagna (ascendant) rashi and the Moon rashi relate, counted from each other, with the paksha (lunar fortnight) of birth, or the dark Moon when the Moon is combust; where the Lagna lord sits, its strength and its distance from the Moon; then the chart signature, such as a Pancha Mahapurusha or Gajakesari yoga, a cluster of grahas in one bhava, or an exalted graha."
+							}
+						},
+						"required": [
+							"summary",
+							"detailed"
+						],
+						"description": "Whole-chart Vedic birth chart reading written for this birth in English, German, Spanish, French, Hindi, Portuguese, Russian, Turkish, the kundli at a glance."
 					},
 					"yogas": {
 						"type": "array",
@@ -2147,12 +2170,12 @@
 								},
 								"rashi": {
 									"type": "string",
-									"example": "Sagittarius",
+									"example": "Gemini",
 									"description": "Zodiac sign (rashi) the planet occupies in the birth chart. One of 12 Vedic rashis from Aries (Mesha) to Pisces (Meena)."
 								},
 								"longitude": {
 									"type": "number",
-									"example": 248.73,
+									"example": 86.29,
 									"description": "Sidereal longitude in degrees (0-360) using Lahiri ayanamsa. Precise position used for aspect calculations, divisional chart mapping, and transit analysis."
 								},
 								"nakshatra": {
@@ -2160,17 +2183,17 @@
 									"properties": {
 										"name": {
 											"type": "string",
-											"example": "Moola",
+											"example": "Punarvasu",
 											"description": "Nakshatra (lunar mansion) the planet occupies. One of 27 Vedic nakshatras spanning 13 degrees 20 minutes each. Determines dasha lord and behavioral qualities."
 										},
 										"pada": {
 											"type": "number",
-											"example": 3,
+											"example": 2,
 											"description": "Nakshatra pada (quarter, 1-4). Each nakshatra divides into 4 padas of 3 degrees 20 minutes. Pada determines Navamsa sign and refines personality traits."
 										},
 										"key": {
 											"type": "number",
-											"example": 19,
+											"example": 7,
 											"description": "Nakshatra sequence number (1-27) in zodiac order starting from Ashwini. Used for Tara Bala compatibility and dasha calculations."
 										},
 										"lord": {
@@ -2186,7 +2209,7 @@
 												"Saturn",
 												"Mercury"
 											],
-											"example": "Ketu",
+											"example": "Jupiter",
 											"description": "Vimshottari ruling planet of this nakshatra. One of the nine grahas (Ketu, Venus, Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury). Drives the dasha sequence and the nakshatra qualities."
 										}
 									},
@@ -2207,7 +2230,7 @@
 									"type": "integer",
 									"minimum": 1,
 									"maximum": 12,
-									"example": 9,
+									"example": 11,
 									"description": "Bhava (house) number 1-12, counted whole-sign from the Lagna (house 1 is the Lagna rashi; Lagna itself is house 1). Present on the D1 birth chart; divisional charts omit it."
 								},
 								"avasthaInfo": {
@@ -2282,7 +2305,7 @@
 										"Vriddha",
 										"Mrita"
 									],
-									"example": "Yuva",
+									"example": "Mrita",
 									"description": "Baladi avastha, the planetary age-state set by the graha degree within its sign: Bala (infant), Kumara (child), Yuva (adult, strongest results), Vriddha (old), Mrita (dead, weakest). Bands run forward in odd signs and reversed in even signs. D1 birth chart only."
 								},
 								"jagradadi": {
@@ -2292,7 +2315,7 @@
 										"Swapna",
 										"Sushupti"
 									],
-									"example": "Swapna",
+									"example": "Jagrat",
 									"description": "Jagradadi avastha, the waking state of the graha set by its sign dignity: Jagrat (awake, own sign or exaltation, full results), Swapna (dreaming, a friendly or neutral sign, medium results), Sushupti (sleeping, an enemy sign or debilitation, no results). Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna own no sign and are omitted."
 								},
 								"deeptadi": {
@@ -2308,7 +2331,7 @@
 										"Khala",
 										"Kopa"
 									],
-									"example": "Pramudita",
+									"example": "Svastha",
 									"description": "Deeptadi avastha, the dispositional state of the graha, one of nine: Dipta (exalted, blazing), Svastha (own sign, healthy), Pramudita (great friend sign, delighted), Shanta (friendly sign, at peace), Dina (neutral sign, helpless), Duhkhita (enemy sign, sorrowful), Khala (great enemy sign, harsh), Vikala (joined by a natural malefic, disabled), Kopa (eclipsed by the Sun, enraged). Where more than one applies the more severe is returned, so combustion outranks a malefic conjunction, which outranks the sign reading. Present for the seven classical grahas on the D1 chart; Rahu, Ketu and the Lagna are omitted."
 								}
 							},
@@ -2321,38 +2344,38 @@
 							],
 							"example": {
 								"graha": "Jupiter",
-								"rashi": "Sagittarius",
-								"longitude": 259.6848244496506,
+								"rashi": "Gemini",
+								"longitude": 86.29,
 								"nakshatra": {
-									"name": "Purva Ashadha",
+									"name": "Punarvasu",
 									"pada": 2,
-									"key": 19,
-									"lord": "Venus"
+									"key": 7,
+									"lord": "Jupiter"
 								},
 								"isRetrograde": false,
-								"house": 9,
-								"awastha": "Vriddha",
-								"jagradadi": "Jagrat",
-								"deeptadi": "Svastha"
+								"house": 11,
+								"awastha": "Mrita",
+								"jagradadi": "Sushupti",
+								"deeptadi": "Kopa"
 							},
 							"description": "One graha placement: rashi, sidereal longitude, nakshatra with pada and lord, whole-sign bhava, retrogression, and the Baladi, Jagradadi and Deeptadi avastha states."
 						},
 						"example": {
 							"Jupiter": {
 								"graha": "Jupiter",
-								"rashi": "Sagittarius",
-								"longitude": 259.6848244496506,
+								"rashi": "Gemini",
+								"longitude": 86.29,
 								"nakshatra": {
-									"name": "Purva Ashadha",
+									"name": "Punarvasu",
 									"pada": 2,
-									"key": 19,
-									"lord": "Venus"
+									"key": 7,
+									"lord": "Jupiter"
 								},
 								"isRetrograde": false,
-								"house": 9,
-								"awastha": "Vriddha",
-								"jagradadi": "Jagrat",
-								"deeptadi": "Svastha"
+								"house": 11,
+								"awastha": "Mrita",
+								"jagradadi": "Sushupti",
+								"deeptadi": "Kopa"
 							}
 						},
 						"description": "Quick lookup of all planet positions keyed by planet name. Contains Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu, Ketu, and Lagna (Ascendant)."
@@ -2376,41 +2399,74 @@
 					"combustion",
 					"planetaryWar",
 					"interpretations",
+					"interpretation",
 					"meta"
 				],
 				"example": {
 					"aries": {
 						"rashi": "aries",
-						"signs": []
+						"signs": [
+							{
+								"graha": "Mars",
+								"longitude": 0.51,
+								"nakshatra": {
+									"name": "Ashwini",
+									"pada": 1,
+									"key": 1,
+									"lord": "Ketu"
+								},
+								"isRetrograde": false,
+								"house": 9,
+								"awastha": "Bala",
+								"jagradadi": "Jagrat",
+								"deeptadi": "Svastha"
+							}
+						]
 					},
 					"meta": {
 						"Sun": {
 							"graha": "Sun",
-							"rashi": "Leo",
-							"longitude": 132.45,
+							"rashi": "Gemini",
+							"longitude": 78.24,
 							"nakshatra": {
-								"name": "Magha",
-								"pada": 2,
-								"key": 10,
-								"lord": "Ketu"
+								"name": "Ardra",
+								"pada": 4,
+								"key": 6,
+								"lord": "Rahu"
 							},
 							"isRetrograde": false,
-							"house": 5,
+							"house": 11,
 							"awastha": "Vriddha"
 						},
 						"Moon": {
 							"graha": "Moon",
-							"rashi": "Cancer",
-							"longitude": 98.32,
+							"rashi": "Scorpio",
+							"longitude": 215.34,
+							"nakshatra": {
+								"name": "Anuradha",
+								"pada": 1,
+								"key": 17,
+								"lord": "Saturn"
+							},
+							"isRetrograde": false,
+							"house": 4,
+							"awastha": "Mrita"
+						},
+						"Jupiter": {
+							"graha": "Jupiter",
+							"rashi": "Gemini",
+							"longitude": 86.29,
 							"nakshatra": {
 								"name": "Punarvasu",
-								"pada": 4,
+								"pada": 2,
 								"key": 7,
 								"lord": "Jupiter"
 							},
 							"isRetrograde": false,
-							"house": 4,
-							"awastha": "Yuva"
+							"house": 11,
+							"awastha": "Mrita",
+							"jagradadi": "Sushupti",
+							"deeptadi": "Kopa"
 						}
 					}
 				}
@@ -11238,8 +11294,8 @@
 				"tags": [
 					"Vedic Astrology"
 				],
-				"summary": "Get birth chart (D1 Rashi chart) - Kundli Calculator API",
-				"description": "Calculate complete Vedic birth chart (Janam Kundli, natal chart) with all 9 planetary positions (Sun through Ketu) plus Ascendant (Lagna). Kundli calculator API for astrology apps, matrimonial sites. Returns accurate graha positions grouped by zodiac signs (rashis) with nakshatra details and pada. Perfect for kundli generation, horoscope matching, and Vedic astrology software integration. Rahu and Ketu are the mean lunar node, referred to the true equinox of date, with Ketu exactly opposite Rahu.",
+				"summary": "Get birth chart (D1 Rashi chart) - Kundli API with a written chart reading",
+				"description": "Calculate a Vedic birth chart (Janam Kundli): all 9 grahas, Sun through Ketu, and the Lagna, grouped by rashi with nakshatra and pada. Every chart carries a Vedic chart reading written for that birth: the kundli at a glance, every graha read in its rashi and its nakshatra, and every bhava read from its lord and the grahas it holds, in English, German, Spanish, French, Hindi, Portuguese, Russian, Turkish. Rahu and Ketu are the mean lunar node, referred to the true equinox of date, with Ketu exactly opposite Rahu.",
 				"security": [
 					{
 						"apiKey": []
@@ -11298,7 +11354,7 @@
 				},
 				"responses": {
 					"200": {
-						"description": "D1 Rashi birth chart with all 12 houses, 9 grahas plus Lagna, combustion analysis (Surya Siddhanta limits, applied as the standard ecliptic longitude orb), planetary war detection, bhava interpretations, and a meta lookup keyed by planet name.",
+						"description": "D1 Rashi birth chart with all 12 houses, 9 grahas plus Lagna, combustion analysis (Surya Siddhanta limits, applied as the standard ecliptic longitude orb), planetary war detection, a written reading of the whole chart, every graha and every bhava, and a meta lookup keyed by planet name.",
 						"content": {
 							"application/json": {
 								"schema": {
