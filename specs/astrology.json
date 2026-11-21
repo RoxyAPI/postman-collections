@@ -16008,6 +16008,16 @@
 														"example": false,
 														"description": "Whether the planet appears to move backward from Earth perspective. Retrograde periods signal review and introspection."
 													},
+													"nameLocalized": {
+														"type": "string",
+														"example": "Sol",
+														"description": "Body name in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
+													},
+													"signLocalized": {
+														"type": "string",
+														"example": "Cáncer",
+														"description": "Zodiac sign name in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
+													},
 													"compositeInterpretation": {
 														"type": "object",
 														"properties": {
@@ -16075,6 +16085,11 @@
 														"example": "Gemini",
 														"description": "Zodiac sign on the composite house cusp."
 													},
+													"signLocalized": {
+														"type": "string",
+														"example": "Géminis",
+														"description": "Zodiac sign name on this cusp in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
+													},
 													"degree": {
 														"type": "number",
 														"example": 15.32,
@@ -16103,6 +16118,11 @@
 													"example": "Gemini",
 													"description": "Zodiac sign on the composite Ascendant."
 												},
+												"signLocalized": {
+													"type": "string",
+													"example": "Géminis",
+													"description": "Ascendant sign name in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
+												},
 												"degree": {
 													"type": "number",
 													"example": 15.32,
@@ -16128,6 +16148,11 @@
 													"type": "string",
 													"example": "Aquarius",
 													"description": "Zodiac sign on the composite Midheaven."
+												},
+												"signLocalized": {
+													"type": "string",
+													"example": "Acuario",
+													"description": "Midheaven sign name in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
 												},
 												"degree": {
 													"type": "number",
@@ -16241,6 +16266,21 @@
 														],
 														"example": "harmonious",
 														"description": "Aspect nature. Harmonious (trine, sextile) flows easily. Challenging (square, opposition) creates tension and growth. Neutral (conjunction) blends energies. Always English, whatever the lang parameter says: it is an identifier consumers switch and style on. Use interpretationLocalized for anything a reader sees."
+													},
+													"planet1Localized": {
+														"type": "string",
+														"example": "Sol",
+														"description": "First planet name in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
+													},
+													"planet2Localized": {
+														"type": "string",
+														"example": "Luna",
+														"description": "Second planet name in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
+													},
+													"typeLocalized": {
+														"type": "string",
+														"example": "Trígono",
+														"description": "Aspect type name in the requested language, for display only. Present only when lang is set to a language other than English, since in English it would repeat its canonical partner field exactly. Never compare against this value, compare against the canonical field beside it."
 													}
 												},
 												"required": [
